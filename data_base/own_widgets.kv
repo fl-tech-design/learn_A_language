@@ -1,0 +1,117 @@
+# own_widgets.kv
+#: import constants constants
+###
+# vordefinierte BoxLayouts
+###
+# Definiere BoxUnlined mit einer Hintergrundfarbe
+<BoxUnlined@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: app.color1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    id: box_col_1
+    
+# Definiere BoxLined_1 mit einer Rahmenfarbe
+<BoxLined_1@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: app.color2
+        Line:
+            width: 1  # Breite des Randes
+            rectangle: self.x, self.y, self.width, self.height  # Rechteck für den Rand
+    id: box_line_1
+    background_color: app.color1
+
+# Definiere BoxLined_1 mit einer Rahmenfarbe
+<BoxLined_2@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: app.color3
+        Line:
+            width: 1  # Breite des Randes
+            rectangle: self.x, self.y, self.width, self.height  # Rechteck für den Rand
+    id: box_line_2
+###
+# vordefinierte Buttons und sonstiges die in die app eingefügt werden können.
+###
+<ButClear@Button>:
+    color: fs22_n if self.state == 'normal' else fs22_d
+    background_color: 0,0,0,0
+    font_name: constants.DIR_FONTS + 'Jura-Medium.otf'
+    font_size: self.height * 0.6
+
+<LabBig@Label>:
+    color: fs22_n
+    font_name: constants.DIR_FONTS + 'Jura-DemiBold.otf'
+    font_size: self.height * 0.6
+
+<LabSmall@Label>:
+    color: fs22_n
+    font_name: constants.DIR_FONTS + 'Jura-Light.otf'
+    font_size: self.height * 0.6
+
+
+<Logo_Main@Image>:
+    source: constants.PATH_TO_MAINLOGO
+
+
+###
+# vordefinierte Widgets die in die app eingefügt werden können.
+###
+# Languagebox
+<BoxFlag@BoxUnlined>:
+    orientation: 'vertical'
+    spacing: 4
+    BoxLined_2:
+        padding: 2
+        BoxUnlined:
+            size_hint_x: 0.25
+            Image:
+                id: img_flag
+        BoxUnlined:
+            ButClear:
+                id: lab_flag
+                on_release: app.change_language(self.text.lower())
+
+# Titelbox
+<BoxTitle@BoxLayout>:
+    size_hint_y: 0.05
+    BoxUnlined:
+        padding: 2
+        BoxLined_1:
+            BoxUnlined:
+                size_hint_x: 0.2            
+                Logo_Main:
+            BoxUnlined:
+                # Label für Seitentitel
+                LabBig:
+                    id: lab_tit_page
+                    font_size: self.height * 0.8
+                    halign: 'center'
+                    color: grey2
+            BoxUnlined:
+                size_hint_x: 0.2
+                ButClear:
+                    id: but_info
+                    text: "?"
+                    halign: 'right'
+                    on_release: app.open_inf_pop()
+###
+# Bottombox
+<BoxBottom@BoxLayout>:
+    size_hint_y: 0.05
+    BoxUnlined:
+        padding: 2
+        BoxLined_1:
+            ButClear:
+                id: but_1
+                font_size: self.height * 0.5
+                on_release: app.change_screen('left', 'page_setting') if app.scr_man.current == 'page_start' else app.change_screen('right', 'page_start')
+            
+            # Box Button right in Bottombox            
+            ButClear:
+                id: but_2
+                font_size: self.height * 0.5
+                on_release: app.stop()

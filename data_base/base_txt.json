@@ -1,0 +1,38 @@
+{
+    "de": {
+        "back": "zurück",
+        "base_title": "Neue App",
+        "close": "schliessen",
+        "english": "englisch",
+        "exit": "Beenden",
+        "german": "deutsch",
+        "information": "Information",
+        "inf_settings": "Hier können Sie diverse Grundeinstellungen für die App vornehmen. Wie Sprache usw.",
+        "inf_start": "Du befindest Dich auf der Startseite. Von hier aus geht es los in in die ganze App.",
+        "languages": "Sprachen",
+        "loading": "laden",
+        "loading_complete": "Daten wurden geladen.",
+        "tit_page_sett": "Einstellungen",
+        "tit_page_start": "Startseite",
+        "settings": "Einstellungen",
+        "welcome_message": "Willkommen bei unserer App!"
+    },
+    "en": {
+        "back": "back",
+        "base_title": "New App",
+        "close": "close",
+        "english": "english",
+        "exit": "Exit",
+        "german": "german",
+        "information": "Information",
+        "inf_settings": "Here you can make various basic settings for the app, such as language and so on.",
+        "inf_start": "You are on the home page. From here, you can start exploring the entire app.",
+        "languages": "Languages",
+        "loading": "loading",
+        "loading_complete": "loading complete",
+        "tit_page_sett": "Settings",
+        "tit_page_start": "Startpage",
+        "settings": "Settings",
+        "welcome_message": "Welcome to our app!"
+    }
+}
