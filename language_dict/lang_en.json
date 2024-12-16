@@ -1,0 +1,1186 @@
+{
+    "verbs": {
+        "A1": {
+            "to_be": [
+                {
+                    "word": "to be",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_am": "I am",
+                            "you_are_singular": "You are",
+                            "he_she_it_is": "He/She/It is",
+                            "we_are": "We are",
+                            "you_are_plural": "You are",
+                            "they_are": "They are",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_was": "I was",
+                            "you_were_singular": "You were",
+                            "he_she_it_was": "He/She/It was",
+                            "we_were": "We were",
+                            "you_were_plural": "You were",
+                            "they_were": "They were",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_be": "I will be",
+                            "you_will_be_singular": "You will be",
+                            "he_she_it_will_be": "He/She/It will be",
+                            "we_will_be": "We will be",
+                            "you_will_be_plural": "You will be",
+                            "they_will_be": "They will be",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_have": [
+                {
+                    "word": "to have",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_have": "I have",
+                            "you_have_singular": "You have",
+                            "he_she_it_has": "He/She/It has",
+                            "we_have": "We have",
+                            "you_have_plural": "You have",
+                            "they_have": "They have",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_had": "I had",
+                            "you_had_singular": "You had",
+                            "he_she_it_had": "He/She/It had",
+                            "we_had": "We had",
+                            "you_had_plural": "You had",
+                            "they_had": "They had",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_have": "I will have",
+                            "you_will_have_singular": "You will have",
+                            "he_she_it_will_have": "He/She/It will have",
+                            "we_will_have": "We will have",
+                            "you_will_have_plural": "You will have",
+                            "they_will_have": "They will have",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_go": [
+                {
+                    "word": "to go",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_go": "I go",
+                            "you_go_singular": "You go",
+                            "he_she_it_goes": "He/She/It goes",
+                            "we_go": "We go",
+                            "you_go_plural": "You go",
+                            "they_go": "They go",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_went": "I went",
+                            "you_went_singular": "You went",
+                            "he_she_it_went": "He/She/It went",
+                            "we_went": "We went",
+                            "you_went_plural": "You went",
+                            "they_went": "They went",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_go": "I will go",
+                            "you_will_go_singular": "You will go",
+                            "he_she_it_will_go": "He/She/It will go",
+                            "we_will_go": "We will go",
+                            "you_will_go_plural": "You will go",
+                            "they_will_go": "They will go",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_eat": [
+                {
+                    "word": "to eat",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_eat": "I eat",
+                            "you_eat_singular": "You eat",
+                            "he_she_it_eats": "He/She/It eats",
+                            "we_eat": "We eat",
+                            "you_eat_plural": "You eat",
+                            "they_eat": "They eat",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_ate": "I ate",
+                            "you_ate_singular": "You ate",
+                            "he_she_it_ate": "He/She/It ate",
+                            "we_ate": "We ate",
+                            "you_ate_plural": "You ate",
+                            "they_ate": "They ate",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_eat": "I will eat",
+                            "you_will_eat_singular": "You will eat",
+                            "he_she_it_will_eat": "He/She/It will eat",
+                            "we_will_eat": "We will eat",
+                            "you_will_eat_plural": "You will eat",
+                            "they_will_eat": "They will eat",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_drink": [
+                {
+                    "word": "to drink",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_drink": "I drink",
+                            "you_drink_singular": "You drink",
+                            "he_she_it_drinks": "He/She/It drinks",
+                            "we_drink": "We drink",
+                            "you_drink_plural": "You drink",
+                            "they_drink": "They drink",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_drank": "I drank",
+                            "you_drank_singular": "You drank",
+                            "he_she_it_drank": "He/She/It drank",
+                            "we_drank": "We drank",
+                            "you_drank_plural": "You drank",
+                            "they_drank": "They drank",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_drink": "I will drink",
+                            "you_will_drink_singular": "You will drink",
+                            "he_she_it_will_drink": "He/She/It will drink",
+                            "we_will_drink": "We will drink",
+                            "you_will_drink_plural": "You will drink",
+                            "they_will_drink": "They will drink",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "to_see": [
+                {
+                    "word": "to see",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_see": "I see",
+                            "you_see_singular": "You see",
+                            "he_she_it_sees": "He/She/It sees",
+                            "we_see": "We see",
+                            "you_see_plural": "You see",
+                            "they_see": "They see",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_saw": "I saw",
+                            "you_saw_singular": "You saw",
+                            "he_she_it_saw": "He/She/It saw",
+                            "we_saw": "We saw",
+                            "you_saw_plural": "You saw",
+                            "they_saw": "They saw",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_see": "I will see",
+                            "you_will_see_singular": "You will see",
+                            "he_she_it_will_see": "He/She/It will see",
+                            "we_will_see": "We will see",
+                            "you_will_see_plural": "You will see",
+                            "they_will_see": "They will see",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_do": [
+                {
+                    "word": "to do",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_do": "I do",
+                            "you_do_singular": "You do",
+                            "he_she_it_does": "He/She/It does",
+                            "we_do": "We do",
+                            "you_do_plural": "You do",
+                            "they_do": "They do",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_did": "I did",
+                            "you_did_singular": "You did",
+                            "he_she_it_did": "He/She/It did",
+                            "we_did": "We did",
+                            "you_did_plural": "You did",
+                            "they_did": "They did",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_do": "I will do",
+                            "you_will_do_singular": "You will do",
+                            "he_she_it_will_do": "He/She/It will do",
+                            "we_will_do": "We will do",
+                            "you_will_do_plural": "You will do",
+                            "they_will_do": "They will do",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_drive": [
+                {
+                    "word": "to drive",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_drive": "I drive",
+                            "you_drive_singular": "You drive",
+                            "he_she_it_drives": "He/She/It drives",
+                            "we_drive": "We drive",
+                            "you_drive_plural": "You drive",
+                            "they_drive": "They drive",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_drove": "I drove",
+                            "you_drove_singular": "You drove",
+                            "he_she_it_drove": "He/She/It drove",
+                            "we_drove": "We drove",
+                            "you_drove_plural": "You drove",
+                            "they_drove": "They drove",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_drive": "I will drive",
+                            "you_will_drive_singular": "You will drive",
+                            "he_she_it_will_drive": "He/She/It will drive",
+                            "we_will_drive": "We will drive",
+                            "you_will_drive_plural": "You will drive",
+                            "they_will_drive": "They will drive",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_speak": [
+                {
+                    "word": "to speak",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_speak": "I speak",
+                            "you_speak_singular": "You speak",
+                            "he_she_it_speaks": "He/She/It speaks",
+                            "we_speak": "We speak",
+                            "you_speak_plural": "You speak",
+                            "they_speak": "They speak",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_spoke": "I spoke",
+                            "you_spoke_singular": "You spoke",
+                            "he_she_it_spoke": "He/She/It spoke",
+                            "we_spoke": "We spoke",
+                            "you_spoke_plural": "You spoke",
+                            "they_spoke": "They spoke",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_speak": "I will speak",
+                            "you_will_speak_singular": "You will speak",
+                            "he_she_it_will_speak": "He/She/It will speak",
+                            "we_will_speak": "We will speak",
+                            "you_will_speak_plural": "You will speak",
+                            "they_will_speak": "They will speak",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_read": [
+                {
+                    "word": "to read",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_read": "I read",
+                            "you_read_singular": "You read",
+                            "he_she_it_reads": "He/She/It reads",
+                            "we_read": "We read",
+                            "you_read_plural": "You read",
+                            "they_read": "They read",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_read_past": "I read",
+                            "you_read_past_singular": "You read",
+                            "he_she_it_read_past": "He/She/It read",
+                            "we_read_past": "We read",
+                            "you_read_past_plural": "You read",
+                            "they_read_past": "They read",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_read": "I will read",
+                            "you_will_read_singular": "You will read",
+                            "he_she_it_will_read": "He/She/It will read",
+                            "we_will_read": "We will read",
+                            "you_will_read_plural": "You will read",
+                            "they_will_read": "They will read",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "B1": {
+            "to_know": [
+                {
+                    "word": "to know",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_know": "I know",
+                            "you_know_singular": "You know",
+                            "he_she_it_knows": "He/She/It knows",
+                            "we_know": "We know",
+                            "you_know_plural": "You know",
+                            "they_know": "They know",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_knew": "I knew",
+                            "you_knew_singular": "You knew",
+                            "he_she_it_knew": "He/She/It knew",
+                            "we_knew": "We knew",
+                            "you_knew_plural": "You knew",
+                            "they_knew": "They knew",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_know": "I will know",
+                            "you_will_know_singular": "You will know",
+                            "he_she_it_will_know": "He/She/It will know",
+                            "we_will_know": "We will know",
+                            "you_will_know_plural": "You will know",
+                            "they_will_know": "They will know",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_understand": [
+                {
+                    "word": "to understand",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_understand": "I understand",
+                            "you_understand_singular": "You understand",
+                            "he_she_it_understands": "He/She/It understands",
+                            "we_understand": "We understand",
+                            "you_understand_plural": "You understand",
+                            "they_understand": "They understand",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_understood": "I understood",
+                            "you_understood_singular": "You understood",
+                            "he_she_it_understood": "He/She/It understood",
+                            "we_understood": "We understood",
+                            "you_understood_plural": "You understood",
+                            "they_understood": "They understood",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_understand": "I will understand",
+                            "you_will_understand_singular": "You will understand",
+                            "he_she_it_will_understand": "He/She/It will understand",
+                            "we_will_understand": "We will understand",
+                            "you_will_understand_plural": "You will understand",
+                            "they_will_understand": "They will understand",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_work": [
+                {
+                    "word": "to work",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_work": "I work",
+                            "you_work_singular": "You work",
+                            "he_she_it_works": "He/She/It works",
+                            "we_work": "We work",
+                            "you_work_plural": "You work",
+                            "they_work": "They work",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_worked": "I worked",
+                            "you_worked_singular": "You worked",
+                            "he_she_it_worked": "He/She/It worked",
+                            "we_worked": "We worked",
+                            "you_worked_plural": "You worked",
+                            "they_worked": "They worked",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_work": "I will work",
+                            "you_will_work_singular": "You will work",
+                            "he_she_it_will_work": "He/She/It will work",
+                            "we_will_work": "We will work",
+                            "you_will_work_plural": "You will work",
+                            "they_will_work": "They will work",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_learn": [
+                {
+                    "word": "to learn",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_learn": "I learn",
+                            "you_learn_singular": "You learn",
+                            "he_she_it_learns": "He/She/It learns",
+                            "we_learn": "We learn",
+                            "you_learn_plural": "You learn",
+                            "they_learn": "They learn",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_learned": "I learned",
+                            "you_learned_singular": "You learned",
+                            "he_she_it_learned": "He/She/It learned",
+                            "we_learned": "We learned",
+                            "you_learned_plural": "You learned",
+                            "they_learned": "They learned",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_learn": "I will learn",
+                            "you_will_learn_singular": "You will learn",
+                            "he_she_it_will_learn": "He/She/It will learn",
+                            "we_will_learn": "We will learn",
+                            "you_will_learn_plural": "You will learn",
+                            "they_will_learn": "They will learn",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_compare": [
+                {
+                    "word": "to compare",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_compare": "I compare",
+                            "you_compare_singular": "You compare",
+                            "he_she_it_compares": "He/She/It compares",
+                            "we_compare": "We compare",
+                            "you_compare_plural": "You compare",
+                            "they_compare": "They compare",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_compared": "I compared",
+                            "you_compared_singular": "You compared",
+                            "he_she_it_compared": "He/She/It compared",
+                            "we_compared": "We compared",
+                            "you_compared_plural": "You compared",
+                            "they_compared": "They compared",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_compare": "I will compare",
+                            "you_will_compare_singular": "You will compare",
+                            "he_she_it_will_compare": "He/She/It will compare",
+                            "we_will_compare": "We will compare",
+                            "you_will_compare_plural": "You will compare",
+                            "they_will_compare": "They will compare",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "B2": {
+            "to_come": [
+                {
+                    "word": "to come",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_come": "I come",
+                            "you_come_singular": "You come",
+                            "he_she_it_comes": "He/She/It comes",
+                            "we_come": "We come",
+                            "you_come_plural": "You come",
+                            "they_come": "They come",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_came": "I came",
+                            "you_came_singular": "You came",
+                            "he_she_it_came": "He/She/It came",
+                            "we_came": "We came",
+                            "you_came_plural": "You came",
+                            "they_came": "They came",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_come": "I will come",
+                            "you_will_come_singular": "You will come",
+                            "he_she_it_will_come": "He/She/It will come",
+                            "we_will_come": "We will come",
+                            "you_will_come_plural": "You will come",
+                            "they_will_come": "They will come",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_ask": [
+                {
+                    "word": "to ask",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_ask": "I ask",
+                            "you_ask_singular": "You ask",
+                            "he_she_it_asks": "He/She/It asks",
+                            "we_ask": "We ask",
+                            "you_ask_plural": "You ask",
+                            "they_ask": "They ask",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_asked": "I asked",
+                            "you_asked_singular": "You asked",
+                            "he_she_it_asked": "He/She/It asked",
+                            "we_asked": "We asked",
+                            "you_asked_plural": "You asked",
+                            "they_asked": "They asked",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_ask": "I will ask",
+                            "you_will_ask_singular": "You will ask",
+                            "he_she_it_will_ask": "He/She/It will ask",
+                            "we_will_ask": "We will ask",
+                            "you_will_ask_plural": "You will ask",
+                            "they_will_ask": "They will ask",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_buy": [
+                {
+                    "word": "to buy",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_buy": "I buy",
+                            "you_buy_singular": "You buy",
+                            "he_she_it_buys": "He/She/It buys",
+                            "we_buy": "We buy",
+                            "you_buy_plural": "You buy",
+                            "they_buy": "They buy",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_bought": "I bought",
+                            "you_bought_singular": "You bought",
+                            "he_she_it_bought": "He/She/It bought",
+                            "we_bought": "We bought",
+                            "you_bought_plural": "You bought",
+                            "they_bought": "They bought",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_buy": "I will buy",
+                            "you_will_buy_singular": "You will buy",
+                            "he_she_it_will_buy": "He/She/It will buy",
+                            "we_will_buy": "We will buy",
+                            "you_will_buy_plural": "You will buy",
+                            "they_will_buy": "They will buy",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_find": [
+                {
+                    "word": "to find",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_find": "I find",
+                            "you_find_singular": "You find",
+                            "he_she_it_finds": "He/She/It finds",
+                            "we_find": "We find",
+                            "you_find_plural": "You find",
+                            "they_find": "They find",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_found": "I found",
+                            "you_found_singular": "You found",
+                            "he_she_it_found": "He/She/It found",
+                            "we_found": "We found",
+                            "you_found_plural": "You found",
+                            "they_found": "They found",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_find": "I will find",
+                            "you_will_find_singular": "You will find",
+                            "he_she_it_will_find": "He/She/It will find",
+                            "we_will_find": "We will find",
+                            "you_will_find_plural": "You will find",
+                            "they_will_find": "They will find",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_tell": [
+                {
+                    "word": "to tell",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_tell": "I tell",
+                            "you_tell_singular": "You tell",
+                            "he_she_it_tells": "He/She/It tells",
+                            "we_tell": "We tell",
+                            "you_tell_plural": "You tell",
+                            "they_tell": "They tell",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_told": "I told",
+                            "you_told_singular": "You told",
+                            "he_she_it_told": "He/She/It told",
+                            "we_told": "We told",
+                            "you_told_plural": "You told",
+                            "they_told": "They told",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_tell": "I will tell",
+                            "you_will_tell_singular": "You will tell",
+                            "he_she_it_will_tell": "He/She/It will tell",
+                            "we_will_tell": "We will tell",
+                            "you_will_tell_plural": "You will tell",
+                            "they_will_tell": "They will tell",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "C1": {
+            "to_achieve": [
+                {
+                    "word": "to achieve",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_achieve": "I achieve",
+                            "you_achieve_singular": "You achieve",
+                            "he_she_it_achieves": "He/She/It achieves",
+                            "we_achieve": "We achieve",
+                            "you_achieve_plural": "You achieve",
+                            "they_achieve": "They achieve",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_achieved": "I achieved",
+                            "you_achieved_singular": "You achieved",
+                            "he_she_it_achieved": "He/She/It achieved",
+                            "we_achieved": "We achieved",
+                            "you_achieved_plural": "You achieved",
+                            "they_achieved": "They achieved",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_achieve": "I will achieve",
+                            "you_will_achieve_singular": "You will achieve",
+                            "he_she_it_will_achieve": "He/She/It will achieve",
+                            "we_will_achieve": "We will achieve",
+                            "you_will_achieve_plural": "You will achieve",
+                            "they_will_achieve": "They will achieve",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_avoid": [
+                {
+                    "word": "to avoid",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_avoid": "I avoid",
+                            "you_avoid_singular": "You avoid",
+                            "he_she_it_avoids": "He/She/It avoids",
+                            "we_avoid": "We avoid",
+                            "you_avoid_plural": "You avoid",
+                            "they_avoid": "They avoid",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_avoided": "I avoided",
+                            "you_avoided_singular": "You avoided",
+                            "he_she_it_avoided": "He/She/It avoided",
+                            "we_avoided": "We avoided",
+                            "you_avoided_plural": "You avoided",
+                            "they_avoided": "They avoided",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_avoid": "I will avoid",
+                            "you_will_avoid_singular": "You will avoid",
+                            "he_she_it_will_avoid": "He/She/It will avoid",
+                            "we_will_avoid": "We will avoid",
+                            "you_will_avoid_plural": "You will avoid",
+                            "they_will_avoid": "They will avoid",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_demand": [
+                {
+                    "word": "to demand",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_demand": "I demand",
+                            "you_demand_singular": "You demand",
+                            "he_she_it_demands": "He/She/It demands",
+                            "we_demand": "We demand",
+                            "you_demand_plural": "You demand",
+                            "they_demand": "They demand",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_demanded": "I demanded",
+                            "you_demanded_singular": "You demanded",
+                            "he_she_it_demanded": "He/She/It demanded",
+                            "we_demanded": "We demanded",
+                            "you_demanded_plural": "You demanded",
+                            "they_demanded": "They demanded",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_demand": "I will demand",
+                            "you_will_demand_singular": "You will demand",
+                            "he_she_it_will_demand": "He/She/It will demand",
+                            "we_will_demand": "We will demand",
+                            "you_will_demand_plural": "You will demand",
+                            "they_will_demand": "They will demand",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_persuade": [
+                {
+                    "word": "to persuade",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_persuade": "I persuade",
+                            "you_persuade_singular": "You persuade",
+                            "he_she_it_persuades": "He/She/It persuades",
+                            "we_persuade": "We persuade",
+                            "you_persuade_plural": "You persuade",
+                            "they_persuade": "They persuade",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_persuaded": "I persuaded",
+                            "you_persuaded_singular": "You persuaded",
+                            "he_she_it_persuaded": "He/She/It persuaded",
+                            "we_persuaded": "We persuaded",
+                            "you_persuaded_plural": "You persuaded",
+                            "they_persuaded": "They persuaded",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_persuade": "I will persuade",
+                            "you_will_persuade_singular": "You will persuade",
+                            "he_she_it_will_persuade": "He/She/It will persuade",
+                            "we_will_persuade": "We will persuade",
+                            "you_will_persuade_plural": "You will persuade",
+                            "they_will_persuade": "They will persuade",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_negociate": [
+                {
+                    "word": "to negotiate",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_negociate": "I negotiate",
+                            "you_negociate_singular": "You negotiate",
+                            "he_she_it_negociates": "He/She/It negotiates",
+                            "we_negociate": "We negotiate",
+                            "you_negociate_plural": "You negotiate",
+                            "they_negociate": "They negotiate",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_negociated": "I negotiated",
+                            "you_negociated_singular": "You negotiated",
+                            "he_she_it_negociated": "He/She/It negotiated",
+                            "we_negociated": "We negotiated",
+                            "you_negociated_plural": "You negotiated",
+                            "they_negociated": "They negotiated",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_negociate": "I will negotiate",
+                            "you_will_negociate_singular": "You will negotiate",
+                            "he_she_it_will_negociate": "He/She/It will negotiate",
+                            "we_will_negociate": "We will negotiate",
+                            "you_will_negociate_plural": "You will negotiate",
+                            "they_will_negociate": "They will negotiate",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "C2": {
+            "to_master": [
+                {
+                    "word": "to master",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_master": "I master",
+                            "you_master_singular": "You master",
+                            "he_she_it_masters": "He/She/It masters",
+                            "we_master": "We master",
+                            "you_master_plural": "You master",
+                            "they_master": "They master",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_mastered": "I mastered",
+                            "you_mastered_singular": "You mastered",
+                            "he_she_it_mastered": "He/She/It mastered",
+                            "we_mastered": "We mastered",
+                            "you_mastered_plural": "You mastered",
+                            "they_mastered": "They mastered",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_master": "I will master",
+                            "you_will_master_singular": "You will master",
+                            "he_she_it_will_master": "He/She/It will master",
+                            "we_will_master": "We will master",
+                            "you_will_master_plural": "You will master",
+                            "they_will_master": "They will master",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_compete": [
+                {
+                    "word": "to compete",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_compete": "I compete",
+                            "you_compete_singular": "You compete",
+                            "he_she_it_competes": "He/She/It competes",
+                            "we_compete": "We compete",
+                            "you_compete_plural": "You compete",
+                            "they_compete": "They compete",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_competed": "I competed",
+                            "you_competed_singular": "You competed",
+                            "he_she_it_competed": "He/She/It competed",
+                            "we_competed": "We competed",
+                            "you_competed_plural": "You competed",
+                            "they_competed": "They competed",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_compete": "I will compete",
+                            "you_will_compete_singular": "You will compete",
+                            "he_she_it_will_compete": "He/She/It will compete",
+                            "we_will_compete": "We will compete",
+                            "you_will_compete_plural": "You will compete",
+                            "they_will_compete": "They will compete",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_design": [
+                {
+                    "word": "to design",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_design": "I design",
+                            "you_design_singular": "You design",
+                            "he_she_it_designs": "He/She/It designs",
+                            "we_design": "We design",
+                            "you_design_plural": "You design",
+                            "they_design": "They design",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_designed": "I designed",
+                            "you_designed_singular": "You designed",
+                            "he_she_it_designed": "He/She/It designed",
+                            "we_designed": "We designed",
+                            "you_designed_plural": "You designed",
+                            "they_designed": "They designed",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_design": "I will design",
+                            "you_will_design_singular": "You will design",
+                            "he_she_it_will_design": "He/She/It will design",
+                            "we_will_design": "We will design",
+                            "you_will_design_plural": "You will design",
+                            "they_will_design": "They will design",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_invent": [
+                {
+                    "word": "to invent",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_invent": "I invent",
+                            "you_invent_singular": "You invent",
+                            "he_she_it_invents": "He/She/It invents",
+                            "we_invent": "We invent",
+                            "you_invent_plural": "You invent",
+                            "they_invent": "They invent",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_invented": "I invented",
+                            "you_invented_singular": "You invented",
+                            "he_she_it_invented": "He/She/It invented",
+                            "we_invented": "We invented",
+                            "you_invented_plural": "You invented",
+                            "they_invented": "They invented",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_invent": "I will invent",
+                            "you_will_invent_singular": "You will invent",
+                            "he_she_it_will_invent": "He/She/It will invent",
+                            "we_will_invent": "We will invent",
+                            "you_will_invent_plural": "You will invent",
+                            "they_will_invent": "They will invent",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_say_goodbye": [
+                {
+                    "word": "to say goodbye",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_say_goodbye": "I say goodbye",
+                            "you_say_goodbye_singular": "You say goodbye",
+                            "he_she_it_says_goodbye": "He/She/It says goodbye",
+                            "we_say_goodbye": "We say goodbye",
+                            "you_say_goodbye_plural": "You say goodbye",
+                            "they_say_goodbye": "They say goodbye",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_said_goodbye": "I said goodbye",
+                            "you_said_goodbye_singular": "You said goodbye",
+                            "he_she_it_said_goodbye": "He/She/It said goodbye",
+                            "we_said_goodbye": "We said goodbye",
+                            "you_said_goodbye_plural": "You said goodbye",
+                            "they_said_goodbye": "They said goodbye",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_say_goodbye": "I will say goodbye",
+                            "you_will_say_goodbye_singular": "You will say goodbye",
+                            "he_she_it_will_say_goodbye": "He/She/It will say goodbye",
+                            "we_will_say_goodbye": "We will say goodbye",
+                            "you_will_say_goodbye_plural": "You will say goodbye",
+                            "they_will_say_goodbye": "They will say goodbye",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

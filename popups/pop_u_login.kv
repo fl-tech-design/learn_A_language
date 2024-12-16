@@ -1,0 +1,37 @@
+<Pop_Login@Popup>:
+    auto_dismiss: False
+    size_hint: (0.8, 0.5)
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.DIR_FONTS + "cmunobx.ttf"
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxUnlined:
+        id: box
+        orientation: 'vertical'
+        padding: [2, 2]  # Extra padding for the box layout
+        spacing: 4
+        BoxLined_1:
+            orientation: 'vertical'
+            spacing: 5
+            ButClear:
+                id: but_u_0
+                on_release: root._userbut_release(self)
+            ButClear:
+                id: but_u_1
+                on_release: root._userbut_release(self)
+            ButClear:
+                id: but_u_2
+                on_release: root._userbut_release(self)
+        
+            
+        BoxLined_2:
+            orientation: 'vertical'
+            size_hint_y: 0.25
+            padding: 0
+            BoxLined_2:
+                ButClear:
+                    id: but_quit
+                    on_release: app._app_stop()
+                    

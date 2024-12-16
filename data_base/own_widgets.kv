@@ -13,6 +13,26 @@
             pos: self.pos
     id: box_col_1
     
+# Definiere BoxCol_1 mit einer Hintergrundfarbe
+<BoxCol_1@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: app.color2
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    id: box_col_2
+
+# Definiere BoxCol_1 mit einer Hintergrundfarbe
+<BoxCol_2@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: app.color3
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    id: box_col_3
+    
 # Definiere BoxLined_1 mit einer Rahmenfarbe
 <BoxLined_1@BoxLayout>:
     canvas.before:

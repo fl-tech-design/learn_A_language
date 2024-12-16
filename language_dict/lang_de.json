@@ -1,0 +1,1186 @@
+{
+    "verbs": {
+        "A1": {
+            "to_be": [
+                {
+                    "word": "sein",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_am": "Ich bin",
+                            "you_are_singular": "Du bist",
+                            "he_she_it_is": "Er/Sie/Es ist",
+                            "we_are": "Wir sind",
+                            "you_are_plural": "Ihr seid",
+                            "they_are": "Sie sind",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_was": "Ich war",
+                            "you_were_singular": "Du warst",
+                            "he_she_it_was": "Er/Sie/Es war",
+                            "we_were": "Wir waren",
+                            "you_were_plural": "Ihr wart",
+                            "they_were": "Sie waren",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_be": "Ich werde sein",
+                            "you_will_be_singular": "Du wirst sein",
+                            "he_she_it_will_be": "Er/Sie/Es wird sein",
+                            "we_will_be": "Wir werden sein",
+                            "you_will_be_plural": "Ihr werdet sein",
+                            "they_will_be": "Sie werden sein",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_have": [
+                {
+                    "word": "haben",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_have": "Ich habe",
+                            "you_have_singular": "Du hast",
+                            "he_she_it_has": "Er/Sie/Es hat",
+                            "we_have": "Wir haben",
+                            "you_have_plural": "Ihr habt",
+                            "they_have": "Sie haben",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_had": "Ich hatte",
+                            "you_had_singular": "Du hattest",
+                            "he_she_it_had": "Er/Sie/Es hatte",
+                            "we_had": "Wir hatten",
+                            "you_had_plural": "Ihr hattet",
+                            "they_had": "Sie hatten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_have": "Ich werde haben",
+                            "you_will_have_singular": "Du wirst haben",
+                            "he_she_it_will_have": "Er/Sie/Es wird haben",
+                            "we_will_have": "Wir werden haben",
+                            "you_will_have_plural": "Ihr werdet haben",
+                            "they_will_have": "Sie werden haben",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_go": [
+                {
+                    "word": "gehen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_go": "Ich gehe",
+                            "you_go_singular": "Du gehst",
+                            "he_she_it_goes": "Er/Sie/Es geht",
+                            "we_go": "Wir gehen",
+                            "you_go_plural": "Ihr geht",
+                            "they_go": "Sie gehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_went": "Ich ging",
+                            "you_went_singular": "Du gingst",
+                            "he_she_it_went": "Er/Sie/Es ging",
+                            "we_went": "Wir gingen",
+                            "you_went_plural": "Ihr gingt",
+                            "they_went": "Sie gingen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_go": "Ich werde gehen",
+                            "you_will_go_singular": "Du wirst gehen",
+                            "he_she_it_will_go": "Er/Sie/Es wird gehen",
+                            "we_will_go": "Wir werden gehen",
+                            "you_will_go_plural": "Ihr werdet gehen",
+                            "they_will_go": "Sie werden gehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_eat": [
+                {
+                    "word": "essen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_eat": "Ich esse",
+                            "you_eat_singular": "Du isst",
+                            "he_she_it_eats": "Er/Sie/Es isst",
+                            "we_eat": "Wir essen",
+                            "you_eat_plural": "Ihr esst",
+                            "they_eat": "Sie essen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_ate": "Ich aß",
+                            "you_ate_singular": "Du aßest",
+                            "he_she_it_ate": "Er/Sie/Es aß",
+                            "we_ate": "Wir aßen",
+                            "you_ate_plural": "Ihr aßt",
+                            "they_ate": "Sie aßen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_eat": "Ich werde essen",
+                            "you_will_eat_singular": "Du wirst essen",
+                            "he_she_it_will_eat": "Er/Sie/Es wird essen",
+                            "we_will_eat": "Wir werden essen",
+                            "you_will_eat_plural": "Ihr werdet essen",
+                            "they_will_eat": "Sie werden essen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_drink": [
+                {
+                    "word": "trinken",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_drink": "Ich trinke",
+                            "you_drink_singular": "Du trinkst",
+                            "he_she_it_drinks": "Er/Sie/Es trinkt",
+                            "we_drink": "Wir trinken",
+                            "you_drink_plural": "Ihr trinkt",
+                            "they_drink": "Sie trinken",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_drank": "Ich trank",
+                            "you_drank_singular": "Du trankst",
+                            "he_she_it_drank": "Er/Sie/Es trank",
+                            "we_drank": "Wir tranken",
+                            "you_drank_plural": "Ihr trankt",
+                            "they_drank": "Sie tranken",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_drink": "Ich werde trinken",
+                            "you_will_drink_singular": "Du wirst trinken",
+                            "he_she_it_will_drink": "Er/Sie/Es wird trinken",
+                            "we_will_drink": "Wir werden trinken",
+                            "you_will_drink_plural": "Ihr werdet trinken",
+                            "they_will_drink": "Sie werden trinken",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "to_see": [
+                {
+                    "word": "sehen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_see": "Ich sehe",
+                            "you_see_singular": "Du siehst",
+                            "he_she_it_sees": "Er/Sie/Es sieht",
+                            "we_see": "Wir sehen",
+                            "you_see_plural": "Ihr seht",
+                            "they_see": "Sie sehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_saw": "Ich sah",
+                            "you_saw_singular": "Du sahst",
+                            "he_she_it_saw": "Er/Sie/Es sah",
+                            "we_saw": "Wir sahen",
+                            "you_saw_plural": "Ihr saht",
+                            "they_saw": "Sie sahen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_see": "Ich werde sehen",
+                            "you_will_see_singular": "Du wirst sehen",
+                            "he_she_it_will_see": "Er/Sie/Es wird sehen",
+                            "we_will_see": "Wir werden sehen",
+                            "you_will_see_plural": "Ihr werdet sehen",
+                            "they_will_see": "Sie werden sehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_do": [
+                {
+                    "word": "tun",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_do": "Ich tue",
+                            "you_do_singular": "Du tust",
+                            "he_she_it_does": "Er/Sie/Es tut",
+                            "we_do": "Wir tun",
+                            "you_do_plural": "Ihr tut",
+                            "they_do": "Sie tun",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_did": "Ich tat",
+                            "you_did_singular": "Du tatst",
+                            "he_she_it_did": "Er/Sie/Es tat",
+                            "we_did": "Wir taten",
+                            "you_did_plural": "Ihr tatet",
+                            "they_did": "Sie taten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_do": "Ich werde tun",
+                            "you_will_do_singular": "Du wirst tun",
+                            "he_she_it_will_do": "Er/Sie/Es wird tun",
+                            "we_will_do": "Wir werden tun",
+                            "you_will_do_plural": "Ihr werdet tun",
+                            "they_will_do": "Sie werden tun",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_drive": [
+                {
+                    "word": "fahren",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_drive": "Ich fahre",
+                            "you_drive_singular": "Du fährst",
+                            "he_she_it_drives": "Er/Sie/Es fährt",
+                            "we_drive": "Wir fahren",
+                            "you_drive_plural": "Ihr fahrt",
+                            "they_drive": "Sie fahren",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_drove": "Ich fuhr",
+                            "you_drove_singular": "Du fuhrst",
+                            "he_she_it_drove": "Er/Sie/Es fuhr",
+                            "we_drove": "Wir fuhren",
+                            "you_drove_plural": "Ihr fuhrt",
+                            "they_drove": "Sie fuhren",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_drive": "Ich werde fahren",
+                            "you_will_drive_singular": "Du wirst fahren",
+                            "he_she_it_will_drive": "Er/Sie/Es wird fahren",
+                            "we_will_drive": "Wir werden fahren",
+                            "you_will_drive_plural": "Ihr werdet fahren",
+                            "they_will_drive": "Sie werden fahren",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_speak": [
+                {
+                    "word": "sprechen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_speak": "Ich spreche",
+                            "you_speak_singular": "Du sprichst",
+                            "he_she_it_speaks": "Er/Sie/Es spricht",
+                            "we_speak": "Wir sprechen",
+                            "you_speak_plural": "Ihr sprecht",
+                            "they_speak": "Sie sprechen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_spoke": "Ich sprach",
+                            "you_spoke_singular": "Du sprachst",
+                            "he_she_it_spoke": "Er/Sie/Es sprach",
+                            "we_spoke": "Wir sprachen",
+                            "you_spoke_plural": "Ihr spracht",
+                            "they_spoke": "Sie sprachen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_speak": "Ich werde sprechen",
+                            "you_will_speak_singular": "Du wirst sprechen",
+                            "he_she_it_will_speak": "Er/Sie/Es wird sprechen",
+                            "we_will_speak": "Wir werden sprechen",
+                            "you_will_speak_plural": "Ihr werdet sprechen",
+                            "they_will_speak": "Sie werden sprechen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_read": [
+                {
+                    "word": "lesen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_read": "Ich lese",
+                            "you_read_singular": "Du liest",
+                            "he_she_it_reads": "Er/Sie/Es liest",
+                            "we_read": "Wir lesen",
+                            "you_read_plural": "Ihr lest",
+                            "they_read": "Sie lesen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_read_past": "Ich las",
+                            "you_read_past_singular": "Du last",
+                            "he_she_it_read_past": "Er/Sie/Es las",
+                            "we_read_past": "Wir lasen",
+                            "you_read_past_plural": "Ihr last",
+                            "they_read_past": "Sie lasen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_read": "Ich werde lesen",
+                            "you_will_read_singular": "Du wirst lesen",
+                            "he_she_it_will_read": "Er/Sie/Es wird lesen",
+                            "we_will_read": "Wir werden lesen",
+                            "you_will_read_plural": "Ihr werdet lesen",
+                            "they_will_read": "Sie werden lesen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "B1": {
+            "to_know": [
+                {
+                    "word": "wissen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_know": "Ich weiß",
+                            "you_know_singular": "Du weißt",
+                            "he_she_it_knows": "Er/Sie/Es weiß",
+                            "we_know": "Wir wissen",
+                            "you_know_plural": "Ihr wisst",
+                            "they_know": "Sie wissen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_knew": "Ich wusste",
+                            "you_knew_singular": "Du wusstest",
+                            "he_she_it_knew": "Er/Sie/Es wusste",
+                            "we_knew": "Wir wussten",
+                            "you_knew_plural": "Ihr wusstet",
+                            "they_knew": "Sie wussten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_know": "Ich werde wissen",
+                            "you_will_know_singular": "Du wirst wissen",
+                            "he_she_it_will_know": "Er/Sie/Es wird wissen",
+                            "we_will_know": "Wir werden wissen",
+                            "you_will_know_plural": "Ihr werdet wissen",
+                            "they_will_know": "Sie werden wissen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_understand": [
+                {
+                    "word": "verstehen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_understand": "Ich verstehe",
+                            "you_understand_singular": "Du verstehst",
+                            "he_she_it_understands": "Er/Sie/Es versteht",
+                            "we_understand": "Wir verstehen",
+                            "you_understand_plural": "Ihr versteht",
+                            "they_understand": "Sie verstehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_understood": "Ich verstand",
+                            "you_understood_singular": "Du verstandest",
+                            "he_she_it_understood": "Er/Sie/Es verstand",
+                            "we_understood": "Wir verstanden",
+                            "you_understood_plural": "Ihr verstandet",
+                            "they_understood": "Sie verstanden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_understand": "Ich werde verstehen",
+                            "you_will_understand_singular": "Du wirst verstehen",
+                            "he_she_it_will_understand": "Er/Sie/Es wird verstehen",
+                            "we_will_understand": "Wir werden verstehen",
+                            "you_will_understand_plural": "Ihr werdet verstehen",
+                            "they_will_understand": "Sie werden verstehen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_work": [
+                {
+                    "word": "arbeiten",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_work": "Ich arbeite",
+                            "you_work_singular": "Du arbeitest",
+                            "he_she_it_works": "Er/Sie/Es arbeitet",
+                            "we_work": "Wir arbeiten",
+                            "you_work_plural": "Ihr arbeitet",
+                            "they_work": "Sie arbeiten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_worked": "Ich arbeitete",
+                            "you_worked_singular": "Du arbeitetest",
+                            "he_she_it_worked": "Er/Sie/Es arbeitete",
+                            "we_worked": "Wir arbeiteten",
+                            "you_worked_plural": "Ihr arbeitetet",
+                            "they_worked": "Sie arbeiteten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_work": "Ich werde arbeiten",
+                            "you_will_work_singular": "Du wirst arbeiten",
+                            "he_she_it_will_work": "Er/Sie/Es wird arbeiten",
+                            "we_will_work": "Wir werden arbeiten",
+                            "you_will_work_plural": "Ihr werdet arbeiten",
+                            "they_will_work": "Sie werden arbeiten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_learn": [
+                {
+                    "word": "lernen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_learn": "Ich lerne",
+                            "you_learn_singular": "Du lernst",
+                            "he_she_it_learns": "Er/Sie/Es lernt",
+                            "we_learn": "Wir lernen",
+                            "you_learn_plural": "Ihr lernt",
+                            "they_learn": "Sie lernen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_learned": "Ich lernte",
+                            "you_learned_singular": "Du lerntest",
+                            "he_she_it_learned": "Er/Sie/Es lernte",
+                            "we_learned": "Wir lernten",
+                            "you_learned_plural": "Ihr lerntet",
+                            "they_learned": "Sie lernten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_learn": "Ich werde lernen",
+                            "you_will_learn_singular": "Du wirst lernen",
+                            "he_she_it_will_learn": "Er/Sie/Es wird lernen",
+                            "we_will_learn": "Wir werden lernen",
+                            "you_will_learn_plural": "Ihr werdet lernen",
+                            "they_will_learn": "Sie werden lernen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_compare": [
+                {
+                    "word": "vergleichen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_compare": "Ich vergleiche",
+                            "you_compare_singular": "Du vergleichst",
+                            "he_she_it_compares": "Er/Sie/Es vergleicht",
+                            "we_compare": "Wir vergleichen",
+                            "you_compare_plural": "Ihr vergleicht",
+                            "they_compare": "Sie vergleichen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_compared": "Ich verglich",
+                            "you_compared_singular": "Du verglichst",
+                            "he_she_it_compared": "Er/Sie/Es verglich",
+                            "we_compared": "Wir verglichen",
+                            "you_compared_plural": "Ihr verglicht",
+                            "they_compared": "Sie verglichen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_compare": "Ich werde vergleichen",
+                            "you_will_compare_singular": "Du wirst vergleichen",
+                            "he_she_it_will_compare": "Er/Sie/Es wird vergleichen",
+                            "we_will_compare": "Wir werden vergleichen",
+                            "you_will_compare_plural": "Ihr werdet vergleichen",
+                            "they_will_compare": "Sie werden vergleichen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "B2": {
+            "to_come": [
+                {
+                    "word": "kommen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_come": "Ich komme",
+                            "you_come_singular": "Du kommst",
+                            "he_she_it_comes": "Er/Sie/Es kommt",
+                            "we_come": "Wir kommen",
+                            "you_come_plural": "Ihr kommt",
+                            "they_come": "Sie kommen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_came": "Ich kam",
+                            "you_came_singular": "Du kamst",
+                            "he_she_it_came": "Er/Sie/Es kam",
+                            "we_came": "Wir kamen",
+                            "you_came_plural": "Ihr kamt",
+                            "they_came": "Sie kamen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_come": "Ich werde kommen",
+                            "you_will_come_singular": "Du wirst kommen",
+                            "he_she_it_will_come": "Er/Sie/Es wird kommen",
+                            "we_will_come": "Wir werden kommen",
+                            "you_will_come_plural": "Ihr werdet kommen",
+                            "they_will_come": "Sie werden kommen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_ask": [
+                {
+                    "word": "fragen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_ask": "Ich frage",
+                            "you_ask_singular": "Du fragst",
+                            "he_she_it_asks": "Er/Sie/Es fragt",
+                            "we_ask": "Wir fragen",
+                            "you_ask_plural": "Ihr fragt",
+                            "they_ask": "Sie fragen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_asked": "Ich fragte",
+                            "you_asked_singular": "Du fragtest",
+                            "he_she_it_asked": "Er/Sie/Es fragte",
+                            "we_asked": "Wir fragten",
+                            "you_asked_plural": "Ihr fragtet",
+                            "they_asked": "Sie fragten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_ask": "Ich werde fragen",
+                            "you_will_ask_singular": "Du wirst fragen",
+                            "he_she_it_will_ask": "Er/Sie/Es wird fragen",
+                            "we_will_ask": "Wir werden fragen",
+                            "you_will_ask_plural": "Ihr werdet fragen",
+                            "they_will_ask": "Sie werden fragen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_buy": [
+                {
+                    "word": "kaufen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_buy": "Ich kaufe",
+                            "you_buy_singular": "Du kaufst",
+                            "he_she_it_buys": "Er/Sie/Es kauft",
+                            "we_buy": "Wir kaufen",
+                            "you_buy_plural": "Ihr kauft",
+                            "they_buy": "Sie kaufen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_bought": "Ich kaufte",
+                            "you_bought_singular": "Du kauftest",
+                            "he_she_it_bought": "Er/Sie/Es kaufte",
+                            "we_bought": "Wir kauften",
+                            "you_bought_plural": "Ihr kauftet",
+                            "they_bought": "Sie kauften",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_buy": "Ich werde kaufen",
+                            "you_will_buy_singular": "Du wirst kaufen",
+                            "he_she_it_will_buy": "Er/Sie/Es wird kaufen",
+                            "we_will_buy": "Wir werden kaufen",
+                            "you_will_buy_plural": "Ihr werdet kaufen",
+                            "they_will_buy": "Sie werden kaufen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_find": [
+                {
+                    "word": "finden",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_find": "Ich finde",
+                            "you_find_singular": "Du findest",
+                            "he_she_it_finds": "Er/Sie/Es findet",
+                            "we_find": "Wir finden",
+                            "you_find_plural": "Ihr findet",
+                            "they_find": "Sie finden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_found": "Ich fand",
+                            "you_found_singular": "Du fandst",
+                            "he_she_it_found": "Er/Sie/Es fand",
+                            "we_found": "Wir fanden",
+                            "you_found_plural": "Ihr fandet",
+                            "they_found": "Sie fanden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_find": "Ich werde finden",
+                            "you_will_find_singular": "Du wirst finden",
+                            "he_she_it_will_find": "Er/Sie/Es wird finden",
+                            "we_will_find": "Wir werden finden",
+                            "you_will_find_plural": "Ihr werdet finden",
+                            "they_will_find": "Sie werden finden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_tell": [
+                {
+                    "word": "erzählen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_tell": "Ich erzähle",
+                            "you_tell_singular": "Du erzählst",
+                            "he_she_it_tells": "Er/Sie/Es erzählt",
+                            "we_tell": "Wir erzählen",
+                            "you_tell_plural": "Ihr erzählt",
+                            "they_tell": "Sie erzählen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_told": "Ich erzählte",
+                            "you_told_singular": "Du erzähltest",
+                            "he_she_it_told": "Er/Sie/Es erzählte",
+                            "we_told": "Wir erzählten",
+                            "you_told_plural": "Ihr erzähltet",
+                            "they_told": "Sie erzählten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_tell": "Ich werde erzählen",
+                            "you_will_tell_singular": "Du wirst erzählen",
+                            "he_she_it_will_tell": "Er/Sie/Es wird erzählen",
+                            "we_will_tell": "Wir werden erzählen",
+                            "you_will_tell_plural": "Ihr werdet erzählen",
+                            "they_will_tell": "Sie werden erzählen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "C1": {
+            "to_achieve": [
+                {
+                    "word": "erreichen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_achieve": "Ich erreiche",
+                            "you_achieve_singular": "Du erreichst",
+                            "he_she_it_achieves": "Er/Sie/Es erreicht",
+                            "we_achieve": "Wir erreichen",
+                            "you_achieve_plural": "Ihr erreicht",
+                            "they_achieve": "Sie erreichen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_achieved": "Ich erreichte",
+                            "you_achieved_singular": "Du erreichtest",
+                            "he_she_it_achieved": "Er/Sie/Es erreichte",
+                            "we_achieved": "Wir erreichten",
+                            "you_achieved_plural": "Ihr erreichtet",
+                            "they_achieved": "Sie erreichten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_achieve": "Ich werde erreichen",
+                            "you_will_achieve_singular": "Du wirst erreichen",
+                            "he_she_it_will_achieve": "Er/Sie/Es wird erreichen",
+                            "we_will_achieve": "Wir werden erreichen",
+                            "you_will_achieve_plural": "Ihr werdet erreichen",
+                            "they_will_achieve": "Sie werden erreichen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_avoid": [
+                {
+                    "word": "vermeiden",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_avoid": "Ich vermeide",
+                            "you_avoid_singular": "Du vermeidest",
+                            "he_she_it_avoids": "Er/Sie/Es vermeidet",
+                            "we_avoid": "Wir vermeiden",
+                            "you_avoid_plural": "Ihr vermeidet",
+                            "they_avoid": "Sie vermeiden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_avoided": "Ich vermied",
+                            "you_avoided_singular": "Du vermiedst",
+                            "he_she_it_avoided": "Er/Sie/Es vermied",
+                            "we_avoided": "Wir vermieden",
+                            "you_avoided_plural": "Ihr vermiedet",
+                            "they_avoided": "Sie vermieden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_avoid": "Ich werde vermeiden",
+                            "you_will_avoid_singular": "Du wirst vermeiden",
+                            "he_she_it_will_avoid": "Er/Sie/Es wird vermeiden",
+                            "we_will_avoid": "Wir werden vermeiden",
+                            "you_will_avoid_plural": "Ihr werdet vermeiden",
+                            "they_will_avoid": "Sie werden vermeiden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_demand": [
+                {
+                    "word": "verlangen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_demand": "Ich verlange",
+                            "you_demand_singular": "Du verlangst",
+                            "he_she_it_demands": "Er/Sie/Es verlangt",
+                            "we_demand": "Wir verlangen",
+                            "you_demand_plural": "Ihr verlangt",
+                            "they_demand": "Sie verlangen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_demanded": "Ich verlangte",
+                            "you_demanded_singular": "Du verlangtest",
+                            "he_she_it_demanded": "Er/Sie/Es verlangte",
+                            "we_demanded": "Wir verlangten",
+                            "you_demanded_plural": "Ihr verlangtet",
+                            "they_demanded": "Sie verlangten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_demand": "Ich werde verlangen",
+                            "you_will_demand_singular": "Du wirst verlangen",
+                            "he_she_it_will_demand": "Er/Sie/Es wird verlangen",
+                            "we_will_demand": "Wir werden verlangen",
+                            "you_will_demand_plural": "Ihr werdet verlangen",
+                            "they_will_demand": "Sie werden verlangen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_convince": [
+                {
+                    "word": "überzeugen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_convince": "Ich überzeuge",
+                            "you_convince_singular": "Du überzeugst",
+                            "he_she_it_convinces": "Er/Sie/Es überzeugt",
+                            "we_convince": "Wir überzeugen",
+                            "you_convince_plural": "Ihr überzeugt",
+                            "they_convince": "Sie überzeugen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_convinced": "Ich überzeugte",
+                            "you_convinced_singular": "Du überzeugtest",
+                            "he_she_it_convinced": "Er/Sie/Es überzeugte",
+                            "we_convinced": "Wir überzeugten",
+                            "you_convinced_plural": "Ihr überzeugtet",
+                            "they_convinced": "Sie überzeugten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_convince": "Ich werde überzeugen",
+                            "you_will_convince_singular": "Du wirst überzeugen",
+                            "he_she_it_will_convince": "Er/Sie/Es wird überzeugen",
+                            "we_will_convince": "Wir werden überzeugen",
+                            "you_will_convince_plural": "Ihr werdet überzeugen",
+                            "they_will_convince": "Sie werden überzeugen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_negociate": [
+                {
+                    "word": "verhandeln",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_negociate": "Ich verhandle",
+                            "you_negociate_singular": "Du verhandelst",
+                            "he_she_it_negociates": "Er/Sie/Es verhandelt",
+                            "we_negociate": "Wir verhandeln",
+                            "you_negociate_plural": "Ihr verhandelt",
+                            "they_negociate": "Sie verhandeln",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_negociated": "Ich verhandelte",
+                            "you_negociated_singular": "Du verhandeltest",
+                            "he_she_it_negociated": "Er/Sie/Es verhandelte",
+                            "we_negociated": "Wir verhandelten",
+                            "you_negociated_plural": "Ihr verhandeltet",
+                            "they_negociated": "Sie verhandelten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_negociate": "Ich werde verhandeln",
+                            "you_will_negociate_singular": "Du wirst verhandeln",
+                            "he_she_it_will_negociate": "Er/Sie/Es wird verhandeln",
+                            "we_will_negociate": "Wir werden verhandeln",
+                            "you_will_negociate_plural": "Ihr werdet verhandeln",
+                            "they_will_negociate": "Sie werden verhandeln",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        },
+        "C2": {
+            "to_master": [
+                {
+                    "word": "beherrschen",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_master": "Ich beherrsche",
+                            "you_master_singular": "Du beherrschst",
+                            "he_she_it_masters": "Er/Sie/Es beherrscht",
+                            "we_master": "Wir beherrschen",
+                            "you_master_plural": "Ihr beherrscht",
+                            "they_master": "Sie beherrschen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_mastered": "Ich beherrschte",
+                            "you_mastered_singular": "Du beherrschtest",
+                            "he_she_it_mastered": "Er/Sie/Es beherrschte",
+                            "we_mastered": "Wir beherrschten",
+                            "you_mastered_plural": "Ihr beherrschtet",
+                            "they_mastered": "Sie beherrschten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_master": "Ich werde beherrschen",
+                            "you_will_master_singular": "Du wirst beherrschen",
+                            "he_she_it_will_master": "Er/Sie/Es wird beherrschen",
+                            "we_will_master": "Wir werden beherrschen",
+                            "you_will_master_plural": "Ihr werdet beherrschen",
+                            "they_will_master": "Sie werden beherrschen",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_compete": [
+                {
+                    "word": "wettbewerben",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_compete": "Ich wettbewerbe",
+                            "you_compete_singular": "Du wettbewerbst",
+                            "he_she_it_competes": "Er/Sie/Es wettbewerbt",
+                            "we_compete": "Wir wettbewerben",
+                            "you_compete_plural": "Ihr wettbewerbt",
+                            "they_compete": "Sie wettbewerben",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_competed": "Ich wettbewerbte",
+                            "you_competed_singular": "Du wettbewerbtest",
+                            "he_she_it_competed": "Er/Sie/Es wettbewerbte",
+                            "we_competed": "Wir wettbewerbten",
+                            "you_competed_plural": "Ihr wettbewerbtet",
+                            "they_competed": "Sie wettbewerbten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_compete": "Ich werde wettbewerben",
+                            "you_will_compete_singular": "Du wirst wettbewerben",
+                            "he_she_it_will_compete": "Er/Sie/Es wird wettbewerben",
+                            "we_will_compete": "Wir werden wettbewerben",
+                            "you_will_compete_plural": "Ihr werdet wettbewerben",
+                            "they_will_compete": "Sie werden wettbewerben",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_design": [
+                {
+                    "word": "gestalten",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_design": "Ich gestalte",
+                            "you_design_singular": "Du gestaltest",
+                            "he_she_it_designs": "Er/Sie/Es gestaltet",
+                            "we_design": "Wir gestalten",
+                            "you_design_plural": "Ihr gestaltet",
+                            "they_design": "Sie gestalten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_designed": "Ich gestaltete",
+                            "you_designed_singular": "Du gestaltetest",
+                            "he_she_it_designed": "Er/Sie/Es gestaltete",
+                            "we_designed": "Wir gestalteten",
+                            "you_designed_plural": "Ihr gestaltetet",
+                            "they_designed": "Sie gestalteten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_design": "Ich werde gestalten",
+                            "you_will_design_singular": "Du wirst gestalten",
+                            "he_she_it_will_design": "Er/Sie/Es wird gestalten",
+                            "we_will_design": "Wir werden gestalten",
+                            "you_will_design_plural": "Ihr werdet gestalten",
+                            "they_will_design": "Sie werden gestalten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_invent": [
+                {
+                    "word": "erfinden",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_invent": "Ich erfinde",
+                            "you_invent_singular": "Du erfindest",
+                            "he_she_it_invents": "Er/Sie/Es erfindet",
+                            "we_invent": "Wir erfinden",
+                            "you_invent_plural": "Ihr erfindet",
+                            "they_invent": "Sie erfinden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_invented": "Ich erfand",
+                            "you_invented_singular": "Du erfandest",
+                            "he_she_it_invented": "Er/Sie/Es erfand",
+                            "we_invented": "Wir erfanden",
+                            "you_invented_plural": "Ihr erfandet",
+                            "they_invented": "Sie erfanden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_invent": "Ich werde erfinden",
+                            "you_will_invent_singular": "Du wirst erfinden",
+                            "he_she_it_will_invent": "Er/Sie/Es wird erfinden",
+                            "we_will_invent": "Wir werden erfinden",
+                            "you_will_invent_plural": "Ihr werdet erfinden",
+                            "they_will_invent": "Sie werden erfinden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ],
+            "to_say_goodbye": [
+                {
+                    "word": "verabschieden",
+                    "progress": 0,
+                    "last_learned_time": "2024-12-09T08:00:00",
+                    "conjugations": {
+                        "present": {
+                            "i_say_goodbye": "Ich verabschiede",
+                            "you_say_goodbye_singular": "Du verabschiedest",
+                            "he_she_it_says_goodbye": "Er/Sie/Es verabschiedet",
+                            "we_say_goodbye": "Wir verabschieden",
+                            "you_say_goodbye_plural": "Ihr verabschiedet",
+                            "they_say_goodbye": "Sie verabschieden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "past": {
+                            "i_said_goodbye": "Ich verabschiedete",
+                            "you_said_goodbye_singular": "Du verabschiedetest",
+                            "he_she_it_said_goodbye": "Er/Sie/Es verabschiedete",
+                            "we_said_goodbye": "Wir verabschiedeten",
+                            "you_said_goodbye_plural": "Ihr verabschiedetet",
+                            "they_said_goodbye": "Sie verabschiedeten",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        },
+                        "future": {
+                            "i_will_say_goodbye": "Ich werde verabschieden",
+                            "you_will_say_goodbye_singular": "Du wirst verabschieden",
+                            "he_she_it_will_say_goodbye": "Er/Sie/Es wird verabschieden",
+                            "we_will_say_goodbye": "Wir werden verabschieden",
+                            "you_will_say_goodbye_plural": "Ihr werdet verabschieden",
+                            "they_will_say_goodbye": "Sie werden verabschieden",
+                            "progress": 0,
+                            "last_learned_time": "2024-12-09T08:00:00"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

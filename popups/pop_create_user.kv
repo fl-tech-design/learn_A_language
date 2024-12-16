@@ -1,0 +1,59 @@
+<Pop_Create_User@Popup>:
+    auto_dismiss: False
+    size_hint: (0.75, 0.5)
+    background_color: fs22_n
+    title_size: '23sp'
+    title_font: constants.DIR_FONTS + "cmunobx.ttf"
+    title_color: fs22_n
+    separator_color: fs22_d
+    separator_height: '4dp'
+    BoxUnlined:
+        id: box
+        orientation: 'vertical'
+        padding: [2, 2]  # Extra padding for the box layout
+        spacing: 4
+        BoxLined_1:
+            orientation: 'vertical'
+            padding: 2
+            spacing: 2
+            LabSmall:
+                id: lab_inf_user_reg
+                size_hint_y: None 
+                height: "100dp"
+                font_size: "25dp"
+            TextInput:
+                id: inp_username
+                multiline: False
+                size_hint_y: None 
+                height: "34dp"
+                font_size: "20dp"
+                padding: 4
+            LabSmall:
+                id: lab_m_lang
+                size_hint_y: None 
+                height: "40dp"
+                font_size: "25dp"
+            BoxLined_2:
+                orientation: 'vertical'
+                spacing: 10
+                ToggleButton:
+                    id: toggle_de
+                    group: "language"
+                    state: "down"  # Standardmäßig ausgewählt
+                ToggleButton:
+                    id: toggle_en
+                    group: "language"
+            BoxCol_2:
+                orientation: 'vertical'
+                padding: 4
+                spacing: 8
+                BoxUnlined:
+                    ButClear:
+                        id: but_confirm
+                        on_release: root._save_new_user(self)
+                BoxUnlined:
+                    ButClear:
+                        id: but_chancel
+                        on_release: root._close_popup()
+                    
+            

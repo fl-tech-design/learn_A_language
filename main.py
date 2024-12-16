@@ -1,19 +1,20 @@
 # main.py
 
+import sys
 from kivy.config import Config
 from kivy.core.window import Window
 
 # Set the window to be non-resizable and specify its size
-Config.set("graphics", "resizable", "0")
-Config.write()
-Window.size = (450, 850)  # Example for a 9:16 aspect ratio
+#Config.set("graphics", "resizable", "1")
+#Config.write()
+#Window.size = (450, 850)  # Example for a 9:16 aspect ratio
 
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 from kivy.clock import Clock
 
-# Import DataControl
+# Import DataControlpip
 from contr_data import load_base_data
 from contr_data import update_base_data
 
@@ -28,15 +29,16 @@ from constants import (
     DATA_BASE,
     TXT_BASE,
     APP_TITLE,
+    TXT_APP,
+    DATA_APP,
 )
 
 from popups.pop_info import Pop_Info
+from popups.pop_u_login import Pop_Login
 
 # Load all KV files
 for kv_file in LIST_KV_FILES:
     Builder.load_file(kv_file)
-
-
 
 
 class MainApp(App):
@@ -54,14 +56,27 @@ class MainApp(App):
         self.title = APP_TITLE
 
         # Initialize DataControl and load JSON data
-        self.base_data, self.base_txt = {}, {}
+        self.base_data, self.base_txt, self.app_data, self.app_txt = {}, {}, {}, {}
         self.color1, self.color2, self.color3 = [], [], []
         self.load_base_data()
 
+        self.user_data = {}
+        
+        self._check_user_status()
+        print("self.user_data: ", self.user_data)
         # Initialize the ScreenManager
         self.scr_man = ScreenManager()
 
         return self._create_screen_manager()
+
+    def _check_user_status(self) -> None:
+        """
+        Checks if the user needs to register or log in and displays the UregPopup if necessary.
+        """
+        # Example check: Replace with your actual condition
+        if not self.app_data["user_logged_in"]:
+            popup = Pop_Login(app)
+            popup.open()
 
     def _create_screen_manager(self) -> ScreenManager:
         """
@@ -131,6 +146,8 @@ class MainApp(App):
         # Store the loaded colors as instance variables
         self.base_data = load_base_data(DATA_BASE)
         self.base_txt = load_base_data(TXT_BASE)[self.base_data["curr_lang"]]
+        self.app_data = load_base_data(DATA_APP)
+        self.app_txt = load_base_data(TXT_APP)[self.base_data["curr_lang"]]
         self.color1 = [c / 255 for c in self.base_data["colors"]["color1"]]
         self.color2 = [c / 255 for c in self.base_data["colors"]["color2"]]
         self.color3 = [c / 255 for c in self.base_data["colors"]["color3"]]
@@ -156,6 +173,11 @@ class MainApp(App):
         self.load_base_data()
         new_screen = self.scr_man.get_screen("page_setting")
         Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
+
+    def _app_stop(instance):
+        app.get_running_app().stop()
+        sys.exit()
+
 
 if __name__ == "__main__":
     app = MainApp()

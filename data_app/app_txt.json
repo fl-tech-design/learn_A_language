@@ -1,0 +1,14 @@
+{
+    "de": {
+        "m_lang": "Muttersprache",
+        "u_login": "Login",
+        "u_registration": "Benutzer registrieren",
+        "no_u_reg": "Kein Benutzer registriert"
+    },
+    "en": {
+        "m_lang": "Mother tongue",
+        "u_login": "Login",
+        "u_registration": "User registration",
+        "no_u_reg": "No user registered"
+    }
+}
