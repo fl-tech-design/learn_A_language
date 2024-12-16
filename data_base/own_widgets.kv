@@ -125,13 +125,19 @@
     BoxUnlined:
         padding: 2
         BoxLined_1:
-            ButClear:
-                id: but_1
-                font_size: self.height * 0.5
-                on_release: app.change_screen('left', 'page_setting') if app.scr_man.current == 'page_start' else app.change_screen('right', 'page_start')
-            
-            # Box Button right in Bottombox            
-            ButClear:
-                id: but_2
-                font_size: self.height * 0.5
-                on_release: app.stop()
+            size_hint_y: None 
+            height: "40dp"
+            padding: 2
+            BoxCol_2:
+                padding: 2
+                spacing: 2
+                BoxUnlined:
+                    ButClear:
+                        id: but_1
+                        font_size: "30dp"
+                        on_release: app.change_screen('left', 'page_setting') if app.scr_man.current == 'page_start' else app.change_screen('right', 'page_start')
+                BoxUnlined:
+                    ButClear:
+                        id: but_2
+                        font_size: "30dp"
+                        on_release: app._app_stop()

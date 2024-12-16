@@ -19,8 +19,12 @@
         "loading_complete": "Daten wurden geladen.",
         "tit_page_sett": "Einstellungen",
         "tit_page_start": "Startseite",
+        "register": "registrieren",
         "settings": "Einstellungen",
-        "u_register": "registrieren",
+        "u_login": "Login",
+        "u_name": "Benutzername",
+        "u_registration": "Benutzer registrieren",
+        "no_u_reg": "Kein Benutzer registriert",
         "welcome_message": "Willkommen bei unserer App!"
     },
     "en": {
@@ -43,8 +47,12 @@
         "loading_complete": "loading complete",
         "tit_page_sett": "Settings",
         "tit_page_start": "Startpage",
+        "register": "register",
         "settings": "Settings",
-        "u_register": "register",
+        "u_login": "Login",
+        "u_name": "Username",
+        "u_registration": "User registration",
+        "no_u_reg": "No user registered",
         "welcome_message": "Welcome to our app!"
     }
 }

@@ -1,13 +1,14 @@
 # main.py
 
-import sys
-from kivy.config import Config
-from kivy.core.window import Window
-
+## for configuration of kivy
+# from kivy.config import Config
+# from kivy.core.window import Window
 # Set the window to be non-resizable and specify its size
-#Config.set("graphics", "resizable", "1")
-#Config.write()
-#Window.size = (450, 850)  # Example for a 9:16 aspect ratio
+# Config.set("graphics", "resizable", "1")
+# Config.write()
+# Window.size = (450, 850)  # Example for a 9:16 aspect ratio
+
+import sys
 
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
@@ -15,8 +16,7 @@ from kivy.lang import Builder
 from kivy.clock import Clock
 
 # Import DataControlpip
-from contr_data import load_base_data
-from contr_data import update_base_data
+from contr_data import load_data, update_data
 
 # Import pages
 from pages.loadingpage import LoadingPage
@@ -58,10 +58,10 @@ class MainApp(App):
         # Initialize DataControl and load JSON data
         self.base_data, self.base_txt, self.app_data, self.app_txt = {}, {}, {}, {}
         self.color1, self.color2, self.color3 = [], [], []
-        self.load_base_data()
+        self.load_app_data()
 
         self.user_data = {}
-        
+
         self._check_user_status()
         print("self.user_data: ", self.user_data)
         # Initialize the ScreenManager
@@ -137,17 +137,17 @@ class MainApp(App):
         new_screen = self.scr_man.get_screen(new_scr_name)
         Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
 
-    def load_base_data(self) -> None:
+    def load_app_data(self) -> None:
         """
         load base data in the app.
 
         Loads the colors and text data, and converts color values from 0-255 to 0-1 range.
         """
         # Store the loaded colors as instance variables
-        self.base_data = load_base_data(DATA_BASE)
-        self.base_txt = load_base_data(TXT_BASE)[self.base_data["curr_lang"]]
-        self.app_data = load_base_data(DATA_APP)
-        self.app_txt = load_base_data(TXT_APP)[self.base_data["curr_lang"]]
+        self.base_data = load_data(DATA_BASE)
+        self.base_txt = load_data(TXT_BASE)[self.base_data["curr_lang"]]
+        self.app_data = load_data(DATA_APP)
+        self.app_txt = load_data(TXT_APP)[self.base_data["curr_lang"]]
         self.color1 = [c / 255 for c in self.base_data["colors"]["color1"]]
         self.color2 = [c / 255 for c in self.base_data["colors"]["color2"]]
         self.color3 = [c / 255 for c in self.base_data["colors"]["color3"]]
@@ -167,10 +167,10 @@ class MainApp(App):
         :param new_language: The new language to set (e.g., "German" or "English").
         """
         if new_language == self.base_txt["german"]:
-            update_base_data("curr_lang", "de")
+            update_data(DATA_BASE, "curr_lang", "de")
         elif new_language == self.base_txt["english"]:
-            update_base_data("curr_lang", "en")
-        self.load_base_data()
+            update_data(DATA_BASE, "curr_lang", "en")
+        self.load_app_data()
         new_screen = self.scr_man.get_screen("page_setting")
         Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
 

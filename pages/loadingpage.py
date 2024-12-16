@@ -19,7 +19,7 @@ class LoadingPage(Screen):
         scr_man: object,
         spl_scr: str,
         new_page: str,
-        prog_bar_y: float = 0.16,
+        prog_bar_y: float = 0.01,
         stat_lab_y: float = 0.12,
         **kwargs,
     ):
@@ -50,7 +50,7 @@ class LoadingPage(Screen):
         self.status_label = Label(
             size_hint=(0.8, 0.1),
             text=let_uppercase_first(f'{self.txt_lab["loading"]}'),
-            font_size=self.height * 0.6,
+            font_size="23dp",
             pos_hint={"x": 0.1, "y": stat_lab_y},
         )
         layout.add_widget(self.status_label)
@@ -87,7 +87,7 @@ class LoadingPage(Screen):
         self.status_label.text = let_uppercase_first(
             f'{self.txt_lab["loading"]}...  {self.loading_progress}%'
         )
-        self.status_label.font_size = "42sp"
+        self.status_label.font_size = "23dp"
 
         if self.loading_progress >= 100:
             Clock.unschedule(self.load_data)

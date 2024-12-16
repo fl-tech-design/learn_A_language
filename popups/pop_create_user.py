@@ -1,8 +1,8 @@
 from kivy.uix.popup import Popup
 from kivy.lang import Builder
-from constants import DIR_POPS, DIR_FLAGS
+from constants import DIR_POPS
 from contr_str import let_uppercase_first
-from contr_data import create_user_file
+from contr_data import create_user_file, add_new_user_to_list, change_login_state
 
 Builder.load_file(DIR_POPS + "pop_create_user.kv")
 
@@ -11,7 +11,7 @@ class Pop_Create_User(Popup):
     def __init__(self, app, **kwargs):
         super().__init__(**kwargs)
         self.app = app
-        self.title = app.app_txt["u_registration"]
+        self.title = app.base_txt["u_registration"]
         
         self.ids.lab_inf_user_reg.text = self.app.base_txt["inf_user_reg"]
         
@@ -39,8 +39,16 @@ class Pop_Create_User(Popup):
         result = create_user_file(username, m_lang, language_dict)
         print("result: ", result)
         self.ids.inp_username.hint_text = result
-        
+        add_new_user_to_list(username)
+        change_login_state(True)
+        self._close_popup()
+
+
+    def _chancel_new_user(self):
+        change_login_state(False)
         self._close_popup()
 
     def _close_popup(self):
+        self.app.load_app_data()
         self.dismiss()
+        self.app._check_user_status()

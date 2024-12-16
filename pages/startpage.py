@@ -22,5 +22,9 @@ class StartPage(Screen):
             *args: Additional arguments that might be passed when calling this method.
         """
         self.ids.t_box_startpage.ids.lab_tit_page.text = self.app.base_txt["tit_page_start"]
+        
+        self.ids.lab_u_name.text = self.app.base_txt["u_name"]
+        self.ids.lab_logged_user.text = self.app.app_data["logged_u_name"]
+        
         self.ids.b_box_startpage.ids.but_1.text = self.app.base_txt["settings"]
         self.ids.b_box_startpage.ids.but_2.text = self.app.base_txt["exit"]

@@ -5,7 +5,7 @@ import json
 import os
 import logging
 from typing import Dict, Any
-from constants import DATA_BASE, DIR_USERFILES
+from constants import DATA_BASE, DIR_USERFILES, DATA_APP
 
 # Konfiguriere das Logging
 logging.basicConfig(
@@ -15,7 +15,7 @@ logging.basicConfig(
 )
 
 
-def load_base_data(f_path: str) -> Dict[str, Any]:
+def load_data(f_path: str) -> Dict[str, Any]:
     """
     Lädt eine JSON-Datei und gibt ihren Inhalt zurück.
     :return: Der Inhalt der JSON-Datei oder ein leeres Dictionary im Fehlerfall
@@ -28,7 +28,7 @@ def load_base_data(f_path: str) -> Dict[str, Any]:
         return {}
 
 
-def save_base_data(data: Dict[str, Any]) -> None:
+def save_data(f_path: str, data: Dict[str, Any]) -> None:
     """
     Speichert Daten in eine JSON-Datei.
 
@@ -36,26 +36,26 @@ def save_base_data(data: Dict[str, Any]) -> None:
     :param data: Die Daten, die in der JSON-Datei gespeichert werden sollen
     """
     try:
-        with open(DATA_BASE, "w") as file:
+        with open(f_path, "w") as file:
             json.dump(data, file, indent=4)
     except IOError as e:
-        logging.error(f"Error saving JSON file {DATA_BASE}: {e}")
+        logging.error(f"Error saving JSON file {f_path}: {e}")
 
 
-def update_base_data(key: str, new_value: Any) -> None:
+def update_data(f_path: str, keyword: str, new_value: Any) -> None:
     """
     Ändert den Wert eines bestimmten Schlüssels in einer JSON-Datei.
 
     :param key: Der Schlüssel des Wertes, der geändert werden soll
     :param new_value: Der neue Wert, der dem Schlüssel zugewiesen werden soll
     """
-    data = load_base_data(DATA_BASE)
+    data = load_data(f_path)
 
-    if key in data:
-        data[key] = new_value
-        save_base_data(data)
+    if keyword in data:
+        data[keyword] = new_value
+        save_data(f_path, data)
     else:
-        logging.error(f"Schlüssel '{key}' nicht gefunden.")
+        logging.error(f"Schlüssel '{keyword}' nicht gefunden.")
 
 
 def create_user_file(username: str, m_lang: str, language_dict: dict):
@@ -67,9 +67,9 @@ def create_user_file(username: str, m_lang: str, language_dict: dict):
     :param language_dict: Das Wörterbuch, das dem Benutzer zugewiesen wird.
     """
     user_data = {
-        "u_name": username,  
-        "m_lang": m_lang,  
-        "progress": {  
+        "u_name": username,
+        "m_lang": m_lang,
+        "progress": {
             "A1": 0,
             "A2": 0,
             "B1": 0,
@@ -82,7 +82,7 @@ def create_user_file(username: str, m_lang: str, language_dict: dict):
     }
 
     # Definiere den Dateipfad für die JSON-Datei
-    file_path = f'{DIR_USERFILES}data_{username}.json'
+    file_path = f"{DIR_USERFILES}data_{username}.json"
 
     # Überprüfe, ob die Datei bereits existiert
     if os.path.exists(file_path):
@@ -98,7 +98,7 @@ def create_user_file(username: str, m_lang: str, language_dict: dict):
     except Exception as e:
         print(f"Fehler beim Erstellen der Datei: {e}")
         return ""
-        
+
 
 def load_language_file(curr_language: str):
     """
@@ -106,7 +106,7 @@ def load_language_file(curr_language: str):
     :return: Der Inhalt der JSON-Datei oder ein leeres Dictionary im Fehlerfall
     """
     try:
-        with open(f'data_{curr_language}.json', "r") as file:
+        with open(f"data_{curr_language}.json", "r") as file:
             return json.load(file)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         logging.error(f"Error loading JSON file data_{curr_language}.json: {e}")
@@ -119,8 +119,31 @@ def load_userdata(username: str):
     :return: Der Inhalt der JSON-Datei oder ein leeres Dictionary im Fehlerfall
     """
     try:
-        with open(f'{DIR_USERFILES}data_{username}.json', "r") as file:
+        with open(f"{DIR_USERFILES}data_{username}.json", "r") as file:
             return json.load(file)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         logging.error(f"Error loading JSON file data_{username}.json: {e}")
         return {}
+
+def add_new_user_to_list(username: str):
+    data = load_data(DATA_APP)
+
+    if "" in data["registered_user"]:  # Überprüfen, ob ein Platzhalter existiert
+        index = data["registered_user"].index("")  # Ersten Index von "" finden
+        data["registered_user"][index] = username  # Platzhalter ersetzen
+    else:
+        data["registered_user"].append(username)
+
+    save_data(DATA_APP, data)    
+
+
+
+def change_login_state(new_state: bool):
+    data = load_data(DATA_APP)
+    data["user_logged_in"] = new_state
+    save_data(DATA_APP, data)
+
+def set_logged_uname(logged_uname: str):
+    data = load_data(DATA_APP)
+    data["logged_u_name"] = logged_uname
+    save_data(DATA_APP, data)
