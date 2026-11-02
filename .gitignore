@@ -163,3 +163,17 @@ cython_debug/
 
 ## User ignores
 .buildozer/
+
+# Android APKs
+*.apk
+*.aab
+
+# IDE
+.vscode/
+.idea/
+
+# Kivy logs
+.kivy/logs/
+
+# User data files (contain personal data)
+data_app/files_user/*.json

@@ -1,9 +1,9 @@
 {
     "registered_user": [
-        "Hansi",
-        "",
-        ""
+        "Hans",
+        "Peter",
+        "Fritz"
     ],
-    "logged_u_name": "",
+    "logged_u_name": "Peter",
     "user_logged_in": false
 }

@@ -1,5 +1,3 @@
-from kivy.uix.behaviors import DragBehavior
-
 # datacontrol.py
 import json
 import os
@@ -126,15 +124,19 @@ def load_userdata(username: str):
         return {}
 
 def add_new_user_to_list(username: str):
+    """
+    Fügt einen neuen Benutzernamen zur registered_user-Liste in app_data.json hinzu.
+    Die Liste wächst dynamisch – es gibt kein festes Limit mehr.
+
+    Args:
+        username: Der Benutzername, der hinzugefügt werden soll.
+    """
     data = load_data(DATA_APP)
 
-    if "" in data["registered_user"]:  # Überprüfen, ob ein Platzhalter existiert
-        index = data["registered_user"].index("")  # Ersten Index von "" finden
-        data["registered_user"][index] = username  # Platzhalter ersetzen
-    else:
-        data["registered_user"].append(username)
-
-    save_data(DATA_APP, data)    
+    # Doppel-Einträge vermeiden
+    if username not in data.get("registered_user", []):
+        data.setdefault("registered_user", []).append(username)
+        save_data(DATA_APP, data)    
 
 
 
@@ -144,6 +146,7 @@ def change_login_state(new_state: bool):
     save_data(DATA_APP, data)
 
 def set_logged_uname(logged_uname: str):
+    print("logged_uname: ", logged_uname)
     data = load_data(DATA_APP)
     data["logged_u_name"] = logged_uname
     save_data(DATA_APP, data)

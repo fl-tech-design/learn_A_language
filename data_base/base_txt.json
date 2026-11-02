@@ -24,6 +24,8 @@
         "u_login": "Login",
         "u_name": "Benutzername",
         "u_registration": "Benutzer registrieren",
+        "btn_change_user": "User wechseln",
+        "btn_add_user": "+ Neuer User",
         "no_u_reg": "Kein Benutzer registriert",
         "welcome_message": "Willkommen bei unserer App!"
     },
@@ -51,7 +53,9 @@
         "settings": "Settings",
         "u_login": "Login",
         "u_name": "Username",
-        "u_registration": "User registration",
+        "u_registration": "User Registration",
+        "btn_change_user": "Change user",
+        "btn_add_user": "+ New User",
         "no_u_reg": "No user registered",
         "welcome_message": "Welcome to our app!"
     }

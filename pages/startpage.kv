@@ -9,15 +9,35 @@
         BoxUnlined:
             orientation: 'vertical'
             spacing: 4
-            BoxLined_2:
-                size_hint_y: None 
-                height: "50dp"
-                padding: 2
-                spacing: 2                
-                LabBig:
-                    id: lab_u_name
-                LabSmall:
-                    id: lab_logged_user
+            BoxUnlined:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: "70dp"
+                spacing: 2
+                BoxUnlined:
+                    orientation: 'horizontal'
+                    size_hint_y: None
+                    height: "30dp"
+                    LabSmall:
+                        id: lab_u_name
+                        font_size: "14dp"
+                        halign: 'left'
+                        valign: 'middle'
+                BoxUnlined:
+                    orientation: 'horizontal'
+                    size_hint_y: None
+                    height: "36dp"
+                    LabBig:
+                        id: lab_logged_user
+                        font_size: "24dp"
+                        halign: 'left'
+                        valign: 'middle'
+                    ButClear:
+                        id: but_change_user
+                        font_size: "14dp"
+                        size_hint_x: None
+                        width: "100dp"
+                        on_release: app.open_login_popup()
             BoxLined_2:
             
         BoxBottom:

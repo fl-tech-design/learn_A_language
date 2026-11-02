@@ -4,6 +4,9 @@ import os
 VERSION_NR = "0.0.1"
 APP_TITLE = "learn A language"
 
+CONFIG_STAT = False
+
+
 DATA_BASE = os.path.join(os.path.dirname(__file__), "data_base/base_data.json")
 TXT_BASE = os.path.join(os.path.dirname(__file__), "data_base/base_txt.json")
 

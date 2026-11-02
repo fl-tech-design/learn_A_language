@@ -1,0 +1,4624 @@
+{
+    "verbs": {
+        "to_be": {
+            "infinitive": "sein",
+            "level": 0,
+            "past": {
+                "i_was": {
+                    "translation": "ich war",
+                    "level": 0,
+                    "example": {
+                        "i_was_in_the_park": "Ich war im Park."
+                    },
+                    "audio": "de_audio/i_was.mp3"
+                },
+                "you_were": {
+                    "translation": "du warst",
+                    "level": 0,
+                    "example": {
+                        "you_were_tired": "Du warst müde."
+                    },
+                    "audio": "de_audio/you_were.mp3"
+                },
+                "he_she_it_was": {
+                    "translation": "er/sie/es war",
+                    "level": 0,
+                    "example": {
+                        "he_was_happy": "Er war glücklich."
+                    },
+                    "audio": "de_audio/he_she_it_was.mp3"
+                },
+                "we_were": {
+                    "translation": "wir waren",
+                    "level": 0,
+                    "example": {
+                        "we_were_at_home": "Wir waren zu Hause."
+                    },
+                    "audio": "de_audio/we_were.mp3"
+                },
+                "you_plural_were": {
+                    "translation": "ihr wart",
+                    "level": 0,
+                    "example": {
+                        "you_were_late": "Ihr wart spät."
+                    },
+                    "audio": "de_audio/you_plural_were.mp3"
+                },
+                "they_were": {
+                    "translation": "sie waren",
+                    "level": 0,
+                    "example": {
+                        "they_were_friendly": "Sie waren freundlich."
+                    },
+                    "audio": "de_audio/they_were.mp3"
+                }
+            },
+            "present": {
+                "i_am": {
+                    "translation": "ich bin",
+                    "level": 0,
+                    "example": {
+                        "i_am_tired": "Ich bin müde."
+                    },
+                    "audio": "de_audio/i_am.mp3"
+                },
+                "you_are": {
+                    "translation": "du bist",
+                    "level": 0,
+                    "example": {
+                        "you_are_friendly": "Du bist freundlich."
+                    },
+                    "audio": "de_audio/you_are.mp3"
+                },
+                "he_she_it_is": {
+                    "translation": "er/sie/es ist",
+                    "level": 0,
+                    "example": {
+                        "he_is_happy": "Er ist glücklich."
+                    },
+                    "audio": "de_audio/he_she_it_is.mp3"
+                },
+                "we_are": {
+                    "translation": "wir sind",
+                    "level": 0,
+                    "example": {
+                        "we_are_at_home": "Wir sind zu Hause."
+                    },
+                    "audio": "de_audio/we_are.mp3"
+                },
+                "you_plural_are": {
+                    "translation": "ihr seid",
+                    "level": 0,
+                    "example": {
+                        "you_are_late": "Ihr seid spät."
+                    },
+                    "audio": "de_audio/you_plural_are.mp3"
+                },
+                "they_are": {
+                    "translation": "sie sind",
+                    "level": 0,
+                    "example": {
+                        "they_are_friendly": "Sie sind freundlich."
+                    },
+                    "audio": "de_audio/they_are.mp3"
+                }
+            },
+            "future": {
+                "i_will_be": {
+                    "translation": "ich werde sein",
+                    "level": 0,
+                    "example": {
+                        "i_will_be_there": "Ich werde da sein."
+                    },
+                    "audio": "de_audio/i_will_be.mp3"
+                },
+                "you_will_be": {
+                    "translation": "du wirst sein",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_happy": "Du wirst glücklich sein."
+                    },
+                    "audio": "de_audio/you_will_be.mp3"
+                },
+                "he_she_it_will_be": {
+                    "translation": "er/sie/es wird sein",
+                    "level": 0,
+                    "example": {
+                        "he_will_be_here": "Er wird hier sein."
+                    },
+                    "audio": "de_audio/he_she_it_will_be.mp3"
+                },
+                "we_will_be": {
+                    "translation": "wir werden sein",
+                    "level": 0,
+                    "example": {
+                        "we_will_be_there": "Wir werden da sein."
+                    },
+                    "audio": "de_audio/we_will_be.mp3"
+                },
+                "you_plural_will_be": {
+                    "translation": "ihr werdet sein",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_late": "Ihr werdet spät sein."
+                    },
+                    "audio": "de_audio/you_plural_will_be.mp3"
+                },
+                "they_will_be": {
+                    "translation": "sie werden sein",
+                    "level": 0,
+                    "example": {
+                        "they_will_be_ready": "Sie werden bereit sein."
+                    },
+                    "audio": "de_audio/they_will_be.mp3"
+                }
+            }
+        },
+        "to_have": {
+            "infinitive": "haben",
+            "level": 0,
+            "past": {
+                "i_had": {
+                    "translation": "ich hatte",
+                    "level": 0,
+                    "example": {
+                        "i_had_a_dog": "Ich hatte einen Hund."
+                    },
+                    "audio": "de_audio/i_had.mp3"
+                },
+                "you_had": {
+                    "translation": "du hattest",
+                    "level": 0,
+                    "example": {
+                        "you_had_a_car": "Du hattest ein Auto."
+                    },
+                    "audio": "de_audio/you_had.mp3"
+                },
+                "he_she_it_had": {
+                    "translation": "er/sie/es hatte",
+                    "level": 0,
+                    "example": {
+                        "he_had_a_book": "Er hatte ein Buch."
+                    },
+                    "audio": "de_audio/he_she_it_had.mp3"
+                },
+                "we_had": {
+                    "translation": "wir hatten",
+                    "level": 0,
+                    "example": {
+                        "we_had_time": "Wir hatten Zeit."
+                    },
+                    "audio": "de_audio/we_had.mp3"
+                },
+                "you_plural_had": {
+                    "translation": "ihr hattet",
+                    "level": 0,
+                    "example": {
+                        "you_had_fun": "Ihr hattet Spaß."
+                    },
+                    "audio": "de_audio/you_plural_had.mp3"
+                },
+                "they_had": {
+                    "translation": "sie hatten",
+                    "level": 0,
+                    "example": {
+                        "they_had_a_house": "Sie hatten ein Haus."
+                    },
+                    "audio": "de_audio/they_had.mp3"
+                }
+            },
+            "present": {
+                "i_have": {
+                    "translation": "ich habe",
+                    "level": 0,
+                    "example": {
+                        "i_have_a_cat": "Ich habe eine Katze."
+                    },
+                    "audio": "de_audio/i_have.mp3"
+                },
+                "you_have": {
+                    "translation": "du hast",
+                    "level": 0,
+                    "example": {
+                        "you_have_a_pen": "Du hast einen Stift."
+                    },
+                    "audio": "de_audio/you_have.mp3"
+                },
+                "he_she_it_has": {
+                    "translation": "er/sie/es hat",
+                    "level": 0,
+                    "example": {
+                        "he_has_a_bike": "Er hat ein Fahrrad."
+                    },
+                    "audio": "de_audio/he_she_it_has.mp3"
+                },
+                "we_have": {
+                    "translation": "wir haben",
+                    "level": 0,
+                    "example": {
+                        "we_have_time": "Wir haben Zeit."
+                    },
+                    "audio": "de_audio/we_have.mp3"
+                },
+                "you_plural_have": {
+                    "translation": "ihr habt",
+                    "level": 0,
+                    "example": {
+                        "you_have_fun": "Ihr habt Spaß."
+                    },
+                    "audio": "de_audio/you_plural_have.mp3"
+                },
+                "they_have": {
+                    "translation": "sie haben",
+                    "level": 0,
+                    "example": {
+                        "they_have_a_house": "Sie haben ein Haus."
+                    },
+                    "audio": "de_audio/they_have.mp3"
+                }
+            },
+            "future": {
+                "i_will_have": {
+                    "translation": "ich werde haben",
+                    "level": 0,
+                    "example": {
+                        "i_will_have_a_car": "Ich werde ein Auto haben."
+                    },
+                    "audio": "de_audio/i_will_have.mp3"
+                },
+                "you_will_have": {
+                    "translation": "du wirst haben",
+                    "level": 0,
+                    "example": {
+                        "you_will_have_time": "Du wirst Zeit haben."
+                    },
+                    "audio": "de_audio/you_will_have.mp3"
+                },
+                "he_she_it_will_have": {
+                    "translation": "er/sie/es wird haben",
+                    "level": 0,
+                    "example": {
+                        "he_will_have_a_bike": "Er wird ein Fahrrad haben."
+                    },
+                    "audio": "de_audio/he_she_it_will_have.mp3"
+                },
+                "we_will_have": {
+                    "translation": "wir werden haben",
+                    "level": 0,
+                    "example": {
+                        "we_will_have_fun": "Wir werden Spaß haben."
+                    },
+                    "audio": "de_audio/we_will_have.mp3"
+                },
+                "you_plural_will_have": {
+                    "translation": "ihr werdet haben",
+                    "level": 0,
+                    "example": {
+                        "you_will_have_a_house": "Ihr werdet ein Haus haben."
+                    },
+                    "audio": "de_audio/you_plural_will_have.mp3"
+                },
+                "they_will_have": {
+                    "translation": "sie werden haben",
+                    "level": 0,
+                    "example": {
+                        "they_will_have_time": "Sie werden Zeit haben."
+                    },
+                    "audio": "de_audio/they_will_have.mp3"
+                }
+            }
+        },
+        "to_go": {
+            "infinitive": "gehen",
+            "level": 0,
+            "past": {
+                "i_went": {
+                    "translation": "ich ging",
+                    "level": 0,
+                    "example": {
+                        "i_went_to_the_park": "Ich ging in den Park."
+                    },
+                    "audio": "de_audio/i_went.mp3"
+                },
+                "you_went": {
+                    "translation": "du gingst",
+                    "level": 0,
+                    "example": {
+                        "you_went_home": "Du gingst nach Hause."
+                    },
+                    "audio": "de_audio/you_went.mp3"
+                },
+                "he_she_it_went": {
+                    "translation": "er/sie/es ging",
+                    "level": 0,
+                    "example": {
+                        "he_went_to_school": "Er ging zur Schule."
+                    },
+                    "audio": "de_audio/he_she_it_went.mp3"
+                },
+                "we_went": {
+                    "translation": "wir gingen",
+                    "level": 0,
+                    "example": {
+                        "we_went_shopping": "Wir gingen einkaufen."
+                    },
+                    "audio": "de_audio/we_went.mp3"
+                },
+                "you_plural_went": {
+                    "translation": "ihr gingt",
+                    "level": 0,
+                    "example": {
+                        "you_went_to_the_cinema": "Ihr gingt ins Kino."
+                    },
+                    "audio": "de_audio/you_plural_went.mp3"
+                },
+                "they_went": {
+                    "translation": "sie gingen",
+                    "level": 0,
+                    "example": {
+                        "they_went_to_the_party": "Sie gingen zur Party."
+                    },
+                    "audio": "de_audio/they_went.mp3"
+                }
+            },
+            "present": {
+                "i_go": {
+                    "translation": "ich gehe",
+                    "level": 0,
+                    "example": {
+                        "i_go_to_school": "Ich gehe zur Schule."
+                    },
+                    "audio": "de_audio/i_go.mp3"
+                },
+                "you_go": {
+                    "translation": "du gehst",
+                    "level": 0,
+                    "example": {
+                        "you_go_home": "Du gehst nach Hause."
+                    },
+                    "audio": "de_audio/you_go.mp3"
+                },
+                "he_she_it_goes": {
+                    "translation": "er/sie/es geht",
+                    "level": 0,
+                    "example": {
+                        "he_goes_to_work": "Er geht zur Arbeit."
+                    },
+                    "audio": "de_audio/he_she_it_goes.mp3"
+                },
+                "we_go": {
+                    "translation": "wir gehen",
+                    "level": 0,
+                    "example": {
+                        "we_go_shopping": "Wir gehen einkaufen."
+                    },
+                    "audio": "de_audio/we_go.mp3"
+                },
+                "you_plural_go": {
+                    "translation": "ihr geht",
+                    "level": 0,
+                    "example": {
+                        "you_go_to_the_cinema": "Ihr geht ins Kino."
+                    },
+                    "audio": "de_audio/you_plural_go.mp3"
+                },
+                "they_go": {
+                    "translation": "sie gehen",
+                    "level": 0,
+                    "example": {
+                        "they_go_to_the_party": "Sie gehen zur Party."
+                    },
+                    "audio": "de_audio/they_go.mp3"
+                }
+            },
+            "future": {
+                "i_will_go": {
+                    "translation": "ich werde gehen",
+                    "level": 0,
+                    "example": {
+                        "i_will_go_to_school": "Ich werde zur Schule gehen."
+                    },
+                    "audio": "de_audio/i_will_go.mp3"
+                },
+                "you_will_go": {
+                    "translation": "du wirst gehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_go_home": "Du wirst nach Hause gehen."
+                    },
+                    "audio": "de_audio/you_will_go.mp3"
+                },
+                "he_she_it_will_go": {
+                    "translation": "er/sie/es wird gehen",
+                    "level": 0,
+                    "example": {
+                        "he_will_go_to_work": "Er wird zur Arbeit gehen."
+                    },
+                    "audio": "de_audio/he_she_it_will_go.mp3"
+                },
+                "we_will_go": {
+                    "translation": "wir werden gehen",
+                    "level": 0,
+                    "example": {
+                        "we_will_go_shopping": "Wir werden einkaufen gehen."
+                    },
+                    "audio": "de_audio/we_will_go.mp3"
+                },
+                "you_plural_will_go": {
+                    "translation": "ihr werdet gehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_go_to_the_cinema": "Ihr werdet ins Kino gehen."
+                    },
+                    "audio": "de_audio/you_plural_will_go.mp3"
+                },
+                "they_will_go": {
+                    "translation": "sie werden gehen",
+                    "level": 0,
+                    "example": {
+                        "they_will_go_to_the_party": "Sie werden zur Party gehen."
+                    },
+                    "audio": "de_audio/they_will_go.mp3"
+                }
+            }
+        },
+        "to_make": {
+            "infinitive": "machen",
+            "level": 0,
+            "past": {
+                "i_made": {
+                    "translation": "ich machte",
+                    "level": 0,
+                    "example": {
+                        "i_made_a_cake": "Ich machte einen Kuchen."
+                    },
+                    "audio": "de_audio/i_made.mp3"
+                },
+                "you_made": {
+                    "translation": "du machtest",
+                    "level": 0,
+                    "example": {
+                        "you_made_coffee": "Du machtest Kaffee."
+                    },
+                    "audio": "de_audio/you_made.mp3"
+                },
+                "he_she_it_made": {
+                    "translation": "er/sie/es machte",
+                    "level": 0,
+                    "example": {
+                        "he_made_dinner": "Er machte Abendessen."
+                    },
+                    "audio": "de_audio/he_she_it_made.mp3"
+                },
+                "we_made": {
+                    "translation": "wir machten",
+                    "level": 0,
+                    "example": {
+                        "we_made_a_plan": "Wir machten einen Plan."
+                    },
+                    "audio": "de_audio/we_made.mp3"
+                },
+                "you_plural_made": {
+                    "translation": "ihr machtet",
+                    "level": 0,
+                    "example": {
+                        "you_made_a_mistake": "Ihr machtet einen Fehler."
+                    },
+                    "audio": "de_audio/you_plural_made.mp3"
+                },
+                "they_made": {
+                    "translation": "sie machten",
+                    "level": 0,
+                    "example": {
+                        "they_made_a_movie": "Sie machten einen Film."
+                    },
+                    "audio": "de_audio/they_made.mp3"
+                }
+            },
+            "present": {
+                "i_make": {
+                    "translation": "ich mache",
+                    "level": 0,
+                    "example": {
+                        "i_make_coffee": "Ich mache Kaffee."
+                    },
+                    "audio": "de_audio/i_make.mp3"
+                },
+                "you_make": {
+                    "translation": "du machst",
+                    "level": 0,
+                    "example": {
+                        "you_make_dinner": "Du machst Abendessen."
+                    },
+                    "audio": "de_audio/you_make.mp3"
+                },
+                "he_she_it_makes": {
+                    "translation": "er/sie/es macht",
+                    "level": 0,
+                    "example": {
+                        "he_makes_a_plan": "Er macht einen Plan."
+                    },
+                    "audio": "de_audio/he_she_it_makes.mp3"
+                },
+                "we_make": {
+                    "translation": "wir machen",
+                    "level": 0,
+                    "example": {
+                        "we_make_a_movie": "Wir machen einen Film."
+                    },
+                    "audio": "de_audio/we_make.mp3"
+                },
+                "you_plural_make": {
+                    "translation": "ihr macht",
+                    "level": 0,
+                    "example": {
+                        "you_make_a_mistake": "Ihr macht einen Fehler."
+                    },
+                    "audio": "de_audio/you_plural_make.mp3"
+                },
+                "they_make": {
+                    "translation": "sie machen",
+                    "level": 0,
+                    "example": {
+                        "they_make_coffee": "Sie machen Kaffee."
+                    },
+                    "audio": "de_audio/they_make.mp3"
+                }
+            },
+            "future": {
+                "i_will_make": {
+                    "translation": "ich werde machen",
+                    "level": 0,
+                    "example": {
+                        "i_will_make_a_cake": "Ich werde einen Kuchen machen."
+                    },
+                    "audio": "de_audio/i_will_make.mp3"
+                },
+                "you_will_make": {
+                    "translation": "du wirst machen",
+                    "level": 0,
+                    "example": {
+                        "you_will_make_coffee": "Du wirst Kaffee machen."
+                    },
+                    "audio": "de_audio/you_will_make.mp3"
+                },
+                "he_she_it_will_make": {
+                    "translation": "er/sie/es wird machen",
+                    "level": 0,
+                    "example": {
+                        "he_will_make_dinner": "Er wird Abendessen machen."
+                    },
+                    "audio": "de_audio/he_she_it_will_make.mp3"
+                },
+                "we_will_make": {
+                    "translation": "wir werden machen",
+                    "level": 0,
+                    "example": {
+                        "we_will_make_a_plan": "Wir werden einen Plan machen."
+                    },
+                    "audio": "de_audio/we_will_make.mp3"
+                },
+                "you_plural_will_make": {
+                    "translation": "ihr werdet machen",
+                    "level": 0,
+                    "example": {
+                        "you_will_make_a_mistake": "Ihr werdet einen Fehler machen."
+                    },
+                    "audio": "de_audio/you_plural_will_make.mp3"
+                },
+                "they_will_make": {
+                    "translation": "sie werden machen",
+                    "level": 0,
+                    "example": {
+                        "they_will_make_a_movie": "Sie werden einen Film machen."
+                    },
+                    "audio": "de_audio/they_will_make.mp3"
+                }
+            }
+        },
+        "to_see": {
+            "infinitive": "sehen",
+            "level": 0,
+            "past": {
+                "i_saw": {
+                    "translation": "ich sah",
+                    "level": 0,
+                    "example": {
+                        "i_saw_a_movie": "Ich sah einen Film."
+                    },
+                    "audio": "de_audio/i_saw.mp3"
+                },
+                "you_saw": {
+                    "translation": "du sahst",
+                    "level": 0,
+                    "example": {
+                        "you_saw_a_car": "Du sahst ein Auto."
+                    },
+                    "audio": "de_audio/you_saw.mp3"
+                },
+                "he_she_it_saw": {
+                    "translation": "er/sie/es sah",
+                    "level": 0,
+                    "example": {
+                        "he_saw_a_dog": "Er sah einen Hund."
+                    },
+                    "audio": "de_audio/he_she_it_saw.mp3"
+                },
+                "we_saw": {
+                    "translation": "wir sahen",
+                    "level": 0,
+                    "example": {
+                        "we_saw_a_house": "Wir sahen ein Haus."
+                    },
+                    "audio": "de_audio/we_saw.mp3"
+                },
+                "you_plural_saw": {
+                    "translation": "ihr saht",
+                    "level": 0,
+                    "example": {
+                        "you_saw_a_tree": "Ihr saht einen Baum."
+                    },
+                    "audio": "de_audio/you_plural_saw.mp3"
+                },
+                "they_saw": {
+                    "translation": "sie sahen",
+                    "level": 0,
+                    "example": {
+                        "they_saw_a_bird": "Sie sahen einen Vogel."
+                    },
+                    "audio": "de_audio/they_saw.mp3"
+                }
+            },
+            "present": {
+                "i_see": {
+                    "translation": "ich sehe",
+                    "level": 0,
+                    "example": {
+                        "i_see_a_movie": "Ich sehe einen Film."
+                    },
+                    "audio": "de_audio/i_see.mp3"
+                },
+                "you_see": {
+                    "translation": "du siehst",
+                    "level": 0,
+                    "example": {
+                        "you_see_a_car": "Du siehst ein Auto."
+                    },
+                    "audio": "de_audio/you_see.mp3"
+                },
+                "he_she_it_sees": {
+                    "translation": "er/sie/es sieht",
+                    "level": 0,
+                    "example": {
+                        "he_sees_a_dog": "Er sieht einen Hund."
+                    },
+                    "audio": "de_audio/he_she_it_sees.mp3"
+                },
+                "we_see": {
+                    "translation": "wir sehen",
+                    "level": 0,
+                    "example": {
+                        "we_see_a_house": "Wir sehen ein Haus."
+                    },
+                    "audio": "de_audio/we_see.mp3"
+                },
+                "you_plural_see": {
+                    "translation": "ihr seht",
+                    "level": 0,
+                    "example": {
+                        "you_see_a_tree": "Ihr seht einen Baum."
+                    },
+                    "audio": "de_audio/you_plural_see.mp3"
+                },
+                "they_see": {
+                    "translation": "sie sehen",
+                    "level": 0,
+                    "example": {
+                        "they_see_a_bird": "Sie sehen einen Vogel."
+                    },
+                    "audio": "de_audio/they_see.mp3"
+                }
+            },
+            "future": {
+                "i_will_see": {
+                    "translation": "ich werde sehen",
+                    "level": 0,
+                    "example": {
+                        "i_will_see_a_movie": "Ich werde einen Film sehen."
+                    },
+                    "audio": "de_audio/i_will_see.mp3"
+                },
+                "you_will_see": {
+                    "translation": "du wirst sehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_see_a_car": "Du wirst ein Auto sehen."
+                    },
+                    "audio": "de_audio/you_will_see.mp3"
+                },
+                "he_she_it_will_see": {
+                    "translation": "er/sie/es wird sehen",
+                    "level": 0,
+                    "example": {
+                        "he_will_see_a_dog": "Er wird einen Hund sehen."
+                    },
+                    "audio": "de_audio/he_she_it_will_see.mp3"
+                },
+                "we_will_see": {
+                    "translation": "wir werden sehen",
+                    "level": 0,
+                    "example": {
+                        "we_will_see_a_house": "Wir werden ein Haus sehen."
+                    },
+                    "audio": "de_audio/we_will_see.mp3"
+                },
+                "you_plural_will_see": {
+                    "translation": "ihr werdet sehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_see_a_tree": "Ihr werdet einen Baum sehen."
+                    },
+                    "audio": "de_audio/you_plural_will_see.mp3"
+                },
+                "they_will_see": {
+                    "translation": "sie werden sehen",
+                    "level": 0,
+                    "example": {
+                        "they_will_see_a_bird": "Sie werden einen Vogel sehen."
+                    },
+                    "audio": "de_audio/they_will_see.mp3"
+                }
+            }
+        },
+        "to_come": {
+            "infinitive": "kommen",
+            "level": 0,
+            "past": {
+                "i_came": {
+                    "translation": "ich kam",
+                    "level": 0,
+                    "example": {
+                        "i_came_home": "Ich kam nach Hause."
+                    },
+                    "audio": "de_audio/i_came.mp3"
+                },
+                "you_came": {
+                    "translation": "du kamst",
+                    "level": 0,
+                    "example": {
+                        "you_came_late": "Du kamst spät."
+                    },
+                    "audio": "de_audio/you_came.mp3"
+                },
+                "he_she_it_came": {
+                    "translation": "er/sie/es kam",
+                    "level": 0,
+                    "example": {
+                        "he_came_to_the_party": "Er kam zur Party."
+                    },
+                    "audio": "de_audio/he_she_it_came.mp3"
+                },
+                "we_came": {
+                    "translation": "wir kamen",
+                    "level": 0,
+                    "example": {
+                        "we_came_together": "Wir kamen zusammen."
+                    },
+                    "audio": "de_audio/we_came.mp3"
+                },
+                "you_plural_came": {
+                    "translation": "ihr kamt",
+                    "level": 0,
+                    "example": {
+                        "you_came_early": "Ihr kamt früh."
+                    },
+                    "audio": "de_audio/you_plural_came.mp3"
+                },
+                "they_came": {
+                    "translation": "sie kamen",
+                    "level": 0,
+                    "example": {
+                        "they_came_to_the_meeting": "Sie kamen zum Meeting."
+                    },
+                    "audio": "de_audio/they_came.mp3"
+                }
+            },
+            "present": {
+                "i_come": {
+                    "translation": "ich komme",
+                    "level": 0,
+                    "example": {
+                        "i_come_home": "Ich komme nach Hause."
+                    },
+                    "audio": "de_audio/i_come.mp3"
+                },
+                "you_come": {
+                    "translation": "du kommst",
+                    "level": 0,
+                    "example": {
+                        "you_come_late": "Du kommst spät."
+                    },
+                    "audio": "de_audio/you_come.mp3"
+                },
+                "he_she_it_comes": {
+                    "translation": "er/sie/es kommt",
+                    "level": 0,
+                    "example": {
+                        "he_comes_to_the_party": "Er kommt zur Party."
+                    },
+                    "audio": "de_audio/he_she_it_comes.mp3"
+                },
+                "we_come": {
+                    "translation": "wir kommen",
+                    "level": 0,
+                    "example": {
+                        "we_come_together": "Wir kommen zusammen."
+                    },
+                    "audio": "de_audio/we_come.mp3"
+                },
+                "you_plural_come": {
+                    "translation": "ihr kommt",
+                    "level": 0,
+                    "example": {
+                        "you_come_early": "Ihr kommt früh."
+                    },
+                    "audio": "de_audio/you_plural_come.mp3"
+                },
+                "they_come": {
+                    "translation": "sie kommen",
+                    "level": 0,
+                    "example": {
+                        "they_come_to_the_meeting": "Sie kommen zum Meeting."
+                    },
+                    "audio": "de_audio/they_come.mp3"
+                }
+            },
+            "future": {
+                "i_will_come": {
+                    "translation": "ich werde kommen",
+                    "level": 0,
+                    "example": {
+                        "i_will_come_home": "Ich werde nach Hause kommen."
+                    },
+                    "audio": "de_audio/i_will_come.mp3"
+                },
+                "you_will_come": {
+                    "translation": "du wirst kommen",
+                    "level": 0,
+                    "example": {
+                        "you_will_come_late": "Du wirst spät kommen."
+                    },
+                    "audio": "de_audio/you_will_come.mp3"
+                },
+                "he_she_it_will_come": {
+                    "translation": "er/sie/es wird kommen",
+                    "level": 0,
+                    "example": {
+                        "he_will_come_to_the_party": "Er wird zur Party kommen."
+                    },
+                    "audio": "de_audio/he_she_it_will_come.mp3"
+                },
+                "we_will_come": {
+                    "translation": "wir werden kommen",
+                    "level": 0,
+                    "example": {
+                        "we_will_come_together": "Wir werden zusammen kommen."
+                    },
+                    "audio": "de_audio/we_will_come.mp3"
+                },
+                "you_plural_will_come": {
+                    "translation": "ihr werdet kommen",
+                    "level": 0,
+                    "example": {
+                        "you_will_come_early": "Ihr werdet früh kommen."
+                    },
+                    "audio": "de_audio/you_plural_will_come.mp3"
+                },
+                "they_will_come": {
+                    "translation": "sie werden kommen",
+                    "level": 0,
+                    "example": {
+                        "they_will_come_to_the_meeting": "Sie werden zum Meeting kommen."
+                    },
+                    "audio": "de_audio/they_will_come.mp3"
+                }
+            }
+        },
+        "to_eat": {
+            "infinitive": "essen",
+            "level": 0,
+            "past": {
+                "i_ate": {
+                    "translation": "ich aß",
+                    "level": 0,
+                    "example": {
+                        "i_ate_breakfast": "Ich aß Frühstück."
+                    },
+                    "audio": "de_audio/i_ate.mp3"
+                },
+                "you_ate": {
+                    "translation": "du aßest",
+                    "level": 0,
+                    "example": {
+                        "you_ate_lunch": "Du aßest Mittagessen."
+                    },
+                    "audio": "de_audio/you_ate.mp3"
+                },
+                "he_she_it_ate": {
+                    "translation": "er/sie/es aß",
+                    "level": 0,
+                    "example": {
+                        "he_ate_dinner": "Er aß Abendessen."
+                    },
+                    "audio": "de_audio/he_she_it_ate.mp3"
+                },
+                "we_ate": {
+                    "translation": "wir aßen",
+                    "level": 0,
+                    "example": {
+                        "we_ate_together": "Wir aßen zusammen."
+                    },
+                    "audio": "de_audio/we_ate.mp3"
+                },
+                "you_plural_ate": {
+                    "translation": "ihr aßt",
+                    "level": 0,
+                    "example": {
+                        "you_ate_pizza": "Ihr aßt Pizza."
+                    },
+                    "audio": "de_audio/you_plural_ate.mp3"
+                },
+                "they_ate": {
+                    "translation": "sie aßen",
+                    "level": 0,
+                    "example": {
+                        "they_ate_sushi": "Sie aßen Sushi."
+                    },
+                    "audio": "de_audio/they_ate.mp3"
+                }
+            },
+            "present": {
+                "i_eat": {
+                    "translation": "ich esse",
+                    "level": 0,
+                    "example": {
+                        "i_eat_breakfast": "Ich esse Frühstück."
+                    },
+                    "audio": "de_audio/i_eat.mp3"
+                },
+                "you_eat": {
+                    "translation": "du isst",
+                    "level": 0,
+                    "example": {
+                        "you_eat_lunch": "Du isst Mittagessen."
+                    },
+                    "audio": "de_audio/you_eat.mp3"
+                },
+                "he_she_it_eats": {
+                    "translation": "er/sie/es isst",
+                    "level": 0,
+                    "example": {
+                        "he_eats_dinner": "Er isst Abendessen."
+                    },
+                    "audio": "de_audio/he_she_it_eats.mp3"
+                },
+                "we_eat": {
+                    "translation": "wir essen",
+                    "level": 0,
+                    "example": {
+                        "we_eat_together": "Wir essen zusammen."
+                    },
+                    "audio": "de_audio/we_eat.mp3"
+                },
+                "you_plural_eat": {
+                    "translation": "ihr esst",
+                    "level": 0,
+                    "example": {
+                        "you_eat_pizza": "Ihr esst Pizza."
+                    },
+                    "audio": "de_audio/you_plural_eat.mp3"
+                },
+                "they_eat": {
+                    "translation": "sie essen",
+                    "level": 0,
+                    "example": {
+                        "they_eat_sushi": "Sie essen Sushi."
+                    },
+                    "audio": "de_audio/they_eat.mp3"
+                }
+            },
+            "future": {
+                "i_will_eat": {
+                    "translation": "ich werde essen",
+                    "level": 0,
+                    "example": {
+                        "i_will_eat_breakfast": "Ich werde Frühstück essen."
+                    },
+                    "audio": "de_audio/i_will_eat.mp3"
+                },
+                "you_will_eat": {
+                    "translation": "du wirst essen",
+                    "level": 0,
+                    "example": {
+                        "you_will_eat_lunch": "Du wirst Mittagessen essen."
+                    },
+                    "audio": "de_audio/you_will_eat.mp3"
+                },
+                "he_she_it_will_eat": {
+                    "translation": "er/sie/es wird essen",
+                    "level": 0,
+                    "example": {
+                        "he_will_eat_dinner": "Er wird Abendessen essen."
+                    },
+                    "audio": "de_audio/he_she_it_will_eat.mp3"
+                },
+                "we_will_eat": {
+                    "translation": "wir werden essen",
+                    "level": 0,
+                    "example": {
+                        "we_will_eat_together": "Wir werden zusammen essen."
+                    },
+                    "audio": "de_audio/we_will_eat.mp3"
+                },
+                "you_plural_will_eat": {
+                    "translation": "ihr werdet essen",
+                    "level": 0,
+                    "example": {
+                        "you_will_eat_pizza": "Ihr werdet Pizza essen."
+                    },
+                    "audio": "de_audio/you_plural_will_eat.mp3"
+                },
+                "they_will_eat": {
+                    "translation": "sie werden essen",
+                    "level": 0,
+                    "example": {
+                        "they_will_eat_sushi": "Sie werden Sushi essen."
+                    },
+                    "audio": "de_audio/they_will_eat.mp3"
+                }
+            }
+        },
+        "to_drink": {
+            "infinitive": "trinken",
+            "level": 0,
+            "past": {
+                "i_drank": {
+                    "translation": "ich trank",
+                    "level": 0,
+                    "example": {
+                        "i_drank_water": "Ich trank Wasser."
+                    },
+                    "audio": "de_audio/i_drank.mp3"
+                },
+                "you_drank": {
+                    "translation": "du trankst",
+                    "level": 0,
+                    "example": {
+                        "you_drank_coffee": "Du trankst Kaffee."
+                    },
+                    "audio": "de_audio/you_drank.mp3"
+                },
+                "he_she_it_drank": {
+                    "translation": "er/sie/es trank",
+                    "level": 0,
+                    "example": {
+                        "he_drank_tea": "Er trank Tee."
+                    },
+                    "audio": "de_audio/he_she_it_drank.mp3"
+                },
+                "we_drank": {
+                    "translation": "wir tranken",
+                    "level": 0,
+                    "example": {
+                        "we_drank_beer": "Wir tranken Bier."
+                    },
+                    "audio": "de_audio/we_drank.mp3"
+                },
+                "you_plural_drank": {
+                    "translation": "ihr trankt",
+                    "level": 0,
+                    "example": {
+                        "you_drank_wine": "Ihr trankt Wein."
+                    },
+                    "audio": "de_audio/you_plural_drank.mp3"
+                },
+                "they_drank": {
+                    "translation": "sie tranken",
+                    "level": 0,
+                    "example": {
+                        "they_drank_juice": "Sie tranken Saft."
+                    },
+                    "audio": "de_audio/they_drank.mp3"
+                }
+            },
+            "present": {
+                "i_drink": {
+                    "translation": "ich trinke",
+                    "level": 0,
+                    "example": {
+                        "i_drink_water": "Ich trinke Wasser."
+                    },
+                    "audio": "de_audio/i_drink.mp3"
+                },
+                "you_drink": {
+                    "translation": "du trinkst",
+                    "level": 0,
+                    "example": {
+                        "you_drink_coffee": "Du trinkst Kaffee."
+                    },
+                    "audio": "de_audio/you_drink.mp3"
+                },
+                "he_she_it_drinks": {
+                    "translation": "er/sie/es trinkt",
+                    "level": 0,
+                    "example": {
+                        "he_drinks_tea": "Er trinkt Tee."
+                    },
+                    "audio": "de_audio/he_she_it_drinks.mp3"
+                },
+                "we_drink": {
+                    "translation": "wir trinken",
+                    "level": 0,
+                    "example": {
+                        "we_drink_beer": "Wir trinken Bier."
+                    },
+                    "audio": "de_audio/we_drink.mp3"
+                },
+                "you_plural_drink": {
+                    "translation": "ihr trinkt",
+                    "level": 0,
+                    "example": {
+                        "you_drink_wine": "Ihr trinkt Wein."
+                    },
+                    "audio": "de_audio/you_plural_drink.mp3"
+                },
+                "they_drink": {
+                    "translation": "sie trinken",
+                    "level": 0,
+                    "example": {
+                        "they_drink_juice": "Sie trinken Saft."
+                    },
+                    "audio": "de_audio/they_drink.mp3"
+                }
+            },
+            "future": {
+                "i_will_drink": {
+                    "translation": "ich werde trinken",
+                    "level": 0,
+                    "example": {
+                        "i_will_drink_water": "Ich werde Wasser trinken."
+                    },
+                    "audio": "de_audio/i_will_drink.mp3"
+                },
+                "you_will_drink": {
+                    "translation": "du wirst trinken",
+                    "level": 0,
+                    "example": {
+                        "you_will_drink_coffee": "Du wirst Kaffee trinken."
+                    },
+                    "audio": "de_audio/you_will_drink.mp3"
+                },
+                "he_she_it_will_drink": {
+                    "translation": "er/sie/es wird trinken",
+                    "level": 0,
+                    "example": {
+                        "he_will_drink_tea": "Er wird Tee trinken."
+                    },
+                    "audio": "de_audio/he_she_it_will_drink.mp3"
+                },
+                "we_will_drink": {
+                    "translation": "wir werden trinken",
+                    "level": 0,
+                    "example": {
+                        "we_will_drink_beer": "Wir werden Bier trinken."
+                    },
+                    "audio": "de_audio/we_will_drink.mp3"
+                },
+                "you_plural_will_drink": {
+                    "translation": "ihr werdet trinken",
+                    "level": 0,
+                    "example": {
+                        "you_will_drink_wine": "Ihr werdet Wein trinken."
+                    },
+                    "audio": "de_audio/you_plural_will_drink.mp3"
+                },
+                "they_will_drink": {
+                    "translation": "sie werden trinken",
+                    "level": 0,
+                    "example": {
+                        "they_will_drink_juice": "Sie werden Saft trinken."
+                    },
+                    "audio": "de_audio/they_will_drink.mp3"
+                }
+            }
+        },
+        "to_read": {
+            "infinitive": "lesen",
+            "level": 0,
+            "past": {
+                "i_read": {
+                    "translation": "ich las",
+                    "level": 0,
+                    "example": {
+                        "i_read_a_book": "Ich las ein Buch."
+                    },
+                    "audio": "de_audio/i_read.mp3"
+                },
+                "you_read": {
+                    "translation": "du lasest",
+                    "level": 0,
+                    "example": {
+                        "you_read_a_magazine": "Du lasest eine Zeitschrift."
+                    },
+                    "audio": "de_audio/you_read.mp3"
+                },
+                "he_she_it_read": {
+                    "translation": "er/sie/es las",
+                    "level": 0,
+                    "example": {
+                        "he_read_a_newspaper": "Er las eine Zeitung."
+                    },
+                    "audio": "de_audio/he_she_it_read.mp3"
+                },
+                "we_read": {
+                    "translation": "wir lasen",
+                    "level": 0,
+                    "example": {
+                        "we_read_a_story": "Wir lasen eine Geschichte."
+                    },
+                    "audio": "de_audio/we_read.mp3"
+                },
+                "you_plural_read": {
+                    "translation": "ihr last",
+                    "level": 0,
+                    "example": {
+                        "you_read_a_poem": "Ihr last ein Gedicht."
+                    },
+                    "audio": "de_audio/you_plural_read.mp3"
+                },
+                "they_read": {
+                    "translation": "sie lasen",
+                    "level": 0,
+                    "example": {
+                        "they_read_a_letter": "Sie lasen einen Brief."
+                    },
+                    "audio": "de_audio/they_read.mp3"
+                }
+            },
+            "present": {
+                "i_read": {
+                    "translation": "ich lese",
+                    "level": 0,
+                    "example": {
+                        "i_read_a_book": "Ich lese ein Buch."
+                    },
+                    "audio": "de_audio/i_read.mp3"
+                },
+                "you_read": {
+                    "translation": "du liest",
+                    "level": 0,
+                    "example": {
+                        "you_read_a_magazine": "Du liest eine Zeitschrift."
+                    },
+                    "audio": "de_audio/you_read.mp3"
+                },
+                "he_she_it_reads": {
+                    "translation": "er/sie/es liest",
+                    "level": 0,
+                    "example": {
+                        "he_reads_a_newspaper": "Er liest eine Zeitung."
+                    },
+                    "audio": "de_audio/he_she_it_reads.mp3"
+                },
+                "we_read": {
+                    "translation": "wir lesen",
+                    "level": 0,
+                    "example": {
+                        "we_read_a_story": "Wir lesen eine Geschichte."
+                    },
+                    "audio": "de_audio/we_read.mp3"
+                },
+                "you_plural_read": {
+                    "translation": "ihr lest",
+                    "level": 0,
+                    "example": {
+                        "you_read_a_poem": "Ihr lest ein Gedicht."
+                    },
+                    "audio": "de_audio/you_plural_read.mp3"
+                },
+                "they_read": {
+                    "translation": "sie lesen",
+                    "level": 0,
+                    "example": {
+                        "they_read_a_letter": "Sie lesen einen Brief."
+                    },
+                    "audio": "de_audio/they_read.mp3"
+                }
+            },
+            "future": {
+                "i_will_read": {
+                    "translation": "ich werde lesen",
+                    "level": 0,
+                    "example": {
+                        "i_will_read_a_book": "Ich werde ein Buch lesen."
+                    },
+                    "audio": "de_audio/i_will_read.mp3"
+                },
+                "you_will_read": {
+                    "translation": "du wirst lesen",
+                    "level": 0,
+                    "example": {
+                        "you_will_read_a_magazine": "Du wirst eine Zeitschrift lesen."
+                    },
+                    "audio": "de_audio/you_will_read.mp3"
+                },
+                "he_she_it_will_read": {
+                    "translation": "er/sie/es wird lesen",
+                    "level": 0,
+                    "example": {
+                        "he_will_read_a_newspaper": "Er wird eine Zeitung lesen."
+                    },
+                    "audio": "de_audio/he_she_it_will_read.mp3"
+                },
+                "we_will_read": {
+                    "translation": "wir werden lesen",
+                    "level": 0,
+                    "example": {
+                        "we_will_read_a_story": "Wir werden eine Geschichte lesen."
+                    },
+                    "audio": "de_audio/we_will_read.mp3"
+                },
+                "you_plural_will_read": {
+                    "translation": "ihr werdet lesen",
+                    "level": 0,
+                    "example": {
+                        "you_will_read_a_poem": "Ihr werdet ein Gedicht lesen."
+                    },
+                    "audio": "de_audio/you_plural_will_read.mp3"
+                },
+                "they_will_read": {
+                    "translation": "sie werden lesen",
+                    "level": 0,
+                    "example": {
+                        "they_will_read_a_letter": "Sie werden einen Brief lesen."
+                    },
+                    "audio": "de_audio/they_will_read.mp3"
+                }
+            }
+        },
+        "to_write": {
+            "infinitive": "schreiben",
+            "level": 0,
+            "past": {
+                "i_wrote": {
+                    "translation": "ich schrieb",
+                    "level": 0,
+                    "example": {
+                        "i_wrote_a_letter": "Ich schrieb einen Brief."
+                    },
+                    "audio": "de_audio/i_wrote.mp3"
+                },
+                "you_wrote": {
+                    "translation": "du schriebst",
+                    "level": 0,
+                    "example": {
+                        "you_wrote_a_story": "Du schriebst eine Geschichte."
+                    },
+                    "audio": "de_audio/you_wrote.mp3"
+                },
+                "he_she_it_wrote": {
+                    "translation": "er/sie/es schrieb",
+                    "level": 0,
+                    "example": {
+                        "he_wrote_a_poem": "Er schrieb ein Gedicht."
+                    },
+                    "audio": "de_audio/he_she_it_wrote.mp3"
+                },
+                "we_wrote": {
+                    "translation": "wir schrieben",
+                    "level": 0,
+                    "example": {
+                        "we_wrote_a_book": "Wir schrieben ein Buch."
+                    },
+                    "audio": "de_audio/we_wrote.mp3"
+                },
+                "you_plural_wrote": {
+                    "translation": "ihr schriebt",
+                    "level": 0,
+                    "example": {
+                        "you_wrote_a_note": "Ihr schriebt eine Notiz."
+                    },
+                    "audio": "de_audio/you_plural_wrote.mp3"
+                },
+                "they_wrote": {
+                    "translation": "sie schrieben",
+                    "level": 0,
+                    "example": {
+                        "they_wrote_a_report": "Sie schrieben einen Bericht."
+                    },
+                    "audio": "de_audio/they_wrote.mp3"
+                }
+            },
+            "present": {
+                "i_write": {
+                    "translation": "ich schreibe",
+                    "level": 0,
+                    "example": {
+                        "i_write_a_letter": "Ich schreibe einen Brief."
+                    },
+                    "audio": "de_audio/i_write.mp3"
+                },
+                "you_write": {
+                    "translation": "du schreibst",
+                    "level": 0,
+                    "example": {
+                        "you_write_a_story": "Du schreibst eine Geschichte."
+                    },
+                    "audio": "de_audio/you_write.mp3"
+                },
+                "he_she_it_writes": {
+                    "translation": "er/sie/es schreibt",
+                    "level": 0,
+                    "example": {
+                        "he_writes_a_poem": "Er schreibt ein Gedicht."
+                    },
+                    "audio": "de_audio/he_she_it_writes.mp3"
+                },
+                "we_write": {
+                    "translation": "wir schreiben",
+                    "level": 0,
+                    "example": {
+                        "we_write_a_book": "Wir schreiben ein Buch."
+                    },
+                    "audio": "de_audio/we_write.mp3"
+                },
+                "you_plural_write": {
+                    "translation": "ihr schreibt",
+                    "level": 0,
+                    "example": {
+                        "you_write_a_note": "Ihr schreibt eine Notiz."
+                    },
+                    "audio": "de_audio/you_plural_write.mp3"
+                },
+                "they_write": {
+                    "translation": "sie schreiben",
+                    "level": 0,
+                    "example": {
+                        "they_write_a_report": "Sie schreiben einen Bericht."
+                    },
+                    "audio": "de_audio/they_write.mp3"
+                }
+            },
+            "future": {
+                "i_will_write": {
+                    "translation": "ich werde schreiben",
+                    "level": 0,
+                    "example": {
+                        "i_will_write_a_letter": "Ich werde einen Brief schreiben."
+                    },
+                    "audio": "de_audio/i_will_write.mp3"
+                },
+                "you_will_write": {
+                    "translation": "du wirst schreiben",
+                    "level": 0,
+                    "example": {
+                        "you_will_write_a_story": "Du wirst eine Geschichte schreiben."
+                    },
+                    "audio": "de_audio/you_will_write.mp3"
+                },
+                "he_she_it_will_write": {
+                    "translation": "er/sie/es wird schreiben",
+                    "level": 0,
+                    "example": {
+                        "he_will_write_a_poem": "Er wird ein Gedicht schreiben."
+                    },
+                    "audio": "de_audio/he_she_it_will_write.mp3"
+                },
+                "we_will_write": {
+                    "translation": "wir werden schreiben",
+                    "level": 0,
+                    "example": {
+                        "we_will_write_a_book": "Wir werden ein Buch schreiben."
+                    },
+                    "audio": "de_audio/we_will_write.mp3"
+                },
+                "you_plural_will_write": {
+                    "translation": "ihr werdet schreiben",
+                    "level": 0,
+                    "example": {
+                        "you_will_write_a_note": "Ihr werdet eine Notiz schreiben."
+                    },
+                    "audio": "de_audio/you_plural_will_write.mp3"
+                },
+                "they_will_write": {
+                    "translation": "sie werden schreiben",
+                    "level": 0,
+                    "example": {
+                        "they_will_write_a_report": "Sie werden einen Bericht schreiben."
+                    },
+                    "audio": "de_audio/they_will_write.mp3"
+                }
+            }
+        },
+        "to_live": {
+            "infinitive": "wohnen",
+            "level": 0,
+            "past": {
+                "i_lived": {
+                    "translation": "ich wohnte",
+                    "level": 0,
+                    "example": {
+                        "i_lived_in_berlin": "Ich wohnte in Berlin."
+                    },
+                    "audio": "de_audio/i_lived.mp3"
+                },
+                "you_lived": {
+                    "translation": "du wohntest",
+                    "level": 0,
+                    "example": {
+                        "you_lived_in_a_house": "Du wohntest in einem Haus."
+                    },
+                    "audio": "de_audio/you_lived.mp3"
+                },
+                "he_she_it_lived": {
+                    "translation": "er/sie/es wohnte",
+                    "level": 0,
+                    "example": {
+                        "he_lived_in_a_flat": "Er wohnte in einer Wohnung."
+                    },
+                    "audio": "de_audio/he_she_it_lived.mp3"
+                },
+                "we_lived": {
+                    "translation": "wir wohnten",
+                    "level": 0,
+                    "example": {
+                        "we_lived_together": "Wir wohnten zusammen."
+                    },
+                    "audio": "de_audio/we_lived.mp3"
+                },
+                "you_plural_lived": {
+                    "translation": "ihr wohntet",
+                    "level": 0,
+                    "example": {
+                        "you_lived_in_the_city": "Ihr wohntet in der Stadt."
+                    },
+                    "audio": "de_audio/you_plural_lived.mp3"
+                },
+                "they_lived": {
+                    "translation": "sie wohnten",
+                    "level": 0,
+                    "example": {
+                        "they_lived_in_a_village": "Sie wohnten in einem Dorf."
+                    },
+                    "audio": "de_audio/they_lived.mp3"
+                }
+            },
+            "present": {
+                "i_live": {
+                    "translation": "ich wohne",
+                    "level": 0,
+                    "example": {
+                        "i_live_in_berlin": "Ich wohne in Berlin."
+                    },
+                    "audio": "de_audio/i_live.mp3"
+                },
+                "you_live": {
+                    "translation": "du wohnst",
+                    "level": 0,
+                    "example": {
+                        "you_live_in_a_house": "Du wohnst in einem Haus."
+                    },
+                    "audio": "de_audio/you_live.mp3"
+                },
+                "he_she_it_lives": {
+                    "translation": "er/sie/es wohnt",
+                    "level": 0,
+                    "example": {
+                        "he_lives_in_a_flat": "Er wohnt in einer Wohnung."
+                    },
+                    "audio": "de_audio/he_she_it_lives.mp3"
+                },
+                "we_live": {
+                    "translation": "wir wohnen",
+                    "level": 0,
+                    "example": {
+                        "we_live_together": "Wir wohnen zusammen."
+                    },
+                    "audio": "de_audio/we_live.mp3"
+                },
+                "you_plural_live": {
+                    "translation": "ihr wohnt",
+                    "level": 0,
+                    "example": {
+                        "you_live_in_the_city": "Ihr wohnt in der Stadt."
+                    },
+                    "audio": "de_audio/you_plural_live.mp3"
+                },
+                "they_live": {
+                    "translation": "sie wohnen",
+                    "level": 0,
+                    "example": {
+                        "they_live_in_a_village": "Sie wohnen in einem Dorf."
+                    },
+                    "audio": "de_audio/they_live.mp3"
+                }
+            },
+            "future": {
+                "i_will_live": {
+                    "translation": "ich werde wohnen",
+                    "level": 0,
+                    "example": {
+                        "i_will_live_in_berlin": "Ich werde in Berlin wohnen."
+                    },
+                    "audio": "de_audio/i_will_live.mp3"
+                },
+                "you_will_live": {
+                    "translation": "du wirst wohnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_live_in_a_house": "Du wirst in einem Haus wohnen."
+                    },
+                    "audio": "de_audio/you_will_live.mp3"
+                },
+                "he_she_it_will_live": {
+                    "translation": "er/sie/es wird wohnen",
+                    "level": 0,
+                    "example": {
+                        "he_will_live_in_a_flat": "Er wird in einer Wohnung wohnen."
+                    },
+                    "audio": "de_audio/he_she_it_will_live.mp3"
+                },
+                "we_will_live": {
+                    "translation": "wir werden wohnen",
+                    "level": 0,
+                    "example": {
+                        "we_will_live_together": "Wir werden zusammen wohnen."
+                    },
+                    "audio": "de_audio/we_will_live.mp3"
+                },
+                "you_plural_will_live": {
+                    "translation": "ihr werdet wohnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_live_in_the_city": "Ihr werdet in der Stadt wohnen."
+                    },
+                    "audio": "de_audio/you_plural_will_live.mp3"
+                },
+                "they_will_live": {
+                    "translation": "sie werden wohnen",
+                    "level": 0,
+                    "example": {
+                        "they_will_live_in_a_village": "Sie werden in einem Dorf wohnen."
+                    },
+                    "audio": "de_audio/they_will_live.mp3"
+                }
+            }
+        },
+        "to_work": {
+            "infinitive": "arbeiten",
+            "level": 0,
+            "past": {
+                "i_worked": {
+                    "translation": "ich arbeitete",
+                    "level": 0,
+                    "example": {
+                        "i_worked_in_an_office": "Ich arbeitete in einem Büro."
+                    },
+                    "audio": "de_audio/i_worked.mp3"
+                },
+                "you_worked": {
+                    "translation": "du arbeitetest",
+                    "level": 0,
+                    "example": {
+                        "you_worked_hard": "Du arbeitetest hart."
+                    },
+                    "audio": "de_audio/you_worked.mp3"
+                },
+                "he_she_it_worked": {
+                    "translation": "er/sie/es arbeitete",
+                    "level": 0,
+                    "example": {
+                        "he_worked_in_a_factory": "Er arbeitete in einer Fabrik."
+                    },
+                    "audio": "de_audio/he_she_it_worked.mp3"
+                },
+                "we_worked": {
+                    "translation": "wir arbeiteten",
+                    "level": 0,
+                    "example": {
+                        "we_worked_together": "Wir arbeiteten zusammen."
+                    },
+                    "audio": "de_audio/we_worked.mp3"
+                },
+                "you_plural_worked": {
+                    "translation": "ihr arbeitetet",
+                    "level": 0,
+                    "example": {
+                        "you_worked_late": "Ihr arbeitetet spät."
+                    },
+                    "audio": "de_audio/you_plural_worked.mp3"
+                },
+                "they_worked": {
+                    "translation": "sie arbeiteten",
+                    "level": 0,
+                    "example": {
+                        "they_worked_on_a_project": "Sie arbeiteten an einem Projekt."
+                    },
+                    "audio": "de_audio/they_worked.mp3"
+                }
+            },
+            "present": {
+                "i_work": {
+                    "translation": "ich arbeite",
+                    "level": 0,
+                    "example": {
+                        "i_work_in_an_office": "Ich arbeite in einem Büro."
+                    },
+                    "audio": "de_audio/i_work.mp3"
+                },
+                "you_work": {
+                    "translation": "du arbeitest",
+                    "level": 0,
+                    "example": {
+                        "you_work_hard": "Du arbeitest hart."
+                    },
+                    "audio": "de_audio/you_work.mp3"
+                },
+                "he_she_it_works": {
+                    "translation": "er/sie/es arbeitet",
+                    "level": 0,
+                    "example": {
+                        "he_works_in_a_factory": "Er arbeitet in einer Fabrik."
+                    },
+                    "audio": "de_audio/he_she_it_works.mp3"
+                },
+                "we_work": {
+                    "translation": "wir arbeiten",
+                    "level": 0,
+                    "example": {
+                        "we_work_together": "Wir arbeiten zusammen."
+                    },
+                    "audio": "de_audio/we_work.mp3"
+                },
+                "you_plural_work": {
+                    "translation": "ihr arbeitet",
+                    "level": 0,
+                    "example": {
+                        "you_work_late": "Ihr arbeitet spät."
+                    },
+                    "audio": "de_audio/you_plural_work.mp3"
+                },
+                "they_work": {
+                    "translation": "sie arbeiten",
+                    "level": 0,
+                    "example": {
+                        "they_work_on_a_project": "Sie arbeiten an einem Projekt."
+                    },
+                    "audio": "de_audio/they_work.mp3"
+                }
+            },
+            "future": {
+                "i_will_work": {
+                    "translation": "ich werde arbeiten",
+                    "level": 0,
+                    "example": {
+                        "i_will_work_in_an_office": "Ich werde in einem Büro arbeiten."
+                    },
+                    "audio": "de_audio/i_will_work.mp3"
+                },
+                "you_will_work": {
+                    "translation": "du wirst arbeiten",
+                    "level": 0,
+                    "example": {
+                        "you_will_work_hard": "Du wirst hart arbeiten."
+                    },
+                    "audio": "de_audio/you_will_work.mp3"
+                },
+                "he_she_it_will_work": {
+                    "translation": "er/sie/es wird arbeiten",
+                    "level": 0,
+                    "example": {
+                        "he_will_work_in_a_factory": "Er wird in einer Fabrik arbeiten."
+                    },
+                    "audio": "de_audio/he_she_it_will_work.mp3"
+                },
+                "we_will_work": {
+                    "translation": "wir werden arbeiten",
+                    "level": 0,
+                    "example": {
+                        "we_will_work_together": "Wir werden zusammen arbeiten."
+                    },
+                    "audio": "de_audio/we_will_work.mp3"
+                },
+                "you_plural_will_work": {
+                    "translation": "ihr werdet arbeiten",
+                    "level": 0,
+                    "example": {
+                        "you_will_work_late": "Ihr werdet spät arbeiten."
+                    },
+                    "audio": "de_audio/you_plural_will_work.mp3"
+                },
+                "they_will_work": {
+                    "translation": "sie werden arbeiten",
+                    "level": 0,
+                    "example": {
+                        "they_will_work_on_a_project": "Sie werden an einem Projekt arbeiten."
+                    },
+                    "audio": "de_audio/they_will_work.mp3"
+                }
+            }
+        },
+        "to_learn": {
+            "infinitive": "lernen",
+            "level": 0,
+            "past": {
+                "i_learned": {
+                    "translation": "ich lernte",
+                    "level": 0,
+                    "example": {
+                        "i_learned_german": "Ich lernte Deutsch."
+                    },
+                    "audio": "de_audio/i_learned.mp3"
+                },
+                "you_learned": {
+                    "translation": "du lerntest",
+                    "level": 0,
+                    "example": {
+                        "you_learned_fast": "Du lerntest schnell."
+                    },
+                    "audio": "de_audio/you_learned.mp3"
+                },
+                "he_she_it_learned": {
+                    "translation": "er/sie/es lernte",
+                    "level": 0,
+                    "example": {
+                        "he_learned_english": "Er lernte Englisch."
+                    },
+                    "audio": "de_audio/he_she_it_learned.mp3"
+                },
+                "we_learned": {
+                    "translation": "wir lernten",
+                    "level": 0,
+                    "example": {
+                        "we_learned_together": "Wir lernten zusammen."
+                    },
+                    "audio": "de_audio/we_learned.mp3"
+                },
+                "you_plural_learned": {
+                    "translation": "ihr lerntet",
+                    "level": 0,
+                    "example": {
+                        "you_learned_a_lot": "Ihr lerntet viel."
+                    },
+                    "audio": "de_audio/you_plural_learned.mp3"
+                },
+                "they_learned": {
+                    "translation": "sie lernten",
+                    "level": 0,
+                    "example": {
+                        "they_learned_spanish": "Sie lernten Spanisch."
+                    },
+                    "audio": "de_audio/they_learned.mp3"
+                }
+            },
+            "present": {
+                "i_learn": {
+                    "translation": "ich lerne",
+                    "level": 0,
+                    "example": {
+                        "i_learn_german": "Ich lerne Deutsch."
+                    },
+                    "audio": "de_audio/i_learn.mp3"
+                },
+                "you_learn": {
+                    "translation": "du lernst",
+                    "level": 0,
+                    "example": {
+                        "you_learn_fast": "Du lernst schnell."
+                    },
+                    "audio": "de_audio/you_learn.mp3"
+                },
+                "he_she_it_learns": {
+                    "translation": "er/sie/es lernt",
+                    "level": 0,
+                    "example": {
+                        "he_learns_english": "Er lernt Englisch."
+                    },
+                    "audio": "de_audio/he_she_it_learns.mp3"
+                },
+                "we_learn": {
+                    "translation": "wir lernen",
+                    "level": 0,
+                    "example": {
+                        "we_learn_together": "Wir lernen zusammen."
+                    },
+                    "audio": "de_audio/we_learn.mp3"
+                },
+                "you_plural_learn": {
+                    "translation": "ihr lernt",
+                    "level": 0,
+                    "example": {
+                        "you_learn_a_lot": "Ihr lernt viel."
+                    },
+                    "audio": "de_audio/you_plural_learn.mp3"
+                },
+                "they_learn": {
+                    "translation": "sie lernen",
+                    "level": 0,
+                    "example": {
+                        "they_learn_spanish": "Sie lernen Spanisch."
+                    },
+                    "audio": "de_audio/they_learn.mp3"
+                }
+            },
+            "future": {
+                "i_will_learn": {
+                    "translation": "ich werde lernen",
+                    "level": 0,
+                    "example": {
+                        "i_will_learn_german": "Ich werde Deutsch lernen."
+                    },
+                    "audio": "de_audio/i_will_learn.mp3"
+                },
+                "you_will_learn": {
+                    "translation": "du wirst lernen",
+                    "level": 0,
+                    "example": {
+                        "you_will_learn_fast": "Du wirst schnell lernen."
+                    },
+                    "audio": "de_audio/you_will_learn.mp3"
+                },
+                "he_she_it_will_learn": {
+                    "translation": "er/sie/es wird lernen",
+                    "level": 0,
+                    "example": {
+                        "he_will_learn_english": "Er wird Englisch lernen."
+                    },
+                    "audio": "de_audio/he_she_it_will_learn.mp3"
+                },
+                "we_will_learn": {
+                    "translation": "wir werden lernen",
+                    "level": 0,
+                    "example": {
+                        "we_will_learn_together": "Wir werden zusammen lernen."
+                    },
+                    "audio": "de_audio/we_will_learn.mp3"
+                },
+                "you_plural_will_learn": {
+                    "translation": "ihr werdet lernen",
+                    "level": 0,
+                    "example": {
+                        "you_will_learn_a_lot": "Ihr werdet viel lernen."
+                    },
+                    "audio": "de_audio/you_plural_will_learn.mp3"
+                },
+                "they_will_learn": {
+                    "translation": "sie werden lernen",
+                    "level": 0,
+                    "example": {
+                        "they_will_learn_spanish": "Sie werden Spanisch lernen."
+                    },
+                    "audio": "de_audio/they_will_learn.mp3"
+                }
+            }
+        },
+        "to_understand": {
+            "infinitive": "verstehen",
+            "level": 0,
+            "past": {
+                "i_understood": {
+                    "translation": "ich verstand",
+                    "level": 0,
+                    "example": {
+                        "i_understood_the_question": "Ich verstand die Frage."
+                    },
+                    "audio": "de_audio/i_understood.mp3"
+                },
+                "you_understood": {
+                    "translation": "du verstandest",
+                    "level": 0,
+                    "example": {
+                        "you_understood_the_problem": "Du verstandest das Problem."
+                    },
+                    "audio": "de_audio/you_understood.mp3"
+                },
+                "he_she_it_understood": {
+                    "translation": "er/sie/es verstand",
+                    "level": 0,
+                    "example": {
+                        "he_understood_the_situation": "Er verstand die Situation."
+                    },
+                    "audio": "de_audio/he_she_it_understood.mp3"
+                },
+                "we_understood": {
+                    "translation": "wir verstanden",
+                    "level": 0,
+                    "example": {
+                        "we_understood_the_plan": "Wir verstanden den Plan."
+                    },
+                    "audio": "de_audio/we_understood.mp3"
+                },
+                "you_plural_understood": {
+                    "translation": "ihr verstandet",
+                    "level": 0,
+                    "example": {
+                        "you_understood_the_task": "Ihr verstandet die Aufgabe."
+                    },
+                    "audio": "de_audio/you_plural_understood.mp3"
+                },
+                "they_understood": {
+                    "translation": "sie verstanden",
+                    "level": 0,
+                    "example": {
+                        "they_understood_the_rules": "Sie verstanden die Regeln."
+                    },
+                    "audio": "de_audio/they_understood.mp3"
+                }
+            },
+            "present": {
+                "i_understand": {
+                    "translation": "ich verstehe",
+                    "level": 0,
+                    "example": {
+                        "i_understand_the_question": "Ich verstehe die Frage."
+                    },
+                    "audio": "de_audio/i_understand.mp3"
+                },
+                "you_understand": {
+                    "translation": "du verstehst",
+                    "level": 0,
+                    "example": {
+                        "you_understand_the_problem": "Du verstehst das Problem."
+                    },
+                    "audio": "de_audio/you_understand.mp3"
+                },
+                "he_she_it_understands": {
+                    "translation": "er/sie/es versteht",
+                    "level": 0,
+                    "example": {
+                        "he_understands_the_situation": "Er versteht die Situation."
+                    },
+                    "audio": "de_audio/he_she_it_understands.mp3"
+                },
+                "we_understand": {
+                    "translation": "wir verstehen",
+                    "level": 0,
+                    "example": {
+                        "we_understand_the_plan": "Wir verstehen den Plan."
+                    },
+                    "audio": "de_audio/we_understand.mp3"
+                },
+                "you_plural_understand": {
+                    "translation": "ihr versteht",
+                    "level": 0,
+                    "example": {
+                        "you_understand_the_task": "Ihr versteht die Aufgabe."
+                    },
+                    "audio": "de_audio/you_plural_understand.mp3"
+                },
+                "they_understand": {
+                    "translation": "sie verstehen",
+                    "level": 0,
+                    "example": {
+                        "they_understand_the_rules": "Sie verstehen die Regeln."
+                    },
+                    "audio": "de_audio/they_understand.mp3"
+                }
+            },
+            "future": {
+                "i_will_understand": {
+                    "translation": "ich werde verstehen",
+                    "level": 0,
+                    "example": {
+                        "i_will_understand_the_question": "Ich werde die Frage verstehen."
+                    },
+                    "audio": "de_audio/i_will_understand.mp3"
+                },
+                "you_will_understand": {
+                    "translation": "du wirst verstehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_understand_the_problem": "Du wirst das Problem verstehen."
+                    },
+                    "audio": "de_audio/you_will_understand.mp3"
+                },
+                "he_she_it_will_understand": {
+                    "translation": "er/sie/es wird verstehen",
+                    "level": 0,
+                    "example": {
+                        "he_will_understand_the_situation": "Er wird die Situation verstehen."
+                    },
+                    "audio": "de_audio/he_she_it_will_understand.mp3"
+                },
+                "we_will_understand": {
+                    "translation": "wir werden verstehen",
+                    "level": 0,
+                    "example": {
+                        "we_will_understand_the_plan": "Wir werden den Plan verstehen."
+                    },
+                    "audio": "de_audio/we_will_understand.mp3"
+                },
+                "you_plural_will_understand": {
+                    "translation": "ihr werdet verstehen",
+                    "level": 0,
+                    "example": {
+                        "you_will_understand_the_task": "Ihr werdet die Aufgabe verstehen."
+                    },
+                    "audio": "de_audio/you_plural_will_understand.mp3"
+                },
+                "they_will_understand": {
+                    "translation": "sie werden verstehen",
+                    "level": 0,
+                    "example": {
+                        "they_will_understand_the_rules": "Sie werden die Regeln verstehen."
+                    },
+                    "audio": "de_audio/they_will_understand.mp3"
+                }
+            }
+        },
+        "to_speak": {
+            "infinitive": "sprechen",
+            "level": 0,
+            "past": {
+                "i_spoke": {
+                    "translation": "ich sprach",
+                    "level": 0,
+                    "example": {
+                        "i_spoke_german": "Ich sprach Deutsch."
+                    },
+                    "audio": "de_audio/i_spoke.mp3"
+                },
+                "you_spoke": {
+                    "translation": "du sprachst",
+                    "level": 0,
+                    "example": {
+                        "you_spoke_english": "Du sprachst Englisch."
+                    },
+                    "audio": "de_audio/you_spoke.mp3"
+                },
+                "he_she_it_spoke": {
+                    "translation": "er/sie/es sprach",
+                    "level": 0,
+                    "example": {
+                        "he_spoke_french": "Er sprach Französisch."
+                    },
+                    "audio": "de_audio/he_she_it_spoke.mp3"
+                },
+                "we_spoke": {
+                    "translation": "wir sprachen",
+                    "level": 0,
+                    "example": {
+                        "we_spoke_together": "Wir sprachen zusammen."
+                    },
+                    "audio": "de_audio/we_spoke.mp3"
+                },
+                "you_plural_spoke": {
+                    "translation": "ihr spracht",
+                    "level": 0,
+                    "example": {
+                        "you_spoke_spanish": "Ihr spracht Spanisch."
+                    },
+                    "audio": "de_audio/you_plural_spoke.mp3"
+                },
+                "they_spoke": {
+                    "translation": "sie sprachen",
+                    "level": 0,
+                    "example": {
+                        "they_spoke_italian": "Sie sprachen Italienisch."
+                    },
+                    "audio": "de_audio/they_spoke.mp3"
+                }
+            },
+            "present": {
+                "i_speak": {
+                    "translation": "ich spreche",
+                    "level": 0,
+                    "example": {
+                        "i_speak_german": "Ich spreche Deutsch."
+                    },
+                    "audio": "de_audio/i_speak.mp3"
+                },
+                "you_speak": {
+                    "translation": "du sprichst",
+                    "level": 0,
+                    "example": {
+                        "you_speak_english": "Du sprichst Englisch."
+                    },
+                    "audio": "de_audio/you_speak.mp3"
+                },
+                "he_she_it_speaks": {
+                    "translation": "er/sie/es spricht",
+                    "level": 0,
+                    "example": {
+                        "he_speaks_french": "Er spricht Französisch."
+                    },
+                    "audio": "de_audio/he_she_it_speaks.mp3"
+                },
+                "we_speak": {
+                    "translation": "wir sprechen",
+                    "level": 0,
+                    "example": {
+                        "we_speak_together": "Wir sprechen zusammen."
+                    },
+                    "audio": "de_audio/we_speak.mp3"
+                },
+                "you_plural_speak": {
+                    "translation": "ihr sprecht",
+                    "level": 0,
+                    "example": {
+                        "you_speak_spanish": "Ihr sprecht Spanisch."
+                    },
+                    "audio": "de_audio/you_plural_speak.mp3"
+                },
+                "they_speak": {
+                    "translation": "sie sprechen",
+                    "level": 0,
+                    "example": {
+                        "they_speak_italian": "Sie sprechen Italienisch."
+                    },
+                    "audio": "de_audio/they_speak.mp3"
+                }
+            },
+            "future": {
+                "i_will_speak": {
+                    "translation": "ich werde sprechen",
+                    "level": 0,
+                    "example": {
+                        "i_will_speak_german": "Ich werde Deutsch sprechen."
+                    },
+                    "audio": "de_audio/i_will_speak.mp3"
+                },
+                "you_will_speak": {
+                    "translation": "du wirst sprechen",
+                    "level": 0,
+                    "example": {
+                        "you_will_speak_english": "Du wirst Englisch sprechen."
+                    },
+                    "audio": "de_audio/you_will_speak.mp3"
+                },
+                "he_she_it_will_speak": {
+                    "translation": "er/sie/es wird sprechen",
+                    "level": 0,
+                    "example": {
+                        "he_will_speak_french": "Er wird Französisch sprechen."
+                    },
+                    "audio": "de_audio/he_she_it_will_speak.mp3"
+                },
+                "we_will_speak": {
+                    "translation": "wir werden sprechen",
+                    "level": 0,
+                    "example": {
+                        "we_will_speak_together": "Wir werden zusammen sprechen."
+                    },
+                    "audio": "de_audio/we_will_speak.mp3"
+                },
+                "you_plural_will_speak": {
+                    "translation": "ihr werdet sprechen",
+                    "level": 0,
+                    "example": {
+                        "you_will_speak_spanish": "Ihr werdet Spanisch sprechen."
+                    },
+                    "audio": "de_audio/you_plural_will_speak.mp3"
+                },
+                "they_will_speak": {
+                    "translation": "sie werden sprechen",
+                    "level": 0,
+                    "example": {
+                        "they_will_speak_italian": "Sie werden Italienisch sprechen."
+                    },
+                    "audio": "de_audio/they_will_speak.mp3"
+                }
+            }
+        },
+        "to_find": {
+            "infinitive": "finden",
+            "level": 0,
+            "past": {
+                "i_found": {
+                    "translation": "ich fand",
+                    "level": 0,
+                    "example": {
+                        "i_found_my_key": "Ich fand meinen Schlüssel."
+                    },
+                    "audio": "de_audio/i_found.mp3"
+                },
+                "you_found": {
+                    "translation": "du fandest",
+                    "level": 0,
+                    "example": {
+                        "you_found_your_phone": "Du fandest dein Handy."
+                    },
+                    "audio": "de_audio/you_found.mp3"
+                },
+                "he_she_it_found": {
+                    "translation": "er/sie/es fand",
+                    "level": 0,
+                    "example": {
+                        "he_found_his_wallet": "Er fand seine Brieftasche."
+                    },
+                    "audio": "de_audio/he_she_it_found.mp3"
+                },
+                "we_found": {
+                    "translation": "wir fanden",
+                    "level": 0,
+                    "example": {
+                        "we_found_the_solution": "Wir fanden die Lösung."
+                    },
+                    "audio": "de_audio/we_found.mp3"
+                },
+                "you_plural_found": {
+                    "translation": "ihr fandet",
+                    "level": 0,
+                    "example": {
+                        "you_found_the_keys": "Ihr fandet die Schlüssel."
+                    },
+                    "audio": "de_audio/you_plural_found.mp3"
+                },
+                "they_found": {
+                    "translation": "sie fanden",
+                    "level": 0,
+                    "example": {
+                        "they_found_the_cat": "Sie fanden die Katze."
+                    },
+                    "audio": "de_audio/they_found.mp3"
+                }
+            },
+            "present": {
+                "i_find": {
+                    "translation": "ich finde",
+                    "level": 0,
+                    "example": {
+                        "i_find_my_key": "Ich finde meinen Schlüssel nicht."
+                    },
+                    "audio": "de_audio/i_find.mp3"
+                },
+                "you_find": {
+                    "translation": "du findest",
+                    "level": 0,
+                    "example": {
+                        "you_find_your_phone": "Du findest dein Handy."
+                    },
+                    "audio": "de_audio/you_find.mp3"
+                },
+                "he_she_it_finds": {
+                    "translation": "er/sie/es findet",
+                    "level": 0,
+                    "example": {
+                        "he_finds_his_wallet": "Er findet seine Brieftasche."
+                    },
+                    "audio": "de_audio/he_she_it_finds.mp3"
+                },
+                "we_find": {
+                    "translation": "wir finden",
+                    "level": 0,
+                    "example": {
+                        "we_find_the_solution": "Wir finden die Lösung."
+                    },
+                    "audio": "de_audio/we_find.mp3"
+                },
+                "you_plural_find": {
+                    "translation": "ihr findet",
+                    "level": 0,
+                    "example": {
+                        "you_find_the_keys": "Ihr findet die Schlüssel."
+                    },
+                    "audio": "de_audio/you_plural_find.mp3"
+                },
+                "they_find": {
+                    "translation": "sie finden",
+                    "level": 0,
+                    "example": {
+                        "they_find_the_cat": "Sie finden die Katze."
+                    },
+                    "audio": "de_audio/they_find.mp3"
+                }
+            },
+            "future": {
+                "i_will_find": {
+                    "translation": "ich werde finden",
+                    "level": 0,
+                    "example": {
+                        "i_will_find_my_key": "Ich werde meinen Schlüssel finden."
+                    },
+                    "audio": "de_audio/i_will_find.mp3"
+                },
+                "you_will_find": {
+                    "translation": "du wirst finden",
+                    "level": 0,
+                    "example": {
+                        "you_will_find_your_phone": "Du wirst dein Handy finden."
+                    },
+                    "audio": "de_audio/you_will_find.mp3"
+                },
+                "he_she_it_will_find": {
+                    "translation": "er/sie/es wird finden",
+                    "level": 0,
+                    "example": {
+                        "he_will_find_his_wallet": "Er wird seine Brieftasche finden."
+                    },
+                    "audio": "de_audio/he_she_it_will_find.mp3"
+                },
+                "we_will_find": {
+                    "translation": "wir werden finden",
+                    "level": 0,
+                    "example": {
+                        "we_will_find_the_solution": "Wir werden die Lösung finden."
+                    },
+                    "audio": "de_audio/we_will_find.mp3"
+                },
+                "you_plural_will_find": {
+                    "translation": "ihr werdet finden",
+                    "level": 0,
+                    "example": {
+                        "you_will_find_the_keys": "Ihr werdet die Schlüssel finden."
+                    },
+                    "audio": "de_audio/you_plural_will_find.mp3"
+                },
+                "they_will_find": {
+                    "translation": "sie werden finden",
+                    "level": 0,
+                    "example": {
+                        "they_will_find_the_cat": "Sie werden die Katze finden."
+                    },
+                    "audio": "de_audio/they_will_find.mp3"
+                }
+            }
+        },
+        "to_help": {
+            "infinitive": "helfen",
+            "level": 0,
+            "past": {
+                "i_helped": {
+                    "translation": "ich half",
+                    "level": 0,
+                    "example": {
+                        "i_helped_my_friend": "Ich half meinem Freund."
+                    },
+                    "audio": "de_audio/i_helped.mp3"
+                },
+                "you_helped": {
+                    "translation": "du halfst",
+                    "level": 0,
+                    "example": {
+                        "you_helped_your_sister": "Du halfst deiner Schwester."
+                    },
+                    "audio": "de_audio/you_helped.mp3"
+                },
+                "he_she_it_helped": {
+                    "translation": "er/sie/es half",
+                    "level": 0,
+                    "example": {
+                        "he_helped_his_neighbor": "Er half seinem Nachbarn."
+                    },
+                    "audio": "de_audio/he_she_it_helped.mp3"
+                },
+                "we_helped": {
+                    "translation": "wir halfen",
+                    "level": 0,
+                    "example": {
+                        "we_helped_the_teacher": "Wir halfen dem Lehrer."
+                    },
+                    "audio": "de_audio/we_helped.mp3"
+                },
+                "you_plural_helped": {
+                    "translation": "ihr halft",
+                    "level": 0,
+                    "example": {
+                        "you_helped_the_team": "Ihr halft dem Team."
+                    },
+                    "audio": "de_audio/you_plural_helped.mp3"
+                },
+                "they_helped": {
+                    "translation": "sie halfen",
+                    "level": 0,
+                    "example": {
+                        "they_helped_the_student": "Sie halfen dem Schüler."
+                    },
+                    "audio": "de_audio/they_helped.mp3"
+                }
+            },
+            "present": {
+                "i_help": {
+                    "translation": "ich helfe",
+                    "level": 0,
+                    "example": {
+                        "i_help_my_friend": "Ich helfe meinem Freund."
+                    },
+                    "audio": "de_audio/i_help.mp3"
+                },
+                "you_help": {
+                    "translation": "du hilfst",
+                    "level": 0,
+                    "example": {
+                        "you_help_your_sister": "Du hilfst deiner Schwester."
+                    },
+                    "audio": "de_audio/you_help.mp3"
+                },
+                "he_she_it_helps": {
+                    "translation": "er/sie/es hilft",
+                    "level": 0,
+                    "example": {
+                        "he_helps_his_neighbor": "Er hilft seinem Nachbarn."
+                    },
+                    "audio": "de_audio/he_she_it_helps.mp3"
+                },
+                "we_help": {
+                    "translation": "wir helfen",
+                    "level": 0,
+                    "example": {
+                        "we_help_the_teacher": "Wir helfen dem Lehrer."
+                    },
+                    "audio": "de_audio/we_help.mp3"
+                },
+                "you_plural_help": {
+                    "translation": "ihr helft",
+                    "level": 0,
+                    "example": {
+                        "you_help_the_team": "Ihr helft dem Team."
+                    },
+                    "audio": "de_audio/you_plural_help.mp3"
+                },
+                "they_help": {
+                    "translation": "sie helfen",
+                    "level": 0,
+                    "example": {
+                        "they_help_the_student": "Sie helfen dem Schüler."
+                    },
+                    "audio": "de_audio/they_help.mp3"
+                }
+            },
+            "future": {
+                "i_will_help": {
+                    "translation": "ich werde helfen",
+                    "level": 0,
+                    "example": {
+                        "i_will_help_my_friend": "Ich werde meinem Freund helfen."
+                    },
+                    "audio": "de_audio/i_will_help.mp3"
+                },
+                "you_will_help": {
+                    "translation": "du wirst helfen",
+                    "level": 0,
+                    "example": {
+                        "you_will_help_your_sister": "Du wirst deiner Schwester helfen."
+                    },
+                    "audio": "de_audio/you_will_help.mp3"
+                },
+                "he_she_it_will_help": {
+                    "translation": "er/sie/es wird helfen",
+                    "level": 0,
+                    "example": {
+                        "he_will_help_his_neighbor": "Er wird seinem Nachbarn helfen."
+                    },
+                    "audio": "de_audio/he_she_it_will_help.mp3"
+                },
+                "we_will_help": {
+                    "translation": "wir werden helfen",
+                    "level": 0,
+                    "example": {
+                        "we_will_help_the_teacher": "Wir werden dem Lehrer helfen."
+                    },
+                    "audio": "de_audio/we_will_help.mp3"
+                },
+                "you_plural_will_help": {
+                    "translation": "ihr werdet helfen",
+                    "level": 0,
+                    "example": {
+                        "you_will_help_the_team": "Ihr werdet dem Team helfen."
+                    },
+                    "audio": "de_audio/you_plural_will_help.mp3"
+                },
+                "they_will_help": {
+                    "translation": "sie werden helfen",
+                    "level": 0,
+                    "example": {
+                        "they_will_help_the_student": "Sie werden dem Schüler helfen."
+                    },
+                    "audio": "de_audio/they_will_help.mp3"
+                }
+            }
+        },
+        "to_buy": {
+            "infinitive": "kaufen",
+            "level": 0,
+            "past": {
+                "i_bought": {
+                    "translation": "ich kaufte",
+                    "level": 0,
+                    "example": {
+                        "i_bought_bread": "Ich kaufte Brot."
+                    },
+                    "audio": "de_audio/i_bought.mp3"
+                },
+                "you_bought": {
+                    "translation": "du kauftest",
+                    "level": 0,
+                    "example": {
+                        "you_bought_a_book": "Du kauftest ein Buch."
+                    },
+                    "audio": "de_audio/you_bought.mp3"
+                },
+                "he_she_it_bought": {
+                    "translation": "er/sie/es kaufte",
+                    "level": 0,
+                    "example": {
+                        "he_bought_a_car": "Er kaufte ein Auto."
+                    },
+                    "audio": "de_audio/he_she_it_bought.mp3"
+                },
+                "we_bought": {
+                    "translation": "wir kauften",
+                    "level": 0,
+                    "example": {
+                        "we_bought_food": "Wir kauften Essen."
+                    },
+                    "audio": "de_audio/we_bought.mp3"
+                },
+                "you_plural_bought": {
+                    "translation": "ihr kauftet",
+                    "level": 0,
+                    "example": {
+                        "you_bought_clothes": "Ihr kauftet Kleidung."
+                    },
+                    "audio": "de_audio/you_plural_bought.mp3"
+                },
+                "they_bought": {
+                    "translation": "sie kauften",
+                    "level": 0,
+                    "example": {
+                        "they_bought_a_house": "Sie kauften ein Haus."
+                    },
+                    "audio": "de_audio/they_bought.mp3"
+                }
+            },
+            "present": {
+                "i_buy": {
+                    "translation": "ich kaufe",
+                    "level": 0,
+                    "example": {
+                        "i_buy_bread": "Ich kaufe Brot."
+                    },
+                    "audio": "de_audio/i_buy.mp3"
+                },
+                "you_buy": {
+                    "translation": "du kaufst",
+                    "level": 0,
+                    "example": {
+                        "you_buy_a_book": "Du kaufst ein Buch."
+                    },
+                    "audio": "de_audio/you_buy.mp3"
+                },
+                "he_she_it_buys": {
+                    "translation": "er/sie/es kauft",
+                    "level": 0,
+                    "example": {
+                        "he_buys_a_car": "Er kauft ein Auto."
+                    },
+                    "audio": "de_audio/he_she_it_buys.mp3"
+                },
+                "we_buy": {
+                    "translation": "wir kaufen",
+                    "level": 0,
+                    "example": {
+                        "we_buy_food": "Wir kaufen Essen."
+                    },
+                    "audio": "de_audio/we_buy.mp3"
+                },
+                "you_plural_buy": {
+                    "translation": "ihr kauft",
+                    "level": 0,
+                    "example": {
+                        "you_buy_clothes": "Ihr kauft Kleidung."
+                    },
+                    "audio": "de_audio/you_plural_buy.mp3"
+                },
+                "they_buy": {
+                    "translation": "sie kaufen",
+                    "level": 0,
+                    "example": {
+                        "they_buy_a_house": "Sie kaufen ein Haus."
+                    },
+                    "audio": "de_audio/they_buy.mp3"
+                }
+            },
+            "future": {
+                "i_will_buy": {
+                    "translation": "ich werde kaufen",
+                    "level": 0,
+                    "example": {
+                        "i_will_buy_bread": "Ich werde Brot kaufen."
+                    },
+                    "audio": "de_audio/i_will_buy.mp3"
+                },
+                "you_will_buy": {
+                    "translation": "du wirst kaufen",
+                    "level": 0,
+                    "example": {
+                        "you_will_buy_a_book": "Du wirst ein Buch kaufen."
+                    },
+                    "audio": "de_audio/you_will_buy.mp3"
+                },
+                "he_she_it_will_buy": {
+                    "translation": "er/sie/es wird kaufen",
+                    "level": 0,
+                    "example": {
+                        "he_will_buy_a_car": "Er wird ein Auto kaufen."
+                    },
+                    "audio": "de_audio/he_she_it_will_buy.mp3"
+                },
+                "we_will_buy": {
+                    "translation": "wir werden kaufen",
+                    "level": 0,
+                    "example": {
+                        "we_will_buy_food": "Wir werden Essen kaufen."
+                    },
+                    "audio": "de_audio/we_will_buy.mp3"
+                },
+                "you_plural_will_buy": {
+                    "translation": "ihr werdet kaufen",
+                    "level": 0,
+                    "example": {
+                        "you_will_buy_clothes": "Ihr werdet Kleidung kaufen."
+                    },
+                    "audio": "de_audio/you_plural_will_buy.mp3"
+                },
+                "they_will_buy": {
+                    "translation": "sie werden kaufen",
+                    "level": 0,
+                    "example": {
+                        "they_will_buy_a_house": "Sie werden ein Haus kaufen."
+                    },
+                    "audio": "de_audio/they_will_buy.mp3"
+                }
+            }
+        },
+        "to_sell": {
+            "infinitive": "verkaufen",
+            "level": 0,
+            "past": {
+                "i_sold": {
+                    "translation": "ich verkaufte",
+                    "level": 0,
+                    "example": {
+                        "i_sold_my_car": "Ich verkaufte mein Auto."
+                    },
+                    "audio": "de_audio/i_sold.mp3"
+                },
+                "you_sold": {
+                    "translation": "du verkauftest",
+                    "level": 0,
+                    "example": {
+                        "you_sold_your_phone": "Du verkauftest dein Handy."
+                    },
+                    "audio": "de_audio/you_sold.mp3"
+                },
+                "he_she_it_sold": {
+                    "translation": "er/sie/es verkaufte",
+                    "level": 0,
+                    "example": {
+                        "he_sold_his_bike": "Er verkaufte sein Fahrrad."
+                    },
+                    "audio": "de_audio/he_she_it_sold.mp3"
+                },
+                "we_sold": {
+                    "translation": "wir verkauften",
+                    "level": 0,
+                    "example": {
+                        "we_sold_our_house": "Wir verkauften unser Haus."
+                    },
+                    "audio": "de_audio/we_sold.mp3"
+                },
+                "you_plural_sold": {
+                    "translation": "ihr verkauftet",
+                    "level": 0,
+                    "example": {
+                        "you_sold_your_furniture": "Ihr verkauftet eure Möbel."
+                    },
+                    "audio": "de_audio/you_plural_sold.mp3"
+                },
+                "they_sold": {
+                    "translation": "sie verkauften",
+                    "level": 0,
+                    "example": {
+                        "they_sold_their_car": "Sie verkauften ihr Auto."
+                    },
+                    "audio": "de_audio/they_sold.mp3"
+                }
+            },
+            "present": {
+                "i_sell": {
+                    "translation": "ich verkaufe",
+                    "level": 0,
+                    "example": {
+                        "i_sell_my_car": "Ich verkaufe mein Auto."
+                    },
+                    "audio": "de_audio/i_sell.mp3"
+                },
+                "you_sell": {
+                    "translation": "du verkaufst",
+                    "level": 0,
+                    "example": {
+                        "you_sell_your_phone": "Du verkaufst dein Handy."
+                    },
+                    "audio": "de_audio/you_sell.mp3"
+                },
+                "he_she_it_sells": {
+                    "translation": "er/sie/es verkauft",
+                    "level": 0,
+                    "example": {
+                        "he_sells_his_bike": "Er verkauft sein Fahrrad."
+                    },
+                    "audio": "de_audio/he_she_it_sells.mp3"
+                },
+                "we_sell": {
+                    "translation": "wir verkaufen",
+                    "level": 0,
+                    "example": {
+                        "we_sell_our_house": "Wir verkaufen unser Haus."
+                    },
+                    "audio": "de_audio/we_sell.mp3"
+                },
+                "you_plural_sell": {
+                    "translation": "ihr verkauft",
+                    "level": 0,
+                    "example": {
+                        "you_sell_your_furniture": "Ihr verkauft eure Möbel."
+                    },
+                    "audio": "de_audio/you_plural_sell.mp3"
+                },
+                "they_sell": {
+                    "translation": "sie verkaufen",
+                    "level": 0,
+                    "example": {
+                        "they_sell_their_car": "Sie verkaufen ihr Auto."
+                    },
+                    "audio": "de_audio/they_sell.mp3"
+                }
+            },
+            "future": {
+                "i_will_sell": {
+                    "translation": "ich werde verkaufen",
+                    "level": 0,
+                    "example": {
+                        "i_will_sell_my_car": "Ich werde mein Auto verkaufen."
+                    },
+                    "audio": "de_audio/i_will_sell.mp3"
+                },
+                "you_will_sell": {
+                    "translation": "du wirst verkaufen",
+                    "level": 0,
+                    "example": {
+                        "you_will_sell_your_phone": "Du wirst dein Handy verkaufen."
+                    },
+                    "audio": "de_audio/you_will_sell.mp3"
+                },
+                "he_she_it_will_sell": {
+                    "translation": "er/sie/es wird verkaufen",
+                    "level": 0,
+                    "example": {
+                        "he_will_sell_his_bike": "Er wird sein Fahrrad verkaufen."
+                    },
+                    "audio": "de_audio/he_she_it_will_sell.mp3"
+                },
+                "we_will_sell": {
+                    "translation": "wir werden verkaufen",
+                    "level": 0,
+                    "example": {
+                        "we_will_sell_our_house": "Wir werden unser Haus verkaufen."
+                    },
+                    "audio": "de_audio/we_will_sell.mp3"
+                },
+                "you_plural_will_sell": {
+                    "translation": "ihr werdet verkaufen",
+                    "level": 0,
+                    "example": {
+                        "you_will_sell_your_furniture": "Ihr werdet eure Möbel verkaufen."
+                    },
+                    "audio": "de_audio/you_plural_will_sell.mp3"
+                },
+                "they_will_sell": {
+                    "translation": "sie werden verkaufen",
+                    "level": 0,
+                    "example": {
+                        "they_will_sell_their_car": "Sie werden ihr Auto verkaufen."
+                    },
+                    "audio": "de_audio/they_will_sell.mp3"
+                }
+            }
+        },
+        "to_open": {
+            "infinitive": "öffnen",
+            "level": 0,
+            "past": {
+                "i_opened": {
+                    "translation": "ich öffnete",
+                    "level": 0,
+                    "example": {
+                        "i_opened_the_door": "Ich öffnete die Tür."
+                    },
+                    "audio": "de_audio/i_opened.mp3"
+                },
+                "you_opened": {
+                    "translation": "du öffnetest",
+                    "level": 0,
+                    "example": {
+                        "you_opened_the_window": "Du öffnetest das Fenster."
+                    },
+                    "audio": "de_audio/you_opened.mp3"
+                },
+                "he_she_it_opened": {
+                    "translation": "er/sie/es öffnete",
+                    "level": 0,
+                    "example": {
+                        "he_opened_the_box": "Er öffnete die Kiste."
+                    },
+                    "audio": "de_audio/he_she_it_opened.mp3"
+                },
+                "we_opened": {
+                    "translation": "wir öffneten",
+                    "level": 0,
+                    "example": {
+                        "we_opened_the_package": "Wir öffneten das Paket."
+                    },
+                    "audio": "de_audio/we_opened.mp3"
+                },
+                "you_plural_opened": {
+                    "translation": "ihr öffnetet",
+                    "level": 0,
+                    "example": {
+                        "you_opened_the_doors": "Ihr öffnetet die Türen."
+                    },
+                    "audio": "de_audio/you_plural_opened.mp3"
+                },
+                "they_opened": {
+                    "translation": "sie öffneten",
+                    "level": 0,
+                    "example": {
+                        "they_opened_the_windows": "Sie öffneten die Fenster."
+                    },
+                    "audio": "de_audio/they_opened.mp3"
+                }
+            },
+            "present": {
+                "i_open": {
+                    "translation": "ich öffne",
+                    "level": 0,
+                    "example": {
+                        "i_open_the_door": "Ich öffne die Tür."
+                    },
+                    "audio": "de_audio/i_open.mp3"
+                },
+                "you_open": {
+                    "translation": "du öffnest",
+                    "level": 0,
+                    "example": {
+                        "you_open_the_window": "Du öffnest das Fenster."
+                    },
+                    "audio": "de_audio/you_open.mp3"
+                },
+                "he_she_it_opens": {
+                    "translation": "er/sie/es öffnet",
+                    "level": 0,
+                    "example": {
+                        "he_opens_the_box": "Er öffnet die Kiste."
+                    },
+                    "audio": "de_audio/he_she_it_opens.mp3"
+                },
+                "we_open": {
+                    "translation": "wir öffnen",
+                    "level": 0,
+                    "example": {
+                        "we_open_the_package": "Wir öffnen das Paket."
+                    },
+                    "audio": "de_audio/we_open.mp3"
+                },
+                "you_plural_open": {
+                    "translation": "ihr öffnet",
+                    "level": 0,
+                    "example": {
+                        "you_open_the_doors": "Ihr öffnet die Türen."
+                    },
+                    "audio": "de_audio/you_plural_open.mp3"
+                },
+                "they_open": {
+                    "translation": "sie öffnen",
+                    "level": 0,
+                    "example": {
+                        "they_open_the_windows": "Sie öffnen die Fenster."
+                    },
+                    "audio": "de_audio/they_open.mp3"
+                }
+            },
+            "future": {
+                "i_will_open": {
+                    "translation": "ich werde öffnen",
+                    "level": 0,
+                    "example": {
+                        "i_will_open_the_door": "Ich werde die Tür öffnen."
+                    },
+                    "audio": "de_audio/i_will_open.mp3"
+                },
+                "you_will_open": {
+                    "translation": "du wirst öffnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_open_the_window": "Du wirst das Fenster öffnen."
+                    },
+                    "audio": "de_audio/you_will_open.mp3"
+                },
+                "he_she_it_will_open": {
+                    "translation": "er/sie/es wird öffnen",
+                    "level": 0,
+                    "example": {
+                        "he_will_open_the_box": "Er wird die Kiste öffnen."
+                    },
+                    "audio": "de_audio/he_she_it_will_open.mp3"
+                },
+                "we_will_open": {
+                    "translation": "wir werden öffnen",
+                    "level": 0,
+                    "example": {
+                        "we_will_open_the_package": "Wir werden das Paket öffnen."
+                    },
+                    "audio": "de_audio/we_will_open.mp3"
+                },
+                "you_plural_will_open": {
+                    "translation": "ihr werdet öffnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_open_the_doors": "Ihr werdet die Türen öffnen."
+                    },
+                    "audio": "de_audio/you_plural_will_open.mp3"
+                },
+                "they_will_open": {
+                    "translation": "sie werden öffnen",
+                    "level": 0,
+                    "example": {
+                        "they_will_open_the_windows": "Sie werden die Fenster öffnen."
+                    },
+                    "audio": "de_audio/they_will_open.mp3"
+                }
+            }
+        },
+        "to_close": {
+            "infinitive": "schließen",
+            "level": 0,
+            "past": {
+                "i_closed": {
+                    "translation": "ich schloss",
+                    "level": 0,
+                    "example": {
+                        "i_closed_the_door": "Ich schloss die Tür."
+                    },
+                    "audio": "de_audio/i_closed.mp3"
+                },
+                "you_closed": {
+                    "translation": "du schlossest",
+                    "level": 0,
+                    "example": {
+                        "you_closed_the_window": "Du schlossest das Fenster."
+                    },
+                    "audio": "de_audio/you_closed.mp3"
+                },
+                "he_she_it_closed": {
+                    "translation": "er/sie/es schloss",
+                    "level": 0,
+                    "example": {
+                        "he_closed_the_box": "Er schloss die Kiste."
+                    },
+                    "audio": "de_audio/he_she_it_closed.mp3"
+                },
+                "we_closed": {
+                    "translation": "wir schlossen",
+                    "level": 0,
+                    "example": {
+                        "we_closed_the_package": "Wir schlossen das Paket."
+                    },
+                    "audio": "de_audio/we_closed.mp3"
+                },
+                "you_plural_closed": {
+                    "translation": "ihr schlosst",
+                    "level": 0,
+                    "example": {
+                        "you_closed_the_doors": "Ihr schlosst die Türen."
+                    },
+                    "audio": "de_audio/you_plural_closed.mp3"
+                },
+                "they_closed": {
+                    "translation": "sie schlossen",
+                    "level": 0,
+                    "example": {
+                        "they_closed_the_windows": "Sie schlossen die Fenster."
+                    },
+                    "audio": "de_audio/they_closed.mp3"
+                }
+            },
+            "present": {
+                "i_close": {
+                    "translation": "ich schließe",
+                    "level": 0,
+                    "example": {
+                        "i_close_the_door": "Ich schließe die Tür."
+                    },
+                    "audio": "de_audio/i_close.mp3"
+                },
+                "you_close": {
+                    "translation": "du schließt",
+                    "level": 0,
+                    "example": {
+                        "you_close_the_window": "Du schließt das Fenster."
+                    },
+                    "audio": "de_audio/you_close.mp3"
+                },
+                "he_she_it_closes": {
+                    "translation": "er/sie/es schließt",
+                    "level": 0,
+                    "example": {
+                        "he_closes_the_box": "Er schließt die Kiste."
+                    },
+                    "audio": "de_audio/he_she_it_closes.mp3"
+                },
+                "we_close": {
+                    "translation": "wir schließen",
+                    "level": 0,
+                    "example": {
+                        "we_close_the_package": "Wir schließen das Paket."
+                    },
+                    "audio": "de_audio/we_close.mp3"
+                },
+                "you_plural_close": {
+                    "translation": "ihr schließt",
+                    "level": 0,
+                    "example": {
+                        "you_close_the_doors": "Ihr schließt die Türen."
+                    },
+                    "audio": "de_audio/you_plural_close.mp3"
+                },
+                "they_close": {
+                    "translation": "sie schließen",
+                    "level": 0,
+                    "example": {
+                        "they_close_the_windows": "Sie schließen die Fenster."
+                    },
+                    "audio": "de_audio/they_close.mp3"
+                }
+            },
+            "future": {
+                "i_will_close": {
+                    "translation": "ich werde schließen",
+                    "level": 0,
+                    "example": {
+                        "i_will_close_the_door": "Ich werde die Tür schließen."
+                    },
+                    "audio": "de_audio/i_will_close.mp3"
+                },
+                "you_will_close": {
+                    "translation": "du wirst schließen",
+                    "level": 0,
+                    "example": {
+                        "you_will_close_the_window": "Du wirst das Fenster schließen."
+                    },
+                    "audio": "de_audio/you_will_close.mp3"
+                },
+                "he_she_it_will_close": {
+                    "translation": "er/sie/es wird schließen",
+                    "level": 0,
+                    "example": {
+                        "he_will_close_the_box": "Er wird die Kiste schließen."
+                    },
+                    "audio": "de_audio/he_she_it_will_close.mp3"
+                },
+                "we_will_close": {
+                    "translation": "wir werden schließen",
+                    "level": 0,
+                    "example": {
+                        "we_will_close_the_package": "Wir werden das Paket schließen."
+                    },
+                    "audio": "de_audio/we_will_close.mp3"
+                },
+                "you_plural_will_close": {
+                    "translation": "ihr werdet schließen",
+                    "level": 0,
+                    "example": {
+                        "you_will_close_the_doors": "Ihr werdet die Türen schließen."
+                    },
+                    "audio": "de_audio/you_plural_will_close.mp3"
+                },
+                "they_will_close": {
+                    "translation": "sie werden schließen",
+                    "level": 0,
+                    "example": {
+                        "they_will_close_the_windows": "Sie werden die Fenster schließen."
+                    },
+                    "audio": "de_audio/they_will_close.mp3"
+                }
+            }
+        },
+        "to_begin": {
+            "infinitive": "beginnen",
+            "level": 0,
+            "past": {
+                "i_began": {
+                    "translation": "ich begann",
+                    "level": 0,
+                    "example": {
+                        "i_began_the_project": "Ich begann das Projekt."
+                    },
+                    "audio": "de_audio/i_began.mp3"
+                },
+                "you_began": {
+                    "translation": "du begannst",
+                    "level": 0,
+                    "example": {
+                        "you_began_the_meeting": "Du begannst die Besprechung."
+                    },
+                    "audio": "de_audio/you_began.mp3"
+                },
+                "he_she_it_began": {
+                    "translation": "er/sie/es begann",
+                    "level": 0,
+                    "example": {
+                        "he_began_the_race": "Er begann das Rennen."
+                    },
+                    "audio": "de_audio/he_she_it_began.mp3"
+                },
+                "we_began": {
+                    "translation": "wir begannen",
+                    "level": 0,
+                    "example": {
+                        "we_began_the_party": "Wir begannen die Party."
+                    },
+                    "audio": "de_audio/we_began.mp3"
+                },
+                "you_plural_began": {
+                    "translation": "ihr begannt",
+                    "level": 0,
+                    "example": {
+                        "you_began_the_game": "Ihr begannt das Spiel."
+                    },
+                    "audio": "de_audio/you_plural_began.mp3"
+                },
+                "they_began": {
+                    "translation": "sie begannen",
+                    "level": 0,
+                    "example": {
+                        "they_began_the_concert": "Sie begannen das Konzert."
+                    },
+                    "audio": "de_audio/they_began.mp3"
+                }
+            },
+            "present": {
+                "i_begin": {
+                    "translation": "ich beginne",
+                    "level": 0,
+                    "example": {
+                        "i_begin_the_project": "Ich beginne das Projekt."
+                    },
+                    "audio": "de_audio/i_begin.mp3"
+                },
+                "you_begin": {
+                    "translation": "du beginnst",
+                    "level": 0,
+                    "example": {
+                        "you_begin_the_meeting": "Du beginnst die Besprechung."
+                    },
+                    "audio": "de_audio/you_begin.mp3"
+                },
+                "he_she_it_begins": {
+                    "translation": "er/sie/es beginnt",
+                    "level": 0,
+                    "example": {
+                        "he_begins_the_race": "Er beginnt das Rennen."
+                    },
+                    "audio": "de_audio/he_she_it_begins.mp3"
+                },
+                "we_begin": {
+                    "translation": "wir beginnen",
+                    "level": 0,
+                    "example": {
+                        "we_begin_the_party": "Wir beginnen die Party."
+                    },
+                    "audio": "de_audio/we_begin.mp3"
+                },
+                "you_plural_begin": {
+                    "translation": "ihr beginnt",
+                    "level": 0,
+                    "example": {
+                        "you_begin_the_game": "Ihr beginnt das Spiel."
+                    },
+                    "audio": "de_audio/you_plural_begin.mp3"
+                },
+                "they_begin": {
+                    "translation": "sie beginnen",
+                    "level": 0,
+                    "example": {
+                        "they_begin_the_concert": "Sie beginnen das Konzert."
+                    },
+                    "audio": "de_audio/they_begin.mp3"
+                }
+            },
+            "future": {
+                "i_will_begin": {
+                    "translation": "ich werde beginnen",
+                    "level": 0,
+                    "example": {
+                        "i_will_begin_the_project": "Ich werde das Projekt beginnen."
+                    },
+                    "audio": "de_audio/i_will_begin.mp3"
+                },
+                "you_will_begin": {
+                    "translation": "du wirst beginnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_begin_the_meeting": "Du wirst die Besprechung beginnen."
+                    },
+                    "audio": "de_audio/you_will_begin.mp3"
+                },
+                "he_she_it_will_begin": {
+                    "translation": "er/sie/es wird beginnen",
+                    "level": 0,
+                    "example": {
+                        "he_will_begin_the_race": "Er wird das Rennen beginnen."
+                    },
+                    "audio": "de_audio/he_she_it_will_begin.mp3"
+                },
+                "we_will_begin": {
+                    "translation": "wir werden beginnen",
+                    "level": 0,
+                    "example": {
+                        "we_will_begin_the_party": "Wir werden die Party beginnen."
+                    },
+                    "audio": "de_audio/we_will_begin.mp3"
+                },
+                "you_plural_will_begin": {
+                    "translation": "ihr werdet beginnen",
+                    "level": 0,
+                    "example": {
+                        "you_will_begin_the_game": "Ihr werdet das Spiel beginnen."
+                    },
+                    "audio": "de_audio/you_plural_will_begin.mp3"
+                },
+                "they_will_begin": {
+                    "translation": "sie werden beginnen",
+                    "level": 0,
+                    "example": {
+                        "they_will_begin_the_concert": "Sie werden das Konzert beginnen."
+                    },
+                    "audio": "de_audio/they_will_begin.mp3"
+                }
+            }
+        },
+        "to_end": {
+            "infinitive": "enden",
+            "level": 0,
+            "past": {
+                "i_ended": {
+                    "translation": "ich endete",
+                    "level": 0,
+                    "example": {
+                        "i_ended_the_meeting": "Ich endete die Besprechung."
+                    },
+                    "audio": "de_audio/i_ended.mp3"
+                },
+                "you_ended": {
+                    "translation": "du endetest",
+                    "level": 0,
+                    "example": {
+                        "you_ended_the_call": "Du endetest das Gespräch."
+                    },
+                    "audio": "de_audio/you_ended.mp3"
+                },
+                "he_she_it_ended": {
+                    "translation": "er/sie/es endete",
+                    "level": 0,
+                    "example": {
+                        "he_ended_the_show": "Er endete die Show."
+                    },
+                    "audio": "de_audio/he_she_it_ended.mp3"
+                },
+                "we_ended": {
+                    "translation": "wir endeten",
+                    "level": 0,
+                    "example": {
+                        "we_ended_the_party": "Wir endeten die Party."
+                    },
+                    "audio": "de_audio/we_ended.mp3"
+                },
+                "you_plural_ended": {
+                    "translation": "ihr endetet",
+                    "level": 0,
+                    "example": {
+                        "you_ended_the_game": "Ihr endetet das Spiel."
+                    },
+                    "audio": "de_audio/you_plural_ended.mp3"
+                },
+                "they_ended": {
+                    "translation": "sie endeten",
+                    "level": 0,
+                    "example": {
+                        "they_ended_the_event": "Sie endeten die Veranstaltung."
+                    },
+                    "audio": "de_audio/they_ended.mp3"
+                }
+            },
+            "present": {
+                "i_end": {
+                    "translation": "ich ende",
+                    "level": 0,
+                    "example": {
+                        "i_end_the_meeting": "Ich ende die Besprechung."
+                    },
+                    "audio": "de_audio/i_end.mp3"
+                },
+                "you_end": {
+                    "translation": "du endest",
+                    "level": 0,
+                    "example": {
+                        "you_end_the_call": "Du endest das Gespräch."
+                    },
+                    "audio": "de_audio/you_end.mp3"
+                },
+                "he_she_it_ends": {
+                    "translation": "er/sie/es endet",
+                    "level": 0,
+                    "example": {
+                        "he_ends_the_show": "Er endet die Show."
+                    },
+                    "audio": "de_audio/he_she_it_ends.mp3"
+                },
+                "we_end": {
+                    "translation": "wir enden",
+                    "level": 0,
+                    "example": {
+                        "we_end_the_party": "Wir enden die Party."
+                    },
+                    "audio": "de_audio/we_end.mp3"
+                },
+                "you_plural_end": {
+                    "translation": "ihr endet",
+                    "level": 0,
+                    "example": {
+                        "you_end_the_game": "Ihr endet das Spiel."
+                    },
+                    "audio": "de_audio/you_plural_end.mp3"
+                },
+                "they_end": {
+                    "translation": "sie enden",
+                    "level": 0,
+                    "example": {
+                        "they_end_the_event": "Sie enden die Veranstaltung."
+                    },
+                    "audio": "de_audio/they_end.mp3"
+                }
+            },
+            "future": {
+                "i_will_end": {
+                    "translation": "ich werde enden",
+                    "level": 0,
+                    "example": {
+                        "i_will_end_the_meeting": "Ich werde die Besprechung beenden."
+                    },
+                    "audio": "de_audio/i_will_end.mp3"
+                },
+                "you_will_end": {
+                    "translation": "du wirst enden",
+                    "level": 0,
+                    "example": {
+                        "you_will_end_the_call": "Du wirst das Gespräch beenden."
+                    },
+                    "audio": "de_audio/you_will_end.mp3"
+                },
+                "he_she_it_will_end": {
+                    "translation": "er/sie/es wird enden",
+                    "level": 0,
+                    "example": {
+                        "he_will_end_the_show": "Er wird die Show beenden."
+                    },
+                    "audio": "de_audio/he_she_it_will_end.mp3"
+                },
+                "we_will_end": {
+                    "translation": "wir werden enden",
+                    "level": 0,
+                    "example": {
+                        "we_will_end_the_party": "Wir werden die Party beenden."
+                    },
+                    "audio": "de_audio/we_will_end.mp3"
+                },
+                "you_plural_will_end": {
+                    "translation": "ihr werdet enden",
+                    "level": 0,
+                    "example": {
+                        "you_will_end_the_game": "Ihr werdet das Spiel beenden."
+                    },
+                    "audio": "de_audio/you_plural_will_end.mp3"
+                },
+                "they_will_end": {
+                    "translation": "sie werden enden",
+                    "level": 0,
+                    "example": {
+                        "they_will_end_the_event": "Sie werden die Veranstaltung beenden."
+                    },
+                    "audio": "de_audio/they_will_end.mp3"
+                }
+            }
+        },
+        "to_need": {
+            "infinitive": "brauchen",
+            "level": 0,
+            "past": {
+                "i_needed": {
+                    "translation": "ich brauchte",
+                    "level": 0,
+                    "example": {
+                        "i_needed_help": "Ich brauchte Hilfe."
+                    },
+                    "audio": "de_audio/i_needed.mp3"
+                },
+                "you_needed": {
+                    "translation": "du brauchtest",
+                    "level": 0,
+                    "example": {
+                        "you_needed_time": "Du brauchtest Zeit."
+                    },
+                    "audio": "de_audio/you_needed.mp3"
+                },
+                "he_she_it_needed": {
+                    "translation": "er/sie/es brauchte",
+                    "level": 0,
+                    "example": {
+                        "he_needed_money": "Er brauchte Geld."
+                    },
+                    "audio": "de_audio/he_she_it_needed.mp3"
+                },
+                "we_needed": {
+                    "translation": "wir brauchten",
+                    "level": 0,
+                    "example": {
+                        "we_needed_support": "Wir brauchten Unterstützung."
+                    },
+                    "audio": "de_audio/we_needed.mp3"
+                },
+                "you_plural_needed": {
+                    "translation": "ihr brauchtet",
+                    "level": 0,
+                    "example": {
+                        "you_needed_advice": "Ihr brauchtet Ratschläge."
+                    },
+                    "audio": "de_audio/you_plural_needed.mp3"
+                },
+                "they_needed": {
+                    "translation": "sie brauchten",
+                    "level": 0,
+                    "example": {
+                        "they_needed_rest": "Sie brauchten Ruhe."
+                    },
+                    "audio": "de_audio/they_needed.mp3"
+                }
+            },
+            "present": {
+                "i_need": {
+                    "translation": "ich brauche",
+                    "level": 0,
+                    "example": {
+                        "i_need_help": "Ich brauche Hilfe."
+                    },
+                    "audio": "de_audio/i_need.mp3"
+                },
+                "you_need": {
+                    "translation": "du brauchst",
+                    "level": 0,
+                    "example": {
+                        "you_need_time": "Du brauchst Zeit."
+                    },
+                    "audio": "de_audio/you_need.mp3"
+                },
+                "he_she_it_needs": {
+                    "translation": "er/sie/es braucht",
+                    "level": 0,
+                    "example": {
+                        "he_needs_money": "Er braucht Geld."
+                    },
+                    "audio": "de_audio/he_she_it_needs.mp3"
+                },
+                "we_need": {
+                    "translation": "wir brauchen",
+                    "level": 0,
+                    "example": {
+                        "we_need_support": "Wir brauchen Unterstützung."
+                    },
+                    "audio": "de_audio/we_need.mp3"
+                },
+                "you_plural_need": {
+                    "translation": "ihr braucht",
+                    "level": 0,
+                    "example": {
+                        "you_need_advice": "Ihr braucht Ratschläge."
+                    },
+                    "audio": "de_audio/you_plural_need.mp3"
+                },
+                "they_need": {
+                    "translation": "sie brauchen",
+                    "level": 0,
+                    "example": {
+                        "they_need_rest": "Sie brauchen Ruhe."
+                    },
+                    "audio": "de_audio/they_need.mp3"
+                }
+            },
+            "future": {
+                "i_will_need": {
+                    "translation": "ich werde brauchen",
+                    "level": 0,
+                    "example": {
+                        "i_will_need_help": "Ich werde Hilfe brauchen."
+                    },
+                    "audio": "de_audio/i_will_need.mp3"
+                },
+                "you_will_need": {
+                    "translation": "du wirst brauchen",
+                    "level": 0,
+                    "example": {
+                        "you_will_need_time": "Du wirst Zeit brauchen."
+                    },
+                    "audio": "de_audio/you_will_need.mp3"
+                },
+                "he_she_it_will_need": {
+                    "translation": "er/sie/es wird brauchen",
+                    "level": 0,
+                    "example": {
+                        "he_will_need_money": "Er wird Geld brauchen."
+                    },
+                    "audio": "de_audio/he_she_it_will_need.mp3"
+                },
+                "we_will_need": {
+                    "translation": "wir werden brauchen",
+                    "level": 0,
+                    "example": {
+                        "we_will_need_support": "Wir werden Unterstützung brauchen."
+                    },
+                    "audio": "de_audio/we_will_need.mp3"
+                },
+                "you_plural_will_need": {
+                    "translation": "ihr werdet brauchen",
+                    "level": 0,
+                    "example": {
+                        "you_will_need_advice": "Ihr werdet Ratschläge brauchen."
+                    },
+                    "audio": "de_audio/you_plural_will_need.mp3"
+                },
+                "they_will_need": {
+                    "translation": "sie werden brauchen",
+                    "level": 0,
+                    "example": {
+                        "they_will_need_rest": "Sie werden Ruhe brauchen."
+                    },
+                    "audio": "de_audio/they_will_need.mp3"
+                }
+            }
+        },
+        "to_like": {
+            "infinitive": "mögen",
+            "level": 0,
+            "past": {
+                "i_liked": {
+                    "translation": "ich mochte",
+                    "level": 0,
+                    "example": {
+                        "i_liked_chocolate": "Ich mochte Schokolade."
+                    },
+                    "audio": "de_audio/i_liked.mp3"
+                },
+                "you_liked": {
+                    "translation": "du mochtest",
+                    "level": 0,
+                    "example": {
+                        "you_liked_ice_cream": "Du mochtest Eis."
+                    },
+                    "audio": "de_audio/you_liked.mp3"
+                },
+                "he_she_it_liked": {
+                    "translation": "er/sie/es mochte",
+                    "level": 0,
+                    "example": {
+                        "he_liked_pizza": "Er mochte Pizza."
+                    },
+                    "audio": "de_audio/he_she_it_liked.mp3"
+                },
+                "we_liked": {
+                    "translation": "wir mochten",
+                    "level": 0,
+                    "example": {
+                        "we_liked_the_movie": "Wir mochten den Film."
+                    },
+                    "audio": "de_audio/we_liked.mp3"
+                },
+                "you_plural_liked": {
+                    "translation": "ihr mochtet",
+                    "level": 0,
+                    "example": {
+                        "you_liked_the_book": "Ihr mochtet das Buch."
+                    },
+                    "audio": "de_audio/you_plural_liked.mp3"
+                },
+                "they_liked": {
+                    "translation": "sie mochten",
+                    "level": 0,
+                    "example": {
+                        "they_liked_the_music": "Sie mochten die Musik."
+                    },
+                    "audio": "de_audio/they_liked.mp3"
+                }
+            },
+            "present": {
+                "i_like": {
+                    "translation": "ich mag",
+                    "level": 0,
+                    "example": {
+                        "i_like_chocolate": "Ich mag Schokolade."
+                    },
+                    "audio": "de_audio/i_like.mp3"
+                },
+                "you_like": {
+                    "translation": "du magst",
+                    "level": 0,
+                    "example": {
+                        "you_like_ice_cream": "Du magst Eis."
+                    },
+                    "audio": "de_audio/you_like.mp3"
+                },
+                "he_she_it_likes": {
+                    "translation": "er/sie/es mag",
+                    "level": 0,
+                    "example": {
+                        "he_likes_pizza": "Er mag Pizza."
+                    },
+                    "audio": "de_audio/he_she_it_likes.mp3"
+                },
+                "we_like": {
+                    "translation": "wir mögen",
+                    "level": 0,
+                    "example": {
+                        "we_like_the_movie": "Wir mögen den Film."
+                    },
+                    "audio": "de_audio/we_like.mp3"
+                },
+                "you_plural_like": {
+                    "translation": "ihr mögt",
+                    "level": 0,
+                    "example": {
+                        "you_like_the_book": "Ihr mögt das Buch."
+                    },
+                    "audio": "de_audio/you_plural_like.mp3"
+                },
+                "they_like": {
+                    "translation": "sie mögen",
+                    "level": 0,
+                    "example": {
+                        "they_like_the_music": "Sie mögen die Musik."
+                    },
+                    "audio": "de_audio/they_like.mp3"
+                }
+            },
+            "future": {
+                "i_will_like": {
+                    "translation": "ich werde mögen",
+                    "level": 0,
+                    "example": {
+                        "i_will_like_chocolate": "Ich werde Schokolade mögen."
+                    },
+                    "audio": "de_audio/i_will_like.mp3"
+                },
+                "you_will_like": {
+                    "translation": "du wirst mögen",
+                    "level": 0,
+                    "example": {
+                        "you_will_like_ice_cream": "Du wirst Eis mögen."
+                    },
+                    "audio": "de_audio/you_will_like.mp3"
+                },
+                "he_she_it_will_like": {
+                    "translation": "er/sie/es wird mögen",
+                    "level": 0,
+                    "example": {
+                        "he_will_like_pizza": "Er wird Pizza mögen."
+                    },
+                    "audio": "de_audio/he_she_it_will_like.mp3"
+                },
+                "we_will_like": {
+                    "translation": "wir werden mögen",
+                    "level": 0,
+                    "example": {
+                        "we_will_like_the_movie": "Wir werden den Film mögen."
+                    },
+                    "audio": "de_audio/we_will_like.mp3"
+                },
+                "you_plural_will_like": {
+                    "translation": "ihr werdet mögen",
+                    "level": 0,
+                    "example": {
+                        "you_will_like_the_book": "Ihr werdet das Buch mögen."
+                    },
+                    "audio": "de_audio/you_plural_will_like.mp3"
+                },
+                "they_will_like": {
+                    "translation": "sie werden mögen",
+                    "level": 0,
+                    "example": {
+                        "they_will_like_the_music": "Sie werden die Musik mögen."
+                    },
+                    "audio": "de_audio/they_will_like.mp3"
+                }
+            }
+        },
+        "to_want": {
+            "infinitive": "wollen",
+            "level": 0,
+            "past": {
+                "i_wanted": {
+                    "translation": "ich wollte",
+                    "level": 0,
+                    "example": {
+                        "i_wanted_an_ice_cream": "Ich wollte ein Eis."
+                    },
+                    "audio": "de_audio/i_wanted.mp3"
+                },
+                "you_wanted": {
+                    "translation": "du wolltest",
+                    "level": 0,
+                    "example": {
+                        "you_wanted_a_book": "Du wolltest ein Buch."
+                    },
+                    "audio": "de_audio/you_wanted.mp3"
+                },
+                "he_she_it_wanted": {
+                    "translation": "er/sie/es wollte",
+                    "level": 0,
+                    "example": {
+                        "he_wanted_a_car": "Er wollte ein Auto."
+                    },
+                    "audio": "de_audio/he_she_it_wanted.mp3"
+                },
+                "we_wanted": {
+                    "translation": "wir wollten",
+                    "level": 0,
+                    "example": {
+                        "we_wanted_a_break": "Wir wollten eine Pause."
+                    },
+                    "audio": "de_audio/we_wanted.mp3"
+                },
+                "you_plural_wanted": {
+                    "translation": "ihr wolltet",
+                    "level": 0,
+                    "example": {
+                        "you_wanted_a_snack": "Ihr wolltet einen Snack."
+                    },
+                    "audio": "de_audio/you_plural_wanted.mp3"
+                },
+                "they_wanted": {
+                    "translation": "sie wollten",
+                    "level": 0,
+                    "example": {
+                        "they_wanted_a_drink": "Sie wollten ein Getränk."
+                    },
+                    "audio": "de_audio/they_wanted.mp3"
+                }
+            },
+            "present": {
+                "i_want": {
+                    "translation": "ich will",
+                    "level": 0,
+                    "example": {
+                        "i_want_an_ice_cream": "Ich will ein Eis."
+                    },
+                    "audio": "de_audio/i_want.mp3"
+                },
+                "you_want": {
+                    "translation": "du willst",
+                    "level": 0,
+                    "example": {
+                        "you_want_a_book": "Du willst ein Buch."
+                    },
+                    "audio": "de_audio/you_want.mp3"
+                },
+                "he_she_it_wants": {
+                    "translation": "er/sie/es will",
+                    "level": 0,
+                    "example": {
+                        "he_wants_a_car": "Er will ein Auto."
+                    },
+                    "audio": "de_audio/he_she_it_wants.mp3"
+                },
+                "we_want": {
+                    "translation": "wir wollen",
+                    "level": 0,
+                    "example": {
+                        "we_want_a_break": "Wir wollen eine Pause."
+                    },
+                    "audio": "de_audio/we_want.mp3"
+                },
+                "you_plural_want": {
+                    "translation": "ihr wollt",
+                    "level": 0,
+                    "example": {
+                        "you_want_a_snack": "Ihr wollt einen Snack."
+                    },
+                    "audio": "de_audio/you_plural_want.mp3"
+                },
+                "they_want": {
+                    "translation": "sie wollen",
+                    "level": 0,
+                    "example": {
+                        "they_want_a_drink": "Sie wollen ein Getränk."
+                    },
+                    "audio": "de_audio/they_want.mp3"
+                }
+            },
+            "future": {
+                "i_will_want": {
+                    "translation": "ich werde wollen",
+                    "level": 0,
+                    "example": {
+                        "i_will_want_an_ice_cream": "Ich werde ein Eis wollen."
+                    },
+                    "audio": "de_audio/i_will_want.mp3"
+                },
+                "you_will_want": {
+                    "translation": "du wirst wollen",
+                    "level": 0,
+                    "example": {
+                        "you_will_want_a_book": "Du wirst ein Buch wollen."
+                    },
+                    "audio": "de_audio/you_will_want.mp3"
+                },
+                "he_she_it_will_want": {
+                    "translation": "er/sie/es wird wollen",
+                    "level": 0,
+                    "example": {
+                        "he_will_want_a_car": "Er wird ein Auto wollen."
+                    },
+                    "audio": "de_audio/he_she_it_will_want.mp3"
+                },
+                "we_will_want": {
+                    "translation": "wir werden wollen",
+                    "level": 0,
+                    "example": {
+                        "we_will_want_a_break": "Wir werden eine Pause wollen."
+                    },
+                    "audio": "de_audio/we_will_want.mp3"
+                },
+                "you_plural_will_want": {
+                    "translation": "ihr werdet wollen",
+                    "level": 0,
+                    "example": {
+                        "you_will_want_a_snack": "Ihr werdet einen Snack wollen."
+                    },
+                    "audio": "de_audio/you_plural_will_want.mp3"
+                },
+                "they_will_want": {
+                    "translation": "sie werden wollen",
+                    "level": 0,
+                    "example": {
+                        "they_will_want_a_drink": "Sie werden ein Getränk wollen."
+                    },
+                    "audio": "de_audio/they_will_want.mp3"
+                }
+            }
+        },
+        "to_can": {
+            "infinitive": "können",
+            "level": 0,
+            "past": {
+                "i_could": {
+                    "translation": "ich konnte",
+                    "level": 0,
+                    "example": {
+                        "i_could_swim": "Ich konnte schwimmen."
+                    },
+                    "audio": "de_audio/i_could.mp3"
+                },
+                "you_could": {
+                    "translation": "du konntest",
+                    "level": 0,
+                    "example": {
+                        "you_could_dance": "Du konntest tanzen."
+                    },
+                    "audio": "de_audio/you_could.mp3"
+                },
+                "he_she_it_could": {
+                    "translation": "er/sie/es konnte",
+                    "level": 0,
+                    "example": {
+                        "he_could_sing": "Er konnte singen."
+                    },
+                    "audio": "de_audio/he_she_it_could.mp3"
+                },
+                "we_could": {
+                    "translation": "wir konnten",
+                    "level": 0,
+                    "example": {
+                        "we_could_play": "Wir konnten spielen."
+                    },
+                    "audio": "de_audio/we_could.mp3"
+                },
+                "you_plural_could": {
+                    "translation": "ihr konntet",
+                    "level": 0,
+                    "example": {
+                        "you_could_run": "Ihr konntet rennen."
+                    },
+                    "audio": "de_audio/you_plural_could.mp3"
+                },
+                "they_could": {
+                    "translation": "sie konnten",
+                    "level": 0,
+                    "example": {
+                        "they_could_laugh": "Sie konnten lachen."
+                    },
+                    "audio": "de_audio/they_could.mp3"
+                }
+            },
+            "present": {
+                "i_can": {
+                    "translation": "ich kann",
+                    "level": 0,
+                    "example": {
+                        "i_can_swim": "Ich kann schwimmen."
+                    },
+                    "audio": "de_audio/i_can.mp3"
+                },
+                "you_can": {
+                    "translation": "du kannst",
+                    "level": 0,
+                    "example": {
+                        "you_can_dance": "Du kannst tanzen."
+                    },
+                    "audio": "de_audio/you_can.mp3"
+                },
+                "he_she_it_can": {
+                    "translation": "er/sie/es kann",
+                    "level": 0,
+                    "example": {
+                        "he_can_sing": "Er kann singen."
+                    },
+                    "audio": "de_audio/he_she_it_can.mp3"
+                },
+                "we_can": {
+                    "translation": "wir können",
+                    "level": 0,
+                    "example": {
+                        "we_can_play": "Wir können spielen."
+                    },
+                    "audio": "de_audio/we_can.mp3"
+                },
+                "you_plural_can": {
+                    "translation": "ihr könnt",
+                    "level": 0,
+                    "example": {
+                        "you_can_run": "Ihr könnt rennen."
+                    },
+                    "audio": "de_audio/you_plural_can.mp3"
+                },
+                "they_can": {
+                    "translation": "sie können",
+                    "level": 0,
+                    "example": {
+                        "they_can_laugh": "Sie können lachen."
+                    },
+                    "audio": "de_audio/they_can.mp3"
+                }
+            },
+            "future": {
+                "i_will_be_able_to": {
+                    "translation": "ich werde können",
+                    "level": 0,
+                    "example": {
+                        "i_will_be_able_to_swim": "Ich werde schwimmen können."
+                    },
+                    "audio": "de_audio/i_will_be_able_to.mp3"
+                },
+                "you_will_be_able_to": {
+                    "translation": "du wirst können",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_able_to_dance": "Du wirst tanzen können."
+                    },
+                    "audio": "de_audio/you_will_be_able_to.mp3"
+                },
+                "he_she_it_will_be_able_to": {
+                    "translation": "er/sie/es wird können",
+                    "level": 0,
+                    "example": {
+                        "he_will_be_able_to_sing": "Er wird singen können."
+                    },
+                    "audio": "de_audio/he_she_it_will_be_able_to.mp3"
+                },
+                "we_will_be_able_to": {
+                    "translation": "wir werden können",
+                    "level": 0,
+                    "example": {
+                        "we_will_be_able_to_play": "Wir werden spielen können."
+                    },
+                    "audio": "de_audio/we_will_be_able_to.mp3"
+                },
+                "you_plural_will_be_able_to": {
+                    "translation": "ihr werdet können",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_able_to_run": "Ihr werdet rennen können."
+                    },
+                    "audio": "de_audio/you_plural_will_be_able_to.mp3"
+                },
+                "they_will_be_able_to": {
+                    "translation": "sie werden können",
+                    "level": 0,
+                    "example": {
+                        "they_will_be_able_to_laugh": "Sie werden lachen können."
+                    },
+                    "audio": "de_audio/they_will_be_able_to.mp3"
+                }
+            }
+        },
+        "to_must": {
+            "infinitive": "müssen",
+            "level": 0,
+            "past": {
+                "i_had_to": {
+                    "translation": "ich musste",
+                    "level": 0,
+                    "example": {
+                        "i_had_to_work": "Ich musste arbeiten."
+                    },
+                    "audio": "de_audio/i_had_to.mp3"
+                },
+                "you_had_to": {
+                    "translation": "du musstest",
+                    "level": 0,
+                    "example": {
+                        "you_had_to_study": "Du musstest lernen."
+                    },
+                    "audio": "de_audio/you_had_to.mp3"
+                },
+                "he_she_it_had_to": {
+                    "translation": "er/sie/es musste",
+                    "level": 0,
+                    "example": {
+                        "he_had_to_leave": "Er musste gehen."
+                    },
+                    "audio": "de_audio/he_she_it_had_to.mp3"
+                },
+                "we_had_to": {
+                    "translation": "wir mussten",
+                    "level": 0,
+                    "example": {
+                        "we_had_to_wait": "Wir mussten warten."
+                    },
+                    "audio": "de_audio/we_had_to.mp3"
+                },
+                "you_plural_had_to": {
+                    "translation": "ihr musstet",
+                    "level": 0,
+                    "example": {
+                        "you_had_to_help": "Ihr musstet helfen."
+                    },
+                    "audio": "de_audio/you_plural_had_to.mp3"
+                },
+                "they_had_to": {
+                    "translation": "sie mussten",
+                    "level": 0,
+                    "example": {
+                        "they_had_to_stay": "Sie mussten bleiben."
+                    },
+                    "audio": "de_audio/they_had_to.mp3"
+                }
+            },
+            "present": {
+                "i_must": {
+                    "translation": "ich muss",
+                    "level": 0,
+                    "example": {
+                        "i_must_work": "Ich muss arbeiten."
+                    },
+                    "audio": "de_audio/i_must.mp3"
+                },
+                "you_must": {
+                    "translation": "du musst",
+                    "level": 0,
+                    "example": {
+                        "you_must_study": "Du musst lernen."
+                    },
+                    "audio": "de_audio/you_must.mp3"
+                },
+                "he_she_it_must": {
+                    "translation": "er/sie/es muss",
+                    "level": 0,
+                    "example": {
+                        "he_must_leave": "Er muss gehen."
+                    },
+                    "audio": "de_audio/he_she_it_must.mp3"
+                },
+                "we_must": {
+                    "translation": "wir müssen",
+                    "level": 0,
+                    "example": {
+                        "we_must_wait": "Wir müssen warten."
+                    },
+                    "audio": "de_audio/we_must.mp3"
+                },
+                "you_plural_must": {
+                    "translation": "ihr müsst",
+                    "level": 0,
+                    "example": {
+                        "you_must_help": "Ihr müsst helfen."
+                    },
+                    "audio": "de_audio/you_plural_must.mp3"
+                },
+                "they_must": {
+                    "translation": "sie müssen",
+                    "level": 0,
+                    "example": {
+                        "they_must_stay": "Sie müssen bleiben."
+                    },
+                    "audio": "de_audio/they_must.mp3"
+                }
+            },
+            "future": {
+                "i_will_have_to": {
+                    "translation": "ich werde müssen",
+                    "level": 0,
+                    "example": {
+                        "i_will_have_to_work": "Ich werde arbeiten müssen."
+                    },
+                    "audio": "de_audio/i_will_have_to.mp3"
+                },
+                "you_will_have_to": {
+                    "translation": "du wirst müssen",
+                    "level": 0,
+                    "example": {
+                        "you_will_have_to_study": "Du wirst lernen müssen."
+                    },
+                    "audio": "de_audio/you_will_have_to.mp3"
+                },
+                "he_she_it_will_have_to": {
+                    "translation": "er/sie/es wird müssen",
+                    "level": 0,
+                    "example": {
+                        "he_will_have_to_leave": "Er wird gehen müssen."
+                    },
+                    "audio": "de_audio/he_she_it_will_have_to.mp3"
+                },
+                "we_will_have_to": {
+                    "translation": "wir werden müssen",
+                    "level": 0,
+                    "example": {
+                        "we_will_have_to_wait": "Wir werden warten müssen."
+                    },
+                    "audio": "de_audio/we_will_have_to.mp3"
+                },
+                "you_plural_will_have_to": {
+                    "translation": "ihr werdet müssen",
+                    "level": 0,
+                    "example": {
+                        "you_will_have_to_help": "Ihr werdet helfen müssen."
+                    },
+                    "audio": "de_audio/you_plural_will_have_to.mp3"
+                },
+                "they_will_have_to": {
+                    "translation": "sie werden müssen",
+                    "level": 0,
+                    "example": {
+                        "they_will_have_to_stay": "Sie werden bleiben müssen."
+                    },
+                    "audio": "de_audio/they_will_have_to.mp3"
+                }
+            }
+        },
+        "to_be_allowed_to": {
+            "infinitive": "dürfen",
+            "level": 0,
+            "past": {
+                "i_was_allowed_to": {
+                    "translation": "ich durfte",
+                    "level": 0,
+                    "example": {
+                        "i_was_allowed_to_go": "Ich durfte gehen."
+                    },
+                    "audio": "de_audio/i_was_allowed_to.mp3"
+                },
+                "you_were_allowed_to": {
+                    "translation": "du durftest",
+                    "level": 0,
+                    "example": {
+                        "you_were_allowed_to_stay": "Du durftest bleiben."
+                    },
+                    "audio": "de_audio/you_were_allowed_to.mp3"
+                },
+                "he_she_it_was_allowed_to": {
+                    "translation": "er/sie/es durfte",
+                    "level": 0,
+                    "example": {
+                        "he_was_allowed_to_play": "Er durfte spielen."
+                    },
+                    "audio": "de_audio/he_she_it_was_allowed_to.mp3"
+                },
+                "we_were_allowed_to": {
+                    "translation": "wir durften",
+                    "level": 0,
+                    "example": {
+                        "we_were_allowed_to_leave": "Wir durften gehen."
+                    },
+                    "audio": "de_audio/we_were_allowed_to.mp3"
+                },
+                "you_plural_were_allowed_to": {
+                    "translation": "ihr durftet",
+                    "level": 0,
+                    "example": {
+                        "you_were_allowed_to_speak": "Ihr durftet sprechen."
+                    },
+                    "audio": "de_audio/you_plural_were_allowed_to.mp3"
+                },
+                "they_were_allowed_to": {
+                    "translation": "sie durften",
+                    "level": 0,
+                    "example": {
+                        "they_were_allowed_to_laugh": "Sie durften lachen."
+                    },
+                    "audio": "de_audio/they_were_allowed_to.mp3"
+                }
+            },
+            "present": {
+                "i_am_allowed_to": {
+                    "translation": "ich darf",
+                    "level": 0,
+                    "example": {
+                        "i_am_allowed_to_go": "Ich darf gehen."
+                    },
+                    "audio": "de_audio/i_am_allowed_to.mp3"
+                },
+                "you_are_allowed_to": {
+                    "translation": "du darfst",
+                    "level": 0,
+                    "example": {
+                        "you_are_allowed_to_stay": "Du darfst bleiben."
+                    },
+                    "audio": "de_audio/you_are_allowed_to.mp3"
+                },
+                "he_she_it_is_allowed_to": {
+                    "translation": "er/sie/es darf",
+                    "level": 0,
+                    "example": {
+                        "he_is_allowed_to_play": "Er darf spielen."
+                    },
+                    "audio": "de_audio/he_she_it_is_allowed_to.mp3"
+                },
+                "we_are_allowed_to": {
+                    "translation": "wir dürfen",
+                    "level": 0,
+                    "example": {
+                        "we_are_allowed_to_leave": "Wir dürfen gehen."
+                    },
+                    "audio": "de_audio/we_are_allowed_to.mp3"
+                },
+                "you_plural_are_allowed_to": {
+                    "translation": "ihr dürft",
+                    "level": 0,
+                    "example": {
+                        "you_are_allowed_to_speak": "Ihr dürft sprechen."
+                    },
+                    "audio": "de_audio/you_plural_are_allowed_to.mp3"
+                },
+                "they_are_allowed_to": {
+                    "translation": "sie dürfen",
+                    "level": 0,
+                    "example": {
+                        "they_are_allowed_to_laugh": "Sie dürfen lachen."
+                    },
+                    "audio": "de_audio/they_are_allowed_to.mp3"
+                }
+            },
+            "future": {
+                "i_will_be_allowed_to": {
+                    "translation": "ich werde dürfen",
+                    "level": 0,
+                    "example": {
+                        "i_will_be_allowed_to_go": "Ich werde gehen dürfen."
+                    },
+                    "audio": "de_audio/i_will_be_allowed_to.mp3"
+                },
+                "you_will_be_allowed_to": {
+                    "translation": "du wirst dürfen",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_allowed_to_stay": "Du wirst bleiben dürfen."
+                    },
+                    "audio": "de_audio/you_will_be_allowed_to.mp3"
+                },
+                "he_she_it_will_be_allowed_to": {
+                    "translation": "er/sie/es wird dürfen",
+                    "level": 0,
+                    "example": {
+                        "he_will_be_allowed_to_play": "Er wird spielen dürfen."
+                    },
+                    "audio": "de_audio/he_she_it_will_be_allowed_to.mp3"
+                },
+                "we_will_be_allowed_to": {
+                    "translation": "wir werden dürfen",
+                    "level": 0,
+                    "example": {
+                        "we_will_be_allowed_to_leave": "Wir werden gehen dürfen."
+                    },
+                    "audio": "de_audio/we_will_be_allowed_to.mp3"
+                },
+                "you_plural_will_be_allowed_to": {
+                    "translation": "ihr werdet dürfen",
+                    "level": 0,
+                    "example": {
+                        "you_will_be_allowed_to_speak": "Ihr werdet sprechen dürfen."
+                    },
+                    "audio": "de_audio/you_plural_will_be_allowed_to.mp3"
+                },
+                "they_will_be_allowed_to": {
+                    "translation": "sie werden dürfen",
+                    "level": 0,
+                    "example": {
+                        "they_will_be_allowed_to_laugh": "Sie werden lachen dürfen."
+                    },
+                    "audio": "de_audio/they_will_be_allowed_to.mp3"
+                }
+            }
+        },
+        "to_should": {
+            "infinitive": "sollen",
+            "level": 0,
+            "past": {
+                "i_should_have": {
+                    "translation": "ich sollte",
+                    "level": 0,
+                    "example": {
+                        "i_should_have_studied": "Ich sollte lernen."
+                    },
+                    "audio": "de_audio/i_should_have.mp3"
+                },
+                "you_should_have": {
+                    "translation": "du solltest",
+                    "level": 0,
+                    "example": {
+                        "you_should_have_helped": "Du solltest helfen."
+                    },
+                    "audio": "de_audio/you_should_have.mp3"
+                },
+                "he_she_it_should_have": {
+                    "translation": "er/sie/es sollte",
+                    "level": 0,
+                    "example": {
+                        "he_should_have_listened": "Er sollte zuhören."
+                    },
+                    "audio": "de_audio/he_she_it_should_have.mp3"
+                },
+                "we_should_have": {
+                    "translation": "wir sollten",
+                    "level": 0,
+                    "example": {
+                        "we_should_have_waited": "Wir sollten warten."
+                    },
+                    "audio": "de_audio/we_should_have.mp3"
+                },
+                "you_plural_should_have": {
+                    "translation": "ihr solltet",
+                    "level": 0,
+                    "example": {
+                        "you_should_have_asked": "Ihr solltet fragen."
+                    },
+                    "audio": "de_audio/you_plural_should_have.mp3"
+                },
+                "they_should_have": {
+                    "translation": "sie sollten",
+                    "level": 0,
+                    "example": {
+                        "they_should_have_stayed": "Sie sollten bleiben."
+                    },
+                    "audio": "de_audio/they_should_have.mp3"
+                }
+            },
+            "present": {
+                "i_should": {
+                    "translation": "ich soll",
+                    "level": 0,
+                    "example": {
+                        "i_should_study": "Ich soll lernen."
+                    },
+                    "audio": "de_audio/i_should.mp3"
+                },
+                "you_should": {
+                    "translation": "du sollst",
+                    "level": 0,
+                    "example": {
+                        "you_should_help": "Du sollst helfen."
+                    },
+                    "audio": "de_audio/you_should.mp3"
+                },
+                "he_she_it_should": {
+                    "translation": "er/sie/es soll",
+                    "level": 0,
+                    "example": {
+                        "he_should_listen": "Er soll zuhören."
+                    },
+                    "audio": "de_audio/he_she_it_should.mp3"
+                },
+                "we_should": {
+                    "translation": "wir sollen",
+                    "level": 0,
+                    "example": {
+                        "we_should_wait": "Wir sollen warten."
+                    },
+                    "audio": "de_audio/we_should.mp3"
+                },
+                "you_plural_should": {
+                    "translation": "ihr sollt",
+                    "level": 0,
+                    "example": {
+                        "you_should_ask": "Ihr sollt fragen."
+                    },
+                    "audio": "de_audio/you_plural_should.mp3"
+                },
+                "they_should": {
+                    "translation": "sie sollen",
+                    "level": 0,
+                    "example": {
+                        "they_should_stay": "Sie sollen bleiben."
+                    },
+                    "audio": "de_audio/they_should.mp3"
+                }
+            },
+            "future": {
+                "i_will_should": {
+                    "translation": "ich werde sollen",
+                    "level": 0,
+                    "example": {
+                        "i_will_should_study": "Ich werde lernen sollen."
+                    },
+                    "audio": "de_audio/i_will_should.mp3"
+                },
+                "you_will_should": {
+                    "translation": "du wirst sollen",
+                    "level": 0,
+                    "example": {
+                        "you_will_should_help": "Du wirst helfen sollen."
+                    },
+                    "audio": "de_audio/you_will_should.mp3"
+                },
+                "he_she_it_will_should": {
+                    "translation": "er/sie/es wird sollen",
+                    "level": 0,
+                    "example": {
+                        "he_will_should_listen": "Er wird zuhören sollen."
+                    },
+                    "audio": "de_audio/he_she_it_will_should.mp3"
+                },
+                "we_will_should": {
+                    "translation": "wir werden sollen",
+                    "level": 0,
+                    "example": {
+                        "we_will_should_wait": "Wir werden warten sollen."
+                    },
+                    "audio": "de_audio/we_will_should.mp3"
+                },
+                "you_plural_will_should": {
+                    "translation": "ihr werdet sollen",
+                    "level": 0,
+                    "example": {
+                        "you_will_should_ask": "Ihr werdet fragen sollen."
+                    },
+                    "audio": "de_audio/you_plural_will_should.mp3"
+                },
+                "they_will_should": {
+                    "translation": "sie werden sollen",
+                    "level": 0,
+                    "example": {
+                        "they_will_should_stay": "Sie werden bleiben sollen."
+                    },
+                    "audio": "de_audio/they_will_should.mp3"
+                }
+            }
+        }
+    }
+}

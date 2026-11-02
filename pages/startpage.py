@@ -25,6 +25,7 @@ class StartPage(Screen):
         
         self.ids.lab_u_name.text = self.app.base_txt["u_name"]
         self.ids.lab_logged_user.text = self.app.app_data["logged_u_name"]
+        self.ids.but_change_user.text = self.app.base_txt.get("btn_change_user", "User")
         
         self.ids.b_box_startpage.ids.but_1.text = self.app.base_txt["settings"]
         self.ids.b_box_startpage.ids.but_2.text = self.app.base_txt["exit"]
