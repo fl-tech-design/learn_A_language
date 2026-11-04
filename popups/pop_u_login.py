@@ -6,7 +6,7 @@ from kivy.clock import Clock
 import constants
 from constants import DIR_POPS
 from contr_str import let_uppercase_first
-from contr_data import load_userdata, change_login_state, set_logged_uname
+from user_manager import load_userdata, change_login_state, set_logged_uname, init_vocab_for_user
 from popups.pop_create_user import Pop_Create_User
 
 # Farben aus colors.kv (fs22_n, fs22_d)
@@ -67,6 +67,10 @@ class Pop_Login(Popup):
             change_login_state(True)
             set_logged_uname(username)
             self._load_account(username)
+
+            # Vokabel-Dict initialisieren (Level 0 für alle Wörter bei erstem Login)
+            language_dict = self.app.user_data.get("language", {})
+            init_vocab_for_user(username, language_dict)
 
             # App-Daten neu laden, damit app_data["logged_u_name"] aktuell ist
             self.app.load_app_data()

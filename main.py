@@ -41,11 +41,14 @@ from kivy.lang import Builder
 from kivy.clock import Clock
 
 # Import data controller
-from contr_data import load_data, update_data, change_login_state
+from data_manager import load_data, update_data
+from user_manager import change_login_state
 
 # Import pages
 from pages.loadingpage import LoadingPage
 from pages.startpage import StartPage
+from pages.learningpage import LearningPage
+from pages.wordpage import WordPage
 from pages.settingpage import SettingPage
 
 # Import popups
@@ -82,6 +85,7 @@ class MainApp(App):
         self.color2: list = []
         self.color3: list = []
         self.user_data: dict = {}
+        self.word_mode: str = "new"
 
         self.load_app_data()
 
@@ -137,6 +141,12 @@ class MainApp(App):
         # Settings page
         self.setting_page = self._create_screen("page_setting", SettingPage(app))
         self.scr_man.add_widget(self.setting_page)
+
+        self.learning_page = self._create_screen("page_learning", LearningPage(app))
+        self.scr_man.add_widget(self.learning_page)
+
+        self.word_page = self._create_screen("page_word", WordPage(app))
+        self.scr_man.add_widget(self.word_page)
 
         return self.scr_man
 
@@ -222,7 +232,12 @@ class MainApp(App):
 
     def _app_stop(self) -> None:
         """Cleanly stops the application and saves logout state."""
-        change_login_state(False)
+        # Prüfe ob "Eingeloggt bleiben" aktiviert ist
+        app_data = load_data(DATA_APP)
+        stay_logged = app_data.get("stay_logged_in", False)
+
+        if not stay_logged:
+            change_login_state(False)
         self.stop()
 
 

@@ -4,6 +4,7 @@
         "Peter",
         "Fritz"
     ],
-    "logged_u_name": "Peter",
-    "user_logged_in": false
+    "logged_u_name": "Hans",
+    "user_logged_in": true,
+    "stay_logged_in": true
 }

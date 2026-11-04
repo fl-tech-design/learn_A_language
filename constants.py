@@ -22,6 +22,8 @@ LIST_KV_FILES = [
     "data_base/colors.kv",
     "data_base/own_widgets.kv",
     "pages/startpage.kv",
+    "pages/learningpage.kv",
+    "pages/wordpage.kv",
     "pages/settingpage.kv",
 ]
 

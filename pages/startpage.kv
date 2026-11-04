@@ -39,6 +39,16 @@
                         width: "100dp"
                         on_release: app.open_login_popup()
             BoxLined_2:
-            
+                orientation: 'vertical'
+                spacing: 4
+                BoxUnlined:
+                    size_hint_y: None
+                    height: "50dp"
+                    ButClear:
+                        id: but_learn
+                        text: app.app_txt.get("btn_learn", "Lernen")
+                        font_size: "18dp"
+                        on_release: app.change_screen('left', 'page_learning')
+
         BoxBottom:
             id: b_box_startpage

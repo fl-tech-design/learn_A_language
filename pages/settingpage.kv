@@ -13,7 +13,7 @@
             padding: 2
             BoxUnlined:
                 size_hint_y: 0.1
-# Label für Titel Sprachauswahl                
+# Label für Titel Sprachauswahl
                 LabBig:
                     id: lab_tit_lang
             BoxUnlined:
@@ -28,6 +28,35 @@
                 BoxFlag:
                     id: box_flag_2
             BoxUnlined:
-# Box Fusszeile    
-            BoxBottom:
-                id: b_box_settings
+# Checkbox Eingeloggt bleiben
+                size_hint_y: None
+                height: "40dp"
+                spacing: 4
+                CheckBox:
+                    id: cb_stay_logged
+                    size_hint_x: None
+                    width: "40dp"
+                    active: False
+                    on_active: root.on_stay_logged_toggle(self.active)
+                LabBig:
+                    text: app.app_txt.get("stay_logged_in", "Eingeloggt bleiben")
+                    font_size: "18dp"
+                    halign: 'left'
+                    valign: 'middle'
+                    text_size: self.size
+            BoxUnlined:
+# Box Fusszeile mit Buttons
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: "50dp"
+                spacing: 4
+                ButClear:
+                    id: but_back_settings
+                    text: app.base_txt.get("back", "Zurück")
+                    font_size: "18dp"
+                    on_release: app.change_screen('right', 'page_start') if app.scr_man.current == 'page_setting' else app.change_screen('left', 'page_start')
+                ButClear:
+                    id: but_quit_settings
+                    text: app.base_txt.get("exit", "Beenden")
+                    font_size: "18dp"
+                    on_release: app._app_stop()

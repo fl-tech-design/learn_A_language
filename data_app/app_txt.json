@@ -1,8 +1,32 @@
 {
     "de": {
-        "m_lang": "Muttersprache"
+        "m_lang": "Muttersprache",
+        "btn_learn": "Lernen",
+        "tit_page_learning": "Lernen",
+        "btn_new_words": "Neue Wörter",
+        "btn_review": "Wiederholung",
+        "btn_next_word": "Nächstes Wort",
+        "no_words": "Keine Wörter verfügbar",
+        "btn_know": "Kenne ich",
+        "btn_dont_know": "Kenne ich nicht",
+        "btn_next": "Nächstes Wort",
+        "lab_level": "Level: {level}",
+        "msg_word_learned": "Wort gelernt! (Level 8 erreicht)",
+        "stay_logged_in": "Eingeloggt bleiben"
     },
     "en": {
-        "m_lang": "Mother tongue"
+        "m_lang": "Mother tongue",
+        "btn_learn": "Learn",
+        "tit_page_learning": "Learning",
+        "btn_new_words": "New words",
+        "btn_review": "Review",
+        "btn_next_word": "Next word",
+        "no_words": "No words available",
+        "btn_know": "I know it",
+        "btn_dont_know": "I don't know it",
+        "btn_next": "Next word",
+        "lab_level": "Level: {level}",
+        "msg_word_learned": "Word learned! (Level 8 reached)",
+        "stay_logged_in": "Stay logged in"
     }
 }

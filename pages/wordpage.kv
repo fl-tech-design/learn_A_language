@@ -1,0 +1,65 @@
+#wordpage.kv
+<WordPage>:
+    BoxUnlined:
+        orientation: 'vertical'
+        padding: 2
+        spacing: 4
+        BoxTitle:
+            id: t_box_wordpage
+        BoxUnlined:
+            orientation: 'vertical'
+            spacing: 4
+            BoxUnlined:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: "200dp"
+                spacing: 2
+                LabBig:
+                    id: lab_word
+                    font_size: "32dp"
+                    halign: 'center'
+                    valign: 'middle'
+                    text_size: self.size
+                LabSmall:
+                    id: lab_translation
+                    font_size: "20dp"
+                    halign: 'center'
+                    valign: 'middle'
+                    text_size: self.size
+                LabSmall:
+                    id: lab_level
+                    font_size: "16dp"
+                    halign: 'center'
+                    valign: 'middle'
+                    text_size: self.size
+            BoxUnlined:
+                orientation: 'vertical'
+                spacing: 4
+                BoxUnlined:
+                    size_hint_y: None
+                    height: "50dp"
+                    ButClear:
+                        id: but_know
+                        font_size: "18dp"
+                        on_release: root.on_know()
+                BoxUnlined:
+                    size_hint_y: None
+                    height: "50dp"
+                    ButClear:
+                        id: but_dont_know
+                        font_size: "18dp"
+                        on_release: root.on_dont_know()
+            BoxUnlined:
+                size_hint_y: None
+                height: "50dp"
+                ButClear:
+                    id: but_next
+                    font_size: "18dp"
+                    on_release: root._next_word()
+                ButClear:
+                    id: but_back_word
+                    font_size: "18dp"
+                    on_release: root.go_back()
+
+        BoxBottom:
+            id: b_box_wordpage

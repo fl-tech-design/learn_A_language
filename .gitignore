@@ -177,3 +177,9 @@ cython_debug/
 
 # User data files (contain personal data)
 data_app/files_user/*.json
+
+# Piper TTS models (too large for Git)
+models/
+
+# Test scripts
+test_tts.py

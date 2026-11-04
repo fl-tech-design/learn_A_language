@@ -134,10 +134,12 @@
                 BoxUnlined:
                     ButClear:
                         id: but_1
+                        text: app.base_txt.get("settings", "Einstellungen")
                         font_size: "30dp"
                         on_release: app.change_screen('left', 'page_setting') if app.scr_man.current == 'page_start' else app.change_screen('right', 'page_start')
                 BoxUnlined:
                     ButClear:
                         id: but_2
+                        text: app.base_txt.get("exit", "Beenden")
                         font_size: "30dp"
                         on_release: app._app_stop()
