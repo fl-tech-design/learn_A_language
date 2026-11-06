@@ -39,3 +39,7 @@ class SettingPage(Screen):
             app_data = load_data(DATA_APP)
             app_data["words_per_session"] = count
             save_data(DATA_APP, app_data)
+
+    def go_back(self) -> None:
+        """Wechselt zur zuletzt geöffneten Seite."""
+        self.app.go_back()

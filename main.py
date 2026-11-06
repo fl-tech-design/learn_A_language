@@ -186,12 +186,24 @@ class MainApp(App):
 
     def go_back(self) -> None:
         """Wechselt zur zuletzt geöffneten Seite (History-Stack)."""
-        if self.screen_history:
-            last_screen = self.screen_history.pop()
+        if not self.screen_history:
+            print('go_back: Kein vorheriger Screen im History-Stack')
+            return
+        last_screen = self.screen_history.pop()
+        try:
             self.root.transition.direction = 'right'
             self.root.current = last_screen
             new_screen = self.scr_man.get_screen(last_screen)
             Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
+        except Exception as e:
+            print(f'go_back Fehler: {e}')
+            # Versuch zurück zur Startseite
+            try:
+                self.root.current = 'page_start'
+                new_screen = self.scr_man.get_screen('page_start')
+                Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
+            except Exception as e2:
+                print(f'go_back Fallback Fehler: {e2}')
 
     def open_settings(self) -> None:
         """Öffnet die Einstellungsseite von überall aus."""
