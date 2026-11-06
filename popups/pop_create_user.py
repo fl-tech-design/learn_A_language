@@ -2,7 +2,7 @@ from kivy.uix.popup import Popup
 from kivy.lang import Builder
 from constants import DIR_POPS
 from contr_str import let_uppercase_first
-from user_manager import create_user_file, add_new_user_to_list, change_login_state, set_logged_uname
+from managers.user_manager import create_user_file, add_new_user_to_list, change_login_state, set_logged_uname
 
 Builder.load_file(DIR_POPS + "pop_create_user.kv")
 

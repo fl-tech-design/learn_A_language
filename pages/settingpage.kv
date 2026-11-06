@@ -85,7 +85,7 @@
                     id: but_back_settings
                     text: app.base_txt.get("back", "Zurück")
                     font_size: "18dp"
-                    on_release: app.change_screen('right', 'page_start') if app.scr_man.current == 'page_setting' else app.change_screen('left', 'page_start')
+                    on_release: root.go_back()
                 ButClear:
                     id: but_quit_settings
                     text: app.base_txt.get("exit", "Beenden")

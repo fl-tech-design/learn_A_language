@@ -6,7 +6,7 @@ from kivy.clock import Clock
 import constants
 from constants import DIR_POPS
 from contr_str import let_uppercase_first
-from user_manager import load_userdata, change_login_state, set_logged_uname
+from managers.user_manager import load_userdata, change_login_state, set_logged_uname
 from managers.vocab_manager import init_vocab_for_user, migrate_vocab_for_user
 from popups.pop_create_user import Pop_Create_User
 

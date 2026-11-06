@@ -8,8 +8,8 @@ import os
 from datetime import datetime, timedelta
 from typing import Dict, Any, List, Optional
 
-from data_manager import load_data, save_data
-from user_manager import load_userdata, save_userdata
+from managers.data_manager import load_data, save_data
+from managers.user_manager import load_userdata, save_userdata
 from constants import DATA_APP, DIR_USERFILES, DIR_LANGUAGES
 
 # Zentralisierter Logger (einmal pro Modul)

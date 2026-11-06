@@ -4,7 +4,7 @@ import os
 import logging
 from typing import Dict, Any
 from constants import DATA_APP, DIR_USERFILES
-from data_manager import load_data, save_data
+from managers.data_manager import load_data, save_data
 
 # Konfiguriere das Logging
 logging.basicConfig(

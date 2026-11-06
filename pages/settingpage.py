@@ -5,7 +5,7 @@ from kivy.app import App
 
 from contr_str import let_uppercase_first
 from constants import DIR_FLAGS
-from data_manager import load_data, save_data
+from managers.data_manager import load_data, save_data
 from constants import DATA_APP
 
 

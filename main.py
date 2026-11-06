@@ -41,8 +41,8 @@ from kivy.lang import Builder
 from kivy.clock import Clock
 
 # Import data controller
-from data_manager import load_data, update_data
-from user_manager import change_login_state
+from managers.data_manager import load_data, update_data
+from managers.user_manager import change_login_state
 
 # Import pages
 from pages.loadingpage import LoadingPage
@@ -86,6 +86,7 @@ class MainApp(App):
         self.color3: list = []
         self.user_data: dict = {}
         self.word_mode: str = "new"
+        self.screen_history: list = []
 
         self.load_app_data()
 
@@ -173,10 +174,28 @@ class MainApp(App):
             new_transition: Transition direction (e.g. 'left', 'right').
             new_scr_name: Name of the target screen.
         """
+        # Aktuellen Screen zum History-Stack hinzufügen (außer bei gleichem Screen)
+        current = self.scr_man.current
+        if current and current != new_scr_name and current not in self.screen_history:
+            self.screen_history.append(current)
+
         self.root.transition.direction = new_transition
         self.root.current = new_scr_name
         new_screen = self.scr_man.get_screen(new_scr_name)
         Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
+
+    def go_back(self) -> None:
+        """Wechselt zur zuletzt geöffneten Seite (History-Stack)."""
+        if self.screen_history:
+            last_screen = self.screen_history.pop()
+            self.root.transition.direction = 'right'
+            self.root.current = last_screen
+            new_screen = self.scr_man.get_screen(last_screen)
+            Clock.schedule_once(lambda dt: new_screen.children[0].upd_page(), 0)
+
+    def open_settings(self) -> None:
+        """Öffnet die Einstellungsseite von überall aus."""
+        self.change_screen('left', 'page_setting')
 
     def load_app_data(self) -> None:
         """
