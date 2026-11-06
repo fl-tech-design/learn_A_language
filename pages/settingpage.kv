@@ -3,7 +3,6 @@
 <SettingPage>:
     BoxLayout:
         orientation: 'vertical'
-# Titelbox aus dem fil own_widgets.kv
         BoxTitle:
             id: t_box_settings
         BoxLined_2:
@@ -13,7 +12,6 @@
             padding: 2
             BoxUnlined:
                 size_hint_y: 0.1
-# Label für Titel Sprachauswahl
                 LabBig:
                     id: lab_tit_lang
             BoxUnlined:
@@ -21,14 +19,11 @@
                 size_hint_y: 0.2
                 padding: 4, 0, 4, 0
                 spacing: 2
-# Box für die erste Sprache
                 BoxFlag:
                     id: box_flag_1
-# Box für die zweite Sprache
                 BoxFlag:
                     id: box_flag_2
             BoxUnlined:
-# Checkbox Eingeloggt bleiben
                 size_hint_y: None
                 height: "40dp"
                 spacing: 4
@@ -45,7 +40,43 @@
                     valign: 'middle'
                     text_size: self.size
             BoxUnlined:
-# Box Fusszeile mit Buttons
+                orientation: 'vertical'
+                size_hint_y: None
+                height: "120dp"
+                spacing: 2
+                LabSmall:
+                    text: app.app_txt.get("words_per_session", "Wörter pro Sitzung")
+                    font_size: "16dp"
+                    halign: 'left'
+                    valign: 'middle'
+                    text_size: self.size
+                BoxUnlined:
+                    orientation: 'horizontal'
+                    size_hint_y: None
+                    height: "40dp"
+                    spacing: 4
+                    ToggleButton:
+                        id: rb_words_3
+                        group: "words_per_session"
+                        text: app.app_txt.get("words_3", "3 Wörter")
+                        font_size: "16dp"
+                        state: "down" if app.app_data.get("words_per_session", 10) == 3 else "normal"
+                        on_state: root.on_words_per_session_toggle(3, self.state)
+                    ToggleButton:
+                        id: rb_words_5
+                        group: "words_per_session"
+                        text: app.app_txt.get("words_5", "5 Wörter")
+                        font_size: "16dp"
+                        state: "down" if app.app_data.get("words_per_session", 10) == 5 else "normal"
+                        on_state: root.on_words_per_session_toggle(5, self.state)
+                    ToggleButton:
+                        id: rb_words_10
+                        group: "words_per_session"
+                        text: app.app_txt.get("words_10", "10 Wörter")
+                        font_size: "16dp"
+                        state: "down" if app.app_data.get("words_per_session", 10) == 10 else "normal"
+                        on_state: root.on_words_per_session_toggle(10, self.state)
+            BoxUnlined:
                 orientation: 'horizontal'
                 size_hint_y: None
                 height: "50dp"

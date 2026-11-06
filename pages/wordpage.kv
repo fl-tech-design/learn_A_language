@@ -12,54 +12,71 @@
             BoxUnlined:
                 orientation: 'vertical'
                 size_hint_y: None
-                height: "200dp"
+                height: "220dp"
                 spacing: 2
                 LabBig:
                     id: lab_word
-                    font_size: "32dp"
+                    font_size: "36dp"
                     halign: 'center'
                     valign: 'middle'
                     text_size: self.size
                 LabSmall:
-                    id: lab_translation
-                    font_size: "20dp"
+                    id: lab_example
+                    font_size: "16dp"
                     halign: 'center'
                     valign: 'middle'
                     text_size: self.size
+                    color: 0.7, 0.7, 0.7, 1
                 LabSmall:
                     id: lab_level
                     font_size: "16dp"
                     halign: 'center'
                     valign: 'middle'
                     text_size: self.size
+                Label:
+                    id: lab_input_hint
+                    text: app.app_txt.get("input_hint", "Lies das Wort und klicke auf 'Ich kenne es'")
+                    font_size: "14dp"
+                    halign: 'center'
+                    valign: 'middle'
+                    text_size: self.size
+                    color: 0.7, 0.7, 0.7, 1
+            LabSmall:
+                id: lab_feedback
+                font_size: "16dp"
+                halign: 'center'
+                valign: 'middle'
+                text_size: self.size
+                color: 0.2, 0.8, 0.2, 1
+                size_hint_y: None
+                height: "30dp"
             BoxUnlined:
                 orientation: 'vertical'
                 spacing: 4
                 BoxUnlined:
                     size_hint_y: None
-                    height: "50dp"
+                    height: "56dp"
                     ButClear:
                         id: but_know
+                        text: app.app_txt.get("btn_know", "Ich kenne es")
                         font_size: "18dp"
                         on_release: root.on_know()
                 BoxUnlined:
                     size_hint_y: None
-                    height: "50dp"
+                    height: "56dp"
                     ButClear:
-                        id: but_dont_know
+                        id: but_next
+                        text: app.app_txt.get("btn_next", "Nächstes Wort")
                         font_size: "18dp"
-                        on_release: root.on_dont_know()
-            BoxUnlined:
-                size_hint_y: None
-                height: "50dp"
-                ButClear:
-                    id: but_next
-                    font_size: "18dp"
-                    on_release: root._next_word()
-                ButClear:
-                    id: but_back_word
-                    font_size: "18dp"
-                    on_release: root.go_back()
+                        on_release: root._next_word()
+                BoxUnlined:
+                    size_hint_y: None
+                    height: "56dp"
+                    ButClear:
+                        id: but_back_word
+                        text: app.base_txt.get("back", "zurück")
+                        font_size: "18dp"
+                        on_release: root.go_back()
 
         BoxBottom:
             id: b_box_wordpage

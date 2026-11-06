@@ -49,6 +49,37 @@
                         text: app.app_txt.get("btn_learn", "Lernen")
                         font_size: "18dp"
                         on_release: app.change_screen('left', 'page_learning')
+                BoxUnlined:
+                    orientation: 'horizontal'
+                    size_hint_y: None
+                    height: "30dp"
+                    spacing: 4
+                    LabSmall:
+                        id: lab_new_count
+                        text: ""
+                        font_size: "14dp"
+                        halign: 'left'
+                        valign: 'middle'
+                        text_size: self.size
+                    LabSmall:
+                        id: lab_due_count
+                        text: ""
+                        font_size: "14dp"
+                        halign: 'right'
+                        valign: 'middle'
+                        text_size: self.size
+                BoxUnlined:
+                    orientation: 'vertical'
+                    size_hint_y: None
+                    height: "40dp"
+                    spacing: 2
+                    LabBig:
+                        text: app.base_txt.get("inf_start", "Willkommen!")
+                        font_size: "16dp"
+                        halign: 'center'
+                        valign: 'middle'
+                        text_size: self.size
+                        color: 0.7, 0.7, 0.7, 1
 
         BoxBottom:
             id: b_box_startpage

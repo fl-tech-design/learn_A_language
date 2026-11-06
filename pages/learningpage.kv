@@ -15,7 +15,7 @@
                 height: "200dp"
                 spacing: 2
                 LabBig:
-                    text: "Wähle eine Kategorie"
+                    text: app.app_txt.get("cat_select", "Wähle eine Kategorie")
                     font_size: "24dp"
                     halign: 'center'
                     valign: 'middle'
@@ -34,9 +34,16 @@
                     size_hint_y: None
                     height: "50dp"
                     ButClear:
-                        id: but_review
+                        id: but_due_words
                         font_size: "18dp"
-                        on_release: root.go_review()
+                        on_release: root.go_due_words()
+                BoxUnlined:
+                    size_hint_y: None
+                    height: "50dp"
+                    ButClear:
+                        id: but_learned_words
+                        font_size: "18dp"
+                        on_release: root.go_learned_words()
             BoxUnlined:
                 size_hint_y: None
                 height: "50dp"
