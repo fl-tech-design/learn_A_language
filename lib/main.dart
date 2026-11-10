@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'managers/app_state.dart';
 import 'theme/app_theme.dart';
@@ -13,6 +14,9 @@ import 'screens/settings_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Immersive Fullscreen – Statusleiste + Navigation ausblenden
+  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
   final appState = AppState();
   await appState.initialize();

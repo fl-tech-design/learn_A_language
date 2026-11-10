@@ -131,7 +131,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             padding: const EdgeInsets.only(right: 8),
                             child: ChoiceChip(
                                 label:
-                                    Text('$n ${at['words_$n'] ?? '$n Wörter'}'),
+                                    Text(at['words_$n'] ?? '$n Wörter'),
                                 selected: selected,
                                 onSelected: (_) => _setWordsPerSession(n)));
                       }).toList()),

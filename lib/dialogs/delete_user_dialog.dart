@@ -27,8 +27,10 @@ Future<String?> showDeleteUserDialog(
           const SizedBox(height: 12),
           TextField(
             controller: ctrl,
+            style: const TextStyle(color: Colors.black, fontSize: 16),
             decoration: InputDecoration(
               hintText: hintText,
+              hintStyle: const TextStyle(color: Colors.grey),
               filled: true,
               fillColor: Colors.white,
               border:

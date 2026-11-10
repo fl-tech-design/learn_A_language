@@ -75,10 +75,11 @@ class BoxBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bottomPadding = MediaQuery.of(context).padding.bottom;
     return Container(
-      height: MediaQuery.of(context).size.height * AppTheme.boxBottomHeight,
+      height: MediaQuery.of(context).size.height * AppTheme.boxBottomHeight + bottomPadding,
       color: const Color(0xFF1F1F1F),
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      padding: EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8 + bottomPadding),
       child: Row(
         children: [
           Expanded(
@@ -88,7 +89,7 @@ class BoxBottom extends StatelessWidget {
                 foregroundColor: AppTheme.colorPrimary,
                 side: const BorderSide(color: AppTheme.colorPrimary),
               ),
-              child: Text(settingsText),
+              child: Text(settingsText, style: const TextStyle(color: AppTheme.colorPrimary)),
             ),
           ),
           const SizedBox(width: 10),
@@ -99,7 +100,7 @@ class BoxBottom extends StatelessWidget {
                 foregroundColor: AppTheme.colorPrimary,
                 side: const BorderSide(color: AppTheme.colorPrimary),
               ),
-              child: Text(exitText),
+              child: Text(exitText, style: const TextStyle(color: AppTheme.colorPrimary)),
             ),
           ),
         ],

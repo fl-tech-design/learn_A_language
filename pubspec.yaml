@@ -1,7 +1,7 @@
 name: learn_a_language
 description: A language learning app - Flutter migration from Kivy.
 publish_to: 'none'
-version: 0.1.0+1
+version: 1.2.0+2
 
 environment:
   sdk: '>=3.1.0 <4.0.0'

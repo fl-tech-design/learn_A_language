@@ -273,9 +273,9 @@ class _GameScreenState extends State<GameScreen> {
                             child: Text(question,
                                 textAlign: TextAlign.center,
                                 style: const TextStyle(fontSize: 30)))),
-                    // Answer grid 2x2
-                    SizedBox(
-                        height: 130,
+                    // Answer grid 2x2 – gleichmäßig verteilt
+                    Expanded(
+                        flex: 3,
                         child: Row(children: [
                           Expanded(
                               child: Column(children: [

@@ -39,7 +39,7 @@ Future<String?> showLoginDialog(
                       onPressed: () => Navigator.of(ctx).pop(users[i]),
                       child: Text(users[i],
                           style: const TextStyle(
-                              color: AppTheme.colorPrimary, fontSize: 20)),
+                              color: Colors.black, fontSize: 20)),
                     ),
                   ),
                 ),

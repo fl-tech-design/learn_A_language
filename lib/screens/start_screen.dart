@@ -46,7 +46,7 @@ class _StartScreenState extends State<StartScreen> {
     final result = await showLoginDialog(
       context,
       appState.appData.registeredUser,
-      bt['u_login']?.toString() ?? 'Login',
+      bt['btn_change_user']?.toString() ?? 'Benutzer wechseln',
       bt['btn_add_user']?.toString() ?? '+ Neuer User',
       bt['chancel']?.toString() ?? 'abbrechen',
     );

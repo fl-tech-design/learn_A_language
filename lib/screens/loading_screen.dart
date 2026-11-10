@@ -51,7 +51,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
         children: [
           Image.asset('assets/images/spl_start.png', fit: BoxFit.fill),
           Positioned(
-            bottom: MediaQuery.of(context).size.height * 0.12,
+            bottom: MediaQuery.of(context).size.height * 0.18,
             left: 0,
             right: 0,
             child: Text(
@@ -67,7 +67,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             ),
           ),
           Positioned(
-            bottom: MediaQuery.of(context).size.height * 0.01,
+            bottom: MediaQuery.of(context).size.height * 0.06,
             left: MediaQuery.of(context).size.width * 0.125,
             right: MediaQuery.of(context).size.width * 0.125,
             child: LinearProgressIndicator(
@@ -76,6 +76,20 @@ class _LoadingScreenState extends State<LoadingScreen> {
               valueColor:
                   const AlwaysStoppedAnimation<Color>(AppTheme.colorPrimary),
               minHeight: 20,
+            ),
+          ),
+          Positioned(
+            bottom: MediaQuery.of(context).size.height * 0.02,
+            left: 0,
+            right: 0,
+            child: Text(
+              'v${AppTheme.versionNr}',
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.white54,
+                fontFamily: 'Jura',
+              ),
             ),
           ),
         ],

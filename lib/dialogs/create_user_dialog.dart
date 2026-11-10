@@ -35,8 +35,10 @@ Future<Map<String, String>?> showCreateUserDialog(
               const SizedBox(height: 12),
               TextField(
                 controller: nameCtrl,
+                style: const TextStyle(color: Colors.black, fontSize: 16),
                 decoration: InputDecoration(
                   hintText: hintText,
+                  hintStyle: const TextStyle(color: Colors.grey),
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
