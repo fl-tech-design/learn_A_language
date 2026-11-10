@@ -15,7 +15,8 @@ Future<bool?> showLimitDialog(
     builder: (ctx) => AlertDialog(
       backgroundColor: AppTheme.colorPrimary,
       title: Text(title,
-          style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+          style: const TextStyle(
+              fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
       content: SizedBox(
         width: double.maxFinite,
         child: Text(message,
@@ -23,26 +24,30 @@ Future<bool?> showLimitDialog(
             style: const TextStyle(fontSize: 16, color: Colors.black)),
       ),
       actions: [
-        Expanded(
-          child: OutlinedButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Colors.black),
-              foregroundColor: Colors.black,
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () => Navigator.of(ctx).pop(true),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.black),
+                  foregroundColor: Colors.black,
+                ),
+                child: Text(continueText),
+              ),
             ),
-            child: Text(continueText),
-          ),
-        ),
-        const SizedBox(width: 20),
-        Expanded(
-          child: OutlinedButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Colors.black),
-              foregroundColor: Colors.black,
+            const SizedBox(width: 20),
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () => Navigator.of(ctx).pop(false),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.black),
+                  foregroundColor: Colors.black,
+                ),
+                child: Text(endText),
+              ),
             ),
-            child: Text(endText),
-          ),
+          ],
         ),
       ],
     ),

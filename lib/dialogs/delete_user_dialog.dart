@@ -16,7 +16,8 @@ Future<String?> showDeleteUserDialog(
     builder: (ctx) => AlertDialog(
       backgroundColor: AppTheme.colorPrimary,
       title: Text(title,
-          style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+          style: const TextStyle(
+              fontFamily: 'Cmunobx', color: Colors.black)),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -30,7 +31,8 @@ Future<String?> showDeleteUserDialog(
               hintText: hintText,
               filled: true,
               fillColor: Colors.white,
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(4)),
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(4)),
             ),
           ),
         ],
@@ -38,8 +40,7 @@ Future<String?> showDeleteUserDialog(
       actions: [
         TextButton(
           onPressed: () => Navigator.of(ctx).pop(null),
-          child: Text(cancelText,
-              style: const TextStyle(color: Colors.black)),
+          child: Text(cancelText, style: const TextStyle(color: Colors.black)),
         ),
         TextButton(
           onPressed: () {
@@ -47,8 +48,7 @@ Future<String?> showDeleteUserDialog(
             if (name.isEmpty) return;
             Navigator.of(ctx).pop(name);
           },
-          child: Text(confirmText,
-              style: const TextStyle(color: Colors.black)),
+          child: Text(confirmText, style: const TextStyle(color: Colors.black)),
         ),
       ],
     ),

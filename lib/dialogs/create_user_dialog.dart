@@ -23,7 +23,8 @@ Future<Map<String, String>?> showCreateUserDialog(
       builder: (ctx, setState) => AlertDialog(
         backgroundColor: AppTheme.colorPrimary,
         title: Text(title,
-            style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+            style: const TextStyle(
+                fontFamily: 'Cmunobx', color: Colors.black)),
         content: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,

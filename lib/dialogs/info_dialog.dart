@@ -9,7 +9,8 @@ void showInfoDialog(BuildContext context, String message, String title) {
     builder: (ctx) => AlertDialog(
       backgroundColor: AppTheme.colorPrimary,
       title: Text(title,
-          style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+          style: const TextStyle(
+              fontFamily: 'Cmunobx', color: Colors.black)),
       content: SizedBox(
         width: double.maxFinite,
         child: SingleChildScrollView(

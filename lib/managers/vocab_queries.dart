@@ -1,5 +1,4 @@
 import 'dart:math';
-import '../services/file_service.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
@@ -41,7 +40,7 @@ class VocabQueries {
   }
 
   static Future<List<Map<String, dynamic>>> getWordsByLevel(
-    String username, int targetLevel) async {
+      String username, int targetLevel) async {
     final userData = await UserManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
@@ -50,8 +49,8 @@ class VocabQueries {
         .toList();
   }
 
-  static Future<List<Map<String, dynamic>>> getNewWords(
-    String username, {int limit = 10, int offset = 0}) async {
+  static Future<List<Map<String, dynamic>>> getNewWords(String username,
+      {int limit = 10, int offset = 0}) async {
     final userData = await UserManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     final newWords = vocab.entries
@@ -67,7 +66,7 @@ class VocabQueries {
   }
 
   static Future<List<Map<String, dynamic>>> getMasteredWords(
-    String username) async {
+      String username) async {
     final userData = await UserManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
@@ -84,8 +83,7 @@ class VocabQueries {
     return words.where((w) => (w['status'] ?? 'new') == 'new').length;
   }
 
-  static Future<List<Map<String, dynamic>>> getAllWords(
-    String username) async {
+  static Future<List<Map<String, dynamic>>> getAllWords(String username) async {
     final userData = await UserManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
@@ -109,6 +107,8 @@ class VocabQueries {
     String fmt(DateTime d) =>
         '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
     final todayStr = fmt(today);
+    // Already counted today → do nothing (matches vocab_manager.py).
+    if (streak['last_date'] == todayStr) return;
     final yesterdayStr = fmt(today.subtract(const Duration(days: 1)));
 
     if (streak['last_date'] == yesterdayStr) {
@@ -129,14 +129,17 @@ class VocabQueries {
   // ── Word checking ─────────────────────────────────────────────
 
   static Future<Map<String, dynamic>> checkWordAnswer(
-    String username, String wordKey, String userInput) async {
+      String username, String wordKey, String userInput) async {
     final userData = await UserManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
 
     if (!vocab.containsKey(wordKey)) {
       return {
-        'correct': false, 'correct_word': '', 'new_level': 0,
-        'message': 'Wort nicht gefunden', 'status_changed': false,
+        'correct': false,
+        'correct_word': '',
+        'new_level': 0,
+        'message': 'Wort nicht gefunden',
+        'status_changed': false,
       };
     }
 
@@ -151,8 +154,11 @@ class VocabQueries {
     final isCorrect = userClean == correctClean;
 
     final result = <String, dynamic>{
-      'correct': isCorrect, 'correct_word': correctTranslation,
-      'new_level': currentLevel, 'message': '', 'status_changed': false,
+      'correct': isCorrect,
+      'correct_word': correctTranslation,
+      'new_level': currentLevel,
+      'message': '',
+      'status_changed': false,
     };
 
     if (isCorrect) {

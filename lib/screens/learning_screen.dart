@@ -41,7 +41,8 @@ class _LearningScreenState extends State<LearningScreen> {
       body: Column(children: [
         BoxTitle(
             title: at['tit_page_learning']?.toString() ?? 'Lernen',
-            onInfo: () => showInfoDialog(context,
+            onInfo: () => showInfoDialog(
+                context,
                 at['inf_learning']?.toString() ?? '',
                 bt['information']?.toString() ?? 'Information')),
         Expanded(
@@ -51,9 +52,11 @@ class _LearningScreenState extends State<LearningScreen> {
                   SizedBox(
                       height: 120,
                       child: Center(
-                          child: Text(at['cat_select'] ?? 'Wähle eine Kategorie',
+                          child: Text(
+                              at['cat_select'] ?? 'Wähle eine Kategorie',
                               textAlign: TextAlign.center,
-                              style: const TextStyle(fontSize: AppTheme.lblFontSize)))),
+                              style: const TextStyle(
+                                  fontSize: AppTheme.lblFontSize)))),
                   const SizedBox(height: AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,
@@ -64,7 +67,8 @@ class _LearningScreenState extends State<LearningScreen> {
                             Navigator.of(context).pushNamed('/word');
                           },
                           child: Text(at['cat_new_words'] ?? 'Neue Wörter',
-                              style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
                   const SizedBox(height: AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,
@@ -72,10 +76,12 @@ class _LearningScreenState extends State<LearningScreen> {
                       child: OutlinedButton(
                           onPressed: _dueCount == 0
                               ? null
-                              : () => Navigator.of(context).pushNamed('/dueword'),
+                              : () =>
+                                  Navigator.of(context).pushNamed('/dueword'),
                           child: Text(
                               '${at['cat_due_words'] ?? 'Fällige Wörter'} ($_dueCount)',
-                              style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
                   const SizedBox(height: AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,
@@ -85,11 +91,14 @@ class _LearningScreenState extends State<LearningScreen> {
                             appState.setWordMode('learned');
                             Navigator.of(context).pushNamed('/word');
                           },
-                          child: Text(at['cat_learned_words'] ?? 'Gelernte Wörter',
-                              style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
+                          child: Text(
+                              at['cat_learned_words'] ?? 'Gelernte Wörter',
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
                   const Spacer(),
                   SizedBox(
-                      height: 50, width: double.infinity,
+                      height: 50,
+                      width: double.infinity,
                       child: TextButton(
                           onPressed: () => Navigator.of(context).pop(),
                           child: Text(bt['back'] ?? 'zurück',
@@ -100,7 +109,8 @@ class _LearningScreenState extends State<LearningScreen> {
         BoxBottom(
             settingsText: bt['settings']?.toString() ?? 'Einstellungen',
             exitText: bt['exit']?.toString() ?? 'Beenden',
-            onSettings: () => Navigator.of(context).pushNamed('/settings')),
+            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onExit: AppTheme.closeApp),
       ]),
     );
   }

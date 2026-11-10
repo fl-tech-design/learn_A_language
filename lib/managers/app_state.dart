@@ -3,7 +3,6 @@ import '../models/app_models.dart';
 import '../services/file_service.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
-import 'vocab_queries.dart';
 
 /// Central app state – single ChangeNotifier for the entire application.
 /// Replaces MainApp attributes and ScrManager.
@@ -87,8 +86,10 @@ class AppState extends ChangeNotifier {
   Future<void> changeLanguage(String newLanguage) async {
     final norm = newLanguage.trim().toLowerCase();
     const mapping = {
-      'deutsch': 'de', 'englisch': 'en',
-      'german': 'de', 'english': 'en',
+      'deutsch': 'de',
+      'englisch': 'en',
+      'german': 'de',
+      'english': 'en',
     };
     final langCode = mapping[norm];
     if (langCode == null) return;
@@ -125,9 +126,37 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Creates a brand new user and logs them in (mirrors Pop_Create_User).
+  Future<String?> registerUser(String username, String mLang) async {
+    // 1. Create the user file (vocab is filled in the next step).
+    final result = await UserManager.createUserFile(username, mLang, {});
+    if (!result.contains('erfolgreich')) {
+      return result; // e.g. "Benutzer X existiert bereits."
+    }
+
+    // 2. Add to the registered user list.
+    await UserManager.addNewUserToList(username);
+
+    // 3. Mark as logged in.
+    await UserManager.changeLoginState(true);
+    await UserManager.setLoggedUname(username);
+
+    // 4. Initialize vocabulary from the target-language dictionary.
+    final targetLang = mLang == 'de' ? 'en' : 'de';
+    final langDict = await VocabManager.loadLanguageDictFromDir(targetLang);
+    await VocabManager.initVocabForUser(username, langDict);
+    await VocabManager.migrateVocabForUser(username);
+
+    // 5. Reload app + user data.
+    await loadAppData();
+    await _loadUserData(username);
+    notifyListeners();
+    return null;
+  }
+
   Future<void> _loadUserData(String username) async {
-    final raw = await FileService.loadJson(
-        'data_app/files_user/data_$username.json');
+    final raw =
+        await FileService.loadJson('data_app/files_user/data_$username.json');
     if (raw.isNotEmpty) {
       _userData = UserData.fromJson(raw);
     }

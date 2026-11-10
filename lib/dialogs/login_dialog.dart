@@ -15,7 +15,8 @@ Future<String?> showLoginDialog(
     builder: (ctx) => AlertDialog(
       backgroundColor: AppTheme.colorPrimary,
       title: Text(loginTitle,
-          style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+          style: const TextStyle(
+              fontFamily: 'Cmunobx', color: Colors.black)),
       content: SizedBox(
         width: double.maxFinite,
         child: Column(
@@ -24,7 +25,8 @@ Future<String?> showLoginDialog(
             if (users.isEmpty)
               const Padding(
                 padding: EdgeInsets.all(16),
-                child: Text('Keine Benutzer registriert', style: TextStyle(fontSize: 16)),
+                child: Text('Keine Benutzer registriert',
+                    style: TextStyle(fontSize: 16)),
               )
             else
               Flexible(

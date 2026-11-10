@@ -1,5 +1,3 @@
-import 'dart:math';
-import '../models/app_models.dart';
 import '../services/file_service.dart';
 import 'user_manager.dart';
 
@@ -9,7 +7,15 @@ class VocabManager {
 
   /// Spaced repetition: days until next review per level.
   static const Map<int, int?> repeatIntervalDays = {
-    0: 1, 1: 2, 2: 3, 3: 5, 4: 7, 5: 10, 6: 14, 7: 21, 8: null,
+    0: 1,
+    1: 2,
+    2: 3,
+    3: 5,
+    4: 7,
+    5: 10,
+    6: 14,
+    7: 21,
+    8: null,
   };
 
   /// Loads merged language dictionary from app documents.
@@ -146,9 +152,18 @@ class VocabManager {
         we['status'] = (we['level'] ?? 0) == 0 ? 'new' : 'seen';
         changed = true;
       }
-      if (!we.containsKey('review_due')) { we['review_due'] = null; changed = true; }
-      if (!we.containsKey('last_reviewed')) { we['last_reviewed'] = null; changed = true; }
-      if (!we.containsKey('level')) { we['level'] = 0; changed = true; }
+      if (!we.containsKey('review_due')) {
+        we['review_due'] = null;
+        changed = true;
+      }
+      if (!we.containsKey('last_reviewed')) {
+        we['last_reviewed'] = null;
+        changed = true;
+      }
+      if (!we.containsKey('level')) {
+        we['level'] = 0;
+        changed = true;
+      }
       if (!we.containsKey('examples')) {
         final old = we['example'] ?? '';
         we['examples'] = (old is String && old.isNotEmpty) ? [old] : [''];
@@ -156,11 +171,17 @@ class VocabManager {
       }
       if (targetWordsMap.containsKey(entry.key)) {
         final c = targetWordsMap[entry.key]!;
-        if (we['word'] != c) { we['word'] = c; changed = true; }
+        if (we['word'] != c) {
+          we['word'] = c;
+          changed = true;
+        }
       }
       if (nativeWords.containsKey(entry.key)) {
         final c = nativeWords[entry.key]!;
-        if (we['translation'] != c) { we['translation'] = c; changed = true; }
+        if (we['translation'] != c) {
+          we['translation'] = c;
+          changed = true;
+        }
       }
       if (!we.containsKey('examples_native')) {
         we['examples_native'] = nativeWordsMap[entry.key]?['examples'] ?? [''];

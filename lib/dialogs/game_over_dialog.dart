@@ -19,7 +19,8 @@ Future<String?> showGameOverDialog(
       backgroundColor: AppTheme.colorPrimary,
       title: Text(gameOverTitle,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
+          style: const TextStyle(
+              fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -33,31 +34,44 @@ Future<String?> showGameOverDialog(
           Text('Rekord: $highscore $ptsLabel',
               style: const TextStyle(fontSize: 14, color: Colors.black54)),
           if (newRecord)
-            const Text('Neuer Rekord! 🏆',
-                style: TextStyle(fontSize: 16, color: AppTheme.yellow1)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/game_assets/trophy.png',
+                    width: 24, height: 24),
+                const SizedBox(width: 6),
+                const Text('Neuer Rekord!',
+                    style:
+                        TextStyle(fontSize: 16, color: AppTheme.yellow1)),
+              ],
+            ),
         ],
       ),
       actions: [
-        Expanded(
-          child: OutlinedButton(
-            onPressed: () => Navigator.of(ctx).pop('restart'),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Colors.black),
-              foregroundColor: Colors.black,
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () => Navigator.of(ctx).pop('restart'),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.black),
+                  foregroundColor: Colors.black,
+                ),
+                child: Text(restartText),
+              ),
             ),
-            child: Text(restartText),
-          ),
-        ),
-        const SizedBox(width: 20),
-        Expanded(
-          child: OutlinedButton(
-            onPressed: () => Navigator.of(ctx).pop('back'),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Colors.black),
-              foregroundColor: Colors.black,
+            const SizedBox(width: 20),
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () => Navigator.of(ctx).pop('back'),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.black),
+                  foregroundColor: Colors.black,
+                ),
+                child: Text(backText),
+              ),
             ),
-            child: Text(backText),
-          ),
+          ],
         ),
       ],
     ),

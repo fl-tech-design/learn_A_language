@@ -74,10 +74,11 @@ class _StartScreenState extends State<StartScreen> {
       bt['chancel']?.toString() ?? 'abbrechen',
     );
     if (result == null) return;
-    await appState.login(result['username']!);
+    await appState.registerUser(result['username']!, result['m_lang']!);
     setState(() {});
   }
-@override
+
+  @override
   Widget build(BuildContext context) {
     final appState = context.watch<AppState>();
     final bt = appState.baseTxt;
@@ -88,32 +89,38 @@ class _StartScreenState extends State<StartScreen> {
         children: [
           BoxTitle(
             title: bt['tit_page_start']?.toString() ?? 'Startseite',
-            onInfo: () => showInfoDialog(context,
+            onInfo: () => showInfoDialog(
+                context,
                 bt['inf_start']?.toString() ?? '',
                 bt['information']?.toString() ?? 'Information'),
           ),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(AppTheme.contentPadding),
-              child: Column(children: [
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 _UserInfoBox(),
                 const SizedBox(height: AppTheme.contentSpacing),
                 SizedBox(
-                    height: 56, width: double.infinity,
+                    height: 56,
+                    width: double.infinity,
                     child: OutlinedButton(
                         onPressed: () {
                           appState.setWordMode('new');
                           Navigator.of(context).pushNamed('/learning');
                         },
                         child: Text(at['btn_learn'] ?? 'Lernen',
-                            style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
+                            style: const TextStyle(
+                                fontSize: AppTheme.btnFontSize)))),
                 const SizedBox(height: AppTheme.contentSpacing),
                 SizedBox(
-                    height: 56, width: double.infinity,
+                    height: 56,
+                    width: double.infinity,
                     child: OutlinedButton(
-                        onPressed: () => Navigator.of(context).pushNamed('/gameselect'),
+                        onPressed: () =>
+                            Navigator.of(context).pushNamed('/gameselect'),
                         child: Text(at['btn_game'] ?? 'Spiele',
-                            style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
+                            style: const TextStyle(
+                                fontSize: AppTheme.btnFontSize)))),
                 const Spacer(),
               ]),
             ),
@@ -122,6 +129,7 @@ class _StartScreenState extends State<StartScreen> {
             settingsText: bt['settings']?.toString() ?? 'Einstellungen',
             exitText: bt['exit']?.toString() ?? 'Beenden',
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onExit: AppTheme.closeApp,
           ),
         ],
       ),
@@ -153,27 +161,44 @@ class _UserInfoBox extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(at['welcome_message'] ?? 'Willkommen',
-                        style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white)),
+                        style: const TextStyle(
+                            fontSize: AppTheme.smallFontSize,
+                            color: Colors.white)),
                     Text(username,
-                        style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
-                    Text('${at['cat_new_words'] ?? 'Neue Wörter'}: ${stats['new'] ?? 0}',
-                        style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
-                    Text('${at['cat_due_words'] ?? 'Fällige Wörter'}: ${stats['due'] ?? 0}',
-                        style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+                        style: const TextStyle(
+                            fontSize: AppTheme.smallFontSize,
+                            color: Color(0xFFFFB31A))),
+                    Text(
+                        '${at['cat_new_words'] ?? 'Neue Wörter'}: ${stats['new'] ?? 0}',
+                        style: const TextStyle(
+                            fontSize: AppTheme.smallFontSize,
+                            color: Colors.white70)),
+                    Text(
+                        '${at['cat_due_words'] ?? 'Fällige Wörter'}: ${stats['due'] ?? 0}',
+                        style: const TextStyle(
+                            fontSize: AppTheme.smallFontSize,
+                            color: Colors.white70)),
                     if ((s['current'] ?? 0) > 0)
                       Text('Tag ${s['current']}  |  Rekord: ${s['longest']}',
-                          style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
+                          style: const TextStyle(
+                              fontSize: AppTheme.smallFontSize,
+                              color: Color(0xFFFFB31A))),
                     const SizedBox(height: 4),
                     SizedBox(
                         height: 20,
                         child: TextButton(
                             onPressed: () {
-                              final st = ctx.findAncestorStateOfType<_StartScreenState>();
+                              final st = ctx
+                                  .findAncestorStateOfType<_StartScreenState>();
                               st?._showLogin();
                             },
-                            style: TextButton.styleFrom(padding: EdgeInsets.zero, foregroundColor: AppTheme.grey4),
-                            child: Text(bt['btn_change_user'] ?? 'User wechseln',
-                                style: const TextStyle(fontSize: AppTheme.smallFontSize)))),
+                            style: TextButton.styleFrom(
+                                padding: EdgeInsets.zero,
+                                foregroundColor: AppTheme.grey4),
+                            child: Text(
+                                bt['btn_change_user'] ?? 'User wechseln',
+                                style: const TextStyle(
+                                    fontSize: AppTheme.smallFontSize)))),
                   ]));
         });
   }

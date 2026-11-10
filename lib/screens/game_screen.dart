@@ -31,9 +31,13 @@ class _GameScreenState extends State<GameScreen> {
   bool _answered = false;
   bool _gameActive = false;
   List<String> _options = [];
+  bool _allDone = false;
 
   @override
-  void dispose() { _stopTimer(); super.dispose(); }
+  void dispose() {
+    _stopTimer();
+    super.dispose();
+  }
 
   @override
   void didChangeDependencies() {
@@ -51,13 +55,27 @@ class _GameScreenState extends State<GameScreen> {
       _highscore = userData['game_highscore'] as int? ?? 0;
     }
 
-    final allWords = await VocabQueries.getAllWords(uname);
+    final allWords = await VocabQueries.getMasteredWords(uname);
+    if (allWords.isEmpty) {
+      setState(() {
+        _gameActive = false;
+        _allDone = true;
+      });
+      return;
+    }
     allWords.shuffle(Random());
 
     setState(() {
-      _lives = 3; _score = 0; _timer = 15; _baseTimer = 15;
-      _correctStreak = 0; _timeBonus = 0;
-      _currentIndex = 0; _answered = false; _gameActive = true;
+      _lives = 3;
+      _score = 0;
+      _timer = 15;
+      _baseTimer = 15;
+      _correctStreak = 0;
+      _timeBonus = 0;
+      _currentIndex = 0;
+      _answered = false;
+      _gameActive = true;
+      _allDone = false;
       _questions = allWords;
       _showQuestion();
     });
@@ -66,7 +84,9 @@ class _GameScreenState extends State<GameScreen> {
   void _showQuestion() {
     if (!_gameActive) return;
     if (_questions.isEmpty || _currentIndex >= _questions.length) {
-      _gameOver(); return;
+      _allDone = true;
+      _gameOver();
+      return;
     }
 
     _answered = false;
@@ -75,7 +95,8 @@ class _GameScreenState extends State<GameScreen> {
     final correct = word['word']?.toString() ?? word['key']?.toString() ?? '';
 
     final pool = _questions
-        .where((w) => (w['word']?.toString() ?? w['key']?.toString()) != correct)
+        .where(
+            (w) => (w['word']?.toString() ?? w['key']?.toString()) != correct)
         .toList();
     pool.shuffle(Random());
     final distractors = pool.length >= 3
@@ -96,7 +117,10 @@ class _GameScreenState extends State<GameScreen> {
     _timerEvent = Timer.periodic(const Duration(seconds: 1), (_) => _tick());
   }
 
-  void _stopTimer() { _timerEvent?.cancel(); _timerEvent = null; }
+  void _stopTimer() {
+    _timerEvent?.cancel();
+    _timerEvent = null;
+  }
 
   void _tick() {
     if (!_gameActive) return;
@@ -107,7 +131,11 @@ class _GameScreenState extends State<GameScreen> {
   void _timeUp() {
     if (!_gameActive) return;
     setState(() => _lives--);
-    if (_lives <= 0) { _gameOver(); } else { _advanceToNext(); }
+    if (_lives <= 0) {
+      _gameOver();
+    } else {
+      _advanceToNext();
+    }
   }
 
   void onAnswer(int btnIndex) {
@@ -115,10 +143,16 @@ class _GameScreenState extends State<GameScreen> {
     _answered = true;
     _stopTimer();
     final selected = _options[btnIndex];
-    final correct = _currentQuestion?['word']?.toString() ?? _currentQuestion?['key']?.toString() ?? '';
+    final correct = _currentQuestion?['word']?.toString() ??
+        _currentQuestion?['key']?.toString() ??
+        '';
 
     if (selected == correct) {
-      setState(() { _score++; _timeBonus += 2; _correctStreak++; });
+      setState(() {
+        _score++;
+        _timeBonus += 2;
+        _correctStreak++;
+      });
       if (_correctStreak % 5 == 0 && _baseTimer > 5) _baseTimer--;
       Future.delayed(const Duration(milliseconds: 400), () => _advanceToNext());
     } else {
@@ -126,7 +160,8 @@ class _GameScreenState extends State<GameScreen> {
       if (_lives <= 0) {
         Future.delayed(const Duration(milliseconds: 400), () => _gameOver());
       } else {
-        Future.delayed(const Duration(milliseconds: 400), () => _advanceToNext());
+        Future.delayed(
+            const Duration(milliseconds: 400), () => _advanceToNext());
       }
     }
   }
@@ -158,15 +193,22 @@ class _GameScreenState extends State<GameScreen> {
     if (!mounted) return;
     final at = appState.appTxt;
     final result = await showGameOverDialog(context,
-        score: _score, highscore: _highscore, newRecord: newRecord,
+        score: _score,
+        highscore: _highscore,
+        newRecord: newRecord,
         gameOverTitle: at['game_over'] ?? 'Spiel vorbei!',
         ptsLabel: at['game_score'] ?? 'Pkt',
         restartText: at['game_restart'] ?? 'Neustart',
         backText: at['game_back'] ?? 'Zurück');
     if (!mounted) return;
-    if (result == 'restart') { _startGame(); } else { Navigator.of(context).pop(); }
+    if (result == 'restart') {
+      _startGame();
+    } else {
+      Navigator.of(context).pop();
+    }
   }
-@override
+
+  @override
   Widget build(BuildContext context) {
     final appState = context.watch<AppState>();
     final bt = appState.baseTxt;
@@ -179,66 +221,95 @@ class _GameScreenState extends State<GameScreen> {
         // Status bar
         Container(
             height: 48,
-            decoration: BoxDecoration(border: Border.all(color: AppTheme.grey2)),
+            decoration:
+                BoxDecoration(border: Border.all(color: AppTheme.grey2)),
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(children: [
               Row(children: [
-                Image.asset('assets/game_assets/clock.png', width: 24, height: 24),
+                Image.asset('assets/game_assets/clock.png',
+                    width: 24, height: 24),
                 const SizedBox(width: 4),
                 Text('${_timer}s',
-                    style: const TextStyle(fontSize: 20, color: AppTheme.cyan2)),
+                    style:
+                        const TextStyle(fontSize: 20, color: AppTheme.cyan2)),
               ]),
               const SizedBox(width: 12),
-              Row(children: List.generate(3, (i) => Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2),
-                  child: Image.asset(
-                      i < _lives ? 'assets/game_assets/heart.png' : 'assets/game_assets/heart_empty.png',
-                      width: 20, height: 20)))),
+              Row(
+                  children: List.generate(
+                      3,
+                      (i) => Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 2),
+                          child: Image.asset(
+                              i < _lives
+                                  ? 'assets/game_assets/heart.png'
+                                  : 'assets/game_assets/heart_empty.png',
+                              width: 20,
+                              height: 20)))),
               const Spacer(),
               Text('$_score ${at['game_score'] ?? 'Pkt'}',
-                  style: const TextStyle(fontSize: 20, color: AppTheme.yellow1)),
+                  style:
+                      const TextStyle(fontSize: 20, color: AppTheme.yellow1)),
               const SizedBox(width: 12),
               Text('R: $_highscore ${at['game_score'] ?? 'Pkt'}',
                   style: const TextStyle(fontSize: 12, color: Colors.white60)),
             ])),
-        Expanded(
-            child: Padding(
-                padding: const EdgeInsets.all(AppTheme.contentPadding),
-                child: Column(children: [
-                  // Question
-                  SizedBox(height: 90,
-                      child: Center(
-                          child: Text(question, textAlign: TextAlign.center,
-                              style: const TextStyle(fontSize: 30)))),
-                  // Answer grid 2x2
-                  SizedBox(
-                      height: 130,
-                      child: Row(children: [
-                        Expanded(
-                            child: Column(children: [
-                              Expanded(child: _answerButton(0)),
-                              const SizedBox(height: 8),
-                              Expanded(child: _answerButton(2)),
-                            ])),
-                        const SizedBox(width: 8),
-                        Expanded(
-                            child: Column(children: [
-                              Expanded(child: _answerButton(1)),
-                              const SizedBox(height: 8),
-                              Expanded(child: _answerButton(3)),
-                            ])),
-                      ])),
-                  const Spacer(),
-                  SizedBox(height: 56, width: double.infinity,
-                      child: TextButton(
-                          onPressed: () { _stopTimer(); Navigator.of(context).pop(); },
-                          child: Text(bt['back'] ?? 'zurück',
-                              style: const TextStyle(fontSize: AppTheme.btnFontSize, color: AppTheme.colorPrimary)))),
-                ]))),
+        if (_allDone)
+          const Expanded(
+              child: Center(
+                  child: Text(
+                      'Keine gelernten Wörter zum Spielen.\n'
+                      'Lerne zuerst neue Wörter!',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 20)))),
+        if (_gameActive || _questions.isNotEmpty)
+          Expanded(
+              child: Padding(
+                  padding: const EdgeInsets.all(AppTheme.contentPadding),
+                  child: Column(children: [
+                    // Question
+                    SizedBox(
+                        height: 90,
+                        child: Center(
+                            child: Text(question,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(fontSize: 30)))),
+                    // Answer grid 2x2
+                    SizedBox(
+                        height: 130,
+                        child: Row(children: [
+                          Expanded(
+                              child: Column(children: [
+                            Expanded(child: _answerButton(0)),
+                            const SizedBox(height: 8),
+                            Expanded(child: _answerButton(2)),
+                          ])),
+                          const SizedBox(width: 8),
+                          Expanded(
+                              child: Column(children: [
+                            Expanded(child: _answerButton(1)),
+                            const SizedBox(height: 8),
+                            Expanded(child: _answerButton(3)),
+                          ])),
+                        ])),
+                    const Spacer(),
+                    SizedBox(
+                        height: 56,
+                        width: double.infinity,
+                        child: TextButton(
+                            onPressed: () {
+                              _stopTimer();
+                              Navigator.of(context).pop();
+                            },
+                            child: Text(bt['back'] ?? 'zurück',
+                                style: const TextStyle(
+                                    fontSize: AppTheme.btnFontSize,
+                                    color: AppTheme.colorPrimary)))),
+                  ]))),
         BoxBottom(
             settingsText: bt['settings']?.toString() ?? 'Einstellungen',
             exitText: bt['exit']?.toString() ?? 'Beenden',
-            onSettings: () => Navigator.of(context).pushNamed('/settings')),
+            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onExit: AppTheme.closeApp),
       ]),
     );
   }
@@ -250,8 +321,7 @@ class _GameScreenState extends State<GameScreen> {
         style: OutlinedButton.styleFrom(
             side: const BorderSide(color: AppTheme.colorPrimary),
             padding: const EdgeInsets.all(4)),
-        child: Text(_options[index], textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 12)));
+        child: Text(_options[index],
+            textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)));
   }
-}
 }

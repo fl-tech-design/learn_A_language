@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 
 /// Central color palette and theme constants – 1:1 from constants.py.
@@ -66,6 +67,9 @@ class AppTheme {
   // App version
   static const String versionNr = '0.1.0';
   static const String appTitle = 'learn A language';
+
+  /// Platform-safe app exit (kills process on desktop, pops on mobile).
+  static void closeApp() => exit(0);
 
   // ── ThemeData ─────────────────────────────────────────────────
   static ThemeData get darkTheme {

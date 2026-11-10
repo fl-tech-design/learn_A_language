@@ -22,49 +22,99 @@ class FileService {
     final flagFile = File('$dir/.initialized');
     if (await flagFile.exists()) return;
 
-    await _copyAssetDir('assets/data_base', '$dir/data_base');
-    await _copyAssetDir('assets/data_app', '$dir/data_app');
-    await _copyAssetDir('assets/language_dict/de', '$dir/language_dict/de');
-    await _copyAssetDir('assets/language_dict/en', '$dir/language_dict/en');
-    await _copyAssetDir('assets/game_assets', '$dir/assets');
+    // Explicit list of every asset that must be writable at runtime.
+    // Much more reliable than parsing AssetManifest.json.
+    final files = <String>[
+      // ── data_base ──
+      'data_base/base_data.json',
+      'data_base/base_txt.json',
+      // ── data_app ──
+      'data_app/app_data.json',
+      'data_app/app_txt.json',
+      // ── bundled user files ──
+      'data_app/files_user/data_Hansi.json',
+      'data_app/files_user/data_Heinz.json',
+      // ── language_dict / de (30 verbs) ──
+      'language_dict/de/de_to_be.json',
+      'language_dict/de/de_to_be_allowed_to.json',
+      'language_dict/de/de_to_begin.json',
+      'language_dict/de/de_to_buy.json',
+      'language_dict/de/de_to_can.json',
+      'language_dict/de/de_to_close.json',
+      'language_dict/de/de_to_come.json',
+      'language_dict/de/de_to_drink.json',
+      'language_dict/de/de_to_eat.json',
+      'language_dict/de/de_to_end.json',
+      'language_dict/de/de_to_find.json',
+      'language_dict/de/de_to_go.json',
+      'language_dict/de/de_to_have.json',
+      'language_dict/de/de_to_help.json',
+      'language_dict/de/de_to_learn.json',
+      'language_dict/de/de_to_like.json',
+      'language_dict/de/de_to_live.json',
+      'language_dict/de/de_to_make.json',
+      'language_dict/de/de_to_must.json',
+      'language_dict/de/de_to_need.json',
+      'language_dict/de/de_to_open.json',
+      'language_dict/de/de_to_read.json',
+      'language_dict/de/de_to_see.json',
+      'language_dict/de/de_to_sell.json',
+      'language_dict/de/de_to_should.json',
+      'language_dict/de/de_to_speak.json',
+      'language_dict/de/de_to_understand.json',
+      'language_dict/de/de_to_want.json',
+      'language_dict/de/de_to_write.json',
+      'language_dict/de/de_to_work.json',
+      // ── language_dict / en (30 verbs) ──
+      'language_dict/en/en_to_be.json',
+      'language_dict/en/en_to_be_allowed_to.json',
+      'language_dict/en/en_to_begin.json',
+      'language_dict/en/en_to_buy.json',
+      'language_dict/en/en_to_can.json',
+      'language_dict/en/en_to_close.json',
+      'language_dict/en/en_to_come.json',
+      'language_dict/en/en_to_drink.json',
+      'language_dict/en/en_to_eat.json',
+      'language_dict/en/en_to_end.json',
+      'language_dict/en/en_to_find.json',
+      'language_dict/en/en_to_go.json',
+      'language_dict/en/en_to_have.json',
+      'language_dict/en/en_to_help.json',
+      'language_dict/en/en_to_learn.json',
+      'language_dict/en/en_to_like.json',
+      'language_dict/en/en_to_live.json',
+      'language_dict/en/en_to_make.json',
+      'language_dict/en/en_to_must.json',
+      'language_dict/en/en_to_need.json',
+      'language_dict/en/en_to_open.json',
+      'language_dict/en/en_to_read.json',
+      'language_dict/en/en_to_see.json',
+      'language_dict/en/en_to_sell.json',
+      'language_dict/en/en_to_should.json',
+      'language_dict/en/en_to_speak.json',
+      'language_dict/en/en_to_understand.json',
+      'language_dict/en/en_to_want.json',
+      'language_dict/en/en_to_write.json',
+      'language_dict/en/en_to_work.json',
+    ];
 
-    // Ensure files_user directory exists
-    final userDir = Directory('$dir/data_app/files_user');
-    if (!await userDir.exists()) {
-      await userDir.create(recursive: true);
-      // Copy existing user files from bundle
-      await _copyAssetDir(
-        'assets/data_app/files_user',
-        '$dir/data_app/files_user',
-      );
+    for (final rel in files) {
+      final assetPath = 'assets/$rel';
+      final targetFile = File('$dir/$rel');
+      if (await targetFile.exists()) continue;
+      try {
+        final bytes = await rootBundle.load(assetPath);
+        final parent = targetFile.parent;
+        if (!await parent.exists()) {
+          await parent.create(recursive: true);
+        }
+        await targetFile.writeAsBytes(bytes.buffer.asUint8List());
+      } catch (_) {
+        // File not bundled (e.g. image-only asset dirs) → fine, skip.
+      }
     }
 
     await flagFile.create();
-  }
-
-  static Future<void> _copyAssetDir(String assetPath, String targetPath) async {
-    final dir = Directory(targetPath);
-    if (!await dir.exists()) {
-      await dir.create(recursive: true);
-    }
-    try {
-      final manifest =
-          await rootBundle.loadString('AssetManifest.json');
-      final manifestJson = json.decode(manifest) as Map<String, dynamic>;
-      for (final key in manifestJson.keys) {
-        if (key.startsWith(assetPath) && key != assetPath) {
-          final relative = key.substring(assetPath.length + 1);
-          if (relative.isEmpty) continue;
-          final targetFile = File('$targetPath/$relative');
-          if (!await targetFile.exists()) {
-            final bytes = await rootBundle.load(key);
-            await targetFile.writeAsBytes(bytes.buffer.asUint8List());
-          }
-        }
-      }
-    } catch (_) {
-      // AssetManifest not available in debug; skip
-    }
   }
 
   /// Loads a JSON file from the app documents directory.

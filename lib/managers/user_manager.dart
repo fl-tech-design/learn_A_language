@@ -1,4 +1,5 @@
-import '../models/app_models.dart';
+import 'dart:io';
+
 import '../services/file_service.dart';
 
 /// Pure static user management logic – 1:1 from user_manager.py.
@@ -95,11 +96,13 @@ class UserManager {
 
   /// Changes login state in app_data.json.
   static Future<void> changeLoginState(bool newState) async {
-    await FileService.updateJsonKey('data_app/app_data.json', 'user_logged_in', newState);
+    await FileService.updateJsonKey(
+        'data_app/app_data.json', 'user_logged_in', newState);
   }
 
   /// Sets the currently logged-in username.
   static Future<void> setLoggedUname(String loggedUname) async {
-    await FileService.updateJsonKey('data_app/app_data.json', 'logged_u_name', loggedUname);
+    await FileService.updateJsonKey(
+        'data_app/app_data.json', 'logged_u_name', loggedUname);
   }
 }
