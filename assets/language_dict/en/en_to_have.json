@@ -1,0 +1,154 @@
+{
+    "infinitive": "to have",
+    "level": 0,
+    "past": {
+        "i_had": {
+            "translation": "I had",
+            "level": 0,
+            "example": {
+                "i_had_a_dog": "I had a dog."
+            },
+            "audio": "en_audio/i_had.mp3"
+        },
+        "you_had": {
+            "translation": "you had",
+            "level": 0,
+            "example": {
+                "you_had_a_car": "You had a car."
+            },
+            "audio": "en_audio/you_had.mp3"
+        },
+        "he_she_it_had": {
+            "translation": "he/she/it had",
+            "level": 0,
+            "example": {
+                "he_had_a_book": "He had a book."
+            },
+            "audio": "en_audio/he_she_it_had.mp3"
+        },
+        "we_had": {
+            "translation": "we had",
+            "level": 0,
+            "example": {
+                "we_had_time": "We had time."
+            },
+            "audio": "en_audio/we_had.mp3"
+        },
+        "you_plural_had": {
+            "translation": "you had (pl)",
+            "level": 0,
+            "example": {
+                "you_had_fun": "You had fun."
+            },
+            "audio": "en_audio/you_plural_had.mp3"
+        },
+        "they_had": {
+            "translation": "they had",
+            "level": 0,
+            "example": {
+                "they_had_a_house": "They had a house."
+            },
+            "audio": "en_audio/they_had.mp3"
+        }
+    },
+    "present": {
+        "i_have": {
+            "translation": "I have",
+            "level": 0,
+            "example": {
+                "i_have_a_cat": "I have a cat."
+            },
+            "audio": "en_audio/i_have.mp3"
+        },
+        "you_have": {
+            "translation": "you have",
+            "level": 0,
+            "example": {
+                "you_have_a_pen": "You have a pen."
+            },
+            "audio": "en_audio/you_have.mp3"
+        },
+        "he_she_it_has": {
+            "translation": "he/she/it has",
+            "level": 0,
+            "example": {
+                "he_has_a_bike": "He has a bike."
+            },
+            "audio": "en_audio/he_she_it_has.mp3"
+        },
+        "we_have": {
+            "translation": "we have",
+            "level": 0,
+            "example": {
+                "we_have_time": "We have time."
+            },
+            "audio": "en_audio/we_have.mp3"
+        },
+        "you_plural_have": {
+            "translation": "you have (pl)",
+            "level": 0,
+            "example": {
+                "you_have_fun": "You have fun."
+            },
+            "audio": "en_audio/you_plural_have.mp3"
+        },
+        "they_have": {
+            "translation": "they have",
+            "level": 0,
+            "example": {
+                "they_have_a_house": "They have a house."
+            },
+            "audio": "en_audio/they_have.mp3"
+        }
+    },
+    "future": {
+        "i_will_have": {
+            "translation": "I will have",
+            "level": 0,
+            "example": {
+                "i_will_have_a_car": "I will have a car."
+            },
+            "audio": "en_audio/i_will_have.mp3"
+        },
+        "you_will_have": {
+            "translation": "you will have",
+            "level": 0,
+            "example": {
+                "you_will_have_time": "You will have time."
+            },
+            "audio": "en_audio/you_will_have.mp3"
+        },
+        "he_she_it_will_have": {
+            "translation": "he/she/it will have",
+            "level": 0,
+            "example": {
+                "he_will_have_a_bike": "He will have a bike."
+            },
+            "audio": "en_audio/he_she_it_will_have.mp3"
+        },
+        "we_will_have": {
+            "translation": "we will have",
+            "level": 0,
+            "example": {
+                "we_will_have_fun": "We will have fun."
+            },
+            "audio": "en_audio/we_will_have.mp3"
+        },
+        "you_plural_will_have": {
+            "translation": "you will have (pl)",
+            "level": 0,
+            "example": {
+                "you_will_have_a_house": "You will have a house."
+            },
+            "audio": "en_audio/you_plural_will_have.mp3"
+        },
+        "they_will_have": {
+            "translation": "they will have",
+            "level": 0,
+            "example": {
+                "they_will_have_time": "They will have time."
+            },
+            "audio": "en_audio/they_will_have.mp3"
+        }
+    }
+}

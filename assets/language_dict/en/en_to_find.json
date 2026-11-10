@@ -1,0 +1,154 @@
+{
+    "infinitive": "to find",
+    "level": 0,
+    "past": {
+        "i_found": {
+            "translation": "I found",
+            "level": 0,
+            "example": {
+                "i_found_my_key": "I found my key."
+            },
+            "audio": "en_audio/i_found.mp3"
+        },
+        "you_found": {
+            "translation": "you found",
+            "level": 0,
+            "example": {
+                "you_found_your_phone": "You found your phone."
+            },
+            "audio": "en_audio/you_found.mp3"
+        },
+        "he_she_it_found": {
+            "translation": "he/she/it found",
+            "level": 0,
+            "example": {
+                "he_found_his_wallet": "He found his wallet."
+            },
+            "audio": "en_audio/he_she_it_found.mp3"
+        },
+        "we_found": {
+            "translation": "we found",
+            "level": 0,
+            "example": {
+                "we_found_the_solution": "We found the solution."
+            },
+            "audio": "en_audio/we_found.mp3"
+        },
+        "you_plural_found": {
+            "translation": "you found (pl)",
+            "level": 0,
+            "example": {
+                "you_found_the_keys": "You found the keys."
+            },
+            "audio": "en_audio/you_plural_found.mp3"
+        },
+        "they_found": {
+            "translation": "they found",
+            "level": 0,
+            "example": {
+                "they_found_the_cat": "They found the cat."
+            },
+            "audio": "en_audio/they_found.mp3"
+        }
+    },
+    "present": {
+        "i_find": {
+            "translation": "I find",
+            "level": 0,
+            "example": {
+                "i_find_my_key": "I find my key."
+            },
+            "audio": "en_audio/i_find.mp3"
+        },
+        "you_find": {
+            "translation": "you find",
+            "level": 0,
+            "example": {
+                "you_find_your_phone": "You find your phone."
+            },
+            "audio": "en_audio/you_find.mp3"
+        },
+        "he_she_it_finds": {
+            "translation": "he/she/it finds",
+            "level": 0,
+            "example": {
+                "he_finds_his_wallet": "He finds his wallet."
+            },
+            "audio": "en_audio/he_she_it_finds.mp3"
+        },
+        "we_find": {
+            "translation": "we find",
+            "level": 0,
+            "example": {
+                "we_find_the_solution": "We find the solution."
+            },
+            "audio": "en_audio/we_find.mp3"
+        },
+        "you_plural_find": {
+            "translation": "you find (pl)",
+            "level": 0,
+            "example": {
+                "you_find_the_keys": "You find the keys."
+            },
+            "audio": "en_audio/you_plural_find.mp3"
+        },
+        "they_find": {
+            "translation": "they find",
+            "level": 0,
+            "example": {
+                "they_find_the_cat": "They find the cat."
+            },
+            "audio": "en_audio/they_find.mp3"
+        }
+    },
+    "future": {
+        "i_will_find": {
+            "translation": "I will find",
+            "level": 0,
+            "example": {
+                "i_will_find_my_key": "I will find my key."
+            },
+            "audio": "en_audio/i_will_find.mp3"
+        },
+        "you_will_find": {
+            "translation": "you will find",
+            "level": 0,
+            "example": {
+                "you_will_find_your_phone": "You will find your phone."
+            },
+            "audio": "en_audio/you_will_find.mp3"
+        },
+        "he_she_it_will_find": {
+            "translation": "he/she/it will find",
+            "level": 0,
+            "example": {
+                "he_will_find_his_wallet": "He will find his wallet."
+            },
+            "audio": "en_audio/he_she_it_will_find.mp3"
+        },
+        "we_will_find": {
+            "translation": "we will find",
+            "level": 0,
+            "example": {
+                "we_will_find_the_solution": "We will find the solution."
+            },
+            "audio": "en_audio/we_will_find.mp3"
+        },
+        "you_plural_will_find": {
+            "translation": "you will find (pl)",
+            "level": 0,
+            "example": {
+                "you_will_find_the_keys": "You will find the keys."
+            },
+            "audio": "en_audio/you_plural_will_find.mp3"
+        },
+        "they_will_find": {
+            "translation": "they will find",
+            "level": 0,
+            "example": {
+                "they_will_find_the_cat": "They will find the cat."
+            },
+            "audio": "en_audio/they_will_find.mp3"
+        }
+    }
+}

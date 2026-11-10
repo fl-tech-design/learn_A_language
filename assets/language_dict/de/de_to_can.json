@@ -1,0 +1,154 @@
+{
+    "infinitive": "können",
+    "level": 0,
+    "past": {
+        "i_could": {
+            "translation": "ich konnte",
+            "level": 0,
+            "example": {
+                "i_could_swim": "Ich konnte schwimmen."
+            },
+            "audio": "de_audio/i_could.mp3"
+        },
+        "you_could": {
+            "translation": "du konntest",
+            "level": 0,
+            "example": {
+                "you_could_dance": "Du konntest tanzen."
+            },
+            "audio": "de_audio/you_could.mp3"
+        },
+        "he_she_it_could": {
+            "translation": "er/sie/es konnte",
+            "level": 0,
+            "example": {
+                "he_could_sing": "Er konnte singen."
+            },
+            "audio": "de_audio/he_she_it_could.mp3"
+        },
+        "we_could": {
+            "translation": "wir konnten",
+            "level": 0,
+            "example": {
+                "we_could_play": "Wir konnten spielen."
+            },
+            "audio": "de_audio/we_could.mp3"
+        },
+        "you_plural_could": {
+            "translation": "ihr konntet",
+            "level": 0,
+            "example": {
+                "you_could_run": "Ihr konntet rennen."
+            },
+            "audio": "de_audio/you_plural_could.mp3"
+        },
+        "they_could": {
+            "translation": "sie konnten",
+            "level": 0,
+            "example": {
+                "they_could_laugh": "Sie konnten lachen."
+            },
+            "audio": "de_audio/they_could.mp3"
+        }
+    },
+    "present": {
+        "i_can": {
+            "translation": "ich kann",
+            "level": 0,
+            "example": {
+                "i_can_swim": "Ich kann schwimmen."
+            },
+            "audio": "de_audio/i_can.mp3"
+        },
+        "you_can": {
+            "translation": "du kannst",
+            "level": 0,
+            "example": {
+                "you_can_dance": "Du kannst tanzen."
+            },
+            "audio": "de_audio/you_can.mp3"
+        },
+        "he_she_it_can": {
+            "translation": "er/sie/es kann",
+            "level": 0,
+            "example": {
+                "he_can_sing": "Er kann singen."
+            },
+            "audio": "de_audio/he_she_it_can.mp3"
+        },
+        "we_can": {
+            "translation": "wir können",
+            "level": 0,
+            "example": {
+                "we_can_play": "Wir können spielen."
+            },
+            "audio": "de_audio/we_can.mp3"
+        },
+        "you_plural_can": {
+            "translation": "ihr könnt",
+            "level": 0,
+            "example": {
+                "you_can_run": "Ihr könnt rennen."
+            },
+            "audio": "de_audio/you_plural_can.mp3"
+        },
+        "they_can": {
+            "translation": "sie können",
+            "level": 0,
+            "example": {
+                "they_can_laugh": "Sie können lachen."
+            },
+            "audio": "de_audio/they_can.mp3"
+        }
+    },
+    "future": {
+        "i_will_be_able_to": {
+            "translation": "ich werde können",
+            "level": 0,
+            "example": {
+                "i_will_be_able_to_swim": "Ich werde schwimmen können."
+            },
+            "audio": "de_audio/i_will_be_able_to.mp3"
+        },
+        "you_will_be_able_to": {
+            "translation": "du wirst können",
+            "level": 0,
+            "example": {
+                "you_will_be_able_to_dance": "Du wirst tanzen können."
+            },
+            "audio": "de_audio/you_will_be_able_to.mp3"
+        },
+        "he_she_it_will_be_able_to": {
+            "translation": "er/sie/es wird können",
+            "level": 0,
+            "example": {
+                "he_will_be_able_to_sing": "Er wird singen können."
+            },
+            "audio": "de_audio/he_she_it_will_be_able_to.mp3"
+        },
+        "we_will_be_able_to": {
+            "translation": "wir werden können",
+            "level": 0,
+            "example": {
+                "we_will_be_able_to_play": "Wir werden spielen können."
+            },
+            "audio": "de_audio/we_will_be_able_to.mp3"
+        },
+        "you_plural_will_be_able_to": {
+            "translation": "ihr werdet können",
+            "level": 0,
+            "example": {
+                "you_will_be_able_to_run": "Ihr werdet rennen können."
+            },
+            "audio": "de_audio/you_plural_will_be_able_to.mp3"
+        },
+        "they_will_be_able_to": {
+            "translation": "sie werden können",
+            "level": 0,
+            "example": {
+                "they_will_be_able_to_laugh": "Sie werden lachen können."
+            },
+            "audio": "de_audio/they_will_be_able_to.mp3"
+        }
+    }
+}

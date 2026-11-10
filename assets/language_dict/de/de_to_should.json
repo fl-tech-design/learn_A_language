@@ -1,0 +1,154 @@
+{
+    "infinitive": "sollen",
+    "level": 0,
+    "past": {
+        "i_should_have": {
+            "translation": "ich sollte",
+            "level": 0,
+            "example": {
+                "i_should_have_studied": "Ich sollte lernen."
+            },
+            "audio": "de_audio/i_should_have.mp3"
+        },
+        "you_should_have": {
+            "translation": "du solltest",
+            "level": 0,
+            "example": {
+                "you_should_have_helped": "Du solltest helfen."
+            },
+            "audio": "de_audio/you_should_have.mp3"
+        },
+        "he_she_it_should_have": {
+            "translation": "er/sie/es sollte",
+            "level": 0,
+            "example": {
+                "he_should_have_listened": "Er sollte zuhören."
+            },
+            "audio": "de_audio/he_she_it_should_have.mp3"
+        },
+        "we_should_have": {
+            "translation": "wir sollten",
+            "level": 0,
+            "example": {
+                "we_should_have_waited": "Wir sollten warten."
+            },
+            "audio": "de_audio/we_should_have.mp3"
+        },
+        "you_plural_should_have": {
+            "translation": "ihr solltet",
+            "level": 0,
+            "example": {
+                "you_should_have_asked": "Ihr solltet fragen."
+            },
+            "audio": "de_audio/you_plural_should_have.mp3"
+        },
+        "they_should_have": {
+            "translation": "sie sollten",
+            "level": 0,
+            "example": {
+                "they_should_have_stayed": "Sie sollten bleiben."
+            },
+            "audio": "de_audio/they_should_have.mp3"
+        }
+    },
+    "present": {
+        "i_should": {
+            "translation": "ich soll",
+            "level": 0,
+            "example": {
+                "i_should_study": "Ich soll lernen."
+            },
+            "audio": "de_audio/i_should.mp3"
+        },
+        "you_should": {
+            "translation": "du sollst",
+            "level": 0,
+            "example": {
+                "you_should_help": "Du sollst helfen."
+            },
+            "audio": "de_audio/you_should.mp3"
+        },
+        "he_she_it_should": {
+            "translation": "er/sie/es soll",
+            "level": 0,
+            "example": {
+                "he_should_listen": "Er soll zuhören."
+            },
+            "audio": "de_audio/he_she_it_should.mp3"
+        },
+        "we_should": {
+            "translation": "wir sollen",
+            "level": 0,
+            "example": {
+                "we_should_wait": "Wir sollen warten."
+            },
+            "audio": "de_audio/we_should.mp3"
+        },
+        "you_plural_should": {
+            "translation": "ihr sollt",
+            "level": 0,
+            "example": {
+                "you_should_ask": "Ihr sollt fragen."
+            },
+            "audio": "de_audio/you_plural_should.mp3"
+        },
+        "they_should": {
+            "translation": "sie sollen",
+            "level": 0,
+            "example": {
+                "they_should_stay": "Sie sollen bleiben."
+            },
+            "audio": "de_audio/they_should.mp3"
+        }
+    },
+    "future": {
+        "i_will_should": {
+            "translation": "ich werde sollen",
+            "level": 0,
+            "example": {
+                "i_will_should_study": "Ich werde lernen sollen."
+            },
+            "audio": "de_audio/i_will_should.mp3"
+        },
+        "you_will_should": {
+            "translation": "du wirst sollen",
+            "level": 0,
+            "example": {
+                "you_will_should_help": "Du wirst helfen sollen."
+            },
+            "audio": "de_audio/you_will_should.mp3"
+        },
+        "he_she_it_will_should": {
+            "translation": "er/sie/es wird sollen",
+            "level": 0,
+            "example": {
+                "he_will_should_listen": "Er wird zuhören sollen."
+            },
+            "audio": "de_audio/he_she_it_will_should.mp3"
+        },
+        "we_will_should": {
+            "translation": "wir werden sollen",
+            "level": 0,
+            "example": {
+                "we_will_should_wait": "Wir werden warten sollen."
+            },
+            "audio": "de_audio/we_will_should.mp3"
+        },
+        "you_plural_will_should": {
+            "translation": "ihr werdet sollen",
+            "level": 0,
+            "example": {
+                "you_will_should_ask": "Ihr werdet fragen sollen."
+            },
+            "audio": "de_audio/you_plural_will_should.mp3"
+        },
+        "they_will_should": {
+            "translation": "sie werden sollen",
+            "level": 0,
+            "example": {
+                "they_will_should_stay": "Sie werden bleiben sollen."
+            },
+            "audio": "de_audio/they_will_should.mp3"
+        }
+    }
+}

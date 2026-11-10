@@ -1,0 +1,154 @@
+{
+    "infinitive": "gehen",
+    "level": 0,
+    "past": {
+        "i_went": {
+            "translation": "ich ging",
+            "level": 0,
+            "example": {
+                "i_went_to_the_park": "Ich ging in den Park."
+            },
+            "audio": "de_audio/i_went.mp3"
+        },
+        "you_went": {
+            "translation": "du gingst",
+            "level": 0,
+            "example": {
+                "you_went_home": "Du gingst nach Hause."
+            },
+            "audio": "de_audio/you_went.mp3"
+        },
+        "he_she_it_went": {
+            "translation": "er/sie/es ging",
+            "level": 0,
+            "example": {
+                "he_went_to_school": "Er ging zur Schule."
+            },
+            "audio": "de_audio/he_she_it_went.mp3"
+        },
+        "we_went": {
+            "translation": "wir gingen",
+            "level": 0,
+            "example": {
+                "we_went_shopping": "Wir gingen einkaufen."
+            },
+            "audio": "de_audio/we_went.mp3"
+        },
+        "you_plural_went": {
+            "translation": "ihr gingt",
+            "level": 0,
+            "example": {
+                "you_went_to_the_cinema": "Ihr gingt ins Kino."
+            },
+            "audio": "de_audio/you_plural_went.mp3"
+        },
+        "they_went": {
+            "translation": "sie gingen",
+            "level": 0,
+            "example": {
+                "they_went_to_the_party": "Sie gingen zur Party."
+            },
+            "audio": "de_audio/they_went.mp3"
+        }
+    },
+    "present": {
+        "i_go": {
+            "translation": "ich gehe",
+            "level": 0,
+            "example": {
+                "i_go_to_school": "Ich gehe zur Schule."
+            },
+            "audio": "de_audio/i_go.mp3"
+        },
+        "you_go": {
+            "translation": "du gehst",
+            "level": 0,
+            "example": {
+                "you_go_home": "Du gehst nach Hause."
+            },
+            "audio": "de_audio/you_go.mp3"
+        },
+        "he_she_it_goes": {
+            "translation": "er/sie/es geht",
+            "level": 0,
+            "example": {
+                "he_goes_to_work": "Er geht zur Arbeit."
+            },
+            "audio": "de_audio/he_she_it_goes.mp3"
+        },
+        "we_go": {
+            "translation": "wir gehen",
+            "level": 0,
+            "example": {
+                "we_go_shopping": "Wir gehen einkaufen."
+            },
+            "audio": "de_audio/we_go.mp3"
+        },
+        "you_plural_go": {
+            "translation": "ihr geht",
+            "level": 0,
+            "example": {
+                "you_go_to_the_cinema": "Ihr geht ins Kino."
+            },
+            "audio": "de_audio/you_plural_go.mp3"
+        },
+        "they_go": {
+            "translation": "sie gehen",
+            "level": 0,
+            "example": {
+                "they_go_to_the_party": "Sie gehen zur Party."
+            },
+            "audio": "de_audio/they_go.mp3"
+        }
+    },
+    "future": {
+        "i_will_go": {
+            "translation": "ich werde gehen",
+            "level": 0,
+            "example": {
+                "i_will_go_to_school": "Ich werde zur Schule gehen."
+            },
+            "audio": "de_audio/i_will_go.mp3"
+        },
+        "you_will_go": {
+            "translation": "du wirst gehen",
+            "level": 0,
+            "example": {
+                "you_will_go_home": "Du wirst nach Hause gehen."
+            },
+            "audio": "de_audio/you_will_go.mp3"
+        },
+        "he_she_it_will_go": {
+            "translation": "er/sie/es wird gehen",
+            "level": 0,
+            "example": {
+                "he_will_go_to_work": "Er wird zur Arbeit gehen."
+            },
+            "audio": "de_audio/he_she_it_will_go.mp3"
+        },
+        "we_will_go": {
+            "translation": "wir werden gehen",
+            "level": 0,
+            "example": {
+                "we_will_go_shopping": "Wir werden einkaufen gehen."
+            },
+            "audio": "de_audio/we_will_go.mp3"
+        },
+        "you_plural_will_go": {
+            "translation": "ihr werdet gehen",
+            "level": 0,
+            "example": {
+                "you_will_go_to_the_cinema": "Ihr werdet ins Kino gehen."
+            },
+            "audio": "de_audio/you_plural_will_go.mp3"
+        },
+        "they_will_go": {
+            "translation": "sie werden gehen",
+            "level": 0,
+            "example": {
+                "they_will_go_to_the_party": "Sie werden zur Party gehen."
+            },
+            "audio": "de_audio/they_will_go.mp3"
+        }
+    }
+}

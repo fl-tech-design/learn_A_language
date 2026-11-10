@@ -1,0 +1,154 @@
+{
+    "infinitive": "to write",
+    "level": 0,
+    "past": {
+        "i_wrote": {
+            "translation": "I wrote",
+            "level": 0,
+            "example": {
+                "i_wrote_a_letter": "I wrote a letter."
+            },
+            "audio": "en_audio/i_wrote.mp3"
+        },
+        "you_wrote": {
+            "translation": "you wrote",
+            "level": 0,
+            "example": {
+                "you_wrote_a_story": "You wrote a story."
+            },
+            "audio": "en_audio/you_wrote.mp3"
+        },
+        "he_she_it_wrote": {
+            "translation": "he/she/it wrote",
+            "level": 0,
+            "example": {
+                "he_wrote_a_poem": "He wrote a poem."
+            },
+            "audio": "en_audio/he_she_it_wrote.mp3"
+        },
+        "we_wrote": {
+            "translation": "we wrote",
+            "level": 0,
+            "example": {
+                "we_wrote_a_book": "We wrote a book."
+            },
+            "audio": "en_audio/we_wrote.mp3"
+        },
+        "you_plural_wrote": {
+            "translation": "you wrote (pl)",
+            "level": 0,
+            "example": {
+                "you_wrote_a_note": "You wrote a note."
+            },
+            "audio": "en_audio/you_plural_wrote.mp3"
+        },
+        "they_wrote": {
+            "translation": "they wrote",
+            "level": 0,
+            "example": {
+                "they_wrote_a_report": "They wrote a report."
+            },
+            "audio": "en_audio/they_wrote.mp3"
+        }
+    },
+    "present": {
+        "i_write": {
+            "translation": "I write",
+            "level": 0,
+            "example": {
+                "i_write_a_letter": "I write a letter."
+            },
+            "audio": "en_audio/i_write.mp3"
+        },
+        "you_write": {
+            "translation": "you write",
+            "level": 0,
+            "example": {
+                "you_write_a_story": "You write a story."
+            },
+            "audio": "en_audio/you_write.mp3"
+        },
+        "he_she_it_writes": {
+            "translation": "he/she/it writes",
+            "level": 0,
+            "example": {
+                "he_writes_a_poem": "He writes a poem."
+            },
+            "audio": "en_audio/he_she_it_writes.mp3"
+        },
+        "we_write": {
+            "translation": "we write",
+            "level": 0,
+            "example": {
+                "we_write_a_book": "We write a book."
+            },
+            "audio": "en_audio/we_write.mp3"
+        },
+        "you_plural_write": {
+            "translation": "you write (pl)",
+            "level": 0,
+            "example": {
+                "you_write_a_note": "You write a note."
+            },
+            "audio": "en_audio/you_plural_write.mp3"
+        },
+        "they_write": {
+            "translation": "they write",
+            "level": 0,
+            "example": {
+                "they_write_a_report": "They write a report."
+            },
+            "audio": "en_audio/they_write.mp3"
+        }
+    },
+    "future": {
+        "i_will_write": {
+            "translation": "I will write",
+            "level": 0,
+            "example": {
+                "i_will_write_a_letter": "I will write a letter."
+            },
+            "audio": "en_audio/i_will_write.mp3"
+        },
+        "you_will_write": {
+            "translation": "you will write",
+            "level": 0,
+            "example": {
+                "you_will_write_a_story": "You will write a story."
+            },
+            "audio": "en_audio/you_will_write.mp3"
+        },
+        "he_she_it_will_write": {
+            "translation": "he/she/it will write",
+            "level": 0,
+            "example": {
+                "he_will_write_a_poem": "He will write a poem."
+            },
+            "audio": "en_audio/he_she_it_will_write.mp3"
+        },
+        "we_will_write": {
+            "translation": "we will write",
+            "level": 0,
+            "example": {
+                "we_will_write_a_book": "We will write a book."
+            },
+            "audio": "en_audio/we_will_write.mp3"
+        },
+        "you_plural_will_write": {
+            "translation": "you will write (pl)",
+            "level": 0,
+            "example": {
+                "you_will_write_a_note": "You will write a note."
+            },
+            "audio": "en_audio/you_plural_will_write.mp3"
+        },
+        "they_will_write": {
+            "translation": "they will write",
+            "level": 0,
+            "example": {
+                "they_will_write_a_report": "They will write a report."
+            },
+            "audio": "en_audio/they_will_write.mp3"
+        }
+    }
+}

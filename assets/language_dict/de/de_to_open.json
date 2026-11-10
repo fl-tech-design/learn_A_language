@@ -1,0 +1,154 @@
+{
+    "infinitive": "öffnen",
+    "level": 0,
+    "past": {
+        "i_opened": {
+            "translation": "ich öffnete",
+            "level": 0,
+            "example": {
+                "i_opened_the_door": "Ich öffnete die Tür."
+            },
+            "audio": "de_audio/i_opened.mp3"
+        },
+        "you_opened": {
+            "translation": "du öffnetest",
+            "level": 0,
+            "example": {
+                "you_opened_the_window": "Du öffnetest das Fenster."
+            },
+            "audio": "de_audio/you_opened.mp3"
+        },
+        "he_she_it_opened": {
+            "translation": "er/sie/es öffnete",
+            "level": 0,
+            "example": {
+                "he_opened_the_box": "Er öffnete die Kiste."
+            },
+            "audio": "de_audio/he_she_it_opened.mp3"
+        },
+        "we_opened": {
+            "translation": "wir öffneten",
+            "level": 0,
+            "example": {
+                "we_opened_the_package": "Wir öffneten das Paket."
+            },
+            "audio": "de_audio/we_opened.mp3"
+        },
+        "you_plural_opened": {
+            "translation": "ihr öffnetet",
+            "level": 0,
+            "example": {
+                "you_opened_the_doors": "Ihr öffnetet die Türen."
+            },
+            "audio": "de_audio/you_plural_opened.mp3"
+        },
+        "they_opened": {
+            "translation": "sie öffneten",
+            "level": 0,
+            "example": {
+                "they_opened_the_windows": "Sie öffneten die Fenster."
+            },
+            "audio": "de_audio/they_opened.mp3"
+        }
+    },
+    "present": {
+        "i_open": {
+            "translation": "ich öffne",
+            "level": 0,
+            "example": {
+                "i_open_the_door": "Ich öffne die Tür."
+            },
+            "audio": "de_audio/i_open.mp3"
+        },
+        "you_open": {
+            "translation": "du öffnest",
+            "level": 0,
+            "example": {
+                "you_open_the_window": "Du öffnest das Fenster."
+            },
+            "audio": "de_audio/you_open.mp3"
+        },
+        "he_she_it_opens": {
+            "translation": "er/sie/es öffnet",
+            "level": 0,
+            "example": {
+                "he_opens_the_box": "Er öffnet die Kiste."
+            },
+            "audio": "de_audio/he_she_it_opens.mp3"
+        },
+        "we_open": {
+            "translation": "wir öffnen",
+            "level": 0,
+            "example": {
+                "we_open_the_package": "Wir öffnen das Paket."
+            },
+            "audio": "de_audio/we_open.mp3"
+        },
+        "you_plural_open": {
+            "translation": "ihr öffnet",
+            "level": 0,
+            "example": {
+                "you_open_the_doors": "Ihr öffnet die Türen."
+            },
+            "audio": "de_audio/you_plural_open.mp3"
+        },
+        "they_open": {
+            "translation": "sie öffnen",
+            "level": 0,
+            "example": {
+                "they_open_the_windows": "Sie öffnen die Fenster."
+            },
+            "audio": "de_audio/they_open.mp3"
+        }
+    },
+    "future": {
+        "i_will_open": {
+            "translation": "ich werde öffnen",
+            "level": 0,
+            "example": {
+                "i_will_open_the_door": "Ich werde die Tür öffnen."
+            },
+            "audio": "de_audio/i_will_open.mp3"
+        },
+        "you_will_open": {
+            "translation": "du wirst öffnen",
+            "level": 0,
+            "example": {
+                "you_will_open_the_window": "Du wirst das Fenster öffnen."
+            },
+            "audio": "de_audio/you_will_open.mp3"
+        },
+        "he_she_it_will_open": {
+            "translation": "er/sie/es wird öffnen",
+            "level": 0,
+            "example": {
+                "he_will_open_the_box": "Er wird die Kiste öffnen."
+            },
+            "audio": "de_audio/he_she_it_will_open.mp3"
+        },
+        "we_will_open": {
+            "translation": "wir werden öffnen",
+            "level": 0,
+            "example": {
+                "we_will_open_the_package": "Wir werden das Paket öffnen."
+            },
+            "audio": "de_audio/we_will_open.mp3"
+        },
+        "you_plural_will_open": {
+            "translation": "ihr werdet öffnen",
+            "level": 0,
+            "example": {
+                "you_will_open_the_doors": "Ihr werdet die Türen öffnen."
+            },
+            "audio": "de_audio/you_plural_will_open.mp3"
+        },
+        "they_will_open": {
+            "translation": "sie werden öffnen",
+            "level": 0,
+            "example": {
+                "they_will_open_the_windows": "Sie werden die Fenster öffnen."
+            },
+            "audio": "de_audio/they_will_open.mp3"
+        }
+    }
+}

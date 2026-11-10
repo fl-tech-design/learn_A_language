@@ -1,0 +1,154 @@
+{
+    "infinitive": "to come",
+    "level": 0,
+    "past": {
+        "i_came": {
+            "translation": "I came",
+            "level": 0,
+            "example": {
+                "i_came_home": "I came home."
+            },
+            "audio": "en_audio/i_came.mp3"
+        },
+        "you_came": {
+            "translation": "you came",
+            "level": 0,
+            "example": {
+                "you_came_late": "You came late."
+            },
+            "audio": "en_audio/you_came.mp3"
+        },
+        "he_she_it_came": {
+            "translation": "he/she/it came",
+            "level": 0,
+            "example": {
+                "he_came_to_the_party": "He came to the party."
+            },
+            "audio": "en_audio/he_she_it_came.mp3"
+        },
+        "we_came": {
+            "translation": "we came",
+            "level": 0,
+            "example": {
+                "we_came_together": "We came together."
+            },
+            "audio": "en_audio/we_came.mp3"
+        },
+        "you_plural_came": {
+            "translation": "you came (pl)",
+            "level": 0,
+            "example": {
+                "you_came_early": "You came early."
+            },
+            "audio": "en_audio/you_plural_came.mp3"
+        },
+        "they_came": {
+            "translation": "they came",
+            "level": 0,
+            "example": {
+                "they_came_to_the_meeting": "They came to the meeting."
+            },
+            "audio": "en_audio/they_came.mp3"
+        }
+    },
+    "present": {
+        "i_come": {
+            "translation": "I come",
+            "level": 0,
+            "example": {
+                "i_come_home": "I come home."
+            },
+            "audio": "en_audio/i_come.mp3"
+        },
+        "you_come": {
+            "translation": "you come",
+            "level": 0,
+            "example": {
+                "you_come_late": "You come late."
+            },
+            "audio": "en_audio/you_come.mp3"
+        },
+        "he_she_it_comes": {
+            "translation": "he/she/it comes",
+            "level": 0,
+            "example": {
+                "he_comes_to_the_party": "He comes to the party."
+            },
+            "audio": "en_audio/he_she_it_comes.mp3"
+        },
+        "we_come": {
+            "translation": "we come",
+            "level": 0,
+            "example": {
+                "we_come_together": "We come together."
+            },
+            "audio": "en_audio/we_come.mp3"
+        },
+        "you_plural_come": {
+            "translation": "you come (pl)",
+            "level": 0,
+            "example": {
+                "you_come_early": "You come early."
+            },
+            "audio": "en_audio/you_plural_come.mp3"
+        },
+        "they_come": {
+            "translation": "they come",
+            "level": 0,
+            "example": {
+                "they_come_to_the_meeting": "They come to the meeting."
+            },
+            "audio": "en_audio/they_come.mp3"
+        }
+    },
+    "future": {
+        "i_will_come": {
+            "translation": "I will come",
+            "level": 0,
+            "example": {
+                "i_will_come_home": "I will come home."
+            },
+            "audio": "en_audio/i_will_come.mp3"
+        },
+        "you_will_come": {
+            "translation": "you will come",
+            "level": 0,
+            "example": {
+                "you_will_come_late": "You will come late."
+            },
+            "audio": "en_audio/you_will_come.mp3"
+        },
+        "he_she_it_will_come": {
+            "translation": "he/she/it will come",
+            "level": 0,
+            "example": {
+                "he_will_come_to_the_party": "He will come to the party."
+            },
+            "audio": "en_audio/he_she_it_will_come.mp3"
+        },
+        "we_will_come": {
+            "translation": "we will come",
+            "level": 0,
+            "example": {
+                "we_will_come_together": "We will come together."
+            },
+            "audio": "en_audio/we_will_come.mp3"
+        },
+        "you_plural_will_come": {
+            "translation": "you will come (pl)",
+            "level": 0,
+            "example": {
+                "you_will_come_early": "You will come early."
+            },
+            "audio": "en_audio/you_plural_will_come.mp3"
+        },
+        "they_will_come": {
+            "translation": "they will come",
+            "level": 0,
+            "example": {
+                "they_will_come_to_the_meeting": "They will come to the meeting."
+            },
+            "audio": "en_audio/they_will_come.mp3"
+        }
+    }
+}

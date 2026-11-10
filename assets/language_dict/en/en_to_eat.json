@@ -1,0 +1,154 @@
+{
+    "infinitive": "to eat",
+    "level": 0,
+    "past": {
+        "i_ate": {
+            "translation": "I ate",
+            "level": 0,
+            "example": {
+                "i_ate_breakfast": "I ate breakfast."
+            },
+            "audio": "en_audio/i_ate.mp3"
+        },
+        "you_ate": {
+            "translation": "you ate",
+            "level": 0,
+            "example": {
+                "you_ate_lunch": "You ate lunch."
+            },
+            "audio": "en_audio/you_ate.mp3"
+        },
+        "he_she_it_ate": {
+            "translation": "he/she/it ate",
+            "level": 0,
+            "example": {
+                "he_ate_dinner": "He ate dinner."
+            },
+            "audio": "en_audio/he_she_it_ate.mp3"
+        },
+        "we_ate": {
+            "translation": "we ate",
+            "level": 0,
+            "example": {
+                "we_ate_together": "We ate together."
+            },
+            "audio": "en_audio/we_ate.mp3"
+        },
+        "you_plural_ate": {
+            "translation": "you ate (pl)",
+            "level": 0,
+            "example": {
+                "you_ate_pizza": "You ate pizza."
+            },
+            "audio": "en_audio/you_plural_ate.mp3"
+        },
+        "they_ate": {
+            "translation": "they ate",
+            "level": 0,
+            "example": {
+                "they_ate_sushi": "They ate sushi."
+            },
+            "audio": "en_audio/they_ate.mp3"
+        }
+    },
+    "present": {
+        "i_eat": {
+            "translation": "I eat",
+            "level": 0,
+            "example": {
+                "i_eat_breakfast": "I eat breakfast."
+            },
+            "audio": "en_audio/i_eat.mp3"
+        },
+        "you_eat": {
+            "translation": "you eat",
+            "level": 0,
+            "example": {
+                "you_eat_lunch": "You eat lunch."
+            },
+            "audio": "en_audio/you_eat.mp3"
+        },
+        "he_she_it_eats": {
+            "translation": "he/she/it eats",
+            "level": 0,
+            "example": {
+                "he_eats_dinner": "He eats dinner."
+            },
+            "audio": "en_audio/he_she_it_eats.mp3"
+        },
+        "we_eat": {
+            "translation": "we eat",
+            "level": 0,
+            "example": {
+                "we_eat_together": "We eat together."
+            },
+            "audio": "en_audio/we_eat.mp3"
+        },
+        "you_plural_eat": {
+            "translation": "you eat (pl)",
+            "level": 0,
+            "example": {
+                "you_eat_pizza": "You eat pizza."
+            },
+            "audio": "en_audio/you_plural_eat.mp3"
+        },
+        "they_eat": {
+            "translation": "they eat",
+            "level": 0,
+            "example": {
+                "they_eat_sushi": "They eat sushi."
+            },
+            "audio": "en_audio/they_eat.mp3"
+        }
+    },
+    "future": {
+        "i_will_eat": {
+            "translation": "I will eat",
+            "level": 0,
+            "example": {
+                "i_will_eat_breakfast": "I will eat breakfast."
+            },
+            "audio": "en_audio/i_will_eat.mp3"
+        },
+        "you_will_eat": {
+            "translation": "you will eat",
+            "level": 0,
+            "example": {
+                "you_will_eat_lunch": "You will eat lunch."
+            },
+            "audio": "en_audio/you_will_eat.mp3"
+        },
+        "he_she_it_will_eat": {
+            "translation": "he/she/it will eat",
+            "level": 0,
+            "example": {
+                "he_will_eat_dinner": "He will eat dinner."
+            },
+            "audio": "en_audio/he_she_it_will_eat.mp3"
+        },
+        "we_will_eat": {
+            "translation": "we will eat",
+            "level": 0,
+            "example": {
+                "we_will_eat_together": "We will eat together."
+            },
+            "audio": "en_audio/we_will_eat.mp3"
+        },
+        "you_plural_will_eat": {
+            "translation": "you will eat (pl)",
+            "level": 0,
+            "example": {
+                "you_will_eat_pizza": "You will eat pizza."
+            },
+            "audio": "en_audio/you_plural_will_eat.mp3"
+        },
+        "they_will_eat": {
+            "translation": "they will eat",
+            "level": 0,
+            "example": {
+                "they_will_eat_sushi": "They will eat sushi."
+            },
+            "audio": "en_audio/they_will_eat.mp3"
+        }
+    }
+}

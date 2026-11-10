@@ -1,0 +1,154 @@
+{
+    "infinitive": "beginnen",
+    "level": 0,
+    "past": {
+        "i_began": {
+            "translation": "ich begann",
+            "level": 0,
+            "example": {
+                "i_began_the_project": "Ich begann das Projekt."
+            },
+            "audio": "de_audio/i_began.mp3"
+        },
+        "you_began": {
+            "translation": "du begannst",
+            "level": 0,
+            "example": {
+                "you_began_the_meeting": "Du begannst die Besprechung."
+            },
+            "audio": "de_audio/you_began.mp3"
+        },
+        "he_she_it_began": {
+            "translation": "er/sie/es begann",
+            "level": 0,
+            "example": {
+                "he_began_the_race": "Er begann das Rennen."
+            },
+            "audio": "de_audio/he_she_it_began.mp3"
+        },
+        "we_began": {
+            "translation": "wir begannen",
+            "level": 0,
+            "example": {
+                "we_began_the_party": "Wir begannen die Party."
+            },
+            "audio": "de_audio/we_began.mp3"
+        },
+        "you_plural_began": {
+            "translation": "ihr begannt",
+            "level": 0,
+            "example": {
+                "you_began_the_game": "Ihr begannt das Spiel."
+            },
+            "audio": "de_audio/you_plural_began.mp3"
+        },
+        "they_began": {
+            "translation": "sie begannen",
+            "level": 0,
+            "example": {
+                "they_began_the_concert": "Sie begannen das Konzert."
+            },
+            "audio": "de_audio/they_began.mp3"
+        }
+    },
+    "present": {
+        "i_begin": {
+            "translation": "ich beginne",
+            "level": 0,
+            "example": {
+                "i_begin_the_project": "Ich beginne das Projekt."
+            },
+            "audio": "de_audio/i_begin.mp3"
+        },
+        "you_begin": {
+            "translation": "du beginnst",
+            "level": 0,
+            "example": {
+                "you_begin_the_meeting": "Du beginnst die Besprechung."
+            },
+            "audio": "de_audio/you_begin.mp3"
+        },
+        "he_she_it_begins": {
+            "translation": "er/sie/es beginnt",
+            "level": 0,
+            "example": {
+                "he_begins_the_race": "Er beginnt das Rennen."
+            },
+            "audio": "de_audio/he_she_it_begins.mp3"
+        },
+        "we_begin": {
+            "translation": "wir beginnen",
+            "level": 0,
+            "example": {
+                "we_begin_the_party": "Wir beginnen die Party."
+            },
+            "audio": "de_audio/we_begin.mp3"
+        },
+        "you_plural_begin": {
+            "translation": "ihr beginnt",
+            "level": 0,
+            "example": {
+                "you_begin_the_game": "Ihr beginnt das Spiel."
+            },
+            "audio": "de_audio/you_plural_begin.mp3"
+        },
+        "they_begin": {
+            "translation": "sie beginnen",
+            "level": 0,
+            "example": {
+                "they_begin_the_concert": "Sie beginnen das Konzert."
+            },
+            "audio": "de_audio/they_begin.mp3"
+        }
+    },
+    "future": {
+        "i_will_begin": {
+            "translation": "ich werde beginnen",
+            "level": 0,
+            "example": {
+                "i_will_begin_the_project": "Ich werde das Projekt beginnen."
+            },
+            "audio": "de_audio/i_will_begin.mp3"
+        },
+        "you_will_begin": {
+            "translation": "du wirst beginnen",
+            "level": 0,
+            "example": {
+                "you_will_begin_the_meeting": "Du wirst die Besprechung beginnen."
+            },
+            "audio": "de_audio/you_will_begin.mp3"
+        },
+        "he_she_it_will_begin": {
+            "translation": "er/sie/es wird beginnen",
+            "level": 0,
+            "example": {
+                "he_will_begin_the_race": "Er wird das Rennen beginnen."
+            },
+            "audio": "de_audio/he_she_it_will_begin.mp3"
+        },
+        "we_will_begin": {
+            "translation": "wir werden beginnen",
+            "level": 0,
+            "example": {
+                "we_will_begin_the_party": "Wir werden die Party beginnen."
+            },
+            "audio": "de_audio/we_will_begin.mp3"
+        },
+        "you_plural_will_begin": {
+            "translation": "ihr werdet beginnen",
+            "level": 0,
+            "example": {
+                "you_will_begin_the_game": "Ihr werdet das Spiel beginnen."
+            },
+            "audio": "de_audio/you_plural_will_begin.mp3"
+        },
+        "they_will_begin": {
+            "translation": "sie werden beginnen",
+            "level": 0,
+            "example": {
+                "they_will_begin_the_concert": "Sie werden das Konzert beginnen."
+            },
+            "audio": "de_audio/they_will_begin.mp3"
+        }
+    }
+}

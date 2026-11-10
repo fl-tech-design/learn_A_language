@@ -1,0 +1,154 @@
+{
+    "infinitive": "machen",
+    "level": 0,
+    "past": {
+        "i_made": {
+            "translation": "ich machte",
+            "level": 0,
+            "example": {
+                "i_made_a_cake": "Ich machte einen Kuchen."
+            },
+            "audio": "de_audio/i_made.mp3"
+        },
+        "you_made": {
+            "translation": "du machtest",
+            "level": 0,
+            "example": {
+                "you_made_coffee": "Du machtest Kaffee."
+            },
+            "audio": "de_audio/you_made.mp3"
+        },
+        "he_she_it_made": {
+            "translation": "er/sie/es machte",
+            "level": 0,
+            "example": {
+                "he_made_dinner": "Er machte Abendessen."
+            },
+            "audio": "de_audio/he_she_it_made.mp3"
+        },
+        "we_made": {
+            "translation": "wir machten",
+            "level": 0,
+            "example": {
+                "we_made_a_plan": "Wir machten einen Plan."
+            },
+            "audio": "de_audio/we_made.mp3"
+        },
+        "you_plural_made": {
+            "translation": "ihr machtet",
+            "level": 0,
+            "example": {
+                "you_made_a_mistake": "Ihr machtet einen Fehler."
+            },
+            "audio": "de_audio/you_plural_made.mp3"
+        },
+        "they_made": {
+            "translation": "sie machten",
+            "level": 0,
+            "example": {
+                "they_made_a_movie": "Sie machten einen Film."
+            },
+            "audio": "de_audio/they_made.mp3"
+        }
+    },
+    "present": {
+        "i_make": {
+            "translation": "ich mache",
+            "level": 0,
+            "example": {
+                "i_make_coffee": "Ich mache Kaffee."
+            },
+            "audio": "de_audio/i_make.mp3"
+        },
+        "you_make": {
+            "translation": "du machst",
+            "level": 0,
+            "example": {
+                "you_make_dinner": "Du machst Abendessen."
+            },
+            "audio": "de_audio/you_make.mp3"
+        },
+        "he_she_it_makes": {
+            "translation": "er/sie/es macht",
+            "level": 0,
+            "example": {
+                "he_makes_a_plan": "Er macht einen Plan."
+            },
+            "audio": "de_audio/he_she_it_makes.mp3"
+        },
+        "we_make": {
+            "translation": "wir machen",
+            "level": 0,
+            "example": {
+                "we_make_a_movie": "Wir machen einen Film."
+            },
+            "audio": "de_audio/we_make.mp3"
+        },
+        "you_plural_make": {
+            "translation": "ihr macht",
+            "level": 0,
+            "example": {
+                "you_make_a_mistake": "Ihr macht einen Fehler."
+            },
+            "audio": "de_audio/you_plural_make.mp3"
+        },
+        "they_make": {
+            "translation": "sie machen",
+            "level": 0,
+            "example": {
+                "they_make_coffee": "Sie machen Kaffee."
+            },
+            "audio": "de_audio/they_make.mp3"
+        }
+    },
+    "future": {
+        "i_will_make": {
+            "translation": "ich werde machen",
+            "level": 0,
+            "example": {
+                "i_will_make_a_cake": "Ich werde einen Kuchen machen."
+            },
+            "audio": "de_audio/i_will_make.mp3"
+        },
+        "you_will_make": {
+            "translation": "du wirst machen",
+            "level": 0,
+            "example": {
+                "you_will_make_coffee": "Du wirst Kaffee machen."
+            },
+            "audio": "de_audio/you_will_make.mp3"
+        },
+        "he_she_it_will_make": {
+            "translation": "er/sie/es wird machen",
+            "level": 0,
+            "example": {
+                "he_will_make_dinner": "Er wird Abendessen machen."
+            },
+            "audio": "de_audio/he_she_it_will_make.mp3"
+        },
+        "we_will_make": {
+            "translation": "wir werden machen",
+            "level": 0,
+            "example": {
+                "we_will_make_a_plan": "Wir werden einen Plan machen."
+            },
+            "audio": "de_audio/we_will_make.mp3"
+        },
+        "you_plural_will_make": {
+            "translation": "ihr werdet machen",
+            "level": 0,
+            "example": {
+                "you_will_make_a_mistake": "Ihr werdet einen Fehler machen."
+            },
+            "audio": "de_audio/you_plural_will_make.mp3"
+        },
+        "they_will_make": {
+            "translation": "sie werden machen",
+            "level": 0,
+            "example": {
+                "they_will_make_a_movie": "Sie werden einen Film machen."
+            },
+            "audio": "de_audio/they_will_make.mp3"
+        }
+    }
+}

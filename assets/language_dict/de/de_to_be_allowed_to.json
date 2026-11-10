@@ -1,0 +1,154 @@
+{
+    "infinitive": "dürfen",
+    "level": 0,
+    "past": {
+        "i_was_allowed_to": {
+            "translation": "ich durfte",
+            "level": 0,
+            "example": {
+                "i_was_allowed_to_go": "Ich durfte gehen."
+            },
+            "audio": "de_audio/i_was_allowed_to.mp3"
+        },
+        "you_were_allowed_to": {
+            "translation": "du durftest",
+            "level": 0,
+            "example": {
+                "you_were_allowed_to_stay": "Du durftest bleiben."
+            },
+            "audio": "de_audio/you_were_allowed_to.mp3"
+        },
+        "he_she_it_was_allowed_to": {
+            "translation": "er/sie/es durfte",
+            "level": 0,
+            "example": {
+                "he_was_allowed_to_play": "Er durfte spielen."
+            },
+            "audio": "de_audio/he_she_it_was_allowed_to.mp3"
+        },
+        "we_were_allowed_to": {
+            "translation": "wir durften",
+            "level": 0,
+            "example": {
+                "we_were_allowed_to_leave": "Wir durften gehen."
+            },
+            "audio": "de_audio/we_were_allowed_to.mp3"
+        },
+        "you_plural_were_allowed_to": {
+            "translation": "ihr durftet",
+            "level": 0,
+            "example": {
+                "you_were_allowed_to_speak": "Ihr durftet sprechen."
+            },
+            "audio": "de_audio/you_plural_were_allowed_to.mp3"
+        },
+        "they_were_allowed_to": {
+            "translation": "sie durften",
+            "level": 0,
+            "example": {
+                "they_were_allowed_to_laugh": "Sie durften lachen."
+            },
+            "audio": "de_audio/they_were_allowed_to.mp3"
+        }
+    },
+    "present": {
+        "i_am_allowed_to": {
+            "translation": "ich darf",
+            "level": 0,
+            "example": {
+                "i_am_allowed_to_go": "Ich darf gehen."
+            },
+            "audio": "de_audio/i_am_allowed_to.mp3"
+        },
+        "you_are_allowed_to": {
+            "translation": "du darfst",
+            "level": 0,
+            "example": {
+                "you_are_allowed_to_stay": "Du darfst bleiben."
+            },
+            "audio": "de_audio/you_are_allowed_to.mp3"
+        },
+        "he_she_it_is_allowed_to": {
+            "translation": "er/sie/es darf",
+            "level": 0,
+            "example": {
+                "he_is_allowed_to_play": "Er darf spielen."
+            },
+            "audio": "de_audio/he_she_it_is_allowed_to.mp3"
+        },
+        "we_are_allowed_to": {
+            "translation": "wir dürfen",
+            "level": 0,
+            "example": {
+                "we_are_allowed_to_leave": "Wir dürfen gehen."
+            },
+            "audio": "de_audio/we_are_allowed_to.mp3"
+        },
+        "you_plural_are_allowed_to": {
+            "translation": "ihr dürft",
+            "level": 0,
+            "example": {
+                "you_are_allowed_to_speak": "Ihr dürft sprechen."
+            },
+            "audio": "de_audio/you_plural_are_allowed_to.mp3"
+        },
+        "they_are_allowed_to": {
+            "translation": "sie dürfen",
+            "level": 0,
+            "example": {
+                "they_are_allowed_to_laugh": "Sie dürfen lachen."
+            },
+            "audio": "de_audio/they_are_allowed_to.mp3"
+        }
+    },
+    "future": {
+        "i_will_be_allowed_to": {
+            "translation": "ich werde dürfen",
+            "level": 0,
+            "example": {
+                "i_will_be_allowed_to_go": "Ich werde gehen dürfen."
+            },
+            "audio": "de_audio/i_will_be_allowed_to.mp3"
+        },
+        "you_will_be_allowed_to": {
+            "translation": "du wirst dürfen",
+            "level": 0,
+            "example": {
+                "you_will_be_allowed_to_stay": "Du wirst bleiben dürfen."
+            },
+            "audio": "de_audio/you_will_be_allowed_to.mp3"
+        },
+        "he_she_it_will_be_allowed_to": {
+            "translation": "er/sie/es wird dürfen",
+            "level": 0,
+            "example": {
+                "he_will_be_allowed_to_play": "Er wird spielen dürfen."
+            },
+            "audio": "de_audio/he_she_it_will_be_allowed_to.mp3"
+        },
+        "we_will_be_allowed_to": {
+            "translation": "wir werden dürfen",
+            "level": 0,
+            "example": {
+                "we_will_be_allowed_to_leave": "Wir werden gehen dürfen."
+            },
+            "audio": "de_audio/we_will_be_allowed_to.mp3"
+        },
+        "you_plural_will_be_allowed_to": {
+            "translation": "ihr werdet dürfen",
+            "level": 0,
+            "example": {
+                "you_will_be_allowed_to_speak": "Ihr werdet sprechen dürfen."
+            },
+            "audio": "de_audio/you_plural_will_be_allowed_to.mp3"
+        },
+        "they_will_be_allowed_to": {
+            "translation": "sie werden dürfen",
+            "level": 0,
+            "example": {
+                "they_will_be_allowed_to_laugh": "Sie werden lachen dürfen."
+            },
+            "audio": "de_audio/they_will_be_allowed_to.mp3"
+        }
+    }
+}

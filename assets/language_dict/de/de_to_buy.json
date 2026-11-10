@@ -1,0 +1,154 @@
+{
+    "infinitive": "kaufen",
+    "level": 0,
+    "past": {
+        "i_bought": {
+            "translation": "ich kaufte",
+            "level": 0,
+            "example": {
+                "i_bought_bread": "Ich kaufte Brot."
+            },
+            "audio": "de_audio/i_bought.mp3"
+        },
+        "you_bought": {
+            "translation": "du kauftest",
+            "level": 0,
+            "example": {
+                "you_bought_a_book": "Du kauftest ein Buch."
+            },
+            "audio": "de_audio/you_bought.mp3"
+        },
+        "he_she_it_bought": {
+            "translation": "er/sie/es kaufte",
+            "level": 0,
+            "example": {
+                "he_bought_a_car": "Er kaufte ein Auto."
+            },
+            "audio": "de_audio/he_she_it_bought.mp3"
+        },
+        "we_bought": {
+            "translation": "wir kauften",
+            "level": 0,
+            "example": {
+                "we_bought_food": "Wir kauften Essen."
+            },
+            "audio": "de_audio/we_bought.mp3"
+        },
+        "you_plural_bought": {
+            "translation": "ihr kauftet",
+            "level": 0,
+            "example": {
+                "you_bought_clothes": "Ihr kauftet Kleidung."
+            },
+            "audio": "de_audio/you_plural_bought.mp3"
+        },
+        "they_bought": {
+            "translation": "sie kauften",
+            "level": 0,
+            "example": {
+                "they_bought_a_house": "Sie kauften ein Haus."
+            },
+            "audio": "de_audio/they_bought.mp3"
+        }
+    },
+    "present": {
+        "i_buy": {
+            "translation": "ich kaufe",
+            "level": 0,
+            "example": {
+                "i_buy_bread": "Ich kaufe Brot."
+            },
+            "audio": "de_audio/i_buy.mp3"
+        },
+        "you_buy": {
+            "translation": "du kaufst",
+            "level": 0,
+            "example": {
+                "you_buy_a_book": "Du kaufst ein Buch."
+            },
+            "audio": "de_audio/you_buy.mp3"
+        },
+        "he_she_it_buys": {
+            "translation": "er/sie/es kauft",
+            "level": 0,
+            "example": {
+                "he_buys_a_car": "Er kauft ein Auto."
+            },
+            "audio": "de_audio/he_she_it_buys.mp3"
+        },
+        "we_buy": {
+            "translation": "wir kaufen",
+            "level": 0,
+            "example": {
+                "we_buy_food": "Wir kaufen Essen."
+            },
+            "audio": "de_audio/we_buy.mp3"
+        },
+        "you_plural_buy": {
+            "translation": "ihr kauft",
+            "level": 0,
+            "example": {
+                "you_buy_clothes": "Ihr kauft Kleidung."
+            },
+            "audio": "de_audio/you_plural_buy.mp3"
+        },
+        "they_buy": {
+            "translation": "sie kaufen",
+            "level": 0,
+            "example": {
+                "they_buy_a_house": "Sie kaufen ein Haus."
+            },
+            "audio": "de_audio/they_buy.mp3"
+        }
+    },
+    "future": {
+        "i_will_buy": {
+            "translation": "ich werde kaufen",
+            "level": 0,
+            "example": {
+                "i_will_buy_bread": "Ich werde Brot kaufen."
+            },
+            "audio": "de_audio/i_will_buy.mp3"
+        },
+        "you_will_buy": {
+            "translation": "du wirst kaufen",
+            "level": 0,
+            "example": {
+                "you_will_buy_a_book": "Du wirst ein Buch kaufen."
+            },
+            "audio": "de_audio/you_will_buy.mp3"
+        },
+        "he_she_it_will_buy": {
+            "translation": "er/sie/es wird kaufen",
+            "level": 0,
+            "example": {
+                "he_will_buy_a_car": "Er wird ein Auto kaufen."
+            },
+            "audio": "de_audio/he_she_it_will_buy.mp3"
+        },
+        "we_will_buy": {
+            "translation": "wir werden kaufen",
+            "level": 0,
+            "example": {
+                "we_will_buy_food": "Wir werden Essen kaufen."
+            },
+            "audio": "de_audio/we_will_buy.mp3"
+        },
+        "you_plural_will_buy": {
+            "translation": "ihr werdet kaufen",
+            "level": 0,
+            "example": {
+                "you_will_buy_clothes": "Ihr werdet Kleidung kaufen."
+            },
+            "audio": "de_audio/you_plural_will_buy.mp3"
+        },
+        "they_will_buy": {
+            "translation": "sie werden kaufen",
+            "level": 0,
+            "example": {
+                "they_will_buy_a_house": "Sie werden ein Haus kaufen."
+            },
+            "audio": "de_audio/they_will_buy.mp3"
+        }
+    }
+}

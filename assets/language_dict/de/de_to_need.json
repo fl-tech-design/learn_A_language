@@ -1,0 +1,154 @@
+{
+    "infinitive": "brauchen",
+    "level": 0,
+    "past": {
+        "i_needed": {
+            "translation": "ich brauchte",
+            "level": 0,
+            "example": {
+                "i_needed_help": "Ich brauchte Hilfe."
+            },
+            "audio": "de_audio/i_needed.mp3"
+        },
+        "you_needed": {
+            "translation": "du brauchtest",
+            "level": 0,
+            "example": {
+                "you_needed_time": "Du brauchtest Zeit."
+            },
+            "audio": "de_audio/you_needed.mp3"
+        },
+        "he_she_it_needed": {
+            "translation": "er/sie/es brauchte",
+            "level": 0,
+            "example": {
+                "he_needed_money": "Er brauchte Geld."
+            },
+            "audio": "de_audio/he_she_it_needed.mp3"
+        },
+        "we_needed": {
+            "translation": "wir brauchten",
+            "level": 0,
+            "example": {
+                "we_needed_support": "Wir brauchten Unterstützung."
+            },
+            "audio": "de_audio/we_needed.mp3"
+        },
+        "you_plural_needed": {
+            "translation": "ihr brauchtet",
+            "level": 0,
+            "example": {
+                "you_needed_advice": "Ihr brauchtet Ratschläge."
+            },
+            "audio": "de_audio/you_plural_needed.mp3"
+        },
+        "they_needed": {
+            "translation": "sie brauchten",
+            "level": 0,
+            "example": {
+                "they_needed_rest": "Sie brauchten Ruhe."
+            },
+            "audio": "de_audio/they_needed.mp3"
+        }
+    },
+    "present": {
+        "i_need": {
+            "translation": "ich brauche",
+            "level": 0,
+            "example": {
+                "i_need_help": "Ich brauche Hilfe."
+            },
+            "audio": "de_audio/i_need.mp3"
+        },
+        "you_need": {
+            "translation": "du brauchst",
+            "level": 0,
+            "example": {
+                "you_need_time": "Du brauchst Zeit."
+            },
+            "audio": "de_audio/you_need.mp3"
+        },
+        "he_she_it_needs": {
+            "translation": "er/sie/es braucht",
+            "level": 0,
+            "example": {
+                "he_needs_money": "Er braucht Geld."
+            },
+            "audio": "de_audio/he_she_it_needs.mp3"
+        },
+        "we_need": {
+            "translation": "wir brauchen",
+            "level": 0,
+            "example": {
+                "we_need_support": "Wir brauchen Unterstützung."
+            },
+            "audio": "de_audio/we_need.mp3"
+        },
+        "you_plural_need": {
+            "translation": "ihr braucht",
+            "level": 0,
+            "example": {
+                "you_need_advice": "Ihr braucht Ratschläge."
+            },
+            "audio": "de_audio/you_plural_need.mp3"
+        },
+        "they_need": {
+            "translation": "sie brauchen",
+            "level": 0,
+            "example": {
+                "they_need_rest": "Sie brauchen Ruhe."
+            },
+            "audio": "de_audio/they_need.mp3"
+        }
+    },
+    "future": {
+        "i_will_need": {
+            "translation": "ich werde brauchen",
+            "level": 0,
+            "example": {
+                "i_will_need_help": "Ich werde Hilfe brauchen."
+            },
+            "audio": "de_audio/i_will_need.mp3"
+        },
+        "you_will_need": {
+            "translation": "du wirst brauchen",
+            "level": 0,
+            "example": {
+                "you_will_need_time": "Du wirst Zeit brauchen."
+            },
+            "audio": "de_audio/you_will_need.mp3"
+        },
+        "he_she_it_will_need": {
+            "translation": "er/sie/es wird brauchen",
+            "level": 0,
+            "example": {
+                "he_will_need_money": "Er wird Geld brauchen."
+            },
+            "audio": "de_audio/he_she_it_will_need.mp3"
+        },
+        "we_will_need": {
+            "translation": "wir werden brauchen",
+            "level": 0,
+            "example": {
+                "we_will_need_support": "Wir werden Unterstützung brauchen."
+            },
+            "audio": "de_audio/we_will_need.mp3"
+        },
+        "you_plural_will_need": {
+            "translation": "ihr werdet brauchen",
+            "level": 0,
+            "example": {
+                "you_will_need_advice": "Ihr werdet Ratschläge brauchen."
+            },
+            "audio": "de_audio/you_plural_will_need.mp3"
+        },
+        "they_will_need": {
+            "translation": "sie werden brauchen",
+            "level": 0,
+            "example": {
+                "they_will_need_rest": "Sie werden Ruhe brauchen."
+            },
+            "audio": "de_audio/they_will_need.mp3"
+        }
+    }
+}

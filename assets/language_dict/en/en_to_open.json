@@ -1,0 +1,154 @@
+{
+    "infinitive": "to open",
+    "level": 0,
+    "past": {
+        "i_opened": {
+            "translation": "I opened",
+            "level": 0,
+            "example": {
+                "i_opened_the_door": "I opened the door."
+            },
+            "audio": "en_audio/i_opened.mp3"
+        },
+        "you_opened": {
+            "translation": "you opened",
+            "level": 0,
+            "example": {
+                "you_opened_the_window": "You opened the window."
+            },
+            "audio": "en_audio/you_opened.mp3"
+        },
+        "he_she_it_opened": {
+            "translation": "he/she/it opened",
+            "level": 0,
+            "example": {
+                "he_opened_the_box": "He opened the box."
+            },
+            "audio": "en_audio/he_she_it_opened.mp3"
+        },
+        "we_opened": {
+            "translation": "we opened",
+            "level": 0,
+            "example": {
+                "we_opened_the_package": "We opened the package."
+            },
+            "audio": "en_audio/we_opened.mp3"
+        },
+        "you_plural_opened": {
+            "translation": "you opened (pl)",
+            "level": 0,
+            "example": {
+                "you_opened_the_doors": "You opened the doors."
+            },
+            "audio": "en_audio/you_plural_opened.mp3"
+        },
+        "they_opened": {
+            "translation": "they opened",
+            "level": 0,
+            "example": {
+                "they_opened_the_windows": "They opened the windows."
+            },
+            "audio": "en_audio/they_opened.mp3"
+        }
+    },
+    "present": {
+        "i_open": {
+            "translation": "I open",
+            "level": 0,
+            "example": {
+                "i_open_the_door": "I open the door."
+            },
+            "audio": "en_audio/i_open.mp3"
+        },
+        "you_open": {
+            "translation": "you open",
+            "level": 0,
+            "example": {
+                "you_open_the_window": "You open the window."
+            },
+            "audio": "en_audio/you_open.mp3"
+        },
+        "he_she_it_opens": {
+            "translation": "he/she/it opens",
+            "level": 0,
+            "example": {
+                "he_opens_the_box": "He opens the box."
+            },
+            "audio": "en_audio/he_she_it_opens.mp3"
+        },
+        "we_open": {
+            "translation": "we open",
+            "level": 0,
+            "example": {
+                "we_open_the_package": "We open the package."
+            },
+            "audio": "en_audio/we_open.mp3"
+        },
+        "you_plural_open": {
+            "translation": "you open (pl)",
+            "level": 0,
+            "example": {
+                "you_open_the_doors": "You open the doors."
+            },
+            "audio": "en_audio/you_plural_open.mp3"
+        },
+        "they_open": {
+            "translation": "they open",
+            "level": 0,
+            "example": {
+                "they_open_the_windows": "They open the windows."
+            },
+            "audio": "en_audio/they_open.mp3"
+        }
+    },
+    "future": {
+        "i_will_open": {
+            "translation": "I will open",
+            "level": 0,
+            "example": {
+                "i_will_open_the_door": "I will open the door."
+            },
+            "audio": "en_audio/i_will_open.mp3"
+        },
+        "you_will_open": {
+            "translation": "you will open",
+            "level": 0,
+            "example": {
+                "you_will_open_the_window": "You will open the window."
+            },
+            "audio": "en_audio/you_will_open.mp3"
+        },
+        "he_she_it_will_open": {
+            "translation": "he/she/it will open",
+            "level": 0,
+            "example": {
+                "he_will_open_the_box": "He will open the box."
+            },
+            "audio": "en_audio/he_she_it_will_open.mp3"
+        },
+        "we_will_open": {
+            "translation": "we will open",
+            "level": 0,
+            "example": {
+                "we_will_open_the_package": "We will open the package."
+            },
+            "audio": "en_audio/we_will_open.mp3"
+        },
+        "you_plural_will_open": {
+            "translation": "you will open (pl)",
+            "level": 0,
+            "example": {
+                "you_will_open_the_doors": "You will open the doors."
+            },
+            "audio": "en_audio/you_plural_will_open.mp3"
+        },
+        "they_will_open": {
+            "translation": "they will open",
+            "level": 0,
+            "example": {
+                "they_will_open_the_windows": "They will open the windows."
+            },
+            "audio": "en_audio/they_will_open.mp3"
+        }
+    }
+}

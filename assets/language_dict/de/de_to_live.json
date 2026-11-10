@@ -1,0 +1,154 @@
+{
+    "infinitive": "wohnen",
+    "level": 0,
+    "past": {
+        "i_lived": {
+            "translation": "ich wohnte",
+            "level": 0,
+            "example": {
+                "i_lived_in_berlin": "Ich wohnte in Berlin."
+            },
+            "audio": "de_audio/i_lived.mp3"
+        },
+        "you_lived": {
+            "translation": "du wohntest",
+            "level": 0,
+            "example": {
+                "you_lived_in_a_house": "Du wohntest in einem Haus."
+            },
+            "audio": "de_audio/you_lived.mp3"
+        },
+        "he_she_it_lived": {
+            "translation": "er/sie/es wohnte",
+            "level": 0,
+            "example": {
+                "he_lived_in_a_flat": "Er wohnte in einer Wohnung."
+            },
+            "audio": "de_audio/he_she_it_lived.mp3"
+        },
+        "we_lived": {
+            "translation": "wir wohnten",
+            "level": 0,
+            "example": {
+                "we_lived_together": "Wir wohnten zusammen."
+            },
+            "audio": "de_audio/we_lived.mp3"
+        },
+        "you_plural_lived": {
+            "translation": "ihr wohntet",
+            "level": 0,
+            "example": {
+                "you_lived_in_the_city": "Ihr wohntet in der Stadt."
+            },
+            "audio": "de_audio/you_plural_lived.mp3"
+        },
+        "they_lived": {
+            "translation": "sie wohnten",
+            "level": 0,
+            "example": {
+                "they_lived_in_a_village": "Sie wohnten in einem Dorf."
+            },
+            "audio": "de_audio/they_lived.mp3"
+        }
+    },
+    "present": {
+        "i_live": {
+            "translation": "ich wohne",
+            "level": 0,
+            "example": {
+                "i_live_in_berlin": "Ich wohne in Berlin."
+            },
+            "audio": "de_audio/i_live.mp3"
+        },
+        "you_live": {
+            "translation": "du wohnst",
+            "level": 0,
+            "example": {
+                "you_live_in_a_house": "Du wohnst in einem Haus."
+            },
+            "audio": "de_audio/you_live.mp3"
+        },
+        "he_she_it_lives": {
+            "translation": "er/sie/es wohnt",
+            "level": 0,
+            "example": {
+                "he_lives_in_a_flat": "Er wohnt in einer Wohnung."
+            },
+            "audio": "de_audio/he_she_it_lives.mp3"
+        },
+        "we_live": {
+            "translation": "wir wohnen",
+            "level": 0,
+            "example": {
+                "we_live_together": "Wir wohnen zusammen."
+            },
+            "audio": "de_audio/we_live.mp3"
+        },
+        "you_plural_live": {
+            "translation": "ihr wohnt",
+            "level": 0,
+            "example": {
+                "you_live_in_the_city": "Ihr wohnt in der Stadt."
+            },
+            "audio": "de_audio/you_plural_live.mp3"
+        },
+        "they_live": {
+            "translation": "sie wohnen",
+            "level": 0,
+            "example": {
+                "they_live_in_a_village": "Sie wohnen in einem Dorf."
+            },
+            "audio": "de_audio/they_live.mp3"
+        }
+    },
+    "future": {
+        "i_will_live": {
+            "translation": "ich werde wohnen",
+            "level": 0,
+            "example": {
+                "i_will_live_in_berlin": "Ich werde in Berlin wohnen."
+            },
+            "audio": "de_audio/i_will_live.mp3"
+        },
+        "you_will_live": {
+            "translation": "du wirst wohnen",
+            "level": 0,
+            "example": {
+                "you_will_live_in_a_house": "Du wirst in einem Haus wohnen."
+            },
+            "audio": "de_audio/you_will_live.mp3"
+        },
+        "he_she_it_will_live": {
+            "translation": "er/sie/es wird wohnen",
+            "level": 0,
+            "example": {
+                "he_will_live_in_a_flat": "Er wird in einer Wohnung wohnen."
+            },
+            "audio": "de_audio/he_she_it_will_live.mp3"
+        },
+        "we_will_live": {
+            "translation": "wir werden wohnen",
+            "level": 0,
+            "example": {
+                "we_will_live_together": "Wir werden zusammen wohnen."
+            },
+            "audio": "de_audio/we_will_live.mp3"
+        },
+        "you_plural_will_live": {
+            "translation": "ihr werdet wohnen",
+            "level": 0,
+            "example": {
+                "you_will_live_in_the_city": "Ihr werdet in der Stadt wohnen."
+            },
+            "audio": "de_audio/you_plural_will_live.mp3"
+        },
+        "they_will_live": {
+            "translation": "sie werden wohnen",
+            "level": 0,
+            "example": {
+                "they_will_live_in_a_village": "Sie werden in einem Dorf wohnen."
+            },
+            "audio": "de_audio/they_will_live.mp3"
+        }
+    }
+}

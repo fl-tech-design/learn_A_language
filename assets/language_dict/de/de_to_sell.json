@@ -1,0 +1,154 @@
+{
+    "infinitive": "verkaufen",
+    "level": 0,
+    "past": {
+        "i_sold": {
+            "translation": "ich verkaufte",
+            "level": 0,
+            "example": {
+                "i_sold_my_car": "Ich verkaufte mein Auto."
+            },
+            "audio": "de_audio/i_sold.mp3"
+        },
+        "you_sold": {
+            "translation": "du verkauftest",
+            "level": 0,
+            "example": {
+                "you_sold_your_phone": "Du verkauftest dein Handy."
+            },
+            "audio": "de_audio/you_sold.mp3"
+        },
+        "he_she_it_sold": {
+            "translation": "er/sie/es verkaufte",
+            "level": 0,
+            "example": {
+                "he_sold_his_bike": "Er verkaufte sein Fahrrad."
+            },
+            "audio": "de_audio/he_she_it_sold.mp3"
+        },
+        "we_sold": {
+            "translation": "wir verkauften",
+            "level": 0,
+            "example": {
+                "we_sold_our_house": "Wir verkauften unser Haus."
+            },
+            "audio": "de_audio/we_sold.mp3"
+        },
+        "you_plural_sold": {
+            "translation": "ihr verkauftet",
+            "level": 0,
+            "example": {
+                "you_sold_your_furniture": "Ihr verkauftet eure Möbel."
+            },
+            "audio": "de_audio/you_plural_sold.mp3"
+        },
+        "they_sold": {
+            "translation": "sie verkauften",
+            "level": 0,
+            "example": {
+                "they_sold_their_car": "Sie verkauften ihr Auto."
+            },
+            "audio": "de_audio/they_sold.mp3"
+        }
+    },
+    "present": {
+        "i_sell": {
+            "translation": "ich verkaufe",
+            "level": 0,
+            "example": {
+                "i_sell_my_car": "Ich verkaufe mein Auto."
+            },
+            "audio": "de_audio/i_sell.mp3"
+        },
+        "you_sell": {
+            "translation": "du verkaufst",
+            "level": 0,
+            "example": {
+                "you_sell_your_phone": "Du verkaufst dein Handy."
+            },
+            "audio": "de_audio/you_sell.mp3"
+        },
+        "he_she_it_sells": {
+            "translation": "er/sie/es verkauft",
+            "level": 0,
+            "example": {
+                "he_sells_his_bike": "Er verkauft sein Fahrrad."
+            },
+            "audio": "de_audio/he_she_it_sells.mp3"
+        },
+        "we_sell": {
+            "translation": "wir verkaufen",
+            "level": 0,
+            "example": {
+                "we_sell_our_house": "Wir verkaufen unser Haus."
+            },
+            "audio": "de_audio/we_sell.mp3"
+        },
+        "you_plural_sell": {
+            "translation": "ihr verkauft",
+            "level": 0,
+            "example": {
+                "you_sell_your_furniture": "Ihr verkauft eure Möbel."
+            },
+            "audio": "de_audio/you_plural_sell.mp3"
+        },
+        "they_sell": {
+            "translation": "sie verkaufen",
+            "level": 0,
+            "example": {
+                "they_sell_their_car": "Sie verkaufen ihr Auto."
+            },
+            "audio": "de_audio/they_sell.mp3"
+        }
+    },
+    "future": {
+        "i_will_sell": {
+            "translation": "ich werde verkaufen",
+            "level": 0,
+            "example": {
+                "i_will_sell_my_car": "Ich werde mein Auto verkaufen."
+            },
+            "audio": "de_audio/i_will_sell.mp3"
+        },
+        "you_will_sell": {
+            "translation": "du wirst verkaufen",
+            "level": 0,
+            "example": {
+                "you_will_sell_your_phone": "Du wirst dein Handy verkaufen."
+            },
+            "audio": "de_audio/you_will_sell.mp3"
+        },
+        "he_she_it_will_sell": {
+            "translation": "er/sie/es wird verkaufen",
+            "level": 0,
+            "example": {
+                "he_will_sell_his_bike": "Er wird sein Fahrrad verkaufen."
+            },
+            "audio": "de_audio/he_she_it_will_sell.mp3"
+        },
+        "we_will_sell": {
+            "translation": "wir werden verkaufen",
+            "level": 0,
+            "example": {
+                "we_will_sell_our_house": "Wir werden unser Haus verkaufen."
+            },
+            "audio": "de_audio/we_will_sell.mp3"
+        },
+        "you_plural_will_sell": {
+            "translation": "ihr werdet verkaufen",
+            "level": 0,
+            "example": {
+                "you_will_sell_your_furniture": "Ihr werdet eure Möbel verkaufen."
+            },
+            "audio": "de_audio/you_plural_will_sell.mp3"
+        },
+        "they_will_sell": {
+            "translation": "sie werden verkaufen",
+            "level": 0,
+            "example": {
+                "they_will_sell_their_car": "Sie werden ihr Auto verkaufen."
+            },
+            "audio": "de_audio/they_will_sell.mp3"
+        }
+    }
+}

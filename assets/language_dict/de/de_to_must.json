@@ -1,0 +1,154 @@
+{
+    "infinitive": "müssen",
+    "level": 0,
+    "past": {
+        "i_had_to": {
+            "translation": "ich musste",
+            "level": 0,
+            "example": {
+                "i_had_to_work": "Ich musste arbeiten."
+            },
+            "audio": "de_audio/i_had_to.mp3"
+        },
+        "you_had_to": {
+            "translation": "du musstest",
+            "level": 0,
+            "example": {
+                "you_had_to_study": "Du musstest lernen."
+            },
+            "audio": "de_audio/you_had_to.mp3"
+        },
+        "he_she_it_had_to": {
+            "translation": "er/sie/es musste",
+            "level": 0,
+            "example": {
+                "he_had_to_leave": "Er musste gehen."
+            },
+            "audio": "de_audio/he_she_it_had_to.mp3"
+        },
+        "we_had_to": {
+            "translation": "wir mussten",
+            "level": 0,
+            "example": {
+                "we_had_to_wait": "Wir mussten warten."
+            },
+            "audio": "de_audio/we_had_to.mp3"
+        },
+        "you_plural_had_to": {
+            "translation": "ihr musstet",
+            "level": 0,
+            "example": {
+                "you_had_to_help": "Ihr musstet helfen."
+            },
+            "audio": "de_audio/you_plural_had_to.mp3"
+        },
+        "they_had_to": {
+            "translation": "sie mussten",
+            "level": 0,
+            "example": {
+                "they_had_to_stay": "Sie mussten bleiben."
+            },
+            "audio": "de_audio/they_had_to.mp3"
+        }
+    },
+    "present": {
+        "i_must": {
+            "translation": "ich muss",
+            "level": 0,
+            "example": {
+                "i_must_work": "Ich muss arbeiten."
+            },
+            "audio": "de_audio/i_must.mp3"
+        },
+        "you_must": {
+            "translation": "du musst",
+            "level": 0,
+            "example": {
+                "you_must_study": "Du musst lernen."
+            },
+            "audio": "de_audio/you_must.mp3"
+        },
+        "he_she_it_must": {
+            "translation": "er/sie/es muss",
+            "level": 0,
+            "example": {
+                "he_must_leave": "Er muss gehen."
+            },
+            "audio": "de_audio/he_she_it_must.mp3"
+        },
+        "we_must": {
+            "translation": "wir müssen",
+            "level": 0,
+            "example": {
+                "we_must_wait": "Wir müssen warten."
+            },
+            "audio": "de_audio/we_must.mp3"
+        },
+        "you_plural_must": {
+            "translation": "ihr müsst",
+            "level": 0,
+            "example": {
+                "you_must_help": "Ihr müsst helfen."
+            },
+            "audio": "de_audio/you_plural_must.mp3"
+        },
+        "they_must": {
+            "translation": "sie müssen",
+            "level": 0,
+            "example": {
+                "they_must_stay": "Sie müssen bleiben."
+            },
+            "audio": "de_audio/they_must.mp3"
+        }
+    },
+    "future": {
+        "i_will_have_to": {
+            "translation": "ich werde müssen",
+            "level": 0,
+            "example": {
+                "i_will_have_to_work": "Ich werde arbeiten müssen."
+            },
+            "audio": "de_audio/i_will_have_to.mp3"
+        },
+        "you_will_have_to": {
+            "translation": "du wirst müssen",
+            "level": 0,
+            "example": {
+                "you_will_have_to_study": "Du wirst lernen müssen."
+            },
+            "audio": "de_audio/you_will_have_to.mp3"
+        },
+        "he_she_it_will_have_to": {
+            "translation": "er/sie/es wird müssen",
+            "level": 0,
+            "example": {
+                "he_will_have_to_leave": "Er wird gehen müssen."
+            },
+            "audio": "de_audio/he_she_it_will_have_to.mp3"
+        },
+        "we_will_have_to": {
+            "translation": "wir werden müssen",
+            "level": 0,
+            "example": {
+                "we_will_have_to_wait": "Wir werden warten müssen."
+            },
+            "audio": "de_audio/we_will_have_to.mp3"
+        },
+        "you_plural_will_have_to": {
+            "translation": "ihr werdet müssen",
+            "level": 0,
+            "example": {
+                "you_will_have_to_help": "Ihr werdet helfen müssen."
+            },
+            "audio": "de_audio/you_plural_will_have_to.mp3"
+        },
+        "they_will_have_to": {
+            "translation": "sie werden müssen",
+            "level": 0,
+            "example": {
+                "they_will_have_to_stay": "Sie werden bleiben müssen."
+            },
+            "audio": "de_audio/they_will_have_to.mp3"
+        }
+    }
+}

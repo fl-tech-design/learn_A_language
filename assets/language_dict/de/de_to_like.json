@@ -1,0 +1,154 @@
+{
+    "infinitive": "mögen",
+    "level": 0,
+    "past": {
+        "i_liked": {
+            "translation": "ich mochte",
+            "level": 0,
+            "example": {
+                "i_liked_chocolate": "Ich mochte Schokolade."
+            },
+            "audio": "de_audio/i_liked.mp3"
+        },
+        "you_liked": {
+            "translation": "du mochtest",
+            "level": 0,
+            "example": {
+                "you_liked_ice_cream": "Du mochtest Eis."
+            },
+            "audio": "de_audio/you_liked.mp3"
+        },
+        "he_she_it_liked": {
+            "translation": "er/sie/es mochte",
+            "level": 0,
+            "example": {
+                "he_liked_pizza": "Er mochte Pizza."
+            },
+            "audio": "de_audio/he_she_it_liked.mp3"
+        },
+        "we_liked": {
+            "translation": "wir mochten",
+            "level": 0,
+            "example": {
+                "we_liked_the_movie": "Wir mochten den Film."
+            },
+            "audio": "de_audio/we_liked.mp3"
+        },
+        "you_plural_liked": {
+            "translation": "ihr mochtet",
+            "level": 0,
+            "example": {
+                "you_liked_the_book": "Ihr mochtet das Buch."
+            },
+            "audio": "de_audio/you_plural_liked.mp3"
+        },
+        "they_liked": {
+            "translation": "sie mochten",
+            "level": 0,
+            "example": {
+                "they_liked_the_music": "Sie mochten die Musik."
+            },
+            "audio": "de_audio/they_liked.mp3"
+        }
+    },
+    "present": {
+        "i_like": {
+            "translation": "ich mag",
+            "level": 0,
+            "example": {
+                "i_like_chocolate": "Ich mag Schokolade."
+            },
+            "audio": "de_audio/i_like.mp3"
+        },
+        "you_like": {
+            "translation": "du magst",
+            "level": 0,
+            "example": {
+                "you_like_ice_cream": "Du magst Eis."
+            },
+            "audio": "de_audio/you_like.mp3"
+        },
+        "he_she_it_likes": {
+            "translation": "er/sie/es mag",
+            "level": 0,
+            "example": {
+                "he_likes_pizza": "Er mag Pizza."
+            },
+            "audio": "de_audio/he_she_it_likes.mp3"
+        },
+        "we_like": {
+            "translation": "wir mögen",
+            "level": 0,
+            "example": {
+                "we_like_the_movie": "Wir mögen den Film."
+            },
+            "audio": "de_audio/we_like.mp3"
+        },
+        "you_plural_like": {
+            "translation": "ihr mögt",
+            "level": 0,
+            "example": {
+                "you_like_the_book": "Ihr mögt das Buch."
+            },
+            "audio": "de_audio/you_plural_like.mp3"
+        },
+        "they_like": {
+            "translation": "sie mögen",
+            "level": 0,
+            "example": {
+                "they_like_the_music": "Sie mögen die Musik."
+            },
+            "audio": "de_audio/they_like.mp3"
+        }
+    },
+    "future": {
+        "i_will_like": {
+            "translation": "ich werde mögen",
+            "level": 0,
+            "example": {
+                "i_will_like_chocolate": "Ich werde Schokolade mögen."
+            },
+            "audio": "de_audio/i_will_like.mp3"
+        },
+        "you_will_like": {
+            "translation": "du wirst mögen",
+            "level": 0,
+            "example": {
+                "you_will_like_ice_cream": "Du wirst Eis mögen."
+            },
+            "audio": "de_audio/you_will_like.mp3"
+        },
+        "he_she_it_will_like": {
+            "translation": "er/sie/es wird mögen",
+            "level": 0,
+            "example": {
+                "he_will_like_pizza": "Er wird Pizza mögen."
+            },
+            "audio": "de_audio/he_she_it_will_like.mp3"
+        },
+        "we_will_like": {
+            "translation": "wir werden mögen",
+            "level": 0,
+            "example": {
+                "we_will_like_the_movie": "Wir werden den Film mögen."
+            },
+            "audio": "de_audio/we_will_like.mp3"
+        },
+        "you_plural_will_like": {
+            "translation": "ihr werdet mögen",
+            "level": 0,
+            "example": {
+                "you_will_like_the_book": "Ihr werdet das Buch mögen."
+            },
+            "audio": "de_audio/you_plural_will_like.mp3"
+        },
+        "they_will_like": {
+            "translation": "sie werden mögen",
+            "level": 0,
+            "example": {
+                "they_will_like_the_music": "Sie werden die Musik mögen."
+            },
+            "audio": "de_audio/they_will_like.mp3"
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "infinitive": "to work",
+    "level": 0,
+    "past": {
+        "i_worked": {
+            "translation": "I worked",
+            "level": 0,
+            "example": {
+                "i_worked_in_an_office": "I worked in an office."
+            },
+            "audio": "en_audio/i_worked.mp3"
+        },
+        "you_worked": {
+            "translation": "you worked",
+            "level": 0,
+            "example": {
+                "you_worked_hard": "You worked hard."
+            },
+            "audio": "en_audio/you_worked.mp3"
+        },
+        "he_she_it_worked": {
+            "translation": "he/she/it worked",
+            "level": 0,
+            "example": {
+                "he_worked_in_a_factory": "He worked in a factory."
+            },
+            "audio": "en_audio/he_she_it_worked.mp3"
+        },
+        "we_worked": {
+            "translation": "we worked",
+            "level": 0,
+            "example": {
+                "we_worked_together": "We worked together."
+            },
+            "audio": "en_audio/we_worked.mp3"
+        },
+        "you_plural_worked": {
+            "translation": "you worked (pl)",
+            "level": 0,
+            "example": {
+                "you_worked_late": "You worked late."
+            },
+            "audio": "en_audio/you_plural_worked.mp3"
+        },
+        "they_worked": {
+            "translation": "they worked",
+            "level": 0,
+            "example": {
+                "they_worked_on_a_project": "They worked on a project."
+            },
+            "audio": "en_audio/they_worked.mp3"
+        }
+    },
+    "present": {
+        "i_work": {
+            "translation": "I work",
+            "level": 0,
+            "example": {
+                "i_work_in_an_office": "I work in an office."
+            },
+            "audio": "en_audio/i_work.mp3"
+        },
+        "you_work": {
+            "translation": "you work",
+            "level": 0,
+            "example": {
+                "you_work_hard": "You work hard."
+            },
+            "audio": "en_audio/you_work.mp3"
+        },
+        "he_she_it_works": {
+            "translation": "he/she/it works",
+            "level": 0,
+            "example": {
+                "he_works_in_a_factory": "He works in a factory."
+            },
+            "audio": "en_audio/he_she_it_works.mp3"
+        },
+        "we_work": {
+            "translation": "we work",
+            "level": 0,
+            "example": {
+                "we_work_together": "We work together."
+            },
+            "audio": "en_audio/we_work.mp3"
+        },
+        "you_plural_work": {
+            "translation": "you work (pl)",
+            "level": 0,
+            "example": {
+                "you_work_late": "You work late."
+            },
+            "audio": "en_audio/you_plural_work.mp3"
+        },
+        "they_work": {
+            "translation": "they work",
+            "level": 0,
+            "example": {
+                "they_work_on_a_project": "They work on a project."
+            },
+            "audio": "en_audio/they_work.mp3"
+        }
+    },
+    "future": {
+        "i_will_work": {
+            "translation": "I will work",
+            "level": 0,
+            "example": {
+                "i_will_work_in_an_office": "I will work in an office."
+            },
+            "audio": "en_audio/i_will_work.mp3"
+        },
+        "you_will_work": {
+            "translation": "you will work",
+            "level": 0,
+            "example": {
+                "you_will_work_hard": "You will work hard."
+            },
+            "audio": "en_audio/you_will_work.mp3"
+        },
+        "he_she_it_will_work": {
+            "translation": "he/she/it will work",
+            "level": 0,
+            "example": {
+                "he_will_work_in_a_factory": "He will work in a factory."
+            },
+            "audio": "en_audio/he_she_it_will_work.mp3"
+        },
+        "we_will_work": {
+            "translation": "we will work",
+            "level": 0,
+            "example": {
+                "we_will_work_together": "We will work together."
+            },
+            "audio": "en_audio/we_will_work.mp3"
+        },
+        "you_plural_will_work": {
+            "translation": "you will work (pl)",
+            "level": 0,
+            "example": {
+                "you_will_work_late": "You will work late."
+            },
+            "audio": "en_audio/you_plural_will_work.mp3"
+        },
+        "they_will_work": {
+            "translation": "they will work",
+            "level": 0,
+            "example": {
+                "they_will_work_on_a_project": "They will work on a project."
+            },
+            "audio": "en_audio/they_will_work.mp3"
+        }
+    }
+}

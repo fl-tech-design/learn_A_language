@@ -1,0 +1,154 @@
+{
+    "infinitive": "to want",
+    "level": 0,
+    "past": {
+        "i_wanted": {
+            "translation": "I wanted",
+            "level": 0,
+            "example": {
+                "i_wanted_an_ice_cream": "I wanted an ice cream."
+            },
+            "audio": "en_audio/i_wanted.mp3"
+        },
+        "you_wanted": {
+            "translation": "you wanted",
+            "level": 0,
+            "example": {
+                "you_wanted_a_book": "You wanted a book."
+            },
+            "audio": "en_audio/you_wanted.mp3"
+        },
+        "he_she_it_wanted": {
+            "translation": "he/she/it wanted",
+            "level": 0,
+            "example": {
+                "he_wanted_a_car": "He wanted a car."
+            },
+            "audio": "en_audio/he_she_it_wanted.mp3"
+        },
+        "we_wanted": {
+            "translation": "we wanted",
+            "level": 0,
+            "example": {
+                "we_wanted_a_break": "We wanted a break."
+            },
+            "audio": "en_audio/we_wanted.mp3"
+        },
+        "you_plural_wanted": {
+            "translation": "you wanted (pl)",
+            "level": 0,
+            "example": {
+                "you_wanted_a_snack": "You wanted a snack."
+            },
+            "audio": "en_audio/you_plural_wanted.mp3"
+        },
+        "they_wanted": {
+            "translation": "they wanted",
+            "level": 0,
+            "example": {
+                "they_wanted_a_drink": "They wanted a drink."
+            },
+            "audio": "en_audio/they_wanted.mp3"
+        }
+    },
+    "present": {
+        "i_want": {
+            "translation": "I want",
+            "level": 0,
+            "example": {
+                "i_want_an_ice_cream": "I want an ice cream."
+            },
+            "audio": "en_audio/i_want.mp3"
+        },
+        "you_want": {
+            "translation": "you want",
+            "level": 0,
+            "example": {
+                "you_want_a_book": "You want a book."
+            },
+            "audio": "en_audio/you_want.mp3"
+        },
+        "he_she_it_wants": {
+            "translation": "he/she/it wants",
+            "level": 0,
+            "example": {
+                "he_wants_a_car": "He wants a car."
+            },
+            "audio": "en_audio/he_she_it_wants.mp3"
+        },
+        "we_want": {
+            "translation": "we want",
+            "level": 0,
+            "example": {
+                "we_want_a_break": "We want a break."
+            },
+            "audio": "en_audio/we_want.mp3"
+        },
+        "you_plural_want": {
+            "translation": "you want (pl)",
+            "level": 0,
+            "example": {
+                "you_want_a_snack": "You want a snack."
+            },
+            "audio": "en_audio/you_plural_want.mp3"
+        },
+        "they_want": {
+            "translation": "they want",
+            "level": 0,
+            "example": {
+                "they_want_a_drink": "They want a drink."
+            },
+            "audio": "en_audio/they_want.mp3"
+        }
+    },
+    "future": {
+        "i_will_want": {
+            "translation": "I will want",
+            "level": 0,
+            "example": {
+                "i_will_want_an_ice_cream": "I will want an ice cream."
+            },
+            "audio": "en_audio/i_will_want.mp3"
+        },
+        "you_will_want": {
+            "translation": "you will want",
+            "level": 0,
+            "example": {
+                "you_will_want_a_book": "You will want a book."
+            },
+            "audio": "en_audio/you_will_want.mp3"
+        },
+        "he_she_it_will_want": {
+            "translation": "he/she/it will want",
+            "level": 0,
+            "example": {
+                "he_will_want_a_car": "He will want a car."
+            },
+            "audio": "en_audio/he_she_it_will_want.mp3"
+        },
+        "we_will_want": {
+            "translation": "we will want",
+            "level": 0,
+            "example": {
+                "we_will_want_a_break": "We will want a break."
+            },
+            "audio": "en_audio/we_will_want.mp3"
+        },
+        "you_plural_will_want": {
+            "translation": "you will want (pl)",
+            "level": 0,
+            "example": {
+                "you_will_want_a_snack": "You will want a snack."
+            },
+            "audio": "en_audio/you_plural_will_want.mp3"
+        },
+        "they_will_want": {
+            "translation": "they will want",
+            "level": 0,
+            "example": {
+                "they_will_want_a_drink": "They will want a drink."
+            },
+            "audio": "en_audio/they_will_want.mp3"
+        }
+    }
+}

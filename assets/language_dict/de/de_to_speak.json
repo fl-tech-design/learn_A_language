@@ -1,0 +1,154 @@
+{
+    "infinitive": "sprechen",
+    "level": 0,
+    "past": {
+        "i_spoke": {
+            "translation": "ich sprach",
+            "level": 0,
+            "example": {
+                "i_spoke_german": "Ich sprach Deutsch."
+            },
+            "audio": "de_audio/i_spoke.mp3"
+        },
+        "you_spoke": {
+            "translation": "du sprachst",
+            "level": 0,
+            "example": {
+                "you_spoke_english": "Du sprachst Englisch."
+            },
+            "audio": "de_audio/you_spoke.mp3"
+        },
+        "he_she_it_spoke": {
+            "translation": "er/sie/es sprach",
+            "level": 0,
+            "example": {
+                "he_spoke_french": "Er sprach Französisch."
+            },
+            "audio": "de_audio/he_she_it_spoke.mp3"
+        },
+        "we_spoke": {
+            "translation": "wir sprachen",
+            "level": 0,
+            "example": {
+                "we_spoke_together": "Wir sprachen zusammen."
+            },
+            "audio": "de_audio/we_spoke.mp3"
+        },
+        "you_plural_spoke": {
+            "translation": "ihr spracht",
+            "level": 0,
+            "example": {
+                "you_spoke_spanish": "Ihr spracht Spanisch."
+            },
+            "audio": "de_audio/you_plural_spoke.mp3"
+        },
+        "they_spoke": {
+            "translation": "sie sprachen",
+            "level": 0,
+            "example": {
+                "they_spoke_italian": "Sie sprachen Italienisch."
+            },
+            "audio": "de_audio/they_spoke.mp3"
+        }
+    },
+    "present": {
+        "i_speak": {
+            "translation": "ich spreche",
+            "level": 0,
+            "example": {
+                "i_speak_german": "Ich spreche Deutsch."
+            },
+            "audio": "de_audio/i_speak.mp3"
+        },
+        "you_speak": {
+            "translation": "du sprichst",
+            "level": 0,
+            "example": {
+                "you_speak_english": "Du sprichst Englisch."
+            },
+            "audio": "de_audio/you_speak.mp3"
+        },
+        "he_she_it_speaks": {
+            "translation": "er/sie/es spricht",
+            "level": 0,
+            "example": {
+                "he_speaks_french": "Er spricht Französisch."
+            },
+            "audio": "de_audio/he_she_it_speaks.mp3"
+        },
+        "we_speak": {
+            "translation": "wir sprechen",
+            "level": 0,
+            "example": {
+                "we_speak_together": "Wir sprechen zusammen."
+            },
+            "audio": "de_audio/we_speak.mp3"
+        },
+        "you_plural_speak": {
+            "translation": "ihr sprecht",
+            "level": 0,
+            "example": {
+                "you_speak_spanish": "Ihr sprecht Spanisch."
+            },
+            "audio": "de_audio/you_plural_speak.mp3"
+        },
+        "they_speak": {
+            "translation": "sie sprechen",
+            "level": 0,
+            "example": {
+                "they_speak_italian": "Sie sprechen Italienisch."
+            },
+            "audio": "de_audio/they_speak.mp3"
+        }
+    },
+    "future": {
+        "i_will_speak": {
+            "translation": "ich werde sprechen",
+            "level": 0,
+            "example": {
+                "i_will_speak_german": "Ich werde Deutsch sprechen."
+            },
+            "audio": "de_audio/i_will_speak.mp3"
+        },
+        "you_will_speak": {
+            "translation": "du wirst sprechen",
+            "level": 0,
+            "example": {
+                "you_will_speak_english": "Du wirst Englisch sprechen."
+            },
+            "audio": "de_audio/you_will_speak.mp3"
+        },
+        "he_she_it_will_speak": {
+            "translation": "er/sie/es wird sprechen",
+            "level": 0,
+            "example": {
+                "he_will_speak_french": "Er wird Französisch sprechen."
+            },
+            "audio": "de_audio/he_she_it_will_speak.mp3"
+        },
+        "we_will_speak": {
+            "translation": "wir werden sprechen",
+            "level": 0,
+            "example": {
+                "we_will_speak_together": "Wir werden zusammen sprechen."
+            },
+            "audio": "de_audio/we_will_speak.mp3"
+        },
+        "you_plural_will_speak": {
+            "translation": "ihr werdet sprechen",
+            "level": 0,
+            "example": {
+                "you_will_speak_spanish": "Ihr werdet Spanisch sprechen."
+            },
+            "audio": "de_audio/you_plural_will_speak.mp3"
+        },
+        "they_will_speak": {
+            "translation": "sie werden sprechen",
+            "level": 0,
+            "example": {
+                "they_will_speak_italian": "Sie werden Italienisch sprechen."
+            },
+            "audio": "de_audio/they_will_speak.mp3"
+        }
+    }
+}

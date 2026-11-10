@@ -1,0 +1,154 @@
+{
+    "infinitive": "enden",
+    "level": 0,
+    "past": {
+        "i_ended": {
+            "translation": "ich endete",
+            "level": 0,
+            "example": {
+                "i_ended_the_meeting": "Ich endete die Besprechung."
+            },
+            "audio": "de_audio/i_ended.mp3"
+        },
+        "you_ended": {
+            "translation": "du endetest",
+            "level": 0,
+            "example": {
+                "you_ended_the_call": "Du endetest das Gespräch."
+            },
+            "audio": "de_audio/you_ended.mp3"
+        },
+        "he_she_it_ended": {
+            "translation": "er/sie/es endete",
+            "level": 0,
+            "example": {
+                "he_ended_the_show": "Er endete die Show."
+            },
+            "audio": "de_audio/he_she_it_ended.mp3"
+        },
+        "we_ended": {
+            "translation": "wir endeten",
+            "level": 0,
+            "example": {
+                "we_ended_the_party": "Wir endeten die Party."
+            },
+            "audio": "de_audio/we_ended.mp3"
+        },
+        "you_plural_ended": {
+            "translation": "ihr endetet",
+            "level": 0,
+            "example": {
+                "you_ended_the_game": "Ihr endetet das Spiel."
+            },
+            "audio": "de_audio/you_plural_ended.mp3"
+        },
+        "they_ended": {
+            "translation": "sie endeten",
+            "level": 0,
+            "example": {
+                "they_ended_the_event": "Sie endeten die Veranstaltung."
+            },
+            "audio": "de_audio/they_ended.mp3"
+        }
+    },
+    "present": {
+        "i_end": {
+            "translation": "ich ende",
+            "level": 0,
+            "example": {
+                "i_end_the_meeting": "Ich ende die Besprechung."
+            },
+            "audio": "de_audio/i_end.mp3"
+        },
+        "you_end": {
+            "translation": "du endest",
+            "level": 0,
+            "example": {
+                "you_end_the_call": "Du endest das Gespräch."
+            },
+            "audio": "de_audio/you_end.mp3"
+        },
+        "he_she_it_ends": {
+            "translation": "er/sie/es endet",
+            "level": 0,
+            "example": {
+                "he_ends_the_show": "Er endet die Show."
+            },
+            "audio": "de_audio/he_she_it_ends.mp3"
+        },
+        "we_end": {
+            "translation": "wir enden",
+            "level": 0,
+            "example": {
+                "we_end_the_party": "Wir enden die Party."
+            },
+            "audio": "de_audio/we_end.mp3"
+        },
+        "you_plural_end": {
+            "translation": "ihr endet",
+            "level": 0,
+            "example": {
+                "you_end_the_game": "Ihr endet das Spiel."
+            },
+            "audio": "de_audio/you_plural_end.mp3"
+        },
+        "they_end": {
+            "translation": "sie enden",
+            "level": 0,
+            "example": {
+                "they_end_the_event": "Sie enden die Veranstaltung."
+            },
+            "audio": "de_audio/they_end.mp3"
+        }
+    },
+    "future": {
+        "i_will_end": {
+            "translation": "ich werde enden",
+            "level": 0,
+            "example": {
+                "i_will_end_the_meeting": "Ich werde die Besprechung beenden."
+            },
+            "audio": "de_audio/i_will_end.mp3"
+        },
+        "you_will_end": {
+            "translation": "du wirst enden",
+            "level": 0,
+            "example": {
+                "you_will_end_the_call": "Du wirst das Gespräch beenden."
+            },
+            "audio": "de_audio/you_will_end.mp3"
+        },
+        "he_she_it_will_end": {
+            "translation": "er/sie/es wird enden",
+            "level": 0,
+            "example": {
+                "he_will_end_the_show": "Er wird die Show beenden."
+            },
+            "audio": "de_audio/he_she_it_will_end.mp3"
+        },
+        "we_will_end": {
+            "translation": "wir werden enden",
+            "level": 0,
+            "example": {
+                "we_will_end_the_party": "Wir werden die Party beenden."
+            },
+            "audio": "de_audio/we_will_end.mp3"
+        },
+        "you_plural_will_end": {
+            "translation": "ihr werdet enden",
+            "level": 0,
+            "example": {
+                "you_will_end_the_game": "Ihr werdet das Spiel beenden."
+            },
+            "audio": "de_audio/you_plural_will_end.mp3"
+        },
+        "they_will_end": {
+            "translation": "sie werden enden",
+            "level": 0,
+            "example": {
+                "they_will_end_the_event": "Sie werden die Veranstaltung beenden."
+            },
+            "audio": "de_audio/they_will_end.mp3"
+        }
+    }
+}

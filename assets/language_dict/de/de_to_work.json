@@ -1,0 +1,154 @@
+{
+    "infinitive": "arbeiten",
+    "level": 0,
+    "past": {
+        "i_worked": {
+            "translation": "ich arbeitete",
+            "level": 0,
+            "example": {
+                "i_worked_in_an_office": "Ich arbeitete in einem Büro."
+            },
+            "audio": "de_audio/i_worked.mp3"
+        },
+        "you_worked": {
+            "translation": "du arbeitetest",
+            "level": 0,
+            "example": {
+                "you_worked_hard": "Du arbeitetest hart."
+            },
+            "audio": "de_audio/you_worked.mp3"
+        },
+        "he_she_it_worked": {
+            "translation": "er/sie/es arbeitete",
+            "level": 0,
+            "example": {
+                "he_worked_in_a_factory": "Er arbeitete in einer Fabrik."
+            },
+            "audio": "de_audio/he_she_it_worked.mp3"
+        },
+        "we_worked": {
+            "translation": "wir arbeiteten",
+            "level": 0,
+            "example": {
+                "we_worked_together": "Wir arbeiteten zusammen."
+            },
+            "audio": "de_audio/we_worked.mp3"
+        },
+        "you_plural_worked": {
+            "translation": "ihr arbeitetet",
+            "level": 0,
+            "example": {
+                "you_worked_late": "Ihr arbeitetet spät."
+            },
+            "audio": "de_audio/you_plural_worked.mp3"
+        },
+        "they_worked": {
+            "translation": "sie arbeiteten",
+            "level": 0,
+            "example": {
+                "they_worked_on_a_project": "Sie arbeiteten an einem Projekt."
+            },
+            "audio": "de_audio/they_worked.mp3"
+        }
+    },
+    "present": {
+        "i_work": {
+            "translation": "ich arbeite",
+            "level": 0,
+            "example": {
+                "i_work_in_an_office": "Ich arbeite in einem Büro."
+            },
+            "audio": "de_audio/i_work.mp3"
+        },
+        "you_work": {
+            "translation": "du arbeitest",
+            "level": 0,
+            "example": {
+                "you_work_hard": "Du arbeitest hart."
+            },
+            "audio": "de_audio/you_work.mp3"
+        },
+        "he_she_it_works": {
+            "translation": "er/sie/es arbeitet",
+            "level": 0,
+            "example": {
+                "he_works_in_a_factory": "Er arbeitet in einer Fabrik."
+            },
+            "audio": "de_audio/he_she_it_works.mp3"
+        },
+        "we_work": {
+            "translation": "wir arbeiten",
+            "level": 0,
+            "example": {
+                "we_work_together": "Wir arbeiten zusammen."
+            },
+            "audio": "de_audio/we_work.mp3"
+        },
+        "you_plural_work": {
+            "translation": "ihr arbeitet",
+            "level": 0,
+            "example": {
+                "you_work_late": "Ihr arbeitet spät."
+            },
+            "audio": "de_audio/you_plural_work.mp3"
+        },
+        "they_work": {
+            "translation": "sie arbeiten",
+            "level": 0,
+            "example": {
+                "they_work_on_a_project": "Sie arbeiten an einem Projekt."
+            },
+            "audio": "de_audio/they_work.mp3"
+        }
+    },
+    "future": {
+        "i_will_work": {
+            "translation": "ich werde arbeiten",
+            "level": 0,
+            "example": {
+                "i_will_work_in_an_office": "Ich werde in einem Büro arbeiten."
+            },
+            "audio": "de_audio/i_will_work.mp3"
+        },
+        "you_will_work": {
+            "translation": "du wirst arbeiten",
+            "level": 0,
+            "example": {
+                "you_will_work_hard": "Du wirst hart arbeiten."
+            },
+            "audio": "de_audio/you_will_work.mp3"
+        },
+        "he_she_it_will_work": {
+            "translation": "er/sie/es wird arbeiten",
+            "level": 0,
+            "example": {
+                "he_will_work_in_a_factory": "Er wird in einer Fabrik arbeiten."
+            },
+            "audio": "de_audio/he_she_it_will_work.mp3"
+        },
+        "we_will_work": {
+            "translation": "wir werden arbeiten",
+            "level": 0,
+            "example": {
+                "we_will_work_together": "Wir werden zusammen arbeiten."
+            },
+            "audio": "de_audio/we_will_work.mp3"
+        },
+        "you_plural_will_work": {
+            "translation": "ihr werdet arbeiten",
+            "level": 0,
+            "example": {
+                "you_will_work_late": "Ihr werdet spät arbeiten."
+            },
+            "audio": "de_audio/you_plural_will_work.mp3"
+        },
+        "they_will_work": {
+            "translation": "sie werden arbeiten",
+            "level": 0,
+            "example": {
+                "they_will_work_on_a_project": "Sie werden an einem Projekt arbeiten."
+            },
+            "audio": "de_audio/they_will_work.mp3"
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "infinitive": "to help",
+    "level": 0,
+    "past": {
+        "i_helped": {
+            "translation": "I helped",
+            "level": 0,
+            "example": {
+                "i_helped_my_friend": "I helped my friend."
+            },
+            "audio": "en_audio/i_helped.mp3"
+        },
+        "you_helped": {
+            "translation": "you helped",
+            "level": 0,
+            "example": {
+                "you_helped_your_sister": "You helped your sister."
+            },
+            "audio": "en_audio/you_helped.mp3"
+        },
+        "he_she_it_helped": {
+            "translation": "he/she/it helped",
+            "level": 0,
+            "example": {
+                "he_helped_his_neighbor": "He helped his neighbor."
+            },
+            "audio": "en_audio/he_she_it_helped.mp3"
+        },
+        "we_helped": {
+            "translation": "we helped",
+            "level": 0,
+            "example": {
+                "we_helped_the_teacher": "We helped the teacher."
+            },
+            "audio": "en_audio/we_helped.mp3"
+        },
+        "you_plural_helped": {
+            "translation": "you helped (pl)",
+            "level": 0,
+            "example": {
+                "you_helped_the_team": "You helped the team."
+            },
+            "audio": "en_audio/you_plural_helped.mp3"
+        },
+        "they_helped": {
+            "translation": "they helped",
+            "level": 0,
+            "example": {
+                "they_helped_the_student": "They helped the student."
+            },
+            "audio": "en_audio/they_helped.mp3"
+        }
+    },
+    "present": {
+        "i_help": {
+            "translation": "I help",
+            "level": 0,
+            "example": {
+                "i_help_my_friend": "I help my friend."
+            },
+            "audio": "en_audio/i_help.mp3"
+        },
+        "you_help": {
+            "translation": "you help",
+            "level": 0,
+            "example": {
+                "you_help_your_sister": "You help your sister."
+            },
+            "audio": "en_audio/you_help.mp3"
+        },
+        "he_she_it_helps": {
+            "translation": "he/she/it helps",
+            "level": 0,
+            "example": {
+                "he_helps_his_neighbor": "He helps his neighbor."
+            },
+            "audio": "en_audio/he_she_it_helps.mp3"
+        },
+        "we_help": {
+            "translation": "we help",
+            "level": 0,
+            "example": {
+                "we_help_the_teacher": "We help the teacher."
+            },
+            "audio": "en_audio/we_help.mp3"
+        },
+        "you_plural_help": {
+            "translation": "you help (pl)",
+            "level": 0,
+            "example": {
+                "you_help_the_team": "You help the team."
+            },
+            "audio": "en_audio/you_plural_help.mp3"
+        },
+        "they_help": {
+            "translation": "they help",
+            "level": 0,
+            "example": {
+                "they_help_the_student": "They help the student."
+            },
+            "audio": "en_audio/they_help.mp3"
+        }
+    },
+    "future": {
+        "i_will_help": {
+            "translation": "I will help",
+            "level": 0,
+            "example": {
+                "i_will_help_my_friend": "I will help my friend."
+            },
+            "audio": "en_audio/i_will_help.mp3"
+        },
+        "you_will_help": {
+            "translation": "you will help",
+            "level": 0,
+            "example": {
+                "you_will_help_your_sister": "You will help your sister."
+            },
+            "audio": "en_audio/you_will_help.mp3"
+        },
+        "he_she_it_will_help": {
+            "translation": "he/she/it will help",
+            "level": 0,
+            "example": {
+                "he_will_help_his_neighbor": "He will help his neighbor."
+            },
+            "audio": "en_audio/he_she_it_will_help.mp3"
+        },
+        "we_will_help": {
+            "translation": "we will help",
+            "level": 0,
+            "example": {
+                "we_will_help_the_teacher": "We will help the teacher."
+            },
+            "audio": "en_audio/we_will_help.mp3"
+        },
+        "you_plural_will_help": {
+            "translation": "you will help (pl)",
+            "level": 0,
+            "example": {
+                "you_will_help_the_team": "You will help the team."
+            },
+            "audio": "en_audio/you_plural_will_help.mp3"
+        },
+        "they_will_help": {
+            "translation": "they will help",
+            "level": 0,
+            "example": {
+                "they_will_help_the_student": "They will help the student."
+            },
+            "audio": "en_audio/they_will_help.mp3"
+        }
+    }
+}

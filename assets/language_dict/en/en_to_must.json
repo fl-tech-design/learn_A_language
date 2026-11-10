@@ -1,0 +1,154 @@
+{
+    "infinitive": "must",
+    "level": 0,
+    "past": {
+        "i_had_to": {
+            "translation": "I had to",
+            "level": 0,
+            "example": {
+                "i_had_to_work": "I had to work."
+            },
+            "audio": "en_audio/i_had_to.mp3"
+        },
+        "you_had_to": {
+            "translation": "you had to",
+            "level": 0,
+            "example": {
+                "you_had_to_study": "You had to study."
+            },
+            "audio": "en_audio/you_had_to.mp3"
+        },
+        "he_she_it_had_to": {
+            "translation": "he/she/it had to",
+            "level": 0,
+            "example": {
+                "he_had_to_leave": "He had to leave."
+            },
+            "audio": "en_audio/he_she_it_had_to.mp3"
+        },
+        "we_had_to": {
+            "translation": "we had to",
+            "level": 0,
+            "example": {
+                "we_had_to_wait": "We had to wait."
+            },
+            "audio": "en_audio/we_had_to.mp3"
+        },
+        "you_plural_had_to": {
+            "translation": "you had to (pl)",
+            "level": 0,
+            "example": {
+                "you_had_to_help": "You had to help."
+            },
+            "audio": "en_audio/you_plural_had_to.mp3"
+        },
+        "they_had_to": {
+            "translation": "they had to",
+            "level": 0,
+            "example": {
+                "they_had_to_stay": "They had to stay."
+            },
+            "audio": "en_audio/they_had_to.mp3"
+        }
+    },
+    "present": {
+        "i_must": {
+            "translation": "I must",
+            "level": 0,
+            "example": {
+                "i_must_work": "I must work."
+            },
+            "audio": "en_audio/i_must.mp3"
+        },
+        "you_must": {
+            "translation": "you must",
+            "level": 0,
+            "example": {
+                "you_must_study": "You must study."
+            },
+            "audio": "en_audio/you_must.mp3"
+        },
+        "he_she_it_must": {
+            "translation": "he/she/it must",
+            "level": 0,
+            "example": {
+                "he_must_leave": "He must leave."
+            },
+            "audio": "en_audio/he_she_it_must.mp3"
+        },
+        "we_must": {
+            "translation": "we must",
+            "level": 0,
+            "example": {
+                "we_must_wait": "We must wait."
+            },
+            "audio": "en_audio/we_must.mp3"
+        },
+        "you_plural_must": {
+            "translation": "you must (pl)",
+            "level": 0,
+            "example": {
+                "you_must_help": "You must help."
+            },
+            "audio": "en_audio/you_plural_must.mp3"
+        },
+        "they_must": {
+            "translation": "they must",
+            "level": 0,
+            "example": {
+                "they_must_stay": "They must stay."
+            },
+            "audio": "en_audio/they_must.mp3"
+        }
+    },
+    "future": {
+        "i_will_have_to": {
+            "translation": "I will have to",
+            "level": 0,
+            "example": {
+                "i_will_have_to_work": "I will have to work."
+            },
+            "audio": "en_audio/i_will_have_to.mp3"
+        },
+        "you_will_have_to": {
+            "translation": "you will have to",
+            "level": 0,
+            "example": {
+                "you_will_have_to_study": "You will have to study."
+            },
+            "audio": "en_audio/you_will_have_to.mp3"
+        },
+        "he_she_it_will_have_to": {
+            "translation": "he/she/it will have to",
+            "level": 0,
+            "example": {
+                "he_will_have_to_leave": "He will have to leave."
+            },
+            "audio": "en_audio/he_she_it_will_have_to.mp3"
+        },
+        "we_will_have_to": {
+            "translation": "we will have to",
+            "level": 0,
+            "example": {
+                "we_will_have_to_wait": "We will have to wait."
+            },
+            "audio": "en_audio/we_will_have_to.mp3"
+        },
+        "you_plural_will_have_to": {
+            "translation": "you will have to (pl)",
+            "level": 0,
+            "example": {
+                "you_will_have_to_help": "You will have to help."
+            },
+            "audio": "en_audio/you_plural_will_have_to.mp3"
+        },
+        "they_will_have_to": {
+            "translation": "they will have to",
+            "level": 0,
+            "example": {
+                "they_will_have_to_stay": "They will have to stay."
+            },
+            "audio": "en_audio/they_will_have_to.mp3"
+        }
+    }
+}

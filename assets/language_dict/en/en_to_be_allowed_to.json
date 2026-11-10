@@ -1,0 +1,154 @@
+{
+    "infinitive": "to be allowed to",
+    "level": 0,
+    "past": {
+        "i_was_allowed_to": {
+            "translation": "I was allowed to",
+            "level": 0,
+            "example": {
+                "i_was_allowed_to_go": "I was allowed to go."
+            },
+            "audio": "en_audio/i_was_allowed_to.mp3"
+        },
+        "you_were_allowed_to": {
+            "translation": "you were allowed to",
+            "level": 0,
+            "example": {
+                "you_were_allowed_to_stay": "You were allowed to stay."
+            },
+            "audio": "en_audio/you_were_allowed_to.mp3"
+        },
+        "he_she_it_was_allowed_to": {
+            "translation": "he/she/it was allowed to",
+            "level": 0,
+            "example": {
+                "he_was_allowed_to_play": "He was allowed to play."
+            },
+            "audio": "en_audio/he_she_it_was_allowed_to.mp3"
+        },
+        "we_were_allowed_to": {
+            "translation": "we were allowed to",
+            "level": 0,
+            "example": {
+                "we_were_allowed_to_leave": "We were allowed to leave."
+            },
+            "audio": "en_audio/we_were_allowed_to.mp3"
+        },
+        "you_plural_were_allowed_to": {
+            "translation": "you were allowed to (pl)",
+            "level": 0,
+            "example": {
+                "you_were_allowed_to_speak": "You were allowed to speak."
+            },
+            "audio": "en_audio/you_plural_were_allowed_to.mp3"
+        },
+        "they_were_allowed_to": {
+            "translation": "they were allowed to",
+            "level": 0,
+            "example": {
+                "they_were_allowed_to_laugh": "They were allowed to laugh."
+            },
+            "audio": "en_audio/they_were_allowed_to.mp3"
+        }
+    },
+    "present": {
+        "i_am_allowed_to": {
+            "translation": "I am allowed to",
+            "level": 0,
+            "example": {
+                "i_am_allowed_to_go": "I am allowed to go."
+            },
+            "audio": "en_audio/i_am_allowed_to.mp3"
+        },
+        "you_are_allowed_to": {
+            "translation": "you are allowed to",
+            "level": 0,
+            "example": {
+                "you_are_allowed_to_stay": "You are allowed to stay."
+            },
+            "audio": "en_audio/you_are_allowed_to.mp3"
+        },
+        "he_she_it_is_allowed_to": {
+            "translation": "he/she/it is allowed to",
+            "level": 0,
+            "example": {
+                "he_is_allowed_to_play": "He is allowed to play."
+            },
+            "audio": "en_audio/he_she_it_is_allowed_to.mp3"
+        },
+        "we_are_allowed_to": {
+            "translation": "we are allowed to",
+            "level": 0,
+            "example": {
+                "we_are_allowed_to_leave": "We are allowed to leave."
+            },
+            "audio": "en_audio/we_are_allowed_to.mp3"
+        },
+        "you_plural_are_allowed_to": {
+            "translation": "you are allowed to (pl)",
+            "level": 0,
+            "example": {
+                "you_are_allowed_to_speak": "You are allowed to speak."
+            },
+            "audio": "en_audio/you_plural_are_allowed_to.mp3"
+        },
+        "they_are_allowed_to": {
+            "translation": "they are allowed to",
+            "level": 0,
+            "example": {
+                "they_are_allowed_to_laugh": "They are allowed to laugh."
+            },
+            "audio": "en_audio/they_are_allowed_to.mp3"
+        }
+    },
+    "future": {
+        "i_will_be_allowed_to": {
+            "translation": "I will be allowed to",
+            "level": 0,
+            "example": {
+                "i_will_be_allowed_to_go": "I will be allowed to go."
+            },
+            "audio": "en_audio/i_will_be_allowed_to.mp3"
+        },
+        "you_will_be_allowed_to": {
+            "translation": "you will be allowed to",
+            "level": 0,
+            "example": {
+                "you_will_be_allowed_to_stay": "You will be allowed to stay."
+            },
+            "audio": "en_audio/you_will_be_allowed_to.mp3"
+        },
+        "he_she_it_will_be_allowed_to": {
+            "translation": "he/she/it will be allowed to",
+            "level": 0,
+            "example": {
+                "he_will_be_allowed_to_play": "He will be allowed to play."
+            },
+            "audio": "en_audio/he_she_it_will_be_allowed_to.mp3"
+        },
+        "we_will_be_allowed_to": {
+            "translation": "we will be allowed to",
+            "level": 0,
+            "example": {
+                "we_will_be_allowed_to_leave": "We will be allowed to leave."
+            },
+            "audio": "en_audio/we_will_be_allowed_to.mp3"
+        },
+        "you_plural_will_be_allowed_to": {
+            "translation": "you will be allowed to (pl)",
+            "level": 0,
+            "example": {
+                "you_will_be_allowed_to_speak": "You will be allowed to speak."
+            },
+            "audio": "en_audio/you_plural_will_be_allowed_to.mp3"
+        },
+        "they_will_be_allowed_to": {
+            "translation": "they will be allowed to",
+            "level": 0,
+            "example": {
+                "they_will_be_allowed_to_laugh": "They will be allowed to laugh."
+            },
+            "audio": "en_audio/they_will_be_allowed_to.mp3"
+        }
+    }
+}

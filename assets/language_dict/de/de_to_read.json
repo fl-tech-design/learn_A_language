@@ -1,0 +1,154 @@
+{
+    "infinitive": "lesen",
+    "level": 0,
+    "past": {
+        "i_read": {
+            "translation": "ich las",
+            "level": 0,
+            "example": {
+                "i_read_a_book": "Ich las ein Buch."
+            },
+            "audio": "de_audio/i_read.mp3"
+        },
+        "you_read": {
+            "translation": "du lasest",
+            "level": 0,
+            "example": {
+                "you_read_a_magazine": "Du lasest eine Zeitschrift."
+            },
+            "audio": "de_audio/you_read.mp3"
+        },
+        "he_she_it_read": {
+            "translation": "er/sie/es las",
+            "level": 0,
+            "example": {
+                "he_read_a_newspaper": "Er las eine Zeitung."
+            },
+            "audio": "de_audio/he_she_it_read.mp3"
+        },
+        "we_read": {
+            "translation": "wir lasen",
+            "level": 0,
+            "example": {
+                "we_read_a_story": "Wir lasen eine Geschichte."
+            },
+            "audio": "de_audio/we_read.mp3"
+        },
+        "you_plural_read": {
+            "translation": "ihr last",
+            "level": 0,
+            "example": {
+                "you_read_a_poem": "Ihr last ein Gedicht."
+            },
+            "audio": "de_audio/you_plural_read.mp3"
+        },
+        "they_read": {
+            "translation": "sie lasen",
+            "level": 0,
+            "example": {
+                "they_read_a_letter": "Sie lasen einen Brief."
+            },
+            "audio": "de_audio/they_read.mp3"
+        }
+    },
+    "present": {
+        "i_read": {
+            "translation": "ich lese",
+            "level": 0,
+            "example": {
+                "i_read_a_book": "Ich lese ein Buch."
+            },
+            "audio": "de_audio/i_read.mp3"
+        },
+        "you_read": {
+            "translation": "du liest",
+            "level": 0,
+            "example": {
+                "you_read_a_magazine": "Du liest eine Zeitschrift."
+            },
+            "audio": "de_audio/you_read.mp3"
+        },
+        "he_she_it_reads": {
+            "translation": "er/sie/es liest",
+            "level": 0,
+            "example": {
+                "he_reads_a_newspaper": "Er liest eine Zeitung."
+            },
+            "audio": "de_audio/he_she_it_reads.mp3"
+        },
+        "we_read": {
+            "translation": "wir lesen",
+            "level": 0,
+            "example": {
+                "we_read_a_story": "Wir lesen eine Geschichte."
+            },
+            "audio": "de_audio/we_read.mp3"
+        },
+        "you_plural_read": {
+            "translation": "ihr lest",
+            "level": 0,
+            "example": {
+                "you_read_a_poem": "Ihr lest ein Gedicht."
+            },
+            "audio": "de_audio/you_plural_read.mp3"
+        },
+        "they_read": {
+            "translation": "sie lesen",
+            "level": 0,
+            "example": {
+                "they_read_a_letter": "Sie lesen einen Brief."
+            },
+            "audio": "de_audio/they_read.mp3"
+        }
+    },
+    "future": {
+        "i_will_read": {
+            "translation": "ich werde lesen",
+            "level": 0,
+            "example": {
+                "i_will_read_a_book": "Ich werde ein Buch lesen."
+            },
+            "audio": "de_audio/i_will_read.mp3"
+        },
+        "you_will_read": {
+            "translation": "du wirst lesen",
+            "level": 0,
+            "example": {
+                "you_will_read_a_magazine": "Du wirst eine Zeitschrift lesen."
+            },
+            "audio": "de_audio/you_will_read.mp3"
+        },
+        "he_she_it_will_read": {
+            "translation": "er/sie/es wird lesen",
+            "level": 0,
+            "example": {
+                "he_will_read_a_newspaper": "Er wird eine Zeitung lesen."
+            },
+            "audio": "de_audio/he_she_it_will_read.mp3"
+        },
+        "we_will_read": {
+            "translation": "wir werden lesen",
+            "level": 0,
+            "example": {
+                "we_will_read_a_story": "Wir werden eine Geschichte lesen."
+            },
+            "audio": "de_audio/we_will_read.mp3"
+        },
+        "you_plural_will_read": {
+            "translation": "ihr werdet lesen",
+            "level": 0,
+            "example": {
+                "you_will_read_a_poem": "Ihr werdet ein Gedicht lesen."
+            },
+            "audio": "de_audio/you_plural_will_read.mp3"
+        },
+        "they_will_read": {
+            "translation": "sie werden lesen",
+            "level": 0,
+            "example": {
+                "they_will_read_a_letter": "Sie werden einen Brief lesen."
+            },
+            "audio": "de_audio/they_will_read.mp3"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+name: learn_a_language
+description: A language learning app - Flutter migration from Kivy.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  go_router: ^12.1.0
+  path_provider: ^2.1.1
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/game_assets/
+    - assets/data_base/
+    - assets/data_app/
+    - assets/data_app/files_user/
+    - assets/language_dict/de/
+    - assets/language_dict/en/
+
+  fonts:
+    - family: Jura
+      fonts:
+        - asset: assets/fonts/Jura-Light.otf
+          weight: 300
+        - asset: assets/fonts/Jura-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Jura-DemiBold.otf
+          weight: 700
+    - family: Boycott
+      fonts:
+        - asset: assets/fonts/BOYCOTT_.ttf
+    - family: Cmunobx
+      fonts:
+        - asset: assets/fonts/cmunobx.ttf
+    - family: LiberationSerif
+      fonts:
+        - asset: assets/fonts/LiberationSerif-Regular.ttf

@@ -1,0 +1,154 @@
+{
+    "infinitive": "to understand",
+    "level": 0,
+    "past": {
+        "i_understood": {
+            "translation": "I understood",
+            "level": 0,
+            "example": {
+                "i_understood_the_question": "I understood the question."
+            },
+            "audio": "en_audio/i_understood.mp3"
+        },
+        "you_understood": {
+            "translation": "you understood",
+            "level": 0,
+            "example": {
+                "you_understood_the_problem": "You understood the problem."
+            },
+            "audio": "en_audio/you_understood.mp3"
+        },
+        "he_she_it_understood": {
+            "translation": "he/she/it understood",
+            "level": 0,
+            "example": {
+                "he_understood_the_situation": "He understood the situation."
+            },
+            "audio": "en_audio/he_she_it_understood.mp3"
+        },
+        "we_understood": {
+            "translation": "we understood",
+            "level": 0,
+            "example": {
+                "we_understood_the_plan": "We understood the plan."
+            },
+            "audio": "en_audio/we_understood.mp3"
+        },
+        "you_plural_understood": {
+            "translation": "you understood (pl)",
+            "level": 0,
+            "example": {
+                "you_understood_the_task": "You understood the task."
+            },
+            "audio": "en_audio/you_plural_understood.mp3"
+        },
+        "they_understood": {
+            "translation": "they understood",
+            "level": 0,
+            "example": {
+                "they_understood_the_rules": "They understood the rules."
+            },
+            "audio": "en_audio/they_understood.mp3"
+        }
+    },
+    "present": {
+        "i_understand": {
+            "translation": "I understand",
+            "level": 0,
+            "example": {
+                "i_understand_the_question": "I understand the question."
+            },
+            "audio": "en_audio/i_understand.mp3"
+        },
+        "you_understand": {
+            "translation": "you understand",
+            "level": 0,
+            "example": {
+                "you_understand_the_problem": "You understand the problem."
+            },
+            "audio": "en_audio/you_understand.mp3"
+        },
+        "he_she_it_understands": {
+            "translation": "he/she/it understands",
+            "level": 0,
+            "example": {
+                "he_understands_the_situation": "He understands the situation."
+            },
+            "audio": "en_audio/he_she_it_understands.mp3"
+        },
+        "we_understand": {
+            "translation": "we understand",
+            "level": 0,
+            "example": {
+                "we_understand_the_plan": "We understand the plan."
+            },
+            "audio": "en_audio/we_understand.mp3"
+        },
+        "you_plural_understand": {
+            "translation": "you understand (pl)",
+            "level": 0,
+            "example": {
+                "you_understand_the_task": "You understand the task."
+            },
+            "audio": "en_audio/you_plural_understand.mp3"
+        },
+        "they_understand": {
+            "translation": "they understand",
+            "level": 0,
+            "example": {
+                "they_understand_the_rules": "They understand the rules."
+            },
+            "audio": "en_audio/they_understand.mp3"
+        }
+    },
+    "future": {
+        "i_will_understand": {
+            "translation": "I will understand",
+            "level": 0,
+            "example": {
+                "i_will_understand_the_question": "I will understand the question."
+            },
+            "audio": "en_audio/i_will_understand.mp3"
+        },
+        "you_will_understand": {
+            "translation": "you will understand",
+            "level": 0,
+            "example": {
+                "you_will_understand_the_problem": "You will understand the problem."
+            },
+            "audio": "en_audio/you_will_understand.mp3"
+        },
+        "he_she_it_will_understand": {
+            "translation": "he/she/it will understand",
+            "level": 0,
+            "example": {
+                "he_will_understand_the_situation": "He will understand the situation."
+            },
+            "audio": "en_audio/he_she_it_will_understand.mp3"
+        },
+        "we_will_understand": {
+            "translation": "we will understand",
+            "level": 0,
+            "example": {
+                "we_will_understand_the_plan": "We will understand the plan."
+            },
+            "audio": "en_audio/we_will_understand.mp3"
+        },
+        "you_plural_will_understand": {
+            "translation": "you will understand (pl)",
+            "level": 0,
+            "example": {
+                "you_will_understand_the_task": "You will understand the task."
+            },
+            "audio": "en_audio/you_plural_will_understand.mp3"
+        },
+        "they_will_understand": {
+            "translation": "they will understand",
+            "level": 0,
+            "example": {
+                "they_will_understand_the_rules": "They will understand the rules."
+            },
+            "audio": "en_audio/they_will_understand.mp3"
+        }
+    }
+}

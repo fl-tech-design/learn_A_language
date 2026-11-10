@@ -1,0 +1,154 @@
+{
+    "infinitive": "to need",
+    "level": 0,
+    "past": {
+        "i_needed": {
+            "translation": "I needed",
+            "level": 0,
+            "example": {
+                "i_needed_help": "I needed help."
+            },
+            "audio": "en_audio/i_needed.mp3"
+        },
+        "you_needed": {
+            "translation": "you needed",
+            "level": 0,
+            "example": {
+                "you_needed_time": "You needed time."
+            },
+            "audio": "en_audio/you_needed.mp3"
+        },
+        "he_she_it_needed": {
+            "translation": "he/she/it needed",
+            "level": 0,
+            "example": {
+                "he_needed_money": "He needed money."
+            },
+            "audio": "en_audio/he_she_it_needed.mp3"
+        },
+        "we_needed": {
+            "translation": "we needed",
+            "level": 0,
+            "example": {
+                "we_needed_support": "We needed support."
+            },
+            "audio": "en_audio/we_needed.mp3"
+        },
+        "you_plural_needed": {
+            "translation": "you needed (pl)",
+            "level": 0,
+            "example": {
+                "you_needed_advice": "You needed advice."
+            },
+            "audio": "en_audio/you_plural_needed.mp3"
+        },
+        "they_needed": {
+            "translation": "they needed",
+            "level": 0,
+            "example": {
+                "they_needed_rest": "They needed rest."
+            },
+            "audio": "en_audio/they_needed.mp3"
+        }
+    },
+    "present": {
+        "i_need": {
+            "translation": "I need",
+            "level": 0,
+            "example": {
+                "i_need_help": "I need help."
+            },
+            "audio": "en_audio/i_need.mp3"
+        },
+        "you_need": {
+            "translation": "you need",
+            "level": 0,
+            "example": {
+                "you_need_time": "You need time."
+            },
+            "audio": "en_audio/you_need.mp3"
+        },
+        "he_she_it_needs": {
+            "translation": "he/she/it needs",
+            "level": 0,
+            "example": {
+                "he_needs_money": "He needs money."
+            },
+            "audio": "en_audio/he_she_it_needs.mp3"
+        },
+        "we_need": {
+            "translation": "we need",
+            "level": 0,
+            "example": {
+                "we_need_support": "We need support."
+            },
+            "audio": "en_audio/we_need.mp3"
+        },
+        "you_plural_need": {
+            "translation": "you need (pl)",
+            "level": 0,
+            "example": {
+                "you_need_advice": "You need advice."
+            },
+            "audio": "en_audio/you_plural_need.mp3"
+        },
+        "they_need": {
+            "translation": "they need",
+            "level": 0,
+            "example": {
+                "they_need_rest": "They need rest."
+            },
+            "audio": "en_audio/they_need.mp3"
+        }
+    },
+    "future": {
+        "i_will_need": {
+            "translation": "I will need",
+            "level": 0,
+            "example": {
+                "i_will_need_help": "I will need help."
+            },
+            "audio": "en_audio/i_will_need.mp3"
+        },
+        "you_will_need": {
+            "translation": "you will need",
+            "level": 0,
+            "example": {
+                "you_will_need_time": "You will need time."
+            },
+            "audio": "en_audio/you_will_need.mp3"
+        },
+        "he_she_it_will_need": {
+            "translation": "he/she/it will need",
+            "level": 0,
+            "example": {
+                "he_will_need_money": "He will need money."
+            },
+            "audio": "en_audio/he_she_it_will_need.mp3"
+        },
+        "we_will_need": {
+            "translation": "we will need",
+            "level": 0,
+            "example": {
+                "we_will_need_support": "We will need support."
+            },
+            "audio": "en_audio/we_will_need.mp3"
+        },
+        "you_plural_will_need": {
+            "translation": "you will need (pl)",
+            "level": 0,
+            "example": {
+                "you_will_need_advice": "You will need advice."
+            },
+            "audio": "en_audio/you_plural_will_need.mp3"
+        },
+        "they_will_need": {
+            "translation": "they will need",
+            "level": 0,
+            "example": {
+                "they_will_need_rest": "They will need rest."
+            },
+            "audio": "en_audio/they_will_need.mp3"
+        }
+    }
+}

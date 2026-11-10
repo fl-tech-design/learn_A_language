@@ -1,0 +1,154 @@
+{
+    "infinitive": "essen",
+    "level": 0,
+    "past": {
+        "i_ate": {
+            "translation": "ich aß",
+            "level": 0,
+            "example": {
+                "i_ate_breakfast": "Ich aß Frühstück."
+            },
+            "audio": "de_audio/i_ate.mp3"
+        },
+        "you_ate": {
+            "translation": "du aßest",
+            "level": 0,
+            "example": {
+                "you_ate_lunch": "Du aßest Mittagessen."
+            },
+            "audio": "de_audio/you_ate.mp3"
+        },
+        "he_she_it_ate": {
+            "translation": "er/sie/es aß",
+            "level": 0,
+            "example": {
+                "he_ate_dinner": "Er aß Abendessen."
+            },
+            "audio": "de_audio/he_she_it_ate.mp3"
+        },
+        "we_ate": {
+            "translation": "wir aßen",
+            "level": 0,
+            "example": {
+                "we_ate_together": "Wir aßen zusammen."
+            },
+            "audio": "de_audio/we_ate.mp3"
+        },
+        "you_plural_ate": {
+            "translation": "ihr aßt",
+            "level": 0,
+            "example": {
+                "you_ate_pizza": "Ihr aßt Pizza."
+            },
+            "audio": "de_audio/you_plural_ate.mp3"
+        },
+        "they_ate": {
+            "translation": "sie aßen",
+            "level": 0,
+            "example": {
+                "they_ate_sushi": "Sie aßen Sushi."
+            },
+            "audio": "de_audio/they_ate.mp3"
+        }
+    },
+    "present": {
+        "i_eat": {
+            "translation": "ich esse",
+            "level": 0,
+            "example": {
+                "i_eat_breakfast": "Ich esse Frühstück."
+            },
+            "audio": "de_audio/i_eat.mp3"
+        },
+        "you_eat": {
+            "translation": "du isst",
+            "level": 0,
+            "example": {
+                "you_eat_lunch": "Du isst Mittagessen."
+            },
+            "audio": "de_audio/you_eat.mp3"
+        },
+        "he_she_it_eats": {
+            "translation": "er/sie/es isst",
+            "level": 0,
+            "example": {
+                "he_eats_dinner": "Er isst Abendessen."
+            },
+            "audio": "de_audio/he_she_it_eats.mp3"
+        },
+        "we_eat": {
+            "translation": "wir essen",
+            "level": 0,
+            "example": {
+                "we_eat_together": "Wir essen zusammen."
+            },
+            "audio": "de_audio/we_eat.mp3"
+        },
+        "you_plural_eat": {
+            "translation": "ihr esst",
+            "level": 0,
+            "example": {
+                "you_eat_pizza": "Ihr esst Pizza."
+            },
+            "audio": "de_audio/you_plural_eat.mp3"
+        },
+        "they_eat": {
+            "translation": "sie essen",
+            "level": 0,
+            "example": {
+                "they_eat_sushi": "Sie essen Sushi."
+            },
+            "audio": "de_audio/they_eat.mp3"
+        }
+    },
+    "future": {
+        "i_will_eat": {
+            "translation": "ich werde essen",
+            "level": 0,
+            "example": {
+                "i_will_eat_breakfast": "Ich werde Frühstück essen."
+            },
+            "audio": "de_audio/i_will_eat.mp3"
+        },
+        "you_will_eat": {
+            "translation": "du wirst essen",
+            "level": 0,
+            "example": {
+                "you_will_eat_lunch": "Du wirst Mittagessen essen."
+            },
+            "audio": "de_audio/you_will_eat.mp3"
+        },
+        "he_she_it_will_eat": {
+            "translation": "er/sie/es wird essen",
+            "level": 0,
+            "example": {
+                "he_will_eat_dinner": "Er wird Abendessen essen."
+            },
+            "audio": "de_audio/he_she_it_will_eat.mp3"
+        },
+        "we_will_eat": {
+            "translation": "wir werden essen",
+            "level": 0,
+            "example": {
+                "we_will_eat_together": "Wir werden zusammen essen."
+            },
+            "audio": "de_audio/we_will_eat.mp3"
+        },
+        "you_plural_will_eat": {
+            "translation": "ihr werdet essen",
+            "level": 0,
+            "example": {
+                "you_will_eat_pizza": "Ihr werdet Pizza essen."
+            },
+            "audio": "de_audio/you_plural_will_eat.mp3"
+        },
+        "they_will_eat": {
+            "translation": "sie werden essen",
+            "level": 0,
+            "example": {
+                "they_will_eat_sushi": "Sie werden Sushi essen."
+            },
+            "audio": "de_audio/they_will_eat.mp3"
+        }
+    }
+}

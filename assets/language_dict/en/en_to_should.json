@@ -1,0 +1,154 @@
+{
+    "infinitive": "should",
+    "level": 0,
+    "past": {
+        "i_should_have": {
+            "translation": "I should have",
+            "level": 0,
+            "example": {
+                "i_should_have_studied": "I should have studied."
+            },
+            "audio": "en_audio/i_should_have.mp3"
+        },
+        "you_should_have": {
+            "translation": "you should have",
+            "level": 0,
+            "example": {
+                "you_should_have_helped": "You should have helped."
+            },
+            "audio": "en_audio/you_should_have.mp3"
+        },
+        "he_she_it_should_have": {
+            "translation": "he/she/it should have",
+            "level": 0,
+            "example": {
+                "he_should_have_listened": "He should have listened."
+            },
+            "audio": "en_audio/he_she_it_should_have.mp3"
+        },
+        "we_should_have": {
+            "translation": "we should have",
+            "level": 0,
+            "example": {
+                "we_should_have_waited": "We should have waited."
+            },
+            "audio": "en_audio/we_should_have.mp3"
+        },
+        "you_plural_should_have": {
+            "translation": "you should have (pl)",
+            "level": 0,
+            "example": {
+                "you_should_have_asked": "You should have asked."
+            },
+            "audio": "en_audio/you_plural_should_have.mp3"
+        },
+        "they_should_have": {
+            "translation": "they should have",
+            "level": 0,
+            "example": {
+                "they_should_have_stayed": "They should have stayed."
+            },
+            "audio": "en_audio/they_should_have.mp3"
+        }
+    },
+    "present": {
+        "i_should": {
+            "translation": "I should",
+            "level": 0,
+            "example": {
+                "i_should_study": "I should study."
+            },
+            "audio": "en_audio/i_should.mp3"
+        },
+        "you_should": {
+            "translation": "you should",
+            "level": 0,
+            "example": {
+                "you_should_help": "You should help."
+            },
+            "audio": "en_audio/you_should.mp3"
+        },
+        "he_she_it_should": {
+            "translation": "he/she/it should",
+            "level": 0,
+            "example": {
+                "he_should_listen": "He should listen."
+            },
+            "audio": "en_audio/he_she_it_should.mp3"
+        },
+        "we_should": {
+            "translation": "we should",
+            "level": 0,
+            "example": {
+                "we_should_wait": "We should wait."
+            },
+            "audio": "en_audio/we_should.mp3"
+        },
+        "you_plural_should": {
+            "translation": "you should (pl)",
+            "level": 0,
+            "example": {
+                "you_should_ask": "You should ask."
+            },
+            "audio": "en_audio/you_plural_should.mp3"
+        },
+        "they_should": {
+            "translation": "they should",
+            "level": 0,
+            "example": {
+                "they_should_stay": "They should stay."
+            },
+            "audio": "en_audio/they_should.mp3"
+        }
+    },
+    "future": {
+        "i_will_should": {
+            "translation": "I will should",
+            "level": 0,
+            "example": {
+                "i_will_should_study": "I will should study."
+            },
+            "audio": "en_audio/i_will_should.mp3"
+        },
+        "you_will_should": {
+            "translation": "you will should",
+            "level": 0,
+            "example": {
+                "you_will_should_help": "You will should help."
+            },
+            "audio": "en_audio/you_will_should.mp3"
+        },
+        "he_she_it_will_should": {
+            "translation": "he/she/it will should",
+            "level": 0,
+            "example": {
+                "he_will_should_listen": "He will should listen."
+            },
+            "audio": "en_audio/he_she_it_will_should.mp3"
+        },
+        "we_will_should": {
+            "translation": "we will should",
+            "level": 0,
+            "example": {
+                "we_will_should_wait": "We will should wait."
+            },
+            "audio": "en_audio/we_will_should.mp3"
+        },
+        "you_plural_will_should": {
+            "translation": "you will should (pl)",
+            "level": 0,
+            "example": {
+                "you_will_should_ask": "You will should ask."
+            },
+            "audio": "en_audio/you_plural_will_should.mp3"
+        },
+        "they_will_should": {
+            "translation": "they will should",
+            "level": 0,
+            "example": {
+                "they_will_should_stay": "They will should stay."
+            },
+            "audio": "en_audio/they_will_should.mp3"
+        }
+    }
+}

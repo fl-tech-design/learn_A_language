@@ -1,0 +1,154 @@
+{
+    "infinitive": "kommen",
+    "level": 0,
+    "past": {
+        "i_came": {
+            "translation": "ich kam",
+            "level": 0,
+            "example": {
+                "i_came_home": "Ich kam nach Hause."
+            },
+            "audio": "de_audio/i_came.mp3"
+        },
+        "you_came": {
+            "translation": "du kamst",
+            "level": 0,
+            "example": {
+                "you_came_late": "Du kamst spät."
+            },
+            "audio": "de_audio/you_came.mp3"
+        },
+        "he_she_it_came": {
+            "translation": "er/sie/es kam",
+            "level": 0,
+            "example": {
+                "he_came_to_the_party": "Er kam zur Party."
+            },
+            "audio": "de_audio/he_she_it_came.mp3"
+        },
+        "we_came": {
+            "translation": "wir kamen",
+            "level": 0,
+            "example": {
+                "we_came_together": "Wir kamen zusammen."
+            },
+            "audio": "de_audio/we_came.mp3"
+        },
+        "you_plural_came": {
+            "translation": "ihr kamt",
+            "level": 0,
+            "example": {
+                "you_came_early": "Ihr kamt früh."
+            },
+            "audio": "de_audio/you_plural_came.mp3"
+        },
+        "they_came": {
+            "translation": "sie kamen",
+            "level": 0,
+            "example": {
+                "they_came_to_the_meeting": "Sie kamen zum Meeting."
+            },
+            "audio": "de_audio/they_came.mp3"
+        }
+    },
+    "present": {
+        "i_come": {
+            "translation": "ich komme",
+            "level": 0,
+            "example": {
+                "i_come_home": "Ich komme nach Hause."
+            },
+            "audio": "de_audio/i_come.mp3"
+        },
+        "you_come": {
+            "translation": "du kommst",
+            "level": 0,
+            "example": {
+                "you_come_late": "Du kommst spät."
+            },
+            "audio": "de_audio/you_come.mp3"
+        },
+        "he_she_it_comes": {
+            "translation": "er/sie/es kommt",
+            "level": 0,
+            "example": {
+                "he_comes_to_the_party": "Er kommt zur Party."
+            },
+            "audio": "de_audio/he_she_it_comes.mp3"
+        },
+        "we_come": {
+            "translation": "wir kommen",
+            "level": 0,
+            "example": {
+                "we_come_together": "Wir kommen zusammen."
+            },
+            "audio": "de_audio/we_come.mp3"
+        },
+        "you_plural_come": {
+            "translation": "ihr kommt",
+            "level": 0,
+            "example": {
+                "you_come_early": "Ihr kommt früh."
+            },
+            "audio": "de_audio/you_plural_come.mp3"
+        },
+        "they_come": {
+            "translation": "sie kommen",
+            "level": 0,
+            "example": {
+                "they_come_to_the_meeting": "Sie kommen zum Meeting."
+            },
+            "audio": "de_audio/they_come.mp3"
+        }
+    },
+    "future": {
+        "i_will_come": {
+            "translation": "ich werde kommen",
+            "level": 0,
+            "example": {
+                "i_will_come_home": "Ich werde nach Hause kommen."
+            },
+            "audio": "de_audio/i_will_come.mp3"
+        },
+        "you_will_come": {
+            "translation": "du wirst kommen",
+            "level": 0,
+            "example": {
+                "you_will_come_late": "Du wirst spät kommen."
+            },
+            "audio": "de_audio/you_will_come.mp3"
+        },
+        "he_she_it_will_come": {
+            "translation": "er/sie/es wird kommen",
+            "level": 0,
+            "example": {
+                "he_will_come_to_the_party": "Er wird zur Party kommen."
+            },
+            "audio": "de_audio/he_she_it_will_come.mp3"
+        },
+        "we_will_come": {
+            "translation": "wir werden kommen",
+            "level": 0,
+            "example": {
+                "we_will_come_together": "Wir werden zusammen kommen."
+            },
+            "audio": "de_audio/we_will_come.mp3"
+        },
+        "you_plural_will_come": {
+            "translation": "ihr werdet kommen",
+            "level": 0,
+            "example": {
+                "you_will_come_early": "Ihr werdet früh kommen."
+            },
+            "audio": "de_audio/you_plural_will_come.mp3"
+        },
+        "they_will_come": {
+            "translation": "sie werden kommen",
+            "level": 0,
+            "example": {
+                "they_will_come_to_the_meeting": "Sie werden zum Meeting kommen."
+            },
+            "audio": "de_audio/they_will_come.mp3"
+        }
+    }
+}

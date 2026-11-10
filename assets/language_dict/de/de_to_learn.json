@@ -1,0 +1,154 @@
+{
+    "infinitive": "lernen",
+    "level": 0,
+    "past": {
+        "i_learned": {
+            "translation": "ich lernte",
+            "level": 0,
+            "example": {
+                "i_learned_german": "Ich lernte Deutsch."
+            },
+            "audio": "de_audio/i_learned.mp3"
+        },
+        "you_learned": {
+            "translation": "du lerntest",
+            "level": 0,
+            "example": {
+                "you_learned_fast": "Du lerntest schnell."
+            },
+            "audio": "de_audio/you_learned.mp3"
+        },
+        "he_she_it_learned": {
+            "translation": "er/sie/es lernte",
+            "level": 0,
+            "example": {
+                "he_learned_english": "Er lernte Englisch."
+            },
+            "audio": "de_audio/he_she_it_learned.mp3"
+        },
+        "we_learned": {
+            "translation": "wir lernten",
+            "level": 0,
+            "example": {
+                "we_learned_together": "Wir lernten zusammen."
+            },
+            "audio": "de_audio/we_learned.mp3"
+        },
+        "you_plural_learned": {
+            "translation": "ihr lerntet",
+            "level": 0,
+            "example": {
+                "you_learned_a_lot": "Ihr lerntet viel."
+            },
+            "audio": "de_audio/you_plural_learned.mp3"
+        },
+        "they_learned": {
+            "translation": "sie lernten",
+            "level": 0,
+            "example": {
+                "they_learned_spanish": "Sie lernten Spanisch."
+            },
+            "audio": "de_audio/they_learned.mp3"
+        }
+    },
+    "present": {
+        "i_learn": {
+            "translation": "ich lerne",
+            "level": 0,
+            "example": {
+                "i_learn_german": "Ich lerne Deutsch."
+            },
+            "audio": "de_audio/i_learn.mp3"
+        },
+        "you_learn": {
+            "translation": "du lernst",
+            "level": 0,
+            "example": {
+                "you_learn_fast": "Du lernst schnell."
+            },
+            "audio": "de_audio/you_learn.mp3"
+        },
+        "he_she_it_learns": {
+            "translation": "er/sie/es lernt",
+            "level": 0,
+            "example": {
+                "he_learns_english": "Er lernt Englisch."
+            },
+            "audio": "de_audio/he_she_it_learns.mp3"
+        },
+        "we_learn": {
+            "translation": "wir lernen",
+            "level": 0,
+            "example": {
+                "we_learn_together": "Wir lernen zusammen."
+            },
+            "audio": "de_audio/we_learn.mp3"
+        },
+        "you_plural_learn": {
+            "translation": "ihr lernt",
+            "level": 0,
+            "example": {
+                "you_learn_a_lot": "Ihr lernt viel."
+            },
+            "audio": "de_audio/you_plural_learn.mp3"
+        },
+        "they_learn": {
+            "translation": "sie lernen",
+            "level": 0,
+            "example": {
+                "they_learn_spanish": "Sie lernen Spanisch."
+            },
+            "audio": "de_audio/they_learn.mp3"
+        }
+    },
+    "future": {
+        "i_will_learn": {
+            "translation": "ich werde lernen",
+            "level": 0,
+            "example": {
+                "i_will_learn_german": "Ich werde Deutsch lernen."
+            },
+            "audio": "de_audio/i_will_learn.mp3"
+        },
+        "you_will_learn": {
+            "translation": "du wirst lernen",
+            "level": 0,
+            "example": {
+                "you_will_learn_fast": "Du wirst schnell lernen."
+            },
+            "audio": "de_audio/you_will_learn.mp3"
+        },
+        "he_she_it_will_learn": {
+            "translation": "er/sie/es wird lernen",
+            "level": 0,
+            "example": {
+                "he_will_learn_english": "Er wird Englisch lernen."
+            },
+            "audio": "de_audio/he_she_it_will_learn.mp3"
+        },
+        "we_will_learn": {
+            "translation": "wir werden lernen",
+            "level": 0,
+            "example": {
+                "we_will_learn_together": "Wir werden zusammen lernen."
+            },
+            "audio": "de_audio/we_will_learn.mp3"
+        },
+        "you_plural_will_learn": {
+            "translation": "ihr werdet lernen",
+            "level": 0,
+            "example": {
+                "you_will_learn_a_lot": "Ihr werdet viel lernen."
+            },
+            "audio": "de_audio/you_plural_will_learn.mp3"
+        },
+        "they_will_learn": {
+            "translation": "sie werden lernen",
+            "level": 0,
+            "example": {
+                "they_will_learn_spanish": "Sie werden Spanisch lernen."
+            },
+            "audio": "de_audio/they_will_learn.mp3"
+        }
+    }
+}

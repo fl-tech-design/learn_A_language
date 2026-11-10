@@ -1,0 +1,154 @@
+{
+    "infinitive": "to see",
+    "level": 0,
+    "past": {
+        "i_saw": {
+            "translation": "I saw",
+            "level": 0,
+            "example": {
+                "i_saw_a_movie": "I saw a movie."
+            },
+            "audio": "en_audio/i_saw.mp3"
+        },
+        "you_saw": {
+            "translation": "you saw",
+            "level": 0,
+            "example": {
+                "you_saw_a_car": "You saw a car."
+            },
+            "audio": "en_audio/you_saw.mp3"
+        },
+        "he_she_it_saw": {
+            "translation": "he/she/it saw",
+            "level": 0,
+            "example": {
+                "he_saw_a_dog": "He saw a dog."
+            },
+            "audio": "en_audio/he_she_it_saw.mp3"
+        },
+        "we_saw": {
+            "translation": "we saw",
+            "level": 0,
+            "example": {
+                "we_saw_a_house": "We saw a house."
+            },
+            "audio": "en_audio/we_saw.mp3"
+        },
+        "you_plural_saw": {
+            "translation": "you saw (pl)",
+            "level": 0,
+            "example": {
+                "you_saw_a_tree": "You saw a tree."
+            },
+            "audio": "en_audio/you_plural_saw.mp3"
+        },
+        "they_saw": {
+            "translation": "they saw",
+            "level": 0,
+            "example": {
+                "they_saw_a_bird": "They saw a bird."
+            },
+            "audio": "en_audio/they_saw.mp3"
+        }
+    },
+    "present": {
+        "i_see": {
+            "translation": "I see",
+            "level": 0,
+            "example": {
+                "i_see_a_movie": "I see a movie."
+            },
+            "audio": "en_audio/i_see.mp3"
+        },
+        "you_see": {
+            "translation": "you see",
+            "level": 0,
+            "example": {
+                "you_see_a_car": "You see a car."
+            },
+            "audio": "en_audio/you_see.mp3"
+        },
+        "he_she_it_sees": {
+            "translation": "he/she/it sees",
+            "level": 0,
+            "example": {
+                "he_sees_a_dog": "He sees a dog."
+            },
+            "audio": "en_audio/he_she_it_sees.mp3"
+        },
+        "we_see": {
+            "translation": "we see",
+            "level": 0,
+            "example": {
+                "we_see_a_house": "We see a house."
+            },
+            "audio": "en_audio/we_see.mp3"
+        },
+        "you_plural_see": {
+            "translation": "you see (pl)",
+            "level": 0,
+            "example": {
+                "you_see_a_tree": "You see a tree."
+            },
+            "audio": "en_audio/you_plural_see.mp3"
+        },
+        "they_see": {
+            "translation": "they see",
+            "level": 0,
+            "example": {
+                "they_see_a_bird": "They see a bird."
+            },
+            "audio": "en_audio/they_see.mp3"
+        }
+    },
+    "future": {
+        "i_will_see": {
+            "translation": "I will see",
+            "level": 0,
+            "example": {
+                "i_will_see_a_movie": "I will see a movie."
+            },
+            "audio": "en_audio/i_will_see.mp3"
+        },
+        "you_will_see": {
+            "translation": "you will see",
+            "level": 0,
+            "example": {
+                "you_will_see_a_car": "You will see a car."
+            },
+            "audio": "en_audio/you_will_see.mp3"
+        },
+        "he_she_it_will_see": {
+            "translation": "he/she/it will see",
+            "level": 0,
+            "example": {
+                "he_will_see_a_dog": "He will see a dog."
+            },
+            "audio": "en_audio/he_she_it_will_see.mp3"
+        },
+        "we_will_see": {
+            "translation": "we will see",
+            "level": 0,
+            "example": {
+                "we_will_see_a_house": "We will see a house."
+            },
+            "audio": "en_audio/we_will_see.mp3"
+        },
+        "you_plural_will_see": {
+            "translation": "you will see (pl)",
+            "level": 0,
+            "example": {
+                "you_will_see_a_tree": "You will see a tree."
+            },
+            "audio": "en_audio/you_plural_will_see.mp3"
+        },
+        "they_will_see": {
+            "translation": "they will see",
+            "level": 0,
+            "example": {
+                "they_will_see_a_bird": "They will see a bird."
+            },
+            "audio": "en_audio/they_will_see.mp3"
+        }
+    }
+}

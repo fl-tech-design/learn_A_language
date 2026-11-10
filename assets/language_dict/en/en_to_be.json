@@ -1,0 +1,154 @@
+{
+    "infinitive": "to be",
+    "level": 0,
+    "past": {
+        "i_was": {
+            "translation": "I was",
+            "level": 0,
+            "example": {
+                "i_was_in_the_park": "I was in the park."
+            },
+            "audio": "en_audio/i_was.mp3"
+        },
+        "you_were": {
+            "translation": "you were",
+            "level": 0,
+            "example": {
+                "you_were_tired": "You were tired."
+            },
+            "audio": "en_audio/you_were.mp3"
+        },
+        "he_she_it_was": {
+            "translation": "he/she/it was",
+            "level": 0,
+            "example": {
+                "he_was_happy": "He was happy."
+            },
+            "audio": "en_audio/he_she_it_was.mp3"
+        },
+        "we_were": {
+            "translation": "we were",
+            "level": 0,
+            "example": {
+                "we_were_at_home": "We were at home."
+            },
+            "audio": "en_audio/we_were.mp3"
+        },
+        "you_plural_were": {
+            "translation": "you were (pl)",
+            "level": 0,
+            "example": {
+                "you_were_late": "You were late."
+            },
+            "audio": "en_audio/you_plural_were.mp3"
+        },
+        "they_were": {
+            "translation": "they were",
+            "level": 0,
+            "example": {
+                "they_were_friendly": "They were friendly."
+            },
+            "audio": "en_audio/they_were.mp3"
+        }
+    },
+    "present": {
+        "i_am": {
+            "translation": "I am",
+            "level": 0,
+            "example": {
+                "i_am_tired": "I am tired."
+            },
+            "audio": "en_audio/i_am.mp3"
+        },
+        "you_are": {
+            "translation": "you are",
+            "level": 0,
+            "example": {
+                "you_are_friendly": "You are friendly."
+            },
+            "audio": "en_audio/you_are.mp3"
+        },
+        "he_she_it_is": {
+            "translation": "he/she/it is",
+            "level": 0,
+            "example": {
+                "he_is_happy": "He is happy."
+            },
+            "audio": "en_audio/he_she_it_is.mp3"
+        },
+        "we_are": {
+            "translation": "we are",
+            "level": 0,
+            "example": {
+                "we_are_at_home": "We are at home."
+            },
+            "audio": "en_audio/we_are.mp3"
+        },
+        "you_plural_are": {
+            "translation": "you are (pl)",
+            "level": 0,
+            "example": {
+                "you_are_late": "You are late."
+            },
+            "audio": "en_audio/you_plural_are.mp3"
+        },
+        "they_are": {
+            "translation": "they are",
+            "level": 0,
+            "example": {
+                "they_are_friendly": "They are friendly."
+            },
+            "audio": "en_audio/they_are.mp3"
+        }
+    },
+    "future": {
+        "i_will_be": {
+            "translation": "I will be",
+            "level": 0,
+            "example": {
+                "i_will_be_there": "I will be there."
+            },
+            "audio": "en_audio/i_will_be.mp3"
+        },
+        "you_will_be": {
+            "translation": "you will be",
+            "level": 0,
+            "example": {
+                "you_will_be_happy": "You will be happy."
+            },
+            "audio": "en_audio/you_will_be.mp3"
+        },
+        "he_she_it_will_be": {
+            "translation": "he/she/it will be",
+            "level": 0,
+            "example": {
+                "he_will_be_here": "He will be here."
+            },
+            "audio": "en_audio/he_she_it_will_be.mp3"
+        },
+        "we_will_be": {
+            "translation": "we will be",
+            "level": 0,
+            "example": {
+                "we_will_be_there": "We will be there."
+            },
+            "audio": "en_audio/we_will_be.mp3"
+        },
+        "you_plural_will_be": {
+            "translation": "you will be (pl)",
+            "level": 0,
+            "example": {
+                "you_will_be_late": "You will be late."
+            },
+            "audio": "en_audio/you_plural_will_be.mp3"
+        },
+        "they_will_be": {
+            "translation": "they will be",
+            "level": 0,
+            "example": {
+                "they_will_be_ready": "They will be ready."
+            },
+            "audio": "en_audio/they_will_be.mp3"
+        }
+    }
+}

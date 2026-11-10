@@ -1,0 +1,154 @@
+{
+    "infinitive": "to like",
+    "level": 0,
+    "past": {
+        "i_liked": {
+            "translation": "I liked",
+            "level": 0,
+            "example": {
+                "i_liked_chocolate": "I liked chocolate."
+            },
+            "audio": "en_audio/i_liked.mp3"
+        },
+        "you_liked": {
+            "translation": "you liked",
+            "level": 0,
+            "example": {
+                "you_liked_ice_cream": "You liked ice cream."
+            },
+            "audio": "en_audio/you_liked.mp3"
+        },
+        "he_she_it_liked": {
+            "translation": "he/she/it liked",
+            "level": 0,
+            "example": {
+                "he_liked_pizza": "He liked pizza."
+            },
+            "audio": "en_audio/he_she_it_liked.mp3"
+        },
+        "we_liked": {
+            "translation": "we liked",
+            "level": 0,
+            "example": {
+                "we_liked_the_movie": "We liked the movie."
+            },
+            "audio": "en_audio/we_liked.mp3"
+        },
+        "you_plural_liked": {
+            "translation": "you liked (pl)",
+            "level": 0,
+            "example": {
+                "you_liked_the_book": "You liked the book."
+            },
+            "audio": "en_audio/you_plural_liked.mp3"
+        },
+        "they_liked": {
+            "translation": "they liked",
+            "level": 0,
+            "example": {
+                "they_liked_the_music": "They liked the music."
+            },
+            "audio": "en_audio/they_liked.mp3"
+        }
+    },
+    "present": {
+        "i_like": {
+            "translation": "I like",
+            "level": 0,
+            "example": {
+                "i_like_chocolate": "I like chocolate."
+            },
+            "audio": "en_audio/i_like.mp3"
+        },
+        "you_like": {
+            "translation": "you like",
+            "level": 0,
+            "example": {
+                "you_like_ice_cream": "You like ice cream."
+            },
+            "audio": "en_audio/you_like.mp3"
+        },
+        "he_she_it_likes": {
+            "translation": "he/she/it likes",
+            "level": 0,
+            "example": {
+                "he_likes_pizza": "He likes pizza."
+            },
+            "audio": "en_audio/he_she_it_likes.mp3"
+        },
+        "we_like": {
+            "translation": "we like",
+            "level": 0,
+            "example": {
+                "we_like_the_movie": "We like the movie."
+            },
+            "audio": "en_audio/we_like.mp3"
+        },
+        "you_plural_like": {
+            "translation": "you like (pl)",
+            "level": 0,
+            "example": {
+                "you_like_the_book": "You like the book."
+            },
+            "audio": "en_audio/you_plural_like.mp3"
+        },
+        "they_like": {
+            "translation": "they like",
+            "level": 0,
+            "example": {
+                "they_like_the_music": "They like the music."
+            },
+            "audio": "en_audio/they_like.mp3"
+        }
+    },
+    "future": {
+        "i_will_like": {
+            "translation": "I will like",
+            "level": 0,
+            "example": {
+                "i_will_like_chocolate": "I will like chocolate."
+            },
+            "audio": "en_audio/i_will_like.mp3"
+        },
+        "you_will_like": {
+            "translation": "you will like",
+            "level": 0,
+            "example": {
+                "you_will_like_ice_cream": "You will like ice cream."
+            },
+            "audio": "en_audio/you_will_like.mp3"
+        },
+        "he_she_it_will_like": {
+            "translation": "he/she/it will like",
+            "level": 0,
+            "example": {
+                "he_will_like_pizza": "He will like pizza."
+            },
+            "audio": "en_audio/he_she_it_will_like.mp3"
+        },
+        "we_will_like": {
+            "translation": "we will like",
+            "level": 0,
+            "example": {
+                "we_will_like_the_movie": "We will like the movie."
+            },
+            "audio": "en_audio/we_will_like.mp3"
+        },
+        "you_plural_will_like": {
+            "translation": "you will like (pl)",
+            "level": 0,
+            "example": {
+                "you_will_like_the_book": "You will like the book."
+            },
+            "audio": "en_audio/you_plural_will_like.mp3"
+        },
+        "they_will_like": {
+            "translation": "they will like",
+            "level": 0,
+            "example": {
+                "they_will_like_the_music": "They will like the music."
+            },
+            "audio": "en_audio/they_will_like.mp3"
+        }
+    }
+}

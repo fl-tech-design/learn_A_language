@@ -1,0 +1,154 @@
+{
+    "infinitive": "trinken",
+    "level": 0,
+    "past": {
+        "i_drank": {
+            "translation": "ich trank",
+            "level": 0,
+            "example": {
+                "i_drank_water": "Ich trank Wasser."
+            },
+            "audio": "de_audio/i_drank.mp3"
+        },
+        "you_drank": {
+            "translation": "du trankst",
+            "level": 0,
+            "example": {
+                "you_drank_coffee": "Du trankst Kaffee."
+            },
+            "audio": "de_audio/you_drank.mp3"
+        },
+        "he_she_it_drank": {
+            "translation": "er/sie/es trank",
+            "level": 0,
+            "example": {
+                "he_drank_tea": "Er trank Tee."
+            },
+            "audio": "de_audio/he_she_it_drank.mp3"
+        },
+        "we_drank": {
+            "translation": "wir tranken",
+            "level": 0,
+            "example": {
+                "we_drank_beer": "Wir tranken Bier."
+            },
+            "audio": "de_audio/we_drank.mp3"
+        },
+        "you_plural_drank": {
+            "translation": "ihr trankt",
+            "level": 0,
+            "example": {
+                "you_drank_wine": "Ihr trankt Wein."
+            },
+            "audio": "de_audio/you_plural_drank.mp3"
+        },
+        "they_drank": {
+            "translation": "sie tranken",
+            "level": 0,
+            "example": {
+                "they_drank_juice": "Sie tranken Saft."
+            },
+            "audio": "de_audio/they_drank.mp3"
+        }
+    },
+    "present": {
+        "i_drink": {
+            "translation": "ich trinke",
+            "level": 0,
+            "example": {
+                "i_drink_water": "Ich trinke Wasser."
+            },
+            "audio": "de_audio/i_drink.mp3"
+        },
+        "you_drink": {
+            "translation": "du trinkst",
+            "level": 0,
+            "example": {
+                "you_drink_coffee": "Du trinkst Kaffee."
+            },
+            "audio": "de_audio/you_drink.mp3"
+        },
+        "he_she_it_drinks": {
+            "translation": "er/sie/es trinkt",
+            "level": 0,
+            "example": {
+                "he_drinks_tea": "Er trinkt Tee."
+            },
+            "audio": "de_audio/he_she_it_drinks.mp3"
+        },
+        "we_drink": {
+            "translation": "wir trinken",
+            "level": 0,
+            "example": {
+                "we_drink_beer": "Wir trinken Bier."
+            },
+            "audio": "de_audio/we_drink.mp3"
+        },
+        "you_plural_drink": {
+            "translation": "ihr trinkt",
+            "level": 0,
+            "example": {
+                "you_drink_wine": "Ihr trinkt Wein."
+            },
+            "audio": "de_audio/you_plural_drink.mp3"
+        },
+        "they_drink": {
+            "translation": "sie trinken",
+            "level": 0,
+            "example": {
+                "they_drink_juice": "Sie trinken Saft."
+            },
+            "audio": "de_audio/they_drink.mp3"
+        }
+    },
+    "future": {
+        "i_will_drink": {
+            "translation": "ich werde trinken",
+            "level": 0,
+            "example": {
+                "i_will_drink_water": "Ich werde Wasser trinken."
+            },
+            "audio": "de_audio/i_will_drink.mp3"
+        },
+        "you_will_drink": {
+            "translation": "du wirst trinken",
+            "level": 0,
+            "example": {
+                "you_will_drink_coffee": "Du wirst Kaffee trinken."
+            },
+            "audio": "de_audio/you_will_drink.mp3"
+        },
+        "he_she_it_will_drink": {
+            "translation": "er/sie/es wird trinken",
+            "level": 0,
+            "example": {
+                "he_will_drink_tea": "Er wird Tee trinken."
+            },
+            "audio": "de_audio/he_she_it_will_drink.mp3"
+        },
+        "we_will_drink": {
+            "translation": "wir werden trinken",
+            "level": 0,
+            "example": {
+                "we_will_drink_beer": "Wir werden Bier trinken."
+            },
+            "audio": "de_audio/we_will_drink.mp3"
+        },
+        "you_plural_will_drink": {
+            "translation": "ihr werdet trinken",
+            "level": 0,
+            "example": {
+                "you_will_drink_wine": "Ihr werdet Wein trinken."
+            },
+            "audio": "de_audio/you_plural_will_drink.mp3"
+        },
+        "they_will_drink": {
+            "translation": "sie werden trinken",
+            "level": 0,
+            "example": {
+                "they_will_drink_juice": "Sie werden Saft trinken."
+            },
+            "audio": "de_audio/they_will_drink.mp3"
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "infinitive": "schließen",
+    "level": 0,
+    "past": {
+        "i_closed": {
+            "translation": "ich schloss",
+            "level": 0,
+            "example": {
+                "i_closed_the_door": "Ich schloss die Tür."
+            },
+            "audio": "de_audio/i_closed.mp3"
+        },
+        "you_closed": {
+            "translation": "du schlossest",
+            "level": 0,
+            "example": {
+                "you_closed_the_window": "Du schlossest das Fenster."
+            },
+            "audio": "de_audio/you_closed.mp3"
+        },
+        "he_she_it_closed": {
+            "translation": "er/sie/es schloss",
+            "level": 0,
+            "example": {
+                "he_closed_the_box": "Er schloss die Kiste."
+            },
+            "audio": "de_audio/he_she_it_closed.mp3"
+        },
+        "we_closed": {
+            "translation": "wir schlossen",
+            "level": 0,
+            "example": {
+                "we_closed_the_package": "Wir schlossen das Paket."
+            },
+            "audio": "de_audio/we_closed.mp3"
+        },
+        "you_plural_closed": {
+            "translation": "ihr schlosst",
+            "level": 0,
+            "example": {
+                "you_closed_the_doors": "Ihr schlosst die Türen."
+            },
+            "audio": "de_audio/you_plural_closed.mp3"
+        },
+        "they_closed": {
+            "translation": "sie schlossen",
+            "level": 0,
+            "example": {
+                "they_closed_the_windows": "Sie schlossen die Fenster."
+            },
+            "audio": "de_audio/they_closed.mp3"
+        }
+    },
+    "present": {
+        "i_close": {
+            "translation": "ich schließe",
+            "level": 0,
+            "example": {
+                "i_close_the_door": "Ich schließe die Tür."
+            },
+            "audio": "de_audio/i_close.mp3"
+        },
+        "you_close": {
+            "translation": "du schließt",
+            "level": 0,
+            "example": {
+                "you_close_the_window": "Du schließt das Fenster."
+            },
+            "audio": "de_audio/you_close.mp3"
+        },
+        "he_she_it_closes": {
+            "translation": "er/sie/es schließt",
+            "level": 0,
+            "example": {
+                "he_closes_the_box": "Er schließt die Kiste."
+            },
+            "audio": "de_audio/he_she_it_closes.mp3"
+        },
+        "we_close": {
+            "translation": "wir schließen",
+            "level": 0,
+            "example": {
+                "we_close_the_package": "Wir schließen das Paket."
+            },
+            "audio": "de_audio/we_close.mp3"
+        },
+        "you_plural_close": {
+            "translation": "ihr schließt",
+            "level": 0,
+            "example": {
+                "you_close_the_doors": "Ihr schließt die Türen."
+            },
+            "audio": "de_audio/you_plural_close.mp3"
+        },
+        "they_close": {
+            "translation": "sie schließen",
+            "level": 0,
+            "example": {
+                "they_close_the_windows": "Sie schließen die Fenster."
+            },
+            "audio": "de_audio/they_close.mp3"
+        }
+    },
+    "future": {
+        "i_will_close": {
+            "translation": "ich werde schließen",
+            "level": 0,
+            "example": {
+                "i_will_close_the_door": "Ich werde die Tür schließen."
+            },
+            "audio": "de_audio/i_will_close.mp3"
+        },
+        "you_will_close": {
+            "translation": "du wirst schließen",
+            "level": 0,
+            "example": {
+                "you_will_close_the_window": "Du wirst das Fenster schließen."
+            },
+            "audio": "de_audio/you_will_close.mp3"
+        },
+        "he_she_it_will_close": {
+            "translation": "er/sie/es wird schließen",
+            "level": 0,
+            "example": {
+                "he_will_close_the_box": "Er wird die Kiste schließen."
+            },
+            "audio": "de_audio/he_she_it_will_close.mp3"
+        },
+        "we_will_close": {
+            "translation": "wir werden schließen",
+            "level": 0,
+            "example": {
+                "we_will_close_the_package": "Wir werden das Paket schließen."
+            },
+            "audio": "de_audio/we_will_close.mp3"
+        },
+        "you_plural_will_close": {
+            "translation": "ihr werdet schließen",
+            "level": 0,
+            "example": {
+                "you_will_close_the_doors": "Ihr werdet die Türen schließen."
+            },
+            "audio": "de_audio/you_plural_will_close.mp3"
+        },
+        "they_will_close": {
+            "translation": "sie werden schließen",
+            "level": 0,
+            "example": {
+                "they_will_close_the_windows": "Sie werden die Fenster schließen."
+            },
+            "audio": "de_audio/they_will_close.mp3"
+        }
+    }
+}

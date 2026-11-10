@@ -1,0 +1,154 @@
+{
+    "infinitive": "to live",
+    "level": 0,
+    "past": {
+        "i_lived": {
+            "translation": "I lived",
+            "level": 0,
+            "example": {
+                "i_lived_in_berlin": "I lived in Berlin."
+            },
+            "audio": "en_audio/i_lived.mp3"
+        },
+        "you_lived": {
+            "translation": "you lived",
+            "level": 0,
+            "example": {
+                "you_lived_in_a_house": "You lived in a house."
+            },
+            "audio": "en_audio/you_lived.mp3"
+        },
+        "he_she_it_lived": {
+            "translation": "he/she/it lived",
+            "level": 0,
+            "example": {
+                "he_lived_in_a_flat": "He lived in a flat."
+            },
+            "audio": "en_audio/he_she_it_lived.mp3"
+        },
+        "we_lived": {
+            "translation": "we lived",
+            "level": 0,
+            "example": {
+                "we_lived_together": "We lived together."
+            },
+            "audio": "en_audio/we_lived.mp3"
+        },
+        "you_plural_lived": {
+            "translation": "you lived (pl)",
+            "level": 0,
+            "example": {
+                "you_lived_in_the_city": "You lived in the city."
+            },
+            "audio": "en_audio/you_plural_lived.mp3"
+        },
+        "they_lived": {
+            "translation": "they lived",
+            "level": 0,
+            "example": {
+                "they_lived_in_a_village": "They lived in a village."
+            },
+            "audio": "en_audio/they_lived.mp3"
+        }
+    },
+    "present": {
+        "i_live": {
+            "translation": "I live",
+            "level": 0,
+            "example": {
+                "i_live_in_berlin": "I live in Berlin."
+            },
+            "audio": "en_audio/i_live.mp3"
+        },
+        "you_live": {
+            "translation": "you live",
+            "level": 0,
+            "example": {
+                "you_live_in_a_house": "You live in a house."
+            },
+            "audio": "en_audio/you_live.mp3"
+        },
+        "he_she_it_lives": {
+            "translation": "he/she/it lives",
+            "level": 0,
+            "example": {
+                "he_lives_in_a_flat": "He lives in a flat."
+            },
+            "audio": "en_audio/he_she_it_lives.mp3"
+        },
+        "we_live": {
+            "translation": "we live",
+            "level": 0,
+            "example": {
+                "we_live_together": "We live together."
+            },
+            "audio": "en_audio/we_live.mp3"
+        },
+        "you_plural_live": {
+            "translation": "you live (pl)",
+            "level": 0,
+            "example": {
+                "you_live_in_the_city": "You live in the city."
+            },
+            "audio": "en_audio/you_plural_live.mp3"
+        },
+        "they_live": {
+            "translation": "they live",
+            "level": 0,
+            "example": {
+                "they_live_in_a_village": "They live in a village."
+            },
+            "audio": "en_audio/they_live.mp3"
+        }
+    },
+    "future": {
+        "i_will_live": {
+            "translation": "I will live",
+            "level": 0,
+            "example": {
+                "i_will_live_in_berlin": "I will live in Berlin."
+            },
+            "audio": "en_audio/i_will_live.mp3"
+        },
+        "you_will_live": {
+            "translation": "you will live",
+            "level": 0,
+            "example": {
+                "you_will_live_in_a_house": "You will live in a house."
+            },
+            "audio": "en_audio/you_will_live.mp3"
+        },
+        "he_she_it_will_live": {
+            "translation": "he/she/it will live",
+            "level": 0,
+            "example": {
+                "he_will_live_in_a_flat": "He will live in a flat."
+            },
+            "audio": "en_audio/he_she_it_will_live.mp3"
+        },
+        "we_will_live": {
+            "translation": "we will live",
+            "level": 0,
+            "example": {
+                "we_will_live_together": "We will live together."
+            },
+            "audio": "en_audio/we_will_live.mp3"
+        },
+        "you_plural_will_live": {
+            "translation": "you will live (pl)",
+            "level": 0,
+            "example": {
+                "you_will_live_in_the_city": "You will live in the city."
+            },
+            "audio": "en_audio/you_plural_will_live.mp3"
+        },
+        "they_will_live": {
+            "translation": "they will live",
+            "level": 0,
+            "example": {
+                "they_will_live_in_a_village": "They will live in a village."
+            },
+            "audio": "en_audio/they_will_live.mp3"
+        }
+    }
+}

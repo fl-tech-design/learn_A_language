@@ -1,0 +1,154 @@
+{
+    "infinitive": "schreiben",
+    "level": 0,
+    "past": {
+        "i_wrote": {
+            "translation": "ich schrieb",
+            "level": 0,
+            "example": {
+                "i_wrote_a_letter": "Ich schrieb einen Brief."
+            },
+            "audio": "de_audio/i_wrote.mp3"
+        },
+        "you_wrote": {
+            "translation": "du schriebst",
+            "level": 0,
+            "example": {
+                "you_wrote_a_story": "Du schriebst eine Geschichte."
+            },
+            "audio": "de_audio/you_wrote.mp3"
+        },
+        "he_she_it_wrote": {
+            "translation": "er/sie/es schrieb",
+            "level": 0,
+            "example": {
+                "he_wrote_a_poem": "Er schrieb ein Gedicht."
+            },
+            "audio": "de_audio/he_she_it_wrote.mp3"
+        },
+        "we_wrote": {
+            "translation": "wir schrieben",
+            "level": 0,
+            "example": {
+                "we_wrote_a_book": "Wir schrieben ein Buch."
+            },
+            "audio": "de_audio/we_wrote.mp3"
+        },
+        "you_plural_wrote": {
+            "translation": "ihr schriebt",
+            "level": 0,
+            "example": {
+                "you_wrote_a_note": "Ihr schriebt eine Notiz."
+            },
+            "audio": "de_audio/you_plural_wrote.mp3"
+        },
+        "they_wrote": {
+            "translation": "sie schrieben",
+            "level": 0,
+            "example": {
+                "they_wrote_a_report": "Sie schrieben einen Bericht."
+            },
+            "audio": "de_audio/they_wrote.mp3"
+        }
+    },
+    "present": {
+        "i_write": {
+            "translation": "ich schreibe",
+            "level": 0,
+            "example": {
+                "i_write_a_letter": "Ich schreibe einen Brief."
+            },
+            "audio": "de_audio/i_write.mp3"
+        },
+        "you_write": {
+            "translation": "du schreibst",
+            "level": 0,
+            "example": {
+                "you_write_a_story": "Du schreibst eine Geschichte."
+            },
+            "audio": "de_audio/you_write.mp3"
+        },
+        "he_she_it_writes": {
+            "translation": "er/sie/es schreibt",
+            "level": 0,
+            "example": {
+                "he_writes_a_poem": "Er schreibt ein Gedicht."
+            },
+            "audio": "de_audio/he_she_it_writes.mp3"
+        },
+        "we_write": {
+            "translation": "wir schreiben",
+            "level": 0,
+            "example": {
+                "we_write_a_book": "Wir schreiben ein Buch."
+            },
+            "audio": "de_audio/we_write.mp3"
+        },
+        "you_plural_write": {
+            "translation": "ihr schreibt",
+            "level": 0,
+            "example": {
+                "you_write_a_note": "Ihr schreibt eine Notiz."
+            },
+            "audio": "de_audio/you_plural_write.mp3"
+        },
+        "they_write": {
+            "translation": "sie schreiben",
+            "level": 0,
+            "example": {
+                "they_write_a_report": "Sie schreiben einen Bericht."
+            },
+            "audio": "de_audio/they_write.mp3"
+        }
+    },
+    "future": {
+        "i_will_write": {
+            "translation": "ich werde schreiben",
+            "level": 0,
+            "example": {
+                "i_will_write_a_letter": "Ich werde einen Brief schreiben."
+            },
+            "audio": "de_audio/i_will_write.mp3"
+        },
+        "you_will_write": {
+            "translation": "du wirst schreiben",
+            "level": 0,
+            "example": {
+                "you_will_write_a_story": "Du wirst eine Geschichte schreiben."
+            },
+            "audio": "de_audio/you_will_write.mp3"
+        },
+        "he_she_it_will_write": {
+            "translation": "er/sie/es wird schreiben",
+            "level": 0,
+            "example": {
+                "he_will_write_a_poem": "Er wird ein Gedicht schreiben."
+            },
+            "audio": "de_audio/he_she_it_will_write.mp3"
+        },
+        "we_will_write": {
+            "translation": "wir werden schreiben",
+            "level": 0,
+            "example": {
+                "we_will_write_a_book": "Wir werden ein Buch schreiben."
+            },
+            "audio": "de_audio/we_will_write.mp3"
+        },
+        "you_plural_will_write": {
+            "translation": "ihr werdet schreiben",
+            "level": 0,
+            "example": {
+                "you_will_write_a_note": "Ihr werdet eine Notiz schreiben."
+            },
+            "audio": "de_audio/you_plural_will_write.mp3"
+        },
+        "they_will_write": {
+            "translation": "sie werden schreiben",
+            "level": 0,
+            "example": {
+                "they_will_write_a_report": "Sie werden einen Bericht schreiben."
+            },
+            "audio": "de_audio/they_will_write.mp3"
+        }
+    }
+}
