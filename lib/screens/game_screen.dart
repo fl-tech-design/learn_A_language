@@ -11,7 +11,8 @@ import '../dialogs/game_over_dialog.dart';
 
 /// Turbo Quiz game screen – 1:1 from gamepage.py/kv.
 class GameScreen extends StatefulWidget {
-  const GameScreen({super.key});
+  final String difficulty;
+  const GameScreen({super.key, this.difficulty = 'medium'});
   @override
   State<GameScreen> createState() => _GameScreenState();
 }
@@ -21,8 +22,7 @@ class _GameScreenState extends State<GameScreen> {
   int _score = 0;
   int _timer = 15;
   int _baseTimer = 15;
-  int _correctStreak = 0;
-  int _timeBonus = 0;
+  int _timeBonusPerCorrect = 2;
   int _highscore = 0;
   List<Map<String, dynamic>> _questions = [];
   int _currentIndex = 0;
@@ -37,6 +37,26 @@ class _GameScreenState extends State<GameScreen> {
   void dispose() {
     _stopTimer();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    switch (widget.difficulty) {
+      case 'easy':
+        _baseTimer = 20;
+        _timeBonusPerCorrect = 3;
+        break;
+      case 'hard':
+        _baseTimer = 10;
+        _timeBonusPerCorrect = 1;
+        break;
+      default: // medium
+        _baseTimer = 15;
+        _timeBonusPerCorrect = 2;
+        break;
+    }
+    _timer = _baseTimer;
   }
 
   @override
@@ -68,10 +88,7 @@ class _GameScreenState extends State<GameScreen> {
     setState(() {
       _lives = 3;
       _score = 0;
-      _timer = 15;
-      _baseTimer = 15;
-      _correctStreak = 0;
-      _timeBonus = 0;
+      _timer = _baseTimer;
       _currentIndex = 0;
       _answered = false;
       _gameActive = true;
@@ -106,8 +123,7 @@ class _GameScreenState extends State<GameScreen> {
     final options = [correct, ...distractors]..shuffle(Random());
     setState(() {
       _options = options;
-      _timer = _baseTimer + _timeBonus;
-      _timeBonus = 0;
+      _timer = _baseTimer;
     });
     _startTimer();
   }
@@ -123,7 +139,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _tick() {
-    if (!_gameActive) return;
+    if (!_gameActive || _answered) return;
     setState(() => _timer--);
     if (_timer <= 0) _timeUp();
   }
@@ -140,7 +156,6 @@ class _GameScreenState extends State<GameScreen> {
 
   void onAnswer(int btnIndex) {
     if (_answered || !_gameActive) return;
-    _answered = true;
     _stopTimer();
     final selected = _options[btnIndex];
     final correct = _currentQuestion?['word']?.toString() ??
@@ -149,19 +164,21 @@ class _GameScreenState extends State<GameScreen> {
 
     if (selected == correct) {
       setState(() {
+        _answered = true;
         _score++;
-        _timeBonus += 2;
-        _correctStreak++;
+        _timer += _timeBonusPerCorrect;
       });
-      if (_correctStreak % 5 == 0 && _baseTimer > 5) _baseTimer--;
-      Future.delayed(const Duration(milliseconds: 400), () => _advanceToNext());
+      Future.delayed(const Duration(milliseconds: 300), () => _advanceToNext());
     } else {
-      setState(() => _lives--);
+      setState(() {
+        _answered = true;
+        _lives--;
+      });
       if (_lives <= 0) {
-        Future.delayed(const Duration(milliseconds: 400), () => _gameOver());
+        Future.delayed(const Duration(milliseconds: 300), () => _gameOver());
       } else {
         Future.delayed(
-            const Duration(milliseconds: 400), () => _advanceToNext());
+            const Duration(milliseconds: 300), () => _advanceToNext());
       }
     }
   }
@@ -225,6 +242,14 @@ class _GameScreenState extends State<GameScreen> {
                 BoxDecoration(border: Border.all(color: AppTheme.grey2)),
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(children: [
+              Text(widget.difficulty == 'easy'
+                  ? 'Leicht'
+                  : widget.difficulty == 'hard'
+                      ? 'Schwer'
+                      : 'Mittel',
+                  style: const TextStyle(
+                      fontSize: 12, color: AppTheme.cyan2)),
+              const Spacer(),
               Row(children: [
                 Image.asset('assets/game_assets/clock.png',
                     width: 24, height: 24),
@@ -316,12 +341,22 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _answerButton(int index) {
     if (index >= _options.length) return const SizedBox.shrink();
-    return OutlinedButton(
+    return SizedBox.expand(
+      child: OutlinedButton(
         onPressed: _answered ? null : () => onAnswer(index),
         style: OutlinedButton.styleFrom(
             side: const BorderSide(color: AppTheme.colorPrimary),
-            padding: const EdgeInsets.all(8)),
-        child: Text(_options[index],
-            textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)));
+            padding: const EdgeInsets.all(6),
+            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4))),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(_options[index],
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 20)),
+        ),
+      ),
+    );
   }
 }

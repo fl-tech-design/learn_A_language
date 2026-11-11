@@ -77,32 +77,24 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final word = _words[_index];
     final correctAnswer =
         word['word']?.toString() ?? word['key']?.toString() ?? '';
-    final cleanAnswer = correctAnswer.replaceAll(' ', '');
-    final currentCleanPos = _userInput.replaceAll(' ', '').length;
 
-    if (currentCleanPos >= cleanAnswer.length) return;
+    // Next unfilled position in the original word (including spaces)
+    final nextPos = _userInput.length;
+    if (nextPos >= correctAnswer.length) return;
 
-    final expectedChar = cleanAnswer[currentCleanPos].toLowerCase();
-    if (char.toLowerCase() == expectedChar) {
-      // Correct character – advance through original word, copying chars.
-      final newInput = StringBuffer();
-      int cleanIdx = 0;
-      for (var i = 0; i < correctAnswer.length; i++) {
-        if (correctAnswer[i] == ' ') {
-          newInput.write(' ');
-        } else {
-          if (cleanIdx <= currentCleanPos) {
-            newInput.write(correctAnswer[i]);
-          } else {
-            break;
-          }
-          cleanIdx++;
-        }
+    final expectedChar = correctAnswer[nextPos];
+
+    if (expectedChar == ' ') {
+      // Space expected at this position
+      if (char == ' ') {
+        setState(() => _userInput += ' ');
+      } else {
+        _failWord(correctAnswer, word);
       }
-
-      final uname = context.read<AppState>().loggedUName;
-      final newUserInput = newInput.toString();
-      if (newUserInput.replaceAll(' ', '').length >= cleanAnswer.length) {
+    } else if (char.toLowerCase() == expectedChar.toLowerCase()) {
+      // Correct letter at this position
+      final newInput = _userInput + expectedChar;
+      if (newInput.length >= correctAnswer.length) {
         // All characters matched – word is correct!
         setState(() {
           _checked = true;
@@ -111,28 +103,30 @@ class _DueWordScreenState extends State<DueWordScreen> {
           _feedbackColor = AppTheme.green2;
           _correctDisplay = correctAnswer;
         });
+        final uname = context.read<AppState>().loggedUName;
         VocabQueries.checkWordAnswer(
             uname, word['key'] as String, word['translation'] as String);
       } else {
-        setState(() {
-          _userInput = newUserInput;
-        });
+        setState(() => _userInput = newInput);
       }
     } else {
       // Wrong character – abort immediately
-      setState(() {
-        _checked = true;
-        _feedback = 'Falsch!';
-        _feedbackColor = AppTheme.red2;
-        _correctDisplay = 'Richtig wäre: $correctAnswer';
-        _userInput = correctAnswer; // Reveal full word
-      });
-      final uname = context.read<AppState>().loggedUName;
-      VocabQueries.checkWordAnswer(uname, word['key'] as String, '');
+      _failWord(correctAnswer, word);
     }
 
-    // Clear the text field for next character input
     _inputCtrl.clear();
+  }
+
+  void _failWord(String correctAnswer, Map<String, dynamic> word) {
+    setState(() {
+      _checked = true;
+      _feedback = 'Falsch!';
+      _feedbackColor = AppTheme.red2;
+      _correctDisplay = 'Richtig wäre: $correctAnswer';
+      _userInput = correctAnswer; // Reveal full word
+    });
+    final uname = context.read<AppState>().loggedUName;
+    VocabQueries.checkWordAnswer(uname, word['key'] as String, '');
   }
 
   void _nextWord() {
