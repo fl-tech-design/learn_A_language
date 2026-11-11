@@ -16,7 +16,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
   List<Map<String, dynamic>> _words = [];
   int _index = 0;
   bool _checked = false;
+  String _userInput = '';
   final _inputCtrl = TextEditingController();
+  final _focusNode = FocusNode();
   String _feedback = '';
   Color _feedbackColor = AppTheme.green2;
   String _correctDisplay = '';
@@ -24,6 +26,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
   @override
   void dispose() {
     _inputCtrl.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -42,6 +45,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
         _words = words;
         _index = 0;
         _checked = false;
+        _userInput = '';
         _feedback = '';
         _correctDisplay = '';
         _inputCtrl.clear();
@@ -49,57 +53,86 @@ class _DueWordScreenState extends State<DueWordScreen> {
     }
   }
 
-  String _wordToDisplay(String word, [String userInput = '']) {
-    final parts = word.split(' ');
-    final displayParts = <String>[];
-    for (var i = 0; i < parts.length; i++) {
-      final w = parts[i];
-      if (userInput.isNotEmpty) {
-        final inParts = userInput.split(' ');
-        final inp = i < inParts.length ? inParts[i] : '';
-        final chars = <String>[];
-        for (var j = 0; j < w.length; j++) {
-          chars.add(j < inp.length && inp[j].toLowerCase() == w[j].toLowerCase()
-              ? w[j]
-              : '_');
-        }
-        displayParts.add(chars.join(' '));
+  /// Builds the word display with underscores for each character.
+  /// Characters already guessed correctly are shown, others are '_'.
+  String _wordToDisplay(String word, String userInput) {
+    final chars = <String>[];
+    for (var i = 0; i < word.length; i++) {
+      if (i < userInput.length) {
+        chars.add(word[i]);
+      } else if (word[i] == ' ') {
+        chars.add(' ');
       } else {
-        displayParts.add(List.filled(w.length, '_').join(' '));
+        chars.add('_');
       }
     }
-    return displayParts.join('  ');
+    return chars.join(' ');
   }
 
-  void _checkAnswer() {
-    if (_words.isEmpty || _index >= _words.length || _checked) return;
-    final userInput = _inputCtrl.text.trim();
-    if (userInput.isEmpty) return;
+  void _onCharInput(String text) {
+    if (text.isEmpty || _checked) return;
+    final char = text[text.length - 1];
+    if (_words.isEmpty || _index >= _words.length) return;
+
     final word = _words[_index];
     final correctAnswer =
         word['word']?.toString() ?? word['key']?.toString() ?? '';
-    final isCorrect = userInput.toLowerCase() == correctAnswer.toLowerCase();
+    final cleanAnswer = correctAnswer.replaceAll(' ', '');
+    final currentCleanPos = _userInput.replaceAll(' ', '').length;
 
-    setState(() {
-      _checked = true;
-      if (isCorrect) {
-        _feedback = 'Richtig!';
-        _feedbackColor = AppTheme.green2;
-        _correctDisplay = correctAnswer;
+    if (currentCleanPos >= cleanAnswer.length) return;
+
+    final expectedChar = cleanAnswer[currentCleanPos].toLowerCase();
+    if (char.toLowerCase() == expectedChar) {
+      // Correct character – advance through original word, copying chars.
+      final newInput = StringBuffer();
+      int cleanIdx = 0;
+      for (var i = 0; i < correctAnswer.length; i++) {
+        if (correctAnswer[i] == ' ') {
+          newInput.write(' ');
+        } else {
+          if (cleanIdx <= currentCleanPos) {
+            newInput.write(correctAnswer[i]);
+          } else {
+            break;
+          }
+          cleanIdx++;
+        }
+      }
+
+      final uname = context.read<AppState>().loggedUName;
+      final newUserInput = newInput.toString();
+      if (newUserInput.replaceAll(' ', '').length >= cleanAnswer.length) {
+        // All characters matched – word is correct!
+        setState(() {
+          _checked = true;
+          _userInput = correctAnswer;
+          _feedback = 'Richtig!';
+          _feedbackColor = AppTheme.green2;
+          _correctDisplay = correctAnswer;
+        });
+        VocabQueries.checkWordAnswer(
+            uname, word['key'] as String, word['translation'] as String);
       } else {
+        setState(() {
+          _userInput = newUserInput;
+        });
+      }
+    } else {
+      // Wrong character – abort immediately
+      setState(() {
+        _checked = true;
         _feedback = 'Falsch!';
         _feedbackColor = AppTheme.red2;
         _correctDisplay = 'Richtig wäre: $correctAnswer';
-      }
-    });
-
-    final uname = context.read<AppState>().loggedUName;
-    if (isCorrect) {
-      VocabQueries.checkWordAnswer(
-          uname, word['key'] as String, word['translation'] as String);
-    } else {
+        _userInput = correctAnswer; // Reveal full word
+      });
+      final uname = context.read<AppState>().loggedUName;
       VocabQueries.checkWordAnswer(uname, word['key'] as String, '');
     }
+
+    // Clear the text field for next character input
+    _inputCtrl.clear();
   }
 
   void _nextWord() {
@@ -112,9 +145,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
         _inputCtrl.clear();
       } else {
         _checked = false;
+        _userInput = '';
         _feedback = '';
         _correctDisplay = '';
         _inputCtrl.clear();
+        // Re-focus the hidden input
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _focusNode.requestFocus();
+        });
       }
     });
   }
@@ -156,9 +194,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                   Text(
                       allDone
                           ? ''
-                          : _checked
-                              ? _wordToDisplay(correctAnswer, _inputCtrl.text)
-                              : _wordToDisplay(correctAnswer),
+                          : _wordToDisplay(correctAnswer, _userInput),
                       textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 28)),
                   const SizedBox(height: 4),
@@ -168,24 +204,31 @@ class _DueWordScreenState extends State<DueWordScreen> {
                           fontSize: AppTheme.lblFontSize,
                           color: _feedbackColor)),
                   const SizedBox(height: 8),
-                  TextField(
-                      controller: _inputCtrl,
-                      enabled: !allDone,
-                      decoration: InputDecoration(
-                          hintText:
-                              at['input_hint_due'] ?? 'Tippe die Übersetzung',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(4))),
-                      style: const TextStyle(fontSize: 22)),
-                  const SizedBox(height: 12),
-                  SizedBox(
-                      height: 56,
-                      width: double.infinity,
-                      child: OutlinedButton(
-                          onPressed: _checked ? null : _checkAnswer,
-                          child: Text(at['btn_check'] ?? 'Prüfen',
-                              style: const TextStyle(
-                                  fontSize: AppTheme.btnFontSize)))),
+                    // Hidden single-character input field
+                    if (!allDone && !_checked)
+                      SizedBox(
+                        width: 1,
+                        height: 1,
+                        child: Opacity(
+                          opacity: 0,
+                          child: TextField(
+                            focusNode: _focusNode,
+                            controller: _inputCtrl,
+                            autofocus: true,
+                            showCursor: false,
+                            maxLength: 1,
+                            buildCounter: (_, {int? currentLength, int? maxLength, bool? isFocused}) =>
+                                const SizedBox.shrink(),
+                            autocorrect: false,
+                            enableSuggestions: false,
+                            textCapitalization: TextCapitalization.none,
+                            keyboardType: TextInputType.text,
+                            textInputAction: TextInputAction.done,
+                            onChanged: _onCharInput,
+                          ),
+                        ),
+                      ),
+                    const SizedBox(height: 12),
                   if (_checked)
                     SizedBox(
                         height: 56,
@@ -198,7 +241,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                   Text(_feedback,
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20, color: _feedbackColor)),
-                  const Spacer(),
+                  const SizedBox(height: AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,
                       width: double.infinity,

@@ -95,34 +95,36 @@ class _StartScreenState extends State<StartScreen> {
                 bt['information']?.toString() ?? 'Information'),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(AppTheme.contentPadding),
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                _UserInfoBox(),
-                const SizedBox(height: AppTheme.contentSpacing),
-                SizedBox(
-                    height: 56,
-                    width: double.infinity,
-                    child: OutlinedButton(
-                        onPressed: () {
-                          appState.setWordMode('new');
-                          Navigator.of(context).pushNamed('/learning');
-                        },
-                        child: Text(at['btn_learn'] ?? 'Lernen',
-                            style: const TextStyle(
-                                fontSize: AppTheme.btnFontSize)))),
-                const SizedBox(height: AppTheme.contentSpacing),
-                SizedBox(
-                    height: 56,
-                    width: double.infinity,
-                    child: OutlinedButton(
-                        onPressed: () =>
-                            Navigator.of(context).pushNamed('/gameselect'),
-                        child: Text(at['btn_game'] ?? 'Spiele',
-                            style: const TextStyle(
-                                fontSize: AppTheme.btnFontSize)))),
-                const Spacer(),
-              ]),
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(AppTheme.contentPadding),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  _UserInfoBox(),
+                  const SizedBox(height: AppTheme.contentSpacing),
+                  SizedBox(
+                      height: 56,
+                      width: double.infinity,
+                      child: OutlinedButton(
+                          onPressed: () {
+                            appState.setWordMode('new');
+                            Navigator.of(context).pushNamed('/learning');
+                          },
+                          child: Text(at['btn_learn'] ?? 'Lernen',
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
+                  const SizedBox(height: AppTheme.contentSpacing),
+                  SizedBox(
+                      height: 56,
+                      width: double.infinity,
+                      child: OutlinedButton(
+                          onPressed: () =>
+                              Navigator.of(context).pushNamed('/gameselect'),
+                          child: Text(at['btn_game'] ?? 'Spiele',
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
+                  const SizedBox(height: AppTheme.contentSpacing),
+                ]),
+              ),
             ),
           ),
           BoxBottom(
