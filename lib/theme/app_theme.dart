@@ -69,7 +69,7 @@ class AppTheme {
   static const double smallFontSize = 12.0;
 
   // App version
-  static const String versionNr = '1.3.1';
+  static const String versionNr = '1.3.2';
   static const String appTitle = 'learn A language';
 
   /// Platform-safe app exit (kills process on desktop, pops on mobile).
