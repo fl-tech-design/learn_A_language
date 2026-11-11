@@ -31,9 +31,6 @@ class FileService {
       // ── data_app ──
       'data_app/app_data.json',
       'data_app/app_txt.json',
-      // ── bundled user files ──
-      'data_app/files_user/data_Hansi.json',
-      'data_app/files_user/data_Heinz.json',
       // ── language_dict / de (30 verbs) ──
       'language_dict/de/de_to_be.json',
       'language_dict/de/de_to_be_allowed_to.json',
