@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 /// Central color palette and theme constants – 1:1 from constants.py.
 class AppTheme {
@@ -53,6 +54,9 @@ class AppTheme {
   // ── Layout-Maße (constants.py lines 90-109) ────────────────────
   static const double boxTitleHeight = 0.05;
   static const double boxBottomHeight = 0.1;
+  /// Feste Mindesthöhen, damit Titel-/Bottom-Bar auch im Querformat lesbar bleiben.
+  static const double titleBarMinHeight = 48.0;
+  static const double bottomBarMinHeight = 72.0;
   static const double buttonHeight = 56.0;
   static const double buttonFontSize = 18.0;
   static const double contentPadding = 10.0;
@@ -65,11 +69,17 @@ class AppTheme {
   static const double smallFontSize = 12.0;
 
   // App version
-  static const String versionNr = '1.2.0';
+  static const String versionNr = '1.3.0';
   static const String appTitle = 'learn A language';
 
   /// Platform-safe app exit (kills process on desktop, pops on mobile).
-  static void closeApp() => exit(0);
+  static void closeApp() {
+    if (Platform.isAndroid || Platform.isIOS) {
+      SystemNavigator.pop();
+    } else {
+      exit(0);
+    }
+  }
 
   // ── ThemeData ─────────────────────────────────────────────────
   static ThemeData get darkTheme {

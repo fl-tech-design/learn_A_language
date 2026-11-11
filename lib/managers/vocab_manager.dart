@@ -5,16 +5,16 @@ import 'user_manager.dart';
 class VocabManager {
   VocabManager._();
 
-  /// Spaced repetition: days until next review per level.
+  /// Spaced repetition: days until next review, keyed by the level reached
+  /// *after* a correct answer (linear 1–7 days, learned at level 8).
   static const Map<int, int?> repeatIntervalDays = {
-    0: 1,
-    1: 2,
-    2: 3,
-    3: 5,
-    4: 7,
-    5: 10,
-    6: 14,
-    7: 21,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
     8: null,
   };
 
@@ -185,6 +185,31 @@ class VocabManager {
       }
       if (!we.containsKey('examples_native')) {
         we['examples_native'] = nativeWordsMap[entry.key]?['examples'] ?? [''];
+        changed = true;
+      }
+    }
+
+    // Recompute review_due for in-learning words from last_reviewed using the
+    // corrected linear interval schedule. Fixes words that were scheduled with
+    // the previous (wrong) interval map.
+    for (final entry in vocab.entries) {
+      final we = entry.value as Map<String, dynamic>;
+      final level = we['level'] as int? ?? 0;
+      final status = we['status']?.toString() ?? 'new';
+      if (status != 'seen' || level < 1 || level >= 8) continue;
+
+      final lastReviewedStr = we['last_reviewed']?.toString();
+      if (lastReviewedStr == null || lastReviewedStr.isEmpty) continue;
+      final lastReviewed = DateTime.tryParse(lastReviewedStr);
+      if (lastReviewed == null) continue;
+
+      final days = repeatIntervalDays[level];
+      if (days == null) continue;
+      final due = lastReviewed.add(Duration(days: days));
+      final newDue =
+          '${due.year}-${due.month.toString().padLeft(2, '0')}-${due.day.toString().padLeft(2, '0')}';
+      if (we['review_due']?.toString() != newDue) {
+        we['review_due'] = newDue;
         changed = true;
       }
     }

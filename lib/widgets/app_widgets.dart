@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../managers/language_manager.dart';
@@ -11,8 +13,12 @@ class BoxTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = math.max(
+      AppTheme.titleBarMinHeight,
+      MediaQuery.of(context).size.height * AppTheme.boxTitleHeight,
+    );
     return SizedBox(
-      height: MediaQuery.of(context).size.height * AppTheme.boxTitleHeight,
+      height: height,
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(color: AppTheme.grey2, width: 1),
@@ -76,8 +82,12 @@ class BoxBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bottomPadding = MediaQuery.of(context).padding.bottom;
+    final height = math.max(
+      AppTheme.bottomBarMinHeight,
+      MediaQuery.of(context).size.height * AppTheme.boxBottomHeight,
+    );
     return Container(
-      height: MediaQuery.of(context).size.height * AppTheme.boxBottomHeight + bottomPadding,
+      height: height + bottomPadding,
       color: const Color(0xFF1F1F1F),
       padding: EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8 + bottomPadding),
       child: Row(

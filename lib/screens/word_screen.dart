@@ -186,82 +186,90 @@ class _WordScreenState extends State<WordScreen> {
       Map<String, dynamic> bt,
       bool isNew,
       bool isLearned) {
-    return Column(children: [
-      SizedBox(
-          height: 80,
-          child: Center(
-              child: Text(word['word']?.toString() ?? '',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 36)))),
-      SizedBox(
-          height: 40,
-          child: Center(
-              child: Text(word['translation']?.toString() ?? '',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: AppTheme.lblFontSize, color: Colors.white70)))),
-      if (examples.any((e) => e.isNotEmpty))
-        Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4),
-            child: Text(at['examples_title'] ?? 'Beispiele:',
-                style: const TextStyle(
-                    fontSize: AppTheme.infFontSize, color: Colors.white60))),
-      for (var i = 0; i < 3; i++)
-        if (i < examples.length && examples[i].isNotEmpty)
-          SizedBox(
-              height: 26,
-              child: Text(
-                  '• ${examples[i]}${i < examplesNative.length && examplesNative[i].isNotEmpty ? "  (${examplesNative[i]})" : ""}',
-                  style: const TextStyle(
-                      fontSize: AppTheme.infFontSize, color: Colors.white60))),
-      SizedBox(
-          height: 24,
-          child: Text('Level: ${word['level'] ?? 0}',
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: AppTheme.infFontSize))),
-      if (_feedback.isNotEmpty)
-        SizedBox(
-            height: 26,
-            child: Text(_feedback,
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: Text(word['word']?.toString() ?? '',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: AppTheme.lblFontSize, color: _feedbackColor))),
-      const Spacer(),
-      if (!isLearned)
-        SizedBox(
-            height: 56,
-            width: double.infinity,
-            child: OutlinedButton(
-                onPressed: _answerChecked ? null : _onRead,
-                child: Text(at['btn_read'] ?? 'Gelesen',
-                    style: const TextStyle(fontSize: AppTheme.btnFontSize)))),
-      if (isLearned)
-        SizedBox(
-            height: 56,
-            child: Row(children: [
-              Expanded(
-                  child: TextButton(
-                      onPressed: () => _navigate(-1),
-                      child: Text(at['btn_prev'] ?? 'Vor',
-                          style: const TextStyle(
-                              fontSize: AppTheme.btnFontSize)))),
-              Expanded(
-                  child: TextButton(
-                      onPressed: () => _navigate(1),
-                      child: Text(at['btn_next_word'] ?? 'Nächstes',
-                          style: const TextStyle(
-                              fontSize: AppTheme.btnFontSize)))),
-            ])),
-      SizedBox(
-          height: 56,
-          width: double.infinity,
-          child: TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: Text(bt['back'] ?? 'zurück',
-                  style: const TextStyle(
-                      fontSize: AppTheme.btnFontSize,
-                      color: AppTheme.colorPrimary)))),
-    ]);
+                style: const TextStyle(fontSize: 36))),
+          Text(word['translation']?.toString() ?? '',
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                  fontSize: AppTheme.lblFontSize, color: Colors.white70)),
+          const SizedBox(height: 8),
+          if (examples.any((e) => e.isNotEmpty))
+            Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Text(at['examples_title'] ?? 'Beispiele:',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontSize: AppTheme.infFontSize,
+                        color: Colors.white60))),
+          for (var i = 0; i < 3; i++)
+            if (i < examples.length && examples[i].isNotEmpty)
+              Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 2),
+                  child: Text(
+                      '• ${examples[i]}${i < examplesNative.length && examplesNative[i].isNotEmpty ? "  (${examplesNative[i]})" : ""}',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: AppTheme.infFontSize,
+                          color: Colors.white60))),
+          const SizedBox(height: 8),
+          Text('Level: ${word['level'] ?? 0}',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: AppTheme.infFontSize)),
+          if (_feedback.isNotEmpty)
+            Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Text(_feedback,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: AppTheme.lblFontSize,
+                        color: _feedbackColor))),
+          const SizedBox(height: 12),
+          if (!isLearned)
+            SizedBox(
+                height: 56,
+                width: double.infinity,
+                child: OutlinedButton(
+                    onPressed: _answerChecked ? null : _onRead,
+                    child: Text(at['btn_read'] ?? 'Gelesen',
+                        style: const TextStyle(
+                            fontSize: AppTheme.btnFontSize)))),
+          if (isLearned)
+            SizedBox(
+                height: 56,
+                child: Row(children: [
+                  Expanded(
+                      child: TextButton(
+                          onPressed: () => _navigate(-1),
+                          child: Text(at['btn_prev'] ?? 'Vor',
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
+                  Expanded(
+                      child: TextButton(
+                          onPressed: () => _navigate(1),
+                          child: Text(at['btn_next_word'] ?? 'Nächstes',
+                              style: const TextStyle(
+                                  fontSize: AppTheme.btnFontSize)))),
+                ])),
+          const SizedBox(height: 8),
+          SizedBox(
+              height: 56,
+              width: double.infinity,
+              child: TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: Text(bt['back'] ?? 'zurück',
+                      style: const TextStyle(
+                          fontSize: AppTheme.btnFontSize,
+                          color: AppTheme.colorPrimary)))),
+        ],
+      ),
+    );
   }
 
   List<String> _parseList(dynamic v) {

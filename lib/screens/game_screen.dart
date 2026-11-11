@@ -320,8 +320,10 @@ class _GameScreenState extends State<GameScreen> {
         onPressed: _answered ? null : () => onAnswer(index),
         style: OutlinedButton.styleFrom(
             side: const BorderSide(color: AppTheme.colorPrimary),
-            padding: const EdgeInsets.all(4)),
+            padding: const EdgeInsets.all(8),
+            minimumSize: Size.zero,
+            tapTargetSize: MaterialTapTargetSize.shrinkWrap),
         child: Text(_options[index],
-            textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)));
+            textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)));
   }
 }

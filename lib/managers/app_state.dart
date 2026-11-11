@@ -48,6 +48,13 @@ class AppState extends ChangeNotifier {
   Future<void> initialize() async {
     await FileService.initialize();
     await loadAppData();
+
+    // Migrate/repair the logged-in user's vocab (e.g. review schedule) at
+    // startup, so stay-logged-in users also get fixes applied.
+    final uname = _appData.loggedUName;
+    if (uname.isNotEmpty) {
+      await VocabManager.migrateVocabForUser(uname);
+    }
   }
 
   Future<void> loadAppData() async {
