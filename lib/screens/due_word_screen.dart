@@ -240,7 +240,10 @@ class _DueWordScreenState extends State<DueWordScreen> {
                       height: 50,
                       width: double.infinity,
                       child: TextButton(
-                          onPressed: () => Navigator.of(context).pop(),
+                          onPressed: () {
+                            context.read<AppState>().notifyStatsChanged();
+                            Navigator.of(context).pop();
+                          },
                           child: Text(bt['back'] ?? 'zurück',
                               style: const TextStyle(
                                   fontSize: AppTheme.btnFontSize,

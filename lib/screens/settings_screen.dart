@@ -157,25 +157,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                       'Benutzer erstellen'),
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      Row(children: [
-                        Expanded(
-                            child: TextButton(
-                                onPressed: () => Navigator.of(context).pop(),
-                                child: Text(
-                                    letUppercaseFirst(bt['back'] ?? 'zurück'),
-                                    style: const TextStyle(
-                                        fontSize: AppTheme.btnFontSize,
-                                        color: AppTheme.colorPrimary)))),
-                        Expanded(
-                            child: TextButton(
-                                onPressed: AppTheme.closeApp,
-                                child: Text(bt['exit'] ?? 'Beenden',
-                                    style: const TextStyle(
-                                        fontSize: AppTheme.btnFontSize,
-                                        color: AppTheme.colorPrimary)))),
-                      ]),
                     ]))),
+        BoxBottom(
+            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
+            exitText: bt['exit']?.toString() ?? 'Beenden',
+            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onExit: AppTheme.closeApp),
       ]),
     );
   }

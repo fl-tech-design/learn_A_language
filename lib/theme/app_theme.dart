@@ -56,7 +56,7 @@ class AppTheme {
   static const double boxBottomHeight = 0.1;
   /// Feste Mindesthöhen, damit Titel-/Bottom-Bar auch im Querformat lesbar bleiben.
   static const double titleBarMinHeight = 48.0;
-  static const double bottomBarMinHeight = 72.0;
+  static const double bottomBarMinHeight = 96.0;
   static const double buttonHeight = 56.0;
   static const double buttonFontSize = 18.0;
   static const double contentPadding = 10.0;
@@ -69,7 +69,7 @@ class AppTheme {
   static const double smallFontSize = 12.0;
 
   // App version
-  static const String versionNr = '1.3.2';
+  static const String versionNr = '1.4.0';
   static const String appTitle = 'learn A language';
 
   /// Platform-safe app exit (kills process on desktop, pops on mobile).

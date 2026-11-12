@@ -29,7 +29,15 @@ class AppState extends ChangeNotifier {
   // Navigation & lifecycle
   bool _loginChecked = false;
   String _wordMode = 'new';
+  int _statsVersion = 0;
   final List<String> _screenHistory = [];
+
+  int get statsVersion => _statsVersion;
+
+  void notifyStatsChanged() {
+    _statsVersion++;
+    notifyListeners();
+  }
 
   // ── Getters ────────────────────────────────────────────────────
   String get currLang => _currLang;
@@ -179,6 +187,69 @@ class AppState extends ChangeNotifier {
   void setWordMode(String mode) {
     _wordMode = mode;
     notifyListeners();
+  }
+
+  // ── Course management ─────────────────────────────────────────
+
+  /// Returns the user's selected course IDs, or auto-derives from target lang.
+  List<String> get selectedCourseIds {
+    final fromUser = _userData?.selectedCourses ?? [];
+    if (fromUser.isNotEmpty) return fromUser;
+    // Auto-derive: if user has vocab data, find matching course
+    if (_userData?.vocab.isNotEmpty ?? false) {
+      final targetLang = _appData.loggedUName.isNotEmpty
+          ? (_userData?.mLang == 'de' ? 'en' : 'de')
+          : 'en';
+      final derived = availableCourses.entries
+          .where((e) => e.value.languageCode == targetLang)
+          .map((e) => e.key)
+          .toList();
+      if (derived.isNotEmpty) return derived;
+    }
+    return [];
+  }
+
+  /// Courses NOT yet selected by the user.
+  List<LanguageCourse> get availableNewCourses {
+    final selected = selectedCourseIds.toSet();
+    return availableCourses.entries
+        .where((e) => !selected.contains(e.key))
+        .map((e) => e.value)
+        .toList()
+      ..sort((a, b) {
+        final nameCmp = a.languageName.compareTo(b.languageName);
+        if (nameCmp != 0) return nameCmp;
+        return a.level.compareTo(b.level);
+      });
+  }
+
+  /// Selected courses as LanguageCourse objects, sorted alphabetically.
+  List<LanguageCourse> get selectedCourses {
+    return selectedCourseIds
+        .where((id) => availableCourses.containsKey(id))
+        .map((id) => availableCourses[id]!)
+        .toList()
+      ..sort((a, b) {
+        final nameCmp = a.languageName.compareTo(b.languageName);
+        if (nameCmp != 0) return nameCmp;
+        return a.level.compareTo(b.level);
+      });
+  }
+
+  Future<void> addCourse(String courseId) async {
+    if (!availableCourses.containsKey(courseId)) return;
+    final current = List<String>.from(selectedCourseIds);
+    if (current.contains(courseId)) return;
+    current.add(courseId);
+
+    final uname = _appData.loggedUName;
+    if (uname.isNotEmpty) {
+      final userData = await UserManager.loadUserdata(uname);
+      userData['selected_courses'] = current;
+      await UserManager.saveUserdata(uname, userData);
+      await _loadUserData(uname);
+      notifyListeners();
+    }
   }
 
   // ── Screen History (replaces scr_manager navigation) ──────────

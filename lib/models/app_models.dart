@@ -66,6 +66,7 @@ class UserData {
   final Map<String, VocabEntry> vocab;
   final Map<String, dynamic>? dayStreak;
   final int gameHighscore;
+  final List<String> selectedCourses;
 
   UserData({
     required this.uName,
@@ -76,6 +77,7 @@ class UserData {
     required this.vocab,
     this.dayStreak,
     this.gameHighscore = 0,
+    this.selectedCourses = const [],
   });
 
   factory UserData.fromJson(Map<String, dynamic> json) {
@@ -96,6 +98,7 @@ class UserData {
       vocab: vocab,
       dayStreak: json['day_streak'] as Map<String, dynamic>?,
       gameHighscore: json['game_highscore'] as int? ?? 0,
+      selectedCourses: List<String>.from(json['selected_courses'] ?? []),
     );
   }
 
@@ -109,6 +112,7 @@ class UserData {
       'vocab': vocab.map((key, value) => MapEntry(key, value.toJson())),
       if (dayStreak != null) 'day_streak': dayStreak,
       if (gameHighscore > 0) 'game_highscore': gameHighscore,
+      'selected_courses': selectedCourses,
     };
   }
 
@@ -156,6 +160,45 @@ class AppData {
     };
   }
 }
+
+/// Model for a language course (language + level + category).
+class LanguageCourse {
+  final String id;
+  final String languageCode;
+  final String languageName;
+  final String level;
+  final String category;
+  final String flagAsset;
+
+  const LanguageCourse({
+    required this.id,
+    required this.languageCode,
+    required this.languageName,
+    required this.level,
+    required this.category,
+    required this.flagAsset,
+  });
+}
+
+/// All available courses in the app.
+const Map<String, LanguageCourse> availableCourses = {
+  'en_verben_a1': LanguageCourse(
+    id: 'en_verben_a1',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'A1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
+  'de_verben_a1': LanguageCourse(
+    id: 'de_verben_a1',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'A1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+};
 
 /// Model for a question in the Turbo quiz.
 class QuizQuestion {
