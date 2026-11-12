@@ -95,6 +95,7 @@ class _LearningScreenState extends State<LearningScreen> {
                               },
                               child: Text(
                                   at['cat_learned_words'] ??
+                                      at['cat_learned_words'] ??
                                       'Gelernte Wörter',
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),

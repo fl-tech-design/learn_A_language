@@ -49,7 +49,10 @@ class _LoadingScreenState extends State<LoadingScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset('assets/images/spl_start.png', fit: BoxFit.fill),
+          Image.asset('assets/images/spl_start.png',
+              fit: BoxFit.cover,
+              width: double.infinity,
+              height: double.infinity),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.18,
             left: 0,

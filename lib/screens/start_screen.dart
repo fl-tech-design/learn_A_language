@@ -110,21 +110,39 @@ class _StartScreenState extends State<StartScreen> {
                     children: [
                       // ── Top row: UserInfo + Meine Kurse ──
                       if (appState.loggedUName.isNotEmpty)
-                        Row(
+                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(flex: 2, child: _UserInfoBox()),
-                            const SizedBox(width: AppTheme.contentSpacing),
-                            Expanded(
-                              flex: 3,
-                              child: _MyCoursesSection(
-                                courses: courses,
-                                selectedId: _selectedCourseId,
-                                onTap: (id) => setState(() {
-                                  _selectedCourseId =
-                                      _selectedCourseId == id ? null : id;
-                                }),
-                              ),
+                            Text(
+                                at['my_courses']?.toString() ??
+                                    'Meine Sprachen',
+                                style: const TextStyle(
+                                    fontSize: AppTheme.lblFontSize,
+                                    color: AppTheme.colorPrimary)),
+                            const SizedBox(height: 6),
+                            Row(
+                              crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                    flex: 2,
+                                    child: _UserInfoBox()),
+                                const SizedBox(
+                                    width: AppTheme.contentSpacing),
+                                Expanded(
+                                  flex: 3,
+                                  child: _MyCoursesSection(
+                                    courses: courses,
+                                    selectedId: _selectedCourseId,
+                                    onTap: (id) => setState(() {
+                                      _selectedCourseId =
+                                          _selectedCourseId == id
+                                              ? null
+                                              : id;
+                                    }),
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -249,13 +267,14 @@ class _MyCoursesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final at = context.read<AppState>().appTxt;
     if (courses.isEmpty) {
       return Container(
         padding: const EdgeInsets.all(10),
         decoration:
             BoxDecoration(border: Border.all(color: AppTheme.grey3, width: 1)),
-        child: const Text('Keine Kurse',
-            style: TextStyle(
+        child: Text(at['no_courses']?.toString() ?? 'Keine Kurse',
+            style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
     }
@@ -418,8 +437,8 @@ class _NewLanguagesSection extends StatelessWidget {
           border: Border.all(color: AppTheme.grey3, width: 1),
           borderRadius: BorderRadius.circular(8),
         ),
-        child: const Text('Keine neuen Sprachen verfügbar',
-            style: TextStyle(
+        child: Text(at['no_new_lang']?.toString() ?? 'Keine neuen Sprachen verfügbar',
+            style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
     }

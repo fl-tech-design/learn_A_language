@@ -69,14 +69,20 @@ class _DueWordScreenState extends State<DueWordScreen> {
     return chars.join(' ');
   }
 
+  /// Strips parenthetical notes like (pl), (sg) for comparison.
+  String _stripParenthetical(String s) {
+    return s.replaceAll(RegExp(r'\s*\([^)]*\)'), '').trim();
+  }
+
   void _onCharInput(String text) {
     if (text.isEmpty || _checked) return;
     final char = text[text.length - 1];
     if (_words.isEmpty || _index >= _words.length) return;
 
     final word = _words[_index];
-    final correctAnswer =
+    final rawAnswer =
         word['word']?.toString() ?? word['key']?.toString() ?? '';
+    final correctAnswer = _stripParenthetical(rawAnswer);
 
     // Next unfilled position in the original word (including spaces)
     final nextPos = _userInput.length;
@@ -99,7 +105,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
         setState(() {
           _checked = true;
           _userInput = correctAnswer;
-          _feedback = 'Richtig!';
+          _feedback = context.read<AppState>().appTxt['feedback_correct']?.toString() ?? 'Richtig!';
           _feedbackColor = AppTheme.green2;
           _correctDisplay = correctAnswer;
         });
@@ -120,9 +126,10 @@ class _DueWordScreenState extends State<DueWordScreen> {
   void _failWord(String correctAnswer, Map<String, dynamic> word) {
     setState(() {
       _checked = true;
-      _feedback = 'Falsch!';
+      _feedback = context.read<AppState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
       _feedbackColor = AppTheme.red2;
-      _correctDisplay = 'Richtig wäre: $correctAnswer';
+      final fb = context.read<AppState>().appTxt['feedback_correct_would_be']?.toString() ?? 'Richtig wäre:';
+      _correctDisplay = '$fb $correctAnswer';
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<AppState>().loggedUName;
@@ -175,12 +182,13 @@ class _DueWordScreenState extends State<DueWordScreen> {
                           child: Text(
                               allDone
                                   ? (at['no_due_words'] ??
+                                      at['no_due_words'] ??
                                       'Keine fälligen Wörter!')
                                   : (word?['translation']?.toString() ?? ''),
                               textAlign: TextAlign.center,
                               style: const TextStyle(fontSize: 32)))),
                   const SizedBox(height: 8),
-                  const Text('Übersetzung:',
+                  Text(at['translation_label'] ?? 'Übersetzung:',
                       style: TextStyle(
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60)),

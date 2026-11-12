@@ -62,6 +62,8 @@ class AppState extends ChangeNotifier {
     final uname = _appData.loggedUName;
     if (uname.isNotEmpty) {
       await VocabManager.migrateVocabForUser(uname);
+      await _loadUserData(uname);
+      await _autoSelectCourses(uname);
     }
   }
 
@@ -138,6 +140,7 @@ class AppState extends ChangeNotifier {
 
     await loadAppData();
     await _loadUserData(username);
+    await _autoSelectCourses(username);
     notifyListeners();
   }
 
@@ -186,6 +189,26 @@ class AppState extends ChangeNotifier {
 
   void setWordMode(String mode) {
     _wordMode = mode;
+    notifyListeners();
+  }
+
+  /// Auto-selects courses for existing users who have vocab but no courses.
+  Future<void> _autoSelectCourses(String username) async {
+    if (_userData == null) return;
+    if (_userData!.selectedCourses.isNotEmpty) return;
+    if (_userData!.vocab.isEmpty) return;
+
+    final targetLang = _userData!.mLang == 'de' ? 'en' : 'de';
+    final derived = availableCourses.entries
+        .where((e) => e.value.languageCode == targetLang)
+        .map((e) => e.key)
+        .toList();
+    if (derived.isEmpty) return;
+
+    final userData = await UserManager.loadUserdata(username);
+    userData['selected_courses'] = derived;
+    await UserManager.saveUserdata(username, userData);
+    await _loadUserData(username);
     notifyListeners();
   }
 

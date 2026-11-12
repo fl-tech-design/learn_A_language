@@ -243,10 +243,10 @@ class _GameScreenState extends State<GameScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(children: [
               Text(widget.difficulty == 'easy'
-                  ? 'Leicht'
+                  ? at['difficulty_easy_short']?.toString() ?? 'Leicht'
                   : widget.difficulty == 'hard'
-                      ? 'Schwer'
-                      : 'Mittel',
+                      ? at['difficulty_hard_short']?.toString() ?? 'Schwer'
+                      : at['difficulty_medium_short']?.toString() ?? 'Mittel',
                   style: const TextStyle(
                       fontSize: 12, color: AppTheme.cyan2)),
               const Spacer(),
@@ -275,17 +275,18 @@ class _GameScreenState extends State<GameScreen> {
                   style:
                       const TextStyle(fontSize: 20, color: AppTheme.yellow1)),
               const SizedBox(width: 12),
-              Text('R: $_highscore ${at['game_score'] ?? 'Pkt'}',
+              Text('${at['game_record_prefix'] ?? 'R: '}$_highscore ${at['game_score'] ?? 'Pkt'}',
                   style: const TextStyle(fontSize: 12, color: Colors.white60)),
             ])),
         if (_allDone)
-          const Expanded(
+          Expanded(
               child: Center(
                   child: Text(
-                      'Keine gelernten Wörter zum Spielen.\n'
-                      'Lerne zuerst neue Wörter!',
+                      at['no_learned_words'] ??
+                          'Keine gelernten Wörter zum Spielen.\n'
+                          'Lerne zuerst neue Wörter!',
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20)))),
+                      style: const TextStyle(fontSize: 20)))),
         if (_gameActive || _questions.isNotEmpty)
           Expanded(
               child: Padding(

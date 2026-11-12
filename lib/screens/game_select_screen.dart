@@ -31,11 +31,11 @@ class GameSelectScreen extends StatelessWidget {
                 child: Padding(
                     padding: const EdgeInsets.all(AppTheme.contentPadding),
                     child: Column(children: [
-                      const SizedBox(
+                      SizedBox(
                           height: 80,
                           child: Center(
-                              child: Text('Wähle eine Schwierigkeit:',
-                                  style: TextStyle(
+                              child: Text(at['select_difficulty'] ?? 'Wähle eine Schwierigkeit:',
+                                  style: const TextStyle(
                                       fontSize: AppTheme.lblFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -43,7 +43,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'easy'),
-                              child: const Text('Leicht (20s / +3s)',
+                              child: Text(at['difficulty_easy'] ?? 'Leicht (20s / +3s)',
                                   style: TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -51,7 +51,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'medium'),
-                              child: const Text('Mittel (15s / +2s)',
+                              child: Text(at['difficulty_medium'] ?? 'Mittel (15s / +2s)',
                                   style: TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -59,7 +59,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'hard'),
-                              child: const Text('Schwer (10s / +1s)',
+                              child: Text(at['difficulty_hard'] ?? 'Schwer (10s / +1s)',
                                   style: TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(

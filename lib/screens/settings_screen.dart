@@ -159,9 +159,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                       fontSize: AppTheme.btnFontSize)))),
                     ]))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
+            settingsText: bt['back']?.toString() ?? 'zurück',
             exitText: bt['exit']?.toString() ?? 'Beenden',
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () => Navigator.of(context).pop(),
             onExit: AppTheme.closeApp),
       ]),
     );
