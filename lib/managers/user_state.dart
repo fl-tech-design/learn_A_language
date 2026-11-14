@@ -4,11 +4,11 @@ import '../services/file_service.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
-/// User state – survives during the transition.
-/// Data / locale / colors were extracted to DataState (Commit A).
-/// Navigation state extracted to NavigationState (Commit B).
-/// This class will be further split in the next commit.
-class AppState extends ChangeNotifier {
+/// User state – manages login, registration, courses, and user data.
+/// Extracted from the former God Object AppState (Commit C).
+/// DataState (data/locale/colors) and NavigationState (wordMode/stats)
+/// were extracted in Commits A and B.
+class UserState extends ChangeNotifier {
   // User data
   UserData? _userData;
 
@@ -56,13 +56,6 @@ class AppState extends ChangeNotifier {
         await FileService.loadJson('data_app/files_user/data_$username.json');
     if (raw.isNotEmpty) {
       _userData = UserData.fromJson(raw);
-    }
-  }
-
-  Future<void> refreshUserData() async {
-    if (_userData?.uName.isNotEmpty ?? false) {
-      await _loadUserData(_userData!.uName);
-      notifyListeners();
     }
   }
 

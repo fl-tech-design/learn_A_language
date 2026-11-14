@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'managers/app_state.dart';
+import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
 import 'managers/vocab_manager.dart';
@@ -25,11 +25,11 @@ void main() async {
   await dataState.initialize();
 
   final navigationState = NavigationState();
-  final appState = AppState();
+  final userState = UserState();
   final uname = dataState.appData.loggedUName;
   if (uname.isNotEmpty) {
     await VocabManager.migrateVocabForUser(uname);
-    await appState.login(uname);
+    await userState.login(uname);
     await dataState.loadAppData();
   }
 
@@ -39,7 +39,7 @@ void main() async {
       child: ChangeNotifierProvider.value(
         value: navigationState,
         child: ChangeNotifierProvider.value(
-          value: appState,
+          value: userState,
           child: const LearnALanguageApp(),
         ),
       ),

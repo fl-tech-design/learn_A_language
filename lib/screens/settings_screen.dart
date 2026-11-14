@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/app_state.dart';
+import '../managers/user_state.dart';
 import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/language_manager.dart';
@@ -63,7 +63,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Future<void> _requestCreateUser() async {
     final dataState = context.read<DataState>();
-    final userState = context.read<AppState>();
+    final userState = context.read<UserState>();
     final bt = dataState.baseTxt;
     final at = dataState.appTxt;
     final result = await showCreateUserDialog(

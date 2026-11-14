@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../models/app_models.dart';
-import '../managers/app_state.dart';
+import '../managers/user_state.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
@@ -50,7 +50,7 @@ class _StartScreenState extends State<StartScreen> {
   Future<void> _showLogin() async {
     final dataState = context.read<DataState>();
     final bt = dataState.baseTxt;
-    final userState = context.read<AppState>();
+    final userState = context.read<UserState>();
     final result = await showLoginDialog(
       context,
       dataState.appData.registeredUser,
@@ -74,7 +74,7 @@ class _StartScreenState extends State<StartScreen> {
     final dataState = context.read<DataState>();
     final bt = dataState.baseTxt;
     final at = dataState.appTxt;
-    final userState = context.read<AppState>();
+    final userState = context.read<UserState>();
     final result = await showCreateUserDialog(
       context,
       bt['u_registration']?.toString() ?? 'Benutzer registrieren',
@@ -96,11 +96,11 @@ class _StartScreenState extends State<StartScreen> {
   @override
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();
-    final appState = context.watch<AppState>();
+    final userState = context.watch<UserState>();
     final bt = dataState.baseTxt;
     final at = dataState.appTxt;
-    final courses = appState.selectedCourses;
-    final newCourses = appState.availableNewCourses;
+    final courses = userState.selectedCourses;
+    final newCourses = userState.availableNewCourses;
     final selectedCourse = _selectedCourseId != null
         ? availableCourses[_selectedCourseId]
         : null;
@@ -176,7 +176,7 @@ class _StartScreenState extends State<StartScreen> {
                           at: at,
                           bt: bt,
                           onAdd: (id) async {
-                            await appState.addCourse(id);
+                            await userState.addCourse(id);
                             if (mounted) setState(() {});
                           },
                         ),
