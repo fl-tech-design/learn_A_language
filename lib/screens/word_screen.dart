@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
@@ -29,11 +30,12 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   Future<void> _loadWords() async {
+    final dataState = context.read<DataState>();
     final appState = context.read<AppState>();
-    final uname = appState.loggedUName;
+    final uname = dataState.appData.loggedUName;
     if (uname.isEmpty) return;
     final mode = appState.wordMode;
-    final limit = appState.appData.wordsPerSession;
+    final limit = dataState.appData.wordsPerSession;
     List<Map<String, dynamic>> words;
     if (mode == 'new') {
       words = await VocabQueries.getNewWords(uname, limit: limit);
@@ -54,9 +56,10 @@ class _WordScreenState extends State<WordScreen> {
   void _onRead() {
     if (_words.isEmpty || _answerChecked) return;
     final appState = context.read<AppState>();
+    final dataState = context.read<DataState>();
     final mode = appState.wordMode;
     final word = _words[_index];
-    final uname = appState.loggedUName;
+    final uname = dataState.appData.loggedUName;
 
     VocabQueries.checkWordAnswer(
             uname, word['key'] as String, word['translation'] as String)
@@ -88,9 +91,9 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   void _showLimitDialog() async {
-    final appState = context.read<AppState>();
-    final at = appState.appTxt;
-    final bt = appState.baseTxt;
+    final dataState = context.read<DataState>();
+    final at = dataState.appTxt;
+    final bt = dataState.baseTxt;
     final result = await showLimitDialog(context,
         title: at['tit_page_learning'] ?? 'Lernen',
         message: at['limit_reached'] ?? 'Tageslimit erreicht!',
@@ -106,9 +109,9 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   Future<void> _continueLearning() async {
-    final appState = context.read<AppState>();
-    final uname = appState.loggedUName;
-    final limit = appState.appData.wordsPerSession;
+    final dataState = context.read<DataState>();
+    final uname = dataState.appData.loggedUName;
+    final limit = dataState.appData.wordsPerSession;
     final extra = await VocabQueries.getNewWords(uname,
         limit: limit, offset: _words.length);
     if (extra.isEmpty) {
@@ -134,10 +137,10 @@ class _WordScreenState extends State<WordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
-    final mode = appState.wordMode;
+    final dataState = context.watch<DataState>();
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
+    final mode = context.read<AppState>().wordMode;
     final isNew = mode == 'new';
     final isLearned = mode == 'learned';
     final word =

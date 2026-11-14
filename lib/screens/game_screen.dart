@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
@@ -67,8 +67,8 @@ class _GameScreenState extends State<GameScreen> {
 
   Future<void> _startGame() async {
     _stopTimer();
-    final appState = context.read<AppState>();
-    final uname = appState.loggedUName;
+    final dataState = context.read<DataState>();
+    final uname = dataState.appData.loggedUName;
 
     if (uname.isNotEmpty) {
       final userData = await UserManager.loadUserdata(uname);
@@ -196,8 +196,8 @@ class _GameScreenState extends State<GameScreen> {
     _gameActive = false;
     _stopTimer();
 
-    final appState = context.read<AppState>();
-    final uname = appState.loggedUName;
+    final dataState = context.read<DataState>();
+    final uname = dataState.appData.loggedUName;
     var newRecord = false;
     if (uname.isNotEmpty && _score > _highscore) {
       _highscore = _score;
@@ -208,7 +208,7 @@ class _GameScreenState extends State<GameScreen> {
     }
 
     if (!mounted) return;
-    final at = appState.appTxt;
+    final at = dataState.appTxt;
     final result = await showGameOverDialog(context,
         score: _score,
         highscore: _highscore,
@@ -227,7 +227,7 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
+    final appState = context.watch<DataState>();
     final bt = appState.baseTxt;
     final at = appState.appTxt;
     final question = _currentQuestion?['translation']?.toString() ?? '';

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'managers/app_state.dart';
+import 'managers/data_state.dart';
+import 'managers/vocab_manager.dart';
 import 'theme/app_theme.dart';
 import 'screens/loading_screen.dart';
 import 'screens/start_screen.dart';
@@ -18,13 +20,24 @@ void main() async {
   // Immersive Fullscreen – Statusleiste + Navigation ausblenden
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
+  final dataState = DataState();
+  await dataState.initialize();
+
   final appState = AppState();
-  await appState.initialize();
+  final uname = dataState.appData.loggedUName;
+  if (uname.isNotEmpty) {
+    await VocabManager.migrateVocabForUser(uname);
+    await appState.login(uname);
+    await dataState.loadAppData();
+  }
 
   runApp(
     ChangeNotifierProvider.value(
-      value: appState,
-      child: const LearnALanguageApp(),
+      value: dataState,
+      child: ChangeNotifierProvider.value(
+        value: appState,
+        child: const LearnALanguageApp(),
+      ),
     ),
   );
 }

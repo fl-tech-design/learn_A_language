@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../widgets/app_widgets.dart';
 import 'game_screen.dart';
 
@@ -19,7 +19,7 @@ class GameSelectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
+    final appState = context.watch<DataState>();
     final bt = appState.baseTxt;
     final at = appState.appTxt;
 

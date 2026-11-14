@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 
@@ -37,7 +38,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
   }
 
   Future<void> _loadWords() async {
-    final uname = context.read<AppState>().loggedUName;
+    final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
     final words = await VocabQueries.getDueWords(uname);
     if (mounted) {
@@ -105,11 +106,11 @@ class _DueWordScreenState extends State<DueWordScreen> {
         setState(() {
           _checked = true;
           _userInput = correctAnswer;
-          _feedback = context.read<AppState>().appTxt['feedback_correct']?.toString() ?? 'Richtig!';
+          _feedback = context.read<DataState>().appTxt['feedback_correct']?.toString() ?? 'Richtig!';
           _feedbackColor = AppTheme.green2;
           _correctDisplay = correctAnswer;
         });
-        final uname = context.read<AppState>().loggedUName;
+        final uname = context.read<DataState>().appData.loggedUName;
         VocabQueries.checkWordAnswer(
             uname, word['key'] as String, word['translation'] as String);
       } else {
@@ -126,13 +127,13 @@ class _DueWordScreenState extends State<DueWordScreen> {
   void _failWord(String correctAnswer, Map<String, dynamic> word) {
     setState(() {
       _checked = true;
-      _feedback = context.read<AppState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
+      _feedback = context.read<DataState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
       _feedbackColor = AppTheme.red2;
-      final fb = context.read<AppState>().appTxt['feedback_correct_would_be']?.toString() ?? 'Richtig wäre:';
+      final fb = context.read<DataState>().appTxt['feedback_correct_would_be']?.toString() ?? 'Richtig wäre:';
       _correctDisplay = '$fb $correctAnswer';
       _userInput = correctAnswer; // Reveal full word
     });
-    final uname = context.read<AppState>().loggedUName;
+    final uname = context.read<DataState>().appData.loggedUName;
     VocabQueries.checkWordAnswer(uname, word['key'] as String, '');
   }
 
@@ -160,7 +161,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
+    final appState = context.watch<DataState>();
     final bt = appState.baseTxt;
     final at = appState.appTxt;
     final allDone = _words.isEmpty || _index >= _words.length;

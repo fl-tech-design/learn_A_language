@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/language_manager.dart';
 import '../widgets/app_widgets.dart';
@@ -23,31 +24,31 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final appState = context.read<AppState>();
-    _stayLoggedIn = appState.appData.stayLoggedIn;
-    _wordsPerSession = appState.appData.wordsPerSession;
+    final dataState = context.read<DataState>();
+    _stayLoggedIn = dataState.appData.stayLoggedIn;
+    _wordsPerSession = dataState.appData.wordsPerSession;
   }
 
   Future<void> _toggleStayLoggedIn(bool? v) async {
     if (v == null) return;
     setState(() => _stayLoggedIn = v);
-    final appState = context.read<AppState>();
+    final dataState = context.read<DataState>();
     await FileService.updateJsonKey(
         'data_app/app_data.json', 'stay_logged_in', v);
-    await appState.loadAppData();
+    await dataState.loadAppData();
   }
 
   Future<void> _setWordsPerSession(int count) async {
     setState(() => _wordsPerSession = count);
-    final appState = context.read<AppState>();
+    final dataState = context.read<DataState>();
     await FileService.updateJsonKey(
         'data_app/app_data.json', 'words_per_session', count);
-    await appState.loadAppData();
+    await dataState.loadAppData();
   }
 
   Future<void> _requestDeleteUser() async {
-    final appState = context.read<AppState>();
-    final bt = appState.baseTxt;
+    final dataState = context.read<DataState>();
+    final bt = dataState.baseTxt;
     final name = await showDeleteUserDialog(
         context,
         bt['user_delete'] ?? 'Benutzer löschen',
@@ -56,14 +57,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
         letUppercaseFirst(bt['chancel'] ?? 'abbrechen'));
     if (name == null || name.isEmpty) return;
     await UserManager.deleteUser(name);
-    await appState.loadAppData();
+    await dataState.loadAppData();
     setState(() {});
   }
 
   Future<void> _requestCreateUser() async {
-    final appState = context.read<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final dataState = context.read<DataState>();
+    final userState = context.read<AppState>();
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
     final result = await showCreateUserDialog(
         context,
         bt['u_registration'] ?? 'Benutzer registrieren',
@@ -74,15 +76,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
         letUppercaseFirst(bt['confirm'] ?? 'bestätigen'),
         letUppercaseFirst(bt['chancel'] ?? 'abbrechen'));
     if (result == null) return;
-    await appState.registerUser(result['username']!, result['m_lang']!);
+    await userState.registerUser(result['username']!, result['m_lang']!);
+    await dataState.loadAppData();
+    if (!mounted) return;
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final dataState = context.watch<DataState>();
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
 
     return Scaffold(
       body: Column(children: [
@@ -100,12 +104,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       FlagBox(
                           flagAsset: 'assets/images/flag_germany.png',
                           label: bt['german']?.toString() ?? 'deutsch',
-                          onTap: () => appState.changeLanguage('deutsch')),
+                          onTap: () => context.read<DataState>().changeLanguage('deutsch')),
                       const SizedBox(height: AppTheme.contentSpacing),
                       FlagBox(
                           flagAsset: 'assets/images/flag_uk.png',
                           label: bt['english']?.toString() ?? 'english',
-                          onTap: () => appState.changeLanguage('englisch')),
+                          onTap: () => context.read<DataState>().changeLanguage('englisch')),
                       const SizedBox(height: 20),
                       Row(children: [
                         SizedBox(

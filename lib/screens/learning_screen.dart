@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
@@ -23,8 +24,8 @@ class _LearningScreenState extends State<LearningScreen> {
   }
 
   Future<void> _refreshDueCount() async {
-    final appState = context.read<AppState>();
-    final uname = appState.loggedUName;
+    final dataState = context.read<DataState>();
+    final uname = dataState.appData.loggedUName;
     if (uname.isNotEmpty) {
       final count = await VocabQueries.getWordsDueCount(uname);
       if (mounted) setState(() => _dueCount = count);
@@ -33,7 +34,7 @@ class _LearningScreenState extends State<LearningScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<AppState>();
+    final appState = context.watch<DataState>();
     final bt = appState.baseTxt;
     final at = appState.appTxt;
 
@@ -64,7 +65,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () {
-                                appState.setWordMode('new');
+                                context.read<AppState>().setWordMode('new');
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(
@@ -90,7 +91,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () {
-                                appState.setWordMode('learned');
+                                context.read<AppState>().setWordMode('learned');
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(

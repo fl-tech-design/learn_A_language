@@ -6,7 +6,7 @@ class LanguageManager {
 
   /// Loads a language JSON file.
   /// In Flutter, language texts come from base_txt.json / app_txt.json
-  /// loaded by AppState, so this manager is kept minimal.
+  /// loaded by DataState, so this manager is kept minimal.
   static Future<Map<String, dynamic>> loadLanguageFile(
     String currLanguage,
   ) async {

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../models/app_models.dart';
 import '../managers/app_state.dart';
+import '../managers/data_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/login_dialog.dart';
@@ -28,26 +29,30 @@ class _StartScreenState extends State<StartScreen> {
 
   void _checkUser() {
     if (_checked) return;
-    final appState = context.read<AppState>();
-    if (appState.needsUserCheck) {
+    final dataState = context.read<DataState>();
+    final users = dataState.appData.registeredUser;
+    if (users.isEmpty || !dataState.appData.stayLoggedIn) {
       _checked = true;
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        final users = appState.appData.registeredUser;
+        if (!mounted) return;
         if (users.isEmpty) {
           _showCreateUser();
-        } else if (!appState.appData.stayLoggedIn) {
+        } else {
           _showLogin();
         }
       });
+    } else {
+      _checked = true;
     }
   }
 
   Future<void> _showLogin() async {
-    final appState = context.read<AppState>();
-    final bt = appState.baseTxt;
+    final dataState = context.read<DataState>();
+    final bt = dataState.baseTxt;
+    final userState = context.read<AppState>();
     final result = await showLoginDialog(
       context,
-      appState.appData.registeredUser,
+      dataState.appData.registeredUser,
       bt['btn_change_user']?.toString() ?? 'Benutzer wechseln',
       bt['btn_add_user']?.toString() ?? '+ Neuer User',
       bt['chancel']?.toString() ?? 'abbrechen',
@@ -56,15 +61,19 @@ class _StartScreenState extends State<StartScreen> {
     if (result == '__add__') {
       _showCreateUser();
     } else {
-      await appState.login(result);
+      await userState.login(result);
+      if (!mounted) return;
+      await dataState.loadAppData();
+      if (!mounted) return;
       setState(() {});
     }
   }
 
   Future<void> _showCreateUser() async {
-    final appState = context.read<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final dataState = context.read<DataState>();
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
+    final userState = context.read<AppState>();
     final result = await showCreateUserDialog(
       context,
       bt['u_registration']?.toString() ?? 'Benutzer registrieren',
@@ -76,15 +85,19 @@ class _StartScreenState extends State<StartScreen> {
       bt['chancel']?.toString() ?? 'abbrechen',
     );
     if (result == null) return;
-    await appState.registerUser(result['username']!, result['m_lang']!);
+    await userState.registerUser(result['username']!, result['m_lang']!);
+    if (!mounted) return;
+    await dataState.loadAppData();
+    if (!mounted) return;
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
+    final dataState = context.watch<DataState>();
     final appState = context.watch<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
     final courses = appState.selectedCourses;
     final newCourses = appState.availableNewCourses;
     final selectedCourse = _selectedCourseId != null
@@ -109,7 +122,7 @@ class _StartScreenState extends State<StartScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       // ── Top row: UserInfo + Meine Kurse ──
-                      if (appState.loggedUName.isNotEmpty)
+                      if (dataState.appData.loggedUName.isNotEmpty)
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -186,10 +199,11 @@ class _StartScreenState extends State<StartScreen> {
 class _UserInfoBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final dataState = context.watch<DataState>();
     final appState = context.watch<AppState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
-    final username = appState.loggedUName;
+    final bt = dataState.baseTxt;
+    final at = dataState.appTxt;
+    final username = dataState.appData.loggedUName;
 
     if (username.isEmpty) return const SizedBox.shrink();
 
@@ -267,7 +281,7 @@ class _MyCoursesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final at = context.read<AppState>().appTxt;
+    final at = context.read<DataState>().appTxt;
     if (courses.isEmpty) {
       return Container(
         padding: const EdgeInsets.all(10),
