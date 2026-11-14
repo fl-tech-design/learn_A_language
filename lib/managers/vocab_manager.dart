@@ -1,3 +1,4 @@
+import '../models/app_models.dart';
 import '../services/file_service.dart';
 import 'user_manager.dart';
 
@@ -72,7 +73,9 @@ class VocabManagerImpl implements VocabManager {
   @override
   Future<void> initVocabForUser(
       String username, Map<String, dynamic> languageDict) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final existingVocab = userData['vocab'];
     if (existingVocab is Map && existingVocab.isNotEmpty) return;
 
@@ -114,12 +117,16 @@ class VocabManagerImpl implements VocabManager {
     }
 
     userData['vocab'] = vocab;
-    await _userManager.saveUserdata(username, userData);
+    // TODO(point3c): remove bridge
+    await _userManager.saveUserdata(
+        username, UserData.fromJson(userData));
   }
 
   @override
   Future<void> migrateVocabForUser(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>?;
     if (vocab == null || vocab.isEmpty) return;
 
@@ -213,7 +220,9 @@ class VocabManagerImpl implements VocabManager {
     }
 
     if (changed) {
-      await _userManager.saveUserdata(username, userData);
+      // TODO(point3c): remove bridge
+      await _userManager.saveUserdata(
+          username, UserData.fromJson(userData));
     }
   }
 }

@@ -246,6 +246,22 @@ class AppData {
       'words_per_session': wordsPerSession,
     };
   }
+
+  AppData copyWith({
+    List<String>? registeredUser,
+    String? loggedUName,
+    bool? userLoggedIn,
+    bool? stayLoggedIn,
+    int? wordsPerSession,
+  }) {
+    return AppData(
+      registeredUser: registeredUser ?? this.registeredUser,
+      loggedUName: loggedUName ?? this.loggedUName,
+      userLoggedIn: userLoggedIn ?? this.userLoggedIn,
+      stayLoggedIn: stayLoggedIn ?? this.stayLoggedIn,
+      wordsPerSession: wordsPerSession ?? this.wordsPerSession,
+    );
+  }
 }
 
 /// Model for a language course (language + level + category).

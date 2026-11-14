@@ -13,7 +13,7 @@ abstract class FileService {
   Future<Map<String, dynamic>> loadJson(String relativePath);
   Future<void> saveJson(String relativePath, Map<String, dynamic> data);
   Future<void> updateJsonKey(
-      String relativePath, String key, dynamic value);
+      String relativePath, String key, Object? value);
   Future<Map<String, dynamic>> loadBundledJson(String assetPath);
   Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
 }
@@ -150,7 +150,7 @@ class FileServiceImpl implements FileService {
 
   @override
   Future<void> updateJsonKey(
-      String relativePath, String key, dynamic value) async {
+      String relativePath, String key, Object? value) async {
     final data = await loadJson(relativePath);
     data[key] = value;
     await saveJson(relativePath, data);

@@ -57,11 +57,7 @@ class UserState extends ChangeNotifier {
   }
 
   Future<void> _loadUserData(String username) async {
-    final raw =
-        await _userManager.loadUserdata(username);
-    if (raw.isNotEmpty) {
-      _userData = UserData.fromJson(raw);
-    }
+    _userData = await _userManager.loadUserdata(username);
   }
 
   /// Auto-selects courses for existing users who have vocab but no courses.
@@ -78,8 +74,9 @@ class UserState extends ChangeNotifier {
     if (derived.isEmpty) return;
 
     final userData = await _userManager.loadUserdata(username);
-    userData['selected_courses'] = derived;
-    await _userManager.saveUserdata(username, userData);
+    if (userData == null) return;
+    final updated = userData.copyWith(selectedCourses: derived);
+    await _userManager.saveUserdata(username, updated);
     await _loadUserData(username);
     notifyListeners();
   }
@@ -138,8 +135,9 @@ class UserState extends ChangeNotifier {
     final uname = _userData!.uName;
     if (uname.isNotEmpty) {
       final userData = await _userManager.loadUserdata(uname);
-      userData['selected_courses'] = current;
-      await _userManager.saveUserdata(uname, userData);
+      if (userData == null) return;
+      final updated = userData.copyWith(selectedCourses: current);
+      await _userManager.saveUserdata(uname, updated);
       await _loadUserData(uname);
       notifyListeners();
     }

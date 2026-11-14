@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../models/app_models.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
@@ -29,7 +30,9 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<Map<String, dynamic>>> getDueWords(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     final today = DateTime.now();
     final dueWords = <Map<String, dynamic>>[];
@@ -60,7 +63,9 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<Map<String, dynamic>>> getWordsByLevel(
       String username, int targetLevel) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
         .where(
@@ -72,7 +77,9 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<Map<String, dynamic>>> getNewWords(String username,
       {int limit = 10, int offset = 0}) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     final newWords = vocab.entries
         .where((e) {
@@ -88,7 +95,9 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<Map<String, dynamic>>> getMasteredWords(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
         .where((e) => (e.value as Map<String, dynamic>)['status'] == 'seen')
@@ -108,7 +117,9 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<Map<String, dynamic>>> getAllWords(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
         .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
@@ -117,14 +128,18 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<Map<String, dynamic>> getDayStreak(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     return userData['day_streak'] as Map<String, dynamic>? ??
         {'current': 0, 'longest': 0, 'last_date': ''};
   }
 
   @override
   Future<void> updateDayStreak(String username) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     var streak = userData['day_streak'] as Map<String, dynamic>? ??
         {'current': 0, 'longest': 0, 'last_date': ''};
 
@@ -145,13 +160,17 @@ class VocabQueriesImpl implements VocabQueries {
     streak['last_date'] = todayStr;
 
     userData['day_streak'] = streak;
-    await _userManager.saveUserdata(username, userData);
+    // TODO(point3c): remove bridge
+    await _userManager.saveUserdata(
+        username, UserData.fromJson(userData));
   }
 
   @override
   Future<Map<String, dynamic>> checkWordAnswer(
       String username, String wordKey, String userInput) async {
-    final userData = await _userManager.loadUserdata(username);
+    // TODO(point3c): remove bridge
+    final ud = await _userManager.loadUserdata(username);
+    final userData = ud?.toJson() ?? {};
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
 
     if (!vocab.containsKey(wordKey)) {
@@ -215,7 +234,9 @@ class VocabQueriesImpl implements VocabQueries {
     }
 
     userData['vocab'] = vocab;
-    await _userManager.saveUserdata(username, userData);
+    // TODO(point3c): remove bridge
+    await _userManager.saveUserdata(
+        username, UserData.fromJson(userData));
     return result;
   }
 }

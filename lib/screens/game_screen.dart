@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
+import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/game_over_dialog.dart';
 
@@ -72,7 +73,9 @@ class _GameScreenState extends State<GameScreen> {
     final uname = dataState.appData.loggedUName;
 
     if (uname.isNotEmpty) {
-      final userData = await context.read<UserManager>().loadUserdata(uname);
+      // TODO(point3c): remove bridge
+      final ud = await context.read<UserManager>().loadUserdata(uname);
+      final userData = ud?.toJson() ?? {};
       _highscore = userData['game_highscore'] as int? ?? 0;
     }
 
@@ -203,9 +206,12 @@ class _GameScreenState extends State<GameScreen> {
     if (uname.isNotEmpty && _score > _highscore) {
       _highscore = _score;
       final um = context.read<UserManager>();
-      final userData = await um.loadUserdata(uname);
+      // TODO(point3c): remove bridge
+      final ud = await um.loadUserdata(uname);
+      final userData = ud?.toJson() ?? {};
       userData['game_highscore'] = _highscore;
-      await um.saveUserdata(uname, userData);
+      // TODO(point3c): remove bridge
+      await um.saveUserdata(uname, UserData.fromJson(userData));
       newRecord = true;
     }
 

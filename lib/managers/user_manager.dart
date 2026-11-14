@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import '../models/app_models.dart';
 import '../services/file_service.dart';
 
 /// Pure user management logic — interface extracted from the former static
@@ -7,8 +8,8 @@ import '../services/file_service.dart';
 abstract class UserManager {
   Future<String> createUserFile(
       String username, String mLang, Map<String, dynamic> languageDict);
-  Future<Map<String, dynamic>> loadUserdata(String username);
-  Future<void> saveUserdata(String username, Map<String, dynamic> data);
+  Future<UserData?> loadUserdata(String username);
+  Future<void> saveUserdata(String username, UserData data);
   Future<void> addNewUserToList(String username);
   Future<String> deleteUser(String username);
   Future<void> changeLoginState(bool newState);
@@ -21,6 +22,8 @@ class UserManagerImpl implements UserManager {
 
   UserManagerImpl(this._fileService);
 
+  static const _appDataPath = 'data_app/app_data.json';
+
   @override
   Future<String> createUserFile(
       String username, String mLang, Map<String, dynamic> languageDict) async {
@@ -30,40 +33,43 @@ class UserManagerImpl implements UserManager {
       return 'Benutzer $username existiert bereits.';
     }
 
-    final userData = {
-      'u_name': username,
-      'm_lang': mLang,
-      'progress': {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
-      'learned_languages': <String>[],
-      'language': languageDict,
-      'vocab': <String, dynamic>{},
-    };
+    final userData = UserData(
+      uName: username,
+      mLang: mLang,
+      progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
+      learnedLanguages: const [],
+      language: languageDict,
+      vocab: const {},
+    );
 
-    await _fileService.saveJson(filePath, userData);
+    await _fileService.saveJson(filePath, userData.toJson());
     return 'Benutzer $username wurde erfolgreich erstellt.';
   }
 
   @override
-  Future<Map<String, dynamic>> loadUserdata(String username) async {
-    return _fileService.loadJson('data_app/files_user/data_$username.json');
+  Future<UserData?> loadUserdata(String username) async {
+    final raw = await _fileService.loadJson(
+        'data_app/files_user/data_$username.json');
+    if (raw.isEmpty) return null;
+    return UserData.fromJson(raw);
   }
 
   @override
-  Future<void> saveUserdata(
-      String username, Map<String, dynamic> data) async {
+  Future<void> saveUserdata(String username, UserData data) async {
     await _fileService.saveJson(
-        'data_app/files_user/data_$username.json', data);
+        'data_app/files_user/data_$username.json', data.toJson());
   }
 
   @override
   Future<void> addNewUserToList(String username) async {
-    final data = await _fileService.loadJson('data_app/app_data.json');
-    final users = List<String>.from(data['registered_user'] ?? []);
+    final data = await _fileService.loadJson(_appDataPath);
+    final appData = AppData.fromJson(data);
+    final users = List<String>.from(appData.registeredUser);
     if (!users.contains(username)) {
       users.add(username);
-      data['registered_user'] = users;
-      await _fileService.saveJson('data_app/app_data.json', data);
     }
+    await _fileService.saveJson(
+        _appDataPath, appData.copyWith(registeredUser: users).toJson());
   }
 
   @override
@@ -73,21 +79,31 @@ class UserManagerImpl implements UserManager {
       return 'Kein Benutzername angegeben.';
     }
 
-    final data = await _fileService.loadJson('data_app/app_data.json');
-    final users = List<String>.from(data['registered_user'] ?? []);
+    final data = await _fileService.loadJson(_appDataPath);
+    final appData = AppData.fromJson(data);
+    final users = List<String>.from(appData.registeredUser);
 
     if (!users.contains(username)) {
       return "Benutzer '$username' ist nicht registriert.";
     }
 
     users.remove(username);
-    data['registered_user'] = users;
 
-    if (data['logged_u_name'] == username) {
-      data['logged_u_name'] = '';
-      data['user_logged_in'] = false;
+    var loggedUName = appData.loggedUName;
+    var userLoggedIn = appData.userLoggedIn;
+    if (loggedUName == username) {
+      loggedUName = '';
+      userLoggedIn = false;
     }
-    await _fileService.saveJson('data_app/app_data.json', data);
+
+    await _fileService.saveJson(
+        _appDataPath,
+        appData
+            .copyWith(
+                registeredUser: users,
+                loggedUName: loggedUName,
+                userLoggedIn: userLoggedIn)
+            .toJson());
 
     try {
       final dir = await _fileService.appDir;
@@ -103,13 +119,17 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<void> changeLoginState(bool newState) async {
-    await _fileService.updateJsonKey(
-        'data_app/app_data.json', 'user_logged_in', newState);
+    final data = await _fileService.loadJson(_appDataPath);
+    final appData = AppData.fromJson(data);
+    await _fileService.saveJson(
+        _appDataPath, appData.copyWith(userLoggedIn: newState).toJson());
   }
 
   @override
   Future<void> setLoggedUname(String loggedUname) async {
-    await _fileService.updateJsonKey(
-        'data_app/app_data.json', 'logged_u_name', loggedUname);
+    final data = await _fileService.loadJson(_appDataPath);
+    final appData = AppData.fromJson(data);
+    await _fileService.saveJson(
+        _appDataPath, appData.copyWith(loggedUName: loggedUname).toJson());
   }
 }
