@@ -4,27 +4,16 @@ import '../services/file_service.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
-/// User + navigation state – survives during the transition.
-/// Data / locale / colors were extracted to DataState.
-/// This class will be further split in the next commits.
+/// User state – survives during the transition.
+/// Data / locale / colors were extracted to DataState (Commit A).
+/// Navigation state extracted to NavigationState (Commit B).
+/// This class will be further split in the next commit.
 class AppState extends ChangeNotifier {
   // User data
   UserData? _userData;
 
-  // Navigation & lifecycle
-  String _wordMode = 'new';
-  int _statsVersion = 0;
-
-  int get statsVersion => _statsVersion;
-
-  void notifyStatsChanged() {
-    _statsVersion++;
-    notifyListeners();
-  }
-
   // ── Getters ────────────────────────────────────────────────────
   UserData? get userData => _userData;
-  String get wordMode => _wordMode;
 
   // ── Login / User management ───────────────────────────────────
   Future<void> login(String username) async {
@@ -75,11 +64,6 @@ class AppState extends ChangeNotifier {
       await _loadUserData(_userData!.uName);
       notifyListeners();
     }
-  }
-
-  void setWordMode(String mode) {
-    _wordMode = mode;
-    notifyListeners();
   }
 
   /// Auto-selects courses for existing users who have vocab but no courses.

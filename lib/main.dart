@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'managers/app_state.dart';
 import 'managers/data_state.dart';
+import 'managers/navigation_state.dart';
 import 'managers/vocab_manager.dart';
 import 'theme/app_theme.dart';
 import 'screens/loading_screen.dart';
@@ -23,6 +24,7 @@ void main() async {
   final dataState = DataState();
   await dataState.initialize();
 
+  final navigationState = NavigationState();
   final appState = AppState();
   final uname = dataState.appData.loggedUName;
   if (uname.isNotEmpty) {
@@ -35,8 +37,11 @@ void main() async {
     ChangeNotifierProvider.value(
       value: dataState,
       child: ChangeNotifierProvider.value(
-        value: appState,
-        child: const LearnALanguageApp(),
+        value: navigationState,
+        child: ChangeNotifierProvider.value(
+          value: appState,
+          child: const LearnALanguageApp(),
+        ),
       ),
     ),
   );

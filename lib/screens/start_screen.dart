@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import '../models/app_models.dart';
 import '../managers/app_state.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/login_dialog.dart';
@@ -200,7 +201,7 @@ class _UserInfoBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();
-    final appState = context.watch<AppState>();
+    final navState = context.watch<NavigationState>();
     final bt = dataState.baseTxt;
     final at = dataState.appTxt;
     final username = dataState.appData.loggedUName;
@@ -208,7 +209,7 @@ class _UserInfoBox extends StatelessWidget {
     if (username.isEmpty) return const SizedBox.shrink();
 
     return FutureBuilder<Map<String, dynamic>>(
-        key: ValueKey('userinfo_${username}_${appState.statsVersion}'),
+        key: ValueKey('userinfo_${username}_${navState.statsVersion}'),
         future: _loadStats(username),
         builder: (ctx, snapshot) {
           final stats = snapshot.data ?? {};
@@ -391,7 +392,7 @@ class _CourseDetailView extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: () {
-                context.read<AppState>().setWordMode('new');
+                context.read<NavigationState>().setWordMode('new');
                 Navigator.of(context).pushNamed('/learning');
               },
               child: Text(at['btn_learn'] ?? 'Lernen',

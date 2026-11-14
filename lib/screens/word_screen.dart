@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/app_state.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
@@ -31,10 +31,10 @@ class _WordScreenState extends State<WordScreen> {
 
   Future<void> _loadWords() async {
     final dataState = context.read<DataState>();
-    final appState = context.read<AppState>();
+    final navState = context.read<NavigationState>();
     final uname = dataState.appData.loggedUName;
     if (uname.isEmpty) return;
-    final mode = appState.wordMode;
+    final mode = navState.wordMode;
     final limit = dataState.appData.wordsPerSession;
     List<Map<String, dynamic>> words;
     if (mode == 'new') {
@@ -55,9 +55,9 @@ class _WordScreenState extends State<WordScreen> {
 
   void _onRead() {
     if (_words.isEmpty || _answerChecked) return;
-    final appState = context.read<AppState>();
+    final navState = context.read<NavigationState>();
     final dataState = context.read<DataState>();
-    final mode = appState.wordMode;
+    final mode = navState.wordMode;
     final word = _words[_index];
     final uname = dataState.appData.loggedUName;
 
@@ -103,7 +103,7 @@ class _WordScreenState extends State<WordScreen> {
     if (result == true) {
       _continueLearning();
     } else {
-      context.read<AppState>().notifyStatsChanged();
+      context.read<NavigationState>().notifyStatsChanged();
       Navigator.of(context).pop();
     }
   }
@@ -140,7 +140,7 @@ class _WordScreenState extends State<WordScreen> {
     final dataState = context.watch<DataState>();
     final bt = dataState.baseTxt;
     final at = dataState.appTxt;
-    final mode = context.read<AppState>().wordMode;
+    final mode = context.read<NavigationState>().wordMode;
     final isNew = mode == 'new';
     final isLearned = mode == 'learned';
     final word =
@@ -267,7 +267,7 @@ class _WordScreenState extends State<WordScreen> {
               width: double.infinity,
               child: TextButton(
                   onPressed: () {
-                    context.read<AppState>().notifyStatsChanged();
+                    context.read<NavigationState>().notifyStatsChanged();
                     Navigator.of(context).pop();
                   },
                   child: Text(bt['back'] ?? 'zurück',

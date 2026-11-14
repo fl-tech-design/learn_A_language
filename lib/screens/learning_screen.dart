@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/app_state.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
@@ -65,7 +65,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () {
-                                context.read<AppState>().setWordMode('new');
+                                context.read<NavigationState>().setWordMode('new');
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(
@@ -91,7 +91,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () {
-                                context.read<AppState>().setWordMode('learned');
+                                context.read<NavigationState>().setWordMode('learned');
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(
