@@ -44,7 +44,7 @@ class GameSelectScreen extends StatelessWidget {
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'easy'),
                               child: Text(at['difficulty_easy'] ?? 'Leicht (20s / +3s)',
-                                  style: TextStyle(fontSize: 16)))),
+                                  style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 56,
@@ -52,7 +52,7 @@ class GameSelectScreen extends StatelessWidget {
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'medium'),
                               child: Text(at['difficulty_medium'] ?? 'Mittel (15s / +2s)',
-                                  style: TextStyle(fontSize: 16)))),
+                                  style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 56,
@@ -60,7 +60,7 @@ class GameSelectScreen extends StatelessWidget {
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'hard'),
                               child: Text(at['difficulty_hard'] ?? 'Schwer (10s / +1s)',
-                                  style: TextStyle(fontSize: 16)))),
+                                  style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 56,

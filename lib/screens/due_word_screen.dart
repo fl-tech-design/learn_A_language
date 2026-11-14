@@ -190,7 +190,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                               style: const TextStyle(fontSize: 32)))),
                   const SizedBox(height: 8),
                   Text(at['translation_label'] ?? 'Übersetzung:',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60)),
                   const SizedBox(height: 4),

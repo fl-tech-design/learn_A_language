@@ -85,10 +85,10 @@ class _LoadingScreenState extends State<LoadingScreen> {
             bottom: MediaQuery.of(context).size.height * 0.02,
             left: 0,
             right: 0,
-            child: Text(
+            child: const Text(
               'v${AppTheme.versionNr}',
               textAlign: TextAlign.center,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12,
                 color: Colors.white54,
                 fontFamily: 'Jura',
