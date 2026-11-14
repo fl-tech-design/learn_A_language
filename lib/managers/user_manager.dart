@@ -2,18 +2,30 @@ import 'dart:io';
 
 import '../services/file_service.dart';
 
-/// Pure static user management logic – 1:1 from user_manager.py.
-class UserManager {
-  UserManager._();
+/// Pure user management logic — interface extracted from the former static
+/// UserManager class (point2, Commit A).
+abstract class UserManager {
+  Future<String> createUserFile(
+      String username, String mLang, Map<String, dynamic> languageDict);
+  Future<Map<String, dynamic>> loadUserdata(String username);
+  Future<void> saveUserdata(String username, Map<String, dynamic> data);
+  Future<void> addNewUserToList(String username);
+  Future<String> deleteUser(String username);
+  Future<void> changeLoginState(bool newState);
+  Future<void> setLoggedUname(String loggedUname);
+}
 
-  /// Creates a new user file with initialized structure.
-  static Future<String> createUserFile(
-    String username,
-    String mLang,
-    Map<String, dynamic> languageDict,
-  ) async {
+/// Concrete implementation backed by [FileService].
+class UserManagerImpl implements UserManager {
+  final FileService _fileService;
+
+  UserManagerImpl(this._fileService);
+
+  @override
+  Future<String> createUserFile(
+      String username, String mLang, Map<String, dynamic> languageDict) async {
     final filePath = 'data_app/files_user/data_$username.json';
-    final existing = await FileService.loadJson(filePath);
+    final existing = await _fileService.loadJson(filePath);
     if (existing.isNotEmpty) {
       return 'Benutzer $username existiert bereits.';
     }
@@ -27,45 +39,41 @@ class UserManager {
       'vocab': <String, dynamic>{},
     };
 
-    await FileService.saveJson(filePath, userData);
+    await _fileService.saveJson(filePath, userData);
     return 'Benutzer $username wurde erfolgreich erstellt.';
   }
 
-  /// Loads user data from JSON.
-  static Future<Map<String, dynamic>> loadUserdata(String username) async {
-    return FileService.loadJson('data_app/files_user/data_$username.json');
+  @override
+  Future<Map<String, dynamic>> loadUserdata(String username) async {
+    return _fileService.loadJson('data_app/files_user/data_$username.json');
   }
 
-  /// Saves complete user data back.
-  static Future<void> saveUserdata(
-    String username,
-    Map<String, dynamic> data,
-  ) async {
-    await FileService.saveJson(
-      'data_app/files_user/data_$username.json',
-      data,
-    );
+  @override
+  Future<void> saveUserdata(
+      String username, Map<String, dynamic> data) async {
+    await _fileService.saveJson(
+        'data_app/files_user/data_$username.json', data);
   }
 
-  /// Adds a username to the registered_user list in app_data.json.
-  static Future<void> addNewUserToList(String username) async {
-    final data = await FileService.loadJson('data_app/app_data.json');
+  @override
+  Future<void> addNewUserToList(String username) async {
+    final data = await _fileService.loadJson('data_app/app_data.json');
     final users = List<String>.from(data['registered_user'] ?? []);
     if (!users.contains(username)) {
       users.add(username);
       data['registered_user'] = users;
-      await FileService.saveJson('data_app/app_data.json', data);
+      await _fileService.saveJson('data_app/app_data.json', data);
     }
   }
 
-  /// Deletes a user completely.
-  static Future<String> deleteUser(String username) async {
+  @override
+  Future<String> deleteUser(String username) async {
     username = (username).trim();
     if (username.isEmpty) {
       return 'Kein Benutzername angegeben.';
     }
 
-    final data = await FileService.loadJson('data_app/app_data.json');
+    final data = await _fileService.loadJson('data_app/app_data.json');
     final users = List<String>.from(data['registered_user'] ?? []);
 
     if (!users.contains(username)) {
@@ -79,11 +87,10 @@ class UserManager {
       data['logged_u_name'] = '';
       data['user_logged_in'] = false;
     }
-    await FileService.saveJson('data_app/app_data.json', data);
+    await _fileService.saveJson('data_app/app_data.json', data);
 
-    // Delete user file
     try {
-      final dir = await FileService.appDir;
+      final dir = await _fileService.appDir;
       final file = File('$dir/data_app/files_user/data_$username.json');
       if (await file.exists()) {
         await file.delete();
@@ -94,15 +101,15 @@ class UserManager {
     }
   }
 
-  /// Changes login state in app_data.json.
-  static Future<void> changeLoginState(bool newState) async {
-    await FileService.updateJsonKey(
+  @override
+  Future<void> changeLoginState(bool newState) async {
+    await _fileService.updateJsonKey(
         'data_app/app_data.json', 'user_logged_in', newState);
   }
 
-  /// Sets the currently logged-in username.
-  static Future<void> setLoggedUname(String loggedUname) async {
-    await FileService.updateJsonKey(
+  @override
+  Future<void> setLoggedUname(String loggedUname) async {
+    await _fileService.updateJsonKey(
         'data_app/app_data.json', 'logged_u_name', loggedUname);
   }
 }

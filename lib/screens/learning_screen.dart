@@ -27,7 +27,7 @@ class _LearningScreenState extends State<LearningScreen> {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
     if (uname.isNotEmpty) {
-      final count = await VocabQueries.getWordsDueCount(uname);
+      final count = await context.read<VocabQueries>().getWordsDueCount(uname);
       if (mounted) setState(() => _dueCount = count);
     }
   }

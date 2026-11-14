@@ -37,11 +37,12 @@ class _WordScreenState extends State<WordScreen> {
     final mode = navState.wordMode;
     final limit = dataState.appData.wordsPerSession;
     List<Map<String, dynamic>> words;
+    final vq = context.read<VocabQueries>();
     if (mode == 'new') {
-      words = await VocabQueries.getNewWords(uname, limit: limit);
-      _streak = await VocabQueries.getDayStreak(uname);
+      words = await vq.getNewWords(uname, limit: limit);
+      _streak = await vq.getDayStreak(uname);
     } else {
-      words = await VocabQueries.getMasteredWords(uname);
+      words = await vq.getMasteredWords(uname);
     }
     if (mounted) {
       setState(() {
@@ -61,14 +62,14 @@ class _WordScreenState extends State<WordScreen> {
     final word = _words[_index];
     final uname = dataState.appData.loggedUName;
 
-    VocabQueries.checkWordAnswer(
+    context.read<VocabQueries>().checkWordAnswer(
             uname, word['key'] as String, word['translation'] as String)
         .then((result) {
       if (!mounted) return;
       setState(() => _answerChecked = true);
       if (mode == 'new') {
-        VocabQueries.updateDayStreak(uname);
-        VocabQueries.getDayStreak(uname).then((s) {
+        context.read<VocabQueries>().updateDayStreak(uname);
+        context.read<VocabQueries>().getDayStreak(uname).then((s) {
           if (mounted) setState(() => _streak = s);
         });
         if (_index + 1 >= _words.length) {
@@ -112,7 +113,7 @@ class _WordScreenState extends State<WordScreen> {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
     final limit = dataState.appData.wordsPerSession;
-    final extra = await VocabQueries.getNewWords(uname,
+    final extra = await context.read<VocabQueries>().getNewWords(uname,
         limit: limit, offset: _words.length);
     if (extra.isEmpty) {
       if (mounted) Navigator.of(context).pop();

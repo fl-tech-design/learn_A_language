@@ -210,7 +210,7 @@ class _UserInfoBox extends StatelessWidget {
 
     return FutureBuilder<Map<String, dynamic>>(
         key: ValueKey('userinfo_${username}_${navState.statsVersion}'),
-        future: _loadStats(username),
+        future: _loadStats(context, username),
         builder: (ctx, snapshot) {
           final stats = snapshot.data ?? {};
           final s = stats['streak'] as Map<String, dynamic>? ?? {};
@@ -260,10 +260,11 @@ class _UserInfoBox extends StatelessWidget {
         });
   }
 
-  Future<Map<String, dynamic>> _loadStats(String username) async {
-    final nc = await VocabQueries.getNewWordsCount(username);
-    final dc = await VocabQueries.getWordsDueCount(username);
-    final st = await VocabQueries.getDayStreak(username);
+  Future<Map<String, dynamic>> _loadStats(BuildContext context, String username) async {
+    final vq = context.read<VocabQueries>();
+    final nc = await vq.getNewWordsCount(username);
+    final dc = await vq.getWordsDueCount(username);
+    final st = await vq.getDayStreak(username);
     return {'new': nc, 'due': dc, 'streak': st};
   }
 }

@@ -33,7 +33,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (v == null) return;
     setState(() => _stayLoggedIn = v);
     final dataState = context.read<DataState>();
-    await FileService.updateJsonKey(
+    await context.read<FileService>().updateJsonKey(
         'data_app/app_data.json', 'stay_logged_in', v);
     await dataState.loadAppData();
   }
@@ -41,13 +41,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _setWordsPerSession(int count) async {
     setState(() => _wordsPerSession = count);
     final dataState = context.read<DataState>();
-    await FileService.updateJsonKey(
+    await context.read<FileService>().updateJsonKey(
         'data_app/app_data.json', 'words_per_session', count);
     await dataState.loadAppData();
   }
 
   Future<void> _requestDeleteUser() async {
     final dataState = context.read<DataState>();
+    final um = context.read<UserManager>();
     final bt = dataState.baseTxt;
     final name = await showDeleteUserDialog(
         context,
@@ -56,7 +57,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         letUppercaseFirst(bt['confirm'] ?? 'bestätigen'),
         letUppercaseFirst(bt['chancel'] ?? 'abbrechen'));
     if (name == null || name.isEmpty) return;
-    await UserManager.deleteUser(name);
+    await um.deleteUser(name);
     await dataState.loadAppData();
     setState(() {});
   }

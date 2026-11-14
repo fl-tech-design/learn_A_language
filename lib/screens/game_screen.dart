@@ -68,14 +68,15 @@ class _GameScreenState extends State<GameScreen> {
   Future<void> _startGame() async {
     _stopTimer();
     final dataState = context.read<DataState>();
+    final vq = context.read<VocabQueries>();
     final uname = dataState.appData.loggedUName;
 
     if (uname.isNotEmpty) {
-      final userData = await UserManager.loadUserdata(uname);
+      final userData = await context.read<UserManager>().loadUserdata(uname);
       _highscore = userData['game_highscore'] as int? ?? 0;
     }
 
-    final allWords = await VocabQueries.getMasteredWords(uname);
+    final allWords = await vq.getMasteredWords(uname);
     if (allWords.isEmpty) {
       setState(() {
         _gameActive = false;
@@ -201,9 +202,10 @@ class _GameScreenState extends State<GameScreen> {
     var newRecord = false;
     if (uname.isNotEmpty && _score > _highscore) {
       _highscore = _score;
-      final userData = await UserManager.loadUserdata(uname);
+      final um = context.read<UserManager>();
+      final userData = await um.loadUserdata(uname);
       userData['game_highscore'] = _highscore;
-      await UserManager.saveUserdata(uname, userData);
+      await um.saveUserdata(uname, userData);
       newRecord = true;
     }
 

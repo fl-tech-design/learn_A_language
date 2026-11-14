@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
-import '../services/file_service.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
@@ -9,6 +8,12 @@ import 'vocab_manager.dart';
 /// DataState (data/locale/colors) and NavigationState (wordMode/stats)
 /// were extracted in Commits A and B.
 class UserState extends ChangeNotifier {
+  final UserManager _userManager;
+  final VocabManager _vocabManager;
+
+  UserState({required UserManager userManager, required VocabManager vocabManager})
+      : _userManager = userManager,
+        _vocabManager = vocabManager;
   // User data
   UserData? _userData;
 
@@ -17,13 +22,13 @@ class UserState extends ChangeNotifier {
 
   // ── Login / User management ───────────────────────────────────
   Future<void> login(String username) async {
-    await UserManager.changeLoginState(true);
-    await UserManager.setLoggedUname(username);
+    await _userManager.changeLoginState(true);
+    await _userManager.setLoggedUname(username);
     await _loadUserData(username);
 
     final langDict = _userData?.language ?? {};
-    await VocabManager.initVocabForUser(username, langDict);
-    await VocabManager.migrateVocabForUser(username);
+    await _vocabManager.initVocabForUser(username, langDict);
+    await _vocabManager.migrateVocabForUser(username);
 
     await _loadUserData(username);
     await _autoSelectCourses(username);
@@ -32,19 +37,19 @@ class UserState extends ChangeNotifier {
 
   /// Creates a brand new user and logs them in.
   Future<String?> registerUser(String username, String mLang) async {
-    final result = await UserManager.createUserFile(username, mLang, {});
+    final result = await _userManager.createUserFile(username, mLang, {});
     if (!result.contains('erfolgreich')) {
       return result;
     }
 
-    await UserManager.addNewUserToList(username);
-    await UserManager.changeLoginState(true);
-    await UserManager.setLoggedUname(username);
+    await _userManager.addNewUserToList(username);
+    await _userManager.changeLoginState(true);
+    await _userManager.setLoggedUname(username);
 
     final targetLang = mLang == 'de' ? 'en' : 'de';
-    final langDict = await VocabManager.loadLanguageDictFromDir(targetLang);
-    await VocabManager.initVocabForUser(username, langDict);
-    await VocabManager.migrateVocabForUser(username);
+    final langDict = await _vocabManager.loadLanguageDictFromDir(targetLang);
+    await _vocabManager.initVocabForUser(username, langDict);
+    await _vocabManager.migrateVocabForUser(username);
 
     await _loadUserData(username);
     notifyListeners();
@@ -53,7 +58,7 @@ class UserState extends ChangeNotifier {
 
   Future<void> _loadUserData(String username) async {
     final raw =
-        await FileService.loadJson('data_app/files_user/data_$username.json');
+        await _userManager.loadUserdata(username);
     if (raw.isNotEmpty) {
       _userData = UserData.fromJson(raw);
     }
@@ -72,9 +77,9 @@ class UserState extends ChangeNotifier {
         .toList();
     if (derived.isEmpty) return;
 
-    final userData = await UserManager.loadUserdata(username);
+    final userData = await _userManager.loadUserdata(username);
     userData['selected_courses'] = derived;
-    await UserManager.saveUserdata(username, userData);
+    await _userManager.saveUserdata(username, userData);
     await _loadUserData(username);
     notifyListeners();
   }
@@ -132,9 +137,9 @@ class UserState extends ChangeNotifier {
 
     final uname = _userData!.uName;
     if (uname.isNotEmpty) {
-      final userData = await UserManager.loadUserdata(uname);
+      final userData = await _userManager.loadUserdata(uname);
       userData['selected_courses'] = current;
-      await UserManager.saveUserdata(uname, userData);
+      await _userManager.saveUserdata(uname, userData);
       await _loadUserData(uname);
       notifyListeners();
     }

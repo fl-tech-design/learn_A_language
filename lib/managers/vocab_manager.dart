@@ -1,34 +1,37 @@
 import '../services/file_service.dart';
 import 'user_manager.dart';
 
-/// Pure static vocabulary management – 1:1 from vocab_manager.py.
-class VocabManager {
-  VocabManager._();
-
-  /// Spaced repetition: days until next review, keyed by the level reached
-  /// *after* a correct answer (linear 1–7 days, learned at level 8).
+/// Vocabulary management — interface extracted from the former static
+/// VocabManager class (point2, Commit A).
+abstract class VocabManager {
   static const Map<int, int?> repeatIntervalDays = {
-    1: 1,
-    2: 2,
-    3: 3,
-    4: 4,
-    5: 5,
-    6: 6,
-    7: 7,
-    8: null,
+    1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: null,
   };
 
-  /// Loads merged language dictionary from app documents.
-  static Future<Map<String, dynamic>> loadLanguageDictFromDir(
-    String langCode,
-  ) async {
-    return FileService.loadLanguageDictFromDir(langCode);
+  Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
+  List<Map<String, dynamic>> extractAllWordsFromLanguageDict(
+      Map<String, dynamic> languageDict);
+  Future<void> initVocabForUser(
+      String username, Map<String, dynamic> languageDict);
+  Future<void> migrateVocabForUser(String username);
+}
+
+/// Concrete implementation backed by [UserManager] and [FileService].
+class VocabManagerImpl implements VocabManager {
+  final UserManager _userManager;
+  final FileService _fileService;
+
+  VocabManagerImpl(this._userManager, this._fileService);
+
+  @override
+  Future<Map<String, dynamic>> loadLanguageDictFromDir(
+      String langCode) async {
+    return _fileService.loadLanguageDictFromDir(langCode);
   }
 
-  /// Recursively extracts all words/sentences from a nested language dict.
-  static List<Map<String, dynamic>> extractAllWordsFromLanguageDict(
-    Map<String, dynamic> languageDict,
-  ) {
+  @override
+  List<Map<String, dynamic>> extractAllWordsFromLanguageDict(
+      Map<String, dynamic> languageDict) {
     final words = <Map<String, dynamic>>[];
 
     void recurse(dynamic data, String currentKey) {
@@ -66,12 +69,10 @@ class VocabManager {
     return words;
   }
 
-  /// Initializes the vocab dictionary in the user file.
-  static Future<void> initVocabForUser(
-    String username,
-    Map<String, dynamic> languageDict,
-  ) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<void> initVocabForUser(
+      String username, Map<String, dynamic> languageDict) async {
+    final userData = await _userManager.loadUserdata(username);
     final existingVocab = userData['vocab'];
     if (existingVocab is Map && existingVocab.isNotEmpty) return;
 
@@ -113,12 +114,12 @@ class VocabManager {
     }
 
     userData['vocab'] = vocab;
-    await UserManager.saveUserdata(username, userData);
+    await _userManager.saveUserdata(username, userData);
   }
-// ── Migration ───────────────────────────────────────────────
 
-  static Future<void> migrateVocabForUser(String username) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<void> migrateVocabForUser(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>?;
     if (vocab == null || vocab.isEmpty) return;
 
@@ -189,9 +190,6 @@ class VocabManager {
       }
     }
 
-    // Recompute review_due for in-learning words from last_reviewed using the
-    // corrected linear interval schedule. Fixes words that were scheduled with
-    // the previous (wrong) interval map.
     for (final entry in vocab.entries) {
       final we = entry.value as Map<String, dynamic>;
       final level = we['level'] as int? ?? 0;
@@ -203,7 +201,7 @@ class VocabManager {
       final lastReviewed = DateTime.tryParse(lastReviewedStr);
       if (lastReviewed == null) continue;
 
-      final days = repeatIntervalDays[level];
+      final days = VocabManager.repeatIntervalDays[level];
       if (days == null) continue;
       final due = lastReviewed.add(Duration(days: days));
       final newDue =
@@ -215,7 +213,7 @@ class VocabManager {
     }
 
     if (changed) {
-      await UserManager.saveUserdata(username, userData);
+      await _userManager.saveUserdata(username, userData);
     }
   }
 }

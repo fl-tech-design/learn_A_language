@@ -1,17 +1,35 @@
 import 'dart:math';
+
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
-/// Word queries, streak, and answer checking – separated from vocab_manager.
-class VocabQueries {
-  VocabQueries._();
+/// Word queries, streak, and answer checking — interface extracted from
+/// the former static VocabQueries class (point2, Commit A).
+abstract class VocabQueries {
+  Future<List<Map<String, dynamic>>> getDueWords(String username);
+  Future<List<Map<String, dynamic>>> getWordsByLevel(
+      String username, int targetLevel);
+  Future<List<Map<String, dynamic>>> getNewWords(String username,
+      {int limit = 10, int offset = 0});
+  Future<List<Map<String, dynamic>>> getMasteredWords(String username);
+  Future<int> getWordsDueCount(String username);
+  Future<int> getNewWordsCount(String username);
+  Future<List<Map<String, dynamic>>> getAllWords(String username);
+  Future<Map<String, dynamic>> getDayStreak(String username);
+  Future<void> updateDayStreak(String username);
+  Future<Map<String, dynamic>> checkWordAnswer(
+      String username, String wordKey, String userInput);
+}
 
-  // ── Word queries ──────────────────────────────────────────────
+/// Concrete implementation backed by [UserManager].
+class VocabQueriesImpl implements VocabQueries {
+  final UserManager _userManager;
 
-  static Future<List<Map<String, dynamic>>> getDueWords(
-    String username,
-  ) async {
-    final userData = await UserManager.loadUserdata(username);
+  VocabQueriesImpl(this._userManager);
+
+  @override
+  Future<List<Map<String, dynamic>>> getDueWords(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     final today = DateTime.now();
     final dueWords = <Map<String, dynamic>>[];
@@ -39,19 +57,22 @@ class VocabQueries {
     return dueWords;
   }
 
-  static Future<List<Map<String, dynamic>>> getWordsByLevel(
+  @override
+  Future<List<Map<String, dynamic>>> getWordsByLevel(
       String username, int targetLevel) async {
-    final userData = await UserManager.loadUserdata(username);
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
-        .where((e) => (e.value as Map<String, dynamic>)['level'] == targetLevel)
+        .where(
+            (e) => (e.value as Map<String, dynamic>)['level'] == targetLevel)
         .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
         .toList();
   }
 
-  static Future<List<Map<String, dynamic>>> getNewWords(String username,
+  @override
+  Future<List<Map<String, dynamic>>> getNewWords(String username,
       {int limit = 10, int offset = 0}) async {
-    final userData = await UserManager.loadUserdata(username);
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     final newWords = vocab.entries
         .where((e) {
@@ -65,9 +86,9 @@ class VocabQueries {
     return newWords.sublist(start, end);
   }
 
-  static Future<List<Map<String, dynamic>>> getMasteredWords(
-      String username) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<List<Map<String, dynamic>>> getMasteredWords(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
         .where((e) => (e.value as Map<String, dynamic>)['status'] == 'seen')
@@ -75,39 +96,40 @@ class VocabQueries {
         .toList();
   }
 
-  static Future<int> getWordsDueCount(String username) async =>
+  @override
+  Future<int> getWordsDueCount(String username) async =>
       (await getDueWords(username)).length;
 
-  static Future<int> getNewWordsCount(String username) async {
+  @override
+  Future<int> getNewWordsCount(String username) async {
     final words = await getWordsByLevel(username, 0);
     return words.where((w) => (w['status'] ?? 'new') == 'new').length;
   }
 
-  static Future<List<Map<String, dynamic>>> getAllWords(String username) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<List<Map<String, dynamic>>> getAllWords(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
     return vocab.entries
         .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
         .toList();
   }
-// ── Day streak ────────────────────────────────────────────────
 
-  static Future<Map<String, dynamic>> getDayStreak(String username) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<Map<String, dynamic>> getDayStreak(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     return userData['day_streak'] as Map<String, dynamic>? ??
         {'current': 0, 'longest': 0, 'last_date': ''};
   }
 
-  static Future<void> updateDayStreak(String username) async {
-    final userData = await UserManager.loadUserdata(username);
+  @override
+  Future<void> updateDayStreak(String username) async {
+    final userData = await _userManager.loadUserdata(username);
     var streak = userData['day_streak'] as Map<String, dynamic>? ??
         {'current': 0, 'longest': 0, 'last_date': ''};
 
     final today = DateTime.now();
-    String fmt(DateTime d) =>
-        '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
     final todayStr = fmt(today);
-    // Already counted today → do nothing (matches vocab_manager.py).
     if (streak['last_date'] == todayStr) return;
     final yesterdayStr = fmt(today.subtract(const Duration(days: 1)));
 
@@ -123,14 +145,13 @@ class VocabQueries {
     streak['last_date'] = todayStr;
 
     userData['day_streak'] = streak;
-    await UserManager.saveUserdata(username, userData);
+    await _userManager.saveUserdata(username, userData);
   }
 
-  // ── Word checking ─────────────────────────────────────────────
-
-  static Future<Map<String, dynamic>> checkWordAnswer(
+  @override
+  Future<Map<String, dynamic>> checkWordAnswer(
       String username, String wordKey, String userInput) async {
-    final userData = await UserManager.loadUserdata(username);
+    final userData = await _userManager.loadUserdata(username);
     final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
 
     if (!vocab.containsKey(wordKey)) {
@@ -194,7 +215,7 @@ class VocabQueries {
     }
 
     userData['vocab'] = vocab;
-    await UserManager.saveUserdata(username, userData);
+    await _userManager.saveUserdata(username, userData);
     return result;
   }
 }

@@ -40,7 +40,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
   Future<void> _loadWords() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
-    final words = await VocabQueries.getDueWords(uname);
+    final words = await context.read<VocabQueries>().getDueWords(uname);
     if (mounted) {
       setState(() {
         _words = words;
@@ -111,7 +111,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
           _correctDisplay = correctAnswer;
         });
         final uname = context.read<DataState>().appData.loggedUName;
-        VocabQueries.checkWordAnswer(
+        context.read<VocabQueries>().checkWordAnswer(
             uname, word['key'] as String, word['translation'] as String);
       } else {
         setState(() => _userInput = newInput);
@@ -134,7 +134,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
-    VocabQueries.checkWordAnswer(uname, word['key'] as String, '');
+    context.read<VocabQueries>().checkWordAnswer(uname, word['key'] as String, '');
   }
 
   void _nextWord() {

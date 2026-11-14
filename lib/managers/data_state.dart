@@ -5,6 +5,9 @@ import '../services/file_service.dart';
 /// Central data & locale state – base/app JSON data, texts, colors.
 /// Extracted from AppState to eliminate the God Object anti-pattern.
 class DataState extends ChangeNotifier {
+  final FileService _fileService;
+
+  DataState(this._fileService);
   // ── Data loaded from JSON ──────────────────────────────────────
   Map<String, dynamic> _baseData = {};
   Map<String, dynamic> _baseTxtRaw = {};
@@ -32,15 +35,15 @@ class DataState extends ChangeNotifier {
 
   // ── Initialization ─────────────────────────────────────────────
   Future<void> initialize() async {
-    await FileService.initialize();
+    await _fileService.initialize();
     await loadAppData();
   }
 
   Future<void> loadAppData() async {
-    _baseData = await FileService.loadJson('data_base/base_data.json');
-    _baseTxtRaw = await FileService.loadJson('data_base/base_txt.json');
-    _appDataRaw = await FileService.loadJson('data_app/app_data.json');
-    _appTxtRaw = await FileService.loadJson('data_app/app_txt.json');
+    _baseData = await _fileService.loadJson('data_base/base_data.json');
+    _baseTxtRaw = await _fileService.loadJson('data_base/base_txt.json');
+    _appDataRaw = await _fileService.loadJson('data_app/app_data.json');
+    _appTxtRaw = await _fileService.loadJson('data_app/app_txt.json');
 
     _currLang = _baseData['curr_lang']?.toString() ?? 'de';
     _baseTxt = (_baseTxtRaw[_currLang] as Map<String, dynamic>?) ??
@@ -80,7 +83,7 @@ class DataState extends ChangeNotifier {
     final langCode = mapping[norm];
     if (langCode == null) return;
 
-    await FileService.updateJsonKey(
+    await _fileService.updateJsonKey(
         'data_base/base_data.json', 'curr_lang', langCode);
     await loadAppData();
   }
