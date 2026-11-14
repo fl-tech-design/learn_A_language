@@ -56,6 +56,65 @@ class VocabEntry {
   }
 }
 
+/// Day streak tracking for a user.
+class DayStreak {
+  final int current;
+  final int longest;
+  final String lastDate; // YYYY-MM-DD
+
+  const DayStreak({
+    this.current = 0,
+    this.longest = 0,
+    this.lastDate = '',
+  });
+
+  factory DayStreak.fromJson(Map<String, dynamic> json) {
+    return DayStreak(
+      current: json['current'] as int? ?? 0,
+      longest: json['longest'] as int? ?? 0,
+      lastDate: json['last_date']?.toString() ?? '',
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'current': current,
+        'longest': longest,
+        'last_date': lastDate,
+      };
+}
+
+/// Result of a word-answer check.
+class AnswerCheckResult {
+  final bool correct;
+  final String? correctWord;
+  final int? newLevel;
+  final String message;
+  final bool statusChanged;
+
+  const AnswerCheckResult({
+    required this.correct,
+    this.correctWord,
+    this.newLevel,
+    this.message = '',
+    this.statusChanged = false,
+  });
+}
+
+/// A word extracted from a language dictionary JSON file.
+class LangDictWord {
+  final String key;
+  final String word;
+  final String translation;
+  final List<String> examples;
+
+  const LangDictWord({
+    required this.key,
+    required this.word,
+    required this.translation,
+    this.examples = const [],
+  });
+}
+
 /// Data model for user data stored in data_{username}.json.
 class UserData {
   final String uName;
@@ -64,7 +123,7 @@ class UserData {
   final List<String> learnedLanguages;
   final Map<String, dynamic> language;
   final Map<String, VocabEntry> vocab;
-  final Map<String, dynamic>? dayStreak;
+  final DayStreak? dayStreak;
   final int gameHighscore;
   final List<String> selectedCourses;
 
@@ -96,7 +155,9 @@ class UserData {
       learnedLanguages: List<String>.from(json['learned_languages'] ?? []),
       language: json['language'] as Map<String, dynamic>? ?? {},
       vocab: vocab,
-      dayStreak: json['day_streak'] as Map<String, dynamic>?,
+      dayStreak: json['day_streak'] is Map
+          ? DayStreak.fromJson(json['day_streak'])
+          : null,
       gameHighscore: json['game_highscore'] as int? ?? 0,
       selectedCourses: List<String>.from(json['selected_courses'] ?? []),
     );
@@ -110,10 +171,36 @@ class UserData {
       'learned_languages': learnedLanguages,
       'language': language,
       'vocab': vocab.map((key, value) => MapEntry(key, value.toJson())),
-      if (dayStreak != null) 'day_streak': dayStreak,
+      if (dayStreak != null) 'day_streak': dayStreak!.toJson(),
       if (gameHighscore > 0) 'game_highscore': gameHighscore,
       'selected_courses': selectedCourses,
     };
+  }
+
+  UserData copyWith({
+    String? uName,
+    String? mLang,
+    Map<String, int>? progress,
+    List<String>? learnedLanguages,
+    Map<String, dynamic>? language,
+    Map<String, VocabEntry>? vocab,
+    DayStreak? dayStreak,
+    bool clearDayStreak = false,
+    int? gameHighscore,
+    List<String>? selectedCourses,
+  }) {
+    return UserData(
+      uName: uName ?? this.uName,
+      mLang: mLang ?? this.mLang,
+      progress: progress ?? this.progress,
+      learnedLanguages: learnedLanguages ?? this.learnedLanguages,
+      language: language ?? this.language,
+      vocab: vocab ?? this.vocab,
+      dayStreak:
+          clearDayStreak ? null : (dayStreak ?? this.dayStreak),
+      gameHighscore: gameHighscore ?? this.gameHighscore,
+      selectedCourses: selectedCourses ?? this.selectedCourses,
+    );
   }
 
   static Map<String, int> _parseProgress(dynamic p) {
