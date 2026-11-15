@@ -111,27 +111,32 @@ Map<String, dynamic> _tinyDict(String word, String trans, String example) => {
 void main() {
   // ── Test (a) – extractAllWordsFromLanguageDict with real JSON ─────
   group('extractAllWordsFromLanguageDict', () {
-    test('echtes de_to_go.json → 18 Wörter + Felder korrekt', () {
+    test('echtes de_to_go.json (neues Schema) → 18 Wörter + Keys', () {
       const path = 'assets/language_dict/de/de_to_go.json';
       final file = File(path);
       expect(file.existsSync(), isTrue,
           reason: 'cwd=${Directory.current.path}, expected $path');
-      final json = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final verbJson =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final langDict = <String, dynamic>{'to_go': verbJson};
 
       final mgr = VocabManagerImpl(
           _FakeUserManager(), _FakeFileService({}));
-      final words = mgr.extractAllWordsFromLanguageDict(json);
+      final words = mgr.extractAllWordsFromLanguageDict(langDict);
 
       expect(words.length, 18);
-      final iWent = words.firstWhere((w) => w.key == 'i_went');
-      expect(iWent.word, 'i went');
-      expect(iWent.translation, 'ich ging');
-      expect(iWent.examples, ['Ich ging in den Park.']);
 
-      final theyWillGo = words.firstWhere((w) => w.key == 'they_will_go');
-      expect(theyWillGo.word, 'they will go');
-      expect(theyWillGo.translation, 'sie werden gehen');
-      expect(theyWillGo.examples, ['Sie werden zur Party gehen.']);
+      // past index 0 (ich)
+      final past0 = words.firstWhere((w) => w.key == 'to_go_past_0');
+      expect(past0.word, 'gehen');
+      expect(past0.translation, 'ich ging');
+      expect(past0.examples, ['Ich ging in den Park.', '', '']);
+
+      // future index 5 (sie)
+      final fut5 = words.firstWhere((w) => w.key == 'to_go_future_5');
+      expect(fut5.word, 'gehen');
+      expect(fut5.translation, 'sie werden gehen');
+      expect(fut5.examples, ['Sie werden zur Party gehen.', '', '']);
     });
 test('neues Listen-Schema de_to_be.json → 18 Wörter, Keys, 3 examples',
         () {
@@ -167,6 +172,37 @@ test('neues Listen-Schema de_to_be.json → 18 Wörter, Keys, 3 examples',
       expect(fut2.word, 'sein');
       expect(fut2.translation, 'er/sie/es wird sein');
       expect(fut2.examples, ['Er wird hier sein.', '', '']);
+    });
+
+    test('Legacy Map-Schema (alt) → 2 Wörter aus inline Fixture', () {
+      final oldDict = <String, dynamic>{
+        'old_verb': {
+          'infinitive': 'test',
+          'level': 0,
+          'present': {
+            'i_test': {
+              'translation': 'ich teste',
+              'level': 0,
+              'example': {'ex': 'Beispiel'},
+            },
+            'you_test': {
+              'translation': 'du testest',
+              'level': 0,
+              'example': {},
+            },
+          },
+        },
+      };
+
+      final mgr =
+          VocabManagerImpl(_FakeUserManager(), _FakeFileService({}));
+      final words = mgr.extractAllWordsFromLanguageDict(oldDict);
+
+      expect(words.length, 2);
+      expect(words[0].key, 'i_test');
+      expect(words[0].word, 'i test');
+      expect(words[0].translation, 'ich teste');
+      expect(words[0].examples, ['Beispiel']);
     });
   });
 
