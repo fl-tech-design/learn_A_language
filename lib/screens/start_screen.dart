@@ -208,12 +208,14 @@ class _UserInfoBox extends StatelessWidget {
 
     if (username.isEmpty) return const SizedBox.shrink();
 
-    return FutureBuilder<Map<String, dynamic>>(
+    return FutureBuilder<_UserStats>(
         key: ValueKey('userinfo_${username}_${navState.statsVersion}'),
         future: _loadStats(context, username),
         builder: (ctx, snapshot) {
-          final stats = snapshot.data ?? {};
-          final s = stats['streak'] as Map<String, dynamic>? ?? {};
+          final stats = snapshot.data;
+          if (stats == null) {
+            return const SizedBox.shrink();
+          }
           return Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -226,17 +228,17 @@ class _UserInfoBox extends StatelessWidget {
                             fontSize: AppTheme.smallFontSize,
                             color: Color(0xFFFFB31A))),
                     Text(
-                        '${at['cat_new_words'] ?? 'Neue Wörter'}: ${stats['new'] ?? 0}',
+                        '${at['cat_new_words'] ?? 'Neue Wörter'}: ${stats.newCount}',
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white70)),
                     Text(
-                        '${at['cat_due_words'] ?? 'Fällige Wörter'}: ${stats['due'] ?? 0}',
+                        '${at['cat_due_words'] ?? 'Fällige Wörter'}: ${stats.dueCount}',
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white70)),
-                    if ((s['current'] ?? 0) > 0)
-                      Text('Tag ${s['current']}  |  Rekord: ${s['longest']}',
+                    if (stats.streak.current > 0)
+                      Text('Tag ${stats.streak.current}  |  Rekord: ${stats.streak.longest}',
                           style: const TextStyle(
                               fontSize: AppTheme.smallFontSize,
                               color: Color(0xFFFFB31A))),
@@ -260,12 +262,12 @@ class _UserInfoBox extends StatelessWidget {
         });
   }
 
-  Future<Map<String, dynamic>> _loadStats(BuildContext context, String username) async {
+  Future<_UserStats> _loadStats(BuildContext context, String username) async {
     final vq = context.read<VocabQueries>();
     final nc = await vq.getNewWordsCount(username);
     final dc = await vq.getWordsDueCount(username);
     final st = await vq.getDayStreak(username);
-    return {'new': nc, 'due': dc, 'streak': st};
+    return _UserStats(newCount: nc, dueCount: dc, streak: st);
   }
 }
 
@@ -503,4 +505,16 @@ class _NewLanguagesSection extends StatelessWidget {
       ],
     );
   }
+}
+
+/// Typed container for user stats used by FutureBuilder.
+class _UserStats {
+  final int newCount;
+  final int dueCount;
+  final DayStreak streak;
+  const _UserStats({
+    required this.newCount,
+    required this.dueCount,
+    required this.streak,
+  });
 }

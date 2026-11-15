@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
+import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 
 /// Due word review screen – 1:1 from duewordpage.py/kv.
@@ -14,7 +15,7 @@ class DueWordScreen extends StatefulWidget {
 }
 
 class _DueWordScreenState extends State<DueWordScreen> {
-  List<Map<String, dynamic>> _words = [];
+  List<VocabEntry> _words = [];
   int _index = 0;
   bool _checked = false;
   String _userInput = '';
@@ -81,8 +82,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     if (_words.isEmpty || _index >= _words.length) return;
 
     final word = _words[_index];
-    final rawAnswer =
-        word['word']?.toString() ?? word['key']?.toString() ?? '';
+    final rawAnswer = word.word;
     final correctAnswer = _stripParenthetical(rawAnswer);
 
     // Next unfilled position in the original word (including spaces)
@@ -112,7 +112,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
         });
         final uname = context.read<DataState>().appData.loggedUName;
         context.read<VocabQueries>().checkWordAnswer(
-            uname, word['key'] as String, word['translation'] as String);
+            uname, word.key, word.translation);
       } else {
         setState(() => _userInput = newInput);
       }
@@ -124,7 +124,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     _inputCtrl.clear();
   }
 
-  void _failWord(String correctAnswer, Map<String, dynamic> word) {
+  void _failWord(String correctAnswer, VocabEntry word) {
     setState(() {
       _checked = true;
       _feedback = context.read<DataState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
@@ -134,7 +134,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
-    context.read<VocabQueries>().checkWordAnswer(uname, word['key'] as String, '');
+    context.read<VocabQueries>().checkWordAnswer(uname, word.key, '');
   }
 
   void _nextWord() {
@@ -167,7 +167,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final allDone = _words.isEmpty || _index >= _words.length;
     final word = !allDone ? _words[_index] : null;
     final correctAnswer = word != null
-        ? (word['word']?.toString() ?? word['key']?.toString() ?? '')
+        ? word.word
         : '';
 
     return Scaffold(
@@ -185,7 +185,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                                   ? (at['no_due_words'] ??
                                       at['no_due_words'] ??
                                       'Keine fälligen Wörter!')
-                                  : (word?['translation']?.toString() ?? ''),
+                                  : (word?.translation ?? ''),
                               textAlign: TextAlign.center,
                               style: const TextStyle(fontSize: 32)))),
                   const SizedBox(height: 8),

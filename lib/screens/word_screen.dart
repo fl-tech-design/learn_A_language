@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
+import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../dialogs/limit_dialog.dart';
@@ -16,12 +17,12 @@ class WordScreen extends StatefulWidget {
 }
 
 class _WordScreenState extends State<WordScreen> {
-  List<Map<String, dynamic>> _words = [];
+  List<VocabEntry> _words = [];
   int _index = 0;
   bool _answerChecked = false;
   String _feedback = '';
   Color _feedbackColor = AppTheme.green2;
-  Map<String, dynamic>? _streak;
+  DayStreak? _streak;
 
   @override
   void didChangeDependencies() {
@@ -36,7 +37,7 @@ class _WordScreenState extends State<WordScreen> {
     if (uname.isEmpty) return;
     final mode = navState.wordMode;
     final limit = dataState.appData.wordsPerSession;
-    List<Map<String, dynamic>> words;
+    List<VocabEntry> words;
     final vq = context.read<VocabQueries>();
     if (mode == 'new') {
       words = await vq.getNewWords(uname, limit: limit);
@@ -63,7 +64,7 @@ class _WordScreenState extends State<WordScreen> {
     final uname = dataState.appData.loggedUName;
 
     context.read<VocabQueries>().checkWordAnswer(
-            uname, word['key'] as String, word['translation'] as String)
+            uname, word.key, word.translation)
         .then((result) {
       if (!mounted) return;
       setState(() => _answerChecked = true);
@@ -83,9 +84,9 @@ class _WordScreenState extends State<WordScreen> {
         });
       } else {
         setState(() {
-          _feedback = result['message'] as String;
+          _feedback = result.message;
           _feedbackColor =
-              (result['correct'] as bool) ? AppTheme.green2 : AppTheme.red2;
+              result.correct ? AppTheme.green2 : AppTheme.red2;
         });
       }
     });
@@ -146,8 +147,8 @@ class _WordScreenState extends State<WordScreen> {
     final isLearned = mode == 'learned';
     final word =
         (_words.isNotEmpty && _index < _words.length) ? _words[_index] : null;
-    final examples = _parseList(word?['examples']);
-    final examplesNative = _parseList(word?['examples_native']);
+    final examples = word?.examples ?? const [''];  // Vorgabe [''] wie altes _parseList
+    final examplesNative = word?.examplesNative ?? const [''];  // Vorgabe [''] wie altes _parseList
 
     return Scaffold(
       body: Column(children: [
@@ -161,7 +162,7 @@ class _WordScreenState extends State<WordScreen> {
           SizedBox(
               height: 20,
               child: Text(
-                  'Tag ${_streak!['current']}  |  Rekord: ${_streak!['longest']}',
+                  'Tag ${_streak!.current}  |  Rekord: ${_streak!.longest}',
                   style: const TextStyle(
                       fontSize: AppTheme.infFontSize,
                       color: Color(0xFFFFB31A)))),
@@ -184,7 +185,7 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   Widget _buildWordContent(
-      Map<String, dynamic> word,
+      VocabEntry word,
       List<String> examples,
       List<String> examplesNative,
       Map<String, dynamic> at,
@@ -197,10 +198,10 @@ class _WordScreenState extends State<WordScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
-            child: Text(word['word']?.toString() ?? '',
+            child: Text(word.word,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 36))),
-          Text(word['translation']?.toString() ?? '',
+          Text(word.translation,
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: AppTheme.lblFontSize, color: Colors.white70)),
@@ -224,7 +225,7 @@ class _WordScreenState extends State<WordScreen> {
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60))),
           const SizedBox(height: 8),
-          Text('Level: ${word['level'] ?? 0}',
+          Text('Level: ${word.level}',
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: AppTheme.infFontSize)),
           if (_feedback.isNotEmpty)
@@ -280,8 +281,4 @@ class _WordScreenState extends State<WordScreen> {
     );
   }
 
-  List<String> _parseList(dynamic v) {
-    if (v is List) return v.map((e) => e.toString()).toList();
-    return [''];
-  }
 }

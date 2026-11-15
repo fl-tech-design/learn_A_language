@@ -4,21 +4,21 @@ import '../models/app_models.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
-/// Word queries, streak, and answer checking — interface extracted from
-/// the former static VocabQueries class (point2, Commit A).
+/// Word queries, streak, and answer checking — typed interface extracted
+/// from the former static VocabQueries class.
 abstract class VocabQueries {
-  Future<List<Map<String, dynamic>>> getDueWords(String username);
-  Future<List<Map<String, dynamic>>> getWordsByLevel(
+  Future<List<VocabEntry>> getDueWords(String username);
+  Future<List<VocabEntry>> getWordsByLevel(
       String username, int targetLevel);
-  Future<List<Map<String, dynamic>>> getNewWords(String username,
+  Future<List<VocabEntry>> getNewWords(String username,
       {int limit = 10, int offset = 0});
-  Future<List<Map<String, dynamic>>> getMasteredWords(String username);
+  Future<List<VocabEntry>> getMasteredWords(String username);
   Future<int> getWordsDueCount(String username);
   Future<int> getNewWordsCount(String username);
-  Future<List<Map<String, dynamic>>> getAllWords(String username);
-  Future<Map<String, dynamic>> getDayStreak(String username);
+  Future<List<VocabEntry>> getAllWords(String username);
+  Future<DayStreak> getDayStreak(String username);
   Future<void> updateDayStreak(String username);
-  Future<Map<String, dynamic>> checkWordAnswer(
+  Future<AnswerCheckResult> checkWordAnswer(
       String username, String wordKey, String userInput);
 }
 
@@ -29,64 +29,48 @@ class VocabQueriesImpl implements VocabQueries {
   VocabQueriesImpl(this._userManager);
 
   @override
-  Future<List<Map<String, dynamic>>> getDueWords(String username) async {
-    // TODO(point3c): remove bridge
+  Future<List<VocabEntry>> getDueWords(String username) async {
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
+    if (ud == null) return [];
     final today = DateTime.now();
-    final dueWords = <Map<String, dynamic>>[];
+    final dueWords = <VocabEntry>[];
 
-    for (final entry in vocab.entries) {
-      final wordEntry = entry.value as Map<String, dynamic>;
-      final level = wordEntry['level'] as int? ?? 0;
-      if (level == 8) continue;
-      if ((wordEntry['status']?.toString() ?? 'new') == 'new') continue;
+    for (final ve in ud.vocab.values) {
+      if (ve.level == 8) continue;
+      if (ve.status == 'new') continue;
 
-      final reviewDueStr = wordEntry['review_due']?.toString();
+      final reviewDueStr = ve.reviewDue;
       if (reviewDueStr != null && reviewDueStr.isNotEmpty) {
         try {
           final reviewDue = DateTime.parse(reviewDueStr);
           if (!reviewDue.isAfter(today)) {
-            dueWords.add({...wordEntry, 'key': entry.key});
+            dueWords.add(ve);
           }
         } catch (_) {
-          dueWords.add({...wordEntry, 'key': entry.key});
+          dueWords.add(ve);
         }
       } else {
-        dueWords.add({...wordEntry, 'key': entry.key});
+        dueWords.add(ve);
       }
     }
     return dueWords;
   }
 
   @override
-  Future<List<Map<String, dynamic>>> getWordsByLevel(
+  Future<List<VocabEntry>> getWordsByLevel(
       String username, int targetLevel) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
-    return vocab.entries
-        .where(
-            (e) => (e.value as Map<String, dynamic>)['level'] == targetLevel)
-        .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
-        .toList();
+    if (ud == null) return [];
+    return ud.vocab.values.where((ve) => ve.level == targetLevel).toList();
   }
 
   @override
-  Future<List<Map<String, dynamic>>> getNewWords(String username,
+  Future<List<VocabEntry>> getNewWords(String username,
       {int limit = 10, int offset = 0}) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
-    final newWords = vocab.entries
-        .where((e) {
-          final v = e.value as Map<String, dynamic>;
-          return (v['level'] ?? 0) == 0 && (v['status'] ?? 'new') == 'new';
-        })
-        .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
+    if (ud == null) return [];
+    final newWords = ud.vocab.values
+        .where((ve) => ve.level == 0 && ve.status == 'new')
         .toList();
     final start = offset.clamp(0, newWords.length);
     final end = (offset + limit).clamp(0, newWords.length);
@@ -94,15 +78,10 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<Map<String, dynamic>>> getMasteredWords(String username) async {
-    // TODO(point3c): remove bridge
+  Future<List<VocabEntry>> getMasteredWords(String username) async {
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
-    return vocab.entries
-        .where((e) => (e.value as Map<String, dynamic>)['status'] == 'seen')
-        .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
-        .toList();
+    if (ud == null) return [];
+    return ud.vocab.values.where((ve) => ve.status == 'seen').toList();
   }
 
   @override
@@ -112,132 +91,125 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<int> getNewWordsCount(String username) async {
     final words = await getWordsByLevel(username, 0);
-    return words.where((w) => (w['status'] ?? 'new') == 'new').length;
+    return words.where((w) => w.status == 'new').length;
   }
 
   @override
-  Future<List<Map<String, dynamic>>> getAllWords(String username) async {
-    // TODO(point3c): remove bridge
+  Future<List<VocabEntry>> getAllWords(String username) async {
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
-    return vocab.entries
-        .map((e) => {...e.value as Map<String, dynamic>, 'key': e.key})
-        .toList();
+    if (ud == null) return [];
+    return ud.vocab.values.toList();
   }
 
   @override
-  Future<Map<String, dynamic>> getDayStreak(String username) async {
-    // TODO(point3c): remove bridge
+  Future<DayStreak> getDayStreak(String username) async {
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    return userData['day_streak'] as Map<String, dynamic>? ??
-        {'current': 0, 'longest': 0, 'last_date': ''};
+    return ud?.dayStreak ?? const DayStreak();
   }
 
   @override
   Future<void> updateDayStreak(String username) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    var streak = userData['day_streak'] as Map<String, dynamic>? ??
-        {'current': 0, 'longest': 0, 'last_date': ''};
+    if (ud == null) return;
+    final streak = ud.dayStreak ?? const DayStreak();
 
     final today = DateTime.now();
     final todayStr = fmt(today);
-    if (streak['last_date'] == todayStr) return;
+    if (streak.lastDate == todayStr) return;
     final yesterdayStr = fmt(today.subtract(const Duration(days: 1)));
 
-    if (streak['last_date'] == yesterdayStr) {
-      streak['current'] = (streak['current'] as int? ?? 0) + 1;
+    final int newCurrent;
+    if (streak.lastDate == yesterdayStr) {
+      newCurrent = streak.current + 1;
     } else {
-      streak['current'] = 1;
+      newCurrent = 1;
     }
-    streak['longest'] = max<int>(
-      streak['longest'] as int? ?? 0,
-      streak['current'] as int? ?? 0,
-    );
-    streak['last_date'] = todayStr;
+    final newLongest = max<int>(streak.longest, newCurrent);
 
-    userData['day_streak'] = streak;
-    // TODO(point3c): remove bridge
     await _userManager.saveUserdata(
-        username, UserData.fromJson(userData));
+        username,
+        ud.copyWith(
+            dayStreak: DayStreak(
+          current: newCurrent,
+          longest: newLongest,
+          lastDate: todayStr,
+        )));
   }
 
   @override
-  Future<Map<String, dynamic>> checkWordAnswer(
+  Future<AnswerCheckResult> checkWordAnswer(
       String username, String wordKey, String userInput) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>? ?? {};
-
-    if (!vocab.containsKey(wordKey)) {
-      return {
-        'correct': false,
-        'correct_word': '',
-        'new_level': 0,
-        'message': 'Wort nicht gefunden',
-        'status_changed': false,
-      };
+    if (ud == null || !ud.vocab.containsKey(wordKey)) {
+      return const AnswerCheckResult(
+        correct: false,
+        message: 'Wort nicht gefunden',
+      );
     }
 
-    final wordEntry = vocab[wordKey] as Map<String, dynamic>;
-    final correctTranslation = wordEntry['translation']?.toString() ?? '';
-    final currentLevel = wordEntry['level'] as int? ?? 0;
-    final currentStatus = wordEntry['status']?.toString() ?? 'new';
+    final ve = ud.vocab[wordKey]!;
+    final correctTranslation = ve.translation;
+    final currentLevel = ve.level;
+    final currentStatus = ve.status;
 
     final userClean = userInput.trim().toLowerCase().replaceAll(' ', '');
     final correctClean =
         correctTranslation.trim().toLowerCase().replaceAll(' ', '');
     final isCorrect = userClean == correctClean;
 
-    final result = <String, dynamic>{
-      'correct': isCorrect,
-      'correct_word': correctTranslation,
-      'new_level': currentLevel,
-      'message': '',
-      'status_changed': false,
-    };
-
     if (isCorrect) {
       final newLevel = (currentLevel + 1).clamp(0, 8);
-      wordEntry['level'] = newLevel;
-      wordEntry['last_reviewed'] = DateTime.now().toIso8601String();
+      final now = DateTime.now();
+      final statusChanged = currentStatus == 'new';
+      final newReviewDue = newLevel < 8
+          ? fmt(now.add(
+              Duration(days: VocabManager.repeatIntervalDays[newLevel] ?? 1)))
+          : null;
 
-      if (currentStatus == 'new') {
-        wordEntry['status'] = 'seen';
-        result['status_changed'] = true;
-      }
+      final updated = ve.copyWith(
+        level: newLevel,
+        status: statusChanged ? 'seen' : null,
+        lastReviewed: now.toIso8601String(),
+        reviewDue: newReviewDue,
+        clearReviewDue: newLevel >= 8,
+      );
 
-      if (newLevel < 8) {
-        final days = VocabManager.repeatIntervalDays[newLevel] ?? 1;
-        final nextDue = DateTime.now().add(Duration(days: days));
-        wordEntry['review_due'] = fmt(nextDue);
-      } else {
-        wordEntry['review_due'] = null;
-      }
+      final newVocab = Map<String, VocabEntry>.from(ud.vocab);
+      newVocab[wordKey] = updated;
+      await _userManager.saveUserdata(
+          username, ud.copyWith(vocab: newVocab));
 
-      result['new_level'] = newLevel;
-      result['message'] = newLevel == 8
-          ? 'Ausgezeichnet! Wort gelernt (Level 8).'
-          : 'Richtig! Gut gemacht.';
+      return AnswerCheckResult(
+        correct: true,
+        correctWord: correctTranslation,
+        newLevel: newLevel,
+        message: newLevel == 8
+            ? 'Ausgezeichnet! Wort gelernt (Level 8).'
+            : 'Richtig! Gut gemacht.',
+        statusChanged: statusChanged,
+      );
     } else {
-      wordEntry['level'] = 0;
-      wordEntry['status'] = 'new';
-      wordEntry['last_reviewed'] = DateTime.now().toIso8601String();
-      wordEntry['review_due'] =
-          fmt(DateTime.now().add(const Duration(days: 1)));
-      result['new_level'] = 0;
-      result['message'] = 'Leider falsch. Richtig wäre: $correctTranslation';
-    }
+      final now = DateTime.now();
+      final updated = ve.copyWith(
+        level: 0,
+        status: 'new',
+        lastReviewed: now.toIso8601String(),
+        reviewDue: fmt(now.add(const Duration(days: 1))),
+      );
 
-    userData['vocab'] = vocab;
-    // TODO(point3c): remove bridge
-    await _userManager.saveUserdata(
-        username, UserData.fromJson(userData));
-    return result;
+      final newVocab = Map<String, VocabEntry>.from(ud.vocab);
+      newVocab[wordKey] = updated;
+      await _userManager.saveUserdata(
+          username, ud.copyWith(vocab: newVocab));
+
+      return AnswerCheckResult(
+        correct: false,
+        correctWord: correctTranslation,
+        newLevel: 0,
+        message: 'Leider falsch. Richtig wäre: $correctTranslation',
+        statusChanged: false,
+      );
+    }
   }
 }
 

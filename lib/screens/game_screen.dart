@@ -25,9 +25,9 @@ class _GameScreenState extends State<GameScreen> {
   int _baseTimer = 15;
   int _timeBonusPerCorrect = 2;
   int _highscore = 0;
-  List<Map<String, dynamic>> _questions = [];
+  List<VocabEntry> _questions = [];
   int _currentIndex = 0;
-  Map<String, dynamic>? _currentQuestion;
+  VocabEntry? _currentQuestion;
   Timer? _timerEvent;
   bool _answered = false;
   bool _gameActive = false;
@@ -73,10 +73,8 @@ class _GameScreenState extends State<GameScreen> {
     final uname = dataState.appData.loggedUName;
 
     if (uname.isNotEmpty) {
-      // TODO(point3c): remove bridge
       final ud = await context.read<UserManager>().loadUserdata(uname);
-      final userData = ud?.toJson() ?? {};
-      _highscore = userData['game_highscore'] as int? ?? 0;
+      _highscore = ud?.gameHighscore ?? 0;
     }
 
     final allWords = await vq.getMasteredWords(uname);
@@ -113,15 +111,15 @@ class _GameScreenState extends State<GameScreen> {
     _answered = false;
     final word = _questions[_currentIndex];
     _currentQuestion = word;
-    final correct = word['word']?.toString() ?? word['key']?.toString() ?? '';
+    final correct = word.word;
 
     final pool = _questions
         .where(
-            (w) => (w['word']?.toString() ?? w['key']?.toString()) != correct)
+            (w) => w.word != correct)
         .toList();
     pool.shuffle(Random());
     final distractors = pool.length >= 3
-        ? pool.take(3).map((w) => w['word']?.toString() ?? '').toList()
+        ? pool.take(3).map((w) => w.word).toList()
         : ['hello', 'goodbye', 'please'].take(3 - pool.length).toList();
 
     final options = [correct, ...distractors]..shuffle(Random());
@@ -162,8 +160,8 @@ class _GameScreenState extends State<GameScreen> {
     if (_answered || !_gameActive) return;
     _stopTimer();
     final selected = _options[btnIndex];
-    final correct = _currentQuestion?['word']?.toString() ??
-        _currentQuestion?['key']?.toString() ??
+    final correct = _currentQuestion?.word ??
+        _currentQuestion?.key ??
         '';
 
     if (selected == correct) {
@@ -206,12 +204,10 @@ class _GameScreenState extends State<GameScreen> {
     if (uname.isNotEmpty && _score > _highscore) {
       _highscore = _score;
       final um = context.read<UserManager>();
-      // TODO(point3c): remove bridge
       final ud = await um.loadUserdata(uname);
-      final userData = ud?.toJson() ?? {};
-      userData['game_highscore'] = _highscore;
-      // TODO(point3c): remove bridge
-      await um.saveUserdata(uname, UserData.fromJson(userData));
+      if (ud != null) {
+        await um.saveUserdata(uname, ud.copyWith(gameHighscore: _highscore));
+      }
       newRecord = true;
     }
 
@@ -238,7 +234,7 @@ class _GameScreenState extends State<GameScreen> {
     final appState = context.watch<DataState>();
     final bt = appState.baseTxt;
     final at = appState.appTxt;
-    final question = _currentQuestion?['translation']?.toString() ?? '';
+    final question = _currentQuestion?.translation ?? '';
 
     return Scaffold(
       body: Column(children: [
