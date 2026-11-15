@@ -49,6 +49,33 @@ class VocabEntry {
     };
   }
 
+  VocabEntry copyWith({
+    String? key,
+    String? word,
+    String? translation,
+    List<String>? examples,
+    List<String>? examplesNative,
+    int? level,
+    String? status,
+    String? lastReviewed,
+    String? reviewDue,
+    bool clearLastReviewed = false,
+    bool clearReviewDue = false,
+  }) {
+    return VocabEntry(
+      key: key ?? this.key,
+      word: word ?? this.word,
+      translation: translation ?? this.translation,
+      examples: examples ?? this.examples,
+      examplesNative: examplesNative ?? this.examplesNative,
+      level: level ?? this.level,
+      status: status ?? this.status,
+      lastReviewed:
+          clearLastReviewed ? null : (lastReviewed ?? this.lastReviewed),
+      reviewDue: clearReviewDue ? null : (reviewDue ?? this.reviewDue),
+    );
+  }
+
   static List<String> _parseStringList(dynamic value) {
     if (value == null) return [''];
     if (value is List) return value.map((e) => e.toString()).toList();

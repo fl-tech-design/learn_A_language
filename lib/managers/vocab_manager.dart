@@ -10,7 +10,7 @@ abstract class VocabManager {
   };
 
   Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
-  List<Map<String, dynamic>> extractAllWordsFromLanguageDict(
+  List<LangDictWord> extractAllWordsFromLanguageDict(
       Map<String, dynamic> languageDict);
   Future<void> initVocabForUser(
       String username, Map<String, dynamic> languageDict);
@@ -31,9 +31,9 @@ class VocabManagerImpl implements VocabManager {
   }
 
   @override
-  List<Map<String, dynamic>> extractAllWordsFromLanguageDict(
+  List<LangDictWord> extractAllWordsFromLanguageDict(
       Map<String, dynamic> languageDict) {
-    final words = <Map<String, dynamic>>[];
+    final words = <LangDictWord>[];
 
     void recurse(dynamic data, String currentKey) {
       if (data is Map<String, dynamic>) {
@@ -47,12 +47,12 @@ class VocabManagerImpl implements VocabManager {
           } else if (rawExamples is String && rawExamples.isNotEmpty) {
             examples.add(rawExamples);
           }
-          words.add({
-            'key': wordKey,
-            'word': wordText,
-            'translation': data['translation'],
-            'examples': examples.isNotEmpty ? examples : [''],
-          });
+          words.add(LangDictWord(
+            key: wordKey,
+            word: wordText,
+            translation: data['translation']?.toString() ?? '',
+            examples: examples.isNotEmpty ? examples : [''],
+          ));
         } else {
           data.forEach((key, value) {
             final newKey = currentKey.isEmpty ? key : '$currentKey/$key';
@@ -73,16 +73,15 @@ class VocabManagerImpl implements VocabManager {
   @override
   Future<void> initVocabForUser(
       String username, Map<String, dynamic> languageDict) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final existingVocab = userData['vocab'];
-    if (existingVocab is Map && existingVocab.isNotEmpty) return;
+    if (ud == null) return;
 
-    final mLang = userData['m_lang']?.toString() ?? 'de';
+    // Early-exit: vocab already initialized
+    if (ud.vocab.isNotEmpty) return;
+
     var langDict = languageDict;
     if (langDict.isEmpty) {
-      langDict = await loadLanguageDictFromDir(mLang);
+      langDict = await loadLanguageDictFromDir(ud.mLang);
       if (langDict.isEmpty) return;
     }
 
@@ -90,139 +89,135 @@ class VocabManagerImpl implements VocabManager {
 
     final nativeWords = <String, String>{};
     final nativeExamples = <String, List<String>>{};
-    if (mLang.isNotEmpty) {
-      final nativeDict = await loadLanguageDictFromDir(mLang);
+    if (ud.mLang.isNotEmpty) {
+      final nativeDict = await loadLanguageDictFromDir(ud.mLang);
       if (nativeDict.isNotEmpty) {
-        for (final w in extractAllWordsFromLanguageDict(nativeDict)) {
-          nativeWords[w['key'] as String] = w['translation'] as String;
-          nativeExamples[w['key'] as String] =
-              (w['examples'] as List?)?.cast<String>() ?? [''];
+        for (final nw in extractAllWordsFromLanguageDict(nativeDict)) {
+          nativeWords[nw.key] = nw.translation;
+          nativeExamples[nw.key] = nw.examples;
         }
       }
     }
 
-    final vocab = <String, dynamic>{};
-    for (final w in targetWords) {
-      final key = w['key'] as String;
-      vocab[key] = {
-        'word': w['translation'],
-        'translation': nativeWords[key] ?? w['translation'],
-        'examples': w['examples'],
-        'examples_native': nativeExamples[key] ?? [''],
-        'level': 0,
-        'status': 'new',
-        'last_reviewed': null,
-        'review_due': null,
-      };
+    final vocab = <String, VocabEntry>{};
+    for (final tw in targetWords) {
+      vocab[tw.key] = VocabEntry(
+        key: tw.key,
+        word: tw.translation,
+        translation: nativeWords[tw.key] ?? tw.translation,
+        examples: tw.examples,
+        examplesNative: nativeExamples[tw.key] ?? [''],
+      );
     }
 
-    userData['vocab'] = vocab;
-    // TODO(point3c): remove bridge
-    await _userManager.saveUserdata(
-        username, UserData.fromJson(userData));
+    await _userManager.saveUserdata(username, ud.copyWith(vocab: vocab));
   }
 
   @override
   Future<void> migrateVocabForUser(String username) async {
-    // TODO(point3c): remove bridge
     final ud = await _userManager.loadUserdata(username);
-    final userData = ud?.toJson() ?? {};
-    final vocab = userData['vocab'] as Map<String, dynamic>?;
-    if (vocab == null || vocab.isEmpty) return;
+    if (ud == null) return;
+    if (ud.vocab.isEmpty) return;
 
+    final vocabMap = Map<String, VocabEntry>.from(ud.vocab);
     var changed = false;
-    final mLang = userData['m_lang']?.toString() ?? 'de';
-    final targetLang = mLang == 'de' ? 'en' : 'de';
+    final targetLang = ud.mLang == 'de' ? 'en' : 'de';
 
     final targetWordsMap = <String, String>{};
     final targetDict = await loadLanguageDictFromDir(targetLang);
     if (targetDict.isNotEmpty) {
-      for (final w in extractAllWordsFromLanguageDict(targetDict)) {
-        targetWordsMap[w['key'] as String] = w['translation'] as String;
+      for (final tw in extractAllWordsFromLanguageDict(targetDict)) {
+        targetWordsMap[tw.key] = tw.translation;
       }
     }
 
     final nativeWords = <String, String>{};
-    final nativeWordsMap = <String, Map<String, dynamic>>{};
-    if (mLang.isNotEmpty) {
-      final nativeDict = await loadLanguageDictFromDir(mLang);
+    final nativeWordsMap = <String, LangDictWord>{};
+    if (ud.mLang.isNotEmpty) {
+      final nativeDict = await loadLanguageDictFromDir(ud.mLang);
       if (nativeDict.isNotEmpty) {
-        for (final w in extractAllWordsFromLanguageDict(nativeDict)) {
-          nativeWords[w['key'] as String] = w['translation'] as String;
-          nativeWordsMap[w['key'] as String] = w;
+        for (final nw in extractAllWordsFromLanguageDict(nativeDict)) {
+          nativeWords[nw.key] = nw.translation;
+          nativeWordsMap[nw.key] = nw;
         }
       }
     }
 
-    for (final entry in vocab.entries) {
-      final we = entry.value as Map<String, dynamic>;
-      if (!we.containsKey('status')) {
-        we['status'] = (we['level'] ?? 0) == 0 ? 'new' : 'seen';
+    // Pass 1: sync word/translation/examples_native with dictionaries
+    for (final key in vocabMap.keys.toList()) {
+      var ve = vocabMap[key]!;
+
+      // status based on level (only if still default 'new')
+      if (ve.level > 0 && ve.status == 'new') {
+        ve = ve.copyWith(status: 'seen');
         changed = true;
       }
-      if (!we.containsKey('review_due')) {
-        we['review_due'] = null;
-        changed = true;
-      }
-      if (!we.containsKey('last_reviewed')) {
-        we['last_reviewed'] = null;
-        changed = true;
-      }
-      if (!we.containsKey('level')) {
-        we['level'] = 0;
-        changed = true;
-      }
-      if (!we.containsKey('examples')) {
-        final old = we['example'] ?? '';
-        we['examples'] = (old is String && old.isNotEmpty) ? [old] : [''];
-        changed = true;
-      }
-      if (targetWordsMap.containsKey(entry.key)) {
-        final c = targetWordsMap[entry.key]!;
-        if (we['word'] != c) {
-          we['word'] = c;
+
+      // word sync from target dictionary
+      if (targetWordsMap.containsKey(key)) {
+        final correctWord = targetWordsMap[key]!;
+        if (ve.word != correctWord) {
+          ve = ve.copyWith(word: correctWord);
           changed = true;
         }
       }
-      if (nativeWords.containsKey(entry.key)) {
-        final c = nativeWords[entry.key]!;
-        if (we['translation'] != c) {
-          we['translation'] = c;
+
+      // translation sync from native dictionary
+      if (nativeWords.containsKey(key)) {
+        final correctTrans = nativeWords[key]!;
+        if (ve.translation != correctTrans) {
+          ve = ve.copyWith(translation: correctTrans);
           changed = true;
         }
       }
-      if (!we.containsKey('examples_native')) {
-        we['examples_native'] = nativeWordsMap[entry.key]?['examples'] ?? [''];
-        changed = true;
+
+      // examples_native sync from native dictionary
+      if (nativeWordsMap.containsKey(key)) {
+        final nw = nativeWordsMap[key]!;
+        final nativeExamples = nw.examples;
+        if (nativeExamples.isNotEmpty) {
+          bool differ =
+              ve.examplesNative.length != nativeExamples.length;
+          if (!differ) {
+            for (var i = 0; i < nativeExamples.length; i++) {
+              if (ve.examplesNative[i] != nativeExamples[i]) {
+                differ = true;
+                break;
+              }
+            }
+          }
+          if (differ) {
+            ve = ve.copyWith(examplesNative: nativeExamples);
+            changed = true;
+          }
+        }
       }
+
+      vocabMap[key] = ve;
     }
 
-    for (final entry in vocab.entries) {
-      final we = entry.value as Map<String, dynamic>;
-      final level = we['level'] as int? ?? 0;
-      final status = we['status']?.toString() ?? 'new';
-      if (status != 'seen' || level < 1 || level >= 8) continue;
-
-      final lastReviewedStr = we['last_reviewed']?.toString();
-      if (lastReviewedStr == null || lastReviewedStr.isEmpty) continue;
-      final lastReviewed = DateTime.tryParse(lastReviewedStr);
+    // Pass 2: recalculate review_due for seen words
+    for (final key in vocabMap.keys.toList()) {
+      final ve = vocabMap[key]!;
+      if (ve.status != 'seen' || ve.level < 1 || ve.level >= 8) continue;
+      if (ve.lastReviewed == null || ve.lastReviewed!.isEmpty) continue;
+      final lastReviewed = DateTime.tryParse(ve.lastReviewed!);
       if (lastReviewed == null) continue;
 
-      final days = VocabManager.repeatIntervalDays[level];
+      final days = VocabManager.repeatIntervalDays[ve.level];
       if (days == null) continue;
       final due = lastReviewed.add(Duration(days: days));
       final newDue =
           '${due.year}-${due.month.toString().padLeft(2, '0')}-${due.day.toString().padLeft(2, '0')}';
-      if (we['review_due']?.toString() != newDue) {
-        we['review_due'] = newDue;
+      if (ve.reviewDue != newDue) {
+        vocabMap[key] = ve.copyWith(reviewDue: newDue);
         changed = true;
       }
     }
 
     if (changed) {
-      // TODO(point3c): remove bridge
       await _userManager.saveUserdata(
-          username, UserData.fromJson(userData));
+          username, ud.copyWith(vocab: vocabMap));
     }
   }
 }
