@@ -37,6 +37,45 @@ class VocabManagerImpl implements VocabManager {
 
     void recurse(dynamic data, String currentKey) {
       if (data is Map<String, dynamic>) {
+        // New list-based verb schema: tense level has 'translations' list
+        if (!data.containsKey('translation') &&
+            !data.containsKey('word') &&
+            data.containsKey('translations') &&
+            data['translations'] is List) {
+          final segments = currentKey.split('/');
+          if (segments.length >= 2) {
+            final verbName = segments[0];
+            final tenseName = segments[1];
+            final infinitive =
+                (languageDict[verbName] is Map<String, dynamic>)
+                    ? (languageDict[verbName] as Map<String, dynamic>)[
+                                'infinitive']
+                            ?.toString() ??
+                        verbName.replaceAll('_', ' ')
+                    : verbName.replaceAll('_', ' ');
+            final translations = (data['translations'] as List)
+                .map((e) => e.toString())
+                .toList();
+            final allExamples = data['examples'] as List?;
+            for (var i = 0; i < translations.length; i++) {
+              final wordKey = '${verbName}_${tenseName}_$i';
+              final exList = <String>[];
+              if (allExamples != null && i < allExamples.length) {
+                final row = allExamples[i];
+                if (row is List) exList.addAll(row.map((e) => e.toString()));
+              }
+              words.add(LangDictWord(
+                key: wordKey,
+                word: infinitive,
+                translation: translations[i],
+                examples: exList.isNotEmpty ? exList : [''],
+              ));
+            }
+          }
+          return;
+        }
+
+        // Legacy map-based schema: person-level objects with 'translation'
         if (data.containsKey('translation') && !data.containsKey('word')) {
           final wordKey = currentKey.split('/').last;
           final wordText = wordKey.replaceAll('_', ' ');

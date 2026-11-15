@@ -89,18 +89,21 @@ class _FakeUserManager implements UserManager {
       throw UnimplementedError('setLoggedUname');
 }
 
-/// Minimal dict mimicking en/de_to_go.json structure.
+/// Minimal dict mimicking the new list-based verb schema.
 Map<String, dynamic> _tinyDict(String word, String trans, String example) => {
-      'present': {
-        'i_go': {
-          'translation': trans,
-          'level': 0,
-          'example': {'ex1': example},
-        },
-        'you_go': {
-          'translation': '$word you',
-          'level': 0,
-          'example': {},
+      'to_go': {
+        'infinitive': word,
+        'present': {
+          'translations': [trans, '$word you', '', '', '', ''],
+          'examples': [
+            [example, '', ''],
+            ['', '', ''],
+            ['', '', ''],
+            ['', '', ''],
+            ['', '', ''],
+            ['', '', ''],
+          ],
+          'audio': [[], [], [], [], [], []],
         },
       },
     };
@@ -130,6 +133,41 @@ void main() {
       expect(theyWillGo.translation, 'sie werden gehen');
       expect(theyWillGo.examples, ['Sie werden zur Party gehen.']);
     });
+test('neues Listen-Schema de_to_be.json → 18 Wörter, Keys, 3 examples',
+        () {
+      const path = 'assets/language_dict/de/de_to_be.json';
+      final file = File(path);
+      expect(file.existsSync(), isTrue,
+          reason: 'cwd=${Directory.current.path}, expected $path');
+      final verbJson =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      // Simulate loadLanguageDictFromDir wrapping (key = file name suffix)
+      final langDict = <String, dynamic>{'to_be': verbJson};
+
+      final mgr =
+          VocabManagerImpl(_FakeUserManager(), _FakeFileService({}));
+      final words = mgr.extractAllWordsFromLanguageDict(langDict);
+
+      expect(words.length, 18);
+
+      // past index 0
+      final past0 = words.firstWhere((w) => w.key == 'to_be_past_0');
+      expect(past0.word, 'sein');
+      expect(past0.translation, 'ich war');
+      expect(past0.examples, ['Ich war im Park.', '', '']);
+
+      // present index 5
+      final pres5 = words.firstWhere((w) => w.key == 'to_be_present_5');
+      expect(pres5.word, 'sein');
+      expect(pres5.translation, 'sie sind');
+      expect(pres5.examples, ['Sie sind freundlich.', '', '']);
+
+      // future index 2
+      final fut2 = words.firstWhere((w) => w.key == 'to_be_future_2');
+      expect(fut2.word, 'sein');
+      expect(fut2.translation, 'er/sie/es wird sein');
+      expect(fut2.examples, ['Er wird hier sein.', '', '']);
+    });
   });
 
   // ── Test (b) – initVocabForUser idempotent ─────────────────────
@@ -157,7 +195,7 @@ void main() {
       await mgr.initVocabForUser('test', {});
       expect(userMgr.saveCount, 1);
       final afterFirst = userMgr.lastSaved;
-      expect(afterFirst!.vocab.length, 2);
+      expect(afterFirst!.vocab.length, 6);
 
       // 2nd call: early-exit, no save
       await mgr.initVocabForUser('test', {});
@@ -182,12 +220,12 @@ void main() {
         learnedLanguages: const [],
         language: const {},
         vocab: {
-          'i_go': VocabEntry(
-            key: 'i_go',
+          'to_go_present_0': VocabEntry(
+            key: 'to_go_present_0',
             word: 'gehen',
             translation: 'go',
-            examples: const ['Ich gehe.'],
-            examplesNative: const ['I go.'],
+            examples: const ['Ich gehe.', '', ''],
+            examplesNative: const ['I go.', '', ''],
             level: 1,
             status: 'seen',
             lastReviewed: '2026-01-01',
@@ -220,10 +258,10 @@ void main() {
         learnedLanguages: const [],
         language: const {},
         vocab: {
-          'i_go': VocabEntry(
-            key: 'i_go',
+          'to_go_present_0': VocabEntry(
+            key: 'to_go_present_0',
             word: 'OLD_WORD',
-            translation: 'go',
+            translation: 'gehen',
             examples: const [],
             examplesNative: const [],
             level: 1,
