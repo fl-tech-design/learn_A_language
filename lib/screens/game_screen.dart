@@ -79,6 +79,7 @@ class _GameScreenState extends State<GameScreen> {
 
     final allWords = await vq.getMasteredWords(uname);
     if (allWords.isEmpty) {
+      if (!mounted) return;
       setState(() {
         _gameActive = false;
         _allDone = true;
@@ -87,6 +88,7 @@ class _GameScreenState extends State<GameScreen> {
     }
     allWords.shuffle(Random());
 
+    if (!mounted) return;
     setState(() {
       _lives = 3;
       _score = 0;

@@ -120,6 +120,7 @@ class _WordScreenState extends State<WordScreen> {
       if (mounted) Navigator.of(context).pop();
       return;
     }
+    if (!mounted) return;
     setState(() {
       _words = extra;
       _index = 0;

@@ -59,6 +59,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (name == null || name.isEmpty) return;
     await um.deleteUser(name);
     await dataState.loadAppData();
+    if (!mounted) return;
     setState(() {});
   }
 
