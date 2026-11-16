@@ -8,6 +8,7 @@ import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../dialogs/limit_dialog.dart';
+import '../l10n/app_localizations.dart';
 
 /// Word display screen – 1:1 from wordpage.py/kv.
 class WordScreen extends StatefulWidget {
@@ -93,14 +94,12 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   void _showLimitDialog() async {
-    final dataState = context.read<DataState>();
-    final at = dataState.appTxt;
-    final bt = dataState.baseTxt;
+    final l10n = AppLocalizations.of(context);
     final result = await showLimitDialog(context,
-        title: at['tit_page_learning'] ?? 'Lernen',
-        message: at['limit_reached'] ?? 'Tageslimit erreicht!',
-        continueText: at['btn_continue'] ?? 'Weiter',
-        endText: bt['btn_end_session'] ?? 'Beenden');
+        title: l10n.titPageLearning,
+        message: l10n.limitReached,
+        continueText: l10n.btnContinue,
+        endText: l10n.btnEndSession);
     if (!mounted) return;
     if (result == true) {
       _continueLearning();
@@ -139,9 +138,7 @@ class _WordScreenState extends State<WordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final dataState = context.watch<DataState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final mode = context.read<NavigationState>().wordMode;
     final isNew = mode == 'new';
     final isLearned = mode == 'learned';
@@ -153,16 +150,16 @@ class _WordScreenState extends State<WordScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(
-            title: at['tit_page_learning'] ?? 'Lernen',
+            title: l10n.titPageLearning,
             onInfo: () => showInfoDialog(
                 context,
-                at['inf_word']?.toString() ?? '',
-                bt['information']?.toString() ?? 'Information')),
+                l10n.infWord,
+                l10n.information)),
         if (isNew && _streak != null)
           SizedBox(
               height: 20,
               child: Text(
-                  'Tag ${_streak!.current}  |  Rekord: ${_streak!.longest}',
+                  l10n.streakAndRecord(_streak!.current, _streak!.longest),
                   style: const TextStyle(
                       fontSize: AppTheme.infFontSize,
                       color: Color(0xFFFFB31A)))),
@@ -170,14 +167,14 @@ class _WordScreenState extends State<WordScreen> {
             child: Padding(
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
                 child: word == null
-                    ? const Center(
-                        child: Text('Keine Wörter verfügbar',
-                            style: TextStyle(fontSize: AppTheme.lblFontSize)))
-                    : _buildWordContent(word, examples, examplesNative, at, bt,
-                        isNew, isLearned))),
+                    ? Center(
+                        child: Text(l10n.noWords,
+                            style: const TextStyle(fontSize: AppTheme.lblFontSize)))
+                    : _buildWordContent(word, examples, examplesNative, isNew,
+                        isLearned))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp),
       ]),
@@ -188,10 +185,9 @@ class _WordScreenState extends State<WordScreen> {
       VocabEntry word,
       List<String> examples,
       List<String> examplesNative,
-      Map<String, dynamic> at,
-      Map<String, dynamic> bt,
       bool isNew,
       bool isLearned) {
+    final l10n = AppLocalizations.of(context);
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -209,7 +205,7 @@ class _WordScreenState extends State<WordScreen> {
           if (examples.any((e) => e.isNotEmpty))
             Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
-                child: Text(at['examples_title'] ?? 'Beispiele:',
+                child: Text(l10n.examplesTitle,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                         fontSize: AppTheme.infFontSize,
@@ -225,7 +221,7 @@ class _WordScreenState extends State<WordScreen> {
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60))),
           const SizedBox(height: 8),
-          Text('Level: ${word.level}',
+          Text(l10n.labLevel(word.level),
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: AppTheme.infFontSize)),
           if (_feedback.isNotEmpty)
@@ -243,7 +239,7 @@ class _WordScreenState extends State<WordScreen> {
                 width: double.infinity,
                 child: OutlinedButton(
                     onPressed: _answerChecked ? null : _onRead,
-                    child: Text(at['btn_read'] ?? 'Gelesen',
+                    child: Text(l10n.btnRead,
                         style: const TextStyle(
                             fontSize: AppTheme.btnFontSize)))),
           if (isLearned)
@@ -253,13 +249,13 @@ class _WordScreenState extends State<WordScreen> {
                   Expanded(
                       child: TextButton(
                           onPressed: () => _navigate(-1),
-                          child: Text(at['btn_prev'] ?? 'Vor',
+                          child: Text(l10n.btnPrev,
                               style: const TextStyle(
                                   fontSize: AppTheme.btnFontSize)))),
                   Expanded(
                       child: TextButton(
                           onPressed: () => _navigate(1),
-                          child: Text(at['btn_next_word'] ?? 'Nächstes',
+                          child: Text(l10n.btnNextWord,
                               style: const TextStyle(
                                   fontSize: AppTheme.btnFontSize)))),
                 ])),
@@ -271,7 +267,7 @@ class _WordScreenState extends State<WordScreen> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text(bt['back'] ?? 'zurück',
+                  child: Text(l10n.back,
                       style: const TextStyle(
                           fontSize: AppTheme.btnFontSize,
                           color: AppTheme.colorPrimary)))),
