@@ -9,76 +9,76 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
-  String get all_due_done => 'Alle fälligen Wörter bearbeitet!';
+  String get allDueDone => 'Alle fälligen Wörter bearbeitet!';
 
   @override
   String get back => 'zurück';
 
   @override
-  String get base_title => 'Neue App';
+  String get baseTitle => 'Neue App';
 
   @override
-  String get btn_add_user => '+ Neuer User';
+  String get btnAddUser => '+ Neuer User';
 
   @override
-  String get btn_change_user => 'User wechseln';
+  String get btnChangeUser => 'User wechseln';
 
   @override
-  String get btn_check => 'Prüfen';
+  String get btnCheck => 'Prüfen';
 
   @override
-  String get btn_continue => 'Weiter';
+  String get btnContinue => 'Weiter';
 
   @override
-  String get btn_delete_user => 'Benutzer löschen';
+  String get btnDeleteUser => 'Benutzer löschen';
 
   @override
-  String get btn_end_session => 'Beenden';
+  String get btnEndSession => 'Beenden';
 
   @override
-  String get btn_game => 'Spiele';
+  String get btnGame => 'Spiele';
 
   @override
-  String get btn_grammar => 'Grammatik';
+  String get btnGrammar => 'Grammatik';
 
   @override
-  String get btn_learn => 'Lernen';
+  String get btnLearn => 'Lernen';
 
   @override
-  String get btn_new_words => 'Neue Wörter';
+  String get btnNewWords => 'Neue Wörter';
 
   @override
-  String get btn_next => 'Nächstes Wort';
+  String get btnNext => 'Nächstes Wort';
 
   @override
-  String get btn_next_word => 'Nächstes Wort';
+  String get btnNextWord => 'Nächstes Wort';
 
   @override
-  String get btn_prev => 'Vor';
+  String get btnPrev => 'Vor';
 
   @override
-  String get btn_read => 'Gelesen';
+  String get btnRead => 'Gelesen';
 
   @override
-  String get btn_review => 'Wiederholung';
+  String get btnReview => 'Wiederholung';
 
   @override
-  String get btn_turbo => 'Turbo';
+  String get btnTurbo => 'Turbo';
 
   @override
-  String get cat_due_words => 'Fällige Wörter';
+  String get catDueWords => 'Fällige Wörter';
 
   @override
-  String get cat_learned_words => 'Gelernte Wörter';
+  String get catLearnedWords => 'Gelernte Wörter';
 
   @override
-  String get cat_new_lang => 'Neue Sprachen entdecken';
+  String get catNewLang => 'Neue Sprachen entdecken';
 
   @override
-  String get cat_new_words => 'Neue Wörter';
+  String get catNewWords => 'Neue Wörter';
 
   @override
-  String get cat_select => 'Wähle eine Kategorie';
+  String get catSelect => 'Wähle eine Kategorie';
 
   @override
   String get chancel => 'abbrechen';
@@ -90,105 +90,105 @@ class AppLocalizationsDe extends AppLocalizations {
   String get confirm => 'bestätigen';
 
   @override
-  String get difficulty_easy => 'Leicht (20s / +3s)';
+  String get difficultyEasy => 'Leicht (20s / +3s)';
 
   @override
-  String get difficulty_easy_short => 'Leicht';
+  String get difficultyEasyShort => 'Leicht';
 
   @override
-  String get difficulty_hard => 'Schwer (10s / +1s)';
+  String get difficultyHard => 'Schwer (10s / +1s)';
 
   @override
-  String get difficulty_hard_short => 'Schwer';
+  String get difficultyHardShort => 'Schwer';
 
   @override
-  String get difficulty_medium => 'Mittel (15s / +2s)';
+  String get difficultyMedium => 'Mittel (15s / +2s)';
 
   @override
-  String get difficulty_medium_short => 'Mittel';
+  String get difficultyMediumShort => 'Mittel';
 
   @override
   String get english => 'englisch';
 
   @override
-  String get examples_title => 'Beispiele:';
+  String get examplesTitle => 'Beispiele:';
 
   @override
   String get exit => 'Beenden';
 
   @override
-  String get feedback_correct => 'Richtig!';
+  String get feedbackCorrect => 'Richtig!';
 
   @override
-  String get feedback_correct_would_be => 'Richtig wäre:';
+  String get feedbackCorrectWouldBe => 'Richtig wäre:';
 
   @override
-  String get feedback_wrong => 'Falsch!';
+  String get feedbackWrong => 'Falsch!';
 
   @override
   String get free => 'Frei';
 
   @override
-  String get game_back => 'Zurück';
+  String get gameBack => 'Zurück';
 
   @override
-  String get game_lives => 'Leben';
+  String get gameLives => 'Leben';
 
   @override
-  String get game_over => 'Spiel vorbei!';
+  String get gameOver => 'Spiel vorbei!';
 
   @override
-  String get game_record_prefix => 'R: ';
+  String get gameRecordPrefix => 'R: ';
 
   @override
-  String get game_restart => 'Neustart';
+  String get gameRestart => 'Neustart';
 
   @override
-  String get game_score => 'Pkt';
+  String get gameScore => 'Pkt';
 
   @override
-  String get game_time => 'Zeit';
+  String get gameTime => 'Zeit';
 
   @override
   String get german => 'deutsch';
 
   @override
-  String get inf_delete_user =>
+  String get infDeleteUser =>
       'Benutzername eingeben, der gelöscht werden soll.';
 
   @override
-  String get inf_learning =>
+  String get infLearning =>
       'Wähle hier aus, welche Wort-Gruppe du lernen möchtest.';
 
   @override
-  String get inf_settings =>
+  String get infSettings =>
       'Hier können Sie diverse Grundeinstellungen für die App vornehmen. Wie Sprache usw.';
 
   @override
-  String get inf_start =>
+  String get infStart =>
       'Du befindest Dich auf der Startseite. Von hier aus geht es los in in die ganze App.';
 
   @override
-  String get inf_user_reg => 'Bitte einen \nBenutzername \neingeben.';
+  String get infUserReg => 'Bitte einen \nBenutzername \neingeben.';
 
   @override
-  String get inf_username => 'Mindestens 1 Zeichen eingeben.';
+  String get infUsername => 'Mindestens 1 Zeichen eingeben.';
 
   @override
-  String get inf_word =>
+  String get infWord =>
       'Lies Wort und Übersetzung, dann klicke auf \"Gelesen\".';
 
   @override
   String get information => 'Information';
 
   @override
-  String get input_hint => 'Lies das Wort und klicke auf \"Gelesen\"';
+  String get inputHint => 'Lies das Wort und klicke auf \"Gelesen\"';
 
   @override
-  String get input_hint_due => 'Tippe die Übersetzung';
+  String get inputHintDue => 'Tippe die Übersetzung';
 
   @override
-  String lab_level(int level) {
+  String labLevel(int level) {
     return 'Level: $level';
   }
 
@@ -196,90 +196,90 @@ class AppLocalizationsDe extends AppLocalizations {
   String get languages => 'Sprachen';
 
   @override
-  String get limit_reached => 'Tageslimit erreicht!';
+  String get limitReached => 'Tageslimit erreicht!';
 
   @override
   String get loading => 'laden';
 
   @override
-  String get loading_complete => 'Daten wurden geladen.';
+  String get loadingComplete => 'Daten wurden geladen.';
 
   @override
-  String get m_lang => 'Muttersprache';
+  String get mLang => 'Muttersprache';
 
   @override
-  String get msg_word_learned => 'Wort gelernt! (Level 8 erreicht)';
+  String get msgWordLearned => 'Wort gelernt! (Level 8 erreicht)';
 
   @override
-  String get my_courses => 'Meine Sprachen';
+  String get myCourses => 'Meine Sprachen';
 
   @override
-  String get no_courses => 'Keine Kurse';
+  String get noCourses => 'Keine Kurse';
 
   @override
-  String get no_due_words => 'Keine fälligen Wörter!';
+  String get noDueWords => 'Keine fälligen Wörter!';
 
   @override
-  String get no_learned_words =>
+  String get noLearnedWords =>
       'Keine gelernten Wörter zum Spielen.\nLerne zuerst neue Wörter!';
 
   @override
-  String get no_new_lang => 'Keine neuen Sprachen verfügbar';
+  String get noNewLang => 'Keine neuen Sprachen verfügbar';
 
   @override
-  String get no_u_reg => 'Kein Benutzer registriert';
+  String get noUReg => 'Kein Benutzer registriert';
 
   @override
-  String get no_words => 'Keine Wörter verfügbar';
+  String get noWords => 'Keine Wörter verfügbar';
 
   @override
   String get register => 'registrieren';
 
   @override
-  String get select_difficulty => 'Wähle eine Schwierigkeit:';
+  String get selectDifficulty => 'Wähle eine Schwierigkeit:';
 
   @override
   String get settings => 'Einstellungen';
 
   @override
-  String get stay_logged_in => 'Eingeloggt bleiben';
+  String get stayLoggedIn => 'Eingeloggt bleiben';
 
   @override
-  String get tit_page_learning => 'Lernen';
+  String get titPageLearning => 'Lernen';
 
   @override
-  String get tit_page_sett => 'Einstellungen';
+  String get titPageSett => 'Einstellungen';
 
   @override
-  String get tit_page_start => 'Startseite';
+  String get titPageStart => 'Startseite';
 
   @override
-  String get translation_label => 'Übersetzung:';
+  String get translationLabel => 'Übersetzung:';
 
   @override
-  String get u_login => 'Login';
+  String get uLogin => 'Login';
 
   @override
-  String get u_name => 'Benutzername';
+  String get uName => 'Benutzername';
 
   @override
-  String get u_registration => 'Benutzer registrieren';
+  String get uRegistration => 'Benutzer registrieren';
 
   @override
-  String get user_delete => 'Benutzer löschen';
+  String get userDelete => 'Benutzer löschen';
 
   @override
-  String get welcome_message => 'Willkommen bei unserer App!';
+  String get welcomeMessage => 'Willkommen bei unserer App!';
 
   @override
-  String get words_10 => '10 Wörter';
+  String get words10 => '10 Wörter';
 
   @override
-  String get words_3 => '3 Wörter';
+  String get words3 => '3 Wörter';
 
   @override
-  String get words_5 => '5 Wörter';
+  String get words5 => '5 Wörter';
 
   @override
-  String get words_per_session => 'Wörter pro Sitzung';
+  String get wordsPerSession => 'Wörter pro Sitzung';
 }

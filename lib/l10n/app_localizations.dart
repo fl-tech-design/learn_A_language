@@ -98,11 +98,11 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
-  /// No description provided for @all_due_done.
+  /// No description provided for @allDueDone.
   ///
   /// In en, this message translates to:
   /// **'All due words completed!'**
-  String get all_due_done;
+  String get allDueDone;
 
   /// No description provided for @back.
   ///
@@ -110,137 +110,137 @@ abstract class AppLocalizations {
   /// **'back'**
   String get back;
 
-  /// No description provided for @base_title.
+  /// No description provided for @baseTitle.
   ///
   /// In en, this message translates to:
   /// **'New App'**
-  String get base_title;
+  String get baseTitle;
 
-  /// No description provided for @btn_add_user.
+  /// No description provided for @btnAddUser.
   ///
   /// In en, this message translates to:
   /// **'+ New User'**
-  String get btn_add_user;
+  String get btnAddUser;
 
-  /// No description provided for @btn_change_user.
+  /// No description provided for @btnChangeUser.
   ///
   /// In en, this message translates to:
   /// **'Change user'**
-  String get btn_change_user;
+  String get btnChangeUser;
 
-  /// No description provided for @btn_check.
+  /// No description provided for @btnCheck.
   ///
   /// In en, this message translates to:
   /// **'Check'**
-  String get btn_check;
+  String get btnCheck;
 
-  /// No description provided for @btn_continue.
+  /// No description provided for @btnContinue.
   ///
   /// In en, this message translates to:
   /// **'Continue'**
-  String get btn_continue;
+  String get btnContinue;
 
-  /// No description provided for @btn_delete_user.
+  /// No description provided for @btnDeleteUser.
   ///
   /// In en, this message translates to:
   /// **'Delete user'**
-  String get btn_delete_user;
+  String get btnDeleteUser;
 
-  /// No description provided for @btn_end_session.
+  /// No description provided for @btnEndSession.
   ///
   /// In en, this message translates to:
   /// **'End session'**
-  String get btn_end_session;
+  String get btnEndSession;
 
-  /// No description provided for @btn_game.
+  /// No description provided for @btnGame.
   ///
   /// In en, this message translates to:
   /// **'Game'**
-  String get btn_game;
+  String get btnGame;
 
-  /// No description provided for @btn_grammar.
+  /// No description provided for @btnGrammar.
   ///
   /// In en, this message translates to:
   /// **'Grammar'**
-  String get btn_grammar;
+  String get btnGrammar;
 
-  /// No description provided for @btn_learn.
+  /// No description provided for @btnLearn.
   ///
   /// In en, this message translates to:
   /// **'Learn'**
-  String get btn_learn;
+  String get btnLearn;
 
-  /// No description provided for @btn_new_words.
+  /// No description provided for @btnNewWords.
   ///
   /// In en, this message translates to:
   /// **'New words'**
-  String get btn_new_words;
+  String get btnNewWords;
 
-  /// No description provided for @btn_next.
+  /// No description provided for @btnNext.
   ///
   /// In en, this message translates to:
   /// **'Next word'**
-  String get btn_next;
+  String get btnNext;
 
-  /// No description provided for @btn_next_word.
+  /// No description provided for @btnNextWord.
   ///
   /// In en, this message translates to:
   /// **'Next word'**
-  String get btn_next_word;
+  String get btnNextWord;
 
-  /// No description provided for @btn_prev.
+  /// No description provided for @btnPrev.
   ///
   /// In en, this message translates to:
   /// **'Prev'**
-  String get btn_prev;
+  String get btnPrev;
 
-  /// No description provided for @btn_read.
+  /// No description provided for @btnRead.
   ///
   /// In en, this message translates to:
   /// **'Read'**
-  String get btn_read;
+  String get btnRead;
 
-  /// No description provided for @btn_review.
+  /// No description provided for @btnReview.
   ///
   /// In en, this message translates to:
   /// **'Review'**
-  String get btn_review;
+  String get btnReview;
 
-  /// No description provided for @btn_turbo.
+  /// No description provided for @btnTurbo.
   ///
   /// In en, this message translates to:
   /// **'Turbo'**
-  String get btn_turbo;
+  String get btnTurbo;
 
-  /// No description provided for @cat_due_words.
+  /// No description provided for @catDueWords.
   ///
   /// In en, this message translates to:
   /// **'Due words'**
-  String get cat_due_words;
+  String get catDueWords;
 
-  /// No description provided for @cat_learned_words.
+  /// No description provided for @catLearnedWords.
   ///
   /// In en, this message translates to:
   /// **'Learned words'**
-  String get cat_learned_words;
+  String get catLearnedWords;
 
-  /// No description provided for @cat_new_lang.
+  /// No description provided for @catNewLang.
   ///
   /// In en, this message translates to:
   /// **'Discover new languages'**
-  String get cat_new_lang;
+  String get catNewLang;
 
-  /// No description provided for @cat_new_words.
+  /// No description provided for @catNewWords.
   ///
   /// In en, this message translates to:
   /// **'New words'**
-  String get cat_new_words;
+  String get catNewWords;
 
-  /// No description provided for @cat_select.
+  /// No description provided for @catSelect.
   ///
   /// In en, this message translates to:
   /// **'Select a category'**
-  String get cat_select;
+  String get catSelect;
 
   /// No description provided for @chancel.
   ///
@@ -260,41 +260,41 @@ abstract class AppLocalizations {
   /// **'confirm'**
   String get confirm;
 
-  /// No description provided for @difficulty_easy.
+  /// No description provided for @difficultyEasy.
   ///
   /// In en, this message translates to:
   /// **'Easy (20s / +3s)'**
-  String get difficulty_easy;
+  String get difficultyEasy;
 
-  /// No description provided for @difficulty_easy_short.
+  /// No description provided for @difficultyEasyShort.
   ///
   /// In en, this message translates to:
   /// **'Easy'**
-  String get difficulty_easy_short;
+  String get difficultyEasyShort;
 
-  /// No description provided for @difficulty_hard.
+  /// No description provided for @difficultyHard.
   ///
   /// In en, this message translates to:
   /// **'Hard (10s / +1s)'**
-  String get difficulty_hard;
+  String get difficultyHard;
 
-  /// No description provided for @difficulty_hard_short.
+  /// No description provided for @difficultyHardShort.
   ///
   /// In en, this message translates to:
   /// **'Hard'**
-  String get difficulty_hard_short;
+  String get difficultyHardShort;
 
-  /// No description provided for @difficulty_medium.
+  /// No description provided for @difficultyMedium.
   ///
   /// In en, this message translates to:
   /// **'Medium (15s / +2s)'**
-  String get difficulty_medium;
+  String get difficultyMedium;
 
-  /// No description provided for @difficulty_medium_short.
+  /// No description provided for @difficultyMediumShort.
   ///
   /// In en, this message translates to:
   /// **'Medium'**
-  String get difficulty_medium_short;
+  String get difficultyMediumShort;
 
   /// No description provided for @english.
   ///
@@ -302,11 +302,11 @@ abstract class AppLocalizations {
   /// **'english'**
   String get english;
 
-  /// No description provided for @examples_title.
+  /// No description provided for @examplesTitle.
   ///
   /// In en, this message translates to:
   /// **'Examples:'**
-  String get examples_title;
+  String get examplesTitle;
 
   /// No description provided for @exit.
   ///
@@ -314,23 +314,23 @@ abstract class AppLocalizations {
   /// **'Exit'**
   String get exit;
 
-  /// No description provided for @feedback_correct.
+  /// No description provided for @feedbackCorrect.
   ///
   /// In en, this message translates to:
   /// **'Correct!'**
-  String get feedback_correct;
+  String get feedbackCorrect;
 
-  /// No description provided for @feedback_correct_would_be.
+  /// No description provided for @feedbackCorrectWouldBe.
   ///
   /// In en, this message translates to:
   /// **'Correct would be:'**
-  String get feedback_correct_would_be;
+  String get feedbackCorrectWouldBe;
 
-  /// No description provided for @feedback_wrong.
+  /// No description provided for @feedbackWrong.
   ///
   /// In en, this message translates to:
   /// **'Wrong!'**
-  String get feedback_wrong;
+  String get feedbackWrong;
 
   /// No description provided for @free.
   ///
@@ -338,47 +338,47 @@ abstract class AppLocalizations {
   /// **'Free'**
   String get free;
 
-  /// No description provided for @game_back.
+  /// No description provided for @gameBack.
   ///
   /// In en, this message translates to:
   /// **'Back'**
-  String get game_back;
+  String get gameBack;
 
-  /// No description provided for @game_lives.
+  /// No description provided for @gameLives.
   ///
   /// In en, this message translates to:
   /// **'Lives'**
-  String get game_lives;
+  String get gameLives;
 
-  /// No description provided for @game_over.
+  /// No description provided for @gameOver.
   ///
   /// In en, this message translates to:
   /// **'Game Over!'**
-  String get game_over;
+  String get gameOver;
 
-  /// No description provided for @game_record_prefix.
+  /// No description provided for @gameRecordPrefix.
   ///
   /// In en, this message translates to:
   /// **'R: '**
-  String get game_record_prefix;
+  String get gameRecordPrefix;
 
-  /// No description provided for @game_restart.
+  /// No description provided for @gameRestart.
   ///
   /// In en, this message translates to:
   /// **'Restart'**
-  String get game_restart;
+  String get gameRestart;
 
-  /// No description provided for @game_score.
+  /// No description provided for @gameScore.
   ///
   /// In en, this message translates to:
   /// **'Pts'**
-  String get game_score;
+  String get gameScore;
 
-  /// No description provided for @game_time.
+  /// No description provided for @gameTime.
   ///
   /// In en, this message translates to:
   /// **'Time'**
-  String get game_time;
+  String get gameTime;
 
   /// No description provided for @german.
   ///
@@ -386,47 +386,47 @@ abstract class AppLocalizations {
   /// **'german'**
   String get german;
 
-  /// No description provided for @inf_delete_user.
+  /// No description provided for @infDeleteUser.
   ///
   /// In en, this message translates to:
   /// **'Enter the username to delete.'**
-  String get inf_delete_user;
+  String get infDeleteUser;
 
-  /// No description provided for @inf_learning.
+  /// No description provided for @infLearning.
   ///
   /// In en, this message translates to:
   /// **'Choose here which word group you want to learn.'**
-  String get inf_learning;
+  String get infLearning;
 
-  /// No description provided for @inf_settings.
+  /// No description provided for @infSettings.
   ///
   /// In en, this message translates to:
   /// **'Here you can make various basic settings for the app, such as language and so on.'**
-  String get inf_settings;
+  String get infSettings;
 
-  /// No description provided for @inf_start.
+  /// No description provided for @infStart.
   ///
   /// In en, this message translates to:
   /// **'You are on the home page. From here, you can start exploring the entire app.'**
-  String get inf_start;
+  String get infStart;
 
-  /// No description provided for @inf_user_reg.
+  /// No description provided for @infUserReg.
   ///
   /// In en, this message translates to:
   /// **'Please enter \na username.'**
-  String get inf_user_reg;
+  String get infUserReg;
 
-  /// No description provided for @inf_username.
+  /// No description provided for @infUsername.
   ///
   /// In en, this message translates to:
   /// **'Enter at least 1 character.'**
-  String get inf_username;
+  String get infUsername;
 
-  /// No description provided for @inf_word.
+  /// No description provided for @infWord.
   ///
   /// In en, this message translates to:
   /// **'Read the word and translation, then click \"Read\".'**
-  String get inf_word;
+  String get infWord;
 
   /// No description provided for @information.
   ///
@@ -434,23 +434,23 @@ abstract class AppLocalizations {
   /// **'Information'**
   String get information;
 
-  /// No description provided for @input_hint.
+  /// No description provided for @inputHint.
   ///
   /// In en, this message translates to:
   /// **'Read the word and click \"Read\"'**
-  String get input_hint;
+  String get inputHint;
 
-  /// No description provided for @input_hint_due.
+  /// No description provided for @inputHintDue.
   ///
   /// In en, this message translates to:
   /// **'Type the translation'**
-  String get input_hint_due;
+  String get inputHintDue;
 
-  /// No description provided for @lab_level.
+  /// No description provided for @labLevel.
   ///
   /// In en, this message translates to:
   /// **'Level: {level}'**
-  String lab_level(int level);
+  String labLevel(int level);
 
   /// No description provided for @languages.
   ///
@@ -458,11 +458,11 @@ abstract class AppLocalizations {
   /// **'Languages'**
   String get languages;
 
-  /// No description provided for @limit_reached.
+  /// No description provided for @limitReached.
   ///
   /// In en, this message translates to:
   /// **'Daily limit reached!'**
-  String get limit_reached;
+  String get limitReached;
 
   /// No description provided for @loading.
   ///
@@ -470,65 +470,65 @@ abstract class AppLocalizations {
   /// **'loading'**
   String get loading;
 
-  /// No description provided for @loading_complete.
+  /// No description provided for @loadingComplete.
   ///
   /// In en, this message translates to:
   /// **'loading complete'**
-  String get loading_complete;
+  String get loadingComplete;
 
-  /// No description provided for @m_lang.
+  /// No description provided for @mLang.
   ///
   /// In en, this message translates to:
   /// **'Mother tongue'**
-  String get m_lang;
+  String get mLang;
 
-  /// No description provided for @msg_word_learned.
+  /// No description provided for @msgWordLearned.
   ///
   /// In en, this message translates to:
   /// **'Word learned! (Level 8 reached)'**
-  String get msg_word_learned;
+  String get msgWordLearned;
 
-  /// No description provided for @my_courses.
+  /// No description provided for @myCourses.
   ///
   /// In en, this message translates to:
   /// **'My Languages'**
-  String get my_courses;
+  String get myCourses;
 
-  /// No description provided for @no_courses.
+  /// No description provided for @noCourses.
   ///
   /// In en, this message translates to:
   /// **'No courses'**
-  String get no_courses;
+  String get noCourses;
 
-  /// No description provided for @no_due_words.
+  /// No description provided for @noDueWords.
   ///
   /// In en, this message translates to:
   /// **'No due words!'**
-  String get no_due_words;
+  String get noDueWords;
 
-  /// No description provided for @no_learned_words.
+  /// No description provided for @noLearnedWords.
   ///
   /// In en, this message translates to:
   /// **'No learned words to play.\nLearn new words first!'**
-  String get no_learned_words;
+  String get noLearnedWords;
 
-  /// No description provided for @no_new_lang.
+  /// No description provided for @noNewLang.
   ///
   /// In en, this message translates to:
   /// **'No new languages available'**
-  String get no_new_lang;
+  String get noNewLang;
 
-  /// No description provided for @no_u_reg.
+  /// No description provided for @noUReg.
   ///
   /// In en, this message translates to:
   /// **'No user registered'**
-  String get no_u_reg;
+  String get noUReg;
 
-  /// No description provided for @no_words.
+  /// No description provided for @noWords.
   ///
   /// In en, this message translates to:
   /// **'No words available'**
-  String get no_words;
+  String get noWords;
 
   /// No description provided for @register.
   ///
@@ -536,11 +536,11 @@ abstract class AppLocalizations {
   /// **'register'**
   String get register;
 
-  /// No description provided for @select_difficulty.
+  /// No description provided for @selectDifficulty.
   ///
   /// In en, this message translates to:
   /// **'Select a difficulty:'**
-  String get select_difficulty;
+  String get selectDifficulty;
 
   /// No description provided for @settings.
   ///
@@ -548,89 +548,89 @@ abstract class AppLocalizations {
   /// **'Settings'**
   String get settings;
 
-  /// No description provided for @stay_logged_in.
+  /// No description provided for @stayLoggedIn.
   ///
   /// In en, this message translates to:
   /// **'Stay logged in'**
-  String get stay_logged_in;
+  String get stayLoggedIn;
 
-  /// No description provided for @tit_page_learning.
+  /// No description provided for @titPageLearning.
   ///
   /// In en, this message translates to:
   /// **'Learning'**
-  String get tit_page_learning;
+  String get titPageLearning;
 
-  /// No description provided for @tit_page_sett.
+  /// No description provided for @titPageSett.
   ///
   /// In en, this message translates to:
   /// **'Settings'**
-  String get tit_page_sett;
+  String get titPageSett;
 
-  /// No description provided for @tit_page_start.
+  /// No description provided for @titPageStart.
   ///
   /// In en, this message translates to:
   /// **'Startpage'**
-  String get tit_page_start;
+  String get titPageStart;
 
-  /// No description provided for @translation_label.
+  /// No description provided for @translationLabel.
   ///
   /// In en, this message translates to:
   /// **'Translation:'**
-  String get translation_label;
+  String get translationLabel;
 
-  /// No description provided for @u_login.
+  /// No description provided for @uLogin.
   ///
   /// In en, this message translates to:
   /// **'Login'**
-  String get u_login;
+  String get uLogin;
 
-  /// No description provided for @u_name.
+  /// No description provided for @uName.
   ///
   /// In en, this message translates to:
   /// **'Username'**
-  String get u_name;
+  String get uName;
 
-  /// No description provided for @u_registration.
+  /// No description provided for @uRegistration.
   ///
   /// In en, this message translates to:
   /// **'User Registration'**
-  String get u_registration;
+  String get uRegistration;
 
-  /// No description provided for @user_delete.
+  /// No description provided for @userDelete.
   ///
   /// In en, this message translates to:
   /// **'Delete user'**
-  String get user_delete;
+  String get userDelete;
 
-  /// No description provided for @welcome_message.
+  /// No description provided for @welcomeMessage.
   ///
   /// In en, this message translates to:
   /// **'Welcome to our app!'**
-  String get welcome_message;
+  String get welcomeMessage;
 
-  /// No description provided for @words_10.
+  /// No description provided for @words10.
   ///
   /// In en, this message translates to:
   /// **'10 words'**
-  String get words_10;
+  String get words10;
 
-  /// No description provided for @words_3.
+  /// No description provided for @words3.
   ///
   /// In en, this message translates to:
   /// **'3 words'**
-  String get words_3;
+  String get words3;
 
-  /// No description provided for @words_5.
+  /// No description provided for @words5.
   ///
   /// In en, this message translates to:
   /// **'5 words'**
-  String get words_5;
+  String get words5;
 
-  /// No description provided for @words_per_session.
+  /// No description provided for @wordsPerSession.
   ///
   /// In en, this message translates to:
   /// **'Words per session'**
-  String get words_per_session;
+  String get wordsPerSession;
 }
 
 class _AppLocalizationsDelegate
