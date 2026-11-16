@@ -73,16 +73,39 @@
   "mLang": "Mother tongue",
   "msgWordLearned": "Word learned! (Level 8 reached)",
   "myCourses": "My Languages",
+  "newRecord": "New record!",
   "noCourses": "No courses",
   "noDueWords": "No due words!",
   "noLearnedWords": "No learned words to play.\nLearn new words first!",
   "noNewLang": "No new languages available",
   "noUReg": "No user registered",
   "noWords": "No words available",
+  "recordWithHighscore": "Record: {highscore} {label}",
+  "@recordWithHighscore": {
+    "placeholders": {
+      "highscore": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
   "register": "register",
   "selectDifficulty": "Select a difficulty:",
   "settings": "Settings",
   "stayLoggedIn": "Stay logged in",
+  "streakAndRecord": "Streak {current}  |  Record: {longest}",
+  "@streakAndRecord": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "longest": {
+        "type": "int"
+      }
+    }
+  },
   "titPageLearning": "Learning",
   "titPageSett": "Settings",
   "titPageStart": "Startpage",

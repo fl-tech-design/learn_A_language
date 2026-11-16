@@ -73,16 +73,39 @@
   "mLang": "Muttersprache",
   "msgWordLearned": "Wort gelernt! (Level 8 erreicht)",
   "myCourses": "Meine Sprachen",
+  "newRecord": "Neuer Rekord!",
   "noCourses": "Keine Kurse",
   "noDueWords": "Keine fälligen Wörter!",
   "noLearnedWords": "Keine gelernten Wörter zum Spielen.\nLerne zuerst neue Wörter!",
   "noNewLang": "Keine neuen Sprachen verfügbar",
   "noUReg": "Kein Benutzer registriert",
   "noWords": "Keine Wörter verfügbar",
+  "recordWithHighscore": "Rekord: {highscore} {label}",
+  "@recordWithHighscore": {
+    "placeholders": {
+      "highscore": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
   "register": "registrieren",
   "selectDifficulty": "Wähle eine Schwierigkeit:",
   "settings": "Einstellungen",
   "stayLoggedIn": "Eingeloggt bleiben",
+  "streakAndRecord": "Tag {current}  |  Rekord: {longest}",
+  "@streakAndRecord": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "longest": {
+        "type": "int"
+      }
+    }
+  },
   "titPageLearning": "Lernen",
   "titPageSett": "Einstellungen",
   "titPageStart": "Startseite",

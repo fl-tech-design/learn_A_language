@@ -214,6 +214,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get myCourses => 'Meine Sprachen';
 
   @override
+  String get newRecord => 'Neuer Rekord!';
+
+  @override
   String get noCourses => 'Keine Kurse';
 
   @override
@@ -233,6 +236,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get noWords => 'Keine Wörter verfügbar';
 
   @override
+  String recordWithHighscore(int highscore, String label) {
+    return 'Rekord: $highscore $label';
+  }
+
+  @override
   String get register => 'registrieren';
 
   @override
@@ -243,6 +251,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get stayLoggedIn => 'Eingeloggt bleiben';
+
+  @override
+  String streakAndRecord(int current, int longest) {
+    return 'Tag $current  |  Rekord: $longest';
+  }
 
   @override
   String get titPageLearning => 'Lernen';

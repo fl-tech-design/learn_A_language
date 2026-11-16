@@ -494,6 +494,12 @@ abstract class AppLocalizations {
   /// **'My Languages'**
   String get myCourses;
 
+  /// No description provided for @newRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'New record!'**
+  String get newRecord;
+
   /// No description provided for @noCourses.
   ///
   /// In en, this message translates to:
@@ -530,6 +536,12 @@ abstract class AppLocalizations {
   /// **'No words available'**
   String get noWords;
 
+  /// No description provided for @recordWithHighscore.
+  ///
+  /// In en, this message translates to:
+  /// **'Record: {highscore} {label}'**
+  String recordWithHighscore(int highscore, String label);
+
   /// No description provided for @register.
   ///
   /// In en, this message translates to:
@@ -553,6 +565,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stay logged in'**
   String get stayLoggedIn;
+
+  /// No description provided for @streakAndRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Streak {current}  |  Record: {longest}'**
+  String streakAndRecord(int current, int longest);
 
   /// No description provided for @titPageLearning.
   ///
