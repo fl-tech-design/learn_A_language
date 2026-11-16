@@ -10,6 +10,7 @@ import '../widgets/app_widgets.dart';
 import '../dialogs/login_dialog.dart';
 import '../dialogs/create_user_dialog.dart';
 import '../dialogs/info_dialog.dart';
+import '../l10n/app_localizations.dart';
 
 /// Main menu screen – 1:1 from startpage.py / startpage.kv.
 class StartScreen extends StatefulWidget {
@@ -49,14 +50,14 @@ class _StartScreenState extends State<StartScreen> {
 
   Future<void> _showLogin() async {
     final dataState = context.read<DataState>();
-    final bt = dataState.baseTxt;
+    final l10n = AppLocalizations.of(context);
     final userState = context.read<UserState>();
     final result = await showLoginDialog(
       context,
       dataState.appData.registeredUser,
-      bt['btn_change_user']?.toString() ?? 'Benutzer wechseln',
-      bt['btn_add_user']?.toString() ?? '+ Neuer User',
-      bt['chancel']?.toString() ?? 'abbrechen',
+      l10n.btnChangeUser,
+      l10n.btnAddUser,
+      l10n.chancel,
     );
     if (result == null) return;
     if (result == '__add__') {
@@ -72,18 +73,17 @@ class _StartScreenState extends State<StartScreen> {
 
   Future<void> _showCreateUser() async {
     final dataState = context.read<DataState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final userState = context.read<UserState>();
     final result = await showCreateUserDialog(
       context,
-      bt['u_registration']?.toString() ?? 'Benutzer registrieren',
-      bt['inf_user_reg']?.toString() ?? 'Bitte einen Benutzername eingeben.',
-      at['m_lang']?.toString() ?? 'Muttersprache',
-      bt['german']?.toString() ?? 'Deutsch',
-      bt['english']?.toString() ?? 'English',
-      bt['confirm']?.toString() ?? 'bestätigen',
-      bt['chancel']?.toString() ?? 'abbrechen',
+      l10n.uRegistration,
+      l10n.infUserReg,
+      l10n.mLang,
+      l10n.german,
+      l10n.english,
+      l10n.confirm,
+      l10n.chancel,
     );
     if (result == null) return;
     await userState.registerUser(result['username']!, result['m_lang']!);
@@ -97,8 +97,7 @@ class _StartScreenState extends State<StartScreen> {
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();
     final userState = context.watch<UserState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final courses = userState.selectedCourses;
     final newCourses = userState.availableNewCourses;
     final selectedCourse = _selectedCourseId != null
@@ -109,11 +108,11 @@ class _StartScreenState extends State<StartScreen> {
       body: Column(
         children: [
           BoxTitle(
-            title: bt['tit_page_start']?.toString() ?? 'Startseite',
+            title: l10n.titPageStart,
             onInfo: () => showInfoDialog(
                 context,
-                bt['inf_start']?.toString() ?? '',
-                bt['information']?.toString() ?? 'Information'),
+                l10n.infStart,
+                l10n.information),
           ),
           Expanded(
             child: SingleChildScrollView(
@@ -127,9 +126,7 @@ class _StartScreenState extends State<StartScreen> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                                at['my_courses']?.toString() ??
-                                    'Meine Sprachen',
+                            Text(l10n.myCourses,
                                 style: const TextStyle(
                                     fontSize: AppTheme.lblFontSize,
                                     color: AppTheme.colorPrimary)),
@@ -165,16 +162,12 @@ class _StartScreenState extends State<StartScreen> {
                       if (selectedCourse != null)
                         _CourseDetailView(
                           course: selectedCourse,
-                          at: at,
-                          bt: bt,
                           onBack: () =>
                               setState(() => _selectedCourseId = null),
                         )
                       else
                         _NewLanguagesSection(
                           courses: newCourses,
-                          at: at,
-                          bt: bt,
                           onAdd: (id) async {
                             await userState.addCourse(id);
                             if (mounted) setState(() {});
@@ -185,8 +178,8 @@ class _StartScreenState extends State<StartScreen> {
             ),
           ),
           BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp,
           ),
@@ -234,8 +227,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();
     final navState = context.watch<NavigationState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final username = dataState.appData.loggedUName;
 
     if (username.isEmpty) return const SizedBox.shrink();
@@ -260,17 +252,17 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
                             fontSize: AppTheme.smallFontSize,
                             color: Color(0xFFFFB31A))),
                     Text(
-                        '${at['cat_new_words'] ?? 'Neue Wörter'}: ${stats.newCount}',
+                        '${l10n.catNewWords}: ${stats.newCount}',
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white70)),
                     Text(
-                        '${at['cat_due_words'] ?? 'Fällige Wörter'}: ${stats.dueCount}',
+                        '${l10n.catDueWords}: ${stats.dueCount}',
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white70)),
                     if (stats.streak.current > 0)
-                      Text('Tag ${stats.streak.current}  |  Rekord: ${stats.streak.longest}',
+                      Text(l10n.streakAndRecord(stats.streak.current, stats.streak.longest),
                           style: const TextStyle(
                               fontSize: AppTheme.smallFontSize,
                               color: Color(0xFFFFB31A))),
@@ -287,7 +279,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
                                 padding: EdgeInsets.zero,
                                 foregroundColor: AppTheme.grey4),
                             child: Text(
-                                bt['btn_change_user'] ?? 'User wechseln',
+                                l10n.btnChangeUser,
                                 style: const TextStyle(
                                     fontSize: AppTheme.smallFontSize)))),
                   ]));
@@ -317,13 +309,13 @@ class _MyCoursesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final at = context.read<DataState>().appTxt;
+    final l10n = AppLocalizations.of(context);
     if (courses.isEmpty) {
       return Container(
         padding: const EdgeInsets.all(10),
         decoration:
             BoxDecoration(border: Border.all(color: AppTheme.grey3, width: 1)),
-        child: Text(at['no_courses']?.toString() ?? 'Keine Kurse',
+        child: Text(l10n.noCourses,
             style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
@@ -381,19 +373,16 @@ class _MyCoursesSection extends StatelessWidget {
 /// Course detail view with Lern/Spiele/Grammatik buttons.
 class _CourseDetailView extends StatelessWidget {
   final LanguageCourse course;
-  final Map<String, dynamic> at;
-  final Map<String, dynamic> bt;
   final VoidCallback onBack;
 
   const _CourseDetailView({
     required this.course,
-    required this.at,
-    required this.bt,
     required this.onBack,
   });
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -415,7 +404,7 @@ class _CourseDetailView extends StatelessWidget {
             ),
             TextButton(
               onPressed: onBack,
-              child: Text(bt['back'] ?? 'zurück',
+              child: Text(l10n.back,
                   style: const TextStyle(
                       fontSize: AppTheme.smallFontSize,
                       color: AppTheme.colorPrimary)),
@@ -430,7 +419,7 @@ class _CourseDetailView extends StatelessWidget {
                 context.read<NavigationState>().setWordMode('new');
                 Navigator.of(context).pushNamed('/learning');
               },
-              child: Text(at['btn_learn'] ?? 'Lernen',
+              child: Text(l10n.btnLearn,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
           ),
@@ -441,7 +430,7 @@ class _CourseDetailView extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () =>
                   Navigator.of(context).pushNamed('/gameselect'),
-              child: Text(at['btn_game'] ?? 'Spiele',
+              child: Text(l10n.btnGame,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
           ),
@@ -452,7 +441,7 @@ class _CourseDetailView extends StatelessWidget {
             child: OutlinedButton(
               onPressed: null,
               child: Text(
-                  at['btn_grammar']?.toString() ?? 'Grammatik',
+                  l10n.btnGrammar,
                   style: const TextStyle(
                       fontSize: AppTheme.btnFontSize,
                       color: AppTheme.grey4)),
@@ -467,19 +456,16 @@ class _CourseDetailView extends StatelessWidget {
 /// Section showing available new language courses to discover.
 class _NewLanguagesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
-  final Map<String, dynamic> at;
-  final Map<String, dynamic> bt;
   final ValueChanged<String> onAdd;
 
   const _NewLanguagesSection({
     required this.courses,
-    required this.at,
-    required this.bt,
     required this.onAdd,
   });
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     if (courses.isEmpty) {
       return Container(
         padding: const EdgeInsets.all(12),
@@ -487,7 +473,7 @@ class _NewLanguagesSection extends StatelessWidget {
           border: Border.all(color: AppTheme.grey3, width: 1),
           borderRadius: BorderRadius.circular(8),
         ),
-        child: Text(at['no_new_lang']?.toString() ?? 'Keine neuen Sprachen verfügbar',
+        child: Text(l10n.noNewLang,
             style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
@@ -495,7 +481,7 @@ class _NewLanguagesSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(at['cat_new_lang']?.toString() ?? 'Neue Sprachen entdecken',
+        Text(l10n.catNewLang,
             style: const TextStyle(
                 fontSize: AppTheme.lblFontSize,
                 color: AppTheme.colorPrimary)),
