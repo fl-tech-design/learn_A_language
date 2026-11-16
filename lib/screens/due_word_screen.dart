@@ -5,6 +5,7 @@ import '../managers/data_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
+import '../l10n/app_localizations.dart';
 
 /// Due word review screen – 1:1 from duewordpage.py/kv.
 class DueWordScreen extends StatefulWidget {
@@ -76,6 +77,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
   }
 
   Future<void> _onCharInput(String text) async {
+    final l10n = AppLocalizations.of(context);
     if (text.isEmpty || _checked) return;
     final char = text[text.length - 1];
     if (_words.isEmpty || _index >= _words.length) return;
@@ -105,7 +107,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
         setState(() {
           _checked = true;
           _userInput = correctAnswer;
-          _feedback = context.read<DataState>().appTxt['feedback_correct']?.toString() ?? 'Richtig!';
+          _feedback = l10n.feedbackCorrect;
           _feedbackColor = AppTheme.green2;
           _correctDisplay = correctAnswer;
         });
@@ -124,11 +126,12 @@ class _DueWordScreenState extends State<DueWordScreen> {
   }
 
   Future<void> _failWord(String correctAnswer, VocabEntry word) async {
+    final l10n = AppLocalizations.of(context);
     setState(() {
       _checked = true;
-      _feedback = context.read<DataState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
+      _feedback = l10n.feedbackWrong;
       _feedbackColor = AppTheme.red2;
-      final fb = context.read<DataState>().appTxt['feedback_correct_would_be']?.toString() ?? 'Richtig wäre:';
+      final fb = l10n.feedbackCorrectWouldBe;
       _correctDisplay = '$fb $correctAnswer';
       _userInput = correctAnswer; // Reveal full word
     });
@@ -160,9 +163,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<DataState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final allDone = _words.isEmpty || _index >= _words.length;
     final word = !allDone ? _words[_index] : null;
     final correctAnswer = word != null
@@ -171,7 +172,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
 
     return Scaffold(
       body: Column(children: [
-        BoxTitle(title: at['tit_page_learning']?.toString() ?? 'Lernen'),
+        BoxTitle(title: l10n.titPageLearning),
         Expanded(
             child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -181,14 +182,12 @@ class _DueWordScreenState extends State<DueWordScreen> {
                       child: Center(
                           child: Text(
                               allDone
-                                  ? (at['no_due_words'] ??
-                                      at['no_due_words'] ??
-                                      'Keine fälligen Wörter!')
+                                  ? l10n.noDueWords
                                   : (word?.translation ?? ''),
                               textAlign: TextAlign.center,
                               style: const TextStyle(fontSize: 32)))),
                   const SizedBox(height: 8),
-                  Text(at['translation_label'] ?? 'Übersetzung:',
+                  Text(l10n.translationLabel,
                       style: const TextStyle(
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60)),
@@ -237,7 +236,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                         width: double.infinity,
                         child: OutlinedButton(
                             onPressed: _nextWord,
-                            child: Text(at['btn_next'] ?? 'Weiter',
+                            child: Text(l10n.btnNext,
                                 style: const TextStyle(
                                     fontSize: AppTheme.btnFontSize)))),
                   Text(_feedback,
@@ -251,14 +250,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
                           onPressed: () {
                             Navigator.of(context).pop();
                           },
-                          child: Text(bt['back'] ?? 'zurück',
+                          child: Text(l10n.back,
                               style: const TextStyle(
                                   fontSize: AppTheme.btnFontSize,
                                   color: AppTheme.colorPrimary)))),
                 ]))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp),
       ]),
