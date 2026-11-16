@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/data_state.dart';
 import '../widgets/app_widgets.dart';
+import '../l10n/app_localizations.dart';
 import 'game_screen.dart';
 
 /// Game selection screen – 1:1 from gameselectpage.py/kv.
@@ -19,13 +18,11 @@ class GameSelectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<DataState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       body: Column(children: [
-        BoxTitle(title: at['btn_game']?.toString() ?? 'Spiele'),
+        BoxTitle(title: l10n.btnGame),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -34,7 +31,7 @@ class GameSelectScreen extends StatelessWidget {
                       SizedBox(
                           height: 80,
                           child: Center(
-                              child: Text(at['select_difficulty'] ?? 'Wähle eine Schwierigkeit:',
+                              child: Text(l10n.selectDifficulty,
                                   style: const TextStyle(
                                       fontSize: AppTheme.lblFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -43,7 +40,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'easy'),
-                              child: Text(at['difficulty_easy'] ?? 'Leicht (20s / +3s)',
+                              child: Text(l10n.difficultyEasy,
                                   style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -51,7 +48,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'medium'),
-                              child: Text(at['difficulty_medium'] ?? 'Mittel (15s / +2s)',
+                              child: Text(l10n.difficultyMedium,
                                   style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -59,7 +56,7 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: OutlinedButton(
                               onPressed: () => _startGame(context, 'hard'),
-                              child: Text(at['difficulty_hard'] ?? 'Schwer (10s / +1s)',
+                              child: Text(l10n.difficultyHard,
                                   style: const TextStyle(fontSize: 16)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
@@ -67,14 +64,14 @@ class GameSelectScreen extends StatelessWidget {
                           width: double.infinity,
                           child: TextButton(
                               onPressed: () => Navigator.of(context).pop(),
-                              child: Text(bt['back'] ?? 'zurück',
+                              child: Text(l10n.back,
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize,
                                       color: AppTheme.colorPrimary)))),
                     ])))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp),
       ]),

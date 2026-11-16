@@ -1,9 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
-import '../managers/data_state.dart';
 import '../managers/language_manager.dart';
+import '../l10n/app_localizations.dart';
 
 /// Splash/loading screen – 1:1 from loadingpage.py.
 class LoadingScreen extends StatefulWidget {
@@ -40,10 +39,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<DataState>();
-    final loadingText = appState.baseTxt['loading']?.toString() ?? 'Loading';
-    final loadingComplete =
-        appState.baseTxt['loading_complete']?.toString() ?? 'Loading complete';
+    final l10n = AppLocalizations.of(context);
+    final loadingText = l10n.loading;
+    final loadingComplete = l10n.loadingComplete;
 
     return Scaffold(
       body: Stack(

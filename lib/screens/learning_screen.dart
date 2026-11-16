@@ -6,6 +6,7 @@ import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
+import '../l10n/app_localizations.dart';
 
 /// Learning category selection screen – 1:1 from learningpage.py/kv.
 class LearningScreen extends StatefulWidget {
@@ -55,18 +56,16 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<DataState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       body: Column(children: [
         BoxTitle(
-            title: at['tit_page_learning']?.toString() ?? 'Lernen',
+            title: l10n.titPageLearning,
             onInfo: () => showInfoDialog(
                 context,
-                at['inf_learning']?.toString() ?? '',
-                bt['information']?.toString() ?? 'Information')),
+                l10n.infLearning,
+                l10n.information)),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -76,7 +75,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                           height: 120,
                           child: Center(
                               child: Text(
-                                  at['cat_select'] ?? 'Wähle eine Kategorie',
+                                  l10n.catSelect,
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                       fontSize: AppTheme.lblFontSize)))),
@@ -90,7 +89,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(
-                                  at['cat_new_words'] ?? 'Neue Wörter',
+                                  l10n.catNewWords,
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -103,7 +102,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                   : () => Navigator.of(context)
                                       .pushNamed('/dueword'),
                               child: Text(
-                                  '${at['cat_due_words'] ?? 'Fällige Wörter'} ($_dueCount)',
+                                  '${l10n.catDueWords} ($_dueCount)',
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -116,9 +115,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                 Navigator.of(context).pushNamed('/word');
                               },
                               child: Text(
-                                  at['cat_learned_words'] ??
-                                      at['cat_learned_words'] ??
-                                      'Gelernte Wörter',
+                                  l10n.catLearnedWords,
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -127,14 +124,14 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                           width: double.infinity,
                           child: TextButton(
                               onPressed: () => Navigator.of(context).pop(),
-                              child: Text(bt['back'] ?? 'zurück',
+                              child: Text(l10n.back,
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize,
                                       color: AppTheme.colorPrimary)))),
                     ])))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp),
       ]),
