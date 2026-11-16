@@ -197,7 +197,39 @@ class _StartScreenState extends State<StartScreen> {
 }
 
 /// User info box with stats – extracted as separate widget for efficiency.
-class _UserInfoBox extends StatelessWidget {
+/// Subscribes to the global [routeObserver] and refreshes the stats via
+/// [RouteAware.didPopNext] whenever a route on top is popped back to it.
+class _UserInfoBox extends StatefulWidget {
+  @override
+  State<_UserInfoBox> createState() => _UserInfoBoxState();
+}
+
+class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
+  bool _subscribed = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!_subscribed) {
+      final route = ModalRoute.of(context);
+      if (route != null) {
+        routeObserver.subscribe(this, route);
+        _subscribed = true;
+      }
+    }
+  }
+
+  @override
+  void didPopNext() {
+    context.read<NavigationState>().notifyStatsChanged();
+  }
+
+  @override
+  void dispose() {
+    if (_subscribed) routeObserver.unsubscribe(this);
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();

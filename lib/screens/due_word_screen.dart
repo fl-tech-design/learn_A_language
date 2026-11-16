@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
-import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -250,7 +249,6 @@ class _DueWordScreenState extends State<DueWordScreen> {
                       width: double.infinity,
                       child: TextButton(
                           onPressed: () {
-                            context.read<NavigationState>().notifyStatsChanged();
                             Navigator.of(context).pop();
                           },
                           child: Text(bt['back'] ?? 'zurück',

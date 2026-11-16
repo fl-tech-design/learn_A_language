@@ -105,7 +105,6 @@ class _WordScreenState extends State<WordScreen> {
     if (result == true) {
       _continueLearning();
     } else {
-      context.read<NavigationState>().notifyStatsChanged();
       Navigator.of(context).pop();
     }
   }
@@ -270,7 +269,6 @@ class _WordScreenState extends State<WordScreen> {
               width: double.infinity,
               child: TextButton(
                   onPressed: () {
-                    context.read<NavigationState>().notifyStatsChanged();
                     Navigator.of(context).pop();
                   },
                   child: Text(bt['back'] ?? 'zurück',

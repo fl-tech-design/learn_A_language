@@ -64,6 +64,7 @@ class LearnALanguageApp extends StatelessWidget {
       title: AppTheme.appTitle,
       theme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+      navigatorObservers: [routeObserver],
       initialRoute: '/',
       routes: {
         '/': (context) => const LoadingScreen(),
