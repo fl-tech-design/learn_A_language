@@ -1,8 +1,8 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import '../theme/app_theme.dart';
-import '../managers/language_manager.dart';
 
 /// Title bar widget – replaces BoxTitle from Kivy.
 class BoxTitle extends StatelessWidget {
@@ -21,7 +21,7 @@ class BoxTitle extends StatelessWidget {
       height: height,
       child: Container(
         decoration: BoxDecoration(
-          border: Border.all(color: AppTheme.grey2, width: 1),
+          border: Border.all(color: AppTheme.grey2),
         ),
         child: Row(
           children: [
@@ -136,7 +136,7 @@ class FlagBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: AppTheme.grey3, width: 1),
+        border: Border.all(color: AppTheme.grey3),
       ),
       child: Row(
         children: [
@@ -151,7 +151,7 @@ class FlagBox extends StatelessWidget {
             child: TextButton(
               onPressed: onTap,
               child: Text(
-                letUppercaseFirst(label),
+                toBeginningOfSentenceCase(label),
                 style: const TextStyle(
                   color: AppTheme.colorPrimary,
                   fontFamily: 'Jura',

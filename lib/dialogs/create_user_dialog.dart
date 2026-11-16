@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import '../theme/app_theme.dart';
-import '../managers/language_manager.dart';
 
 /// Create-user dialog – replaces Pop_Create_User.
 Future<Map<String, String>?> showCreateUserDialog(
@@ -53,7 +53,7 @@ Future<Map<String, String>?> showCreateUserDialog(
                 children: [
                   Expanded(
                     child: ChoiceChip(
-                      label: Text(letUppercaseFirst(deLabel)),
+                      label: Text(toBeginningOfSentenceCase(deLabel)),
                       selected: mLang == 'de',
                       onSelected: (_) => setState(() => mLang = 'de'),
                     ),
@@ -61,7 +61,7 @@ Future<Map<String, String>?> showCreateUserDialog(
                   const SizedBox(width: 12),
                   Expanded(
                     child: ChoiceChip(
-                      label: Text(letUppercaseFirst(enLabel)),
+                      label: Text(toBeginningOfSentenceCase(enLabel)),
                       selected: mLang == 'en',
                       onSelected: (_) => setState(() => mLang = 'en'),
                     ),
@@ -73,7 +73,7 @@ Future<Map<String, String>?> showCreateUserDialog(
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(ctx).pop(null),
+            onPressed: () => Navigator.of(ctx).pop(),
             child: Text(cancelText,
                 style: const TextStyle(fontSize: 16, color: Colors.black)),
           ),

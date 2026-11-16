@@ -338,6 +338,66 @@ abstract class AppLocalizations {
   /// **'Free'**
   String get free;
 
+  /// No description provided for @grammarContrast.
+  ///
+  /// In en, this message translates to:
+  /// **'Contrast'**
+  String get grammarContrast;
+
+  /// No description provided for @grammarExamFocus.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam tip'**
+  String get grammarExamFocus;
+
+  /// No description provided for @grammarExamples.
+  ///
+  /// In en, this message translates to:
+  /// **'Examples'**
+  String get grammarExamples;
+
+  /// No description provided for @grammarExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Explanation'**
+  String get grammarExplanation;
+
+  /// No description provided for @grammarNoTopics.
+  ///
+  /// In en, this message translates to:
+  /// **'No grammar topics available.'**
+  String get grammarNoTopics;
+
+  /// No description provided for @grammarPitfall.
+  ///
+  /// In en, this message translates to:
+  /// **'Common mistake'**
+  String get grammarPitfall;
+
+  /// No description provided for @grammarQuickCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick check'**
+  String get grammarQuickCheck;
+
+  /// No description provided for @grammarSolution.
+  ///
+  /// In en, this message translates to:
+  /// **'Solution'**
+  String get grammarSolution;
+
+  /// No description provided for @infGrammar.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a grammar topic to read its explanation in your mother tongue.'**
+  String get infGrammar;
+
+  /// No description provided for @titPageGrammar.
+  ///
+  /// In en, this message translates to:
+  /// **'Grammar'**
+  String get titPageGrammar;
+
   /// No description provided for @gameBack.
   ///
   /// In en, this message translates to:
@@ -571,6 +631,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Streak {current}  |  Record: {longest}'**
   String streakAndRecord(int current, int longest);
+
+  /// No description provided for @titChooseGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose Game'**
+  String get titChooseGame;
 
   /// No description provided for @titPageLearning.
   ///

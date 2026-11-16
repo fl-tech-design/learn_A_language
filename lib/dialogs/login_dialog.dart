@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
 import '../theme/app_theme.dart';
 
 /// Login-Popup → shows list of registered users.
@@ -9,6 +10,7 @@ Future<String?> showLoginDialog(
   String addUserText,
   String cancelText,
 ) async {
+  final l10n = AppLocalizations.of(context);
   return showDialog<String>(
     context: context,
     barrierDismissible: false,
@@ -23,10 +25,10 @@ Future<String?> showLoginDialog(
           mainAxisSize: MainAxisSize.min,
           children: [
             if (users.isEmpty)
-              const Padding(
-                padding: EdgeInsets.all(16),
-                child: Text('Keine Benutzer registriert',
-                    style: TextStyle(fontSize: 16)),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(l10n.noUReg,
+                    style: const TextStyle(fontSize: 16)),
               )
             else
               Flexible(
@@ -55,7 +57,7 @@ Future<String?> showLoginDialog(
       ),
       actions: [
         TextButton(
-          onPressed: () => Navigator.of(ctx).pop(null),
+          onPressed: () => Navigator.of(ctx).pop(),
           child: Text(cancelText,
               style: const TextStyle(fontSize: 18, color: Colors.black)),
         ),

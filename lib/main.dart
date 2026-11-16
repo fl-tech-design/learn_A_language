@@ -5,6 +5,7 @@ import 'l10n/app_localizations.dart';
 import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
+import 'managers/grammar_manager.dart';
 import 'managers/vocab_manager.dart';
 import 'managers/vocab_queries.dart';
 import 'managers/user_manager.dart';
@@ -15,8 +16,11 @@ import 'screens/start_screen.dart';
 import 'screens/learning_screen.dart';
 import 'screens/word_screen.dart';
 import 'screens/due_word_screen.dart';
-import 'screens/game_select_screen.dart';
+import 'screens/game_choose_screen.dart';
+import 'screens/turbo_lv_select_screen.dart';
 import 'screens/game_screen.dart';
+import 'screens/grammar_detail_screen.dart';
+import 'screens/grammar_screen.dart';
 import 'screens/settings_screen.dart';
 
 void main() async {
@@ -29,6 +33,7 @@ void main() async {
   final userManager = UserManagerImpl(fileService);
   final vocabManager = VocabManagerImpl(userManager, fileService);
   final vocabQueries = VocabQueriesImpl(userManager);
+  final grammarManager = GrammarManagerImpl(fileService);
 
   final dataState = DataState(fileService);
   await dataState.initialize();
@@ -48,6 +53,7 @@ void main() async {
       Provider<FileService>.value(value: fileService),
       Provider<UserManager>.value(value: userManager),
       Provider<VocabQueries>.value(value: vocabQueries),
+      Provider<GrammarManager>.value(value: grammarManager),
       ChangeNotifierProvider.value(value: dataState),
       ChangeNotifierProvider.value(value: navigationState),
       ChangeNotifierProvider.value(value: userState),
@@ -77,9 +83,12 @@ class LearnALanguageApp extends StatelessWidget {
         '/learning': (context) => const LearningScreen(),
         '/word': (context) => const WordScreen(),
         '/dueword': (context) => const DueWordScreen(),
-        '/gameselect': (context) => const GameSelectScreen(),
+        '/gameselect': (context) => const TurboLevelSelectScreen(),
+        '/gamechoose': (context) => const GameChooseScreen(),
         '/game': (context) => const GameScreen(),
         '/settings': (context) => const SettingsScreen(),
+        '/grammar': (context) => const GrammarScreen(),
+        '/grammardetail': (context) => const GrammarDetailScreen(),
       },
     );
   }

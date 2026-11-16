@@ -32,6 +32,7 @@ flutter:
     - assets/data_app/files_user/
     - assets/language_dict/de/
     - assets/language_dict/en/
+    - assets/grammar/
 
   fonts:
     - family: Jura

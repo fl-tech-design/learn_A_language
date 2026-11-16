@@ -38,9 +38,7 @@ class FileServiceImpl implements FileService {
 
     final files = <String>[
       'data_base/base_data.json',
-      'data_base/base_txt.json',
       'data_app/app_data.json',
-      'data_app/app_txt.json',
       'language_dict/de/de_to_be.json',
       'language_dict/de/de_to_be_allowed_to.json',
       'language_dict/de/de_to_begin.json',

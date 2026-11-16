@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import '../theme/app_theme.dart';
-import '../managers/language_manager.dart';
 import '../l10n/app_localizations.dart';
 
 /// Splash/loading screen – 1:1 from loadingpage.py.
@@ -57,8 +57,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
             right: 0,
             child: Text(
               _progress >= 100
-                  ? '${letUppercaseFirst(loadingComplete)}!'
-                  : '${letUppercaseFirst(loadingText)}...  ${_progress.toInt()}%',
+                  ? '${toBeginningOfSentenceCase(loadingComplete)}!'
+                  : '${toBeginningOfSentenceCase(loadingText)}...  ${_progress.toInt()}%',
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 23,

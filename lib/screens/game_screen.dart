@@ -123,6 +123,10 @@ class _GameScreenState extends State<GameScreen> {
     pool.shuffle(Random());
     final distractors = pool.length >= 3
         ? pool.take(3).map((w) => w.word).toList()
+        // Distraktor-Fallback: Wenn der Spiel-Pool weniger als 4 Wörter enthält,
+        // fehlen echte falsche Antwortoptionen. Diese drei Platzhalter füllen die
+        // Lücken auf, damit die UI immer 4 Optionen anzeigen kann.
+        // TODO: Entfällt, sobald die Turbo-Guard (>4 gelernte Wörter) implementiert ist.
         : ['hello', 'goodbye', 'please'].take(3 - pool.length).toList();
 
     final options = [correct, ...distractors]..shuffle(Random());
@@ -173,17 +177,17 @@ class _GameScreenState extends State<GameScreen> {
         _score++;
         _timer += _timeBonusPerCorrect;
       });
-      Future.delayed(const Duration(milliseconds: 300), () => _advanceToNext());
+      Future.delayed(const Duration(milliseconds: 300), _advanceToNext);
     } else {
       setState(() {
         _answered = true;
         _lives--;
       });
       if (_lives <= 0) {
-        Future.delayed(const Duration(milliseconds: 300), () => _gameOver());
+        Future.delayed(const Duration(milliseconds: 300), _gameOver);
       } else {
         Future.delayed(
-            const Duration(milliseconds: 300), () => _advanceToNext());
+            const Duration(milliseconds: 300), _advanceToNext);
       }
     }
   }
@@ -226,7 +230,7 @@ class _GameScreenState extends State<GameScreen> {
         backText: l10n.gameBack);
     if (!mounted) return;
     if (result == 'restart') {
-      _startGame();
+      await _startGame();
     } else {
       Navigator.of(context).pop();
     }

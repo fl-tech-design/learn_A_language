@@ -61,7 +61,7 @@ class _StartScreenState extends State<StartScreen> {
     );
     if (result == null) return;
     if (result == '__add__') {
-      _showCreateUser();
+      await _showCreateUser();
     } else {
       await userState.login(result);
       if (!mounted) return;
@@ -243,7 +243,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
           return Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                  border: Border.all(color: AppTheme.grey3, width: 1)),
+                  border: Border.all(color: AppTheme.grey3)),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -314,7 +314,7 @@ class _MyCoursesSection extends StatelessWidget {
       return Container(
         padding: const EdgeInsets.all(10),
         decoration:
-            BoxDecoration(border: Border.all(color: AppTheme.grey3, width: 1)),
+            BoxDecoration(border: Border.all(color: AppTheme.grey3)),
         child: Text(l10n.noCourses,
             style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
@@ -351,8 +351,7 @@ class _MyCoursesSection extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: AppTheme.smallFontSize,
                           color: Colors.white)),
-                  Text('${c.level} - ${c.category}',
-                      textAlign: TextAlign.center,
+                  Text(c.level, textAlign: TextAlign.center,
                       style: const TextStyle(
                           fontSize: 10, color: AppTheme.grey4)),
                   if (selected)
@@ -397,7 +396,7 @@ class _CourseDetailView extends StatelessWidget {
             const SizedBox(width: 8),
             Expanded(
               child: Text(
-                  '${course.languageName} ${course.level} - ${course.category}',
+                  '${course.languageName} ${course.level}',
                   style: const TextStyle(
                       fontSize: AppTheme.lblFontSize,
                       color: AppTheme.colorPrimary)),
@@ -429,7 +428,7 @@ class _CourseDetailView extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: () =>
-                  Navigator.of(context).pushNamed('/gameselect'),
+                  Navigator.of(context).pushNamed('/gamechoose'),
               child: Text(l10n.btnGame,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
@@ -439,12 +438,11 @@ class _CourseDetailView extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: null,
+              onPressed: () => Navigator.of(context).pushNamed('/grammar'),
               child: Text(
                   l10n.btnGrammar,
                   style: const TextStyle(
-                      fontSize: AppTheme.btnFontSize,
-                      color: AppTheme.grey4)),
+                      fontSize: AppTheme.btnFontSize)),
             ),
           ),
         ],
@@ -470,7 +468,7 @@ class _NewLanguagesSection extends StatelessWidget {
       return Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          border: Border.all(color: AppTheme.grey3, width: 1),
+          border: Border.all(color: AppTheme.grey3),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Text(l10n.noNewLang,
@@ -496,7 +494,7 @@ class _NewLanguagesSection extends StatelessWidget {
                 width: 130,
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  border: Border.all(color: AppTheme.grey3, width: 1),
+                  border: Border.all(color: AppTheme.grey3),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Column(
@@ -508,7 +506,7 @@ class _NewLanguagesSection extends StatelessWidget {
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white)),
-                    Text('${c.level} - ${c.category}',
+                    Text(c.level,
                         style: const TextStyle(
                             fontSize: 10, color: AppTheme.grey4)),
                     const SizedBox(height: 4),

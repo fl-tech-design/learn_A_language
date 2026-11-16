@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/app_models.dart';
 import '../services/file_service.dart';
 
-/// Central data & locale state – base/app JSON data, texts, colors.
+/// Central data & locale state – base/app JSON data and colors.
 /// Extracted from AppState to eliminate the God Object anti-pattern.
 class DataState extends ChangeNotifier {
   final FileService _fileService;
@@ -10,13 +10,9 @@ class DataState extends ChangeNotifier {
   DataState(this._fileService);
   // ── Data loaded from JSON ──────────────────────────────────────
   Map<String, dynamic> _baseData = {};
-  Map<String, dynamic> _baseTxtRaw = {};
   Map<String, dynamic> _appDataRaw = {};
-  Map<String, dynamic> _appTxtRaw = {};
 
   String _currLang = 'de';
-  Map<String, dynamic> _baseTxt = {};
-  Map<String, dynamic> _appTxt = {};
   AppData _appData = AppData();
 
   // Colors from base_data.json (fallback)
@@ -26,8 +22,6 @@ class DataState extends ChangeNotifier {
 
   // ── Getters ────────────────────────────────────────────────────
   String get currLang => _currLang;
-  Map<String, dynamic> get baseTxt => _baseTxt;
-  Map<String, dynamic> get appTxt => _appTxt;
 
   /// Maps curr_lang to Flutter's Locale. Fallback: en.
   Locale get appLocale => switch (_currLang) {
@@ -48,17 +42,9 @@ class DataState extends ChangeNotifier {
 
   Future<void> loadAppData() async {
     _baseData = await _fileService.loadJson('data_base/base_data.json');
-    _baseTxtRaw = await _fileService.loadJson('data_base/base_txt.json');
     _appDataRaw = await _fileService.loadJson('data_app/app_data.json');
-    _appTxtRaw = await _fileService.loadJson('data_app/app_txt.json');
 
     _currLang = _baseData['curr_lang']?.toString() ?? 'de';
-    _baseTxt = (_baseTxtRaw[_currLang] as Map<String, dynamic>?) ??
-        (_baseTxtRaw['de'] as Map<String, dynamic>?) ??
-        {};
-    _appTxt = (_appTxtRaw[_currLang] as Map<String, dynamic>?) ??
-        (_appTxtRaw['de'] as Map<String, dynamic>?) ??
-        {};
     _appData = AppData.fromJson(_appDataRaw);
 
     final colors = _baseData['colors'] as Map<String, dynamic>?;

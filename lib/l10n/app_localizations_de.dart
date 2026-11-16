@@ -129,6 +129,37 @@ class AppLocalizationsDe extends AppLocalizations {
   String get free => 'Frei';
 
   @override
+  String get grammarContrast => 'Kontrast';
+
+  @override
+  String get grammarExamFocus => 'Prüfungshinweis';
+
+  @override
+  String get grammarExamples => 'Beispiele';
+
+  @override
+  String get grammarExplanation => 'Erklärung';
+
+  @override
+  String get grammarNoTopics => 'Keine Grammatik-Themen verfügbar.';
+
+  @override
+  String get grammarPitfall => 'Typischer Fehler';
+
+  @override
+  String get grammarQuickCheck => 'Kurzer Check';
+
+  @override
+  String get grammarSolution => 'Lösung';
+
+  @override
+  String get infGrammar =>
+      'Wähle ein Grammatik-Thema, um die Erklärung in deiner Muttersprache zu lesen.';
+
+  @override
+  String get titPageGrammar => 'Grammatik';
+
+  @override
   String get gameBack => 'Zurück';
 
   @override
@@ -256,6 +287,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String streakAndRecord(int current, int longest) {
     return 'Tag $current  |  Rekord: $longest';
   }
+
+  @override
+  String get titChooseGame => 'Spiel wählen';
 
   @override
   String get titPageLearning => 'Lernen';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/user_state.dart';
 import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
-import '../managers/language_manager.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/create_user_dialog.dart';
 import '../dialogs/delete_user_dialog.dart';
@@ -55,8 +55,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
         context,
         l10n.userDelete,
         l10n.infDeleteUser,
-        letUppercaseFirst(l10n.confirm),
-        letUppercaseFirst(l10n.chancel));
+        toBeginningOfSentenceCase(l10n.confirm),
+        toBeginningOfSentenceCase(l10n.chancel));
     if (name == null || name.isEmpty) return;
     await um.deleteUser(name);
     await dataState.loadAppData();
@@ -75,8 +75,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
         l10n.mLang,
         l10n.german,
         l10n.english,
-        letUppercaseFirst(l10n.confirm),
-        letUppercaseFirst(l10n.chancel));
+        toBeginningOfSentenceCase(l10n.confirm),
+        toBeginningOfSentenceCase(l10n.chancel));
     if (result == null) return;
     await userState.registerUser(result['username']!, result['m_lang']!);
     await dataState.loadAppData();
@@ -150,7 +150,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           child: OutlinedButton(
                               onPressed: _requestDeleteUser,
                               child: Text(
-                                  letUppercaseFirst(l10n.btnDeleteUser),
+                                  toBeginningOfSentenceCase(l10n.btnDeleteUser),
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -160,7 +160,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           child: OutlinedButton(
                               onPressed: _requestCreateUser,
                               child: Text(
-                                  letUppercaseFirst(l10n.btnAddUser),
+                                  toBeginningOfSentenceCase(l10n.btnAddUser),
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                     ]))),
