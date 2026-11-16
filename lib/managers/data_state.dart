@@ -28,6 +28,13 @@ class DataState extends ChangeNotifier {
   String get currLang => _currLang;
   Map<String, dynamic> get baseTxt => _baseTxt;
   Map<String, dynamic> get appTxt => _appTxt;
+
+  /// Maps curr_lang to Flutter's Locale. Fallback: en.
+  Locale get appLocale => switch (_currLang) {
+        'de' => const Locale('de'),
+        'en' => const Locale('en'),
+        _    => const Locale('en'),
+      };
   AppData get appData => _appData;
   List<double> get color1 => _color1;
   List<double> get color2 => _color2;

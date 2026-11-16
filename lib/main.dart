@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'l10n/app_localizations.dart';
 import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
@@ -60,10 +61,14 @@ class LearnALanguageApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dataState = context.watch<DataState>();
     return MaterialApp(
       title: AppTheme.appTitle,
       theme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+      locale: dataState.appLocale,
+      supportedLocales: AppLocalizations.supportedLocales,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
       navigatorObservers: [routeObserver],
       initialRoute: '/',
       routes: {
