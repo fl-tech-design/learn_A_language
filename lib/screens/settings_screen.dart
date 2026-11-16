@@ -8,6 +8,7 @@ import '../managers/language_manager.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/create_user_dialog.dart';
 import '../dialogs/delete_user_dialog.dart';
+import '../l10n/app_localizations.dart';
 import '../services/file_service.dart';
 
 /// Settings screen – 1:1 from settingpage.py/kv.
@@ -49,13 +50,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _requestDeleteUser() async {
     final dataState = context.read<DataState>();
     final um = context.read<UserManager>();
-    final bt = dataState.baseTxt;
+    final l10n = AppLocalizations.of(context);
     final name = await showDeleteUserDialog(
         context,
-        bt['user_delete'] ?? 'Benutzer löschen',
-        bt['inf_delete_user'] ?? 'Benutzername eingeben',
-        letUppercaseFirst(bt['confirm'] ?? 'bestätigen'),
-        letUppercaseFirst(bt['chancel'] ?? 'abbrechen'));
+        l10n.userDelete,
+        l10n.infDeleteUser,
+        letUppercaseFirst(l10n.confirm),
+        letUppercaseFirst(l10n.chancel));
     if (name == null || name.isEmpty) return;
     await um.deleteUser(name);
     await dataState.loadAppData();
@@ -66,17 +67,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _requestCreateUser() async {
     final dataState = context.read<DataState>();
     final userState = context.read<UserState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final result = await showCreateUserDialog(
         context,
-        bt['u_registration'] ?? 'Benutzer registrieren',
-        bt['inf_user_reg'] ?? 'Bitte einen Benutzername eingeben.',
-        at['m_lang'] ?? 'Muttersprache',
-        bt['german'] ?? 'Deutsch',
-        bt['english'] ?? 'English',
-        letUppercaseFirst(bt['confirm'] ?? 'bestätigen'),
-        letUppercaseFirst(bt['chancel'] ?? 'abbrechen'));
+        l10n.uRegistration,
+        l10n.infUserReg,
+        l10n.mLang,
+        l10n.german,
+        l10n.english,
+        letUppercaseFirst(l10n.confirm),
+        letUppercaseFirst(l10n.chancel));
     if (result == null) return;
     await userState.registerUser(result['username']!, result['m_lang']!);
     await dataState.loadAppData();
@@ -86,31 +86,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final dataState = context.watch<DataState>();
-    final bt = dataState.baseTxt;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       body: Column(children: [
-        BoxTitle(title: at['tit_page_sett']?.toString() ?? 'Einstellungen'),
+        BoxTitle(title: l10n.titPageSett),
         Expanded(
             child: SingleChildScrollView(
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(bt['languages'] ?? 'Sprachen',
+                      Text(l10n.languages,
                           style:
                               const TextStyle(fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: AppTheme.contentSpacing),
                       FlagBox(
                           flagAsset: 'assets/images/flag_germany.png',
-                          label: bt['german']?.toString() ?? 'deutsch',
+                          label: l10n.german,
                           onTap: () => context.read<DataState>().changeLanguage('deutsch')),
                       const SizedBox(height: AppTheme.contentSpacing),
                       FlagBox(
                           flagAsset: 'assets/images/flag_uk.png',
-                          label: bt['english']?.toString() ?? 'english',
+                          label: l10n.english,
                           onTap: () => context.read<DataState>().changeLanguage('englisch')),
                       const SizedBox(height: 20),
                       Row(children: [
@@ -121,12 +119,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 onChanged: _toggleStayLoggedIn,
                                 activeColor: AppTheme.colorPrimary)),
                         const SizedBox(width: AppTheme.contentSpacing),
-                        Text(at['stay_logged_in'] ?? 'Eingeloggt bleiben',
+                        Text(l10n.stayLoggedIn,
                             style: const TextStyle(
                                 fontSize: AppTheme.lblFontSize)),
                       ]),
                       const SizedBox(height: 16),
-                      Text(at['words_per_session'] ?? 'Wörter pro Sitzung',
+                      Text(l10n.wordsPerSession,
                           style:
                               const TextStyle(fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: 8),
@@ -136,8 +134,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         return Padding(
                             padding: const EdgeInsets.only(right: 8),
                             child: ChoiceChip(
-                                label:
-                                    Text(at['words_$n'] ?? '$n Wörter'),
+                                label: Text(switch (n) {
+                                  3 => l10n.words3,
+                                  5 => l10n.words5,
+                                  10 => l10n.words10,
+                                  _ => '$n',
+                                }),
                                 selected: selected,
                                 onSelected: (_) => _setWordsPerSession(n)));
                       }).toList()),
@@ -148,8 +150,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           child: OutlinedButton(
                               onPressed: _requestDeleteUser,
                               child: Text(
-                                  letUppercaseFirst(bt['btn_delete_user'] ??
-                                      'Benutzer löschen'),
+                                  letUppercaseFirst(l10n.btnDeleteUser),
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
@@ -159,14 +160,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           child: OutlinedButton(
                               onPressed: _requestCreateUser,
                               child: Text(
-                                  letUppercaseFirst(bt['btn_add_user'] ??
-                                      'Benutzer erstellen'),
+                                  letUppercaseFirst(l10n.btnAddUser),
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                     ]))),
         BoxBottom(
-            settingsText: bt['back']?.toString() ?? 'zurück',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.back,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pop(),
             onExit: AppTheme.closeApp),
       ]),
