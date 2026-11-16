@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import '../models/app_models.dart';
@@ -25,6 +26,10 @@ abstract class VocabQueries {
 /// Concrete implementation backed by [UserManager].
 class VocabQueriesImpl implements VocabQueries {
   final UserManager _userManager;
+
+  /// Serializes answer saves so parallel checkWordAnswer calls cannot
+  /// overwrite each other (lost update guard).
+  Future<void> _answerQueue = Future.value();
 
   VocabQueriesImpl(this._userManager);
 
@@ -138,6 +143,21 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<AnswerCheckResult> checkWordAnswer(
+      String username, String wordKey, String userInput) {
+    final completer = Completer<AnswerCheckResult>();
+    _answerQueue = _answerQueue.then((_) async {
+      try {
+        completer.complete(
+            await _checkWordAnswer(username, wordKey, userInput));
+      } catch (e, st) {
+        completer.completeError(e, st);
+      }
+    });
+    return completer.future;
+  }
+
+  /// Actual answer checking + persistence, serialized via [_answerQueue].
+  Future<AnswerCheckResult> _checkWordAnswer(
       String username, String wordKey, String userInput) async {
     final ud = await _userManager.loadUserdata(username);
     if (ud == null || !ud.vocab.containsKey(wordKey)) {

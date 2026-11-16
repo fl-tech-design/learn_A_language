@@ -264,4 +264,38 @@ void main() {
       expect(identical(fake.lastSaved, savedBefore), true);
     });
   });
+
+  group('checkWordAnswer + getWordsDueCount kombiniert', () {
+    test('korrekt beantwortetes fälliges Wort ist danach nicht mehr fällig',
+        () async {
+      final now = DateTime.now();
+      final fake = _FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'due': _vocab(
+            'due',
+            level: 1,
+            status: 'seen',
+            translation: 'Haus',
+            reviewDue: fmt(now.subtract(const Duration(days: 1))),
+          ),
+        }),
+      );
+      final queries = VocabQueriesImpl(fake);
+
+      expect(await queries.getWordsDueCount('alice'), 1);
+
+      final result =
+          await queries.checkWordAnswer('alice', 'due', '  HAUS  ');
+      expect(result.correct, true);
+
+      final saved = fake.lastSaved!;
+      final reviewDue = saved.vocab['due']!.reviewDue;
+      expect(reviewDue, isNotNull);
+      expect(DateTime.parse(reviewDue!).isAfter(now), true);
+
+      expect(await queries.getWordsDueCount('alice'), 0);
+    });
+  });
 }

@@ -75,7 +75,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     return s.replaceAll(RegExp(r'\s*\([^)]*\)'), '').trim();
   }
 
-  void _onCharInput(String text) {
+  Future<void> _onCharInput(String text) async {
     if (text.isEmpty || _checked) return;
     final char = text[text.length - 1];
     if (_words.isEmpty || _index >= _words.length) return;
@@ -95,7 +95,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       if (char == ' ') {
         setState(() => _userInput += ' ');
       } else {
-        _failWord(correctAnswer, word);
+        await _failWord(correctAnswer, word);
       }
     } else if (char.toLowerCase() == expectedChar.toLowerCase()) {
       // Correct letter at this position
@@ -110,7 +110,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
           _correctDisplay = correctAnswer;
         });
         final uname = context.read<DataState>().appData.loggedUName;
-        context.read<VocabQueries>().checkWordAnswer(
+        await context.read<VocabQueries>().checkWordAnswer(
             uname, word.key, word.translation);
       } else {
         setState(() => _userInput = newInput);
@@ -123,7 +123,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     _inputCtrl.clear();
   }
 
-  void _failWord(String correctAnswer, VocabEntry word) {
+  Future<void> _failWord(String correctAnswer, VocabEntry word) async {
     setState(() {
       _checked = true;
       _feedback = context.read<DataState>().appTxt['feedback_wrong']?.toString() ?? 'Falsch!';
@@ -133,7 +133,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
-    context.read<VocabQueries>().checkWordAnswer(uname, word.key, '');
+    await context.read<VocabQueries>().checkWordAnswer(uname, word.key, '');
   }
 
   void _nextWord() {
