@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../l10n/app_localizations.dart';
 
 /// Info-Popup → AlertDialog with scrollable text.
 void showInfoDialog(BuildContext context, String message, String title) {
+  final l10n = AppLocalizations.of(context);
   showDialog(
     context: context,
     barrierDismissible: false,
@@ -22,8 +24,8 @@ void showInfoDialog(BuildContext context, String message, String title) {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(ctx).pop(),
-          child: const Text('Schliessen',
-              style: TextStyle(color: Colors.black, fontSize: 18)),
+          child: Text(l10n.close,
+              style: const TextStyle(color: Colors.black, fontSize: 18)),
         ),
       ],
     ),

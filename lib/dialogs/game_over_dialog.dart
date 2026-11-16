@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../l10n/app_localizations.dart';
 
 /// Game-over dialog – replaces Pop_GameOver.
 Future<String?> showGameOverDialog(
@@ -12,6 +13,7 @@ Future<String?> showGameOverDialog(
   required String restartText,
   required String backText,
 }) async {
+  final l10n = AppLocalizations.of(context);
   return showDialog<String>(
     context: context,
     barrierDismissible: false,
@@ -31,7 +33,7 @@ Future<String?> showGameOverDialog(
               style: const TextStyle(
                   fontSize: 40, color: AppTheme.yellow1, fontFamily: 'Jura')),
           const SizedBox(height: 8),
-          Text('Rekord: $highscore $ptsLabel',
+          Text(l10n.recordWithHighscore(highscore, ptsLabel),
               style: const TextStyle(fontSize: 14, color: Colors.black54)),
           if (newRecord)
             Row(
@@ -40,9 +42,9 @@ Future<String?> showGameOverDialog(
                 Image.asset('assets/game_assets/trophy.png',
                     width: 24, height: 24),
                 const SizedBox(width: 6),
-                const Text('Neuer Rekord!',
+                Text(l10n.newRecord,
                     style:
-                        TextStyle(fontSize: 16, color: AppTheme.yellow1)),
+                        const TextStyle(fontSize: 16, color: AppTheme.yellow1)),
               ],
             ),
         ],
