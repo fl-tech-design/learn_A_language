@@ -9,6 +9,7 @@ import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/game_over_dialog.dart';
+import '../l10n/app_localizations.dart';
 
 /// Turbo Quiz game screen – 1:1 from gamepage.py/kv.
 class GameScreen extends StatefulWidget {
@@ -214,15 +215,15 @@ class _GameScreenState extends State<GameScreen> {
     }
 
     if (!mounted) return;
-    final at = dataState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final result = await showGameOverDialog(context,
         score: _score,
         highscore: _highscore,
         newRecord: newRecord,
-        gameOverTitle: at['game_over'] ?? 'Spiel vorbei!',
-        ptsLabel: at['game_score'] ?? 'Pkt',
-        restartText: at['game_restart'] ?? 'Neustart',
-        backText: at['game_back'] ?? 'Zurück');
+        gameOverTitle: l10n.gameOver,
+        ptsLabel: l10n.gameScore,
+        restartText: l10n.gameRestart,
+        backText: l10n.gameBack);
     if (!mounted) return;
     if (result == 'restart') {
       _startGame();
@@ -233,14 +234,12 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<DataState>();
-    final bt = appState.baseTxt;
-    final at = appState.appTxt;
+    final l10n = AppLocalizations.of(context);
     final question = _currentQuestion?.translation ?? '';
 
     return Scaffold(
       body: Column(children: [
-        BoxTitle(title: at['btn_game']?.toString() ?? 'Spiele'),
+        BoxTitle(title: l10n.btnGame),
         // Status bar
         Container(
             height: 48,
@@ -249,10 +248,10 @@ class _GameScreenState extends State<GameScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(children: [
               Text(widget.difficulty == 'easy'
-                  ? at['difficulty_easy_short']?.toString() ?? 'Leicht'
+                  ? l10n.difficultyEasyShort
                   : widget.difficulty == 'hard'
-                      ? at['difficulty_hard_short']?.toString() ?? 'Schwer'
-                      : at['difficulty_medium_short']?.toString() ?? 'Mittel',
+                      ? l10n.difficultyHardShort
+                      : l10n.difficultyMediumShort,
                   style: const TextStyle(
                       fontSize: 12, color: AppTheme.cyan2)),
               const Spacer(),
@@ -277,20 +276,18 @@ class _GameScreenState extends State<GameScreen> {
                               width: 20,
                               height: 20)))),
               const Spacer(),
-              Text('$_score ${at['game_score'] ?? 'Pkt'}',
+              Text('$_score ${l10n.gameScore}',
                   style:
                       const TextStyle(fontSize: 20, color: AppTheme.yellow1)),
               const SizedBox(width: 12),
-              Text('${at['game_record_prefix'] ?? 'R: '}$_highscore ${at['game_score'] ?? 'Pkt'}',
+              Text('${l10n.gameRecordPrefix}$_highscore ${l10n.gameScore}',
                   style: const TextStyle(fontSize: 12, color: Colors.white60)),
             ])),
         if (_allDone)
           Expanded(
               child: Center(
                   child: Text(
-                      at['no_learned_words'] ??
-                          'Keine gelernten Wörter zum Spielen.\n'
-                          'Lerne zuerst neue Wörter!',
+                      l10n.noLearnedWords,
                       textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 20)))),
         if (_gameActive || _questions.isNotEmpty)
@@ -332,14 +329,14 @@ class _GameScreenState extends State<GameScreen> {
                               _stopTimer();
                               Navigator.of(context).pop();
                             },
-                            child: Text(bt['back'] ?? 'zurück',
+                            child: Text(l10n.back,
                                 style: const TextStyle(
                                     fontSize: AppTheme.btnFontSize,
                                     color: AppTheme.colorPrimary)))),
                   ]))),
         BoxBottom(
-            settingsText: bt['settings']?.toString() ?? 'Einstellungen',
-            exitText: bt['exit']?.toString() ?? 'Beenden',
+            settingsText: l10n.settings,
+            exitText: l10n.exit,
             onSettings: () => Navigator.of(context).pushNamed('/settings'),
             onExit: AppTheme.closeApp),
       ]),
