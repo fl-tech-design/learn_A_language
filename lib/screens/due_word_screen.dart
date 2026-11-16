@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -119,7 +121,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       }
     } else {
       // Wrong character – abort immediately
-      _failWord(correctAnswer, word);
+      unawaited(_failWord(correctAnswer, word));
     }
 
     _inputCtrl.clear();
@@ -222,7 +224,6 @@ class _DueWordScreenState extends State<DueWordScreen> {
                                 const SizedBox.shrink(),
                             autocorrect: false,
                             enableSuggestions: false,
-                            textCapitalization: TextCapitalization.none,
                             keyboardType: TextInputType.text,
                             textInputAction: TextInputAction.done,
                             onChanged: _onCharInput,

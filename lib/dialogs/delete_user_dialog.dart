@@ -41,7 +41,7 @@ Future<String?> showDeleteUserDialog(
       ),
       actions: [
         TextButton(
-          onPressed: () => Navigator.of(ctx).pop(null),
+          onPressed: () => Navigator.of(ctx).pop(),
           child: Text(cancelText, style: const TextStyle(color: Colors.black)),
         ),
         TextButton(

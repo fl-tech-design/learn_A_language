@@ -22,7 +22,7 @@ class UserState extends ChangeNotifier {
 
   // ── Login / User management ───────────────────────────────────
   Future<void> login(String username) async {
-    await _userManager.changeLoginState(true);
+    await _userManager.changeLoginState(newState: true);
     await _userManager.setLoggedUname(username);
     await _loadUserData(username);
 
@@ -43,7 +43,7 @@ class UserState extends ChangeNotifier {
     }
 
     await _userManager.addNewUserToList(username);
-    await _userManager.changeLoginState(true);
+    await _userManager.changeLoginState(newState: true);
     await _userManager.setLoggedUname(username);
 
     final targetLang = mLang == 'de' ? 'en' : 'de';

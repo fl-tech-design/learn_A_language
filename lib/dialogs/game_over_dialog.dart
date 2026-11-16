@@ -56,7 +56,7 @@ Future<String?> showGameOverDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop('restart'),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: Colors.black),
+                  side: const BorderSide(),
                   foregroundColor: Colors.black,
                 ),
                 child: Text(restartText),
@@ -67,7 +67,7 @@ Future<String?> showGameOverDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop('back'),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: Colors.black),
+                  side: const BorderSide(),
                   foregroundColor: Colors.black,
                 ),
                 child: Text(backText),

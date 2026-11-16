@@ -12,7 +12,7 @@ abstract class UserManager {
   Future<void> saveUserdata(String username, UserData data);
   Future<void> addNewUserToList(String username);
   Future<String> deleteUser(String username);
-  Future<void> changeLoginState(bool newState);
+  Future<void> changeLoginState({required bool newState});
   Future<void> setLoggedUname(String loggedUname);
 }
 
@@ -118,7 +118,7 @@ class UserManagerImpl implements UserManager {
   }
 
   @override
-  Future<void> changeLoginState(bool newState) async {
+  Future<void> changeLoginState({required bool newState}) async {
     final data = await _fileService.loadJson(_appDataPath);
     final appData = AppData.fromJson(data);
     await _fileService.saveJson(

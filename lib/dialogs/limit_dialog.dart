@@ -30,7 +30,7 @@ Future<bool?> showLimitDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop(true),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: Colors.black),
+                  side: const BorderSide(),
                   foregroundColor: Colors.black,
                 ),
                 child: Text(continueText),
@@ -41,7 +41,7 @@ Future<bool?> showLimitDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop(false),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: Colors.black),
+                  side: const BorderSide(),
                   foregroundColor: Colors.black,
                 ),
                 child: Text(endText),

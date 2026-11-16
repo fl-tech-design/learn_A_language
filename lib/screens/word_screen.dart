@@ -102,7 +102,7 @@ class _WordScreenState extends State<WordScreen> {
         endText: l10n.btnEndSession);
     if (!mounted) return;
     if (result == true) {
-      _continueLearning();
+      await _continueLearning();
     } else {
       Navigator.of(context).pop();
     }

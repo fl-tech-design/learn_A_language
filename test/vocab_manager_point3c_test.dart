@@ -81,7 +81,7 @@ class _FakeUserManager implements UserManager {
       throw UnimplementedError('deleteUser');
 
   @override
-  Future<void> changeLoginState(bool newState) =>
+  Future<void> changeLoginState({required bool newState}) =>
       throw UnimplementedError('changeLoginState');
 
   @override

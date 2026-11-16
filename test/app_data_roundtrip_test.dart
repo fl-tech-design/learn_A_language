@@ -9,7 +9,6 @@ void main() {
         registeredUser: const ['alice', 'bob'],
         loggedUName: 'alice',
         userLoggedIn: true,
-        stayLoggedIn: true,
         wordsPerSession: 5,
       );
 

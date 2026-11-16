@@ -227,7 +227,6 @@ class VocabQueriesImpl implements VocabQueries {
         correctWord: correctTranslation,
         newLevel: 0,
         message: 'Leider falsch. Richtig wäre: $correctTranslation',
-        statusChanged: false,
       );
     }
   }

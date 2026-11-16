@@ -45,7 +45,7 @@ class _FakeUserManager implements UserManager {
       throw UnimplementedError('deleteUser');
 
   @override
-  Future<void> changeLoginState(bool newState) =>
+  Future<void> changeLoginState({required bool newState}) =>
       throw UnimplementedError('changeLoginState');
 
   @override
@@ -92,7 +92,7 @@ void main() {
         'alice',
         _userData('alice', {
           'mastered': _vocab('mastered', level: 8, status: 'seen'),
-          'unseen': _vocab('unseen', status: 'new'),
+          'unseen': _vocab('unseen'),
           'due_past': _vocab(
             'due_past',
             level: 1,
@@ -138,7 +138,7 @@ void main() {
 
       final queries = VocabQueriesImpl(fake);
 
-      final page0 = await queries.getNewWords('alice', limit: 2, offset: 0);
+      final page0 = await queries.getNewWords('alice', limit: 2);
       final page2 = await queries.getNewWords('alice', limit: 2, offset: 2);
       final page4 = await queries.getNewWords('alice', limit: 2, offset: 4);
 
@@ -215,7 +215,7 @@ void main() {
       fake.seed(
         'alice',
         _userData('alice', {
-          'haus': _vocab('haus', level: 3, status: 'new', translation: 'Haus'),
+          'haus': _vocab('haus', level: 3, translation: 'Haus'),
         }),
       );
 
@@ -248,7 +248,7 @@ void main() {
       final wrong = await queries.checkWordAnswer('alice', 'haus', 'dog');
       expect(wrong.correct, false);
       expect(wrong.newLevel, 0);
-      var saved = fake.lastSaved!;
+      final saved = fake.lastSaved!;
       expect(saved.vocab['haus']!.level, 0);
       expect(saved.vocab['haus']!.status, 'new');
       expect(saved.vocab['haus']!.reviewDue, isNotNull);
