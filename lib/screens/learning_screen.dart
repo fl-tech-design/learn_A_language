@@ -14,13 +14,34 @@ class LearningScreen extends StatefulWidget {
   State<LearningScreen> createState() => _LearningScreenState();
 }
 
-class _LearningScreenState extends State<LearningScreen> {
+class _LearningScreenState extends State<LearningScreen> with RouteAware {
   int _dueCount = 0;
+  bool _subscribed = false;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _refreshDueCount();
+    if (!_subscribed) {
+      final route = ModalRoute.of(context);
+      if (route is PageRoute) {
+        routeObserver.subscribe(this, route);
+        _subscribed = true;
+      }
+    }
+  }
+
+  @override
+  void didPopNext() {
+    _refreshDueCount();
+  }
+
+  @override
+  void dispose() {
+    if (_subscribed) {
+      routeObserver.unsubscribe(this);
+    }
+    super.dispose();
   }
 
   Future<void> _refreshDueCount() async {
