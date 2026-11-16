@@ -1,57 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:learn_a_language/managers/user_manager.dart';
 import 'package:learn_a_language/managers/vocab_queries.dart';
 import 'package:learn_a_language/models/app_models.dart';
 
-/// Full fake analog zu test/vocab_manager_point3c_test.dart:49.
-/// Speichert Benutzerdaten im Speicher und zählt saveUserdata-Aufrufe.
-class _FakeUserManager implements UserManager {
-  int saveCount = 0;
-  UserData? _stored;
-  String? _storedUsername;
-
-  UserData? get lastSaved => _stored;
-
-  void seed(String username, UserData data) {
-    _stored = data;
-    _storedUsername = username;
-  }
-
-  @override
-  Future<String> createUserFile(
-          String username, String mLang, Map<String, dynamic> languageDict) =>
-      throw UnimplementedError('createUserFile');
-
-  @override
-  Future<UserData?> loadUserdata(String username) async {
-    if (_storedUsername == username) return _stored;
-    return null;
-  }
-
-  @override
-  Future<void> saveUserdata(String username, UserData data) async {
-    saveCount++;
-    _stored = data;
-    _storedUsername = username;
-  }
-
-  @override
-  Future<void> addNewUserToList(String username) =>
-      throw UnimplementedError('addNewUserToList');
-
-  @override
-  Future<String> deleteUser(String username) =>
-      throw UnimplementedError('deleteUser');
-
-  @override
-  Future<void> changeLoginState({required bool newState}) =>
-      throw UnimplementedError('changeLoginState');
-
-  @override
-  Future<void> setLoggedUname(String loggedUname) =>
-      throw UnimplementedError('setLoggedUname');
-}
+import 'helpers/fakes.dart';
 
 UserData _userData(String username, Map<String, VocabEntry> vocab,
         {DayStreak? dayStreak}) =>
@@ -87,7 +39,7 @@ void main() {
   group('getDueWords', () {
     test('filtert nach level, status und reviewDue', () async {
       final now = DateTime.now();
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       fake.seed(
         'alice',
         _userData('alice', {
@@ -125,7 +77,7 @@ void main() {
   group('getNewWords + Paging + Count', () {
     test('sliced neue Wörter korrekt, zählt sie und filtert nach Level',
         () async {
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       fake.seed(
         'alice',
         _userData('alice', {
@@ -158,17 +110,15 @@ void main() {
   group('getDayStreak + updateDayStreak', () {
     test('Default, Increment, no-op und Reset', () async {
       final now = DateTime.now();
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       final queries = VocabQueriesImpl(fake);
 
-      // Ohne dayStreak → Default
       fake.seed('alice', _userData('alice', {}));
       final streak = await queries.getDayStreak('alice');
       expect(streak.current, 0);
       expect(streak.longest, 0);
       expect(streak.lastDate, '');
 
-      // lastDate = gestern → Increment-Pfad
       fake.seed(
         'alice',
         _userData('alice', {},
@@ -184,7 +134,6 @@ void main() {
       expect(saved.dayStreak!.longest, 4);
       expect(saved.dayStreak!.lastDate, fmt(now));
 
-      // lastDate = heute → no-op
       final saveCountBefore = fake.saveCount;
       fake.seed(
         'alice',
@@ -194,7 +143,6 @@ void main() {
       await queries.updateDayStreak('alice');
       expect(fake.saveCount, saveCountBefore);
 
-      // lastDate = alte Vergangenheit → Reset auf 1
       fake.seed(
         'alice',
         _userData('alice', {},
@@ -211,7 +159,7 @@ void main() {
 
   group('checkWordAnswer – korrekt', () {
     test('akzeptiert Whitespace/Case und persistiert neuen Level', () async {
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       fake.seed(
         'alice',
         _userData('alice', {
@@ -220,7 +168,8 @@ void main() {
       );
 
       final queries = VocabQueriesImpl(fake);
-      final result = await queries.checkWordAnswer('alice', 'haus', '  HAUS  ');
+      final result =
+          await queries.checkWordAnswer('alice', 'haus', '  HAUS  ');
 
       expect(result.correct, true);
       expect(result.newLevel, greaterThan(3));
@@ -230,11 +179,54 @@ void main() {
       expect(saved.vocab['haus']!.level, result.newLevel);
       expect(saved.vocab['haus']!.status, 'seen');
     });
+
+    test('bereits gesehenes Wort meldet statusChanged false', () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'haus': _vocab('haus',
+              level: 3, status: 'seen', translation: 'Haus'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final result =
+          await queries.checkWordAnswer('alice', 'haus', 'haus');
+
+      expect(result.correct, true);
+      expect(result.statusChanged, false);
+      expect(fake.lastSaved!.vocab['haus']!.status, 'seen');
+    });
+
+    test('Level 7 → 8: gelernt-Meldung und reviewDue wird geleert', () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'haus': _vocab('haus',
+              level: 7, status: 'seen', translation: 'Haus'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final result =
+          await queries.checkWordAnswer('alice', 'haus', 'haus');
+
+      expect(result.correct, true);
+      expect(result.newLevel, 8);
+      expect(result.message, contains('Ausgezeichnet'));
+      expect(result.statusChanged, false);
+
+      final saved = fake.lastSaved!;
+      expect(saved.vocab['haus']!.level, 8);
+      expect(saved.vocab['haus']!.reviewDue, isNull);
+    });
   });
 
   group('checkWordAnswer – falsch / unbekannt', () {
     test('reset bei falscher Antwort, kein Save bei unbekanntem Wort', () async {
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       fake.seed(
         'alice',
         _userData('alice', {
@@ -244,7 +236,6 @@ void main() {
 
       final queries = VocabQueriesImpl(fake);
 
-      // Falsche Antwort → Reset-Pfad
       final wrong = await queries.checkWordAnswer('alice', 'haus', 'dog');
       expect(wrong.correct, false);
       expect(wrong.newLevel, 0);
@@ -253,7 +244,6 @@ void main() {
       expect(saved.vocab['haus']!.status, 'new');
       expect(saved.vocab['haus']!.reviewDue, isNotNull);
 
-      // Unbekanntes Wort → kein Save
       final savedBefore = fake.lastSaved;
       final saveCountBefore = fake.saveCount;
       final notFound =
@@ -269,7 +259,7 @@ void main() {
     test('korrekt beantwortetes fälliges Wort ist danach nicht mehr fällig',
         () async {
       final now = DateTime.now();
-      final fake = _FakeUserManager();
+      final fake = FakeUserManager();
       fake.seed(
         'alice',
         _userData('alice', {
@@ -296,6 +286,35 @@ void main() {
       expect(DateTime.parse(reviewDue!).isAfter(now), true);
 
       expect(await queries.getWordsDueCount('alice'), 0);
+    });
+  });
+
+  group('getAllWords / getMasteredWords / getNewWordsCount', () {
+    test('liefert alle, nur gesehene und zählt neue Wörter', () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'new1': _vocab('new1'),
+          'seen1': _vocab('seen1', status: 'seen'),
+          'seen2': _vocab('seen2', status: 'seen'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+
+      expect((await queries.getAllWords('alice')).length, 3);
+      expect((await queries.getMasteredWords('alice')).map((e) => e.key),
+          ['seen1', 'seen2']);
+      expect(await queries.getNewWordsCount('alice'), 1);
+    });
+
+    test('unbekannter Benutzer liefert leere Listen und 0', () async {
+      final queries = VocabQueriesImpl(FakeUserManager());
+
+      expect(await queries.getDueWords('ghost'), isEmpty);
+      expect(await queries.getNewWords('ghost'), isEmpty);
+      expect(await queries.getWordsDueCount('ghost'), 0);
     });
   });
 }

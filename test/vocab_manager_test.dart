@@ -17,10 +17,6 @@ void main() {
         8: null,
       });
     });
-
-    test('ein heute gelesenes Wort (Level 1) ist morgen fällig', () {
-      expect(VocabManager.repeatIntervalDays[1], 1);
-    });
   });
 
   test('fmt schreibt Datumsangaben als YYYY-MM-DD', () {
