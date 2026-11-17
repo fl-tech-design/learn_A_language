@@ -142,4 +142,10 @@ class UserState extends ChangeNotifier {
       notifyListeners();
     }
   }
+
+  /// Prüft, ob für [course] Kurs-Inhalte (Wörter/Grammatik) verfügbar sind.
+  /// Momentan nur A1; wird aktiv für alle Levels, sobald die Daten sortiert sind.
+  bool courseHasContent(LanguageCourse course) {
+    return activeCourseLevels.contains(course.level);
+  }
 }

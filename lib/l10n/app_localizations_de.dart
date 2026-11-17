@@ -248,6 +248,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get newRecord => 'Neuer Rekord!';
 
   @override
+  String get noContentYet => 'Noch keine Inhalte verfügbar.';
+
+  @override
   String get noCourses => 'Keine Kurse';
 
   @override

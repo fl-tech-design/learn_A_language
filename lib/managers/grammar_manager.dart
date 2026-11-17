@@ -6,7 +6,12 @@ import '../services/file_service.dart';
 /// touching the UI.
 abstract class GrammarManager {
   /// Loads (and caches) the grammar document from the bundled asset.
-  Future<GrammarDocument> load();
+  ///
+  /// When [level] is set (e.g. `'A2'`), a level-specific asset is loaded
+  /// (e.g. `assets/grammar/grammar_a2_de_en.json`) so the UI only shows
+  /// topics for that CEFR level. When [level] is null/empty the full
+  /// catalogue (`grammar_de_en.json`) is returned.
+  Future<GrammarDocument> load({String? level});
 }
 
 /// Concrete implementation backed by [FileService].
@@ -14,15 +19,23 @@ class GrammarManagerImpl implements GrammarManager {
   static const assetPath = 'assets/grammar/grammar_de_en.json';
 
   final FileService _fileService;
-  GrammarDocument? _cache;
+  final Map<String, GrammarDocument> _cache = {};
 
   GrammarManagerImpl(this._fileService);
 
   @override
-  Future<GrammarDocument> load() async {
-    if (_cache != null) return _cache!;
-    final data = await _fileService.loadBundledJson(assetPath);
-    _cache = GrammarDocument.fromJson(data);
-    return _cache!;
+  Future<GrammarDocument> load({String? level}) async {
+    final key =
+        (level == null || level.isEmpty) ? 'default' : level.toUpperCase();
+    final cached = _cache[key];
+    if (cached != null) return cached;
+
+    final path = key == 'default'
+        ? assetPath
+        : 'assets/grammar/grammar_${key.toLowerCase()}_de_en.json';
+    final data = await _fileService.loadBundledJson(path);
+    final doc = GrammarDocument.fromJson(data);
+    _cache[key] = doc;
+    return doc;
   }
 }

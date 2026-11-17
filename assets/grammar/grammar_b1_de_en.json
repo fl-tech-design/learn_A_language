@@ -1,0 +1,454 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-16",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "en"
+  },
+  "ui_languages": [
+    "de",
+    "en"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Englisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloen, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "B1"
+  ],
+  "levels_info": [
+    {
+      "level": "B1",
+      "title": {
+        "de": "Selbststaendig",
+        "en": "Intermediate"
+      },
+      "can_do": {
+        "de": "Zusammenhaengend ueber vertraute Themen sprechen und einfache Texte schreiben.",
+        "en": "Speak connectedly about familiar topics and write straightforward texts."
+      },
+      "exams": [
+        "telc English B1",
+        "Cambridge B1 Preliminary",
+        "Trinity ISE I",
+        "IELTS ca. 4.0-5.0"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "en": "Sentence structure and word order"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "en": "Verbs and tenses"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "en": "Questions and negation"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "en": "Nouns and articles"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "en": "Pronouns"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "en": "Adjectives, adverbs, comparison"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "en": "Prepositions"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "cases_possession",
+      "order": 8,
+      "title": {
+        "de": "Faelle und Besitz",
+        "en": "Cases and possession"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "modals",
+      "order": 9,
+      "title": {
+        "de": "Modalverben und Modalitaet",
+        "en": "Modal verbs and modality"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "clauses_connectors",
+      "order": 10,
+      "title": {
+        "de": "Nebensaetze und Konnektoren",
+        "en": "Clauses and connectors"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "passive",
+      "order": 11,
+      "title": {
+        "de": "Passiv",
+        "en": "The passive"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "conditionals",
+      "order": 12,
+      "title": {
+        "de": "Bedingungssaetze",
+        "en": "Conditionals"
+      },
+      "levels": [
+        "B1"
+      ]
+    },
+    {
+      "id": "infinitive_gerund",
+      "order": 13,
+      "title": {
+        "de": "Infinitiv und -ing-Form",
+        "en": "Infinitive and -ing form"
+      },
+      "levels": [
+        "B1"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_b1_cls_001",
+      "level": "B1",
+      "category": "clauses_connectors",
+      "order": 10,
+      "title": {
+        "de": "Nebensaetze: Englisch laesst das Verb in der Mitte",
+        "en": "Subordinate clauses: English keeps the verb in the middle"
+      },
+      "summary": {
+        "de": "Kein Verb am Satzende, nur ein Konnektor pro Verbindung.",
+        "en": "No verb at the end, and only one connector per link."
+      },
+      "explanation": {
+        "de": "Im Deutschen wandert das konjugierte Verb im Nebensatz ans Ende: 'Ich bleibe zu Hause, weil ich krank bin.' Im Englischen bleibt Subjekt - Verb - Objekt auch nach because, although, if, when erhalten: 'I'm staying at home because I am ill.' Zweite Regel: Ein Konnektor genuegt - nach although steht im Hauptsatz kein but. Dritte Regel: Nach when und if steht fuer Zukunft kein will, sondern eine Gegenwartsform: 'I'll call you when I get home.'",
+        "en": "In German the finite verb moves to the end of a subordinate clause: 'Ich bleibe zu Hause, weil ich krank bin.' English keeps subject - verb - object after because, although, if and when: 'I'm staying at home because I am ill.' Second rule: one connector is enough - after although the main clause takes no but. Third rule: after when and if, future meaning uses a present form, not will: 'I'll call you when I get home.'"
+      },
+      "contrast": {
+        "de": "Deutsch: Verb-Endstellung im Nebensatz, zwei Konnektoren sind moeglich ('Obwohl ..., aber ...'). Englisch: S-V-O bleibt, genau ein Konnektor, kein will nach when/if.",
+        "en": "German: verb-final subordinate clauses, two connectors are possible ('Obwohl ..., aber ...'). English: S-V-O stays, exactly one connector, no will after when/if."
+      },
+      "examples": [
+        {
+          "de": "Ich bleibe zu Hause, weil ich krank bin.",
+          "en": "I'm staying at home because I'm ill."
+        },
+        {
+          "de": "Obwohl es regnet, gehen wir spazieren.",
+          "en": "Although it is raining, we are going for a walk."
+        },
+        {
+          "de": "Ich weiss, dass er morgen kommt.",
+          "en": "I know that he is coming tomorrow.",
+          "hint": {
+            "de": "that-Satz ohne Verb-Endstellung",
+            "en": "that-clause without verb-final order"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Although it was late, but we continued.",
+        "correct": "Although it was late, we continued.",
+        "why": {
+          "de": "Englisch erlaubt nur einen Konnektor pro Satzverbindung; 'although ... but' ist ein Klassiker in Korrekturrunden.",
+          "en": "English allows only one connector per link; 'although ... but' is a classic correction."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Ich rufe dich an, wenn ich zu Hause bin.'",
+          "en": "Translate: 'Ich rufe dich an, wenn ich zu Hause bin.'"
+        },
+        "solution": "I'll call you when I get home.",
+        "accepted": [
+          "I will call you when I am at home.",
+          "I'll call you when I'm home."
+        ]
+      },
+      "tags": [
+        "subordinate_clauses",
+        "connectors",
+        "time_clauses"
+      ],
+      "prerequisites": [
+        "gr_a1_syn_001"
+      ]
+    },
+    {
+      "id": "gr_b1_pas_001",
+      "level": "B1",
+      "category": "passive",
+      "order": 10,
+      "title": {
+        "de": "Passiv: be plus Partizip statt werden plus Partizip",
+        "en": "Passive: be plus participle instead of werden plus participle"
+      },
+      "summary": {
+        "de": "Die Zeit steckt in be, der Taeter kommt mit by - und ein Subjekt ist Pflicht.",
+        "en": "Tense lives in be, the agent comes with by - and a subject is obligatory."
+      },
+      "explanation": {
+        "de": "Deutsch bildet das Vorgangspassiv mit werden: 'Das Haus wird gebaut', 'Das Haus wurde gebaut'. Englisch nutzt be in der passenden Zeit plus past participle: 'The house is being built' (jetzt gerade), 'The house was built' (Vergangenheit). Das deutsche Zustandspassiv ('Das Haus ist gebaut') entspricht 'The house is built'; der Kontext entscheidet. Der Handelnde wird mit by angehaengt: 'The house was built by my uncle.' Ein subjektloses Passiv wie 'Hier wird getanzt' gibt es nicht - Englisch braucht ein Subjekt: 'People are dancing here.'",
+        "en": "German forms the process passive with werden: 'Das Haus wird gebaut', 'Das Haus wurde gebaut'. English uses be in the right tense plus a past participle: 'The house is being built' (right now), 'The house was built' (past). The German state passive ('Das Haus ist gebaut') corresponds to 'The house is built'; context decides. The agent is added with by: 'The house was built by my uncle.' A subjectless passive like 'Hier wird getanzt' does not exist - English needs a subject: 'People are dancing here.'"
+      },
+      "contrast": {
+        "de": "Deutsch: werden plus Partizip II, Subjekt kann fehlen ('Es wird getanzt'). Englisch: be plus past participle, Subjekt Pflicht, Taeter mit by; die Zeit steht in be (is/was/has been/will be).",
+        "en": "German: werden plus past participle, the subject may be absent ('Es wird getanzt'). English: be plus past participle, subject required, agent with by; tense sits in be (is/was/has been/will be)."
+      },
+      "examples": [
+        {
+          "de": "Das Auto wird repariert.",
+          "en": "The car is being repaired."
+        },
+        {
+          "de": "Der Brief wurde gestern geschrieben.",
+          "en": "The letter was written yesterday."
+        },
+        {
+          "de": "Hier wird Deutsch gesprochen.",
+          "en": "German is spoken here."
+        }
+      ],
+      "pitfall": {
+        "wrong": "The house will built next year.",
+        "correct": "The house will be built next year.",
+        "why": {
+          "de": "Auch nach will oder must braucht das Passiv ein be. Deutsch 'wird gebaut' verleitet zum Weglassen.",
+          "en": "Even after will or must the passive needs be. German 'wird gebaut' tempts you to drop it."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Setze ins Passiv: 'Man hat die Fenster geputzt.'",
+          "en": "Turn into the passive: 'Man hat die Fenster geputzt.'"
+        },
+        "solution": "The windows have been cleaned.",
+        "accepted": [
+          "The windows were cleaned.",
+          "The windows have been washed."
+        ]
+      },
+      "tags": [
+        "passive",
+        "be_plus_participle",
+        "by_agent"
+      ],
+      "prerequisites": [
+        "gr_a1_vrb_001"
+      ]
+    },
+    {
+      "id": "gr_b1_con_001",
+      "level": "B1",
+      "category": "conditionals",
+      "order": 10,
+      "title": {
+        "de": "If-Saetze Typ 2: would statt Konjunktiv II",
+        "en": "Conditional type 2: would instead of the German subjunctive"
+      },
+      "summary": {
+        "de": "if plus past simple, would plus Grundform - und never would im if-Satz.",
+        "en": "if plus past simple, would plus base form - and never would in the if-clause."
+      },
+      "explanation": {
+        "de": "Deutsch nutzt fuer Irreales den Konjunktiv II oder wuerde: 'Wenn ich mehr Zeit haette, wuerde ich mehr lesen.' Englisch hat ein festes Muster: if plus past simple, would plus Grundform: 'If I had more time, I would read more.' Das past simple ist hier keine Vergangenheit, sondern ein Zeichen fuer Distanz zur Realitaet. Kein would im if-Satz. Fuer Ratschlaege gilt die feste Form 'If I were you, I would ...'; were gilt fuer alle Personen als korrekt, was ist umgangssprachlich.",
+        "en": "For unreal situations German uses the subjunctive II or wuerde: 'Wenn ich mehr Zeit haette, wuerde ich mehr lesen.' English has a fixed pattern: if plus past simple, would plus base form: 'If I had more time, I would read more.' The past simple here does not mean past time; it signals distance from reality. Never use would in the if-clause. For advice the fixed form is 'If I were you, I would ...'; were is considered correct for all persons, was is colloquial."
+      },
+      "contrast": {
+        "de": "Deutsch: Konjunktiv II (haette, waere, kaeme) oder wuerde plus Infinitiv, in beiden Satzteilen moeglich. Englisch: if plus past simple, Hauptsatz mit would; would nur im Hauptsatz.",
+        "en": "German: subjunctive II (haette, waere, kaeme) or wuerde plus infinitive, possible in both clauses. English: if plus past simple, main clause with would; would only in the main clause."
+      },
+      "examples": [
+        {
+          "de": "Wenn ich reich waere, wuerde ich reisen.",
+          "en": "If I were rich, I would travel."
+        },
+        {
+          "de": "Wenn wir mehr Zeit haetten, koennten wir helfen.",
+          "en": "If we had more time, we could help."
+        },
+        {
+          "de": "An deiner Stelle wuerde ich fragen.",
+          "en": "If I were you, I would ask."
+        }
+      ],
+      "pitfall": {
+        "wrong": "If I would have time, I would help.",
+        "correct": "If I had time, I would help.",
+        "why": {
+          "de": "Im if-Satz steht past simple, nicht would - einer der haeufigsten Pruefungsfehler auf B1 und B2.",
+          "en": "The if-clause takes the past simple, not would - one of the most frequent exam errors at B1 and B2."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Wenn ich das wuesste, wuerde ich es dir sagen.'",
+          "en": "Translate: 'Wenn ich das wuesste, wuerde ich es dir sagen.'"
+        },
+        "solution": "If I knew that, I would tell you.",
+        "accepted": [
+          "If I knew, I would tell you."
+        ]
+      },
+      "tags": [
+        "conditional_2",
+        "subjunctive",
+        "if_I_were_you"
+      ],
+      "prerequisites": [
+        "gr_a2_mod_001"
+      ]
+    },
+    {
+      "id": "gr_b1_inf_001",
+      "level": "B1",
+      "category": "infinitive_gerund",
+      "order": 10,
+      "title": {
+        "de": "to do oder doing? Verbmuster lernen",
+        "en": "to do or doing? Learning verb patterns"
+      },
+      "summary": {
+        "de": "Deutsch nimmt fast immer 'zu plus Infinitiv', Englisch entscheidet pro Verb.",
+        "en": "German almost always uses 'zu plus infinitive'; English decides verb by verb."
+      },
+      "explanation": {
+        "de": "Deutsch hat fast immer 'zu plus Infinitiv': 'Ich hoffe, dich zu sehen', 'Ich freue mich darauf, dich zu sehen'. Englisch waehlt je nach Verb: nach want, hope, decide, plan folgt to plus Infinitiv ('I hope to see you'); nach enjoy, avoid, suggest, mind und nach allen Praepositionen folgt -ing ('I enjoy seeing you', 'I look forward to seeing you'). Achtung: Das to in 'look forward to' ist eine Praeposition, danach steht -ing. Nach Modalverben sowie nach make und let steht die Grundform ohne to.",
+        "en": "German almost always uses 'zu plus infinitive': 'Ich hoffe, dich zu sehen', 'Ich freue mich darauf, dich zu sehen'. English chooses according to the verb: after want, hope, decide, plan use to plus infinitive ('I hope to see you'); after enjoy, avoid, suggest, mind and after all prepositions use -ing ('I enjoy seeing you', 'I look forward to seeing you'). Careful: the to in 'look forward to' is a preposition, so -ing follows. After modal verbs and after make and let, use the bare infinitive."
+      },
+      "contrast": {
+        "de": "Deutsch: 'zu plus Infinitiv' ist die Standardloesung. Englisch: Das Verb entscheidet ueber to-infinitive oder -ing; nach Praepositionen immer -ing.",
+        "en": "German: 'zu plus infinitive' is the default. English: the governing verb decides between to-infinitive and -ing; after prepositions always -ing."
+      },
+      "examples": [
+        {
+          "de": "Ich hoffe, dich bald zu sehen.",
+          "en": "I hope to see you soon."
+        },
+        {
+          "de": "Ich freue mich darauf, dich zu sehen.",
+          "en": "I'm looking forward to seeing you.",
+          "hint": {
+            "de": "to ist hier Praeposition",
+            "en": "to is a preposition here"
+          }
+        },
+        {
+          "de": "Er vermied es, darueber zu sprechen.",
+          "en": "He avoided talking about it."
+        }
+      ],
+      "pitfall": {
+        "wrong": "I look forward to see you.",
+        "correct": "I look forward to seeing you.",
+        "why": {
+          "de": "Nach der Praeposition to steht -ing. Diese Wendung kommt in Pruefungsbriefen auf B1 und B2 sehr haeufig vor.",
+          "en": "After the preposition to you need -ing. This phrase appears very often in B1 and B2 exam letters."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze: 'She suggested ___ (go) to the cinema.'",
+          "en": "Fill in: 'She suggested ___ (go) to the cinema.'"
+        },
+        "solution": "going",
+        "accepted": []
+      },
+      "tags": [
+        "verb_patterns",
+        "gerund",
+        "to_infinitive"
+      ],
+      "exam_focus": {
+        "de": "B1/B2 Schreiben: Briefschluss 'I look forward to hearing from you.'",
+        "en": "B1/B2 writing: letter closing 'I look forward to hearing from you.'"
+      }
+    }
+  ]
+}

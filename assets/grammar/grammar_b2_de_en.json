@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-16",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "en"
+  },
+  "ui_languages": [
+    "de",
+    "en"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Englisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloen, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "B2"
+  ],
+  "levels_info": [
+    {
+      "level": "B2",
+      "title": {
+        "de": "Fortgeschritten",
+        "en": "Upper intermediate"
+      },
+      "can_do": {
+        "de": "Komplexe Texte verstehen,Argumente fuehren, fluessig diskutieren.",
+        "en": "Understand complex texts, develop arguments and discuss fluently."
+      },
+      "exams": [
+        "telc English B2",
+        "Cambridge B2 First",
+        "Trinity ISE II",
+        "IELTS ca. 5.5-6.5"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "en": "Sentence structure and word order"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "en": "Verbs and tenses"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "en": "Questions and negation"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "en": "Nouns and articles"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "en": "Pronouns"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "en": "Adjectives, adverbs, comparison"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "cases_possession",
+      "order": 8,
+      "title": {
+        "de": "Faelle und Besitz",
+        "en": "Cases and possession"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "modals",
+      "order": 9,
+      "title": {
+        "de": "Modalverben und Modalitaet",
+        "en": "Modal verbs and modality"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "clauses_connectors",
+      "order": 10,
+      "title": {
+        "de": "Nebensaetze und Konnektoren",
+        "en": "Clauses and connectors"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "passive",
+      "order": 11,
+      "title": {
+        "de": "Passiv",
+        "en": "The passive"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "conditionals",
+      "order": 12,
+      "title": {
+        "de": "Bedingungssaetze",
+        "en": "Conditionals"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "infinitive_gerund",
+      "order": 13,
+      "title": {
+        "de": "Infinitiv und -ing-Form",
+        "en": "Infinitive and -ing form"
+      },
+      "levels": [
+        "B2"
+      ]
+    },
+    {
+      "id": "reported_speech",
+      "order": 14,
+      "title": {
+        "de": "Indirekte Rede",
+        "en": "Reported speech"
+      },
+      "levels": [
+        "B2"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_b2_rep_001",
+      "level": "B2",
+      "category": "reported_speech",
+      "order": 10,
+      "title": {
+        "de": "Indirekte Rede: Backshift statt Konjunktiv I",
+        "en": "Reported speech: backshift instead of the German subjunctive I"
+      },
+      "summary": {
+        "de": "Englisch verschiebt die Zeitform um eine Stufe, Deutsch nimmt den Konjunktiv I.",
+        "en": "English shifts the tense one step back; German uses the subjunctive I."
+      },
+      "explanation": {
+        "de": "Deutsch markiert indirekte Rede mit dem Konjunktiv I: 'Er sagt, er sei krank.' Englisch hat dafuer keinen eigenen Konjunktiv, sondern verschiebt die Zeitform um eine Stufe zurueck (backshift), wenn das Einleitungsverb in der Vergangenheit steht: 'He said he was ill.' present wird past, past wird past perfect, will wird would, can wird could, must wird bei Pflicht had to. Auch Zeit- und Ortangaben wandern: today wird that day, tomorrow wird the next day, here wird there. Bei Einleitung im Praesens ('He says ...') bleibt die Zeitform erhalten.",
+        "en": "German marks reported speech with the subjunctive I: 'Er sagt, er sei krank.' English has no dedicated subjunctive for this; instead it shifts the tense one step back when the reporting verb is in the past: 'He said he was ill.' present becomes past, past becomes past perfect, will becomes would, can becomes could, and must expressing obligation becomes had to. Time and place words shift too: today becomes that day, tomorrow becomes the next day, here becomes there. With a present reporting verb ('He says ...') the tense stays unchanged."
+      },
+      "contrast": {
+        "de": "Deutsch: Konjunktiv I (sei, habe, werde), Zeitform bleibt inhaltlich gleich. Englisch: Backshift plus Anpassung von Pronomen und Zeitangaben; ein Konjunktiv I existiert nicht.",
+        "en": "German: subjunctive I (sei, habe, werde), the tense keeps its meaning. English: backshift plus adjustment of pronouns and time references; there is no subjunctive I."
+      },
+      "examples": [
+        {
+          "de": "Er sagte, er sei muede.",
+          "en": "He said he was tired."
+        },
+        {
+          "de": "Sie sagte, sie habe den Brief geschrieben.",
+          "en": "She said she had written the letter.",
+          "hint": {
+            "de": "past perfect",
+            "en": "past perfect"
+          }
+        },
+        {
+          "de": "Er sagte, er werde morgen kommen.",
+          "en": "He said he would come the next day.",
+          "hint": {
+            "de": "will wird would, morgen wird the next day",
+            "en": "will becomes would, tomorrow becomes the next day"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "He said me he was tired.",
+        "correct": "He told me he was tired.",
+        "why": {
+          "de": "say ohne Personenobjekt, tell mit Personenobjekt: say (that) ... / tell somebody (that) ...",
+          "en": "say takes no personal object, tell does: say (that) ... / tell somebody (that) ..."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Forme in die indirekte Rede um: 'I will call you tomorrow', she said.",
+          "en": "Report this: 'I will call you tomorrow', she said."
+        },
+        "solution": "She said she would call me the next day.",
+        "accepted": [
+          "She said that she would call me the following day."
+        ]
+      },
+      "tags": [
+        "reported_speech",
+        "backshift",
+        "say_vs_tell"
+      ],
+      "exam_focus": {
+        "de": "B2 First und C1 Advanced: Satztransformationen mit said/told.",
+        "en": "B2 First and C1 Advanced: sentence transformations with said/told."
+      },
+      "prerequisites": [
+        "gr_a1_vrb_001"
+      ]
+    }
+  ]
+}

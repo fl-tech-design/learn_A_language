@@ -560,6 +560,12 @@ abstract class AppLocalizations {
   /// **'New record!'**
   String get newRecord;
 
+  /// No description provided for @noContentYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No content available yet.'**
+  String get noContentYet;
+
   /// No description provided for @noCourses.
   ///
   /// In en, this message translates to:

@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-16",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "en"
+  },
+  "ui_languages": [
+    "de",
+    "en"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Englisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloen, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "A1"
+  ],
+  "levels_info": [
+    {
+      "level": "A1",
+      "title": {
+        "de": "Erste Schritte",
+        "en": "Beginner"
+      },
+      "can_do": {
+        "de": "Einfache Saetze ueber sich und den Alltag bilden und verstehen.",
+        "en": "Understand and build simple sentences about yourself and everyday life."
+      },
+      "exams": [
+        "telc English A1",
+        "LanguageCert A1",
+        "Trinity GESE Grade 1-2"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "en": "Sentence structure and word order"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "en": "Verbs and tenses"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "en": "Questions and negation"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "en": "Nouns and articles"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "en": "Pronouns"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "en": "Adjectives, adverbs, comparison"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "en": "Prepositions"
+      },
+      "levels": [
+        "A1"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_a1_syn_001",
+      "level": "A1",
+      "category": "sentence_structure",
+      "order": 10,
+      "title": {
+        "de": "Feste Wortstellung: Subjekt - Verb - Objekt",
+        "en": "Fixed word order: subject - verb - object"
+      },
+      "summary": {
+        "de": "Englisch sortiert nach Funktion, Deutsch nach Betonung.",
+        "en": "English orders by function, German by emphasis."
+      },
+      "explanation": {
+        "de": "Ein englischer Aussagesatz folgt dem Muster Subjekt - Verb - Objekt: 'I read a book.' Die erste Position ist fast immer das Subjekt. Im Deutschen darf etwas anderes nach vorn ruecken; das Verb bleibt an zweiter Stelle und das Subjekt wandert dahinter: 'Heute lese ich ein Buch.' Im Englischen bleibt die Reihenfolge erhalten: 'Today I read a book.' Ausserdem trennt Englisch Verb und Objekt nicht: 'I read a book every day', nicht 'I read every day a book'.",
+        "en": "An English statement follows the pattern subject - verb - object: 'I read a book.' The first position is almost always the subject. In German, another element can move to the front; the verb stays second and the subject moves behind it: 'Heute lese ich ein Buch.' English keeps the order: 'Today I read a book.' English also keeps verb and object together: 'I read a book every day', never 'I read every day a book'."
+      },
+      "contrast": {
+        "de": "Deutsch: Verb an zweiter Stelle, Subjekt beweglich, Verbklammer (habe ... gelesen). Englisch: Subjekt - Verb - Objekt starr, Hilfsverb und Vollverb bleiben zusammen (have read).",
+        "en": "German: verb in second position, flexible subject placement, verb bracket (habe ... gelesen). English: rigid subject - verb - object, auxiliary and main verb stay together (have read)."
+      },
+      "examples": [
+        {
+          "de": "Ich lerne jeden Tag Englisch.",
+          "en": "I learn English every day.",
+          "hint": {
+            "de": "Zeitangabe am Ende",
+            "en": "time expression at the end"
+          }
+        },
+        {
+          "de": "Heute lerne ich Englisch.",
+          "en": "Today I learn English.",
+          "hint": {
+            "de": "keine Umstellung von Subjekt und Verb",
+            "en": "no swap of subject and verb"
+          }
+        },
+        {
+          "de": "Ich habe das Buch gelesen.",
+          "en": "I have read the book.",
+          "hint": {
+            "de": "have read bleibt zusammen",
+            "en": "have read stays together"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Today learn I English.",
+        "correct": "Today I learn English.",
+        "why": {
+          "de": "Nach einer Zeitangabe am Satzanfang folgt im Englischen das Subjekt, nicht das Verb.",
+          "en": "After a fronted time expression, English puts the subject next, not the verb."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze mit present simple: 'Morgen koche ich Suppe.'",
+          "en": "Translate using the present simple: 'Morgen koche ich Suppe.'"
+        },
+        "solution": "Tomorrow I cook soup.",
+        "accepted": [
+          "Tomorrow I will cook soup.",
+          "Tomorrow I am cooking soup."
+        ]
+      },
+      "tags": [
+        "word_order",
+        "svo",
+        "verb_bracket"
+      ]
+    },
+    {
+      "id": "gr_a1_vrb_001",
+      "level": "A1",
+      "category": "verbs_tenses",
+      "order": 10,
+      "title": {
+        "de": "Present simple: Gewohnheiten und Fakten",
+        "en": "Present simple: habits and facts"
+      },
+      "summary": {
+        "de": "Ein deutsches Praesens, zwei englische Formen - plus das -s bei he/she/it.",
+        "en": "One German present tense, two English forms - plus the -s for he/she/it."
+      },
+      "explanation": {
+        "de": "Das Deutsche kennt nur ein Praesens: 'Ich arbeite', 'Ich arbeite gerade' und 'Ich arbeite morgen' sind alle moeglich. Englisch verteilt diese Aufgaben: Fuer Gewohnheiten, Fakten und Fahrplaene nutzt Du das present simple ('I work every day'), fuer das, was jetzt gerade passiert, das present progressive ('I am working now'). Wichtig: In der dritten Person Singular haengt das Verb ein -s an: 'She works.' In Fragen und Verneinungen mit do/does steht wieder die Grundform.",
+        "en": "German has only one present tense: 'Ich arbeite' can mean 'I work', 'I am working' or even 'I will work tomorrow'. English splits these jobs: use the present simple for habits, facts and timetables ('I work every day'), and the present progressive for actions happening now ('I am working now'). Remember the third-person -s: he/she/it works. In questions and negatives with do/does the verb returns to its base form."
+      },
+      "contrast": {
+        "de": "Deutsch: arbeite / arbeite gerade - gleiche Form; 3. Person mit -t (er arbeitet). Englisch: work / am working - zwei Formen; 3. Person mit -s (he works).",
+        "en": "German: arbeite / arbeite gerade - one form; third person ends in -t (er arbeitet). English: work / am working - two forms; third person ends in -s (he works)."
+      },
+      "examples": [
+        {
+          "de": "Ich trinke jeden Morgen Kaffee.",
+          "en": "I drink coffee every morning."
+        },
+        {
+          "de": "Sie trinkt jeden Morgen Tee.",
+          "en": "She drinks tea every morning.",
+          "hint": {
+            "de": "-s bei she",
+            "en": "-s with she"
+          }
+        },
+        {
+          "de": "Wasser kocht bei 100 Grad.",
+          "en": "Water boils at 100 degrees."
+        }
+      ],
+      "pitfall": {
+        "wrong": "She drink tea.",
+        "correct": "She drinks tea.",
+        "why": {
+          "de": "Das fehlende -s bei he/she/it ist der haeufigste Anfaengerfehler und wird in Pruefungen gezaehlt.",
+          "en": "The missing -s with he/she/it is the most common beginner error and is penalised in exams."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Setze die richtige Form ein: 'My brother ___ (play) football on Sundays.'",
+          "en": "Fill in the correct form: 'My brother ___ (play) football on Sundays.'"
+        },
+        "solution": "plays",
+        "accepted": []
+      },
+      "tags": [
+        "present_simple",
+        "third_person_s",
+        "habits"
+      ]
+    },
+    {
+      "id": "gr_a1_qst_001",
+      "level": "A1",
+      "category": "questions_negation",
+      "order": 10,
+      "title": {
+        "de": "Fragen und Verneinung mit do / does",
+        "en": "Questions and negatives with do / does"
+      },
+      "summary": {
+        "de": "Englisch braucht einen Helfer: do/does - ausser bei be und Modalverben.",
+        "en": "English needs a helper: do/does - except with be and modal verbs."
+      },
+      "explanation": {
+        "de": "Im Deutschen bildest Du eine Frage durch Umstellen: 'Du kommst.' wird 'Kommst du?' Die Verneinung braucht nur 'nicht': 'Ich komme nicht.' Englisch nutzt bei den meisten Verben das Hilfsverb do/does: 'Do you play?' und 'I don't play.' Das Vollverb steht in der Grundform, das -s wandert zu does: 'Does she play?' - 'She doesn't play.' Ausnahme: be und Modalverben kommen ohne do aus: 'Are you ready?' - 'I can't swim.'",
+        "en": "In German you form a question by swapping subject and verb: 'Du kommst.' becomes 'Kommst du?' Negation only needs 'nicht': 'Ich komme nicht.' With most verbs, English uses the auxiliary do/does: 'Do you play?' and 'I don't play.' The main verb stays in the base form and the -s moves to does: 'Does she play?' - 'She doesn't play.' Exception: be and modal verbs work without do: 'Are you ready?' - 'I can't swim.'"
+      },
+      "contrast": {
+        "de": "Deutsch: Umstellung oder 'nicht' genuegt. Englisch: do/does als Frage- und Verneinungshelfer, Vollverb in der Grundform; nur be und Modalverben ohne do.",
+        "en": "German: inversion or 'nicht' is enough. English: do/does carries the question or negation, main verb in the base form; only be and modals manage without do."
+      },
+      "examples": [
+        {
+          "de": "Spielst du Tennis?",
+          "en": "Do you play tennis?"
+        },
+        {
+          "de": "Sie spielt nicht Tennis.",
+          "en": "She doesn't play tennis.",
+          "hint": {
+            "de": "does traegt das -s",
+            "en": "does carries the -s"
+          }
+        },
+        {
+          "de": "Bist du muede?",
+          "en": "Are you tired?",
+          "hint": {
+            "de": "be braucht kein do",
+            "en": "be needs no do"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Does she plays tennis?",
+        "correct": "Does she play tennis?",
+        "why": {
+          "de": "Nur eine Markierung pro Satz: does hat das -s schon, das Vollverb bleibt Grundform.",
+          "en": "Only one marker per clause: does already carries the -s, so the main verb stays bare."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Verneine: 'He likes coffee.'",
+          "en": "Make it negative: 'He likes coffee.'"
+        },
+        "solution": "He doesn't like coffee.",
+        "accepted": [
+          "He does not like coffee."
+        ]
+      },
+      "tags": [
+        "do_support",
+        "questions",
+        "negation"
+      ]
+    },
+    {
+      "id": "gr_a1_nou_001",
+      "level": "A1",
+      "category": "nouns_articles",
+      "order": 10,
+      "title": {
+        "de": "Kein Genus, keine Faelle - aber Artikel bleiben wichtig",
+        "en": "No gender, no cases - but articles still matter"
+      },
+      "summary": {
+        "de": "der/die/das und vier Faelle fallen weg; a/an/the entscheidet ueber die Bedeutung.",
+        "en": "der/die/das and four cases disappear; a/an/the carries the meaning."
+      },
+      "explanation": {
+        "de": "Deutsche Nomen haben ein grammatisches Geschlecht (der, die, das) und veraendern Artikel und Adjektiv je nach Fall (den Mann, dem Mann). Englisch hat kein grammatisches Geschlecht und keine Kasusendungen: 'the man' bleibt in jeder Funktion gleich. Dafuer entscheidet der Artikel: a/an fuer Neues oder Unbestimmtes ('a book'), the fuer Bekanntes ('the book'). Vor Konsonantenlaut steht a, vor Vokallaut an: a university, an hour. Bei allgemeinen Aussagen im Plural und bei unz\u00e4hlbaren Stoffen steht oft kein Artikel: 'Books are expensive.' - 'Water is important.'",
+        "en": "German nouns carry grammatical gender (der, die, das) and change articles and adjectives across the four cases (den Mann, dem Mann). English has no grammatical gender and no case endings: 'the man' stays the same in every role. Instead the article carries meaning: a/an introduces something new or non-specific ('a book'), the points to something known ('the book'). Use a before a consonant sound and an before a vowel sound: a university, an hour. General plurals and uncountable nouns often take no article: 'Books are expensive.' - 'Water is important.'"
+      },
+      "contrast": {
+        "de": "Deutsch: der/die/das plus vier Faelle, Artikel wird dekliniert (dem Mann). Englisch: nur a/an/the, keine Deklination, kein Genus - aber feste Regeln fuer Artikelgebrauch.",
+        "en": "German: der/die/das plus four cases, articles are declined (dem Mann). English: only a/an/the, no declension, no gender - but firm rules for article use."
+      },
+      "examples": [
+        {
+          "de": "Ich sehe einen Mann.",
+          "en": "I see a man.",
+          "hint": {
+            "de": "kein Akkusativartikel",
+            "en": "no accusative article"
+          }
+        },
+        {
+          "de": "Der Mann ist nett.",
+          "en": "The man is nice."
+        },
+        {
+          "de": "Ich brauche eine Stunde.",
+          "en": "I need an hour.",
+          "hint": {
+            "de": "an vor Vokallaut",
+            "en": "an before a vowel sound"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "I am teacher.",
+        "correct": "I am a teacher.",
+        "why": {
+          "de": "Berufsbezeichnungen stehen im Englischen mit a/an - anders als im Deutschen ('Ich bin Lehrer').",
+          "en": "Jobs take a/an in English, unlike German ('Ich bin Lehrer')."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze a/an: 'She is ___ engineer.'",
+          "en": "Fill in a/an: 'She is ___ engineer.'"
+        },
+        "solution": "an",
+        "accepted": []
+      },
+      "tags": [
+        "articles",
+        "gender",
+        "countability"
+      ]
+    },
+    {
+      "id": "gr_a1_pro_001",
+      "level": "A1",
+      "category": "pronouns",
+      "order": 10,
+      "title": {
+        "de": "Pronomen: you fuer alle, und Subjekt ist nicht Objekt",
+        "en": "Pronouns: one you for everyone, subject is not object"
+      },
+      "summary": {
+        "de": "Kein du/Sie, aber zwei Formenreihen: I/me, he/him, we/us.",
+        "en": "No du/Sie distinction, but two sets of forms: I/me, he/him, we/us."
+      },
+      "explanation": {
+        "de": "Deutsch unterscheidet du / Sie / ihr und dazu die Kasusformen mich/mir, dich/dir. Englisch ist schlanker: you gilt fuer eine Person, fuer mehrere, hoeflich und vertraut. Dafuer unterscheidet Englisch Subjekt- und Objektformen: I - me, he - him, she - her, we - us, they - them. Nach Praepositionen steht immer die Objektform: 'with me', 'for him'. Die deutschen Formen mich und mir werden beide zu me.",
+        "en": "German distinguishes du / Sie / ihr and adds case forms such as mich/mir, dich/dir. English is leaner: you works for one person or several, formally and informally. In exchange, English separates subject and object forms: I - me, he - him, she - her, we - us, they - them. After prepositions always use the object form: 'with me', 'for him'. German mich and mir both become me."
+      },
+      "contrast": {
+        "de": "Deutsch: Hoeflichkeitsform Sie, Kasusformen mich/mir. Englisch: ein you fuer alle, aber I/me-Reihen; mich und mir fallen in me zusammen.",
+        "en": "German: polite Sie, case forms mich/mir. English: a single you, but I/me sets; mich and mir merge into me."
+      },
+      "examples": [
+        {
+          "de": "Er sieht mich. / Er gibt mir das Buch.",
+          "en": "He sees me. / He gives me the book.",
+          "hint": {
+            "de": "mich und mir = me",
+            "en": "mich and mir = me"
+          }
+        },
+        {
+          "de": "Kommst du mit uns?",
+          "en": "Are you coming with us?",
+          "hint": {
+            "de": "Objektform nach with",
+            "en": "object form after with"
+          }
+        },
+        {
+          "de": "Wie geht es Ihnen?",
+          "en": "How are you?",
+          "hint": {
+            "de": "kein eigenes Sie",
+            "en": "no separate polite form"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "She gave it to I.",
+        "correct": "She gave it to me.",
+        "why": {
+          "de": "Nach Praepositionen (to, for, with) steht immer me/him/her/us/them.",
+          "en": "After prepositions (to, for, with) always use me/him/her/us/them."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie hilft uns.'",
+          "en": "Translate: 'Sie hilft uns.'"
+        },
+        "solution": "She helps us.",
+        "accepted": [
+          "She is helping us."
+        ]
+      },
+      "tags": [
+        "personal_pronouns",
+        "object_forms",
+        "politeness"
+      ]
+    },
+    {
+      "id": "gr_a1_adj_001",
+      "level": "A1",
+      "category": "adjectives_adverbs",
+      "order": 10,
+      "title": {
+        "de": "Adjektive ohne Endungen - und der Unterschied zum Adverb",
+        "en": "Adjectives without endings - and the adverb difference"
+      },
+      "summary": {
+        "de": "Keine Adjektivendungen, aber eigene Adverbform mit -ly: quick wird quickly.",
+        "en": "No adjective endings, but a separate adverb with -ly: quick becomes quickly."
+      },
+      "explanation": {
+        "de": "Im Deutschen bekommt ein Adjektiv Endungen: 'ein schneller Wagen', 'die schnelle Frau', 'mit dem schnellen Auto'. Im Englischen bleibt es unveraendert: 'a fast car', 'the fast woman', 'with the fast car'. Adjektive stehen vor dem Nomen oder nach be/seem/look: 'The car is fast.' Fuer die Art und Weise einer Handlung nutzt Englisch meist ein Adverb mit -ly: 'He drives quickly.' Deutsch verwendet dafuer dieselbe Form ('Er faehrt schnell'). Merke die Ausnahme: good wird well.",
+        "en": "German adjectives take endings: 'ein schneller Wagen', 'die schnelle Frau', 'mit dem schnellen Auto'. English adjectives never change: 'a fast car', 'the fast woman', 'with the fast car'. They stand before a noun or after be/seem/look: 'The car is fast.' To describe how an action is done, English normally uses an adverb in -ly: 'He drives quickly.' German uses the same word form ('Er faehrt schnell'). Note the exception: good becomes well."
+      },
+      "contrast": {
+        "de": "Deutsch: Endungen nach Genus und Fall; 'schnell' ist auch Adverb. Englisch: keine Endungen, aber Adverb mit -ly; Ausnahmen good/well, fast/fast, hard/hard.",
+        "en": "German: endings agree with gender and case; 'schnell' also works as an adverb. English: no endings, but adverbs in -ly; exceptions good/well, fast/fast, hard/hard."
+      },
+      "examples": [
+        {
+          "de": "ein interessantes Buch",
+          "en": "an interesting book"
+        },
+        {
+          "de": "Sie singt schoen.",
+          "en": "She sings beautifully.",
+          "hint": {
+            "de": "-ly fuer die Art und Weise",
+            "en": "-ly for manner"
+          }
+        },
+        {
+          "de": "Er faehrt gut.",
+          "en": "He drives well.",
+          "hint": {
+            "de": "good wird well",
+            "en": "good becomes well"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "She sings beautiful.",
+        "correct": "She sings beautifully.",
+        "why": {
+          "de": "Nach einem Vollverb steht das Adverb. Im Deutschen ist 'schoen' formgleich - genau dort liegt die Falle.",
+          "en": "After a full verb you need the adverb. German 'schoen' has the same form, which creates the trap."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze: 'He speaks English very ___ (good).'",
+          "en": "Fill in: 'He speaks English very ___ (good).'"
+        },
+        "solution": "well",
+        "accepted": []
+      },
+      "tags": [
+        "adjective_endings",
+        "adverbs",
+        "good_vs_well"
+      ]
+    }
+  ]
+}

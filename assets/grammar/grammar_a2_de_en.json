@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-16",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "en"
+  },
+  "ui_languages": [
+    "de",
+    "en"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Englisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloen, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "A2"
+  ],
+  "levels_info": [
+    {
+      "level": "A2",
+      "title": {
+        "de": "Grundlagen",
+        "en": "Elementary"
+      },
+      "can_do": {
+        "de": "Routineaufgaben, einfache Beschreibungen und kurze Gespraeche bewaeltigen.",
+        "en": "Handle routine tasks, simple descriptions and short conversations."
+      },
+      "exams": [
+        "telc English A2",
+        "Cambridge A2 Key",
+        "LanguageCert A2"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "en": "Sentence structure and word order"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "en": "Verbs and tenses"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "en": "Questions and negation"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "en": "Nouns and articles"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "en": "Pronouns"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "en": "Adjectives, adverbs, comparison"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "en": "Prepositions"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "cases_possession",
+      "order": 8,
+      "title": {
+        "de": "Faelle und Besitz",
+        "en": "Cases and possession"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "modals",
+      "order": 9,
+      "title": {
+        "de": "Modalverben und Modalitaet",
+        "en": "Modal verbs and modality"
+      },
+      "levels": [
+        "A2"
+      ]
+    },
+    {
+      "id": "clauses_connectors",
+      "order": 10,
+      "title": {
+        "de": "Nebensaetze und Konnektoren",
+        "en": "Clauses and connectors"
+      },
+      "levels": [
+        "A2"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_a2_prp_001",
+      "level": "A2",
+      "category": "prepositions",
+      "order": 10,
+      "title": {
+        "de": "Zeitpraepositionen: in, on, at",
+        "en": "Prepositions of time: in, on, at"
+      },
+      "summary": {
+        "de": "in fuer Zeitraeume, on fuer Tage und Daten, at fuer Uhrzeiten.",
+        "en": "in for periods, on for days and dates, at for clock times."
+      },
+      "explanation": {
+        "de": "Deutsch nutzt fuer Zeitangaben meist 'an', 'in', 'um' und wechselt den Kasus (am Montag, im Juli, um acht Uhr). Englisch arbeitet mit einer Groessen-Skala: in fuer Zeitraeume (in July, in 2026, in the morning), on fuer Tage und Daten (on Monday, on 12 May), at fuer Uhrzeiten und Punkte (at 8 o'clock, at noon, at the weekend). Keine Kasusaenderung und keine Verschmelzung wie 'am' = an dem. Amerikanisches Englisch sagt 'on the weekend'.",
+        "en": "German usually uses 'an', 'in', 'um' for time and changes the case (am Montag, im Juli, um acht Uhr). English works with a scale of size: in for periods (in July, in 2026, in the morning), on for days and dates (on Monday, on 12 May), at for clock times and points (at 8 o'clock, at noon, at the weekend). No case changes and no contractions like 'am' = an dem. American English says 'on the weekend'."
+      },
+      "contrast": {
+        "de": "Deutsch: am/im/um mit Dativ, oft verschmolzen. Englisch: in (Zeitraum) - on (Tag/Datum) - at (Uhrzeit/Punkt), unveraenderlich.",
+        "en": "German: am/im/um with the dative, often contracted. English: in (period) - on (day/date) - at (clock time/point), invariable."
+      },
+      "examples": [
+        {
+          "de": "Ich arbeite im Juli.",
+          "en": "I work in July."
+        },
+        {
+          "de": "Der Kurs ist am Montag.",
+          "en": "The course is on Monday."
+        },
+        {
+          "de": "Der Zug faehrt um 7 Uhr ab.",
+          "en": "The train leaves at 7 o'clock."
+        }
+      ],
+      "pitfall": {
+        "wrong": "I was born in 12 May.",
+        "correct": "I was born on 12 May.",
+        "why": {
+          "de": "Ein Datum zaehlt als Tag, also on. Nur Monat oder Jahr allein verlangt in.",
+          "en": "A date counts as a day, so use on. Only a month or year alone takes in."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze: 'The meeting is ___ Friday ___ 3 p.m.'",
+          "en": "Fill in: 'The meeting is ___ Friday ___ 3 p.m.'"
+        },
+        "solution": "on Friday at 3 p.m.",
+        "accepted": []
+      },
+      "tags": [
+        "prepositions_of_time",
+        "in_on_at"
+      ]
+    },
+    {
+      "id": "gr_a2_cas_001",
+      "level": "A2",
+      "category": "cases_possession",
+      "order": 10,
+      "title": {
+        "de": "Besitz ohne Genitivendungen: 's und of",
+        "en": "Possession without case endings: 's and of"
+      },
+      "summary": {
+        "de": "Personen bekommen 's, Sachen meist of - und die Reihenfolge dreht sich.",
+        "en": "People take 's, things usually take of - and the order reverses."
+      },
+      "explanation": {
+        "de": "Deutsch zeigt Besitz am Genitiv: 'das Auto meines Vaters', 'die Tasche der Frau'. Englisch nutzt bei Personen und Tieren meist 's: 'my father's car', 'the woman's bag'. Bei Sachen und abstrakten Beziehungen ist of ueblicher: 'the roof of the house', 'the end of the story'. Die Reihenfolge ist umgekehrt zum Deutschen: Besitzer zuerst, dann 's, dann das Besessene. Bei Zeitangaben und Organisationen ist 's aber normal: 'today's paper', 'the company's results'. Im Plural steht nur der Apostroph: 'my parents' house'.",
+        "en": "German marks possession with the genitive: 'das Auto meines Vaters', 'die Tasche der Frau'. For people and animals English normally uses 's: 'my father's car', 'the woman's bag'. For objects and abstract relations, of is more usual: 'the roof of the house', 'the end of the story'. The order is the reverse of German: owner first, then 's, then the thing owned. With time expressions and organisations, 's is standard: 'today's paper', 'the company's results'. In the plural only the apostrophe remains: 'my parents' house'."
+      },
+      "contrast": {
+        "de": "Deutsch: Genitiv mit Artikel- und Nomenendungen (meines Vaters, der Frau). Englisch: Besitzer + 's + Sache oder Sache + of + Besitzer, ohne Kasusendungen.",
+        "en": "German: genitive with article and noun endings (meines Vaters, der Frau). English: owner + 's + thing, or thing + of + owner, with no case endings."
+      },
+      "examples": [
+        {
+          "de": "das Auto meines Vaters",
+          "en": "my father's car"
+        },
+        {
+          "de": "das Dach des Hauses",
+          "en": "the roof of the house"
+        },
+        {
+          "de": "das Haus meiner Eltern",
+          "en": "my parents' house",
+          "hint": {
+            "de": "Plural-s: nur Apostroph",
+            "en": "plural -s: apostrophe only"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "the car from my father",
+        "correct": "my father's car",
+        "why": {
+          "de": "'von' wird bei Besitz nicht mit from uebersetzt, sondern mit 's oder of.",
+          "en": "Possessive 'von' is not translated as from; use 's or of."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'die Wohnung meiner Schwester'",
+          "en": "Translate: 'die Wohnung meiner Schwester'"
+        },
+        "solution": "my sister's flat",
+        "accepted": [
+          "my sister's apartment"
+        ]
+      },
+      "tags": [
+        "genitive",
+        "saxon_genitive",
+        "of_phrase"
+      ],
+      "prerequisites": [
+        "gr_a1_nou_001"
+      ]
+    },
+    {
+      "id": "gr_a2_mod_001",
+      "level": "A2",
+      "category": "modals",
+      "order": 10,
+      "title": {
+        "de": "Modalverben: can, must, have to - und die mustn't-Falle",
+        "en": "Modals: can, must, have to - and the mustn't trap"
+      },
+      "summary": {
+        "de": "Keine Endungen, kein to - und mustn't heisst Verbot, nicht 'nicht muessen'.",
+        "en": "No endings, no to - and mustn't means prohibition, not 'no need'."
+      },
+      "explanation": {
+        "de": "Deutsche Modalverben werden konjugiert und stehen mit Infinitiv am Satzende: 'Ich kann gut schwimmen.' Englische Modalverben haben keine Endungen (he can, nicht 'he cans') und stehen mit der Grundform ohne to: 'He can swim well.' Frage und Verneinung entstehen ohne do: 'Can he swim?' - 'He can't swim.' Wichtig fuer Pruefungen: mustn't ist ein Verbot ('Du darfst nicht'), don't have to bedeutet keine Notwendigkeit ('Du musst nicht'). Formen mit to sind have to und ought to.",
+        "en": "German modal verbs are conjugated and send an infinitive to the end of the clause: 'Ich kann gut schwimmen.' English modals have no endings (he can, not 'he cans') and take a bare infinitive without to: 'He can swim well.' Questions and negatives need no do: 'Can he swim?' - 'He can't swim.' Important for exams: mustn't expresses prohibition, while don't have to means there is no need. The forms that do take to are have to and ought to."
+      },
+      "contrast": {
+        "de": "Deutsch: konjugierte Modalverben, Infinitiv am Ende, 'nicht muessen' ist nicht 'nicht duerfen'. Englisch: unveraenderliche Modals plus Grundform ohne to; mustn't (Verbot) gegen don't have to (nicht noetig).",
+        "en": "German: conjugated modals, infinitive at the end, 'nicht muessen' differs from 'nicht duerfen'. English: invariable modals plus bare infinitive; mustn't (prohibition) versus don't have to (no necessity)."
+      },
+      "examples": [
+        {
+          "de": "Sie kann gut schwimmen.",
+          "en": "She can swim well."
+        },
+        {
+          "de": "Du darfst hier nicht rauchen.",
+          "en": "You mustn't smoke here."
+        },
+        {
+          "de": "Du musst nicht kommen.",
+          "en": "You don't have to come.",
+          "hint": {
+            "de": "keine Pflicht, kein Verbot",
+            "en": "no obligation, not a ban"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "You mustn't come, it's optional.",
+        "correct": "You don't have to come; it's optional.",
+        "why": {
+          "de": "mustn't verbietet. Fuer 'nicht noetig' nutze don't have to oder needn't.",
+          "en": "mustn't forbids. For 'not necessary' use don't have to or needn't."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Er muss nicht arbeiten.'",
+          "en": "Translate: 'Er muss nicht arbeiten.'"
+        },
+        "solution": "He doesn't have to work.",
+        "accepted": [
+          "He does not have to work.",
+          "He needn't work."
+        ]
+      },
+      "tags": [
+        "modal_verbs",
+        "mustn't_vs_don't_have_to",
+        "bare_infinitive"
+      ]
+    }
+  ]
+}

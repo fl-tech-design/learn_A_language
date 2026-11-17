@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-16",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "en"
+  },
+  "ui_languages": [
+    "de",
+    "en"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Englisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloen, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "C1"
+  ],
+  "levels_info": [
+    {
+      "level": "C1",
+      "title": {
+        "de": "Kompetent",
+        "en": "Advanced"
+      },
+      "can_do": {
+        "de": "Anspruchsvolle Texte implizit verstehen, Sprache flexibel und praezise einsetzen.",
+        "en": "Understand demanding texts including implicit meaning and use language flexibly and precisely."
+      },
+      "exams": [
+        "telc English C1",
+        "Cambridge C1 Advanced",
+        "Trinity ISE III",
+        "IELTS ca. 7.0-8.0"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "en": "Sentence structure and word order"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "en": "Verbs and tenses"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "en": "Prepositions"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "modals",
+      "order": 9,
+      "title": {
+        "de": "Modalverben und Modalitaet",
+        "en": "Modal verbs and modality"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "clauses_connectors",
+      "order": 10,
+      "title": {
+        "de": "Nebensaetze und Konnektoren",
+        "en": "Clauses and connectors"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "passive",
+      "order": 11,
+      "title": {
+        "de": "Passiv",
+        "en": "The passive"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "conditionals",
+      "order": 12,
+      "title": {
+        "de": "Bedingungssaetze",
+        "en": "Conditionals"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "infinitive_gerund",
+      "order": 13,
+      "title": {
+        "de": "Infinitiv und -ing-Form",
+        "en": "Infinitive and -ing form"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "reported_speech",
+      "order": 14,
+      "title": {
+        "de": "Indirekte Rede",
+        "en": "Reported speech"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "participle_clauses",
+      "order": 15,
+      "title": {
+        "de": "Partizipialkonstruktionen",
+        "en": "Participle clauses"
+      },
+      "levels": [
+        "C1"
+      ]
+    },
+    {
+      "id": "style_emphasis",
+      "order": 16,
+      "title": {
+        "de": "Stil, Betonung, Kohaesion",
+        "en": "Style, emphasis, cohesion"
+      },
+      "levels": [
+        "C1"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_c1_par_001",
+      "level": "C1",
+      "category": "participle_clauses",
+      "order": 10,
+      "title": {
+        "de": "Partizipialkonstruktionen: Nebensaetze verkuerzen",
+        "en": "Participle clauses: compressing subordinate clauses"
+      },
+      "summary": {
+        "de": "Deutsch stapelt vor dem Nomen, Englisch stellt nach: the rule proposed by the committee.",
+        "en": "German stacks before the noun, English places after it: the rule proposed by the committee."
+      },
+      "explanation": {
+        "de": "Deutsch kann Partizipialgruppen vor dem Nomen stapeln: 'die von der Kommission vorgeschlagene Regelung'. Englisch vermeidet solche Linksattribute und stellt nach: 'the rule proposed by the committee'. Fuer verkuerzte Adverbialsaetze nutzt Englisch -ing (aktiv, gleichzeitig) und having plus past participle (aktiv, vorher): 'Having reviewed the data, we revised the model.' Passiv: 'Written in 1920, the novel still reads well.' Bedingung: Das Subjekt beider Teile muss identisch sein, sonst entsteht ein dangling participle.",
+        "en": "German can stack participle groups before the noun: 'die von der Kommission vorgeschlagene Regelung'. English avoids such left-branching attributes and places them after the noun: 'the rule proposed by the committee'. To compress adverbial clauses, English uses -ing (active, simultaneous) and having plus past participle (active, earlier): 'Having reviewed the data, we revised the model.' Passive: 'Written in 1920, the novel still reads well.' Condition: both parts must share the same subject, otherwise you create a dangling participle."
+      },
+      "contrast": {
+        "de": "Deutsch: erweiterte Attribute vor dem Nomen, Partizip I und II. Englisch: Nachstellung (proposed by ...), -ing und having done fuer verkuerzte Adverbialsaetze, Subjektgleichheit ist Pflicht.",
+        "en": "German: extended attributes before the noun, participles I and II. English: postmodification (proposed by ...), -ing and having done for reduced adverbial clauses, shared subject is obligatory."
+      },
+      "examples": [
+        {
+          "de": "Die von der Kommission vorgeschlagene Regelung trat 2020 in Kraft.",
+          "en": "The rule proposed by the committee came into force in 2020."
+        },
+        {
+          "de": "Nachdem wir die Daten geprueft hatten, ueberarbeiteten wir das Modell.",
+          "en": "Having reviewed the data, we revised the model."
+        },
+        {
+          "de": "Da sie muede war, ging sie frueh ins Bett.",
+          "en": "Being tired, she went to bed early."
+        }
+      ],
+      "pitfall": {
+        "wrong": "Walking down the street, the house came into view.",
+        "correct": "Walking down the street, I saw the house.",
+        "why": {
+          "de": "Das Partizip braucht dasselbe Subjekt wie der Hauptsatz, sonst haengt es in der Luft (dangling participle).",
+          "en": "The participle must share the subject of the main clause, otherwise it dangles."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Verkuerze: 'After she had submitted the report, she took a break.'",
+          "en": "Reduce: 'After she had submitted the report, she took a break.'"
+        },
+        "solution": "Having submitted the report, she took a break.",
+        "accepted": [
+          "After submitting the report, she took a break."
+        ]
+      },
+      "tags": [
+        "participle_clauses",
+        "postmodification",
+        "dangling_participle"
+      ],
+      "exam_focus": {
+        "de": "C1 Advanced Schreiben: dichte, formale Satzstrukturen ohne Wiederholung von because/after.",
+        "en": "C1 Advanced writing: dense formal structures without repeating because/after."
+      }
+    }
+  ]
+}

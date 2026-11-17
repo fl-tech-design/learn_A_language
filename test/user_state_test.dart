@@ -30,6 +30,13 @@ VocabEntry _v(String key) => VocabEntry(
     );
 
 void main() {
+  // Zielsprachen-Kurse ('en'), die bei mLang 'de' automatisch ausgewählt
+  // werden, sobald Vokabeln vorhanden sind.
+  final enCourses = availableCourses.entries
+      .where((e) => e.value.languageCode == 'en')
+      .map((e) => e.key)
+      .toList();
+
   group('UserState.login', () {
     test('lädt Daten, initialisiert Vokabeln und wählt Kurse automatisch',
         () async {
@@ -45,9 +52,9 @@ void main() {
       expect(state.userData!.uName, 'alice');
       expect(vm.initCount, 1);
       expect(vm.migrateCount, 1);
-      // mLang 'de' → Zielsprache 'en' → Kurs en_verben_a1 wird gespeichert
-      expect(um.lastSaved!.selectedCourses, ['en_verben_a1']);
-      expect(state.selectedCourseIds, ['en_verben_a1']);
+      // mLang 'de' → Zielsprache 'en' → alle en-Kurse werden gespeichert
+      expect(um.lastSaved!.selectedCourses, enCourses);
+      expect(state.selectedCourseIds, enCourses);
     });
   });
 
@@ -92,7 +99,7 @@ void main() {
       final state = UserState(userManager: um, vocabManager: FakeVocabManager());
       await state.login('alice');
 
-      expect(state.selectedCourseIds, ['en_verben_a1']);
+      expect(state.selectedCourseIds, enCourses);
     });
 
     test('availableNewCourses schließt selektierte aus', () async {
@@ -102,7 +109,10 @@ void main() {
       await state.login('alice');
 
       expect(state.selectedCourseIds, ['de_verben_a1']);
-      expect(state.availableNewCourses.map((c) => c.id), ['en_verben_a1']);
+      final newIds = state.availableNewCourses.map((c) => c.id).toList();
+      expect(newIds, isNot(contains('de_verben_a1')));
+      expect(newIds, contains('en_verben_a1'));
+      expect(newIds.length, availableCourses.length - 1);
     });
 
     test('ohne Vokabeln und Kurse bleibt die Liste leer', () async {

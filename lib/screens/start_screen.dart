@@ -115,33 +115,69 @@ class _StartScreenState extends State<StartScreen> {
                 l10n.information),
           ),
           Expanded(
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(AppTheme.contentPadding),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // ── Top row: UserInfo + Meine Kurse ──
-                      if (dataState.appData.loggedUName.isNotEmpty)
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(l10n.myCourses,
-                                style: const TextStyle(
-                                    fontSize: AppTheme.lblFontSize,
-                                    color: AppTheme.colorPrimary)),
-                            const SizedBox(height: 6),
+            child: OrientationBuilder(
+              builder: (context, orientation) {
+                final isPortrait = orientation == Orientation.portrait;
+                return SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(AppTheme.contentPadding),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // ── UserInfoBox (top, full width) ──
+                        if (dataState.appData.loggedUName.isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                bottom: AppTheme.contentSpacing),
+                            child: _UserInfoBox(),
+                          ),
+                        const SizedBox(height: 16),
+                        // ── Course detail or Meine Kurse + Neue Kurse ──
+                        if (selectedCourse != null)
+                          _CourseDetailView(
+                            course: selectedCourse,
+                            onBack: () =>
+                                setState(() => _selectedCourseId = null),
+                            hasContent: userState.courseHasContent(selectedCourse),
+                          )
+                        else ...[
+                          if (isPortrait) ...[
+                            // ── Meine Kurse ──
+                            _MyCoursesSection(
+                              courses: courses,
+                              selectedId: _selectedCourseId,
+                              onTap: (id) => setState(() {
+                                _selectedCourseId =
+                                    _selectedCourseId == id
+                                        ? null
+                                        : id;
+                              }),
+                            ),
+                            const SizedBox(height: AppTheme.contentSpacing),
+                            // ── Neue Kurse ──
+                            _NewLanguagesSection(
+                              courses: newCourses,
+                              onAdd: (id) async {
+                                await userState.addCourse(id);
+                                if (mounted) setState(() {});
+                              },
+                            ),
+                          ] else ...[
+                            // Landscape: UserInfoBox + Meine Kurse + Neue
+                            // Kurse nebeneinander (3 Spalten).
                             Row(
-                              crossAxisAlignment:
-                                  CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                if (dataState.appData.loggedUName.isNotEmpty) ...[
+                                  Expanded(
+                                    flex: 3,
+                                    child: _UserInfoBox(),
+                                  ),
+                                  const SizedBox(
+                                      width: AppTheme.contentSpacing),
+                                ],
                                 Expanded(
-                                    flex: 2,
-                                    child: _UserInfoBox()),
-                                const SizedBox(
-                                    width: AppTheme.contentSpacing),
-                                Expanded(
-                                  flex: 3,
+                                  flex: 4,
                                   child: _MyCoursesSection(
                                     courses: courses,
                                     selectedId: _selectedCourseId,
@@ -153,28 +189,26 @@ class _StartScreenState extends State<StartScreen> {
                                     }),
                                   ),
                                 ),
+                                const SizedBox(width: AppTheme.contentSpacing),
+                                Expanded(
+                                  flex: 5,
+                                  child: _NewLanguagesSection(
+                                    courses: newCourses,
+                                    onAdd: (id) async {
+                                      await userState.addCourse(id);
+                                      if (mounted) setState(() {});
+                                    },
+                                  ),
+                                ),
                               ],
                             ),
                           ],
-                        ),
-                      const SizedBox(height: 16),
-                      // ── Bottom section: Course detail or New languages ──
-                      if (selectedCourse != null)
-                        _CourseDetailView(
-                          course: selectedCourse,
-                          onBack: () =>
-                              setState(() => _selectedCourseId = null),
-                        )
-                      else
-                        _NewLanguagesSection(
-                          courses: newCourses,
-                          onAdd: (id) async {
-                            await userState.addCourse(id);
-                            if (mounted) setState(() {});
-                          },
-                        ),
-                    ]),
-              ),
+                        ],
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           ),
           BoxBottom(
@@ -295,7 +329,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
   }
 }
 
-/// Horizontal scrollable list of the user's courses.
+/// Vertical list of the user's courses (portrait) or side-by-side card (landscape).
 class _MyCoursesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
   final String? selectedId;
@@ -320,63 +354,79 @@ class _MyCoursesSection extends StatelessWidget {
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
     }
-    return SizedBox(
-      height: 120,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemCount: courses.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 6),
-        itemBuilder: (ctx, i) {
-          final c = courses[i];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(l10n.myCourses,
+            style: const TextStyle(
+                fontSize: AppTheme.lblFontSize,
+                color: AppTheme.colorPrimary)),
+        const SizedBox(height: 8),
+        ...courses.map((c) {
           final selected = c.id == selectedId;
-          return GestureDetector(
-            onTap: () => onTap(c.id),
-            child: Container(
-              width: 110,
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: selected ? AppTheme.colorPrimary : AppTheme.grey3,
-                  width: selected ? 2 : 1,
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: GestureDetector(
+              onTap: () => onTap(c.id),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: selected ? AppTheme.colorPrimary : AppTheme.grey3,
+                    width: selected ? 2 : 1,
+                  ),
+                  borderRadius: BorderRadius.circular(6),
                 ),
-                borderRadius: BorderRadius.circular(6),
-              ),
-              padding: const EdgeInsets.all(6),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(c.flagAsset, width: 36, height: 24),
-                  const SizedBox(height: 4),
-                  Text(c.languageName,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          fontSize: AppTheme.smallFontSize,
-                          color: Colors.white)),
-                  Text(c.level, textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          fontSize: 10, color: AppTheme.grey4)),
-                  if (selected)
-                    const Padding(
-                      padding: EdgeInsets.only(top: 2),
-                      child: Icon(Icons.arrow_drop_down,
-                          color: AppTheme.colorPrimary, size: 16),
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Image.asset(c.flagAsset, width: 32, height: 20),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '${c.languageName} ${c.level}',
+                            style: const TextStyle(
+                                fontSize: AppTheme.infFontSize,
+                                color: Colors.white),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            c.category,
+                            style: const TextStyle(
+                                fontSize: AppTheme.smallFontSize,
+                                color: AppTheme.grey4),
+                          ),
+                        ],
+                      ),
                     ),
-                ],
+                    if (selected)
+                      const Icon(Icons.check_circle,
+                          color: AppTheme.colorPrimary, size: 20),
+                  ],
+                ),
               ),
             ),
           );
-        },
-      ),
+        }),
+      ],
     );
   }
 }
+
 /// Course detail view with Lern/Spiele/Grammatik buttons.
+/// Buttons are disabled when [hasContent] is false (no words/grammar for this level yet).
 class _CourseDetailView extends StatelessWidget {
   final LanguageCourse course;
   final VoidCallback onBack;
+  final bool hasContent;
 
   const _CourseDetailView({
     required this.course,
     required this.onBack,
+    required this.hasContent,
   });
 
   @override
@@ -410,14 +460,31 @@ class _CourseDetailView extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 12),
+          if (!hasContent)
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppTheme.grey2.withValues(alpha: 0.3),
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Text(
+                l10n.noContentYet,
+                style: const TextStyle(
+                    fontSize: AppTheme.smallFontSize,
+                    color: AppTheme.grey4),
+              ),
+            ),
+          if (!hasContent) const SizedBox(height: AppTheme.contentSpacing),
           SizedBox(
             height: 50,
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: () {
-                context.read<NavigationState>().setWordMode('new');
-                Navigator.of(context).pushNamed('/learning');
-              },
+              onPressed: hasContent
+                  ? () {
+                      context.read<NavigationState>().setWordMode('new');
+                      Navigator.of(context).pushNamed('/learning');
+                    }
+                  : null,
               child: Text(l10n.btnLearn,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
@@ -427,8 +494,9 @@ class _CourseDetailView extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: () =>
-                  Navigator.of(context).pushNamed('/gamechoose'),
+              onPressed: hasContent
+                  ? () => Navigator.of(context).pushNamed('/gamechoose')
+                  : null,
               child: Text(l10n.btnGame,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
@@ -438,7 +506,12 @@ class _CourseDetailView extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: () => Navigator.of(context).pushNamed('/grammar'),
+              onPressed: hasContent
+                  ? () => Navigator.of(context).pushNamed(
+                        '/grammar',
+                        arguments: course.level,
+                      )
+                  : null,
               child: Text(
                   l10n.btnGrammar,
                   style: const TextStyle(
@@ -484,40 +557,50 @@ class _NewLanguagesSection extends StatelessWidget {
                 fontSize: AppTheme.lblFontSize,
                 color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: courses.map((c) {
-            return GestureDetector(
+        ...courses.map((c) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: GestureDetector(
               onTap: () => onAdd(c.id),
               child: Container(
-                width: 130,
-                padding: const EdgeInsets.all(8),
+                width: double.infinity,
                 decoration: BoxDecoration(
                   border: Border.all(color: AppTheme.grey3),
                   borderRadius: BorderRadius.circular(6),
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
+                padding: const EdgeInsets.all(10),
+                child: Row(
                   children: [
-                    Image.asset(c.flagAsset, width: 36, height: 24),
-                    const SizedBox(height: 4),
-                    Text(c.languageName,
-                        style: const TextStyle(
-                            fontSize: AppTheme.smallFontSize,
-                            color: Colors.white)),
-                    Text(c.level,
-                        style: const TextStyle(
-                            fontSize: 10, color: AppTheme.grey4)),
-                    const SizedBox(height: 4),
+                    Image.asset(c.flagAsset, width: 32, height: 20),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '${c.languageName} ${c.level}',
+                            style: const TextStyle(
+                                fontSize: AppTheme.infFontSize,
+                                color: Colors.white),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            c.category,
+                            style: const TextStyle(
+                                fontSize: AppTheme.smallFontSize,
+                                color: AppTheme.grey4),
+                          ),
+                        ],
+                      ),
+                    ),
                     const Icon(Icons.add_circle_outline,
-                        color: AppTheme.colorPrimary, size: 18),
+                        color: AppTheme.colorPrimary, size: 20),
                   ],
                 ),
               ),
-            );
-          }).toList(),
-        ),
+            ),
+          );
+        }),
       ],
     );
   }

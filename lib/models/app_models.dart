@@ -310,6 +310,11 @@ class LanguageCourse {
   });
 }
 
+/// Levels, für die aktuell Kurs-Inhalte (Wörter/Grammatik) verfügbar sind.
+/// Die Grammatik ist pro Level aufgeteilt (grammar_a1_de_en.json …), daher
+/// sind alle CEFR-Level aktiv.
+const Set<String> activeCourseLevels = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'};
+
 /// All available courses in the app.
 const Map<String, LanguageCourse> availableCourses = {
   'en_verben_a1': LanguageCourse(
@@ -320,11 +325,91 @@ const Map<String, LanguageCourse> availableCourses = {
     category: 'Verben',
     flagAsset: 'assets/images/flag_uk.png',
   ),
+  'en_verben_a2': LanguageCourse(
+    id: 'en_verben_a2',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'A2',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
+  'en_verben_b1': LanguageCourse(
+    id: 'en_verben_b1',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'B1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
+  'en_verben_b2': LanguageCourse(
+    id: 'en_verben_b2',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'B2',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
+  'en_verben_c1': LanguageCourse(
+    id: 'en_verben_c1',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'C1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
+  'en_verben_c2': LanguageCourse(
+    id: 'en_verben_c2',
+    languageCode: 'en',
+    languageName: 'Englisch',
+    level: 'C2',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_uk.png',
+  ),
   'de_verben_a1': LanguageCourse(
     id: 'de_verben_a1',
     languageCode: 'de',
     languageName: 'Deutsch',
     level: 'A1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+  'de_verben_a2': LanguageCourse(
+    id: 'de_verben_a2',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'A2',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+  'de_verben_b1': LanguageCourse(
+    id: 'de_verben_b1',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'B1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+  'de_verben_b2': LanguageCourse(
+    id: 'de_verben_b2',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'B2',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+  'de_verben_c1': LanguageCourse(
+    id: 'de_verben_c1',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'C1',
+    category: 'Verben',
+    flagAsset: 'assets/images/flag_germany.png',
+  ),
+  'de_verben_c2': LanguageCourse(
+    id: 'de_verben_c2',
+    languageCode: 'de',
+    languageName: 'Deutsch',
+    level: 'C2',
     category: 'Verben',
     flagAsset: 'assets/images/flag_germany.png',
   ),

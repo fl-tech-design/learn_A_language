@@ -10,6 +10,10 @@ import '../l10n/app_localizations.dart';
 
 /// Grammar topic list screen. Shows the grammar categories, each listing its
 /// topics (blocks). Tapping a topic opens the detail screen.
+///
+/// Accepts an optional `String` level argument (e.g. `'B1'`) via the route
+/// settings. When present, only grammar topics for that CEFR level are shown
+/// (loaded from the level-specific asset).
 class GrammarScreen extends StatefulWidget {
   const GrammarScreen({super.key});
 
@@ -23,6 +27,10 @@ class _GrammarScreenState extends State<GrammarScreen> {
     final l10n = AppLocalizations.of(context);
     final lang = _nativeLang(context);
 
+    // Optional route argument: the CEFR level of the opened course.
+    final levelArg = ModalRoute.of(context)?.settings.arguments;
+    final level = levelArg is String ? levelArg : null;
+
     return Scaffold(
       body: Column(children: [
         BoxTitle(
@@ -31,7 +39,7 @@ class _GrammarScreenState extends State<GrammarScreen> {
                 context, l10n.infGrammar, l10n.information)),
         Expanded(
             child: FutureBuilder<GrammarDocument>(
-          future: context.read<GrammarManager>().load(),
+          future: context.read<GrammarManager>().load(level: level),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return const Center(

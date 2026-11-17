@@ -245,6 +245,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get newRecord => 'New record!';
 
   @override
+  String get noContentYet => 'No content available yet.';
+
+  @override
   String get noCourses => 'No courses';
 
   @override
