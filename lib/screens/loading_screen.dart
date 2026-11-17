@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import '../theme/app_theme.dart';
 import '../l10n/app_localizations.dart';
+import '../widgets/version_label.dart';
 
 /// Splash/loading screen – 1:1 from loadingpage.py.
 class LoadingScreen extends StatefulWidget {
@@ -83,15 +84,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             bottom: MediaQuery.of(context).size.height * 0.02,
             left: 0,
             right: 0,
-            child: const Text(
-              'v${AppTheme.versionNr}',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.white54,
-                fontFamily: 'Jura',
-              ),
-            ),
+            child: const VersionLabel(),
           ),
         ],
       ),

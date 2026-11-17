@@ -10,6 +10,7 @@ import '../dialogs/create_user_dialog.dart';
 import '../dialogs/delete_user_dialog.dart';
 import '../l10n/app_localizations.dart';
 import '../services/file_service.dart';
+import '../widgets/version_label.dart';
 
 /// Settings screen – 1:1 from settingpage.py/kv.
 class SettingsScreen extends StatefulWidget {
@@ -164,6 +165,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                     ]))),
+        const Padding(
+          padding: EdgeInsets.only(bottom: 8),
+          child: VersionLabel(),
+        ),
         BoxBottom(
             settingsText: l10n.back,
             exitText: l10n.exit,
