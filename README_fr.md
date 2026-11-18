@@ -12,6 +12,7 @@ Ce projet est une migration complète d'une application précédemment développ
 - **Logique de série quotidienne**: Suivi motivationnel et affichage des jours d'apprentissage consécutifs.
 - **Modes d'apprentissage et de jeu**: Comprend un jeu "Turbo" qui interroge spécifiquement le vocabulaire déjà appris pour renforcer les connaissances.
 - **Gestion locale des utilisateurs**: Inscription simple, connexion et gestion de plusieurs profils utilisateur directement sur l'appareil.
+- **Aperçu de la progression**: Un tableau de mots en lecture seule par catégorie de verbes montrant le niveau actuel de chaque mot avec des badges de niveau colorés (gris = nouveau, vert = maîtrisé).
 - **Multiplateforme**: Fonctionne de manière native et stable sur Android et Linux Desktop.
 
 ## Technologies utilisées
@@ -53,6 +54,28 @@ lib/
 
 3. Lancer l'application (p. ex. sur Linux Desktop ou un appareil/émulateur Android connecté) :
    flutter run
+
+### Installer via le débogage Wi-Fi (Android, sans perte de données)
+
+> `flutter run` ou une installation normale ne supprime jamais vos données.
+> Les données ne sont perdues que si l'application est **désinstallée**. Installer
+> une nouvelle version par-dessus l'application existante conserve toutes les
+> données locales de l'utilisateur (mots, niveaux, séries).
+
+1. Activer **Options développeur → Débogage sans fil** sur le téléphone (si nécessaire, `adb pair` d'abord) :
+   adb pair 192.168.0.133:PORT
+2. Se connecter à l'appareil par adresse/port :
+   adb connect 192.168.0.133:40917
+3. Installer une version **debug** par-dessus l'application actuelle (sans perte de données) :
+   flutter run -d 192.168.0.133:40917
+   # ou installer une APK debug préparée sans la lancer :
+   flutter build apk --debug
+   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+
+> Le drapeau `-r` remplace l'application tout en conservant ses données. En cas
+> d'erreur « signature mismatch », l'application installée a une signature
+> différente (p. ex. une version release) — une désinstallation serait nécessaire,
+> donc préférez des types de build correspondants (debug → debug).
 
 ## Migration de Kivy à Flutter
 

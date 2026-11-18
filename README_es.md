@@ -12,6 +12,7 @@ Este proyecto es una migración completa de una aplicación previamente desarrol
 - **Lógica de racha diaria**: Seguimiento motivacional y visualización de días consecutivos de aprendizaje.
 - **Modos de aprendizaje y juego**: Incluye un juego "Turbo" que evalúa específicamente el vocabulario ya aprendido para reforzar el conocimiento.
 - **Gestión local de usuarios**: Registro sencillo, inicio de sesión y gestión de múltiples perfiles de usuario directamente en el dispositivo.
+- **Resumen de progreso**: Una tabla de palabras de solo lectura por categoría de verbos que muestra el nivel actual de cada palabra con insignias de nivel de colores (gris = nuevo, verde = dominado).
 - **Multiplataforma**: Funciona de forma nativa y estable en Android y Linux Desktop.
 
 ## Tecnologías utilizadas
@@ -53,6 +54,28 @@ lib/
 
 3. Ejecutar la aplicación (p. ej. en Linux Desktop o un dispositivo/emulador Android conectado):
    flutter run
+
+### Instalación mediante depuración Wi-Fi (Android, sin pérdida de datos)
+
+> `flutter run` o una instalación normal nunca elimina tus datos.
+> Los datos solo se pierden cuando la aplicación se **desinstala**. Instalar una
+> nueva versión sobre la aplicación existente conserva todos los datos locales
+> del usuario (palabras, niveles, rachas).
+
+1. Activa **Opciones de desarrollador → Depuración inalámbrica** en el teléfono (si es necesario, `adb pair` primero) :
+   adb pair 192.168.0.133:PORT
+2. Conecta al dispositivo por dirección/puerto :
+   adb connect 192.168.0.133:40917
+3. Instala una versión **debug** sobre la aplicación actual (sin pérdida de datos) :
+   flutter run -d 192.168.0.133:40917
+   # o instala un APK debug preparado sin lanzarlo :
+   flutter build apk --debug
+   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+
+> El indicador `-r` reemplaza la aplicación conservando sus datos. Si apareciera
+> un error de « signature mismatch », la aplicación instalada tiene una firma
+> distinta (p. ej. una versión release) — la desinstalación sería necesaria, por
+> lo que es preferible usar tipos de build coincidentes (debug → debug).
 
 ## Migración de Kivy a Flutter
 
