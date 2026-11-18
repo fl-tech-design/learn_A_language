@@ -447,39 +447,56 @@ const List<WordCategory> courseWordCategories = [
     id: 'erste_verben',
     order: 1,
     titleKey: 'catFirstVerbs',
-    verbKeys: ['be', 'have', 'want', 'should', 'be_allowed_to'],
+    verbKeys: ['to_be', 'to_have', 'to_want', 'to_should', 'to_be_allowed_to'],
   ),
   WordCategory(
     id: 'grp_alltag',
     order: 2,
     titleKey: 'catGrpAlltag',
-    verbKeys: ['can', 'must', 'need', 'like', 'see'],
+    verbKeys: ['to_can', 'to_must', 'to_need', 'to_like', 'to_see'],
   ),
   WordCategory(
     id: 'grp_bewegung',
     order: 3,
     titleKey: 'catGrpMovement',
-    verbKeys: ['go', 'come', 'live', 'work', 'find'],
+    verbKeys: ['to_go', 'to_come', 'to_live', 'to_work', 'to_find'],
   ),
   WordCategory(
     id: 'grp_lernen',
     order: 4,
     titleKey: 'catGrpLearning',
-    verbKeys: ['read', 'write', 'speak', 'understand', 'learn'],
+    verbKeys: ['to_read', 'to_write', 'to_speak', 'to_understand', 'to_learn'],
   ),
   WordCategory(
     id: 'grp_arbeit',
     order: 5,
     titleKey: 'catGrpWork',
-    verbKeys: ['buy', 'sell', 'make', 'begin', 'end'],
+    verbKeys: ['to_buy', 'to_sell', 'to_make', 'to_begin', 'to_end'],
   ),
   WordCategory(
     id: 'grp_genuss',
     order: 6,
     titleKey: 'catGrpEnjoy',
-    verbKeys: ['open', 'close', 'eat', 'drink', 'help'],
+    verbKeys: ['to_open', 'to_close', 'to_eat', 'to_drink', 'to_help'],
   ),
 ];
+
+/// Aggregierte Fortschritts-Zahlen einer Word-Kategorie.
+class CategoryCounts {
+  final int total;
+  final int newCount;
+  final int dueCount;
+  final int learnedCount;
+
+  const CategoryCounts({
+    this.total = 0,
+    this.newCount = 0,
+    this.dueCount = 0,
+    this.learnedCount = 0,
+  });
+
+  bool get hasWords => total > 0;
+}
 
 /// Model for a question in the Turbo quiz.
 class QuizQuestion {

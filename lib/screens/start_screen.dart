@@ -301,65 +301,74 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                   border: Border.all(color: AppTheme.grey3)),
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(username,
-                        style: const TextStyle(
-                            fontSize: AppTheme.smallFontSize,
-                            color: Color(0xFFFFB31A))),
-                    Text(
-                        '${l10n.catNewWords}: ${stats.newCount}',
-                        style: const TextStyle(
-                            fontSize: AppTheme.smallFontSize,
-                            color: Colors.white70)),
-                    Text(
-                        '${l10n.catDueWords}: ${stats.dueCount}',
-                        style: const TextStyle(
-                            fontSize: AppTheme.smallFontSize,
-                            color: Colors.white70)),
-                    Text(
-                        '${l10n.catLearnedWords}: ${stats.learnedCount}',
-                        style: const TextStyle(
-                            fontSize: AppTheme.smallFontSize,
-                            color: Colors.white70)),
-                    if (stats.streak.current > 0)
-                      Text(l10n.streakAndRecord(stats.streak.current, stats.streak.longest),
-                          style: const TextStyle(
-                              fontSize: AppTheme.smallFontSize,
-                              color: Color(0xFFFFB31A))),
-                    const SizedBox(height: 4),
-                    SizedBox(
-                        height: 20,
-                        child: TextButton(
-                            onPressed: () {
-                              Navigator.of(context)
-                                  .pushNamed('/progress');
-                            },
-                            style: TextButton.styleFrom(
-                                padding: EdgeInsets.zero,
-                                foregroundColor: AppTheme.grey4),
-                            child: Text(
-                                l10n.btnProgress,
-                                style: const TextStyle(
-                                    fontSize: AppTheme.smallFontSize)))),
-                    SizedBox(
-                        height: 20,
-                        child: TextButton(
-                            onPressed: () {
-                              final st = ctx
-                                  .findAncestorStateOfType<_StartScreenState>();
-                              st?._showLogin();
-                            },
-                            style: TextButton.styleFrom(
-                                padding: EdgeInsets.zero,
-                                foregroundColor: AppTheme.grey4),
-                            child: Text(
-                                l10n.btnChangeUser,
-                                style: const TextStyle(
-                                    fontSize: AppTheme.smallFontSize)))),
-                  ]));
+              child: _buildBoxBody(l10n, stats, username));
         });
+  }
+
+  Widget _buildBoxBody(AppLocalizations l10n, _UserStats stats, String username) {
+    final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+    final statsCol = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(username,
+            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
+        Text('${l10n.catNewWords}: ${stats.newCount}',
+            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+        Text('${l10n.catDueWords}: ${stats.dueCount}',
+            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+        Text('${l10n.catLearnedWords}: ${stats.learnedCount}',
+            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+        if (stats.streak.current > 0)
+          Text(l10n.streakAndRecord(stats.streak.current, stats.streak.longest),
+              style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
+      ],
+    );
+    final buttonsCol = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _actionOutlined(l10n.btnProgress, () {
+          Navigator.of(context).pushNamed('/progress');
+        }),
+        const SizedBox(height: 8),
+        _actionOutlined(l10n.btnChangeUser, () {
+          final st = context.findAncestorStateOfType<_StartScreenState>();
+          st?._showLogin();
+        }),
+      ],
+    );
+    if (isPortrait) {
+      return Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(child: statsCol),
+          const SizedBox(width: 10),
+          SizedBox(width: 170, child: buttonsCol),
+        ],
+      );
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        statsCol,
+        const SizedBox(height: 6),
+        buttonsCol,
+      ],
+    );
+  }
+
+  Widget _actionOutlined(String label, VoidCallback onPressed) {
+    return OutlinedButton(
+      onPressed: onPressed,
+      style: OutlinedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 10),
+        foregroundColor: AppTheme.grey5,
+        side: const BorderSide(color: AppTheme.grey3),
+        minimumSize: const Size(0, 28),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+      ),
+      child: Text(label, style: const TextStyle(fontSize: AppTheme.smallFontSize)),
+    );
   }
 
   Future<_UserStats> _loadStats(BuildContext context, String username) async {

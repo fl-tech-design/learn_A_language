@@ -379,4 +379,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get colLevel => 'Level';
+
+  @override
+  String get labNewShort => 'new';
+
+  @override
+  String get labDueShort => 'due';
 }

@@ -45,6 +45,21 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
             title: category != null ? wordCategoryTitle(l10n, category) : '',
             onInfo: () => showInfoDialog(context, l10n.infProgress, l10n.information),
           ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              child: TextButton.icon(
+                onPressed: () => Navigator.of(context).pop(),
+                icon: const Icon(Icons.arrow_back_ios, size: 16),
+                label: Text(l10n.back),
+                style: TextButton.styleFrom(
+                  foregroundColor: AppTheme.colorPrimary,
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                ),
+              ),
+            ),
+          ),
           Expanded(
             child: uname.isEmpty || category == null
                 ? const SizedBox.shrink()
@@ -204,8 +219,10 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
   }
 
   String _prettifyVerb(String verb) {
-    final text = verb.replaceAll('_', ' ');
-    return text.isEmpty ? verb : text[0].toUpperCase() + text.substring(1);
+    var base = verb;
+    if (base.startsWith('to_')) base = base.substring('to_'.length);
+    final text = base.replaceAll('_', ' ');
+    return text.isEmpty ? base : text[0].toUpperCase() + text.substring(1);
   }
 }
 

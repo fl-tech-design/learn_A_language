@@ -146,5 +146,7 @@
   "tensePresent": "Present",
   "tenseFuture": "Future",
   "colWord": "Word",
-  "colLevel": "Level"
+  "colLevel": "Level",
+  "labNewShort": "new",
+  "labDueShort": "due"
 }

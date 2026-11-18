@@ -21,6 +21,11 @@ abstract class VocabQueries {
       String username, WordCategory category);
   Future<List<VocabEntry>> getGroupNewWords(String username,
       WordCategory category, {int limit = 10, int offset = 0});
+  Future<CategoryCounts> getGroupCounts(
+      String username, WordCategory category);
+  Future<Map<String, CategoryCounts>> getCategoryCounts(String username);
+  Future<List<VocabEntry>> getGroupLearnWords(
+      String username, WordCategory category);
   Future<DayStreak> getDayStreak(String username);
   Future<void> updateDayStreak(String username);
   Future<AnswerCheckResult> checkWordAnswer(
@@ -118,23 +123,7 @@ class VocabQueriesImpl implements VocabQueries {
     final entries = ud.vocab.values
         .where((ve) => category.containsEntryKey(ve.key))
         .toList();
-    entries.sort((a, b) {
-      // Sortiert nach Verb (Reihenfolge in der Kategorie), dann Zeitform,
-      // dann Person.
-      final aVerb = vocabVerbKey(a.key);
-      final bVerb = vocabVerbKey(b.key);
-      if (aVerb != bVerb) {
-        return category.verbKeys
-            .indexOf(aVerb)
-            .compareTo(category.verbKeys.indexOf(bVerb));
-      }
-      final aTense = vocabTenseKey(a.key);
-      final bTense = vocabTenseKey(b.key);
-      if (aTense != bTense) {
-        return vocabTenseOrder(aTense).compareTo(vocabTenseOrder(bTense));
-      }
-      return vocabPersonIndex(a.key).compareTo(vocabPersonIndex(b.key));
-    });
+    entries.sort((a, b) => _compareEntries(category, a, b));
     return entries;
   }
 
@@ -152,6 +141,103 @@ class VocabQueriesImpl implements VocabQueries {
     final start = offset.clamp(0, newWords.length);
     final end = (offset + limit).clamp(0, newWords.length);
     return newWords.sublist(start, end);
+  }
+
+  @override
+  Future<CategoryCounts> getGroupCounts(
+      String username, WordCategory category) async {
+    final all = await getCategoryCounts(username);
+    return all[category.id] ?? const CategoryCounts();
+  }
+
+  @override
+  Future<Map<String, CategoryCounts>> getCategoryCounts(
+      String username) async {
+    final ud = await _userManager.loadUserdata(username);
+    final result = <String, CategoryCounts>{};
+    if (ud == null) return result;
+    final today = DateTime.now();
+    for (final cat in courseWordCategories) {
+      var total = 0;
+      var newC = 0;
+      var due = 0;
+      var learned = 0;
+      for (final ve in ud.vocab.values) {
+        if (!cat.containsEntryKey(ve.key)) continue;
+        total++;
+        if (ve.level >= 8) {
+          learned++;
+          continue;
+        }
+        if (ve.level == 0 && ve.status == 'new') {
+          newC++;
+          continue;
+        }
+        if (ve.status == 'seen') {
+          if (_isDue(ve, today)) due++;
+        }
+      }
+      result[cat.id] = CategoryCounts(
+        total: total,
+        newCount: newC,
+        dueCount: due,
+        learnedCount: learned,
+      );
+    }
+    return result;
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupLearnWords(
+      String username, WordCategory category) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final due = <VocabEntry>[];
+    final fresh = <VocabEntry>[];
+    final today = DateTime.now();
+    for (final ve in ud.vocab.values) {
+      if (!category.containsEntryKey(ve.key)) continue;
+      if (ve.level >= 8) continue;
+      if (ve.level == 0 && ve.status == 'new') {
+        fresh.add(ve);
+        continue;
+      }
+      if (ve.status == 'seen' && _isDue(ve, today)) {
+        due.add(ve);
+      }
+    }
+    // Wiederverwendung der bestehenden Sortierung (Verb, Zeitform, Person).
+    due.sort((a, b) => _compareEntries(category, a, b));
+    fresh.sort((a, b) => _compareEntries(category, a, b));
+    return [...due, ...fresh];
+  }
+
+  bool _isDue(VocabEntry ve, DateTime today) {
+    final r = ve.reviewDue;
+    if (r == null || r.isEmpty) return true;
+    try {
+      return !DateTime.parse(r).isAfter(today);
+    } catch (_) {
+      return true;
+    }
+  }
+
+  /// Sortiert nach Verb (Reihenfolge in der Kategorie), dann Zeitform, dann
+  /// Person.
+  int _compareEntries(WordCategory category, VocabEntry a, VocabEntry b) {
+    final aVerb = vocabVerbKey(a.key);
+    final bVerb = vocabVerbKey(b.key);
+    if (aVerb != bVerb) {
+      return category.verbKeys
+          .indexOf(aVerb)
+          .compareTo(category.verbKeys.indexOf(bVerb));
+    }
+    final aTense = vocabTenseKey(a.key);
+    final bTense = vocabTenseKey(b.key);
+    if (aTense != bTense) {
+      return vocabTenseOrder(aTense).compareTo(vocabTenseOrder(bTense));
+    }
+    return vocabPersonIndex(a.key).compareTo(vocabPersonIndex(b.key));
   }
 
   @override

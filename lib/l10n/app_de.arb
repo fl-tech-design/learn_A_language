@@ -146,5 +146,7 @@
   "tensePresent": "Gegenwart",
   "tenseFuture": "Zukunft",
   "colWord": "Wort",
-  "colLevel": "Level"
+  "colLevel": "Level",
+  "labNewShort": "neu",
+  "labDueShort": "fällig"
 }

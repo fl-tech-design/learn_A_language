@@ -382,4 +382,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get colLevel => 'Level';
+
+  @override
+  String get labNewShort => 'neu';
+
+  @override
+  String get labDueShort => 'fällig';
 }

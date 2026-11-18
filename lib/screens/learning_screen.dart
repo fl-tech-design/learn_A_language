@@ -23,12 +23,14 @@ class LearningScreen extends StatefulWidget {
 
 class _LearningScreenState extends State<LearningScreen> with RouteAware {
   int _dueCount = 0;
+  Map<String, CategoryCounts> _counts = {};
   bool _subscribed = false;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _refreshDueCount();
+    _refreshCounts();
     if (!_subscribed) {
       final route = ModalRoute.of(context);
       if (route is PageRoute) {
@@ -41,6 +43,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   @override
   void didPopNext() {
     _refreshDueCount();
+    _refreshCounts();
   }
 
   @override
@@ -57,6 +60,19 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
       final count = await context.read<VocabQueries>().getWordsDueCount(uname);
       if (mounted) setState(() => _dueCount = count);
     }
+  }
+
+  Future<void> _refreshCounts() async {
+    final uname = context.read<DataState>().appData.loggedUName;
+    if (uname.isEmpty) return;
+    final counts = await context.read<VocabQueries>().getCategoryCounts(uname);
+    if (mounted) setState(() => _counts = counts);
+  }
+
+  String _countLabel(AppLocalizations l10n, CategoryCounts? c) {
+    if (c == null || !c.hasWords) return '';
+    return '${c.newCount} ${l10n.labNewShort} · '
+        '${c.dueCount} ${l10n.labDueShort}';
   }
 
   /// Startet das Lernen der neuen Woerter einer Kategorie.
@@ -107,11 +123,30 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                 width: double.infinity,
                                 child: OutlinedButton(
                                     onPressed: () => _startLearning(cat),
-                                    child: Text(
-                                        wordCategoryTitle(l10n, cat),
-                                        textAlign: TextAlign.center,
-                                        style: const TextStyle(
-                                            fontSize: AppTheme.btnFontSize))))),
+                                    child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 12),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Text(
+                                                  wordCategoryTitle(l10n, cat),
+                                                  textAlign:
+                                                      TextAlign.center,
+                                                  style: const TextStyle(
+                                                      fontSize: AppTheme
+                                                          .btnFontSize)),
+                                            ),
+                                            Text(
+                                              _countLabel(
+                                                  l10n, _counts[cat.id]),
+                                              style: const TextStyle(
+                                                  fontSize:
+                                                      AppTheme.smallFontSize,
+                                                  color: AppTheme.grey4),
+                                            ),
+                                          ],
+                                        ))))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 50,

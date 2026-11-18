@@ -817,6 +817,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Level'**
   String get colLevel;
+
+  /// No description provided for @labNewShort.
+  ///
+  /// In en, this message translates to:
+  /// **'new'**
+  String get labNewShort;
+
+  /// No description provided for @labDueShort.
+  ///
+  /// In en, this message translates to:
+  /// **'due'**
+  String get labDueShort;
 }
 
 class _AppLocalizationsDelegate
