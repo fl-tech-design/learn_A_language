@@ -12,6 +12,7 @@ This project is a complete migration of a previously Python/Kivy-based app to **
 - **Day Streak Logic**: Motivational tracking and display of consecutive learning days.
 - **Learning & Game Modes**: Includes a "Turbo" game that specifically quizzes already learned vocabulary to reinforce knowledge.
 - **Local User Management**: Simple registration, login, and management of multiple user profiles directly on the device.
+- **Learning Progress Overview**: A read-only word table per verb category showing the current level of every word with colored level badges (grey = new, green = mastered).
 - **Cross-Platform**: Runs natively and stably on Android and Linux Desktop.
 
 ## Tech Stack
@@ -53,6 +54,27 @@ lib/
 
 3. Run the app (e.g. on Linux Desktop or a connected Android device/emulator):
    flutter run
+
+### Install over WiFi Debugging (Android, without data loss)
+
+> `flutter run` or a normal install **never deletes** your app data.
+> Data is only lost when the app is **uninstalled**. Installing an updated build
+> over an existing app keeps all local user data (words, levels, streaks).
+
+1. Enable **Developer options → Wireless debugging** on the phone (`adb pair` first if needed):
+   adb pair 192.168.0.133:PORT
+2. Connect to the device by address/port:
+   adb connect 192.168.0.133:40917
+3. Build and install a **debug** build over the current app (contributes no data loss):
+   flutter run -d 192.168.0.133:40917
+   # or install a prepared debug APK without launching:
+   flutter build apk --debug
+   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+
+> The `-r` flag **replaces** the app while keeping its data. If you ever get a
+> "signature mismatch" error, the installed app has a different signature
+> (e.g. a release build) — uninstalling would be required, so prefer matching
+> build types (debug → debug).
 
 ## Migration from Kivy to Flutter
 

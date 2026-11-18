@@ -733,6 +733,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Words per session'**
   String get wordsPerSession;
+
+  /// No description provided for @btnProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Progress'**
+  String get btnProgress;
+
+  /// No description provided for @titPageProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Progress'**
+  String get titPageProgress;
+
+  /// No description provided for @infProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a category to view the progress of its words.'**
+  String get infProgress;
+
+  /// No description provided for @catFirstVerbs.
+  ///
+  /// In en, this message translates to:
+  /// **'First Verbs'**
+  String get catFirstVerbs;
+
+  /// No description provided for @catGrpAlltag.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyday & Needs'**
+  String get catGrpAlltag;
+
+  /// No description provided for @catGrpMovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Movement & Stay'**
+  String get catGrpMovement;
+
+  /// No description provided for @catGrpLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning & Communication'**
+  String get catGrpLearning;
+
+  /// No description provided for @catGrpWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Action & Work'**
+  String get catGrpWork;
+
+  /// No description provided for @catGrpEnjoy.
+  ///
+  /// In en, this message translates to:
+  /// **'Enjoyment & Help'**
+  String get catGrpEnjoy;
+
+  /// No description provided for @tensePast.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get tensePast;
+
+  /// No description provided for @tensePresent.
+  ///
+  /// In en, this message translates to:
+  /// **'Present'**
+  String get tensePresent;
+
+  /// No description provided for @tenseFuture.
+  ///
+  /// In en, this message translates to:
+  /// **'Future'**
+  String get tenseFuture;
+
+  /// No description provided for @colWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Word'**
+  String get colWord;
+
+  /// No description provided for @colLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get colLevel;
 }
 
 class _AppLocalizationsDelegate

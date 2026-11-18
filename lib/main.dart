@@ -22,6 +22,8 @@ import 'screens/game_screen.dart';
 import 'screens/grammar_detail_screen.dart';
 import 'screens/grammar_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/progress_screen.dart';
+import 'screens/progress_group_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -89,6 +91,8 @@ class LearnALanguageApp extends StatelessWidget {
         '/settings': (context) => const SettingsScreen(),
         '/grammar': (context) => const GrammarScreen(),
         '/grammardetail': (context) => const GrammarDetailScreen(),
+        '/progress': (context) => const ProgressScreen(),
+        '/progress_group': (context) => const ProgressGroupScreen(),
       },
     );
   }

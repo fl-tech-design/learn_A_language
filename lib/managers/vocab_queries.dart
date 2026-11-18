@@ -17,6 +17,10 @@ abstract class VocabQueries {
   Future<int> getWordsDueCount(String username);
   Future<int> getNewWordsCount(String username);
   Future<List<VocabEntry>> getAllWords(String username);
+  Future<List<VocabEntry>> getGroupWords(
+      String username, WordCategory category);
+  Future<List<VocabEntry>> getGroupNewWords(String username,
+      WordCategory category, {int limit = 10, int offset = 0});
   Future<DayStreak> getDayStreak(String username);
   Future<void> updateDayStreak(String username);
   Future<AnswerCheckResult> checkWordAnswer(
@@ -104,6 +108,50 @@ class VocabQueriesImpl implements VocabQueries {
     final ud = await _userManager.loadUserdata(username);
     if (ud == null) return [];
     return ud.vocab.values.toList();
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupWords(
+      String username, WordCategory category) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final entries = ud.vocab.values
+        .where((ve) => category.containsEntryKey(ve.key))
+        .toList();
+    entries.sort((a, b) {
+      // Sortiert nach Verb (Reihenfolge in der Kategorie), dann Zeitform,
+      // dann Person.
+      final aVerb = vocabVerbKey(a.key);
+      final bVerb = vocabVerbKey(b.key);
+      if (aVerb != bVerb) {
+        return category.verbKeys
+            .indexOf(aVerb)
+            .compareTo(category.verbKeys.indexOf(bVerb));
+      }
+      final aTense = vocabTenseKey(a.key);
+      final bTense = vocabTenseKey(b.key);
+      if (aTense != bTense) {
+        return vocabTenseOrder(aTense).compareTo(vocabTenseOrder(bTense));
+      }
+      return vocabPersonIndex(a.key).compareTo(vocabPersonIndex(b.key));
+    });
+    return entries;
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupNewWords(String username,
+      WordCategory category, {int limit = 10, int offset = 0}) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final newWords = ud.vocab.values
+        .where((ve) =>
+            ve.level == 0 &&
+            ve.status == 'new' &&
+            category.containsEntryKey(ve.key))
+        .toList();
+    final start = offset.clamp(0, newWords.length);
+    final end = (offset + limit).clamp(0, newWords.length);
+    return newWords.sublist(start, end);
   }
 
   @override
@@ -234,3 +282,28 @@ class VocabQueriesImpl implements VocabQueries {
 
 String fmt(DateTime d) =>
     '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+
+// ── Key-Hilfsfunktionen für Vokabel-Keys ───────────────────────────────
+// Vocab-Keys haben das Format '<verb>_<zeitform>_<person>' (z. B. 'be_present_0'
+// oder 'be_allowed_to_present_0'). Die folgenden Funktionen extrahieren die
+// einzelnen Segmente robust, auch wenn der Verb-Schlüssel Unterstriche enthält.
+
+/// Liefert den Verb-Schlüssel (z. B. 'be_allowed_to') eines Vocab-Keys.
+String vocabVerbKey(String entryKey) {
+  final parts = entryKey.split('_');
+  return parts.length <= 2 ? entryKey : parts.sublist(0, parts.length - 2).join('_');
+}
+
+/// Liefert das Zeitform-Segment ('past' | 'present' | 'future').
+String vocabTenseKey(String entryKey) {
+  final parts = entryKey.split('_');
+  return parts.length >= 2 ? parts[parts.length - 2] : '';
+}
+
+/// Liefert den Personen-Index (letztes Segment) eines Vocab-Keys.
+int vocabPersonIndex(String entryKey) =>
+    int.tryParse(entryKey.split('_').last) ?? 0;
+
+/// Sortierreihenfolge der Zeitformen (past -> present -> future).
+int vocabTenseOrder(String tense) =>
+    switch (tense) { 'past' => 0, 'present' => 1, _ => 2 };

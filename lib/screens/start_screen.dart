@@ -333,6 +333,20 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
                         height: 20,
                         child: TextButton(
                             onPressed: () {
+                              Navigator.of(context)
+                                  .pushNamed('/progress');
+                            },
+                            style: TextButton.styleFrom(
+                                padding: EdgeInsets.zero,
+                                foregroundColor: AppTheme.grey4),
+                            child: Text(
+                                l10n.btnProgress,
+                                style: const TextStyle(
+                                    fontSize: AppTheme.smallFontSize)))),
+                    SizedBox(
+                        height: 20,
+                        child: TextButton(
+                            onPressed: () {
                               final st = ctx
                                   .findAncestorStateOfType<_StartScreenState>();
                               st?._showLogin();

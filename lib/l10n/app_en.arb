@@ -132,5 +132,19 @@
   "words10": "10 words",
   "words3": "3 words",
   "words5": "5 words",
-  "wordsPerSession": "Words per session"
+  "wordsPerSession": "Words per session",
+  "btnProgress": "Learning Progress",
+  "titPageProgress": "Learning Progress",
+  "infProgress": "Choose a category to view the progress of its words.",
+  "catFirstVerbs": "First Verbs",
+  "catGrpAlltag": "Everyday & Needs",
+  "catGrpMovement": "Movement & Stay",
+  "catGrpLearning": "Learning & Communication",
+  "catGrpWork": "Action & Work",
+  "catGrpEnjoy": "Enjoyment & Help",
+  "tensePast": "Past",
+  "tensePresent": "Present",
+  "tenseFuture": "Future",
+  "colWord": "Word",
+  "colLevel": "Level"
 }

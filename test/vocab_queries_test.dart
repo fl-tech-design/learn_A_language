@@ -317,4 +317,90 @@ void main() {
       expect(await queries.getWordsDueCount('ghost'), 0);
     });
   });
+
+  group('getGroupWords + Kategorie-Helfer', () {
+    test('filtert nach Kategorie und sortiert nach Verb/Zeitform/Person',
+        () async {
+      const cat = WordCategory(
+        id: 'test',
+        order: 1,
+        titleKey: 'catFirstVerbs',
+        verbKeys: ['be', 'have'],
+      );
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'have_present_1': _vocab('have_present_1'),
+          'be_present_0': _vocab('be_present_0'),
+          'other_past_0': _vocab('other_past_0'),
+          'be_past_0': _vocab('be_past_0'),
+          'be_present_5': _vocab('be_present_5'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final result = await queries.getGroupWords('alice', cat);
+
+      expect(
+        result.map((e) => e.key),
+        ['be_past_0', 'be_present_0', 'be_present_5', 'have_present_1'],
+      );
+    });
+
+    test('courseWordCategories deckt alle 30 Verben genau einmal ab', () {
+      final counts = <String, int>{};
+      for (final c in courseWordCategories) {
+        for (final v in c.verbKeys) {
+          counts[v] = (counts[v] ?? 0) + 1;
+        }
+      }
+      expect(counts.length, 30);
+      expect(counts.values.where((n) => n == 1).length, 30);
+    });
+
+    test('containsEntryKey + Key-Helfer', () {
+      final cat = courseWordCategories.firstWhere((c) => c.id == 'erste_verben');
+      expect(cat.containsEntryKey('be_present_0'), true);
+      expect(cat.containsEntryKey('be_allowed_to_present_0'), true);
+      expect(cat.containsEntryKey('can_present_0'), false);
+
+      expect(vocabVerbKey('be_allowed_to_present_0'), 'be_allowed_to');
+      expect(vocabTenseKey('be_allowed_to_present_0'), 'present');
+      expect(vocabPersonIndex('be_present_3'), 3);
+      expect(vocabTenseOrder('past'), 0);
+      expect(vocabTenseOrder('present'), 1);
+      expect(vocabTenseOrder('future'), 2);
+    });
+
+    test('getGroupNewWords filtert Level 0 pro Kategorie + Paging', () async {
+      const cat = WordCategory(
+        id: 'test2',
+        order: 1,
+        titleKey: 'catFirstVerbs',
+        verbKeys: ['be', 'have'],
+      );
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'be_present_0': _vocab('be_present_0'),
+          'have_present_0': _vocab('have_present_0'),
+          'can_present_0': _vocab('can_present_0'),
+          'be_past_0': _vocab('be_past_0', status: 'seen'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final all = await queries.getGroupNewWords('alice', cat);
+      expect(
+        all.map((e) => e.key).toSet(),
+        {'be_present_0', 'have_present_0'},
+      );
+
+      final page = await queries.getGroupNewWords('alice', cat,
+          limit: 1, offset: 1);
+      expect(page.length, 1);
+    });
+  });
 }

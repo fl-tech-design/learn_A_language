@@ -415,6 +415,72 @@ const Map<String, LanguageCourse> availableCourses = {
   ),
 };
 
+/// A category that groups vocabulary verb files into learnable units.
+///
+/// Categories are stored as data (not hardcoded in screens) so the grouping
+/// of the 30 verbs can be adjusted easily without touching the UI. Each
+/// category references its verb dict keys (file stem after the language
+/// prefix, e.g. 'be', 'be_allowed_to').
+class WordCategory {
+  final String id;
+  final int order;
+  /// l10n key for the localized category title.
+  final String titleKey;
+  /// Verb dict keys belonging to this category.
+  final List<String> verbKeys;
+
+  const WordCategory({
+    required this.id,
+    required this.order,
+    required this.titleKey,
+    required this.verbKeys,
+  });
+
+  /// Whether a vocab entry key (e.g. 'be_present_0') belongs to this category.
+  bool containsEntryKey(String entryKey) =>
+      verbKeys.any((vk) => entryKey == vk || entryKey.startsWith('${vk}_'));
+}
+
+/// The six vocabulary categories covering all 30 A1 verbs.
+const List<WordCategory> courseWordCategories = [
+  WordCategory(
+    id: 'erste_verben',
+    order: 1,
+    titleKey: 'catFirstVerbs',
+    verbKeys: ['be', 'have', 'want', 'should', 'be_allowed_to'],
+  ),
+  WordCategory(
+    id: 'grp_alltag',
+    order: 2,
+    titleKey: 'catGrpAlltag',
+    verbKeys: ['can', 'must', 'need', 'like', 'see'],
+  ),
+  WordCategory(
+    id: 'grp_bewegung',
+    order: 3,
+    titleKey: 'catGrpMovement',
+    verbKeys: ['go', 'come', 'live', 'work', 'find'],
+  ),
+  WordCategory(
+    id: 'grp_lernen',
+    order: 4,
+    titleKey: 'catGrpLearning',
+    verbKeys: ['read', 'write', 'speak', 'understand', 'learn'],
+  ),
+  WordCategory(
+    id: 'grp_arbeit',
+    order: 5,
+    titleKey: 'catGrpWork',
+    verbKeys: ['buy', 'sell', 'make', 'begin', 'end'],
+  ),
+  WordCategory(
+    id: 'grp_genuss',
+    order: 6,
+    titleKey: 'catGrpEnjoy',
+    verbKeys: ['open', 'close', 'eat', 'drink', 'help'],
+  ),
+];
+
 /// Model for a question in the Turbo quiz.
 class QuizQuestion {
   final String key;

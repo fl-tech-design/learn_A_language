@@ -41,7 +41,12 @@ class _WordScreenState extends State<WordScreen> {
     List<VocabEntry> words;
     final vq = context.read<VocabQueries>();
     if (mode == 'new') {
-      words = await vq.getNewWords(uname, limit: limit);
+      final cat = _categoryById(navState.selectedCategoryId);
+      if (cat != null) {
+        words = await vq.getGroupNewWords(uname, cat, limit: limit);
+      } else {
+        words = await vq.getNewWords(uname, limit: limit);
+      }
       _streak = await vq.getDayStreak(uname);
     } else {
       words = await vq.getMasteredWords(uname);
@@ -112,8 +117,16 @@ class _WordScreenState extends State<WordScreen> {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
     final limit = dataState.appData.wordsPerSession;
-    final extra = await context.read<VocabQueries>().getNewWords(uname,
-        limit: limit, offset: _words.length);
+    final navState = context.read<NavigationState>();
+    final cat = _categoryById(navState.selectedCategoryId);
+    final vq = context.read<VocabQueries>();
+    final List<VocabEntry> extra;
+    if (cat != null) {
+      extra = await vq.getGroupNewWords(uname, cat,
+          limit: limit, offset: _words.length);
+    } else {
+      extra = await vq.getNewWords(uname, limit: limit, offset: _words.length);
+    }
     if (extra.isEmpty) {
       if (mounted) Navigator.of(context).pop();
       return;
@@ -125,6 +138,14 @@ class _WordScreenState extends State<WordScreen> {
       _answerChecked = false;
       _feedback = '';
     });
+  }
+
+  WordCategory? _categoryById(String? id) {
+    if (id == null) return null;
+    for (final c in courseWordCategories) {
+      if (c.id == id) return c;
+    }
+    return null;
   }
 
   void _navigate(int delta) {

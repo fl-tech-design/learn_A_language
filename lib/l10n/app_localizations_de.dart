@@ -339,4 +339,47 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get wordsPerSession => 'Wörter pro Sitzung';
+
+  @override
+  String get btnProgress => 'Lernfortschritt';
+
+  @override
+  String get titPageProgress => 'Lernfortschritt';
+
+  @override
+  String get infProgress =>
+      'Wähle eine Kategorie, um den Fortschritt ihrer Wörter zu sehen.';
+
+  @override
+  String get catFirstVerbs => 'Erste Verben';
+
+  @override
+  String get catGrpAlltag => 'Alltag & Bedürfnisse';
+
+  @override
+  String get catGrpMovement => 'Bewegung & Aufenthalt';
+
+  @override
+  String get catGrpLearning => 'Lernen & Kommunikation';
+
+  @override
+  String get catGrpWork => 'Handeln & Arbeit';
+
+  @override
+  String get catGrpEnjoy => 'Genuss & Hilfe';
+
+  @override
+  String get tensePast => 'Vergangenheit';
+
+  @override
+  String get tensePresent => 'Gegenwart';
+
+  @override
+  String get tenseFuture => 'Zukunft';
+
+  @override
+  String get colWord => 'Wort';
+
+  @override
+  String get colLevel => 'Level';
 }

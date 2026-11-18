@@ -12,9 +12,12 @@ final RouteObserver<ModalRoute<dynamic>> routeObserver =
 class NavigationState extends ChangeNotifier {
   String _wordMode = 'new';
   int _statsVersion = 0;
+  String? _selectedCategoryId;
 
   int get statsVersion => _statsVersion;
   String get wordMode => _wordMode;
+  /// Id der aktuell gewählten Word-Kategorie (null = ganzer Kurs).
+  String? get selectedCategoryId => _selectedCategoryId;
 
   void notifyStatsChanged() {
     _statsVersion++;
@@ -23,6 +26,11 @@ class NavigationState extends ChangeNotifier {
 
   void setWordMode(String mode) {
     _wordMode = mode;
+    notifyListeners();
+  }
+
+  void setSelectedCategoryId(String? categoryId) {
+    _selectedCategoryId = categoryId;
     notifyListeners();
   }
 }

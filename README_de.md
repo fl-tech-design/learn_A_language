@@ -12,6 +12,7 @@ Dieses Projekt ist eine vollständige Migration einer zuvor in Python/Kivy entwi
 - **Day-Streak-Logik**: Motivationsfördernde Anzeige und Berechnung von aufeinanderfolgenden Lerntagen.
 - **Lern- & Spielmodi**: Inklusive eines "Turbo"-Spiels, das gezielt bereits gelernte Vokabeln abfragt, um das Wissen zu festigen.
 - **Lokale Benutzerverwaltung**: Einfache Registrierung, Login und Verwaltung mehrerer Benutzerprofile direkt auf dem Gerät.
+- **Lernfortschritt-Übersicht**: Eine schreibgeschützte Worttabelle pro Verb-Kategorie mit dem aktuellen Level jedes Wortes und farbigen Level-Badges (grau = neu, grün = gelernt).
 - **Cross-Platform**: Läuft nativ und stabil auf Android und Linux Desktop.
 
 ## Technologie-Stack
@@ -53,6 +54,28 @@ lib/
 
 3. App starten (z. B. auf Linux Desktop oder einem angeschlossenen Android-Gerät/Emulator):
    flutter run
+
+### Installation über WLAN-Debugging (Android, ohne Datenverlust)
+
+> `flutter run` oder eine normale Installation **löscht niemals** App-Daten.
+> Daten gehen nur beim **Deinstallieren** der App verloren. Eine neue Version
+> über die bestehende App installieren behält alle lokalen Benutzerdaten
+> (Wörter, Levels, Streaks).
+
+1. Auf dem Handy **Entwickleroptionen → Drahtloses Debugging** aktivieren (falls nötig zuerst `adb pair`):
+   adb pair 192.168.0.133:PORT
+2. Mit Adresse/Port verbinden:
+   adb connect 192.168.0.133:40917
+3. Eine **Debug**-Version über die aktuelle App installieren und starten (ohne Datenverlust):
+   flutter run -d 192.168.0.133:40917
+   # oder ein vorbereitetes Debug-APK installieren, ohne zu starten:
+   flutter build apk --debug
+   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+
+> Das Flag `-r` ersetzt die App und behält ihre Daten. Falls eine
+> „signature mismatch“-Meldung kommt, hat die installierte App eine andere
+> Signatur (z. B. eine Release-Version) — Deinstallieren wäre nötig, daher am
+> besten passende Build-Typen verwenden (Debug → Debug).
 
 ## Migration von Kivy zu Flutter
 

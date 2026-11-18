@@ -336,4 +336,47 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get wordsPerSession => 'Words per session';
+
+  @override
+  String get btnProgress => 'Learning Progress';
+
+  @override
+  String get titPageProgress => 'Learning Progress';
+
+  @override
+  String get infProgress =>
+      'Choose a category to view the progress of its words.';
+
+  @override
+  String get catFirstVerbs => 'First Verbs';
+
+  @override
+  String get catGrpAlltag => 'Everyday & Needs';
+
+  @override
+  String get catGrpMovement => 'Movement & Stay';
+
+  @override
+  String get catGrpLearning => 'Learning & Communication';
+
+  @override
+  String get catGrpWork => 'Action & Work';
+
+  @override
+  String get catGrpEnjoy => 'Enjoyment & Help';
+
+  @override
+  String get tensePast => 'Past';
+
+  @override
+  String get tensePresent => 'Present';
+
+  @override
+  String get tenseFuture => 'Future';
+
+  @override
+  String get colWord => 'Word';
+
+  @override
+  String get colLevel => 'Level';
 }

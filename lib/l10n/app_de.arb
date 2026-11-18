@@ -132,5 +132,19 @@
   "words10": "10 Wörter",
   "words3": "3 Wörter",
   "words5": "5 Wörter",
-  "wordsPerSession": "Wörter pro Sitzung"
+  "wordsPerSession": "Wörter pro Sitzung",
+  "btnProgress": "Lernfortschritt",
+  "titPageProgress": "Lernfortschritt",
+  "infProgress": "Wähle eine Kategorie, um den Fortschritt ihrer Wörter zu sehen.",
+  "catFirstVerbs": "Erste Verben",
+  "catGrpAlltag": "Alltag & Bedürfnisse",
+  "catGrpMovement": "Bewegung & Aufenthalt",
+  "catGrpLearning": "Lernen & Kommunikation",
+  "catGrpWork": "Handeln & Arbeit",
+  "catGrpEnjoy": "Genuss & Hilfe",
+  "tensePast": "Vergangenheit",
+  "tensePresent": "Gegenwart",
+  "tenseFuture": "Zukunft",
+  "colWord": "Wort",
+  "colLevel": "Level"
 }
