@@ -10,6 +10,7 @@ import '../widgets/app_widgets.dart';
 import '../dialogs/login_dialog.dart';
 import '../dialogs/create_user_dialog.dart';
 import '../dialogs/info_dialog.dart';
+import '../dialogs/confirm_dialog.dart';
 import '../l10n/app_localizations.dart';
 
 /// Main menu screen – 1:1 from startpage.py / startpage.kv.
@@ -93,6 +94,24 @@ class _StartScreenState extends State<StartScreen> {
     setState(() {});
   }
 
+  Future<void> _confirmRemoveCourse(String courseId) async {
+    final userState = context.read<UserState>();
+    final l10n = AppLocalizations.of(context);
+    final confirmed = await showConfirmDialog(
+      context,
+      title: l10n.titRemoveCourse,
+      message: l10n.msgRemoveCourse,
+      confirmText: l10n.confirm,
+      cancelText: l10n.chancel,
+    );
+    if (confirmed != true || !mounted) return;
+    await userState.removeCourse(courseId);
+    if (!mounted) return;
+    setState(() {
+      if (_selectedCourseId == courseId) _selectedCourseId = null;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final dataState = context.watch<DataState>();
@@ -124,8 +143,9 @@ class _StartScreenState extends State<StartScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // ── UserInfoBox (top, full width) ──
-                        if (dataState.appData.loggedUName.isNotEmpty)
+                        // ── UserInfoBox (top, full width) – nur Portrait.
+                        // Im Landscape ist sie Teil der 3-Spalten-Gruppe.
+                        if (isPortrait && dataState.appData.loggedUName.isNotEmpty)
                           Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppTheme.contentSpacing),
@@ -152,6 +172,7 @@ class _StartScreenState extends State<StartScreen> {
                                         ? null
                                         : id;
                               }),
+                              onRemove: _confirmRemoveCourse,
                             ),
                             const SizedBox(height: AppTheme.contentSpacing),
                             // ── Neue Kurse ──
@@ -187,6 +208,7 @@ class _StartScreenState extends State<StartScreen> {
                                               ? null
                                               : id;
                                     }),
+                                    onRemove: _confirmRemoveCourse,
                                   ),
                                 ),
                                 const SizedBox(width: AppTheme.contentSpacing),
@@ -275,6 +297,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
             return const SizedBox.shrink();
           }
           return Container(
+              width: double.infinity,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                   border: Border.all(color: AppTheme.grey3)),
@@ -292,6 +315,11 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
                             color: Colors.white70)),
                     Text(
                         '${l10n.catDueWords}: ${stats.dueCount}',
+                        style: const TextStyle(
+                            fontSize: AppTheme.smallFontSize,
+                            color: Colors.white70)),
+                    Text(
+                        '${l10n.catLearnedWords}: ${stats.learnedCount}',
                         style: const TextStyle(
                             fontSize: AppTheme.smallFontSize,
                             color: Colors.white70)),
@@ -324,8 +352,14 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
     final vq = context.read<VocabQueries>();
     final nc = await vq.getNewWordsCount(username);
     final dc = await vq.getWordsDueCount(username);
+    final mastered = await vq.getMasteredWords(username);
     final st = await vq.getDayStreak(username);
-    return _UserStats(newCount: nc, dueCount: dc, streak: st);
+    return _UserStats(
+      newCount: nc,
+      dueCount: dc,
+      learnedCount: mastered.length,
+      streak: st,
+    );
   }
 }
 
@@ -334,11 +368,13 @@ class _MyCoursesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
   final String? selectedId;
   final ValueChanged<String> onTap;
+  final ValueChanged<String> onRemove;
 
   const _MyCoursesSection({
     required this.courses,
     required this.selectedId,
     required this.onTap,
+    required this.onRemove,
   });
 
   @override
@@ -392,19 +428,21 @@ class _MyCoursesSection extends StatelessWidget {
                                 fontSize: AppTheme.infFontSize,
                                 color: Colors.white),
                           ),
-                          const SizedBox(height: 2),
-                          Text(
-                            c.category,
-                            style: const TextStyle(
-                                fontSize: AppTheme.smallFontSize,
-                                color: AppTheme.grey4),
-                          ),
                         ],
                       ),
                     ),
                     if (selected)
                       const Icon(Icons.check_circle,
                           color: AppTheme.colorPrimary, size: 20),
+                    IconButton(
+                      onPressed: () => onRemove(c.id),
+                      icon: const Icon(Icons.remove_circle_outline,
+                          color: AppTheme.grey4, size: 20),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(
+                          minWidth: 28, minHeight: 28),
+                      tooltip: l10n.titRemoveCourse,
+                    ),
                   ],
                 ),
               ),
@@ -583,13 +621,6 @@ class _NewLanguagesSection extends StatelessWidget {
                                 fontSize: AppTheme.infFontSize,
                                 color: Colors.white),
                           ),
-                          const SizedBox(height: 2),
-                          Text(
-                            c.category,
-                            style: const TextStyle(
-                                fontSize: AppTheme.smallFontSize,
-                                color: AppTheme.grey4),
-                          ),
                         ],
                       ),
                     ),
@@ -610,10 +641,12 @@ class _NewLanguagesSection extends StatelessWidget {
 class _UserStats {
   final int newCount;
   final int dueCount;
+  final int learnedCount;
   final DayStreak streak;
   const _UserStats({
     required this.newCount,
     required this.dueCount,
+    required this.learnedCount,
     required this.streak,
   });
 }

@@ -542,6 +542,12 @@ abstract class AppLocalizations {
   /// **'Mother tongue'**
   String get mLang;
 
+  /// No description provided for @msgRemoveCourse.
+  ///
+  /// In en, this message translates to:
+  /// **'If you remove this course, all related learning progress will be deleted.\n\nContinue?'**
+  String get msgRemoveCourse;
+
   /// No description provided for @msgWordLearned.
   ///
   /// In en, this message translates to:
@@ -661,6 +667,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Startpage'**
   String get titPageStart;
+
+  /// No description provided for @titRemoveCourse.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove course'**
+  String get titRemoveCourse;
 
   /// No description provided for @translationLabel.
   ///

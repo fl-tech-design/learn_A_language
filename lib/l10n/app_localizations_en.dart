@@ -236,6 +236,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mLang => 'Mother tongue';
 
   @override
+  String get msgRemoveCourse =>
+      'If you remove this course, all related learning progress will be deleted.\n\nContinue?';
+
+  @override
   String get msgWordLearned => 'Word learned! (Level 8 reached)';
 
   @override
@@ -299,6 +303,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get titPageStart => 'Startpage';
+
+  @override
+  String get titRemoveCourse => 'Remove course';
 
   @override
   String get translationLabel => 'Translation:';

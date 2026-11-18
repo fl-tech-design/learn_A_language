@@ -10,11 +10,14 @@ UserData _userData({
   String mLang = 'de',
   Map<String, VocabEntry> vocab = const {},
   List<String> selectedCourses = const [],
+  Map<String, int> progress = const {
+    'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0,
+  },
 }) =>
     UserData(
       uName: uName,
       mLang: mLang,
-      progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
+      progress: progress,
       learnedLanguages: const [],
       language: const {},
       vocab: vocab,
@@ -149,6 +152,90 @@ void main() {
       await state.addCourse('gibtEsNicht');
 
       expect(state.selectedCourses.map((c) => c.id), ['en_verben_a1']);
+    });
+  });
+
+  group('UserState.removeCourse', () {
+    test('entfernt einen Kurs aus der Auswahl', () async {
+      final um = FakeUserManager();
+      um.seed('alice', _userData(
+          selectedCourses: ['de_verben_a1', 'en_verben_a1']));
+      final state = UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      await state.removeCourse('de_verben_a1');
+
+      expect(state.selectedCourseIds, ['en_verben_a1']);
+      expect(um.lastSaved!.selectedCourses, ['en_verben_a1']);
+    });
+
+    test('setzt den Level-Fortschritt des entfernten Kurses zurück', () async {
+      final um = FakeUserManager();
+      um.seed('alice', _userData(
+            selectedCourses: ['en_verben_a1', 'en_verben_a2'],
+            progress: const {
+              'A1': 5,
+              'A2': 3,
+              'B1': 0,
+              'B2': 0,
+              'C1': 0,
+              'C2': 0,
+            },
+            vocab: {'k': _v('k')},
+          ));
+      final state = UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      await state.removeCourse('en_verben_a1');
+
+      expect(state.userData!.progress['A1'], 0);
+      // Vokabeln bleiben, weil noch ein Kurs derselben Sprache gewählt ist.
+      expect(state.userData!.vocab, isNotEmpty);
+    });
+
+    test('löscht Vokabeln, wenn der letzte Kurs der Sprache entfernt wird',
+        () async {
+      final um = FakeUserManager();
+      um.seed('alice',
+          _userData(selectedCourses: ['en_verben_a1'], vocab: {'k': _v('k')}));
+      final state = UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      await state.removeCourse('en_verben_a1');
+
+      expect(state.selectedCourseIds, isEmpty);
+      expect(state.userData!.vocab, isEmpty);
+    });
+
+    test('behält Vokabeln, wenn nur ein fremdsprachiger Kurs übrig bleibt',
+        () async {
+      final um = FakeUserManager();
+      um.seed('alice', _userData(
+            selectedCourses: ['de_verben_a1', 'en_verben_a1'],
+            vocab: {'k': _v('k')},
+          ));
+      final state = UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      // de_verben_a1 ist nicht die Zielsprache (mLang 'de' → Ziel 'en'),
+      // der Wortschatz gehört zur Zielsprache und bleibt erhalten.
+      await state.removeCourse('de_verben_a1');
+
+      expect(state.selectedCourseIds, ['en_verben_a1']);
+      expect(state.userData!.vocab, isNotEmpty);
+    });
+
+    test('ignoriert unbekannte und nicht gewählte Kurs-IDs', () async {
+      final um = FakeUserManager();
+      um.seed('alice', _userData(selectedCourses: ['en_verben_a1']));
+      final state = UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      await state.removeCourse('gibtEsNicht');
+      await state.removeCourse('en_verben_a2');
+
+      expect(state.selectedCourseIds, ['en_verben_a1']);
+      expect(um.saveCount, 0);
     });
   });
 }

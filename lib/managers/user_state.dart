@@ -143,6 +143,50 @@ class UserState extends ChangeNotifier {
     }
   }
 
+  /// Entfernt einen Kurs aus den gewählten Kursen inkl. zugehörigem
+  /// Lernfortschritt.
+  ///
+  /// Der Wortschatz wird sprachweit verwaltet (A1–C2 teilen sich dieselben
+  /// Wörter). Deshalb wird der Vokabel-Fortschritt einer Sprache nur gelöscht,
+  /// wenn dies der letzte gewählte Kurs dieser Sprache ist; sonst bliebe der
+  /// Fortschritt der verbleibenden Kurse unbrauchbar. Das Level-Progress des
+  /// entfernten Kurses wird in jedem Fall zurückgesetzt.
+  Future<void> removeCourse(String courseId) async {
+    final course = availableCourses[courseId];
+    if (course == null) return;
+    if (_userData == null) return;
+    final current = List<String>.from(selectedCourseIds);
+    if (!current.contains(courseId)) return;
+
+    current.remove(courseId);
+
+    final uname = _userData!.uName;
+    if (uname.isEmpty) return;
+
+    final userData = await _userManager.loadUserdata(uname);
+    if (userData == null) return;
+
+    // Level-Fortschritt des entfernten Kurses zurücksetzen.
+    final progress = Map<String, int>.from(userData.progress);
+    progress[course.level] = 0;
+
+    // Vokabeln nur löschen, wenn kein weiterer Kurs derselben Sprache bleibt.
+    final hasSameLangRemaining = current.any((id) =>
+        availableCourses[id]?.languageCode == course.languageCode);
+    final targetLang = userData.mLang == 'de' ? 'en' : 'de';
+    final clearVocab = !hasSameLangRemaining &&
+        course.languageCode == targetLang;
+
+    final updated = userData.copyWith(
+      selectedCourses: current,
+      progress: progress,
+      vocab: clearVocab ? const {} : userData.vocab,
+    );
+    await _userManager.saveUserdata(uname, updated);
+    await _loadUserData(uname);
+    notifyListeners();
+  }
+
   /// Prüft, ob für [course] Kurs-Inhalte (Wörter/Grammatik) verfügbar sind.
   /// Momentan nur A1; wird aktiv für alle Levels, sobald die Daten sortiert sind.
   bool courseHasContent(LanguageCourse course) {
