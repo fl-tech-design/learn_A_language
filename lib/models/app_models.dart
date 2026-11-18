@@ -420,12 +420,14 @@ const Map<String, LanguageCourse> availableCourses = {
 /// Categories are stored as data (not hardcoded in screens) so the grouping
 /// of the 30 verbs can be adjusted easily without touching the UI. Each
 /// category references its verb dict keys (file stem after the language
-/// prefix, e.g. 'be', 'be_allowed_to').
+/// prefix, e.g. 'to_be', 'to_be_allowed_to').
 class WordCategory {
   final String id;
   final int order;
+
   /// l10n key for the localized category title.
   final String titleKey;
+
   /// Verb dict keys belonging to this category.
   final List<String> verbKeys;
 
@@ -436,24 +438,91 @@ class WordCategory {
     required this.verbKeys,
   });
 
-  /// Whether a vocab entry key (e.g. 'be_present_0') belongs to this category.
+  /// Whether a vocab entry key (e.g. 'to_be_present_0') belongs to this
+  /// category.
   bool containsEntryKey(String entryKey) =>
       verbKeys.any((vk) => entryKey == vk || entryKey.startsWith('${vk}_'));
 }
 
+/// Liefert die [WordCategory] zur Id oder null.
+WordCategory? wordCategoryById(String? id) {
+  if (id == null) return null;
+  for (final c in courseWordCategories) {
+    if (c.id == id) return c;
+  }
+  return null;
+}
+
+/// Eine Sammlung (Überkategorie) von Word-Kategorien, z. B. "Verben".
+///
+/// Ermöglicht Hierarchien wie "Erste Verben" (eine direkt lernbare Kategorie)
+/// und "Weitere Verben" (mit 5 Unterkategorien). Später kommen weitere
+/// Sammlungen wie "Nomen" oder "Sätze" dazu.
+class WordCollection {
+  final String id;
+  final int order;
+
+  /// l10n key for the localized collection title.
+  final String titleKey;
+
+  /// Ids der enthaltenen [WordCategory]s.
+  final List<String> categoryIds;
+
+  const WordCollection({
+    required this.id,
+    required this.order,
+    required this.titleKey,
+    required this.categoryIds,
+  });
+
+  /// Die enthaltenen Word-Kategorien (in [categoryIds]-Reihenfolge).
+  List<WordCategory> get categories {
+    final result = <WordCategory>[];
+    for (final id in categoryIds) {
+      final c = wordCategoryById(id);
+      if (c != null) result.add(c);
+    }
+    return result;
+  }
+}
+
+/// Liefert die [WordCollection] zur Id oder null.
+WordCollection? wordCollectionById(String? id) {
+  if (id == null) return null;
+  for (final c in courseWordCollections) {
+    if (c.id == id) return c;
+  }
+  return null;
+}
+
+/// Navigations-Argumente für den Sammlungs-Screen ([CollectionScreen]).
+class CollectionScreenArgs {
+  final String collectionId;
+  final String mode; // 'learn' | 'progress'
+
+  const CollectionScreenArgs({
+    required this.collectionId,
+    required this.mode,
+  });
+}
+
 /// The six vocabulary categories covering all 30 A1 verbs.
+///
+/// "Erste Verben" enthält die 5 Modalverben (können, wollen, sollen, dürfen,
+/// müssen); die übrigen 25 Verben sind in 5 Gruppen à 5 Verben unter
+/// "Weitere Verben" gesammelt.
 const List<WordCategory> courseWordCategories = [
   WordCategory(
     id: 'erste_verben',
     order: 1,
     titleKey: 'catFirstVerbs',
-    verbKeys: ['to_be', 'to_have', 'to_want', 'to_should', 'to_be_allowed_to'],
+    verbKeys: ['to_can', 'to_want', 'to_should', 'to_be_allowed_to', 'to_must'],
   ),
   WordCategory(
     id: 'grp_alltag',
     order: 2,
     titleKey: 'catGrpAlltag',
-    verbKeys: ['to_can', 'to_must', 'to_need', 'to_like', 'to_see'],
+    verbKeys: ['to_be', 'to_have', 'to_need', 'to_like', 'to_see'],
   ),
   WordCategory(
     id: 'grp_bewegung',
@@ -478,6 +547,29 @@ const List<WordCategory> courseWordCategories = [
     order: 6,
     titleKey: 'catGrpEnjoy',
     verbKeys: ['to_open', 'to_close', 'to_eat', 'to_drink', 'to_help'],
+  ),
+];
+
+/// Die Lern-Sammlungen des "Lernen"-Screens: "Erste Verben" (direkt lernbar)
+/// und "Weitere Verben" (Sammlung mit 5 Unterkategorien).
+const List<WordCollection> courseWordCollections = [
+  WordCollection(
+    id: 'erste_verben',
+    order: 1,
+    titleKey: 'catFirstVerbs',
+    categoryIds: ['erste_verben'],
+  ),
+  WordCollection(
+    id: 'weitere_verben',
+    order: 2,
+    titleKey: 'catMoreVerbs',
+    categoryIds: [
+      'grp_alltag',
+      'grp_bewegung',
+      'grp_lernen',
+      'grp_arbeit',
+      'grp_genuss',
+    ],
   ),
 ];
 

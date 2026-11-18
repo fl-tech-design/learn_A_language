@@ -8,13 +8,15 @@ import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../l10n/app_localizations.dart';
-import 'progress_screen.dart' show wordCategoryTitle;
+import 'progress_screen.dart'
+    show categoryCountLabel, wordCollectionTitle;
 
 /// Learning category selection screen.
 ///
-/// Zeigt die gleichen Verb-Kategorien wie der Lernfortschritt. Ein Tipp auf
-/// eine Kategorie startet das Lernen dieser Gruppe. Darunter bleiben die
-/// klassischen Modi (Neue/Faellige/Gelernte Woerter) fuer den ganzen Kurs.
+/// Zeigt die Lern-Sammlungen ("Erste Verben" direkt lernbar, "Weitere Verben"
+/// mit 5 Unterkategorien). Ein Tipp öffnet den Kategorie- bzw.
+/// Sammlungs-Screen. In jeder Kategorie gibt es die Modi Neue/Fällige/Gelernte
+/// Wörter – jeweils nur mit den Daten dieser Kategorie.
 class LearningScreen extends StatefulWidget {
   const LearningScreen({super.key});
   @override
@@ -22,14 +24,12 @@ class LearningScreen extends StatefulWidget {
 }
 
 class _LearningScreenState extends State<LearningScreen> with RouteAware {
-  int _dueCount = 0;
   Map<String, CategoryCounts> _counts = {};
   bool _subscribed = false;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _refreshDueCount();
     _refreshCounts();
     if (!_subscribed) {
       final route = ModalRoute.of(context);
@@ -42,7 +42,6 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
 
   @override
   void didPopNext() {
-    _refreshDueCount();
     _refreshCounts();
   }
 
@@ -54,14 +53,6 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     super.dispose();
   }
 
-  Future<void> _refreshDueCount() async {
-    final uname = context.read<DataState>().appData.loggedUName;
-    if (uname.isNotEmpty) {
-      final count = await context.read<VocabQueries>().getWordsDueCount(uname);
-      if (mounted) setState(() => _dueCount = count);
-    }
-  }
-
   Future<void> _refreshCounts() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
@@ -69,32 +60,45 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     if (mounted) setState(() => _counts = counts);
   }
 
-  String _countLabel(AppLocalizations l10n, CategoryCounts? c) {
-    if (c == null || !c.hasWords) return '';
-    return '${c.newCount} ${l10n.labNewShort} · '
-        '${c.dueCount} ${l10n.labDueShort}';
+  /// Aggregiert die Zähler aller Kategorien einer Sammlung.
+  CategoryCounts _sumCounts(WordCollection collection) {
+    var total = 0;
+    var n = 0;
+    var d = 0;
+    var l = 0;
+    for (final catId in collection.categoryIds) {
+      final c = _counts[catId];
+      if (c == null) continue;
+      total += c.total;
+      n += c.newCount;
+      d += c.dueCount;
+      l += c.learnedCount;
+    }
+    return CategoryCounts(
+      total: total,
+      newCount: n,
+      dueCount: d,
+      learnedCount: l,
+    );
   }
 
-  /// Startet das Lernen der neuen Woerter einer Kategorie.
-  void _startLearning(WordCategory category) {
-    final nav = context.read<NavigationState>();
-    nav.setWordMode('new');
-    nav.setSelectedCategoryId(category.id);
-    Navigator.of(context).pushNamed('/word');
-  }
-
-  /// Startet das Lernen der neuen Woerter des ganzen Kurses.
-  void _startAllNew() {
-    final nav = context.read<NavigationState>();
-    nav.setWordMode('new');
-    nav.setSelectedCategoryId(null);
-    Navigator.of(context).pushNamed('/word');
+  /// Öffnet eine Sammlung: "Erste Verben" direkt als Kategorie, "Weitere
+  /// Verben" als Unterkategorien-Liste.
+  void _openCollection(WordCollection collection) {
+    if (collection.categories.length == 1) {
+      Navigator.of(context)
+          .pushNamed('/category', arguments: collection.categoryIds.first);
+    } else {
+      Navigator.of(context).pushNamed('/collection',
+          arguments: CollectionScreenArgs(
+              collectionId: collection.id, mode: 'learn'));
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final categories = courseWordCategories.toList()
+    final collections = courseWordCollections.toList()
       ..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
@@ -114,7 +118,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                           style: const TextStyle(
                               fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: AppTheme.contentSpacing),
-                      for (final cat in categories)
+                      for (final collection in collections)
                         Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppTheme.contentSpacing),
@@ -122,7 +126,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                 height: 50,
                                 width: double.infinity,
                                 child: OutlinedButton(
-                                    onPressed: () => _startLearning(cat),
+                                    onPressed: () =>
+                                        _openCollection(collection),
                                     child: Padding(
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 12),
@@ -130,7 +135,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                           children: [
                                             Expanded(
                                               child: Text(
-                                                  wordCategoryTitle(l10n, cat),
+                                                  wordCollectionTitle(
+                                                      l10n, collection),
                                                   textAlign:
                                                       TextAlign.center,
                                                   style: const TextStyle(
@@ -138,8 +144,11 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                                           .btnFontSize)),
                                             ),
                                             Text(
-                                              _countLabel(
-                                                  l10n, _counts[cat.id]),
+                                              _sumCounts(collection).hasWords
+                                                  ? categoryCountLabel(
+                                                      l10n,
+                                                      _sumCounts(collection))
+                                                  : '',
                                               style: const TextStyle(
                                                   fontSize:
                                                       AppTheme.smallFontSize,
@@ -147,40 +156,6 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                             ),
                                           ],
                                         ))))),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: OutlinedButton(
-                              onPressed: _startAllNew,
-                              child: Text(l10n.btnNewWords,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize)))),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: OutlinedButton(
-                              onPressed: _dueCount == 0
-                                  ? null
-                                  : () =>
-                                      Navigator.of(context).pushNamed('/dueword'),
-                              child: Text(
-                                  '${l10n.catDueWords} ($_dueCount)',
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize)))),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: OutlinedButton(
-                              onPressed: () {
-                                context.read<NavigationState>().setWordMode('learned');
-                                Navigator.of(context).pushNamed('/word');
-                              },
-                              child: Text(l10n.catLearnedWords,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize)))),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 50,

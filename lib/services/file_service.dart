@@ -34,7 +34,7 @@ class FileServiceImpl implements FileService {
   Future<void> initialize() async {
     final dir = await appDir;
     final flagFile = File('$dir/.initialized');
-    if (await flagFile.exists()) return;
+    final firstRun = !await flagFile.exists();
 
     final files = <String>[
       'data_base/base_data.json',
@@ -102,9 +102,13 @@ class FileServiceImpl implements FileService {
     ];
 
     for (final rel in files) {
+      // Bei bestehenden Installationen werden nur die Wörterbücher aus dem
+      // Bundle synchronisiert (Inhalts-Assets, z. B. neues Listen-Schema).
+      // App-Daten und User-Dateien bleiben unberührt, damit kein Fortschritt
+      // verloren geht.
+      if (!firstRun && !rel.startsWith('language_dict/')) continue;
       final assetPath = 'assets/$rel';
       final targetFile = File('$dir/$rel');
-      if (await targetFile.exists()) continue;
       try {
         final bytes = await rootBundle.load(assetPath);
         final parent = targetFile.parent;
@@ -115,7 +119,7 @@ class FileServiceImpl implements FileService {
       } catch (_) {}
     }
 
-    await flagFile.create();
+    if (firstRun) await flagFile.create();
   }
 
   @override

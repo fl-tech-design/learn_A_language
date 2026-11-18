@@ -72,6 +72,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get catLearnedWords => 'Learned words';
 
   @override
+  String get catMoreVerbs => 'More Verbs';
+
+  @override
   String get catNewLang => 'Discover new languages';
 
   @override
@@ -79,6 +82,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get catSelect => 'Select a category';
+
+  @override
+  String get catSelectSubcategory => 'Select a subcategory';
 
   @override
   String get chancel => 'chancel';
@@ -385,4 +391,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get labDueShort => 'due';
+
+  @override
+  String get labLearnedShort => 'learned';
 }

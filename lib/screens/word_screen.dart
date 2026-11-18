@@ -43,13 +43,16 @@ class _WordScreenState extends State<WordScreen> {
     if (mode == 'new') {
       final cat = _categoryById(navState.selectedCategoryId);
       if (cat != null) {
-        words = await vq.getGroupLearnWords(uname, cat);
+        words = await vq.getGroupNewWords(uname, cat, limit: limit);
       } else {
         words = await vq.getNewWords(uname, limit: limit);
       }
       _streak = await vq.getDayStreak(uname);
     } else {
-      words = await vq.getMasteredWords(uname);
+      final cat = _categoryById(navState.selectedCategoryId);
+      words = cat != null
+          ? await vq.getGroupLearnedWords(uname, cat)
+          : await vq.getMasteredWords(uname);
     }
     if (mounted) {
       setState(() {
@@ -80,12 +83,8 @@ class _WordScreenState extends State<WordScreen> {
           if (mounted) setState(() => _streak = s);
         });
         if (_index + 1 >= _words.length) {
-          // Ende einer Kategorie-Sitzung: sauber zurückspringen.
-          if (context.read<NavigationState>().selectedCategoryId != null) {
-            Navigator.of(context).pop();
-          } else {
-            _showLimitDialog();
-          }
+          // Sitzungs-Ende: weiter mit dem nächsten Block oder beenden.
+          _showLimitDialog();
           return;
         }
         setState(() {

@@ -180,6 +180,29 @@ void main() {
       await mgr.initVocabForUser('test', {});
       expect(userMgr.saveCount, 1);
     });
+
+    test('ergänzt fehlende Kurs-Wörter und behält bestehende Einträge',
+        () async {
+      final userMgr = FakeUserManager();
+      final dict = _dictMix();
+      final fs = FakeFileService(languageDicts: dict.$1);
+      final mgr = VocabManagerImpl(userMgr, fs);
+
+      // Nur ein Eintrag vorhanden; die übrigen 5 des Mini-Dicts fehlen.
+      await userMgr.saveUserdata('test', _userData('test', {
+        'to_go_present_0': _entry(level: 0, status: 'new'),
+      }));
+      userMgr.saveCount = 0;
+
+      await mgr.initVocabForUser('test', {});
+
+      final saved = userMgr.lastSaved!;
+      expect(saved.vocab.length, 6);
+      expect(saved.vocab.containsKey('to_go_present_0'), true);
+      expect(saved.vocab['to_go_present_1']!.level, 0);
+      expect(saved.vocab['to_go_present_1']!.status, 'new');
+      expect(userMgr.saveCount, 1);
+    });
   });
 
   // ── Test (c) – migrateVocabForUser idempotent ─────────────────────
@@ -200,6 +223,33 @@ void main() {
 
       await mgr.migrateVocabForUser('test');
       expect(userMgr.saveCount, 0);
+    });
+
+    test('mappt alte Keys (Kivy-Schema) auf neues Schema und erhält Fortschritt',
+        () async {
+      final userMgr = FakeUserManager();
+      final dict = _dictMix();
+      final fs = FakeFileService(languageDicts: dict.$1);
+      final mgr = VocabManagerImpl(userMgr, fs);
+
+      // Alter Key aus der Kivy-Ära. Die _entry-Defaults (word 'gehen',
+      // translation 'go', status 'seen') entsprechen genau dem
+      // Wörterbuch-Eintrag 'to_go_present_0' (en: 'gehen', de: 'go').
+      await userMgr.saveUserdata('test', _userData('test', {
+        'i_want': _entry(level: 3, reviewDue: '2026-01-04'),
+      }));
+      userMgr.saveCount = 0;
+
+      await mgr.migrateVocabForUser('test');
+
+      final saved = userMgr.lastSaved!;
+      expect(saved.vocab.containsKey('i_want'), false);
+      expect(saved.vocab.containsKey('to_go_present_0'), true);
+      final ve = saved.vocab['to_go_present_0']!;
+      expect(ve.level, 3);
+      expect(ve.status, 'seen');
+      expect(ve.reviewDue, '2026-01-04');
+      expect(userMgr.saveCount, 1);
     });
 
     test('detektiert word-Update aus Dict und speichert', () async {

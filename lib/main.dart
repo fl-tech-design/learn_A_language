@@ -14,6 +14,8 @@ import 'theme/app_theme.dart';
 import 'screens/loading_screen.dart';
 import 'screens/start_screen.dart';
 import 'screens/learning_screen.dart';
+import 'screens/category_screen.dart';
+import 'screens/collection_screen.dart';
 import 'screens/word_screen.dart';
 import 'screens/due_word_screen.dart';
 import 'screens/game_choose_screen.dart';
@@ -83,6 +85,8 @@ class LearnALanguageApp extends StatelessWidget {
         '/': (context) => const LoadingScreen(),
         '/start': (context) => const StartScreen(),
         '/learning': (context) => const LearningScreen(),
+        '/category': (context) => const CategoryScreen(),
+        '/collection': (context) => const CollectionScreen(),
         '/word': (context) => const WordScreen(),
         '/dueword': (context) => const DueWordScreen(),
         '/gameselect': (context) => const TurboLevelSelectScreen(),

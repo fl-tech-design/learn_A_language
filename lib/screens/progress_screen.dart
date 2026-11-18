@@ -25,19 +25,39 @@ String wordCategoryTitle(AppLocalizations l10n, WordCategory category) {
   }
 }
 
-/// Lernfortschritt – Kategorie-Übersicht.
+/// Liefert den lokalisierten Titel einer [WordCollection].
+String wordCollectionTitle(AppLocalizations l10n, WordCollection collection) {
+  switch (collection.titleKey) {
+    case 'catFirstVerbs':
+      return l10n.catFirstVerbs;
+    case 'catMoreVerbs':
+      return l10n.catMoreVerbs;
+    default:
+      return collection.id;
+  }
+}
+
+/// Kurz-Label mit den Zählern einer Kategorie, z. B. "3 neu · 2 fällig ·
+/// 1 gelernt".
+String categoryCountLabel(AppLocalizations l10n, CategoryCounts c) {
+  return '${c.newCount} ${l10n.labNewShort} · '
+      '${c.dueCount} ${l10n.labDueShort} · '
+      '${c.learnedCount} ${l10n.labLearnedShort}';
+}
+
+/// Lernfortschritt – Sammlungs-Übersicht.
 ///
-/// Gleiches Layout wie der Lernen-Screen: Zeigt die Word-Kategorien eines
-/// Kurses. Ein Tipp auf eine Kategorie öffnet die read-only Wortliste mit den
-/// aktuellen Levels (siehe ProgressGroupScreen).
+/// Gleiches Layout wie der Lernen-Screen: Zeigt die Lern-Sammlungen ("Erste
+/// Verben" direkt, "Weitere Verben" mit Unterkategorien). Ein Tipp öffnet die
+/// read-only Fortschritts-Gruppe bzw. den Unterkategorie-Screen.
 class ProgressScreen extends StatelessWidget {
   const ProgressScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final categories =
-        courseWordCategories.toList()..sort((a, b) => a.order.compareTo(b.order));
+    final collections =
+        courseWordCollections.toList()..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
       body: Column(
@@ -63,7 +83,7 @@ class ProgressScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    for (final cat in categories)
+                    for (final collection in collections)
                       Padding(
                         padding: const EdgeInsets.only(
                             bottom: AppTheme.contentSpacing),
@@ -71,11 +91,22 @@ class ProgressScreen extends StatelessWidget {
                           height: 50,
                           width: double.infinity,
                           child: OutlinedButton(
-                            onPressed: () => Navigator.of(context).pushNamed(
-                                '/progress_group',
-                                arguments: cat.id),
+                            onPressed: () {
+                              if (collection.categories.length == 1) {
+                                Navigator.of(context).pushNamed(
+                                    '/progress_group',
+                                    arguments:
+                                        collection.categoryIds.first);
+                              } else {
+                                Navigator.of(context).pushNamed(
+                                    '/collection',
+                                    arguments: CollectionScreenArgs(
+                                        collectionId: collection.id,
+                                        mode: 'progress'));
+                              }
+                            },
                             child: Text(
-                              wordCategoryTitle(l10n, cat),
+                              wordCollectionTitle(l10n, collection),
                               textAlign: TextAlign.center,
                               style: const TextStyle(
                                   fontSize: AppTheme.btnFontSize),

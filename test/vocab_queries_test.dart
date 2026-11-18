@@ -359,11 +359,40 @@ void main() {
       expect(counts.values.where((n) => n == 1).length, 30);
     });
 
+    test('courseWordCollections: Erste Verben + Weitere Verben mit 5 Gruppen',
+        () {
+      expect(courseWordCollections.length, 2);
+
+      final erste = courseWordCollections
+          .firstWhere((c) => c.id == 'erste_verben');
+      expect(erste.categories.length, 1);
+      expect(
+        erste.categories.first.verbKeys,
+        ['to_can', 'to_want', 'to_should', 'to_be_allowed_to', 'to_must'],
+      );
+
+      final weitere = courseWordCollections
+          .firstWhere((c) => c.id == 'weitere_verben');
+      expect(weitere.categories.length, 5);
+
+      // Alle 30 Verben genau einmal über beide Sammlungen, 5 Gruppen à 5.
+      final all = <String>[];
+      for (final col in courseWordCollections) {
+        for (final c in col.categories) {
+          expect(c.verbKeys.length, 5);
+          all.addAll(c.verbKeys);
+        }
+      }
+      expect(all.length, 30);
+      expect(all.toSet().length, 30);
+    });
+
     test('containsEntryKey + Key-Helfer', () {
       final cat = courseWordCategories.firstWhere((c) => c.id == 'erste_verben');
-      expect(cat.containsEntryKey('to_be_present_0'), true);
+      expect(cat.containsEntryKey('to_can_present_0'), true);
+      expect(cat.containsEntryKey('to_must_present_0'), true);
       expect(cat.containsEntryKey('to_be_allowed_to_present_0'), true);
-      expect(cat.containsEntryKey('to_can_present_0'), false);
+      expect(cat.containsEntryKey('to_be_present_0'), false);
 
       expect(vocabVerbKey('to_be_allowed_to_present_0'), 'to_be_allowed_to');
       expect(vocabTenseKey('to_be_allowed_to_present_0'), 'present');
@@ -431,6 +460,70 @@ void main() {
       expect(learn.map((e) => e.key), ['to_be_past_0', 'to_be_present_0']);
     });
 
+    test('getGroupDueWords filtert fällige Wörter pro Kategorie', () async {
+      const cat = WordCategory(
+        id: 'test4',
+        order: 1,
+        titleKey: 'catFirstVerbs',
+        verbKeys: ['to_be', 'to_have'],
+      );
+      final now = DateTime.now();
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_past_0': _vocab(
+            'to_be_past_0',
+            level: 1,
+            status: 'seen',
+            reviewDue: fmt(now.subtract(const Duration(days: 1))),
+          ),
+          'to_have_present_0': _vocab(
+            'to_have_present_0',
+            level: 2,
+            status: 'seen',
+            reviewDue: fmt(now.add(const Duration(days: 1))),
+          ),
+          'to_be_future_0': _vocab('to_be_future_0'), // neu -> nicht fällig
+          'to_go_present_0': _vocab(
+            'to_go_present_0',
+            level: 1,
+            status: 'seen',
+            reviewDue: fmt(now.subtract(const Duration(days: 1))),
+          ), // andere Kategorie -> nicht enthalten
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final due = await queries.getGroupDueWords('alice', cat);
+      expect(due.map((e) => e.key), ['to_be_past_0']);
+    });
+
+    test('getGroupLearnedWords liefert nur Level-8-Wörter der Kategorie',
+        () async {
+      const cat = WordCategory(
+        id: 'test5',
+        order: 1,
+        titleKey: 'catFirstVerbs',
+        verbKeys: ['to_be'],
+      );
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_present_0':
+              _vocab('to_be_present_0', level: 8, status: 'seen'),
+          'to_be_past_0': _vocab('to_be_past_0', level: 7, status: 'seen'),
+          'to_go_present_0':
+              _vocab('to_go_present_0', level: 8, status: 'seen'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final learned = await queries.getGroupLearnedWords('alice', cat);
+      expect(learned.map((e) => e.key), ['to_be_present_0']);
+    });
+
     test('getCategoryCounts zählt neu/fällig/gelernt/gesamt', () async {
       final cat =
           courseWordCategories.firstWhere((c) => c.id == 'erste_verben');
@@ -439,14 +532,14 @@ void main() {
       fake.seed(
         'alice',
         _userData('alice', {
-          'to_be_present_0': _vocab('to_be_present_0'),
-          'to_have_past_0': _vocab(
-            'to_have_past_0',
+          'to_can_present_0': _vocab('to_can_present_0'),
+          'to_want_past_0': _vocab(
+            'to_want_past_0',
             level: 2,
             status: 'seen',
             reviewDue: fmt(now.subtract(const Duration(days: 1))),
           ),
-          'to_want_present_0': _vocab('to_want_present_0',
+          'to_must_present_0': _vocab('to_must_present_0',
               level: 8, status: 'seen'),
           'to_go_present_0': _vocab('to_go_present_0'),
         }),

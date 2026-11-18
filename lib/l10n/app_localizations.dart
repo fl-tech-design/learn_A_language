@@ -224,6 +224,12 @@ abstract class AppLocalizations {
   /// **'Learned words'**
   String get catLearnedWords;
 
+  /// No description provided for @catMoreVerbs.
+  ///
+  /// In en, this message translates to:
+  /// **'More Verbs'**
+  String get catMoreVerbs;
+
   /// No description provided for @catNewLang.
   ///
   /// In en, this message translates to:
@@ -241,6 +247,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Select a category'**
   String get catSelect;
+
+  /// No description provided for @catSelectSubcategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a subcategory'**
+  String get catSelectSubcategory;
 
   /// No description provided for @chancel.
   ///
@@ -829,6 +841,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'due'**
   String get labDueShort;
+
+  /// No description provided for @labLearnedShort.
+  ///
+  /// In en, this message translates to:
+  /// **'learned'**
+  String get labLearnedShort;
 }
 
 class _AppLocalizationsDelegate

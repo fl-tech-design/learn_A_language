@@ -21,9 +21,11 @@
   "btnTurbo": "Turbo",
   "catDueWords": "Due words",
   "catLearnedWords": "Learned words",
+  "catMoreVerbs": "More Verbs",
   "catNewLang": "Discover new languages",
   "catNewWords": "New words",
   "catSelect": "Select a category",
+  "catSelectSubcategory": "Select a subcategory",
   "chancel": "chancel",
   "close": "close",
   "confirm": "confirm",
@@ -148,5 +150,6 @@
   "colWord": "Word",
   "colLevel": "Level",
   "labNewShort": "new",
-  "labDueShort": "due"
+  "labDueShort": "due",
+  "labLearnedShort": "learned"
 }

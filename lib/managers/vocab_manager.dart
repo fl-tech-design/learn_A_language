@@ -115,12 +115,11 @@ class VocabManagerImpl implements VocabManager {
     final ud = await _userManager.loadUserdata(username);
     if (ud == null) return;
 
-    // Early-exit: vocab already initialized
-    if (ud.vocab.isNotEmpty) return;
-
     var langDict = languageDict;
     if (langDict.isEmpty) {
-      langDict = await loadLanguageDictFromDir(ud.mLang);
+      // Zielsprache des Users (Gegensprache zur Muttersprache).
+      final targetLang = ud.mLang == 'de' ? 'en' : 'de';
+      langDict = await loadLanguageDictFromDir(targetLang);
       if (langDict.isEmpty) return;
     }
 
@@ -138,8 +137,12 @@ class VocabManagerImpl implements VocabManager {
       }
     }
 
-    final vocab = <String, VocabEntry>{};
+    // Bestehende Einträge behalten, fehlende Kurs-Wörter als neue Wörter
+    // ergänzen (idempotent; ersetzt das frühere early-exit bei vollem vocab).
+    var changed = false;
+    final vocab = Map<String, VocabEntry>.from(ud.vocab);
     for (final tw in targetWords) {
+      if (vocab.containsKey(tw.key)) continue;
       vocab[tw.key] = VocabEntry(
         key: tw.key,
         word: tw.translation,
@@ -147,9 +150,12 @@ class VocabManagerImpl implements VocabManager {
         examples: tw.examples,
         examplesNative: nativeExamples[tw.key] ?? [''],
       );
+      changed = true;
     }
 
-    await _userManager.saveUserdata(username, ud.copyWith(vocab: vocab));
+    if (changed) {
+      await _userManager.saveUserdata(username, ud.copyWith(vocab: vocab));
+    }
   }
 
   @override
@@ -163,10 +169,12 @@ class VocabManagerImpl implements VocabManager {
     final targetLang = ud.mLang == 'de' ? 'en' : 'de';
 
     final targetWordsMap = <String, String>{};
+    final targetWordObjects = <String, LangDictWord>{};
     final targetDict = await loadLanguageDictFromDir(targetLang);
     if (targetDict.isNotEmpty) {
       for (final tw in extractAllWordsFromLanguageDict(targetDict)) {
         targetWordsMap[tw.key] = tw.translation;
+        targetWordObjects[tw.key] = tw;
       }
     }
 
@@ -179,6 +187,47 @@ class VocabManagerImpl implements VocabManager {
           nativeWords[nw.key] = nw.translation;
           nativeWordsMap[nw.key] = nw;
         }
+      }
+    }
+
+    // Pass 0: Alte Key-Formate (z. B. 'i_want', 'he_she_it_is' aus der
+    // Kivy-Ära) auf das neue Schema ('<verb>_<tense>_<person>') mappen.
+    // Zuordnung über Wort + Übersetzung gegen das aktuelle Wörterbuch;
+    // Level/Status/Fälligkeitsdaten der Bestands-Einträge bleiben erhalten.
+    if (targetWordsMap.isNotEmpty) {
+      final wordToKeys = <String, Set<String>>{};
+      for (final e in targetWordsMap.entries) {
+        wordToKeys.putIfAbsent(e.value, () => <String>{}).add(e.key);
+      }
+      final transToKeys = <String, Set<String>>{};
+      for (final e in nativeWords.entries) {
+        transToKeys.putIfAbsent(e.value, () => <String>{}).add(e.key);
+      }
+
+      for (final oldKey in vocabMap.keys.toList()) {
+        if (targetWordsMap.containsKey(oldKey)) continue; // bereits neues Schema
+        final ve = vocabMap[oldKey]!;
+        final wordMatches = wordToKeys[ve.word] ?? const <String>{};
+        final transMatches = transToKeys[ve.translation] ?? const <String>{};
+        final candidates = wordMatches.intersection(transMatches);
+        if (candidates.length != 1) continue; // nicht eindeutig -> behalten
+        final newKey = candidates.first;
+        final tw = targetWordObjects[newKey];
+        final nw = nativeWordsMap[newKey];
+        final examples =
+            (tw != null && tw.examples.isNotEmpty) ? tw.examples : ve.examples;
+        final examplesNative = (nw != null && nw.examples.isNotEmpty)
+            ? nw.examples
+            : ve.examplesNative;
+        vocabMap.remove(oldKey);
+        vocabMap[newKey] = ve.copyWith(
+          key: newKey,
+          word: tw?.translation ?? ve.word,
+          translation: nativeWords[newKey] ?? ve.translation,
+          examples: examples,
+          examplesNative: examplesNative,
+        );
+        changed = true;
       }
     }
 

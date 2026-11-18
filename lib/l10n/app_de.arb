@@ -21,9 +21,11 @@
   "btnTurbo": "Turbo",
   "catDueWords": "Fällige Wörter",
   "catLearnedWords": "Gelernte Wörter",
+  "catMoreVerbs": "Weitere Verben",
   "catNewLang": "Neue Sprachen entdecken",
   "catNewWords": "Neue Wörter",
   "catSelect": "Wähle eine Kategorie",
+  "catSelectSubcategory": "Wähle eine Unterkategorie",
   "chancel": "abbrechen",
   "close": "schliessen",
   "confirm": "bestätigen",
@@ -148,5 +150,6 @@
   "colWord": "Wort",
   "colLevel": "Level",
   "labNewShort": "neu",
-  "labDueShort": "fällig"
+  "labDueShort": "fällig",
+  "labLearnedShort": "gelernt"
 }

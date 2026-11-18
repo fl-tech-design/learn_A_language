@@ -26,6 +26,10 @@ abstract class VocabQueries {
   Future<Map<String, CategoryCounts>> getCategoryCounts(String username);
   Future<List<VocabEntry>> getGroupLearnWords(
       String username, WordCategory category);
+  Future<List<VocabEntry>> getGroupDueWords(
+      String username, WordCategory category);
+  Future<List<VocabEntry>> getGroupLearnedWords(
+      String username, WordCategory category);
   Future<DayStreak> getDayStreak(String username);
   Future<void> updateDayStreak(String username);
   Future<AnswerCheckResult> checkWordAnswer(
@@ -210,6 +214,35 @@ class VocabQueriesImpl implements VocabQueries {
     due.sort((a, b) => _compareEntries(category, a, b));
     fresh.sort((a, b) => _compareEntries(category, a, b));
     return [...due, ...fresh];
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupDueWords(
+      String username, WordCategory category) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final today = DateTime.now();
+    final due = <VocabEntry>[];
+    for (final ve in ud.vocab.values) {
+      if (!category.containsEntryKey(ve.key)) continue;
+      if (ve.level == 8) continue;
+      if (ve.status == 'new') continue;
+      if (_isDue(ve, today)) due.add(ve);
+    }
+    due.sort((a, b) => _compareEntries(category, a, b));
+    return due;
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupLearnedWords(
+      String username, WordCategory category) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final learned = ud.vocab.values
+        .where((ve) => ve.level >= 8 && category.containsEntryKey(ve.key))
+        .toList();
+    learned.sort((a, b) => _compareEntries(category, a, b));
+    return learned;
   }
 
   bool _isDue(VocabEntry ve, DateTime today) {
