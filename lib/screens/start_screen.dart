@@ -23,6 +23,8 @@ class StartScreen extends StatefulWidget {
 class _StartScreenState extends State<StartScreen> {
   bool _checked = false;
   String? _selectedCourseId;
+  final Set<String> _expandedMyLanguages = {};
+  final Set<String> _expandedNewLanguages = {};
 
   @override
   void didChangeDependencies() {
@@ -166,6 +168,7 @@ class _StartScreenState extends State<StartScreen> {
                             _MyCoursesSection(
                               courses: courses,
                               selectedId: _selectedCourseId,
+                              expandedLanguages: _expandedMyLanguages,
                               onTap: (id) => setState(() {
                                 _selectedCourseId =
                                     _selectedCourseId == id
@@ -173,15 +176,26 @@ class _StartScreenState extends State<StartScreen> {
                                         : id;
                               }),
                               onRemove: _confirmRemoveCourse,
+                              onToggleLanguage: (code) => setState(() {
+                                if (!_expandedMyLanguages.add(code)) {
+                                  _expandedMyLanguages.remove(code);
+                                }
+                              }),
                             ),
                             const SizedBox(height: AppTheme.contentSpacing),
                             // ── Neue Kurse ──
                             _NewLanguagesSection(
                               courses: newCourses,
+                              expandedLanguages: _expandedNewLanguages,
                               onAdd: (id) async {
                                 await userState.addCourse(id);
                                 if (mounted) setState(() {});
                               },
+                              onToggleLanguage: (code) => setState(() {
+                                if (!_expandedNewLanguages.add(code)) {
+                                  _expandedNewLanguages.remove(code);
+                                }
+                              }),
                             ),
                           ] else ...[
                             // Landscape: UserInfoBox + Meine Kurse + Neue
@@ -202,6 +216,7 @@ class _StartScreenState extends State<StartScreen> {
                                   child: _MyCoursesSection(
                                     courses: courses,
                                     selectedId: _selectedCourseId,
+                                    expandedLanguages: _expandedMyLanguages,
                                     onTap: (id) => setState(() {
                                       _selectedCourseId =
                                           _selectedCourseId == id
@@ -209,6 +224,11 @@ class _StartScreenState extends State<StartScreen> {
                                               : id;
                                     }),
                                     onRemove: _confirmRemoveCourse,
+                                    onToggleLanguage: (code) => setState(() {
+                                      if (!_expandedMyLanguages.add(code)) {
+                                        _expandedMyLanguages.remove(code);
+                                      }
+                                    }),
                                   ),
                                 ),
                                 const SizedBox(width: AppTheme.contentSpacing),
@@ -216,10 +236,16 @@ class _StartScreenState extends State<StartScreen> {
                                   flex: 5,
                                   child: _NewLanguagesSection(
                                     courses: newCourses,
+                                    expandedLanguages: _expandedNewLanguages,
                                     onAdd: (id) async {
                                       await userState.addCourse(id);
                                       if (mounted) setState(() {});
                                     },
+                                    onToggleLanguage: (code) => setState(() {
+                                      if (!_expandedNewLanguages.add(code)) {
+                                        _expandedNewLanguages.remove(code);
+                                      }
+                                    }),
                                   ),
                                 ),
                               ],
@@ -386,18 +412,22 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
   }
 }
 
-/// Vertical list of the user's courses (portrait) or side-by-side card (landscape).
+/// Vertical list of the user's courses, grouped by language with foldable levels.
 class _MyCoursesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
   final String? selectedId;
+  final Set<String> expandedLanguages;
   final ValueChanged<String> onTap;
   final ValueChanged<String> onRemove;
+  final ValueChanged<String> onToggleLanguage;
 
   const _MyCoursesSection({
     required this.courses,
     required this.selectedId,
+    required this.expandedLanguages,
     required this.onTap,
     required this.onRemove,
+    required this.onToggleLanguage,
   });
 
   @override
@@ -413,6 +443,7 @@ class _MyCoursesSection extends StatelessWidget {
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
     }
+    final grouped = _groupByLanguage(courses);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -421,59 +452,109 @@ class _MyCoursesSection extends StatelessWidget {
                 fontSize: AppTheme.lblFontSize,
                 color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
-        ...courses.map((c) {
-          final selected = c.id == selectedId;
+        ...grouped.entries.map((entry) {
+          final code = entry.key;
+          final langCourses = entry.value;
+          final expanded = expandedLanguages.contains(code);
+          final first = langCourses.first;
           return Padding(
             padding: const EdgeInsets.only(bottom: 8),
-            child: GestureDetector(
-              onTap: () => onTap(c.id),
-              child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: selected ? AppTheme.colorPrimary : AppTheme.grey3,
-                    width: selected ? 2 : 1,
+            child: Column(children: [
+              // ── Language header ──
+              GestureDetector(
+                onTap: () => onToggleLanguage(code),
+                child: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: AppTheme.grey3),
+                    borderRadius: BorderRadius.circular(6),
                   ),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                padding: const EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Image.asset(c.flagAsset, width: 32, height: 20),
+                  padding: const EdgeInsets.all(10),
+                  child: Row(children: [
+                    Image.asset(first.flagAsset, width: 32, height: 20),
                     const SizedBox(width: 8),
                     Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                      child: Text(
+                        first.languageName,
+                        style: const TextStyle(
+                            fontSize: AppTheme.infFontSize,
+                            color: Colors.white),
+                      ),
+                    ),
+                    if (expanded)
+                      const Icon(Icons.expand_more,
+                          color: AppTheme.grey4, size: 20),
+                    if (!expanded)
+                      const Icon(Icons.chevron_right,
+                          color: AppTheme.grey4, size: 20),
+                  ]),
+                ),
+              ),
+              // ── Sub-levels (only when expanded) ──
+              if (expanded) ...[
+                const SizedBox(height: 4),
+                ...langCourses.map((c) {
+                  final selected = c.id == selectedId;
+                  return Padding(
+                    padding: const EdgeInsets.only(left: 16, bottom: 6),
+                    child: GestureDetector(
+                      onTap: () => onTap(c.id),
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: selected
+                                ? AppTheme.colorPrimary
+                                : AppTheme.grey3,
+                            width: selected ? 2 : 1,
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 6, horizontal: 8),
+                        child: Row(children: [
                           Text(
-                            '${c.languageName} ${c.level}',
+                            c.level,
                             style: const TextStyle(
                                 fontSize: AppTheme.infFontSize,
                                 color: Colors.white),
                           ),
-                        ],
+                          if (selected)
+                            const Icon(Icons.check_circle,
+                                color: AppTheme.colorPrimary, size: 18),
+                          Expanded(child: const SizedBox.shrink()),
+                          IconButton(
+                            onPressed: () => onRemove(c.id),
+                            icon: const Icon(
+                                Icons.remove_circle_outline,
+                                color: AppTheme.grey4,
+                                size: 18),
+                            padding: EdgeInsets.zero,
+                            constraints: const BoxConstraints(
+                                minWidth: 24, minHeight: 24),
+                            tooltip: l10n.titRemoveCourse,
+                          ),
+                        ]),
                       ),
                     ),
-                    if (selected)
-                      const Icon(Icons.check_circle,
-                          color: AppTheme.colorPrimary, size: 20),
-                    IconButton(
-                      onPressed: () => onRemove(c.id),
-                      icon: const Icon(Icons.remove_circle_outline,
-                          color: AppTheme.grey4, size: 20),
-                      padding: EdgeInsets.zero,
-                      constraints: const BoxConstraints(
-                          minWidth: 28, minHeight: 28),
-                      tooltip: l10n.titRemoveCourse,
-                    ),
-                  ],
-                ),
-              ),
-            ),
+                  );
+                }),
+              ],
+            ]),
           );
         }),
       ],
     );
+  }
+
+  /// Groups courses by their language code.
+  static Map<String, List<LanguageCourse>> _groupByLanguage(
+      List<LanguageCourse> courses) {
+    final map = <String, List<LanguageCourse>>{};
+    for (final c in courses) {
+      (map[c.languageCode] ??= []).add(c);
+    }
+    return map;
   }
 }
 
@@ -585,14 +666,18 @@ class _CourseDetailView extends StatelessWidget {
   }
 }
 
-/// Section showing available new language courses to discover.
+/// Section showing available new language courses, grouped by language with foldable levels.
 class _NewLanguagesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
+  final Set<String> expandedLanguages;
   final ValueChanged<String> onAdd;
+  final ValueChanged<String> onToggleLanguage;
 
   const _NewLanguagesSection({
     required this.courses,
+    required this.expandedLanguages,
     required this.onAdd,
+    required this.onToggleLanguage,
   });
 
   @override
@@ -610,6 +695,7 @@ class _NewLanguagesSection extends StatelessWidget {
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       );
     }
+    final grouped = _groupByLanguage(courses);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -618,45 +704,91 @@ class _NewLanguagesSection extends StatelessWidget {
                 fontSize: AppTheme.lblFontSize,
                 color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
-        ...courses.map((c) {
+        ...grouped.entries.map((entry) {
+          final code = entry.key;
+          final langCourses = entry.value;
+          final expanded = expandedLanguages.contains(code);
+          final first = langCourses.first;
           return Padding(
             padding: const EdgeInsets.only(bottom: 8),
-            child: GestureDetector(
-              onTap: () => onAdd(c.id),
-              child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  border: Border.all(color: AppTheme.grey3),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                padding: const EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Image.asset(c.flagAsset, width: 32, height: 20),
+            child: Column(children: [
+              // ── Language header ──
+              GestureDetector(
+                onTap: () => onToggleLanguage(code),
+                child: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: AppTheme.grey3),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  padding: const EdgeInsets.all(10),
+                  child: Row(children: [
+                    Image.asset(first.flagAsset, width: 32, height: 20),
                     const SizedBox(width: 8),
                     Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                      child: Text(
+                        first.languageName,
+                        style: const TextStyle(
+                            fontSize: AppTheme.infFontSize,
+                            color: Colors.white),
+                      ),
+                    ),
+                    if (expanded)
+                      const Icon(Icons.expand_more,
+                          color: AppTheme.grey4, size: 20),
+                    if (!expanded)
+                      const Icon(Icons.chevron_right,
+                          color: AppTheme.grey4, size: 20),
+                  ]),
+                ),
+              ),
+              // ── Sub-levels (only when expanded) ──
+              if (expanded) ...[
+                const SizedBox(height: 4),
+                ...langCourses.map((c) {
+                  return Padding(
+                    padding: const EdgeInsets.only(left: 16, bottom: 6),
+                    child: GestureDetector(
+                      onTap: () => onAdd(c.id),
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: AppTheme.grey3),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 6, horizontal: 8),
+                        child: Row(children: [
                           Text(
-                            '${c.languageName} ${c.level}',
+                            c.level,
                             style: const TextStyle(
                                 fontSize: AppTheme.infFontSize,
                                 color: Colors.white),
                           ),
-                        ],
+                          Expanded(child: const SizedBox.shrink()),
+                          const Icon(Icons.add_circle_outline,
+                              color: AppTheme.colorPrimary, size: 18),
+                        ]),
                       ),
                     ),
-                    const Icon(Icons.add_circle_outline,
-                        color: AppTheme.colorPrimary, size: 20),
-                  ],
-                ),
-              ),
-            ),
+                  );
+                }),
+              ],
+            ]),
           );
         }),
       ],
     );
+  }
+
+  /// Groups courses by their language code.
+  static Map<String, List<LanguageCourse>> _groupByLanguage(
+      List<LanguageCourse> courses) {
+    final map = <String, List<LanguageCourse>>{};
+    for (final c in courses) {
+      (map[c.languageCode] ??= []).add(c);
+    }
+    return map;
   }
 }
 
