@@ -14,21 +14,24 @@ Future<bool?> showConfirmDialog(
     context: context,
     barrierDismissible: false,
     builder: (ctx) => AlertDialog(
-      backgroundColor: AppTheme.colorPrimary,
+      backgroundColor: AppTheme.dialogBackground,
+      shape: AppTheme.dialogShape(),
       title: Text(title,
           style: const TextStyle(
-              fontFamily: 'Cmunobx', color: Colors.black)),
+              fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
       content: Text(message,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 16, color: Colors.black)),
+          style: const TextStyle(fontSize: 16, color: Colors.white)),
       actions: [
         TextButton(
           onPressed: () => Navigator.of(ctx).pop(false),
-          child: Text(cancelText, style: const TextStyle(color: Colors.black)),
+          child: Text(cancelText,
+              style: const TextStyle(color: AppTheme.colorPrimary)),
         ),
         TextButton(
           onPressed: () => Navigator.of(ctx).pop(true),
-          child: Text(confirmText, style: const TextStyle(color: Colors.black)),
+          child: Text(confirmText,
+              style: const TextStyle(color: AppTheme.colorPrimary)),
         ),
       ],
     ),

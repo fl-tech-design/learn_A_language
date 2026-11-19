@@ -18,7 +18,8 @@ Future<String?> showGameOverDialog(
     context: context,
     barrierDismissible: false,
     builder: (ctx) => AlertDialog(
-      backgroundColor: AppTheme.colorPrimary,
+      backgroundColor: AppTheme.dialogBackground,
+      shape: AppTheme.dialogShape(),
       title: Text(gameOverTitle,
           textAlign: TextAlign.center,
           style: const TextStyle(
@@ -27,14 +28,14 @@ Future<String?> showGameOverDialog(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(ptsLabel,
-              style: const TextStyle(fontSize: 16, color: Colors.black54)),
+              style: const TextStyle(fontSize: 16, color: Colors.white70)),
           const SizedBox(height: 4),
           Text('$score',
               style: const TextStyle(
                   fontSize: 40, color: AppTheme.yellow1, fontFamily: 'Jura')),
           const SizedBox(height: 8),
           Text(l10n.recordWithHighscore(highscore, ptsLabel),
-              style: const TextStyle(fontSize: 14, color: Colors.black54)),
+              style: const TextStyle(fontSize: 14, color: Colors.white70)),
           if (newRecord)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -56,8 +57,8 @@ Future<String?> showGameOverDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop('restart'),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(),
-                  foregroundColor: Colors.black,
+                  side: const BorderSide(color: AppTheme.colorPrimary),
+                  foregroundColor: AppTheme.colorPrimary,
                 ),
                 child: Text(restartText),
               ),
@@ -67,8 +68,8 @@ Future<String?> showGameOverDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop('back'),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(),
-                  foregroundColor: Colors.black,
+                  side: const BorderSide(color: AppTheme.colorPrimary),
+                  foregroundColor: AppTheme.colorPrimary,
                 ),
                 child: Text(backText),
               ),

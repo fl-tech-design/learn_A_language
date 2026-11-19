@@ -45,7 +45,7 @@ class AppTheme {
 
   static const Color purple1 = Color(0xFFA020F0);
 
-  /// Primary button/label and popup background color.
+  /// Primary button/label color – auch Umrandungsfarbe der Popups.
   static const Color colorPrimary = Color(0xFF1CB9EC);
 
   /// Splashscreen background tone – matches the very dark shade of
@@ -54,6 +54,13 @@ class AppTheme {
 
   /// Button press opacity.
   static const double btnDown = 0.8;
+
+  /// Popup-Background – dunkel, aber ein Tick heller als der App-BG (grey1),
+  /// damit Popups nicht mehr grell herausleuchten, sondern zum App-Stil passen.
+  static const Color dialogBackground = Color(0xFF333333);
+
+  /// Texteingaben in Popups – dunkel, dezent dunkler als der Dialog-BG.
+  static const Color dialogInputFill = Color(0xFF212121);
 
   // ── Layout-Maße (constants.py lines 90-109) ────────────────────
   static const double boxTitleHeight = 0.05;
@@ -125,6 +132,30 @@ class AppTheme {
         ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       ),
+      dialogTheme: DialogThemeData(
+        backgroundColor: dialogBackground,
+        surfaceTintColor: Colors.transparent,
+        shape: dialogShape(),
+        titleTextStyle: const TextStyle(
+          fontFamily: 'Cmunobx',
+          color: colorPrimary,
+          fontSize: titleFontSize,
+        ),
+        contentTextStyle: const TextStyle(fontSize: 16, color: Colors.white),
+      ),
+      chipTheme: const ChipThemeData(
+        backgroundColor: grey1,
+        selectedColor: colorPrimary,
+        labelStyle: TextStyle(color: Colors.white),
+        secondaryLabelStyle: TextStyle(color: Colors.white70),
+        side: BorderSide(color: grey2),
+      ),
     );
   }
+
+  /// Einheitliche Popup-Kontur: Umrandung in der Farbe der App-Buttons.
+  static RoundedRectangleBorder dialogShape() => RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+        side: const BorderSide(color: colorPrimary, width: 1.5),
+      );
 }

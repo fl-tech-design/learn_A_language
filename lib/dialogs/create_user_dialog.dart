@@ -21,33 +21,37 @@ Future<Map<String, String>?> showCreateUserDialog(
     barrierDismissible: false,
     builder: (ctx) => StatefulBuilder(
       builder: (ctx, setState) => AlertDialog(
-        backgroundColor: AppTheme.colorPrimary,
+        backgroundColor: AppTheme.dialogBackground,
+        shape: AppTheme.dialogShape(),
         title: Text(title,
             style: const TextStyle(
-                fontFamily: 'Cmunobx', color: Colors.black)),
+                fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
         content: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(hintText,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 16, color: Colors.black)),
+                  style: const TextStyle(fontSize: 16, color: Colors.white)),
               const SizedBox(height: 12),
               TextField(
                 controller: nameCtrl,
-                style: const TextStyle(color: Colors.black, fontSize: 16),
+                style: const TextStyle(color: Colors.white, fontSize: 16),
                 decoration: InputDecoration(
                   hintText: hintText,
-                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintStyle: const TextStyle(color: Colors.white38),
                   filled: true,
-                  fillColor: Colors.white,
+                  fillColor: AppTheme.dialogInputFill,
                   border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(4)),
+                    borderRadius: BorderRadius.circular(4),
+                    borderSide:
+                        const BorderSide(color: AppTheme.colorPrimary),
+                  ),
                 ),
               ),
               const SizedBox(height: 12),
               Text(nativeLangLabel,
-                  style: const TextStyle(fontSize: 16, color: Colors.black)),
+                  style: const TextStyle(fontSize: 16, color: Colors.white)),
               const SizedBox(height: 8),
               Row(
                 children: [
@@ -75,7 +79,7 @@ Future<Map<String, String>?> showCreateUserDialog(
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
             child: Text(cancelText,
-                style: const TextStyle(fontSize: 16, color: Colors.black)),
+                style: const TextStyle(fontSize: 16, color: AppTheme.colorPrimary)),
           ),
           TextButton(
             onPressed: () {
@@ -84,7 +88,7 @@ Future<Map<String, String>?> showCreateUserDialog(
               Navigator.of(ctx).pop({'username': name, 'm_lang': mLang});
             },
             child: Text(confirmText,
-                style: const TextStyle(fontSize: 16, color: Colors.black)),
+                style: const TextStyle(fontSize: 16, color: AppTheme.colorPrimary)),
           ),
         ],
       ),

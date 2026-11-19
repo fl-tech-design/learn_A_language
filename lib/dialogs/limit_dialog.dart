@@ -13,7 +13,8 @@ Future<bool?> showLimitDialog(
     context: context,
     barrierDismissible: false,
     builder: (ctx) => AlertDialog(
-      backgroundColor: AppTheme.colorPrimary,
+      backgroundColor: AppTheme.dialogBackground,
+      shape: AppTheme.dialogShape(),
       title: Text(title,
           style: const TextStyle(
               fontFamily: 'Cmunobx', color: AppTheme.colorPrimary)),
@@ -21,7 +22,7 @@ Future<bool?> showLimitDialog(
         width: double.maxFinite,
         child: Text(message,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16, color: Colors.black)),
+            style: const TextStyle(fontSize: 16, color: Colors.white)),
       ),
       actions: [
         Row(
@@ -30,8 +31,8 @@ Future<bool?> showLimitDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop(true),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(),
-                  foregroundColor: Colors.black,
+                  side: const BorderSide(color: AppTheme.colorPrimary),
+                  foregroundColor: AppTheme.colorPrimary,
                 ),
                 child: Text(continueText),
               ),
@@ -41,8 +42,8 @@ Future<bool?> showLimitDialog(
               child: OutlinedButton(
                 onPressed: () => Navigator.of(ctx).pop(false),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(),
-                  foregroundColor: Colors.black,
+                  side: const BorderSide(color: AppTheme.colorPrimary),
+                  foregroundColor: AppTheme.colorPrimary,
                 ),
                 child: Text(endText),
               ),
