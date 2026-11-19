@@ -64,14 +64,17 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
     if (mounted) setState(() => _counts = counts);
   }
 
-  /// Startet einen Modus ('new' | 'due' | 'learned') für diese Kategorie.
+  /// Startet einen Modus ('new' | 'due' | 'read') für diese Kategorie.
   void _start(String mode) {
     final nav = context.read<NavigationState>();
     final cat = _category;
     if (cat == null) return;
-    if (mode != 'due') {
-      nav.setWordMode(mode == 'new' ? 'new' : 'learned');
+    if (mode == 'new') {
+      nav.setWordMode('new');
+    } else if (mode == 'read') {
+      nav.setWordMode('read');
     }
+    // 'due' übernimmt den wordMode unverändert (eigener Screen).
     nav.setSelectedCategoryId(cat.id);
     final route = mode == 'due' ? '/dueword' : '/word';
     Navigator.of(context).pushNamed(route);
@@ -104,11 +107,9 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
                     counts.dueCount == 0 ? null : () => _start('due')),
                 const SizedBox(height: AppTheme.contentSpacing),
                 _modeButton(
-                    l10n.catLearnedWords,
-                    counts.learnedCount,
-                    counts.learnedCount == 0
-                        ? null
-                        : () => _start('learned')),
+                    l10n.catReadWords,
+                    counts.readCount,
+                    counts.readCount == 0 ? null : () => _start('read')),
                 const SizedBox(height: AppTheme.contentSpacing),
                 SizedBox(
                     height: 50,

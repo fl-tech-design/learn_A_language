@@ -342,6 +342,8 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
             style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         Text('${l10n.catDueWords}: ${stats.dueCount}',
             style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+        Text('${l10n.catReadWords}: ${stats.readCount}',
+            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         Text('${l10n.catLearnedWords}: ${stats.learnedCount}',
             style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         if (stats.streak.current > 0)
@@ -401,12 +403,15 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
     final vq = context.read<VocabQueries>();
     final nc = await vq.getNewWordsCount(username);
     final dc = await vq.getWordsDueCount(username);
-    final mastered = await vq.getMasteredWords(username);
+    // Gelesene Wörter: alles schon Angeschaute. Gelernte Wörter: Level 8.
+    final readWords = await vq.getReadWords(username);
+    final learnedWords = await vq.getLearnedWords(username);
     final st = await vq.getDayStreak(username);
     return _UserStats(
       newCount: nc,
       dueCount: dc,
-      learnedCount: mastered.length,
+      readCount: readWords.length,
+      learnedCount: learnedWords.length,
       streak: st,
     );
   }
@@ -796,11 +801,13 @@ class _NewLanguagesSection extends StatelessWidget {
 class _UserStats {
   final int newCount;
   final int dueCount;
+  final int readCount;
   final int learnedCount;
   final DayStreak streak;
   const _UserStats({
     required this.newCount,
     required this.dueCount,
+    required this.readCount,
     required this.learnedCount,
     required this.streak,
   });

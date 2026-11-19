@@ -14,8 +14,9 @@ import 'progress_screen.dart'
 /// Learning category selection screen.
 ///
 /// Zeigt die Lern-Sammlungen ("Erste Verben" direkt lernbar, "Weitere Verben"
-/// mit 5 Unterkategorien). Ein Tipp öffnet den Kategorie- bzw.
-/// Sammlungs-Screen. In jeder Kategorie gibt es die Modi Neue/Fällige/Gelernte
+/// mit 5 Unterkategorien) sowie den Ordner "Gelernte Wörter" mit allen fertig
+/// gelernten Wörtern (Level 8). Ein Tipp öffnet den Kategorie- bzw.
+/// Sammlungs-Screen. In jeder Kategorie gibt es die Modi Neue/Fällige/Gelesene
 /// Wörter – jeweils nur mit den Daten dieser Kategorie.
 class LearningScreen extends StatefulWidget {
   const LearningScreen({super.key});
@@ -95,6 +96,38 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     }
   }
 
+  /// Anzahl aller fertig gelernten Wörter (Level 8) über alle Kategorien.
+  int get _learnedAllCount {
+    var l = 0;
+    for (final c in _counts.values) {
+      l += c.learnedCount;
+    }
+    return l;
+  }
+
+  /// Öffnet den Ordner „Gelernte Wörter": alle Level-8-Wörter als Karten.
+  void _openLearnedWords() {
+    if (_learnedAllCount == 0) return;
+    final nav = context.read<NavigationState>();
+    nav.setWordMode('learned');
+    nav.setSelectedCategoryId(null);
+    Navigator.of(context).pushNamed('/word');
+  }
+
+  /// Ordner-Button für alle fertig gelernten Wörter (Level 8).
+  Widget _learnedWordsButton() {
+    final l10n = AppLocalizations.of(context);
+    final count = _learnedAllCount;
+    return SizedBox(
+        height: 50,
+        width: double.infinity,
+        child: OutlinedButton(
+          onPressed: count == 0 ? null : _openLearnedWords,
+          child: Text('${l10n.catLearnedWords} ($count)',
+              style: const TextStyle(fontSize: AppTheme.btnFontSize)),
+        ));
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -156,6 +189,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                             ),
                                           ],
                                         ))))),
+                      const SizedBox(height: AppTheme.contentSpacing),
+                      _learnedWordsButton(),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(
                           height: 50,

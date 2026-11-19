@@ -26,7 +26,7 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
   Future<int> _loadMasteredCount() async {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
-    final words = await context.read<VocabQueries>().getMasteredWords(uname);
+    final words = await context.read<VocabQueries>().getReadWords(uname);
     return words.length;
   }
 

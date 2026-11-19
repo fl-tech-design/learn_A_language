@@ -242,6 +242,12 @@ abstract class AppLocalizations {
   /// **'New words'**
   String get catNewWords;
 
+  /// No description provided for @catReadWords.
+  ///
+  /// In en, this message translates to:
+  /// **'Read words'**
+  String get catReadWords;
+
   /// No description provided for @catSelect.
   ///
   /// In en, this message translates to:
@@ -599,7 +605,7 @@ abstract class AppLocalizations {
   /// No description provided for @noLearnedWords.
   ///
   /// In en, this message translates to:
-  /// **'No learned words to play.\nLearn new words first!'**
+  /// **'No words to play yet.\nLearn new words first!'**
   String get noLearnedWords;
 
   /// No description provided for @noNewLang.

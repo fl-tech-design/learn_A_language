@@ -13,7 +13,8 @@ abstract class VocabQueries {
       String username, int targetLevel);
   Future<List<VocabEntry>> getNewWords(String username,
       {int limit = 10, int offset = 0});
-  Future<List<VocabEntry>> getMasteredWords(String username);
+  Future<List<VocabEntry>> getReadWords(String username);
+  Future<List<VocabEntry>> getLearnedWords(String username);
   Future<int> getWordsDueCount(String username);
   Future<int> getNewWordsCount(String username);
   Future<List<VocabEntry>> getAllWords(String username);
@@ -29,6 +30,8 @@ abstract class VocabQueries {
   Future<List<VocabEntry>> getGroupDueWords(
       String username, WordCategory category);
   Future<List<VocabEntry>> getGroupLearnedWords(
+      String username, WordCategory category);
+  Future<List<VocabEntry>> getGroupReadWords(
       String username, WordCategory category);
   Future<DayStreak> getDayStreak(String username);
   Future<void> updateDayStreak(String username);
@@ -96,10 +99,19 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getMasteredWords(String username) async {
+  Future<List<VocabEntry>> getReadWords(String username) async {
     final ud = await _userManager.loadUserdata(username);
     if (ud == null) return [];
+    // „Gelesene Wörter": alles, was mindestens einmal angeschaut wurde.
     return ud.vocab.values.where((ve) => ve.status == 'seen').toList();
+  }
+
+  @override
+  Future<List<VocabEntry>> getLearnedWords(String username) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    // „Gelernte Wörter": fertig gelernt (Level 8) – über alle Kategorien.
+    return ud.vocab.values.where((ve) => ve.level >= 8).toList();
   }
 
   @override
@@ -165,10 +177,12 @@ class VocabQueriesImpl implements VocabQueries {
       var total = 0;
       var newC = 0;
       var due = 0;
+      var read = 0;
       var learned = 0;
       for (final ve in ud.vocab.values) {
         if (!cat.containsEntryKey(ve.key)) continue;
         total++;
+        if (ve.status == 'seen') read++;
         if (ve.level >= 8) {
           learned++;
           continue;
@@ -185,6 +199,7 @@ class VocabQueriesImpl implements VocabQueries {
         total: total,
         newCount: newC,
         dueCount: due,
+        readCount: read,
         learnedCount: learned,
       );
     }
@@ -243,6 +258,19 @@ class VocabQueriesImpl implements VocabQueries {
         .toList();
     learned.sort((a, b) => _compareEntries(category, a, b));
     return learned;
+  }
+
+  @override
+  Future<List<VocabEntry>> getGroupReadWords(
+      String username, WordCategory category) async {
+    final ud = await _userManager.loadUserdata(username);
+    if (ud == null) return [];
+    final read = ud.vocab.values
+        .where((ve) =>
+            ve.status == 'seen' && category.containsEntryKey(ve.key))
+        .toList();
+    read.sort((a, b) => _compareEntries(category, a, b));
+    return read;
   }
 
   bool _isDue(VocabEntry ve, DateTime today) {

@@ -289,8 +289,8 @@ void main() {
     });
   });
 
-  group('getAllWords / getMasteredWords / getNewWordsCount', () {
-    test('liefert alle, nur gesehene und zählt neue Wörter', () async {
+  group('getAllWords / getReadWords / getLearnedWords / getNewWordsCount', () {
+    test('liefert alle, nur gesehene, Level-8 und zählt neue Wörter', () async {
       final fake = FakeUserManager();
       fake.seed(
         'alice',
@@ -298,14 +298,19 @@ void main() {
           'new1': _vocab('new1'),
           'seen1': _vocab('seen1', status: 'seen'),
           'seen2': _vocab('seen2', status: 'seen'),
+          'done1': _vocab('done1', level: 8, status: 'seen'),
         }),
       );
 
       final queries = VocabQueriesImpl(fake);
 
-      expect((await queries.getAllWords('alice')).length, 3);
-      expect((await queries.getMasteredWords('alice')).map((e) => e.key),
-          ['seen1', 'seen2']);
+      expect((await queries.getAllWords('alice')).length, 4);
+      // Gelesene = alles schon Angeschaute (inkl. Level 8).
+      expect((await queries.getReadWords('alice')).map((e) => e.key),
+          ['seen1', 'seen2', 'done1']);
+      // Gelernte = nur fertig gelernt (Level 8).
+      expect((await queries.getLearnedWords('alice')).map((e) => e.key),
+          ['done1']);
       expect(await queries.getNewWordsCount('alice'), 1);
     });
 
@@ -524,6 +529,35 @@ void main() {
       expect(learned.map((e) => e.key), ['to_be_present_0']);
     });
 
+    test('getGroupReadWords liefert alle gelesenen Wörter der Kategorie',
+        () async {
+      const cat = WordCategory(
+        id: 'test6',
+        order: 1,
+        titleKey: 'catFirstVerbs',
+        verbKeys: ['to_be'],
+      );
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_present_0': _vocab('to_be_present_0', status: 'seen'),
+          // neu -> nicht gelesen
+          'to_be_past_0': _vocab('to_be_past_0'),
+          // Level 8 ist auch gelesen
+          'to_be_future_0':
+              _vocab('to_be_future_0', level: 8, status: 'seen'),
+          // andere Kategorie -> nicht enthalten
+          'to_go_present_0': _vocab('to_go_present_0', status: 'seen'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final read = await queries.getGroupReadWords('alice', cat);
+      expect(read.map((e) => e.key).toSet(),
+          {'to_be_present_0', 'to_be_future_0'});
+    });
+
     test('getCategoryCounts zählt neu/fällig/gelernt/gesamt', () async {
       final cat =
           courseWordCategories.firstWhere((c) => c.id == 'erste_verben');
@@ -551,6 +585,7 @@ void main() {
       expect(c.total, 3);
       expect(c.newCount, 1);
       expect(c.dueCount, 1);
+      expect(c.readCount, 2);
       expect(c.learnedCount, 1);
     });
   });

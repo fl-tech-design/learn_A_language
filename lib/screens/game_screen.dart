@@ -78,7 +78,7 @@ class _GameScreenState extends State<GameScreen> {
       _highscore = ud?.gameHighscore ?? 0;
     }
 
-    final allWords = await vq.getMasteredWords(uname);
+    final allWords = await vq.getReadWords(uname);
     if (allWords.isEmpty) {
       if (!mounted) return;
       setState(() {

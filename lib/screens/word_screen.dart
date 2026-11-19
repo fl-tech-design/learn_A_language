@@ -48,11 +48,18 @@ class _WordScreenState extends State<WordScreen> {
         words = await vq.getNewWords(uname, limit: limit);
       }
       _streak = await vq.getDayStreak(uname);
+    } else if (mode == 'read') {
+      // „Gelesene Wörter": alle schon angeschauten Karten dieser Kategorie.
+      final cat = _categoryById(navState.selectedCategoryId);
+      words = cat != null
+          ? await vq.getGroupReadWords(uname, cat)
+          : await vq.getReadWords(uname);
     } else {
+      // Ordner „Gelernte Wörter": alle fertig gelernten Karten (Level 8).
       final cat = _categoryById(navState.selectedCategoryId);
       words = cat != null
           ? await vq.getGroupLearnedWords(uname, cat)
-          : await vq.getMasteredWords(uname);
+          : await vq.getLearnedWords(uname);
     }
     if (mounted) {
       setState(() {
@@ -166,7 +173,7 @@ class _WordScreenState extends State<WordScreen> {
     final l10n = AppLocalizations.of(context);
     final mode = context.read<NavigationState>().wordMode;
     final isNew = mode == 'new';
-    final isLearned = mode == 'learned';
+    final isReview = mode == 'read' || mode == 'learned';
     final word =
         (_words.isNotEmpty && _index < _words.length) ? _words[_index] : null;
     final examples = word?.examples ?? const [''];  // Vorgabe [''] wie altes _parseList
@@ -196,7 +203,7 @@ class _WordScreenState extends State<WordScreen> {
                         child: Text(l10n.noWords,
                             style: const TextStyle(fontSize: AppTheme.lblFontSize)))
                     : _buildWordContent(word, examples, examplesNative, isNew,
-                        isLearned))),
+                        isReview))),
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
@@ -211,7 +218,7 @@ class _WordScreenState extends State<WordScreen> {
       List<String> examples,
       List<String> examplesNative,
       bool isNew,
-      bool isLearned) {
+      bool isReview) {
     final l10n = AppLocalizations.of(context);
     return SingleChildScrollView(
       child: Column(
@@ -258,7 +265,7 @@ class _WordScreenState extends State<WordScreen> {
                         fontSize: AppTheme.lblFontSize,
                         color: _feedbackColor))),
           const SizedBox(height: 12),
-          if (!isLearned)
+          if (!isReview)
             SizedBox(
                 height: 56,
                 width: double.infinity,
@@ -267,7 +274,7 @@ class _WordScreenState extends State<WordScreen> {
                     child: Text(l10n.btnRead,
                         style: const TextStyle(
                             fontSize: AppTheme.btnFontSize)))),
-          if (isLearned)
+          if (isReview)
             SizedBox(
                 height: 56,
                 child: Row(children: [

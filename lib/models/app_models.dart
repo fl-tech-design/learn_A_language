@@ -578,12 +578,14 @@ class CategoryCounts {
   final int total;
   final int newCount;
   final int dueCount;
+  final int readCount;
   final int learnedCount;
 
   const CategoryCounts({
     this.total = 0,
     this.newCount = 0,
     this.dueCount = 0,
+    this.readCount = 0,
     this.learnedCount = 0,
   });
 

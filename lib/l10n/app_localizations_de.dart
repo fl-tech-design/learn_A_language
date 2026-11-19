@@ -81,6 +81,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get catNewWords => 'Neue Wörter';
 
   @override
+  String get catReadWords => 'Gelesene Wörter';
+
+  @override
   String get catSelect => 'Wähle eine Kategorie';
 
   @override
@@ -268,7 +271,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noLearnedWords =>
-      'Keine gelernten Wörter zum Spielen.\nLerne zuerst neue Wörter!';
+      'Keine gelesenen Wörter zum Spielen.\nLerne zuerst neue Wörter!';
 
   @override
   String get noNewLang => 'Keine neuen Sprachen verfügbar';
