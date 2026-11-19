@@ -45,13 +45,15 @@ class _LoadingScreenState extends State<LoadingScreen> {
     final loadingComplete = l10n.loadingComplete;
 
     return Scaffold(
+      backgroundColor: AppTheme.splashBg,
       body: Stack(
         fit: StackFit.expand,
         children: [
+          // Bild füllt nur die Breite des Screens (Höhe bleibt proportional),
+          // damit es im Portrait-Format nicht mehr auf die Höhe gezoomt wird.
+          // Freie Bereiche oben/unten zeigen die Bild-Hintergrundfarbe.
           Image.asset('assets/images/spl_start.png',
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: double.infinity),
+              fit: BoxFit.fitWidth),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.18,
             left: 0,

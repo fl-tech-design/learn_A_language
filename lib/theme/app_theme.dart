@@ -48,6 +48,10 @@ class AppTheme {
   /// Primary button/label and popup background color.
   static const Color colorPrimary = Color(0xFF1CB9EC);
 
+  /// Splashscreen background tone – matches the very dark shade of
+  /// assets/images/spl_start.png so the free areas blend seamlessly.
+  static const Color splashBg = Color(0xFF171717);
+
   /// Button press opacity.
   static const double btnDown = 0.8;
 
