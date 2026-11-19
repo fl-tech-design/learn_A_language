@@ -63,20 +63,66 @@ class _DueWordScreenState extends State<DueWordScreen> {
     }
   }
 
-  /// Builds the word display with underscores for each character.
-  /// Characters already guessed correctly are shown, others are '_'.
-  String _wordToDisplay(String word, String userInput) {
-    final chars = <String>[];
+  /// Baut die Antwort-Anzeige als RichText auf.
+  ///
+  /// [word] ist während des Tippens die bereinigte Antwort (ohne Klammerzusatz
+  /// wie „(pl)"), nach Abschluss das Original inkl. Klammerzusatz. Zeichen
+  /// innerhalb eines Wortes werden mit geschütztem Leerzeichen (NBSP)
+  /// verbunden, damit Zeilenumbrüche Wörter nicht auseinanderreißen; die
+  /// nächste freie Position wird hervorgehoben.
+  TextSpan _buildAnswerSpans(String word, String userInput,
+      {required bool highlightNext}) {
+    final spans = <InlineSpan>[];
+    final nextPos = highlightNext ? _nextInputPos(word, userInput) : -1;
+
     for (var i = 0; i < word.length; i++) {
-      if (i < userInput.length) {
-        chars.add(word[i]);
-      } else if (word[i] == ' ') {
-        chars.add(' ');
+      final ch = word[i];
+      final isTyped = i < userInput.length;
+      final isActive = i == nextPos;
+
+      String displayChar;
+      Color color;
+      if (ch == ' ') {
+        if (isTyped || !highlightNext) {
+          displayChar = ' ';
+          color = Colors.white;
+        } else {
+          // Noch nicht getipptes Leerzeichen sichtbar machen.
+          displayChar = '·';
+          color = isActive ? AppTheme.colorPrimary : AppTheme.grey4;
+        }
+      } else if (isTyped || !highlightNext) {
+        displayChar = ch;
+        color = Colors.white;
+      } else if (isActive) {
+        displayChar = '_';
+        color = AppTheme.colorPrimary;
       } else {
-        chars.add('_');
+        displayChar = '_';
+        color = AppTheme.grey4;
+      }
+
+      spans.add(TextSpan(text: displayChar, style: TextStyle(color: color)));
+
+      // Innerhalb eines Wortes geschützte Leerzeichen (NBSP) statt normaler
+      // Leerzeichen: Der Zeilenumbruch erfolgt nur zwischen echten Wörtern.
+      if (i < word.length - 1) {
+        final nextCh = word[i + 1];
+        if (ch != ' ' && nextCh != ' ') {
+          spans.add(const TextSpan(text: '\u00A0'));
+        }
       }
     }
-    return chars.join(' ');
+    return TextSpan(children: spans);
+  }
+
+  /// Liefert die nächste vom User einzugebende Position. Vom System
+  /// automatisch ergänzte Separatoren („/") werden übersprungen.
+  int _nextInputPos(String word, String userInput) {
+    for (var i = userInput.length; i < word.length; i++) {
+      if (word[i] != '/') return i;
+    }
+    return word.length;
   }
 
   /// Strips parenthetical notes like (pl), (sg) for comparison.
@@ -105,29 +151,42 @@ class _DueWordScreenState extends State<DueWordScreen> {
       if (char == ' ') {
         setState(() => _userInput += ' ');
       } else {
-        await _failWord(correctAnswer, word);
+        unawaited(_failWord(correctAnswer, word));
       }
-    } else if (char.toLowerCase() == expectedChar.toLowerCase()) {
-      // Correct letter at this position
-      final newInput = _userInput + expectedChar;
-      if (newInput.length >= correctAnswer.length) {
-        // All characters matched – word is correct!
-        setState(() {
-          _checked = true;
-          _userInput = correctAnswer;
-          _feedback = l10n.feedbackCorrect;
-          _feedbackColor = AppTheme.green2;
-          _correctDisplay = correctAnswer;
-        });
-        final uname = context.read<DataState>().appData.loggedUName;
-        await context.read<VocabQueries>().checkWordAnswer(
-            uname, word.key, word.translation);
-      } else {
-        setState(() => _userInput = newInput);
-      }
-    } else {
+      _inputCtrl.clear();
+      return;
+    }
+
+    if (char.toLowerCase() != expectedChar.toLowerCase()) {
       // Wrong character – abort immediately
       unawaited(_failWord(correctAnswer, word));
+      _inputCtrl.clear();
+      return;
+    }
+
+    // Correct letter at this position. Separatoren wie "/" (z. B. in
+    // "he/she/it") werden von der App automatisch ergänzt, damit sie auf dem
+    // Handy nicht extra eingegeben werden müssen.
+    var newInput = _userInput + expectedChar;
+    while (newInput.length < correctAnswer.length &&
+        correctAnswer[newInput.length] == '/') {
+      newInput += '/';
+    }
+
+    if (newInput.length >= correctAnswer.length) {
+      // All characters matched – word is correct!
+      setState(() {
+        _checked = true;
+        _userInput = correctAnswer;
+        _feedback = l10n.feedbackCorrect;
+        _feedbackColor = AppTheme.green2;
+        _correctDisplay = rawAnswer;
+      });
+      final uname = context.read<DataState>().appData.loggedUName;
+      await context.read<VocabQueries>().checkWordAnswer(
+          uname, word.key, word.translation);
+    } else {
+      setState(() => _userInput = newInput);
     }
 
     _inputCtrl.clear();
@@ -140,7 +199,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _feedback = l10n.feedbackWrong;
       _feedbackColor = AppTheme.red2;
       final fb = l10n.feedbackCorrectWouldBe;
-      _correctDisplay = '$fb $correctAnswer';
+      _correctDisplay = '$fb ${word.word}';
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
@@ -174,15 +233,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final l10n = AppLocalizations.of(context);
     final allDone = _words.isEmpty || _index >= _words.length;
     final word = !allDone ? _words[_index] : null;
-    final correctAnswer = word != null
-        ? word.word
-        : '';
+    final answerWord = word?.word ?? '';
+    final keyboardOpen = MediaQuery.of(context).viewInsets.bottom > 0;
 
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.titPageLearning),
         Expanded(
-            child: Padding(
+            child: SingleChildScrollView(
                 padding: const EdgeInsets.all(20),
                 child: Column(children: [
                   SizedBox(
@@ -191,19 +249,31 @@ class _DueWordScreenState extends State<DueWordScreen> {
                           child: Text(
                               allDone
                                   ? l10n.noDueWords
-                                  : (word?.translation ?? ''),
+                                  : word!.translation,
                               textAlign: TextAlign.center,
                               style: const TextStyle(fontSize: 32)))),
+                  const SizedBox(height: 4),
+                  if (!allDone)
+                    Text(l10n.labLevel(word!.level),
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: AppTheme.infFontSize,
+                            color: Colors.white60)),
                   const SizedBox(height: 8),
                   Text(l10n.translationLabel,
                       style: const TextStyle(
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60)),
                   const SizedBox(height: 4),
-                  Text(
+                  Text.rich(
                       allDone
-                          ? ''
-                          : _wordToDisplay(correctAnswer, _userInput),
+                          ? const TextSpan()
+                          : _buildAnswerSpans(
+                              _checked
+                                  ? word!.word
+                                  : _stripParenthetical(answerWord),
+                              _userInput,
+                              highlightNext: !_checked),
                       textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 28)),
                   const SizedBox(height: 4),
@@ -262,11 +332,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
                                   fontSize: AppTheme.btnFontSize,
                                   color: AppTheme.colorPrimary)))),
                 ]))),
-        BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
-            onExit: AppTheme.closeApp),
+        // Bodenleiste im Querformat ausblenden, solange die Bildschirmtastatur
+        // sichtbar ist – so bleibt Platz für die Eingabe.
+        if (!keyboardOpen)
+          BoxBottom(
+              settingsText: l10n.settings,
+              exitText: l10n.exit,
+              onSettings: () => Navigator.of(context).pushNamed('/settings'),
+              onExit: AppTheme.closeApp),
       ]),
     );
   }
