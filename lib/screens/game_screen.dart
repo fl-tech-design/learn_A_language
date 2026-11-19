@@ -116,10 +116,7 @@ class _GameScreenState extends State<GameScreen> {
     _currentQuestion = word;
     final correct = word.word;
 
-    final pool = _questions
-        .where(
-            (w) => w.word != correct)
-        .toList();
+    final pool = _questions.where((w) => w.word != correct).toList();
     pool.shuffle(Random());
     final distractors = pool.length >= 3
         ? pool.take(3).map((w) => w.word).toList()
@@ -130,9 +127,12 @@ class _GameScreenState extends State<GameScreen> {
         : ['hello', 'goodbye', 'please'].take(3 - pool.length).toList();
 
     final options = [correct, ...distractors]..shuffle(Random());
+    // Timer bewusst NICHT auf die Startzeit zurücksetzen: Die Restzeit läuft
+    // kumulativ über das ganze Spiel weiter und behält den Zeitbonus, der bei
+    // einer richtigen Antwort zu _timer addiert wird. Initialisiert wird die
+    // Startzeit nur beim Spielstart in _startGame().
     setState(() {
       _options = options;
-      _timer = _baseTimer;
     });
     _startTimer();
   }
@@ -159,6 +159,10 @@ class _GameScreenState extends State<GameScreen> {
     if (_lives <= 0) {
       _gameOver();
     } else {
+      // Zeit aufgebraucht: Ein Leben geht verloren und das neue Wort startet
+      // wieder bei der eingestellten Startzeit (_baseTimer). Nur der normale
+      // Fragenwechsel behält die Restzeit inkl. Bonus bei.
+      setState(() => _timer = _baseTimer);
       _advanceToNext();
     }
   }
@@ -167,9 +171,7 @@ class _GameScreenState extends State<GameScreen> {
     if (_answered || !_gameActive) return;
     _stopTimer();
     final selected = _options[btnIndex];
-    final correct = _currentQuestion?.word ??
-        _currentQuestion?.key ??
-        '';
+    final correct = _currentQuestion?.word ?? _currentQuestion?.key ?? '';
 
     if (selected == correct) {
       setState(() {
@@ -186,8 +188,7 @@ class _GameScreenState extends State<GameScreen> {
       if (_lives <= 0) {
         Future.delayed(const Duration(milliseconds: 300), _gameOver);
       } else {
-        Future.delayed(
-            const Duration(milliseconds: 300), _advanceToNext);
+        Future.delayed(const Duration(milliseconds: 300), _advanceToNext);
       }
     }
   }
@@ -251,13 +252,13 @@ class _GameScreenState extends State<GameScreen> {
                 BoxDecoration(border: Border.all(color: AppTheme.grey2)),
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(children: [
-              Text(widget.difficulty == 'easy'
-                  ? l10n.difficultyEasyShort
-                  : widget.difficulty == 'hard'
-                      ? l10n.difficultyHardShort
-                      : l10n.difficultyMediumShort,
-                  style: const TextStyle(
-                      fontSize: 12, color: AppTheme.cyan2)),
+              Text(
+                  widget.difficulty == 'easy'
+                      ? l10n.difficultyEasyShort
+                      : widget.difficulty == 'hard'
+                          ? l10n.difficultyHardShort
+                          : l10n.difficultyMediumShort,
+                  style: const TextStyle(fontSize: 12, color: AppTheme.cyan2)),
               const Spacer(),
               Row(children: [
                 Image.asset('assets/game_assets/clock.png',
@@ -290,8 +291,7 @@ class _GameScreenState extends State<GameScreen> {
         if (_allDone)
           Expanded(
               child: Center(
-                  child: Text(
-                      l10n.noLearnedWords,
+                  child: Text(l10n.noLearnedWords,
                       textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 20)))),
         if (_gameActive || _questions.isNotEmpty)
@@ -356,8 +356,8 @@ class _GameScreenState extends State<GameScreen> {
             side: const BorderSide(color: AppTheme.colorPrimary),
             padding: const EdgeInsets.all(6),
             tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4))),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(4))),
         child: FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(_options[index],
