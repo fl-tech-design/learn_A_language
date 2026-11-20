@@ -2,7 +2,67 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
+import '../l10n/app_localizations.dart';
+import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
+
+/// Zeigt Speicher-/Persistenzwarnungen EINMALIG als SnackBar an (kein
+/// Dialog, kein Spam): Der globale [StorageErrorBus] hält je Ablauf nur eine
+/// Meldung, die hier mit [StorageErrorBus.takeLast] konsumiert wird.
+///
+/// Der Listener wird im Widget-Baum der `MaterialApp` (builder) eingebettet,
+/// damit auch Meldungen aus der Zeit VOR `runApp` (fehlgeschlagener
+/// Auto-Login in main.dart) beim App-Start sichtbar werden.
+class StorageWarningListener extends StatefulWidget {
+  final Widget child;
+
+  const StorageWarningListener({super.key, required this.child});
+
+  @override
+  State<StorageWarningListener> createState() => _StorageWarningListenerState();
+}
+
+class _StorageWarningListenerState extends State<StorageWarningListener> {
+  @override
+  void initState() {
+    super.initState();
+    StorageErrorBus.instance.addListener(_onStorageError);
+    final pending = StorageErrorBus.instance.takeLast();
+    if (pending != null) _showFor(pending);
+  }
+
+  @override
+  void dispose() {
+    StorageErrorBus.instance.removeListener(_onStorageError);
+    super.dispose();
+  }
+
+  void _onStorageError() {
+    final kind = StorageErrorBus.instance.takeLast();
+    if (kind == null) return;
+    _showFor(kind);
+  }
+
+  void _showFor(StorageErrorKind kind) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final l10n = AppLocalizations.of(context);
+      final message = switch (kind) {
+        StorageErrorKind.saveFailed ||
+        StorageErrorKind.progressNotSaved =>
+          l10n.msgSaveFailed,
+        StorageErrorKind.userDataRecovered => l10n.msgUserDataRecovered,
+        StorageErrorKind.userDataUnloadable => l10n.msgUserDataUnloadable,
+        StorageErrorKind.appDataRecovered => l10n.msgAppDataRecovered,
+      };
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(message)));
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
+}
 
 /// Title bar widget – replaces BoxTitle from Kivy.
 class BoxTitle extends StatelessWidget {

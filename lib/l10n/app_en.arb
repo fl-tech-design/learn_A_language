@@ -152,5 +152,9 @@
   "colLevel": "Level",
   "labNewShort": "new",
   "labDueShort": "due",
-  "labLearnedShort": "learned"
+  "labLearnedShort": "learned",
+  "msgSaveFailed": "Saving failed. The last progress could not be saved.",
+  "msgUserDataRecovered": "Your user data was damaged and has been restored from a backup.",
+  "msgUserDataUnloadable": "Your user data could not be loaded.",
+  "msgAppDataRecovered": "App data was damaged. The user list was rebuilt from existing files."
 }

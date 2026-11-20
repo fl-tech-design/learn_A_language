@@ -853,6 +853,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'learned'**
   String get labLearnedShort;
+
+  /// No description provided for @msgSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Saving failed. The last progress could not be saved.'**
+  String get msgSaveFailed;
+
+  /// No description provided for @msgUserDataRecovered.
+  ///
+  /// In en, this message translates to:
+  /// **'Your user data was damaged and has been restored from a backup.'**
+  String get msgUserDataRecovered;
+
+  /// No description provided for @msgUserDataUnloadable.
+  ///
+  /// In en, this message translates to:
+  /// **'Your user data could not be loaded.'**
+  String get msgUserDataUnloadable;
+
+  /// No description provided for @msgAppDataRecovered.
+  ///
+  /// In en, this message translates to:
+  /// **'App data was damaged. The user list was rebuilt from existing files.'**
+  String get msgAppDataRecovered;
 }
 
 class _AppLocalizationsDelegate

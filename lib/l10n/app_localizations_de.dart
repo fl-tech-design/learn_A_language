@@ -400,4 +400,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get labLearnedShort => 'gelernt';
+
+  @override
+  String get msgSaveFailed =>
+      'Speichern fehlgeschlagen. Der letzte Fortschritt konnte nicht gesichert werden.';
+
+  @override
+  String get msgUserDataRecovered =>
+      'Deine Benutzerdaten waren beschädigt und wurden aus einer Sicherung wiederhergestellt.';
+
+  @override
+  String get msgUserDataUnloadable =>
+      'Deine Benutzerdaten konnten nicht geladen werden.';
+
+  @override
+  String get msgAppDataRecovered =>
+      'Die App-Daten waren beschädigt. Die Benutzerliste wurde aus den vorhandenen Dateien wiederhergestellt.';
 }

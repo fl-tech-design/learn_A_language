@@ -1,7 +1,10 @@
+import 'dart:developer' show log;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'l10n/app_localizations.dart';
+import 'services/storage_error_bus.dart';
 import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
@@ -11,6 +14,7 @@ import 'managers/vocab_queries.dart';
 import 'managers/user_manager.dart';
 import 'services/file_service.dart';
 import 'theme/app_theme.dart';
+import 'widgets/app_widgets.dart';
 import 'screens/loading_screen.dart';
 import 'screens/start_screen.dart';
 import 'screens/learning_screen.dart';
@@ -48,7 +52,14 @@ void main() async {
   final uname = dataState.appData.loggedUName;
   if (uname.isNotEmpty) {
     await vocabManager.migrateVocabForUser(uname);
-    await userState.login(uname);
+    final loginError = await userState.login(uname);
+    if (loginError != null) {
+      // Auto-Login fehlgeschlagen (z. B. korrupte User-Datei): Kein
+      // eingeloggter Zustand, und die Meldung wird der UI beim Start
+      // einmalig über den [StorageErrorBus] angezeigt.
+      log('main: Auto-Login für $uname fehlgeschlagen: $loginError');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+    }
     await dataState.loadAppData();
   }
 
@@ -80,6 +91,10 @@ class LearnALanguageApp extends StatelessWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       navigatorObservers: [routeObserver],
+      // Globaler, einmaliger Kanäle für Speicherwarnungen (SnackBar statt
+      // Dialog), auch für Meldungen aus der Zeit vor runApp.
+      builder: (context, child) =>
+          StorageWarningListener(child: child ?? const SizedBox.shrink()),
       initialRoute: '/',
       routes: {
         '/': (context) => const LoadingScreen(),

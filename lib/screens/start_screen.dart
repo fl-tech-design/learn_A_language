@@ -66,8 +66,12 @@ class _StartScreenState extends State<StartScreen> {
     if (result == '__add__') {
       await _showCreateUser();
     } else {
-      await userState.login(result);
+      final error = await userState.login(result);
       if (!mounted) return;
+      if (error != null) {
+        _showSnack(error);
+        return;
+      }
       await dataState.loadAppData();
       if (!mounted) return;
       setState(() {});
@@ -89,11 +93,23 @@ class _StartScreenState extends State<StartScreen> {
       l10n.chancel,
     );
     if (result == null) return;
-    await userState.registerUser(result['username']!, result['m_lang']!);
+    final error =
+        await userState.registerUser(result['username']!, result['m_lang']!);
     if (!mounted) return;
+    if (error != null) {
+      _showSnack(error);
+      return;
+    }
     await dataState.loadAppData();
     if (!mounted) return;
     setState(() {});
+  }
+
+  /// Einmalige, dezente Hinweis-Anzeige nach einer Nutzeraktion (kein Dialog,
+  /// kein Dauer-Spam – nur ein SnackBar pro Aktion).
+  void _showSnack(String message) {
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(message)));
   }
 
   Future<void> _confirmRemoveCourse(String courseId) async {

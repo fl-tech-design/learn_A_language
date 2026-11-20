@@ -1,6 +1,9 @@
+import 'dart:developer' show log;
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import 'package:provider/provider.dart';
+import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/user_state.dart';
 import '../managers/data_state.dart';
@@ -35,17 +38,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (v == null) return;
     setState(() => _stayLoggedIn = v);
     final dataState = context.read<DataState>();
-    await context.read<FileService>().updateJsonKey(
-        'data_app/app_data.json', 'stay_logged_in', v);
+    await _updateAppDataKeySafe('stay_logged_in', v);
     await dataState.loadAppData();
   }
 
   Future<void> _setWordsPerSession(int count) async {
     setState(() => _wordsPerSession = count);
     final dataState = context.read<DataState>();
-    await context.read<FileService>().updateJsonKey(
-        'data_app/app_data.json', 'words_per_session', count);
+    await _updateAppDataKeySafe('words_per_session', count);
     await dataState.loadAppData();
+  }
+
+  /// Schützt den direkten `updateJsonKey`-Aufruf auf `app_data.json` (dieser
+  /// Aufrufpfad läuft NICHT über `DataState.loadAppData`) – Fehler werden
+  /// geloggt und einmalig über den StorageErrorBus angezeigt, nie gecrasht.
+  Future<void> _updateAppDataKeySafe(String key, Object? value) async {
+    try {
+      await context
+          .read<FileService>()
+          .updateJsonKey('data_app/app_data.json', key, value);
+    } on PersistenceException catch (e) {
+      log('settings: $key konnte nicht gespeichert werden ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+    }
   }
 
   Future<void> _requestDeleteUser() async {
@@ -79,7 +94,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
         toBeginningOfSentenceCase(l10n.confirm),
         toBeginningOfSentenceCase(l10n.chancel));
     if (result == null) return;
-    await userState.registerUser(result['username']!, result['m_lang']!);
+    final error =
+        await userState.registerUser(result['username']!, result['m_lang']!);
+    if (!mounted || error != null) return;
     await dataState.loadAppData();
     if (!mounted) return;
     setState(() {});

@@ -152,5 +152,9 @@
   "colLevel": "Level",
   "labNewShort": "neu",
   "labDueShort": "fällig",
-  "labLearnedShort": "gelernt"
+  "labLearnedShort": "gelernt",
+  "msgSaveFailed": "Speichern fehlgeschlagen. Der letzte Fortschritt konnte nicht gesichert werden.",
+  "msgUserDataRecovered": "Deine Benutzerdaten waren beschädigt und wurden aus einer Sicherung wiederhergestellt.",
+  "msgUserDataUnloadable": "Deine Benutzerdaten konnten nicht geladen werden.",
+  "msgAppDataRecovered": "Die App-Daten waren beschädigt. Die Benutzerliste wurde aus den vorhandenen Dateien wiederhergestellt."
 }

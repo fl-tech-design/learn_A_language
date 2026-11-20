@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:learn_a_language/managers/user_state.dart';
 import 'package:learn_a_language/models/app_models.dart';
+import 'package:learn_a_language/services/storage_error_bus.dart';
 
 import 'helpers/fakes.dart';
 
@@ -58,6 +59,44 @@ void main() {
       // mLang 'de' → Zielsprache 'en' → alle en-Kurse werden gespeichert
       expect(um.lastSaved!.selectedCourses, enCourses);
       expect(state.selectedCourseIds, enCourses);
+    });
+  });
+
+  group('UserState.login – Persistenz-Fehler', () {
+    test('korrupte User-Datei: Fehlertext, kein Halblogin, Warnung einmalig',
+        () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager(unreadableUsers: {'alice'});
+      final vm = FakeVocabManager();
+      final state = UserState(userManager: um, vocabManager: vm);
+
+      final error = await state.login('alice');
+
+      expect(error, isNotNull);
+      // Kein persistierter Halblogin in app_data.
+      expect(um.userLoggedIn, isFalse);
+      expect(um.loggedUName, isEmpty);
+      expect(state.userData, isNull);
+      // Warnung einmalig konsumierbar (kein SnackBar-Spam).
+      expect(StorageErrorBus.instance.takeLast(),
+          StorageErrorKind.userDataUnloadable);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+
+    test('Erfolg persistiert Login-State erst nach validierten Daten', () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager();
+      um.seed('alice', _userData());
+      final vm = FakeVocabManager();
+      final state = UserState(userManager: um, vocabManager: vm);
+
+      final error = await state.login('alice');
+
+      expect(error, isNull);
+      expect(um.userLoggedIn, isTrue);
+      expect(um.loggedUName, 'alice');
+      expect(state.userData, isNotNull);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
     });
   });
 

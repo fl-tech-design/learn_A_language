@@ -1,6 +1,10 @@
+import 'dart:developer' show log;
+
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
 import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
+import 'user_manager.dart' show recoverAppData;
 
 /// Central data & locale state – base/app JSON data and colors.
 /// Extracted from AppState to eliminate the God Object anti-pattern.
@@ -41,8 +45,28 @@ class DataState extends ChangeNotifier {
   }
 
   Future<void> loadAppData() async {
-    _baseData = await _fileService.loadJson('data_base/base_data.json');
-    _appDataRaw = await _fileService.loadJson('data_app/app_data.json');
+    try {
+      _baseData = await _fileService.loadJson('data_base/base_data.json');
+    } on PersistenceException catch (e) {
+      // Bundle-Standarddaten sind read-only; {} = Defaults, aber sichtbar.
+      log('loadAppData: base_data unlesbar ($e)');
+      _baseData = const {};
+    }
+
+    try {
+      _appDataRaw = await _fileService.loadJson('data_app/app_data.json');
+    } on PersistenceException catch (e) {
+      log('loadAppData: app_data unlesbar ($e)');
+      try {
+        final recovered = await recoverAppData(_fileService);
+        _appDataRaw = recovered.toJson();
+        StorageErrorBus.instance.report(StorageErrorKind.appDataRecovered);
+      } catch (e2) {
+        log('loadAppData: Rekonstruktion fehlgeschlagen ($e2)');
+        StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+        _appDataRaw = const {};
+      }
+    }
 
     _currLang = _baseData['curr_lang']?.toString() ?? 'de';
     _appData = AppData.fromJson(_appDataRaw);
@@ -76,8 +100,13 @@ class DataState extends ChangeNotifier {
     final langCode = mapping[norm];
     if (langCode == null) return;
 
-    await _fileService.updateJsonKey(
-        'data_base/base_data.json', 'curr_lang', langCode);
+    try {
+      await _fileService.updateJsonKey(
+          'data_base/base_data.json', 'curr_lang', langCode);
+    } on PersistenceException catch (e) {
+      log('changeLanguage: Speichern fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+    }
     await loadAppData();
   }
 }

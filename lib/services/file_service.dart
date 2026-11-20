@@ -1,8 +1,27 @@
 import 'dart:convert';
+import 'dart:developer' show log;
 import 'dart:io';
 
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
+
+import 'storage_error_bus.dart';
+
+/// Kontrolliert signalisierter Persistenzfehler.
+///
+/// Wird geworfen, wenn eine Datei existiert, aber nicht gelesen/geparst
+/// werden kann (Primärdatei UND `.bak`) oder ein Schreibvorgang fehlschlägt.
+/// „Datei existiert nicht" ist KEIN Fehler – das ist der Normalfall und wird
+/// weiterhin mit `{}` in [FileService.loadJson] beantwortet.
+class PersistenceException implements Exception {
+  final String path;
+  final Object? cause;
+
+  const PersistenceException(this.path, [this.cause]);
+
+  @override
+  String toString() => 'PersistenceException($path, cause: $cause)';
+}
 
 /// Provides JSON file read/write with automatic first-launch asset copy.
 /// Interface extracted from the former static FileService class as part of
@@ -19,12 +38,23 @@ abstract class FileService {
 }
 
 /// Concrete implementation backed by the app documents directory.
+///
+/// Für Unit-Tests kann ein eigenes Basisverzeichnis übergeben werden
+/// ([baseDirOverride]); ohne Angabe wird wie bisher PathProvider genutzt.
 class FileServiceImpl implements FileService {
+  final String? baseDirOverride;
+
+  FileServiceImpl({this.baseDirOverride});
+
   String? _appDir;
 
   @override
   Future<String> get appDir async {
     if (_appDir != null) return _appDir!;
+    if (baseDirOverride != null) {
+      _appDir = baseDirOverride;
+      return _appDir!;
+    }
     final dir = await getApplicationDocumentsDirectory();
     _appDir = dir.path;
     return _appDir!;
@@ -116,7 +146,9 @@ class FileServiceImpl implements FileService {
           await parent.create(recursive: true);
         }
         await targetFile.writeAsBytes(bytes.buffer.asUint8List());
-      } catch (_) {}
+      } catch (e) {
+        log('initialize: Kopie von $rel fehlgeschlagen: $e');
+      }
     }
 
     if (firstRun) await flagFile.create();
@@ -124,30 +156,98 @@ class FileServiceImpl implements FileService {
 
   @override
   Future<Map<String, dynamic>> loadJson(String relativePath) async {
+    final dir = await appDir;
+    final file = File('$dir/$relativePath');
+
+    // ── Normalfall: Datei fehlt → {} (semantisch „nicht vorhanden"). ──
+    if (!await file.exists()) return {};
+
+    // ── Fehlerfall: Datei existiert, ist aber unlesbar/korrupt. ──
     try {
-      final dir = await appDir;
-      final file = File('$dir/$relativePath');
-      if (!await file.exists()) return {};
-      final content = await file.readAsString();
-      return json.decode(content) as Map<String, dynamic>;
-    } catch (_) {
-      return {};
+      return _decodeJsonObject(relativePath, await file.readAsString());
+    } catch (e) {
+      log('loadJson: $relativePath unlesbar/korrupt ($e)');
+
+      // Backup-Generation als Rettung versuchen.
+      final backup = File('$dir/$relativePath.bak');
+      if (await backup.exists()) {
+        try {
+          final recovered = _decodeJsonObject(relativePath, await backup.readAsString());
+          log('loadJson: $relativePath aus .bak gerettet');
+          // Primärdatei atomar reparieren, OHNE das .bak anzufassen
+          // (rotierte saveJson später das unreparierte .bak, wäre die
+          // Rettung nur einmal wirksam gewesen).
+          try {
+            await _writeFileAtomic(file.path, recovered, rotateBackup: false);
+          } on Exception catch (e2) {
+            log('loadJson: Reparatur von $relativePath fehlgeschlagen ($e2)');
+            StorageErrorBus.instance.report(StorageErrorKind.userDataRecovered);
+          }
+          return recovered;
+        } catch (e2) {
+          log('loadJson: Backup $relativePath.bak ebenfalls unbrauchbar ($e2)');
+        }
+      }
+
+      throw PersistenceException(relativePath, e);
     }
+  }
+
+  /// Decodiert [content] als JSON-Objekt. Wirft [FormatException] bei
+  /// ungültigem JSON oder wenn der Top-Level-Typ kein Map ist (z. B.
+  /// `[1,2,3]` oder `"text"`) – bewusst OHNE `TypeError`.
+  static Map<String, dynamic> _decodeJsonObject(
+      String relativePath, String content) {
+    final decoded = json.decode(content);
+    if (decoded is! Map<String, dynamic>) {
+      throw FormatException(
+          '$relativePath: erwartet JSON-Objekt, gefunden ${decoded.runtimeType}');
+    }
+    return decoded;
   }
 
   @override
   Future<void> saveJson(
       String relativePath, Map<String, dynamic> data) async {
+    final dir = await appDir;
+    await _writeFileAtomic('$dir/$relativePath', data, rotateBackup: true);
+  }
+
+  /// Schreibt [data] atomar als JSON nach [relativePath].
+  ///
+  /// Ablauf (`flush: true`, damit der Inhalt vor dem `rename` auf der Platte
+  /// liegt – Stromverlust-Sicherheit):
+  /// 1. Existierende Zieldatei → eine Generation als `.bak` rotieren
+  ///    (nur wenn [rotateBackup] gesetzt ist – die Rettung in [loadJson]
+  ///    repariert die Primärdatei, ohne das Backup anzufassen).
+  /// 2. Temp-Datei `$path.tmp` im SELBEN Verzeichnis schreiben → eine volle
+  ///    Disk bricht hier, Zieldatei und Backup bleiben intakt.
+  /// 3. `tmp.rename(path)` → atomarer Umstieg (gleiches Dateisystem).
+  ///
+  /// Fehler werden protokolliert und als [PersistenceException] signalisiert –
+  /// niemals still geschluckt.
+  Future<void> _writeFileAtomic(
+      String absolutePath, Map<String, dynamic> data,
+      {required bool rotateBackup}) async {
+    const encoder = JsonEncoder.withIndent('  ');
+    final file = File(absolutePath);
+    final parent = file.parent;
+
     try {
-      final dir = await appDir;
-      final file = File('$dir/$relativePath');
-      final parent = file.parent;
       if (!await parent.exists()) {
         await parent.create(recursive: true);
       }
-      const encoder = JsonEncoder.withIndent('  ');
-      await file.writeAsString(encoder.convert(data));
-    } catch (_) {}
+      if (rotateBackup && await file.exists()) {
+        await File('$absolutePath.bak')
+            .writeAsString(await file.readAsString(), flush: true);
+      }
+      final tmp = File('$absolutePath.tmp');
+      await tmp.writeAsString(encoder.convert(data), flush: true);
+      await tmp.rename(absolutePath);
+    } catch (e) {
+      log('saveJson: Schreiben von $absolutePath fehlgeschlagen: $e');
+      throw PersistenceException(absolutePath, e);
+    }
   }
 
   @override
@@ -162,8 +262,15 @@ class FileServiceImpl implements FileService {
   Future<Map<String, dynamic>> loadBundledJson(String assetPath) async {
     try {
       final content = await rootBundle.loadString(assetPath);
-      return json.decode(content) as Map<String, dynamic>;
-    } catch (_) {
+      final decoded = json.decode(content);
+      if (decoded is! Map<String, dynamic>) {
+        throw FormatException('$assetPath: kein JSON-Objekt');
+      }
+      return decoded;
+    } catch (e) {
+      // Bundle-Assets sind read-only; {} bleibt hier der vertragliche
+      // „nicht verfügbar"-Fallback (Normalfall), aber der Fehler wird sichtbar.
+      log('loadBundledJson: $assetPath konnte nicht geladen werden: $e');
       return {};
     }
   }
@@ -185,7 +292,9 @@ class FileServiceImpl implements FileService {
           try {
             final content = await entity.readAsString();
             result[key] = json.decode(content);
-          } catch (_) {}
+          } catch (e) {
+            log('loadLanguageDictFromDir: $fname konnte nicht gelesen werden: $e');
+          }
         }
       }
     }

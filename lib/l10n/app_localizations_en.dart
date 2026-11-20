@@ -396,4 +396,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get labLearnedShort => 'learned';
+
+  @override
+  String get msgSaveFailed =>
+      'Saving failed. The last progress could not be saved.';
+
+  @override
+  String get msgUserDataRecovered =>
+      'Your user data was damaged and has been restored from a backup.';
+
+  @override
+  String get msgUserDataUnloadable => 'Your user data could not be loaded.';
+
+  @override
+  String get msgAppDataRecovered =>
+      'App data was damaged. The user list was rebuilt from existing files.';
 }

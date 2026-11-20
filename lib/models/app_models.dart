@@ -120,12 +120,18 @@ class AnswerCheckResult {
   final String message;
   final bool statusChanged;
 
+  /// Kennzeichnet, dass die Antwort zwar ausgewertet, der daraus folgende
+  /// Fortschritt aber NICHT persistiert werden konnte (Fehler transparent
+  /// machen, ohne das Spiel abzubrechen).
+  final bool persistenceFailed;
+
   const AnswerCheckResult({
     required this.correct,
     this.correctWord,
     this.newLevel,
     this.message = '',
     this.statusChanged = false,
+    this.persistenceFailed = false,
   });
 }
 

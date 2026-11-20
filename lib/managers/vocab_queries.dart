@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer' as developer;
 import 'dart:math';
 
 export '../models/vocab_key.dart'
@@ -6,6 +7,8 @@ export '../models/vocab_key.dart'
 
 import '../models/app_models.dart';
 import '../models/vocab_key.dart';
+import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
@@ -53,9 +56,23 @@ class VocabQueriesImpl implements VocabQueries {
 
   VocabQueriesImpl(this._userManager);
 
+  /// Lädt UserData für Lesezugriffe, ohne dass eine korrupte Datei den
+  /// Aufrufer (Screen/Manager) crasht: Fehler werden geloggt, der
+  /// [StorageErrorBus] informiert die UI einmalig, und es wird `null`
+  /// zurückgegeben („kein User da" – wie bei fehlender Datei).
+  Future<UserData?> _loadSafe(String username) async {
+    try {
+      return await _userManager.loadUserdata(username);
+    } on PersistenceException catch (e) {
+      developer.log('vocab_queries: Userdaten für $username unlesbar ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+      return null;
+    }
+  }
+
   @override
   Future<List<VocabEntry>> getDueWords(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final today = DateTime.now();
     final dueWords = <VocabEntry>[];
@@ -84,7 +101,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getWordsByLevel(
       String username, int targetLevel) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     return ud.vocab.values.where((ve) => ve.level == targetLevel).toList();
   }
@@ -92,7 +109,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getNewWords(String username,
       {int limit = 10, int offset = 0}) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final newWords = ud.vocab.values
         .where((ve) => ve.level == 0 && ve.status == 'new')
@@ -104,7 +121,7 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<VocabEntry>> getReadWords(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     // „Gelesene Wörter": alles, was mindestens einmal angeschaut wurde.
     return ud.vocab.values.where((ve) => ve.status == 'seen').toList();
@@ -112,7 +129,7 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<VocabEntry>> getLearnedWords(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     // „Gelernte Wörter": fertig gelernt (Level 8) – über alle Kategorien.
     return ud.vocab.values.where((ve) => ve.level >= 8).toList();
@@ -130,7 +147,7 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<VocabEntry>> getAllWords(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     return ud.vocab.values.toList();
   }
@@ -138,7 +155,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupWords(
       String username, WordCategory category) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final entries = ud.vocab.values
         .where((ve) => category.containsEntryKey(ve.key))
@@ -150,7 +167,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupNewWords(String username,
       WordCategory category, {int limit = 10, int offset = 0}) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final newWords = ud.vocab.values
         .where((ve) =>
@@ -173,7 +190,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<Map<String, CategoryCounts>> getCategoryCounts(
       String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     final result = <String, CategoryCounts>{};
     if (ud == null) return result;
     final today = DateTime.now();
@@ -213,7 +230,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupLearnWords(
       String username, WordCategory category) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final due = <VocabEntry>[];
     final fresh = <VocabEntry>[];
@@ -238,7 +255,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupDueWords(
       String username, WordCategory category) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final today = DateTime.now();
     final due = <VocabEntry>[];
@@ -255,7 +272,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupLearnedWords(
       String username, WordCategory category) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final learned = ud.vocab.values
         .where((ve) => ve.level >= 8 && category.containsEntryKey(ve.key))
@@ -267,7 +284,7 @@ class VocabQueriesImpl implements VocabQueries {
   @override
   Future<List<VocabEntry>> getGroupReadWords(
       String username, WordCategory category) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return [];
     final read = ud.vocab.values
         .where((ve) =>
@@ -307,13 +324,13 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<DayStreak> getDayStreak(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     return ud?.dayStreak ?? const DayStreak();
   }
 
   @override
   Future<void> updateDayStreak(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return;
     final streak = ud.dayStreak ?? const DayStreak();
 
@@ -330,14 +347,19 @@ class VocabQueriesImpl implements VocabQueries {
     }
     final newLongest = max<int>(streak.longest, newCurrent);
 
-    await _userManager.saveUserdata(
-        username,
-        ud.copyWith(
-            dayStreak: DayStreak(
-          current: newCurrent,
-          longest: newLongest,
-          lastDate: todayStr,
-        )));
+    try {
+      await _userManager.saveUserdata(
+          username,
+          ud.copyWith(
+              dayStreak: DayStreak(
+            current: newCurrent,
+            longest: newLongest,
+            lastDate: todayStr,
+          )));
+    } on PersistenceException catch (e) {
+      developer.log('updateDayStreak: Speichern für $username fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+    }
   }
 
   @override
@@ -349,7 +371,14 @@ class VocabQueriesImpl implements VocabQueries {
         completer.complete(
             await _checkWordAnswer(username, wordKey, userInput));
       } catch (e, st) {
-        completer.completeError(e, st);
+        // Letzte Verteidigung: niemals eine unbehandelte Async-Exception in
+        // die Screens entlassen – der Antwort-Pfad läuft mit Hinweis weiter.
+        developer.log('checkWordAnswer: unerwarteter Fehler ($e)\n$st');
+        completer.complete(const AnswerCheckResult(
+          correct: false,
+          message: 'Interner Fehler.',
+          persistenceFailed: true,
+        ));
       }
     });
     return completer.future;
@@ -358,7 +387,7 @@ class VocabQueriesImpl implements VocabQueries {
   /// Actual answer checking + persistence, serialized via [_answerQueue].
   Future<AnswerCheckResult> _checkWordAnswer(
       String username, String wordKey, String userInput) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null || !ud.vocab.containsKey(wordKey)) {
       return const AnswerCheckResult(
         correct: false,
@@ -395,8 +424,21 @@ class VocabQueriesImpl implements VocabQueries {
 
       final newVocab = Map<String, VocabEntry>.from(ud.vocab);
       newVocab[wordKey] = updated;
-      await _userManager.saveUserdata(
-          username, ud.copyWith(vocab: newVocab));
+      try {
+        await _userManager.saveUserdata(
+            username, ud.copyWith(vocab: newVocab));
+      } on PersistenceException catch (e) {
+        developer.log('checkWordAnswer: Fortschritt nicht gespeichert ($e)');
+        StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+        return AnswerCheckResult(
+          correct: true,
+          correctWord: correctTranslation,
+          newLevel: newLevel,
+          message: 'Fortschritt konnte nicht gespeichert werden.',
+          statusChanged: statusChanged,
+          persistenceFailed: true,
+        );
+      }
 
       return AnswerCheckResult(
         correct: true,
@@ -418,8 +460,20 @@ class VocabQueriesImpl implements VocabQueries {
 
       final newVocab = Map<String, VocabEntry>.from(ud.vocab);
       newVocab[wordKey] = updated;
-      await _userManager.saveUserdata(
-          username, ud.copyWith(vocab: newVocab));
+      try {
+        await _userManager.saveUserdata(
+            username, ud.copyWith(vocab: newVocab));
+      } on PersistenceException catch (e) {
+        developer.log('checkWordAnswer: Fortschritt nicht gespeichert ($e)');
+        StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+        return AnswerCheckResult(
+          correct: false,
+          correctWord: correctTranslation,
+          newLevel: 0,
+          message: 'Fortschritt konnte nicht gespeichert werden.',
+          persistenceFailed: true,
+        );
+      }
 
       return AnswerCheckResult(
         correct: false,

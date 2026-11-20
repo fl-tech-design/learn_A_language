@@ -1,5 +1,8 @@
+import 'dart:developer' show log;
+
 import '../models/app_models.dart';
 import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
 import 'user_manager.dart';
 
 /// Vocabulary management — interface extracted from the former static
@@ -23,6 +26,29 @@ class VocabManagerImpl implements VocabManager {
   final FileService _fileService;
 
   VocabManagerImpl(this._userManager, this._fileService);
+
+  /// Lädt UserData, ohne dass eine korrupte Datei den Aufrufer crasht
+  /// (Log + einmalige Bus-Meldung, Rückgabe `null` wie bei fehlender Datei).
+  Future<UserData?> _loadSafe(String username) async {
+    try {
+      return await _userManager.loadUserdata(username);
+    } on PersistenceException catch (e) {
+      log('vocab_manager: Userdaten für $username unlesbar ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+      return null;
+    }
+  }
+
+  /// Speichert UserData; Fehler werden geloggt und per Bus gemeldet, statt
+  /// den Aufrufer (Login, main.dart, Init/Migration) crashen zu lassen.
+  Future<void> _saveSafe(String username, UserData data) async {
+    try {
+      await _userManager.saveUserdata(username, data);
+    } on PersistenceException catch (e) {
+      log('vocab_manager: Speichern für $username fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+    }
+  }
 
   @override
   Future<Map<String, dynamic>> loadLanguageDictFromDir(
@@ -112,7 +138,7 @@ class VocabManagerImpl implements VocabManager {
   @override
   Future<void> initVocabForUser(
       String username, Map<String, dynamic> languageDict) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return;
 
     var langDict = languageDict;
@@ -154,13 +180,13 @@ class VocabManagerImpl implements VocabManager {
     }
 
     if (changed) {
-      await _userManager.saveUserdata(username, ud.copyWith(vocab: vocab));
+      await _saveSafe(username, ud.copyWith(vocab: vocab));
     }
   }
 
   @override
   Future<void> migrateVocabForUser(String username) async {
-    final ud = await _userManager.loadUserdata(username);
+    final ud = await _loadSafe(username);
     if (ud == null) return;
     if (ud.vocab.isEmpty) return;
 
@@ -304,8 +330,7 @@ class VocabManagerImpl implements VocabManager {
     }
 
     if (changed) {
-      await _userManager.saveUserdata(
-          username, ud.copyWith(vocab: vocabMap));
+      await _saveSafe(username, ud.copyWith(vocab: vocabMap));
     }
   }
 }

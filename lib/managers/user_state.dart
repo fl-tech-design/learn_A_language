@@ -1,5 +1,9 @@
+import 'dart:developer' show log;
+
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
+import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
@@ -21,23 +25,54 @@ class UserState extends ChangeNotifier {
   UserData? get userData => _userData;
 
   // ── Login / User management ───────────────────────────────────
-  Future<void> login(String username) async {
-    await _userManager.changeLoginState(newState: true);
-    await _userManager.setLoggedUname(username);
-    await _loadUserData(username);
+  //
+  // REIHENFOLGE: Erst werden die Benutzerdaten geladen und validiert, DANN
+  // (und nur bei Erfolg) wird der Login-State persistiert. Scheitert das
+  // Laden, bleibt kein Halblogin in app_data zurück. Die Rückgabe ist
+  // `null` bei Erfolg bzw. ein Fehlertext, den die UI anzeigen kann.
+  Future<String?> login(String username) async {
+    final UserData? loaded;
+    try {
+      loaded = await _userManager.loadUserdata(username);
+    } on PersistenceException catch (e) {
+      log('login: Userdaten für $username unlesbar ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+      return 'Benutzerdaten konnten nicht geladen werden.';
+    }
+    if (loaded == null) {
+      return 'Benutzer ist nicht registriert.';
+    }
 
-    final langDict = _userData?.language ?? {};
+    try {
+      await _userManager.changeLoginState(newState: true);
+      await _userManager.setLoggedUname(username);
+    } catch (e) {
+      log('login: Login-State konnte nicht persistiert werden ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+      return 'Login konnte nicht gespeichert werden.';
+    }
+
+    _userData = loaded;
+    final langDict = loaded.language;
     await _vocabManager.initVocabForUser(username, langDict);
     await _vocabManager.migrateVocabForUser(username);
 
     await _loadUserData(username);
     await _autoSelectCourses(username);
     notifyListeners();
+    return null;
   }
 
   /// Creates a brand new user and logs them in.
   Future<String?> registerUser(String username, String mLang) async {
-    final result = await _userManager.createUserFile(username, mLang, {});
+    final String result;
+    try {
+      result = await _userManager.createUserFile(username, mLang, {});
+    } on PersistenceException catch (e) {
+      log('registerUser: Anlegen von $username fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+      return 'Benutzer konnte nicht erstellt werden (Speicherfehler).';
+    }
     if (!result.contains('erfolgreich')) {
       return result;
     }
@@ -57,7 +92,25 @@ class UserState extends ChangeNotifier {
   }
 
   Future<void> _loadUserData(String username) async {
-    _userData = await _userManager.loadUserdata(username);
+    try {
+      _userData = await _userManager.loadUserdata(username);
+    } on PersistenceException catch (e) {
+      // Wird z. B. nach initVocab/migrate erneut geladen; schlägt das fehl,
+      // bleibt der bereits geladene Stand erhalten und es gibt keinen Crash.
+      log('_loadUserData: $username unlesbar ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+    }
+  }
+
+  /// Speichert UserData, ohne den UI-Aufrufer zu crashen: Fehler werden
+  /// geloggt und einmalig über den [StorageErrorBus] gemeldet.
+  Future<void> _saveSafe(String username, UserData data) async {
+    try {
+      await _userManager.saveUserdata(username, data);
+    } on PersistenceException catch (e) {
+      log('user_state: Speichern für $username fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+    }
   }
 
   /// Auto-selects courses for existing users who have vocab but no courses.
@@ -76,11 +129,10 @@ class UserState extends ChangeNotifier {
     final userData = await _userManager.loadUserdata(username);
     if (userData == null) return;
     final updated = userData.copyWith(selectedCourses: derived);
-    await _userManager.saveUserdata(username, updated);
+    await _saveSafe(username, updated);
     await _loadUserData(username);
     notifyListeners();
   }
-
   // ── Course management ─────────────────────────────────────────
 
   /// Returns the user's selected course IDs, or auto-derives from target lang.
@@ -137,7 +189,7 @@ class UserState extends ChangeNotifier {
       final userData = await _userManager.loadUserdata(uname);
       if (userData == null) return;
       final updated = userData.copyWith(selectedCourses: current);
-      await _userManager.saveUserdata(uname, updated);
+      await _saveSafe(uname, updated);
       await _loadUserData(uname);
       notifyListeners();
     }
@@ -182,7 +234,7 @@ class UserState extends ChangeNotifier {
       progress: progress,
       vocab: clearVocab ? const {} : userData.vocab,
     );
-    await _userManager.saveUserdata(uname, updated);
+    await _saveSafe(uname, updated);
     await _loadUserData(uname);
     notifyListeners();
   }

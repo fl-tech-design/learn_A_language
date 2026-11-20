@@ -1,7 +1,10 @@
 import 'dart:async';
+import 'dart:developer' as developer;
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/user_manager.dart';
@@ -214,7 +217,12 @@ class _GameScreenState extends State<GameScreen> {
       final um = context.read<UserManager>();
       final ud = await um.loadUserdata(uname);
       if (ud != null) {
-        await um.saveUserdata(uname, ud.copyWith(gameHighscore: _highscore));
+        try {
+          await um.saveUserdata(uname, ud.copyWith(gameHighscore: _highscore));
+        } on PersistenceException catch (e) {
+          developer.log('game_screen: Highscore für $uname nicht gespeichert ($e)');
+          StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
+        }
       }
       newRecord = true;
     }

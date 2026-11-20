@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:learn_a_language/managers/vocab_queries.dart';
 import 'package:learn_a_language/models/app_models.dart';
+import 'package:learn_a_language/services/storage_error_bus.dart';
 
 import 'helpers/fakes.dart';
 
@@ -36,6 +37,39 @@ VocabEntry _vocab(
     );
 
 void main() {
+  group('checkWordAnswer – Persistenz-Fehler', () {
+    test('Schreibfehler liefert persistenceFailed statt Exception (kein Crash)',
+        () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager(failSaveUsers: {'alice'});
+      um.seed('alice', _userData('alice', {'w': _vocab('w', translation: 'w')}));
+      final q = VocabQueriesImpl(um);
+
+      final result = await q.checkWordAnswer('alice', 'w', 'w');
+
+      // Antwort wird ausgewertet, aber Fortschritt nicht persistiert …
+      expect(result.correct, isTrue);
+      expect(result.persistenceFailed, isTrue);
+      // … und einmalig gemeldet.
+      expect(StorageErrorBus.instance.takeLast(),
+          StorageErrorKind.progressNotSaved);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+
+    test('ohne Fehler kein persistenceFailed', () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager();
+      um.seed('alice', _userData('alice', {'w': _vocab('w', translation: 'w')}));
+      final q = VocabQueriesImpl(um);
+
+      final result = await q.checkWordAnswer('alice', 'w', 'w');
+
+      expect(result.correct, isTrue);
+      expect(result.persistenceFailed, isFalse);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+  });
+
   group('getDueWords', () {
     test('filtert nach level, status und reviewDue', () async {
       final now = DateTime.now();

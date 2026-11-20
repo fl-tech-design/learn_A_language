@@ -16,6 +16,14 @@ class FakeFileService implements FileService {
   final String appDirValue;
   final bool appDirThrows;
 
+  /// Pfade, bei denen [loadJson] eine [PersistenceException] wirft (simuliert
+  /// korrupte/unlesbare Dateien) – additiv, Default = kein Fehlerverhalten.
+  final Set<String> corruptPaths;
+
+  /// Pfade, bei denen [saveJson] eine [PersistenceException] wirft
+  /// (simulierter Schreibfehler) – additiv, Default = kein Fehlerverhalten.
+  final Set<String> failSavePaths;
+
   /// Zuletzt per [loadBundledJson] ausgelieferte Daten.
   Map<String, dynamic> bundled;
 
@@ -28,6 +36,8 @@ class FakeFileService implements FileService {
     this.bundled = const {},
     this.appDirValue = '',
     this.appDirThrows = false,
+    this.corruptPaths = const {},
+    this.failSavePaths = const {},
   })  : store = store ?? {},
         languageDicts = languageDicts ?? {};
 
@@ -43,12 +53,21 @@ class FakeFileService implements FileService {
   }
 
   @override
-  Future<Map<String, dynamic>> loadJson(String relativePath) async =>
-      store[relativePath] ?? {};
+  Future<Map<String, dynamic>> loadJson(String relativePath) async {
+    if (corruptPaths.contains(relativePath)) {
+      throw PersistenceException(
+          relativePath, StateError('simulierter Korruptions-Fehler'));
+    }
+    return store[relativePath] ?? {};
+  }
 
   @override
   Future<void> saveJson(
       String relativePath, Map<String, dynamic> data) async {
+    if (failSavePaths.contains(relativePath)) {
+      throw PersistenceException(
+          relativePath, StateError('simulierter Schreibfehler'));
+    }
     store[relativePath] = data;
   }
 
@@ -79,11 +98,22 @@ class FakeUserManager implements UserManager {
   final Map<String, UserData> _users = {};
   final List<String> _registeredUsers = [];
 
+  /// Benutzernamen, für die [loadUserdata] eine [PersistenceException] wirft
+  /// (simuliert korrupte User-Datei) – additiv, Default = kein Fehlerverhalten.
+  final Set<String> unreadableUsers;
+
+  /// Benutzernamen, für die [saveUserdata] eine [PersistenceException] wirft
+  /// (simulierter Schreibfehler) – additiv, Default = kein Fehlerverhalten.
+  final Set<String> failSaveUsers;
+
   int saveCount = 0;
   bool userLoggedIn = false;
   String loggedUName = '';
 
   UserData? _lastSaved;
+
+  FakeUserManager(
+      {this.unreadableUsers = const {}, this.failSaveUsers = const {}});
 
   UserData? get lastSaved => _lastSaved;
 
@@ -118,11 +148,23 @@ class FakeUserManager implements UserManager {
   }
 
   @override
-  Future<UserData?> loadUserdata(String username) async => _users[username];
+  Future<UserData?> loadUserdata(String username) async {
+    if (unreadableUsers.contains(username)) {
+      throw PersistenceException(
+          'data_app/files_user/data_$username.json',
+          StateError('simulierte korrupte User-Datei'));
+    }
+    return _users[username];
+  }
 
   @override
   Future<void> saveUserdata(String username, UserData data) async {
     saveCount++;
+    if (failSaveUsers.contains(username)) {
+      throw PersistenceException(
+          'data_app/files_user/data_$username.json',
+          StateError('simulierter Schreibfehler'));
+    }
     _users[username] = data;
     _lastSaved = data;
   }

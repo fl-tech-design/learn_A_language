@@ -1,7 +1,10 @@
+import 'dart:convert' show jsonDecode;
+import 'dart:developer' show log;
 import 'dart:io';
 
 import '../models/app_models.dart';
 import '../services/file_service.dart';
+import '../services/storage_error_bus.dart';
 
 /// Pure user management logic — interface extracted from the former static
 /// UserManager class (point2, Commit A).
@@ -24,17 +27,37 @@ class UserManagerImpl implements UserManager {
 
   static const _appDataPath = 'data_app/app_data.json';
 
+  /// Erlaubte Zeichen für Benutzernamen: Buchstaben, Ziffern, `_`, `-`.
+  /// Benutzernamen gehen direkt in Dateipfade ein – deshalb die Whitelist.
+  static final RegExp _userNamePattern = RegExp(r'^[A-Za-z0-9_-]+$');
+
+  static const _invalidNameMessage =
+      'Ungültiger Benutzername. Erlaubt sind Buchstaben, Ziffern, '
+      'Unterstrich (_) und Bindestrich (-).';
+
   @override
   Future<String> createUserFile(
       String username, String mLang, Map<String, dynamic> languageDict) async {
-    final filePath = 'data_app/files_user/data_$username.json';
-    final existing = await _fileService.loadJson(filePath);
+    final normalized = username.trim();
+    if (normalized.isEmpty || !_userNamePattern.hasMatch(normalized)) {
+      return _invalidNameMessage;
+    }
+
+    final filePath = 'data_app/files_user/data_$normalized.json';
+    Map<String, dynamic> existing;
+    try {
+      existing = await _fileService.loadJson(filePath);
+    } on PersistenceException catch (e) {
+      log('createUserFile: Bestandsdaten für $normalized korrupt ($e)');
+      return 'Benutzerdaten für $normalized sind beschädigt und konnten '
+          'nicht gelesen werden.';
+    }
     if (existing.isNotEmpty) {
-      return 'Benutzer $username existiert bereits.';
+      return 'Benutzer $normalized existiert bereits.';
     }
 
     final userData = UserData(
-      uName: username,
+      uName: normalized,
       mLang: mLang,
       progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
       learnedLanguages: const [],
@@ -43,7 +66,7 @@ class UserManagerImpl implements UserManager {
     );
 
     await _fileService.saveJson(filePath, userData.toJson());
-    return 'Benutzer $username wurde erfolgreich erstellt.';
+    return 'Benutzer $normalized wurde erfolgreich erstellt.';
   }
 
   @override
@@ -62,14 +85,13 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<void> addNewUserToList(String username) async {
-    final data = await _fileService.loadJson(_appDataPath);
-    final appData = AppData.fromJson(data);
+    final appData = await _readAppData();
     final users = List<String>.from(appData.registeredUser);
     if (!users.contains(username)) {
       users.add(username);
     }
-    await _fileService.saveJson(
-        _appDataPath, appData.copyWith(registeredUser: users).toJson());
+    await _saveAppDataSilently(
+        appData.copyWith(registeredUser: users).toJson(), 'addNewUserToList');
   }
 
   @override
@@ -79,8 +101,7 @@ class UserManagerImpl implements UserManager {
       return 'Kein Benutzername angegeben.';
     }
 
-    final data = await _fileService.loadJson(_appDataPath);
-    final appData = AppData.fromJson(data);
+    final appData = await _readAppData();
     final users = List<String>.from(appData.registeredUser);
 
     if (!users.contains(username)) {
@@ -96,20 +117,27 @@ class UserManagerImpl implements UserManager {
       userLoggedIn = false;
     }
 
-    await _fileService.saveJson(
-        _appDataPath,
+    final saveFailed = await _saveAppDataSilently(
         appData
             .copyWith(
                 registeredUser: users,
                 loggedUName: loggedUName,
                 userLoggedIn: userLoggedIn)
-            .toJson());
+            .toJson(),
+        'deleteUser');
+    if (saveFailed) {
+      return 'Benutzer konnte nicht gelöscht werden (Speichern fehlgeschlagen).';
+    }
 
     try {
       final dir = await _fileService.appDir;
       final file = File('$dir/data_app/files_user/data_$username.json');
       if (await file.exists()) {
         await file.delete();
+      }
+      final bak = File('$dir/data_app/files_user/data_$username.json.bak');
+      if (await bak.exists()) {
+        await bak.delete();
       }
       return "Benutzer '$username' wurde gelöscht.";
     } catch (_) {
@@ -119,17 +147,85 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<void> changeLoginState({required bool newState}) async {
-    final data = await _fileService.loadJson(_appDataPath);
-    final appData = AppData.fromJson(data);
-    await _fileService.saveJson(
-        _appDataPath, appData.copyWith(userLoggedIn: newState).toJson());
+    final appData = await _readAppData();
+    await _saveAppDataSilently(
+        appData.copyWith(userLoggedIn: newState).toJson(), 'changeLoginState');
   }
 
   @override
   Future<void> setLoggedUname(String loggedUname) async {
-    final data = await _fileService.loadJson(_appDataPath);
-    final appData = AppData.fromJson(data);
-    await _fileService.saveJson(
-        _appDataPath, appData.copyWith(loggedUName: loggedUname).toJson());
+    final appData = await _readAppData();
+    await _saveAppDataSilently(
+        appData.copyWith(loggedUName: loggedUname).toJson(), 'setLoggedUname');
   }
+
+  /// Liest `app_data.json` robust: Ist die Datei beschädigt (auch `.bak`),
+  /// wird die Benutzerliste aus den vorhandenen `data_*.json`-Dateien
+  /// rekonstruiert – es wird NIE ein Default-`AppData` zurückgegeben, das
+  /// beim nächsten Write registrierte Profile verschwinden ließe.
+  Future<AppData> _readAppData() async {
+    try {
+      final raw = await _fileService.loadJson(_appDataPath);
+      return AppData.fromJson(raw);
+    } on PersistenceException catch (e) {
+      log('user_manager: app_data unlesbar – rekonstruiere Benutzerliste ($e)');
+      try {
+        final recovered = await recoverAppData(_fileService);
+        StorageErrorBus.instance.report(StorageErrorKind.appDataRecovered);
+        return recovered;
+      } catch (e2) {
+        // Extremfall: auch das Verzeichnis ist nicht lesbar. Dann schlagen
+        // Writes ohnehin fehl – eine Default-AppData wird nicht geschrieben.
+        log('user_manager: Rekonstruktion fehlgeschlagen ($e2)');
+        StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+        return AppData();
+      }
+    }
+  }
+
+  /// Speichert `app_data` und schluckt Fehler NICHT: sie werden geloggt und
+  /// über den [StorageErrorBus] sichtbar gemacht; zurückgegeben wird, ob der
+  /// Write fehlschlug (Aufrufer können dann abbrechen statt blind weiterzumachen).
+  Future<bool> _saveAppDataSilently(Map<String, dynamic> json, String from) async {
+    try {
+      await _fileService.saveJson(_appDataPath, json);
+      return false;
+    } on PersistenceException catch (e) {
+      log('user_manager: app_data-Save aus $from fehlgeschlagen ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.saveFailed);
+      return true;
+    }
+  }
+}
+
+/// Rekonstruiert die registrierte Benutzerliste aus den vorhandenen
+/// User-Dateien (`data_app/files_user/data_*.json`).
+///
+/// Es werden nur echte User-Dateien berücksichtigt – `.bak`/`.tmp`-Artefakte
+/// und Dateien ohne gültiges `u_name`-Feld werden ignoriert.
+Future<AppData> recoverAppData(FileService fs) async {
+  final dir = await fs.appDir;
+  final filesDir = Directory('$dir/data_app/files_user');
+  final users = <String>[];
+  if (await filesDir.exists()) {
+    await for (final entity in filesDir.list()) {
+      if (entity is! File) continue;
+      final fname = entity.uri.pathSegments.last;
+      if (!fname.startsWith('data_') || !fname.endsWith('.json')) continue;
+      if (fname.endsWith('.json.bak') || fname.endsWith('.tmp')) continue;
+      try {
+        final decoded = jsonDecode(await entity.readAsString());
+        if (decoded is Map<String, dynamic>) {
+          final uname = decoded['u_name']?.toString().trim() ?? '';
+          if (uname.isNotEmpty && !users.contains(uname)) {
+            users.add(uname);
+          }
+        }
+      } catch (e) {
+        log('recoverAppData: $fname übersprungen ($e)');
+      }
+    }
+  }
+  users.sort();
+  return AppData(registeredUser: users);
 }
