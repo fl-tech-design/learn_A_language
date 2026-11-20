@@ -36,8 +36,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
   }
 
   @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
+  void initState() {
+    super.initState();
+    // Die fälligen Wörter werden exakt EINMAL beim Öffnen des Screens
+    // geladen. Ein erneutes Laden wäre gefährlich: Sobald sich MediaQuery
+    // ändert (Bildschirmtastatur öffnen/schließen, Orientierungswechsel),
+    // würde didChangeDependencies feuern und die Liste neu laden – das gerade
+    // beantwortete Wort ist dann nicht mehr „fällig“ und das Feedback der
+    // Lösung/des Fehlers sofort überschrieben (→ Screen springt weiter).
     _loadWords();
   }
 
@@ -130,10 +136,23 @@ class _DueWordScreenState extends State<DueWordScreen> {
     return s.replaceAll(RegExp(r'\s*\([^)]*\)'), '').trim();
   }
 
+  /// Normalisiert Unicode-Leerzeichen auf ein normales Leerzeichen. Manche
+  /// Tastaturen/IMEs senden statt U+0020 z. B. das geschützte Leerzeichen
+  /// (U+00A0), schmales geschütztes Leerzeichen (U+202F), Leerzeichen mit
+  /// Fixbreite (U+2007) oder ideografisches Leerzeichen (U+3000). Ohne
+  /// Normalisierung würde die Space-Eingabe fälschlich als „Falsch!“ gewertet
+  /// und keine Leerstelle ins Prüfwort eingefügt.
+  static String _normalizeSpace(String c) {
+    if (c == '\u00A0' || c == '\u202F' || c == '\u2007' || c == '\u3000') {
+      return ' ';
+    }
+    return c;
+  }
+
   Future<void> _onCharInput(String text) async {
     final l10n = AppLocalizations.of(context);
     if (text.isEmpty || _checked) return;
-    final char = text[text.length - 1];
+    final char = _normalizeSpace(text[text.length - 1]);
     if (_words.isEmpty || _index >= _words.length) return;
 
     final word = _words[_index];
@@ -147,9 +166,17 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final expectedChar = correctAnswer[nextPos];
 
     if (expectedChar == ' ') {
-      // Space expected at this position
+      // An dieser Position ist eine Leerstelle erwartet.
       if (char == ' ') {
         setState(() => _userInput += ' ');
+      } else if (nextPos + 1 < correctAnswer.length &&
+          char.toLowerCase() ==
+              correctAnswer[nextPos + 1].toLowerCase()) {
+        // Der User tippt flüssig weiter, ohne die Space-Taste zu drücken:
+        // Leerstelle + folgenden Buchstaben automatisch ergänzen (analog zur
+        // "/"-Auto-Einfügung), damit das Prüfwort nie „an einem Stück“
+        // geschrieben steht. Jedes andere Zeichen gilt weiterhin als Fehler.
+        setState(() => _userInput += ' $char');
       } else {
         unawaited(_failWord(correctAnswer, word));
       }
@@ -234,37 +261,53 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final allDone = _words.isEmpty || _index >= _words.length;
     final word = !allDone ? _words[_index] : null;
     final answerWord = word?.word ?? '';
-    final keyboardOpen = MediaQuery.of(context).viewInsets.bottom > 0;
+    final mq = MediaQuery.of(context);
+    final keyboardOpen = mq.viewInsets.bottom > 0;
+
+    // Handy im Querformat: sehr wenig vertikaler Platz, sobald die
+    // Bildschirmtastatur offen ist. Dann die Abstände kompakter setzen,
+    // damit Übersetzung (gesuchtes Wort) und Eingabe ohne Scrollen
+    // gleichzeitig sichtbar sind. Portrait und große Screens bleiben gleich.
+    final size = mq.size;
+    final compact = size.width > size.height && size.height < 500;
+    final outerPadding = compact ? 8.0 : 20.0;
+    final translationHeight = compact ? 40.0 : 80.0;
+    final translationFontSize = compact ? 22.0 : 32.0;
+    final answerFontSize = compact ? 24.0 : 28.0;
+    final gapSmall = compact ? 2.0 : 4.0;
+    final gapMedium = compact ? 4.0 : 8.0;
+    final gapLarge = compact ? 6.0 : 12.0;
 
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.titPageLearning),
         Expanded(
             child: SingleChildScrollView(
-                padding: const EdgeInsets.all(20),
+                padding: EdgeInsets.all(outerPadding),
                 child: Column(children: [
                   SizedBox(
-                      height: 80,
+                      height: translationHeight,
                       child: Center(
                           child: Text(
                               allDone
                                   ? l10n.noDueWords
                                   : word!.translation,
                               textAlign: TextAlign.center,
-                              style: const TextStyle(fontSize: 32)))),
-                  const SizedBox(height: 4),
+                              style: TextStyle(
+                                  fontSize: translationFontSize)))),
+                  SizedBox(height: gapSmall),
                   if (!allDone)
                     Text(l10n.labLevel(word!.level),
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                             fontSize: AppTheme.infFontSize,
                             color: Colors.white60)),
-                  const SizedBox(height: 8),
+                  SizedBox(height: gapMedium),
                   Text(l10n.translationLabel,
                       style: const TextStyle(
                           fontSize: AppTheme.infFontSize,
                           color: Colors.white60)),
-                  const SizedBox(height: 4),
+                  SizedBox(height: gapSmall),
                   Text.rich(
                       allDone
                           ? const TextSpan()
@@ -275,14 +318,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
                               _userInput,
                               highlightNext: !_checked),
                       textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 28)),
-                  const SizedBox(height: 4),
+                      style: TextStyle(fontSize: answerFontSize)),
+                  SizedBox(height: gapSmall),
                   Text(_correctDisplay,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: AppTheme.lblFontSize,
                           color: _feedbackColor)),
-                  const SizedBox(height: 8),
+                  SizedBox(height: gapMedium),
                     // Hidden single-character input field
                     if (!allDone && !_checked)
                       SizedBox(
@@ -306,7 +349,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                           ),
                         ),
                       ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: gapLarge),
                   if (_checked)
                     SizedBox(
                         height: 56,
@@ -319,7 +362,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                   Text(_feedback,
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20, color: _feedbackColor)),
-                  const SizedBox(height: AppTheme.contentSpacing),
+                  SizedBox(height: compact ? 4.0 : AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,
                       width: double.infinity,

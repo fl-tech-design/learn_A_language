@@ -198,4 +198,93 @@ void main() {
     expect(find.byType(TextField), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
+testWidgets('Feedback bleibt nach Lösung stehen (kein Reload bei Tastatur-Änderung)',
+      (tester) async {
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_1', 'you can', 'du kannst'),
+      _dueWord('can_present_2', 'we can', 'wir können'),
+    ]);
+
+    // Bildschirmtastatur öffnen (via viewInsets simulieren).
+    tester.view.viewInsets = const FakeViewPadding(bottom: 300);
+    addTearDown(tester.view.resetViewInsets);
+    await tester.pumpAndSettle();
+
+    // Wort korrekt lösen – Feedback + „Nächstes Wort“ erscheinen.
+    await _typeLetters(tester, 'you can');
+    expect(_isChecked(tester), isTrue);
+    expect(find.text('Richtig!'), findsOneWidget);
+
+    // Tastatur schließen → MediaQuery/viewInsets ändern sich. Das darf NICHT
+    // zu einem Neu-Laden der Wortliste führen, sonst verschwindet das
+    // Feedback, bevor der User es lesen konnte (Ticket #6 Bug 1).
+    tester.view.viewInsets = const FakeViewPadding();
+    await tester.pumpAndSettle();
+
+    expect(_isChecked(tester), isTrue,
+        reason: 'Screen darf nach Lösung nicht automatisch weiterwechseln');
+    expect(find.text('Richtig!'), findsOneWidget);
+    expect(find.text('Nächstes Wort'), findsOneWidget);
+    expect(find.text('du kannst'), findsOneWidget);
+  });
+
+  testWidgets('geschütztes Leerzeichen (NBSP) zählt als Leerstelle',
+      (tester) async {
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_1', 'can do', 'kann machen'),
+    ]);
+
+    await _typeLetters(tester, 'can');
+    // NBSP statt normaler Leertaste: Leerstelle einfügen, kein „Falsch!“.
+    await _typeLetters(tester, '\u00A0');
+    expect(find.text('Falsch!'), findsNothing);
+    expect(_answerPlain(tester), isNot(contains('·')));
+    expect(_answerPlain(tester).trim(), contains(' '));
+
+    await _typeLetters(tester, 'do');
+    expect(_isChecked(tester), isTrue);
+    expect(find.text('Richtig!'), findsOneWidget);
+    expect(_answerPlain(tester).trim(), 'can do');
+  });
+
+  testWidgets('Leerstelle wird ohne Space-Taste automatisch ergänzt',
+      (tester) async {
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_3', 'you can', 'du kannst'),
+    ]);
+
+    // Fließend getippt (ohne Space-Taste): Die App ergänzt die Leerstelle,
+    // damit das Prüfwort nicht „an einem Stück“ geschrieben wird.
+    await _typeLetters(tester, 'youcan');
+    expect(_isChecked(tester), isTrue);
+    expect(find.text('Richtig!'), findsOneWidget);
+    expect(_answerPlain(tester).trim(), 'you can');
+  });
+
+  testWidgets(
+      'Querformat (Phone): kompakte Abstände – Übersetzung und Eingabe sichtbar',
+      (tester) async {
+    tester.view.physicalSize = const Size(800, 360);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_3', 'he/she/it can', 'er/sie/es kann', level: 2),
+    ]);
+
+    expect(tester.takeException(), isNull);
+
+    final screenHeight =
+        tester.view.physicalSize.height / tester.view.devicePixelRatio;
+
+    // Gesuchtes Wort (Übersetzung) und Eingabefeld liegen im selben Viewport
+    // und müssen ohne Scrollen beide sichtbar sein.
+    final translation = tester.getRect(find.text('er/sie/es kann'));
+    final input = tester.getRect(find.byType(TextField));
+    expect(translation.top, greaterThanOrEqualTo(0));
+    expect(translation.bottom, lessThan(screenHeight));
+    expect(input.top, greaterThanOrEqualTo(0));
+    expect(input.bottom, lessThan(screenHeight));
+  });
 }
