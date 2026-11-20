@@ -1,3 +1,5 @@
+import 'vocab_key.dart';
+
 /// Data model for a vocabulary entry as stored in user files.
 class VocabEntry {
   final String key;
@@ -440,8 +442,14 @@ class WordCategory {
 
   /// Whether a vocab entry key (e.g. 'to_be_present_0') belongs to this
   /// category.
+  ///
+  /// Exakte Verb-Key-Zuordnung statt Prefix-Match: Treffer nur wenn
+  /// [entryKey] exakt einem [verbKeys]-Element entspricht oder der per
+  /// [vocabVerbKey] extrahierte Verb-Schlüssel exakt einem Element von
+  /// [verbKeys] gleicht. Dadurch fällt z. B. 'to_be_allowed_to_present_0'
+  /// nicht mehr fälschlich unter 'to_be'.
   bool containsEntryKey(String entryKey) =>
-      verbKeys.any((vk) => entryKey == vk || entryKey.startsWith('${vk}_'));
+      verbKeys.any((vk) => entryKey == vk || vocabVerbKey(entryKey) == vk);
 }
 
 /// Liefert die [WordCategory] zur Id oder null.

@@ -589,4 +589,123 @@ void main() {
       expect(c.learnedCount, 1);
     });
   });
+  group('Kategorie-Präfixkollision (Fix: exakter Verb-Key-Match)', () {
+    final erste = courseWordCategories.firstWhere((c) => c.id == 'erste_verben');
+    final alltag =
+        courseWordCategories.firstWhere((c) => c.id == 'grp_alltag');
+
+    test('to_be_allowed_to_* gehört nur zu erste_verben, to_be_* nur zu grp_alltag',
+        () {
+      expect(erste.containsEntryKey('to_be_allowed_to_present_0'), true);
+      expect(alltag.containsEntryKey('to_be_allowed_to_present_0'), false);
+      expect(alltag.containsEntryKey('to_be_present_0'), true);
+      expect(erste.containsEntryKey('to_be_present_0'), false);
+    });
+
+    test('getCategoryCounts: Summe über alle Kategorien == Einträge (Seed nur Verb-Keys)',
+        () async {
+      // Seed vollständig auf die 30 Verb-Keys gemappt, inkl. Kollisions-Keys
+      // to_be_allowed_to_present_0 und to_be_present_0.
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_allowed_to_present_0': _vocab('to_be_allowed_to_present_0',
+              level: 1, status: 'seen'),
+          'to_be_present_0':
+              _vocab('to_be_present_0', level: 1, status: 'seen'),
+          'to_can_past_1': _vocab('to_can_past_1', level: 1, status: 'seen'),
+        }),
+      );
+      final queries = VocabQueriesImpl(fake);
+      final counts = await queries.getCategoryCounts('alice');
+      final totalAll =
+          counts.values.fold<int>(0, (sum, c) => sum + c.total);
+      expect(totalAll, 3); // jeder Eintrag genau einmal
+      expect(counts['erste_verben']!.total, 2); // to_be_allowed_to + to_can
+      expect(counts['grp_alltag']!.total, 1); // to_be
+    });
+
+    test('getCategoryCounts: Legacy-Key i_want zählt in keiner Kategorie (eigener Seed)',
+        () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'i_want': _vocab('i_want', level: 1, status: 'seen'),
+          'to_be_present_0':
+              _vocab('to_be_present_0', level: 1, status: 'seen'),
+        }),
+      );
+      for (final c in courseWordCategories) {
+        expect(c.containsEntryKey('i_want'), false);
+      }
+      final queries = VocabQueriesImpl(fake);
+      final counts = await queries.getCategoryCounts('alice');
+      final totalAll =
+          counts.values.fold<int>(0, (sum, c) => sum + c.total);
+      expect(totalAll, 1); // nur to_be_present_0, i_want in keiner Kategorie
+      expect(counts['grp_alltag']!.total, 1);
+    });
+
+    test('getGroupWords: Sortierung in grp_alltag beginnt mit to_be, '
+        'to_be_allowed_to_* ausgeschlossen', () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_have_past_0': _vocab('to_have_past_0'),
+          'to_be_present_1': _vocab('to_be_present_1'),
+          'to_be_allowed_to_present_0': _vocab('to_be_allowed_to_present_0'),
+          'to_be_past_0': _vocab('to_be_past_0'),
+        }),
+      );
+      final queries = VocabQueriesImpl(fake);
+      final words = await queries.getGroupWords('alice', alltag);
+      expect(
+        words.map((e) => e.key).toList(),
+        ['to_be_past_0', 'to_be_present_1', 'to_have_past_0'],
+      );
+    });
+
+    test('getGroupDueWords: fälliger to_be_allowed_to_* nicht in grp_alltag',
+        () async {
+      final now = DateTime.now();
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_present_0': _vocab('to_be_present_0',
+              level: 1, status: 'seen',
+              reviewDue: fmt(now.subtract(const Duration(days: 1)))),
+          'to_be_allowed_to_present_0': _vocab('to_be_allowed_to_present_0',
+              level: 1, status: 'seen',
+              reviewDue: fmt(now.subtract(const Duration(days: 1)))),
+        }),
+      );
+      final queries = VocabQueriesImpl(fake);
+      final dueWords = await queries.getGroupDueWords('alice', alltag);
+      expect(dueWords.map((e) => e.key).toList(), ['to_be_present_0']);
+    });
+
+    test('getGroupLearnWords: to_be_allowed_to_* nicht in grp_alltag',
+        () async {
+      final now = DateTime.now();
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'to_be_present_0': _vocab('to_be_present_0',
+              level: 1, status: 'seen',
+              reviewDue: fmt(now.subtract(const Duration(days: 1)))),
+          'to_be_allowed_to_present_0': _vocab('to_be_allowed_to_present_0',
+              level: 1, status: 'seen',
+              reviewDue: fmt(now.subtract(const Duration(days: 1)))),
+        }),
+      );
+      final queries = VocabQueriesImpl(fake);
+      final learnWords = await queries.getGroupLearnWords('alice', alltag);
+      expect(learnWords.map((e) => e.key).toList(), ['to_be_present_0']);
+    });
+  });
 }
