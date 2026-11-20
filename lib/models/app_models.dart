@@ -112,6 +112,24 @@ class DayStreak {
       };
 }
 
+/// Aggregierte User-Statistiken, berechnet aus EINEM UserData-Load
+/// (neue/faellige/gelesene/gelernte Woerter plus Tagesstreak).
+class UserStats {
+  final int newCount;
+  final int dueCount;
+  final int readCount;
+  final int learnedCount;
+  final DayStreak streak;
+
+  const UserStats({
+    this.newCount = 0,
+    this.dueCount = 0,
+    this.readCount = 0,
+    this.learnedCount = 0,
+    this.streak = const DayStreak(),
+  });
+}
+
 /// Result of a word-answer check.
 class AnswerCheckResult {
   final bool correct;

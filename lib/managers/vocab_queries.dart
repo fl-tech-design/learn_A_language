@@ -41,6 +41,7 @@ abstract class VocabQueries {
   Future<List<VocabEntry>> getGroupReadWords(
       String username, WordCategory category);
   Future<DayStreak> getDayStreak(String username);
+  Future<UserStats> getUserStats(String username);
   Future<void> updateDayStreak(String username);
   Future<AnswerCheckResult> checkWordAnswer(
       String username, String wordKey, String userInput);
@@ -326,6 +327,32 @@ class VocabQueriesImpl implements VocabQueries {
   Future<DayStreak> getDayStreak(String username) async {
     final ud = await _loadSafe(username);
     return ud?.dayStreak ?? const DayStreak();
+  }
+
+  @override
+  Future<UserStats> getUserStats(String username) async {
+    final ud = await _loadSafe(username);
+    if (ud == null) return const UserStats();
+    final today = DateTime.now();
+    var newCount = 0;
+    var dueCount = 0;
+    var readCount = 0;
+    var learnedCount = 0;
+    for (final ve in ud.vocab.values) {
+      if (ve.level == 0 && ve.status == 'new') newCount++;
+      if (ve.status == 'seen') readCount++;
+      if (ve.level >= 8) learnedCount++;
+      if (ve.level != 8 && ve.status != 'new' && _isDue(ve, today)) {
+        dueCount++;
+      }
+    }
+    return UserStats(
+      newCount: newCount,
+      dueCount: dueCount,
+      readCount: readCount,
+      learnedCount: learnedCount,
+      streak: ud.dayStreak ?? const DayStreak(),
+    );
   }
 
   @override

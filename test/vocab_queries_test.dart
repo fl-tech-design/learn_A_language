@@ -742,4 +742,70 @@ void main() {
       expect(learnWords.map((e) => e.key).toList(), ['to_be_present_0']);
     });
   });
+
+  group('getUserStats', () {
+    test('liefert alle fuenf Werte aus EINEM Load', () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData(
+          'alice',
+          {
+            // w1: neu (level 0 + status new)
+            'w1_new': _vocab('w1_new'),
+            // w2: gelesen + faellig (seen, review_due in der Vergangenheit)
+            'w2_due': _vocab('w2_due',
+                level: 1, status: 'seen', reviewDue: '2020-01-01'),
+            // w3: gelesen, aber nicht faellig (review_due in der Zukunft)
+            'w3_seen': _vocab('w3_seen',
+                level: 1, status: 'seen', reviewDue: '2999-01-01'),
+            // w4: gelesen + gelernt (level 8)
+            'w4_learned': _vocab('w4_learned', level: 8, status: 'seen'),
+            // w5: Edge-Case – level 1 + status new zaehlt nirgendwo
+            'w5_edge': _vocab('w5_edge',
+                level: 1, reviewDue: '2020-01-01'),
+          },
+          dayStreak: const DayStreak(current: 3, longest: 5),
+        ),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+      final stats = await queries.getUserStats('alice');
+
+      expect(stats.newCount, 1);
+      expect(stats.dueCount, 1);
+      expect(stats.readCount, 3);
+      expect(stats.learnedCount, 1);
+      expect(stats.streak.current, 3);
+      expect(stats.streak.longest, 5);
+      // Alle fuenf Werte stammen aus genau EINEM UserData-Load.
+      expect(fake.loadCount, 1);
+    });
+
+    test('korrupte oder fehlende Datei liefert Default-UserStats (kein Crash)',
+        () async {
+      final corrupt = FakeUserManager(unreadableUsers: {'alice'});
+      final q1 = VocabQueriesImpl(corrupt);
+      final broken = await q1.getUserStats('alice');
+      expect(broken.newCount, 0);
+      expect(broken.dueCount, 0);
+      expect(broken.readCount, 0);
+      expect(broken.learnedCount, 0);
+      expect(broken.streak.current, 0);
+      expect(broken.streak.longest, 0);
+      expect(broken.streak.lastDate, '');
+      expect(corrupt.loadCount, 1);
+
+      final missingUser = FakeUserManager();
+      final q2 = VocabQueriesImpl(missingUser);
+      final missing = await q2.getUserStats('nobody');
+      expect(missing.newCount, 0);
+      expect(missing.dueCount, 0);
+      expect(missing.readCount, 0);
+      expect(missing.learnedCount, 0);
+      expect(missing.streak.current, 0);
+      expect(missing.streak.longest, 0);
+      expect(missingUser.loadCount, 1);
+    });
+  });
 }

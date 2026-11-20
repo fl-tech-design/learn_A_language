@@ -298,6 +298,13 @@ class _UserInfoBox extends StatefulWidget {
 class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
   bool _subscribed = false;
 
+  /// Gecachte Stats-Future: wird NUR neu erzeugt, wenn sich der Benutzer
+  /// oder [NavigationState.statsVersion] aendert. Ein Rebuild ohne solche
+  /// Aenderung (Orientierung, Locale, Parent-setState) laedt nicht neu.
+  Future<UserStats>? _statsFuture;
+  String? _statsUser;
+  int? _statsVersion;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -328,12 +335,24 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
     final l10n = AppLocalizations.of(context);
     final username = dataState.appData.loggedUName;
 
-    if (username.isEmpty) return const SizedBox.shrink();
+    if (username.isEmpty) {
+      _statsFuture = null;
+      _statsUser = null;
+      _statsVersion = null;
+      return const SizedBox.shrink();
+    }
+    final version = navState.statsVersion;
+    if (_statsFuture == null ||
+        _statsUser != username ||
+        _statsVersion != version) {
+      _statsFuture = context.read<VocabQueries>().getUserStats(username);
+      _statsUser = username;
+      _statsVersion = version;
+    }
 
-    return FutureBuilder<_UserStats>(
-        key: ValueKey('userinfo_${username}_${navState.statsVersion}'),
-        future: _loadStats(context, username),
-        builder: (ctx, snapshot) {
+    return FutureBuilder<UserStats>(
+      future: _statsFuture,
+      builder: (ctx, snapshot) {
           final stats = snapshot.data;
           if (stats == null) {
             return const SizedBox.shrink();
@@ -347,7 +366,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
         });
   }
 
-  Widget _buildBoxBody(AppLocalizations l10n, _UserStats stats, String username) {
+  Widget _buildBoxBody(AppLocalizations l10n, UserStats stats, String username) {
     final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
     final statsCol = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -415,22 +434,6 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
     );
   }
 
-  Future<_UserStats> _loadStats(BuildContext context, String username) async {
-    final vq = context.read<VocabQueries>();
-    final nc = await vq.getNewWordsCount(username);
-    final dc = await vq.getWordsDueCount(username);
-    // Gelesene Wörter: alles schon Angeschaute. Gelernte Wörter: Level 8.
-    final readWords = await vq.getReadWords(username);
-    final learnedWords = await vq.getLearnedWords(username);
-    final st = await vq.getDayStreak(username);
-    return _UserStats(
-      newCount: nc,
-      dueCount: dc,
-      readCount: readWords.length,
-      learnedCount: learnedWords.length,
-      streak: st,
-    );
-  }
 }
 
 /// Vertical list of the user's courses, grouped by language with foldable levels.
@@ -543,7 +546,7 @@ class _MyCoursesSection extends StatelessWidget {
                           if (selected)
                             const Icon(Icons.check_circle,
                                 color: AppTheme.colorPrimary, size: 18),
-                          Expanded(child: const SizedBox.shrink()),
+                          const Expanded(child: SizedBox.shrink()),
                           IconButton(
                             onPressed: () => onRemove(c.id),
                             icon: const Icon(
@@ -786,7 +789,7 @@ class _NewLanguagesSection extends StatelessWidget {
                                 fontSize: AppTheme.infFontSize,
                                 color: Colors.white),
                           ),
-                          Expanded(child: const SizedBox.shrink()),
+                          const Expanded(child: SizedBox.shrink()),
                           const Icon(Icons.add_circle_outline,
                               color: AppTheme.colorPrimary, size: 18),
                         ]),
@@ -813,18 +816,3 @@ class _NewLanguagesSection extends StatelessWidget {
   }
 }
 
-/// Typed container for user stats used by FutureBuilder.
-class _UserStats {
-  final int newCount;
-  final int dueCount;
-  final int readCount;
-  final int learnedCount;
-  final DayStreak streak;
-  const _UserStats({
-    required this.newCount,
-    required this.dueCount,
-    required this.readCount,
-    required this.learnedCount,
-    required this.streak,
-  });
-}
