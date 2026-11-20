@@ -163,8 +163,9 @@ class VocabManagerImpl implements VocabManager {
       }
     }
 
-    // Bestehende Einträge behalten, fehlende Kurs-Wörter als neue Wörter
-    // ergänzen (idempotent; ersetzt das frühere early-exit bei vollem vocab).
+    // Bestehende Einträge UNVERÄNDERT behalten (Fortschritt/Level/Status),
+    // nur fehlende Kurs-Wörter als neue Wörter ergänzen (idempotent; ersetzt
+    // das frühere early-exit bei vollem vocab).
     var changed = false;
     final vocab = Map<String, VocabEntry>.from(ud.vocab);
     for (final tw in targetWords) {
@@ -179,8 +180,17 @@ class VocabManagerImpl implements VocabManager {
       changed = true;
     }
 
-    if (changed) {
-      await _saveSafe(username, ud.copyWith(vocab: vocab));
+    // Eingebettetes language-Feld einmalig leeren, damit künftig IMMER die
+    // aktuellen Asset-Dicts als Quelle dienen (bisher übernahm es login).
+    // Leeren auch dann, wenn vocab bereits vollständig war – andernfalls würde
+    // ein Alt-User mit vollem vocab sein Feld nie los. Der Fortschritt liegt
+    // separat in `vocab` und geht durch das Leeren nicht verloren.
+    final clearLanguage = ud.language.isNotEmpty;
+    if (changed || clearLanguage) {
+      await _saveSafe(username, ud.copyWith(
+        vocab: vocab,
+        language: clearLanguage ? const {} : ud.language,
+      ));
     }
   }
 

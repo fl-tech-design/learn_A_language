@@ -1,10 +1,9 @@
-import 'dart:developer' show log;
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'l10n/app_localizations.dart';
-import 'services/storage_error_bus.dart';
 import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
@@ -31,11 +30,21 @@ import 'screens/settings_screen.dart';
 import 'screens/progress_screen.dart';
 import 'screens/progress_group_screen.dart';
 
-void main() async {
+/// Startet die App OHNE schweren Block vor dem ersten Frame.
+///
+/// [WidgetsFlutterBinding.ensureInitialized] ist synchron und läuft zwingend
+/// vor allen Plugin-Aufrufen. Danach werden nur die kostengünstigen Manager
+/// erzeugt und verdrahtet; `runApp` läuft sofort. Die aufwändigen Schritte
+/// (FileSystem-/App-Daten-Initialisierung, Auto-Login inkl. genau eines
+/// Vocab-Init- + Migrationslaufs) übernimmt der [LoadingScreen], der den
+/// Fortschritt anzeigt und erst danach nach `/start` navigiert – so wächst
+/// die Startzeit nicht mehr mit dem Wortschatz.
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Immersive Fullscreen – Statusleiste + Navigation ausblenden
-  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  // Best-Effort: immersiver Vollbildmodus (muss nicht auf den ersten Frame
+  // warten).
+  unawaited(SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky));
 
   final fileService = FileServiceImpl();
   final userManager = UserManagerImpl(fileService);
@@ -44,24 +53,9 @@ void main() async {
   final grammarManager = GrammarManagerImpl(fileService);
 
   final dataState = DataState(fileService);
-  await dataState.initialize();
-
   final navigationState = NavigationState();
-  final userState = UserState(
-      userManager: userManager, vocabManager: vocabManager);
-  final uname = dataState.appData.loggedUName;
-  if (uname.isNotEmpty) {
-    await vocabManager.migrateVocabForUser(uname);
-    final loginError = await userState.login(uname);
-    if (loginError != null) {
-      // Auto-Login fehlgeschlagen (z. B. korrupte User-Datei): Kein
-      // eingeloggter Zustand, und die Meldung wird der UI beim Start
-      // einmalig über den [StorageErrorBus] angezeigt.
-      log('main: Auto-Login für $uname fehlgeschlagen: $loginError');
-      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
-    }
-    await dataState.loadAppData();
-  }
+  final userState =
+      UserState(userManager: userManager, vocabManager: vocabManager);
 
   runApp(MultiProvider(
     providers: [
@@ -92,7 +86,8 @@ class LearnALanguageApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       navigatorObservers: [routeObserver],
       // Globaler, einmaliger Kanäle für Speicherwarnungen (SnackBar statt
-      // Dialog), auch für Meldungen aus der Zeit vor runApp.
+      // Dialog), auch für Meldungen, die der LoadingScreen während des
+      // Auto-Logins auslöst.
       builder: (context, child) =>
           StorageWarningListener(child: child ?? const SizedBox.shrink()),
       initialRoute: '/',

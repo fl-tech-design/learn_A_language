@@ -53,9 +53,12 @@ class UserState extends ChangeNotifier {
     }
 
     _userData = loaded;
-    final langDict = loaded.language;
-    await _vocabManager.initVocabForUser(username, langDict);
+    // Wörterbuch-Quelle sind IMMER die aktuellen Asset-Dicts: Das eventuell
+    // eingebettete language-Feld leert initVocabForUser statt es als Quelle
+    // zu nutzen. Genau ein Init- + Migrationslauf pro Login/Auto-Login.
+    await _vocabManager.initVocabForUser(username, const {});
     await _vocabManager.migrateVocabForUser(username);
+    log('login: einmaliger Vocab-Init + Migrationslauf für $username');
 
     await _loadUserData(username);
     await _autoSelectCourses(username);
@@ -89,6 +92,19 @@ class UserState extends ChangeNotifier {
     await _loadUserData(username);
     notifyListeners();
     return null;
+  }
+
+  /// Lädt UserData geschützt: Eine korrupte Datei crasht nicht mehr, sondern
+  /// wird geloggt und einmalig über den [StorageErrorBus] gemeldet (Rückgabe
+  /// `null` wie bei fehlender Datei).
+  Future<UserData?> _loadSafe(String username) async {
+    try {
+      return await _userManager.loadUserdata(username);
+    } on PersistenceException catch (e) {
+      log('user_state: Userdaten für $username unlesbar ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.userDataUnloadable);
+      return null;
+    }
   }
 
   Future<void> _loadUserData(String username) async {
@@ -126,7 +142,7 @@ class UserState extends ChangeNotifier {
         .toList();
     if (derived.isEmpty) return;
 
-    final userData = await _userManager.loadUserdata(username);
+    final userData = await _loadSafe(username);
     if (userData == null) return;
     final updated = userData.copyWith(selectedCourses: derived);
     await _saveSafe(username, updated);
@@ -186,7 +202,7 @@ class UserState extends ChangeNotifier {
 
     final uname = _userData!.uName;
     if (uname.isNotEmpty) {
-      final userData = await _userManager.loadUserdata(uname);
+      final userData = await _loadSafe(uname);
       if (userData == null) return;
       final updated = userData.copyWith(selectedCourses: current);
       await _saveSafe(uname, updated);
@@ -215,7 +231,7 @@ class UserState extends ChangeNotifier {
     final uname = _userData!.uName;
     if (uname.isEmpty) return;
 
-    final userData = await _userManager.loadUserdata(uname);
+    final userData = await _loadSafe(uname);
     if (userData == null) return;
 
     // Level-Fortschritt des entfernten Kurses zurücksetzen.

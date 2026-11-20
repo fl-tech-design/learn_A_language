@@ -1,11 +1,22 @@
 import 'dart:async';
+import 'dart:developer' show log;
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
+import 'package:provider/provider.dart';
+import '../managers/data_state.dart';
+import '../managers/user_state.dart';
 import '../theme/app_theme.dart';
 import '../l10n/app_localizations.dart';
 import '../widgets/version_label.dart';
 
 /// Splash/loading screen – 1:1 from loadingpage.py.
+///
+/// Übernimmt ab Ticket 3 die schwere Initialisierung asynchron im Hintergrund
+/// (FileSystem-/App-Daten-Initialisierung, Auto-Login inkl. genau eines
+/// Vocab-Init- + Migrationslaufs), damit `runApp` sofort sichtbar ist und die
+/// Startzeit nicht mit dem Wortschatz wächst. Erst nach Abschluss wird nach
+/// `/start` navigiert.
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({super.key});
 
@@ -19,23 +30,41 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   void initState() {
     super.initState();
-    _startLoading();
+    _bootstrap();
   }
 
-  void _startLoading() {
-    Timer.periodic(const Duration(milliseconds: 100), (timer) {
-      setState(() {
-        _progress += 10;
-      });
-      if (_progress >= 100) {
-        timer.cancel();
-        Future.delayed(const Duration(seconds: 1), () {
-          if (mounted) {
-            Navigator.of(context).pushReplacementNamed('/start');
-          }
-        });
+  Future<void> _bootstrap() async {
+    final dataState = context.read<DataState>();
+    final userState = context.read<UserState>();
+
+    // Schritt 1: Dateisystem + App-Daten (Asset-Kopien, App/Player-Daten).
+    await dataState.initialize();
+    if (!mounted) return;
+    setState(() => _progress = 40);
+
+    // Schritt 2: Auto-Login inkl. genau einem Vocab-Init- + Migrationslauf
+    // (login übernimmt das); bei Fehler nur loggen – die SnackBar kommt über
+    // den [StorageErrorBus], den login bei einer korrupten Datei intern setzt
+    // (Ticket-2-Sichtbarkeit, ohne Doppelt-Melden).
+    final uname = dataState.appData.loggedUName;
+    if (uname.isNotEmpty) {
+      final loginError = await userState.login(uname);
+      if (!mounted) return;
+      if (loginError != null) {
+        log('LoadingScreen: Auto-Login für $uname fehlgeschlagen: $loginError');
       }
-    });
+      await dataState.loadAppData();
+      if (!mounted) return;
+    }
+
+    setState(() => _progress = 100);
+    // Kurz den abgeschlossenen Splash zeigen, dann weiter zum Start-Menü
+    // (auch wenn nicht eingeloggt).
+    unawaited(Future<void>.delayed(const Duration(milliseconds: 300), () {
+      if (mounted) {
+        Navigator.of(context).pushReplacementNamed('/start');
+      }
+    }));
   }
 
   @override
@@ -51,7 +80,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
         children: [
           // Bild füllt nur die Breite des Screens (Höhe bleibt proportional),
           // damit es im Portrait-Format nicht mehr auf die Höhe gezoomt wird.
-          // Freie Bereiche oben/unten zeigen die Bild-Hintergrundfarbe.
           Image.asset('assets/images/spl_start.png',
               fit: BoxFit.fitWidth),
           Positioned(

@@ -277,4 +277,63 @@ void main() {
       expect(um.saveCount, 0);
     });
   });
+
+  group('UserState – korrupte User-Datei (Ticket 3 Härtung)', () {
+    test('addCourse bei Korruption: kein Crash, eine Warnung', () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager();
+      um.seed('alice', _userData(selectedCourses: ['en_verben_a1']));
+      final state =
+          UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      // Datei wird ab jetzt als korrupt/unlesbar gemeldet.
+      um.unreadableUsers.add('alice');
+      StorageErrorBus.instance.clear();
+
+      await state.addCourse('de_verben_a1');
+
+      // Kein Crash; genau eine konsumierbare Warnung.
+      expect(StorageErrorBus.instance.takeLast(),
+          StorageErrorKind.userDataUnloadable);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+
+    test('removeCourse bei Korruption: kein Crash, eine Warnung', () async {
+      StorageErrorBus.instance.clear();
+      final um = FakeUserManager();
+      um.seed('alice', _userData(selectedCourses: ['en_verben_a1']));
+      final state =
+          UserState(userManager: um, vocabManager: FakeVocabManager());
+      await state.login('alice');
+
+      um.unreadableUsers.add('alice');
+      StorageErrorBus.instance.clear();
+
+      await state.removeCourse('en_verben_a1');
+
+      expect(StorageErrorBus.instance.takeLast(),
+          StorageErrorKind.userDataUnloadable);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+
+    test('_autoSelectCourses bei Korruption: kein Crash, eine Warnung',
+        () async {
+      StorageErrorBus.instance.clear();
+      // login lädt UserData bei Index 0, _loadUserData bei 1 und
+      // _autoSelectCourses bei 2 – nur der letzte soll hier scheitern.
+      final um = FakeUserManager(failOnLoadIndex: const {2});
+      um.seed('alice', _userData(vocab: {'k': _v('k')})); // vocab, keine Kurse
+      final state =
+          UserState(userManager: um, vocabManager: FakeVocabManager());
+
+      final error = await state.login('alice');
+
+      // Login selbst erfolgreich – nur Auto-Select schlägt fehl, ohne Crash.
+      expect(error, isNull);
+      expect(StorageErrorBus.instance.takeLast(),
+          StorageErrorKind.userDataUnloadable);
+      expect(StorageErrorBus.instance.takeLast(), isNull);
+    });
+  });
 }

@@ -99,12 +99,21 @@ class FakeUserManager implements UserManager {
   final List<String> _registeredUsers = [];
 
   /// Benutzernamen, für die [loadUserdata] eine [PersistenceException] wirft
-  /// (simuliert korrupte User-Datei) – additiv, Default = kein Fehlerverhalten.
+  /// (simuliert korrupte User-Datei). Additiv und zur Laufzeit erweiterbar
+  /// (mutable Kopie), Default = kein Fehlerverhalten.
   final Set<String> unreadableUsers;
 
   /// Benutzernamen, für die [saveUserdata] eine [PersistenceException] wirft
   /// (simulierter Schreibfehler) – additiv, Default = kein Fehlerverhalten.
   final Set<String> failSaveUsers;
+
+  /// [loadUserdata]-Aufruf-Indizes (0-basiert), bei denen ebenfalls eine
+  /// [PersistenceException] geworfen wird – erlaubt Tests, wo genau ein Load
+  /// scheitern soll (z. B. nur der in `_autoSelectCourses`).
+  final Set<int> failOnLoadIndex;
+
+  /// Zähler der bisherigen [loadUserdata]-Aufrufe dieser Instanz.
+  int loadCount = 0;
 
   int saveCount = 0;
   bool userLoggedIn = false;
@@ -112,8 +121,13 @@ class FakeUserManager implements UserManager {
 
   UserData? _lastSaved;
 
-  FakeUserManager(
-      {this.unreadableUsers = const {}, this.failSaveUsers = const {}});
+  FakeUserManager({
+    Set<String> unreadableUsers = const {},
+    Set<String> failSaveUsers = const {},
+    Set<int> failOnLoadIndex = const {},
+  })  : unreadableUsers = Set<String>.of(unreadableUsers),
+        failSaveUsers = Set<String>.of(failSaveUsers),
+        failOnLoadIndex = Set<int>.of(failOnLoadIndex);
 
   UserData? get lastSaved => _lastSaved;
 
@@ -149,7 +163,9 @@ class FakeUserManager implements UserManager {
 
   @override
   Future<UserData?> loadUserdata(String username) async {
-    if (unreadableUsers.contains(username)) {
+    final idx = loadCount++;
+    if (unreadableUsers.contains(username) ||
+        failOnLoadIndex.contains(idx)) {
       throw PersistenceException(
           'data_app/files_user/data_$username.json',
           StateError('simulierte korrupte User-Datei'));

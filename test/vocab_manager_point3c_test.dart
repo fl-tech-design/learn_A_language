@@ -344,4 +344,70 @@ void main() {
           '2026-01-02');
     });
   });
+
+  group('initVocabForUser – eingebettetes language-Feld (Ticket 3)', () {
+    // Alt-User: mLang 'de' → Zielsprache 'en'; dict liefert to_go_present_0..5.
+    (VocabManagerImpl, FakeUserManager, FakeFileService) setup({
+      required Map<String, VocabEntry> vocab,
+      Map<String, dynamic> language = const {'to_go': {'infinitive': 'go'}},
+    }) {
+      final fs = FakeFileService(languageDicts: {
+        'en': _tinyDict('go', 'gehen', 'Ich gehe.'),
+        'de': _tinyDict('gehen', 'go', 'I go.'),
+      });
+      final userMgr = FakeUserManager();
+      userMgr.seed('test', UserData(
+            uName: 'test',
+            mLang: 'de',
+            progress: const {},
+            learnedLanguages: const [],
+            language: language,
+            vocab: vocab,
+          ));
+      userMgr.saveCount = 0;
+      return (VocabManagerImpl(userMgr, fs), userMgr, fs);
+    }
+
+    test('bekommt neue Asset-Wörter, erhält Fortschritt, leert language',
+        () async {
+      final (mgr, userMgr, _) = setup(vocab: {
+        'to_go_present_0': _entry(
+          level: 3,
+          reviewDue: '2026-01-04',
+        ),
+      });
+
+      await mgr.initVocabForUser('test', const {});
+
+      final saved = userMgr.getUser('test')!;
+      // language wird geleert (einmalig) – künftig kommen Wörter nur noch aus
+      // den aktuellen Asset-Dicts.
+      expect(saved.language, isEmpty);
+      // Bestehender Fortschritt bleibt unverändert erhalten.
+      final e0 = saved.vocab['to_go_present_0']!;
+      expect(e0.level, 3);
+      expect(e0.status, 'seen');
+      expect(e0.reviewDue, '2026-01-04');
+      // Neue Asset-Wörter werden ergänzt.
+      expect(saved.vocab.containsKey('to_go_present_1'), isTrue);
+      expect(saved.vocab.length, 6);
+      expect(userMgr.saveCount, 1);
+    });
+
+    test('leert language auch, wenn vocab bereits vollständig ist', () async {
+      final fullVocab = {
+        for (var i = 0; i < 6; i++)
+          'to_go_present_$i': _entry(key: 'to_go_present_$i'),
+      };
+      final (mgr, userMgr, _) = setup(vocab: fullVocab);
+
+      await mgr.initVocabForUser('test', const {});
+
+      final saved = userMgr.getUser('test')!;
+      expect(saved.language, isEmpty);
+      // Keine neuen Wörter nötig, aber das Feld wird trotzdem geleert.
+      expect(saved.vocab.length, 6);
+      expect(userMgr.saveCount, 1);
+    });
+  });
 }
