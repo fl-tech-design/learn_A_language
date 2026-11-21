@@ -178,6 +178,7 @@ class UserData {
   final Map<String, VocabEntry> vocab;
   final DayStreak? dayStreak;
   final int gameHighscore;
+  final Map<String, int> crosswordBestTimes;
   final List<String> selectedCourses;
 
   UserData({
@@ -189,6 +190,7 @@ class UserData {
     required this.vocab,
     this.dayStreak,
     this.gameHighscore = 0,
+    this.crosswordBestTimes = const {},
     this.selectedCourses = const [],
   });
 
@@ -212,6 +214,7 @@ class UserData {
           ? DayStreak.fromJson(json['day_streak'])
           : null,
       gameHighscore: json['game_highscore'] as int? ?? 0,
+      crosswordBestTimes: _parseIntMap(json['crossword_best_times']),
       selectedCourses: List<String>.from(json['selected_courses'] ?? []),
     );
   }
@@ -226,6 +229,8 @@ class UserData {
       'vocab': vocab.map((key, value) => MapEntry(key, value.toJson())),
       if (dayStreak != null) 'day_streak': dayStreak!.toJson(),
       if (gameHighscore > 0) 'game_highscore': gameHighscore,
+      if (crosswordBestTimes.isNotEmpty)
+        'crossword_best_times': crosswordBestTimes,
       'selected_courses': selectedCourses,
     };
   }
@@ -240,6 +245,7 @@ class UserData {
     DayStreak? dayStreak,
     bool clearDayStreak = false,
     int? gameHighscore,
+    Map<String, int>? crosswordBestTimes,
     List<String>? selectedCourses,
   }) {
     return UserData(
@@ -252,6 +258,7 @@ class UserData {
       dayStreak:
           clearDayStreak ? null : (dayStreak ?? this.dayStreak),
       gameHighscore: gameHighscore ?? this.gameHighscore,
+      crosswordBestTimes: crosswordBestTimes ?? this.crosswordBestTimes,
       selectedCourses: selectedCourses ?? this.selectedCourses,
     );
   }
@@ -261,6 +268,16 @@ class UserData {
       return p.map((k, v) => MapEntry(k, (v as num?)?.toInt() ?? 0));
     }
     return {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0};
+  }
+
+  static Map<String, int> _parseIntMap(dynamic p) {
+    if (p is! Map) return const {};
+    final result = <String, int>{};
+    p.forEach((k, v) {
+      final n = v is num ? v.toInt() : int.tryParse(v.toString());
+      if (n != null) result[k.toString()] = n;
+    });
+    return result;
   }
 }
 

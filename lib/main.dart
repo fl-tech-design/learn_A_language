@@ -27,6 +27,8 @@ import 'screens/game_choose_screen.dart';
 import 'screens/turbo_lv_select_screen.dart';
 import 'screens/game_screen.dart';
 import 'screens/word_search_screen.dart';
+import 'screens/crossword_screen.dart';
+import 'screens/crossword_lv_select_screen.dart';
 import 'screens/grammar_detail_screen.dart';
 import 'screens/grammar_screen.dart';
 import 'screens/settings_screen.dart';
@@ -120,6 +122,8 @@ class LearnALanguageApp extends StatelessWidget {
         '/gamechoose': (context) => const GameChooseScreen(),
         '/game': (context) => const GameScreen(),
         '/wordsearch': (context) => const WordSearchScreen(),
+        '/crossword': (context) => const CrosswordScreen(),
+        '/crosswordselect': (context) => const CrosswordLvSelectScreen(),
         '/settings': (context) => const SettingsScreen(),
         '/grammar': (context) => const GrammarScreen(),
         '/grammardetail': (context) => const GrammarDetailScreen(),

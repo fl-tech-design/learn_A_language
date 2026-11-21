@@ -74,6 +74,20 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
                                           style: const TextStyle(
                                               fontSize:
                                                   AppTheme.btnFontSize)))),
+                              const SizedBox(
+                                  height: AppTheme.contentSpacing),
+                              SizedBox(
+                                  height: 56,
+                                  width: double.infinity,
+                                  child: OutlinedButton(
+                                      onPressed: enabled
+                                          ? () => Navigator.of(context)
+                                              .pushNamed('/crosswordselect')
+                                          : null,
+                                      child: Text(l10n.btnCrossword,
+                                          style: const TextStyle(
+                                              fontSize:
+                                                  AppTheme.btnFontSize)))),
                             ]);
                           }),
                       const SizedBox(height: AppTheme.contentSpacing),

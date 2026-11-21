@@ -140,6 +140,12 @@ abstract class AppLocalizations {
   /// **'Continue'**
   String get btnContinue;
 
+  /// No description provided for @btnCrossword.
+  ///
+  /// In en, this message translates to:
+  /// **'Crossword'**
+  String get btnCrossword;
+
   /// No description provided for @btnDeleteUser.
   ///
   /// In en, this message translates to:
@@ -775,6 +781,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'All words found!'**
   String get wsAllFound;
+
+  /// No description provided for @crosswordBestTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Best time'**
+  String get crosswordBestTime;
+
+  /// No description provided for @crosswordEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy (8 words)'**
+  String get crosswordEasy;
+
+  /// No description provided for @crosswordHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard (16 words)'**
+  String get crosswordHard;
+
+  /// No description provided for @crosswordMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium (12 words)'**
+  String get crosswordMedium;
+
+  /// No description provided for @crosswordTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Time (s)'**
+  String get crosswordTime;
 
   /// No description provided for @btnProgress.
   ///

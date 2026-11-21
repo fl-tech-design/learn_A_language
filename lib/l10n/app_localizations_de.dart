@@ -30,6 +30,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get btnContinue => 'Weiter';
 
   @override
+  String get btnCrossword => 'Kreuzworträtsel';
+
+  @override
   String get btnDeleteUser => 'Benutzer löschen';
 
   @override
@@ -360,6 +363,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get wsAllFound => 'Alle Wörter gefunden!';
+
+  @override
+  String get crosswordBestTime => 'Bestzeit';
+
+  @override
+  String get crosswordEasy => 'Leicht (8 Wörter)';
+
+  @override
+  String get crosswordHard => 'Schwer (16 Wörter)';
+
+  @override
+  String get crosswordMedium => 'Mittel (12 Wörter)';
+
+  @override
+  String get crosswordTime => 'Zeit (s)';
 
   @override
   String get btnProgress => 'Lernfortschritt';

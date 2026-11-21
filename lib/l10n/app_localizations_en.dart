@@ -30,6 +30,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get btnContinue => 'Continue';
 
   @override
+  String get btnCrossword => 'Crossword';
+
+  @override
   String get btnDeleteUser => 'Delete user';
 
   @override
@@ -356,6 +359,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get wsAllFound => 'All words found!';
+
+  @override
+  String get crosswordBestTime => 'Best time';
+
+  @override
+  String get crosswordEasy => 'Easy (8 words)';
+
+  @override
+  String get crosswordHard => 'Hard (16 words)';
+
+  @override
+  String get crosswordMedium => 'Medium (12 words)';
+
+  @override
+  String get crosswordTime => 'Time (s)';
 
   @override
   String get btnProgress => 'Learning Progress';
