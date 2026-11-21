@@ -89,6 +89,21 @@ String _answerPlain(WidgetTester tester) {
 bool _isChecked(WidgetTester tester) =>
     find.text('Nächstes Wort').evaluate().isNotEmpty;
 
+/// True, wenn aktuell ein Unterstrich in der Farbe [color] gerendert wird
+/// (Positions-Hervorhebung der nächsten Eingabe).
+bool _hasColoredUnderscore(WidgetTester tester, Color color) {
+  final text = tester.widget<Text>(find.byWidgetPredicate(
+      (w) => w is Text && w.style?.fontSize == 28 && w.data == null));
+  var found = false;
+  text.textSpan?.visitChildren((span) {
+    if (span is TextSpan && span.text == '_' && span.style?.color == color) {
+      found = true;
+    }
+    return true;
+  });
+  return found;
+}
+
 Future<void> _typeLetters(WidgetTester tester, String letters) async {
   for (final c in letters.split('')) {
     await tester.enterText(find.byType(TextField), c);
@@ -161,18 +176,34 @@ void main() {
     expect(foundGrey, isTrue, reason: 'übrige Lücken müssen gedämpft sein');
   });
 
-  testWidgets('ingetipptes Leerzeichen wird sichtbar gemacht', (tester) async {
+  testWidgets(
+      'Leerstellen: Wortabstand statt Punkt-Platzhalter – Hervorhebung erst nach Space',
+      (tester) async {
     await _pumpDueWordScreen(tester, [
       _dueWord('can_present_1', 'can do', 'kann machen'),
     ]);
 
-    // Vor dem Leerzeichen: die Wortlücke wird als "·" angezeigt.
-    await _typeLetters(tester, 'can');
-    expect(_answerPlain(tester), contains('·'));
-
-    // Nach Eingabe des Leerzeichens ist die Lücke ein normales Leerzeichen.
-    await _typeLetters(tester, ' ');
+    // Kein "·"-Platzhalter – die Wortlücke ist von Anfang an als Abstand da.
     expect(_answerPlain(tester), isNot(contains('·')));
+    expect(_answerPlain(tester).trim(), contains(' '));
+
+    // Während die Leerstelle erwartet wird, leuchtet KEINE Position blau.
+    await _typeLetters(tester, 'can');
+    expect(_answerPlain(tester), isNot(contains('·')));
+    expect(_hasColoredUnderscore(tester, AppTheme.colorPrimary), isFalse,
+        reason: 'bei erwarteter Leerstelle keine blaue Positions-Hervorhebung');
+    expect(_hasColoredUnderscore(tester, AppTheme.grey4), isTrue);
+
+    // Nach der Leertaste ist der nächste Buchstabe (d) blau aktiv.
+    await _typeLetters(tester, ' ');
+    expect(_hasColoredUnderscore(tester, AppTheme.colorPrimary), isTrue,
+        reason: 'nach Space muss der folgende Buchstabe hervorgehoben sein');
+
+    // Rest tippen → Wort ist gelöst.
+    await _typeLetters(tester, 'do');
+    expect(_isChecked(tester), isTrue);
+    expect(find.text('Richtig!'), findsOneWidget);
+    expect(_answerPlain(tester).trim(), 'can do');
   });
 
   testWidgets('Querformat: Bodenleiste verschwindet bei offener Tastatur',

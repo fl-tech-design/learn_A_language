@@ -86,18 +86,20 @@ class _DueWordScreenState extends State<DueWordScreen> {
       final isTyped = i < userInput.length;
       final isActive = i == nextPos;
 
+      if (ch == ' ') {
+        // Leerstellen sind kein Platzhalter: Sie werden als Wortabstand
+        // dargestellt. Etwas letterSpacing macht den Abstand sauber sichtbar,
+        // statt dass die nächste Unterline direkt am Buchstaben klebt.
+        // Gilt für getippte und ungetippte Leerstellen gleichermaßen.
+        spans.add(const TextSpan(
+            text: ' ',
+            style: TextStyle(color: Colors.white, letterSpacing: 4)));
+        continue;
+      }
+
       String displayChar;
       Color color;
-      if (ch == ' ') {
-        if (isTyped || !highlightNext) {
-          displayChar = ' ';
-          color = Colors.white;
-        } else {
-          // Noch nicht getipptes Leerzeichen sichtbar machen.
-          displayChar = '·';
-          color = isActive ? AppTheme.colorPrimary : AppTheme.grey4;
-        }
-      } else if (isTyped || !highlightNext) {
+      if (isTyped || !highlightNext) {
         displayChar = ch;
         color = Colors.white;
       } else if (isActive) {
@@ -107,26 +109,29 @@ class _DueWordScreenState extends State<DueWordScreen> {
         displayChar = '_';
         color = AppTheme.grey4;
       }
-
       spans.add(TextSpan(text: displayChar, style: TextStyle(color: color)));
 
       // Innerhalb eines Wortes geschützte Leerzeichen (NBSP) statt normaler
       // Leerzeichen: Der Zeilenumbruch erfolgt nur zwischen echten Wörtern.
-      if (i < word.length - 1) {
-        final nextCh = word[i + 1];
-        if (ch != ' ' && nextCh != ' ') {
-          spans.add(const TextSpan(text: '\u00A0'));
-        }
+      if (i < word.length - 1 && word[i + 1] != ' ') {
+        spans.add(const TextSpan(text: '\u00A0'));
       }
     }
     return TextSpan(children: spans);
   }
 
   /// Liefert die nächste vom User einzugebende Position. Vom System
-  /// automatisch ergänzte Separatoren („/") werden übersprungen.
+  /// automatisch ergänzte Separatoren („/") werden übersprungen. Muss als
+  /// Nächstes eine Leerstelle getippt werden, liefert die Methode -1: Dann
+  /// leuchtet keine Position blau – die Orientierung kommt aus dem sichtbaren
+  /// Wortabstand. Sobald die Leerstelle eingegeben wurde, wird der
+  /// darauffolgende Buchstabe hervorgehoben.
   int _nextInputPos(String word, String userInput) {
     for (var i = userInput.length; i < word.length; i++) {
-      if (word[i] != '/') return i;
+      final ch = word[i];
+      if (ch == '/') continue;
+      if (ch == ' ') return -1;
+      return i;
     }
     return word.length;
   }
