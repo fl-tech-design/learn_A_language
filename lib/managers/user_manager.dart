@@ -35,11 +35,21 @@ class UserManagerImpl implements UserManager {
       'Ungültiger Benutzername. Erlaubt sind Buchstaben, Ziffern, '
       'Unterstrich (_) und Bindestrich (-).';
 
+  /// ZENTRALE Username-Validierung: Alle Pfad-relevanten Operationen laufen
+  /// über diese eine Stelle. Geliefert wird der getrimmte Name, wenn er der
+  /// Whitelist entspricht, sonst `null`. Damit kann ein Benutzername niemals
+  /// `..`, `/`, `\`, Laufwerksbuchstaben oder andere Pfadprimitive enthalten.
+  String? _safeUsername(String username) {
+    final trimmed = username.trim();
+    if (trimmed.isEmpty || !_userNamePattern.hasMatch(trimmed)) return null;
+    return trimmed;
+  }
+
   @override
   Future<String> createUserFile(
       String username, String mLang, Map<String, dynamic> languageDict) async {
-    final normalized = username.trim();
-    if (normalized.isEmpty || !_userNamePattern.hasMatch(normalized)) {
+    final normalized = _safeUsername(username);
+    if (normalized == null) {
       return _invalidNameMessage;
     }
 
@@ -71,24 +81,39 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<UserData?> loadUserdata(String username) async {
-    final raw = await _fileService.loadJson(
-        'data_app/files_user/data_$username.json');
+    final name = _safeUsername(username);
+    if (name == null) {
+      log('loadUserdata: ungültiger Benutzername "$username" – kein Dateizugriff');
+      return null;
+    }
+    final raw =
+        await _fileService.loadJson('data_app/files_user/data_$name.json');
     if (raw.isEmpty) return null;
     return UserData.fromJson(raw);
   }
 
   @override
   Future<void> saveUserdata(String username, UserData data) async {
+    final name = _safeUsername(username);
+    if (name == null) {
+      throw PathRejectedException('data_app/files_user/data_$username.json',
+          StateError('Ungültiger Benutzername "$username"'));
+    }
     await _fileService.saveJson(
-        'data_app/files_user/data_$username.json', data.toJson());
+        'data_app/files_user/data_$name.json', data.toJson());
   }
 
   @override
   Future<void> addNewUserToList(String username) async {
+    final name = _safeUsername(username);
+    if (name == null) {
+      throw PathRejectedException('data_app/app_data.json',
+          StateError('Ungültiger Benutzername "$username"'));
+    }
     final appData = await _readAppData();
     final users = List<String>.from(appData.registeredUser);
-    if (!users.contains(username)) {
-      users.add(username);
+    if (!users.contains(name)) {
+      users.add(name);
     }
     await _saveAppDataSilently(
         appData.copyWith(registeredUser: users).toJson(), 'addNewUserToList');
@@ -96,23 +121,23 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<String> deleteUser(String username) async {
-    username = (username).trim();
-    if (username.isEmpty) {
+    final trimmed = username.trim();
+    if (trimmed.isEmpty) {
       return 'Kein Benutzername angegeben.';
     }
 
     final appData = await _readAppData();
     final users = List<String>.from(appData.registeredUser);
 
-    if (!users.contains(username)) {
-      return "Benutzer '$username' ist nicht registriert.";
+    if (!users.contains(trimmed)) {
+      return "Benutzer '$trimmed' ist nicht registriert.";
     }
 
-    users.remove(username);
+    users.remove(trimmed);
 
     var loggedUName = appData.loggedUName;
     var userLoggedIn = appData.userLoggedIn;
-    if (loggedUName == username) {
+    if (loggedUName == trimmed) {
       loggedUName = '';
       userLoggedIn = false;
     }
@@ -129,20 +154,29 @@ class UserManagerImpl implements UserManager {
       return 'Benutzer konnte nicht gelöscht werden (Speichern fehlgeschlagen).';
     }
 
-    try {
-      final dir = await _fileService.appDir;
-      final file = File('$dir/data_app/files_user/data_$username.json');
-      if (await file.exists()) {
-        await file.delete();
+    // Datei(en) über den FileService löschen: Die zentrale Containment-Prüfung
+    // gilt auch fürs Löschen. So bleiben Legacy-Profile (Namen ausserhalb der
+    // Whitelist, z. B. Umlaute/Leerzeichen) sicher entfernbar, während
+    // manipulierte Namen (Traversal) NIE Dateien ausserhalb des files_user-
+    // Ordners löschen können. Ablehnungen werden gemeldet, nie verschwiegen.
+    String? fileHint;
+    for (final suffix in const ['.json', '.json.bak']) {
+      final rel = 'data_app/files_user/data_$trimmed$suffix';
+      try {
+        await _fileService.deleteFile(rel);
+      } on PathRejectedException catch (e) {
+        log('deleteUser: $rel sicher nicht löschbar ($e)');
+        fileHint ??=
+            'Datei konnte nicht gelöscht werden ($rel – Pfad-Sicherheitsprüfung).';
+      } on PersistenceException catch (e) {
+        log('deleteUser: $rel konnte nicht gelöscht werden ($e)');
+        fileHint ??= 'Datei konnte nicht gelöscht werden ($rel).';
       }
-      final bak = File('$dir/data_app/files_user/data_$username.json.bak');
-      if (await bak.exists()) {
-        await bak.delete();
-      }
-      return "Benutzer '$username' wurde gelöscht.";
-    } catch (_) {
-      return 'Benutzer aus der Liste entfernt, Datei konnte nicht gelöscht werden.';
     }
+    if (fileHint != null) {
+      return 'Benutzer aus der Liste entfernt, $fileHint';
+    }
+    return "Benutzer '$trimmed' wurde gelöscht.";
   }
 
   @override
@@ -154,9 +188,14 @@ class UserManagerImpl implements UserManager {
 
   @override
   Future<void> setLoggedUname(String loggedUname) async {
+    final name = _safeUsername(loggedUname);
+    if (name == null) {
+      throw PathRejectedException('data_app/app_data.json',
+          StateError('Ungültiger Benutzername "$loggedUname"'));
+    }
     final appData = await _readAppData();
     await _saveAppDataSilently(
-        appData.copyWith(loggedUName: loggedUname).toJson(), 'setLoggedUname');
+        appData.copyWith(loggedUName: name).toJson(), 'setLoggedUname');
   }
 
   /// Liest `app_data.json` robust: Ist die Datei beschädigt (auch `.bak`),

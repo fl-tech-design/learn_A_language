@@ -23,6 +23,21 @@ class PersistenceException implements Exception {
   String toString() => 'PersistenceException($path, cause: $cause)';
 }
 
+/// Wird geworfen, wenn ein aufzulösender Pfad unzulässig ist: leer, NUL-haltig,
+/// absolut (auch Windows-Drive), mit `..`/`.`-Segmenten (Slash ODER Backslash)
+/// oder ausserhalb des App-Datenverzeichnisses (auch per Symlink-Kette).
+///
+/// Erbt bewusst von [PersistenceException]; dadurch greifen bestehende
+/// `on PersistenceException`-Catch-Blöcke (UI/Manager) weiterhin kontrolliert.
+/// Wichtig: Ein abgelehnter Pfad wird bei [FileService.loadJson] NICHT als
+/// „Datei existiert nicht" behandelt (kein `{}`), sondern explizit signalisiert.
+class PathRejectedException extends PersistenceException {
+  PathRejectedException(super.path, [super.cause]);
+
+  @override
+  String toString() => 'PathRejectedException($path, cause: $cause)';
+}
+
 /// Provides JSON file read/write with automatic first-launch asset copy.
 /// Interface extracted from the former static FileService class as part of
 /// the static-manager decoupling (point2, Commit A).
@@ -33,6 +48,11 @@ abstract class FileService {
   Future<void> saveJson(String relativePath, Map<String, dynamic> data);
   Future<void> updateJsonKey(
       String relativePath, String key, Object? value);
+
+  /// Löscht die Datei unter [relativePath], falls sie existiert. Unterliegt
+  /// derselben zentralen Pfad-Containment-Prüfung wie Lesen/Schreiben.
+  Future<void> deleteFile(String relativePath);
+
   Future<Map<String, dynamic>> loadBundledJson(String assetPath);
   Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
 }
@@ -47,6 +67,10 @@ class FileServiceImpl implements FileService {
   FileServiceImpl({this.baseDirOverride});
 
   String? _appDir;
+  String? _canonicalAppDir;
+
+  static final RegExp _absoluteWindowsDrive = RegExp(r'^[A-Za-z]:[\\/]');
+  static final RegExp _pathSeparators = RegExp(r'[\\/]');
 
   @override
   Future<String> get appDir async {
@@ -58,6 +82,86 @@ class FileServiceImpl implements FileService {
     final dir = await getApplicationDocumentsDirectory();
     _appDir = dir.path;
     return _appDir!;
+  }
+
+  /// Kanonischer (symlink-aufgelöster) Basis-Pfad des App-Datenverzeichnisses.
+  /// Existiert das Verzeichnis noch nicht, wird der lexikalische Pfad genutzt.
+  Future<String> _canonicalAppDirPath() async {
+    if (_canonicalAppDir != null) return _canonicalAppDir!;
+    final dir = await appDir;
+    var canonical = dir;
+    try {
+      canonical = await Directory(dir).resolveSymbolicLinks();
+    } on FileSystemException {
+      log('file_service: appDir nicht auflösbar – nutze lexikalischen Pfad');
+    }
+    _canonicalAppDir = canonical;
+    return canonical;
+  }
+
+  /// Lexikalische Pfadprüfung: liefert [relativePath] mit normalisierten
+  /// `/`-Separatoren zurück oder wirft [PathRejectedException].
+  static String _assertSafeRelativePath(String relativePath) {
+    if (relativePath.isEmpty) {
+      throw PathRejectedException(relativePath, StateError('Leerer Pfad'));
+    }
+    if (relativePath.contains('\x00') ||
+        relativePath.startsWith('/') ||
+        _absoluteWindowsDrive.hasMatch(relativePath)) {
+      throw PathRejectedException(
+          relativePath, StateError('Unerlaubter (absoluter) Pfad'));
+    }
+    final segments = relativePath.split(_pathSeparators);
+    if (segments.any((s) => s == '..' || s == '.')) {
+      throw PathRejectedException(
+          relativePath, StateError('Unerlaubte Pfadsegmente (.. bzw. .)'));
+    }
+    return segments.join('/');
+  }
+
+  /// Löst [relativePath] gegen das App-Datenverzeichnis auf.
+  Future<String> _resolveAppPath(String relativePath) async {
+    final safe = _assertSafeRelativePath(relativePath);
+    final dir = await appDir;
+    return '$dir/$safe';
+  }
+
+  /// Stellt sicher, dass [absolutePath] (bzw. sein existenter Vorfahre) nach
+  /// Symlink-Auflösung im kanonischen App-Verzeichnis liegt.
+  ///
+  /// TOCTOU-Hinweis: dart:io bietet keinen atomaren „O_NOFOLLOW"-Zugriff;
+  /// diese Prüfung schützt gegen statische und vorkonfigurierte Symlink-Lagen.
+  /// Ein Tausch von Verzeichnissen DURCH einen Symlink nach der Prüfung ist
+  /// nicht zuverlässig abwehrbar. Auf Android ist das appDir privat und nicht
+  /// durch Angreifer beschreibbar; auf Linux-Desktop besitzt ein Angreifer
+  /// mit Schreibzugriff auf das appDir ohnehin direkten Datenzugriff.
+  Future<void> _ensureCanonicalWithinAppDir(String absolutePath) async {
+    final canonicalRoot = await _canonicalAppDirPath();
+    String? resolved;
+    try {
+      resolved = await File(absolutePath).resolveSymbolicLinks();
+    } on FileSystemException {
+      // Datei existiert (noch) nicht → Parent-Anfrage versuchen.
+    }
+    if (resolved == null) {
+      try {
+        resolved = await File(absolutePath).parent.resolveSymbolicLinks();
+      } on FileSystemException {
+        return; // weder Datei noch Parent existieren → kein Symlink möglich
+      }
+    }
+    if (!_isWithin(canonicalRoot, resolved)) {
+      throw PathRejectedException(
+        absolutePath,
+        StateError('Aufgelöster Pfad liegt ausserhalb des App-Verzeichnisses'),
+      );
+    }
+  }
+
+  static bool _isWithin(String root, String candidate) {
+    final r = root.replaceAll('\\', '/');
+    final c = candidate.replaceAll('\\', '/');
+    return c == r || c.startsWith('$r/');
   }
 
   @override
@@ -156,8 +260,8 @@ class FileServiceImpl implements FileService {
 
   @override
   Future<Map<String, dynamic>> loadJson(String relativePath) async {
-    final dir = await appDir;
-    final file = File('$dir/$relativePath');
+    final file = File(await _resolveAppPath(relativePath));
+    await _ensureCanonicalWithinAppDir(file.path);
 
     // ── Normalfall: Datei fehlt → {} (semantisch „nicht vorhanden"). ──
     if (!await file.exists()) return {};
@@ -169,7 +273,7 @@ class FileServiceImpl implements FileService {
       log('loadJson: $relativePath unlesbar/korrupt ($e)');
 
       // Backup-Generation als Rettung versuchen.
-      final backup = File('$dir/$relativePath.bak');
+      final backup = File('${file.path}.bak');
       if (await backup.exists()) {
         try {
           final recovered = _decodeJsonObject(relativePath, await backup.readAsString());
@@ -209,8 +313,8 @@ class FileServiceImpl implements FileService {
   @override
   Future<void> saveJson(
       String relativePath, Map<String, dynamic> data) async {
-    final dir = await appDir;
-    await _writeFileAtomic('$dir/$relativePath', data, rotateBackup: true);
+    final target = await _resolveAppPath(relativePath);
+    await _writeFileAtomic(target, data, rotateBackup: true);
   }
 
   /// Schreibt [data] atomar als JSON nach [relativePath].
@@ -237,6 +341,10 @@ class FileServiceImpl implements FileService {
       if (!await parent.exists()) {
         await parent.create(recursive: true);
       }
+      // Backstop: Auch intern aufgelöste absolute Pfade müssen innerhalb des
+      // App-Verzeichnisses liegen (Symlink-Ketten). Ablehnungen werden NIE als
+      // generischer Persistenzfehler verpackt, sondern durchgereicht.
+      await _ensureCanonicalWithinAppDir(absolutePath);
       if (rotateBackup && await file.exists()) {
         await File('$absolutePath.bak')
             .writeAsString(await file.readAsString(), flush: true);
@@ -245,6 +353,7 @@ class FileServiceImpl implements FileService {
       await tmp.writeAsString(encoder.convert(data), flush: true);
       await tmp.rename(absolutePath);
     } catch (e) {
+      if (e is PathRejectedException) rethrow;
       log('saveJson: Schreiben von $absolutePath fehlgeschlagen: $e');
       throw PersistenceException(absolutePath, e);
     }
@@ -256,6 +365,20 @@ class FileServiceImpl implements FileService {
     final data = await loadJson(relativePath);
     data[key] = value;
     await saveJson(relativePath, data);
+  }
+
+  @override
+  Future<void> deleteFile(String relativePath) async {
+    final target = await _resolveAppPath(relativePath);
+    await _ensureCanonicalWithinAppDir(target);
+    final file = File(target);
+    if (!await file.exists()) return;
+    try {
+      await file.delete();
+    } catch (e) {
+      log('deleteFile: Löschen von $target fehlgeschlagen: $e');
+      throw PersistenceException(target, e);
+    }
   }
 
   @override
@@ -278,8 +401,16 @@ class FileServiceImpl implements FileService {
   @override
   Future<Map<String, dynamic>> loadLanguageDictFromDir(
       String langCode) async {
-    final dir = await appDir;
-    final langDir = Directory('$dir/language_dict/$langCode');
+    final String langDirPath;
+    try {
+      langDirPath = await _resolveAppPath('language_dict/$langCode');
+    } on PathRejectedException catch (e) {
+      // Unsicherer Sprachcode → kein Zugriff ausserhalb des App-Verzeichnisses;
+      // `{}` ist der best-effort-Fallback (read-only, wie bei fehlendem Ordner).
+      log('loadLanguageDictFromDir: unsicherer Sprachcode "$langCode" ($e)');
+      return {};
+    }
+    final langDir = Directory(langDirPath);
     if (!await langDir.exists()) return {};
 
     final result = <String, dynamic>{};

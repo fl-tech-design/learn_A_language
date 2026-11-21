@@ -44,6 +44,9 @@ class VocabManagerImpl implements VocabManager {
   Future<void> _saveSafe(String username, UserData data) async {
     try {
       await _userManager.saveUserdata(username, data);
+    } on PathRejectedException catch (e) {
+      log('vocab_manager: Speichern für $username abgelehnt ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
     } on PersistenceException catch (e) {
       log('vocab_manager: Speichern für $username fehlgeschlagen ($e)');
       StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);

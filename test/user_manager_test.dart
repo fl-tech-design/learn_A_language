@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:learn_a_language/managers/user_manager.dart';
 import 'package:learn_a_language/models/app_models.dart';
+import 'package:learn_a_language/services/file_service.dart';
 
 import 'helpers/fakes.dart';
 
@@ -121,14 +122,12 @@ void main() {
     test('löscht auch die Benutzerdatei von der Platte', () async {
       final dir = await Directory.systemTemp.createTemp('lal_user_test_');
       addTearDown(() => dir.delete(recursive: true));
-      final fs = FakeFileService(
-        appDirValue: dir.path,
-        store: {
-          'data_app/app_data.json': {
-            'registered_user': ['alice'],
-          },
-        },
-      );
+      // Echter FileService, damit auch das Löschen über die zentrale
+      // Containment-Prüfung von deleteFile läuft.
+      final fs = FileServiceImpl(baseDirOverride: dir.path);
+      await fs.saveJson('data_app/app_data.json', {
+        'registered_user': ['alice'],
+      });
       final userFile = File('${dir.path}/data_app/files_user/data_alice.json');
       await userFile.parent.create(recursive: true);
       await userFile.writeAsString('{}');
@@ -242,12 +241,10 @@ void main() {
     test('entfernt auch die .bak-Datei des Benutzers', () async {
       final dir = await Directory.systemTemp.createTemp('lal_delbak_');
       addTearDown(() => dir.delete(recursive: true));
-      final fs = FakeFileService(
-        appDirValue: dir.path,
-        store: {
-          'data_app/app_data.json': {'registered_user': ['alice']},
-        },
-      );
+      final fs = FileServiceImpl(baseDirOverride: dir.path);
+      await fs.saveJson('data_app/app_data.json', {
+        'registered_user': ['alice'],
+      });
       final userFile = File('${dir.path}/data_app/files_user/data_alice.json');
       await userFile.parent.create(recursive: true);
       await userFile.writeAsString('{"u_name": "alice"}');
@@ -284,4 +281,130 @@ void main() {
       expect(appData.loggedUName, 'alice');
     });
   });
+
+  group('UserManagerImpl – Pfad-/Username-Sicherheit (Nachrüstung Ticket 1)', () {
+    const unsafeNames = [
+      '../attacker',
+      '..',
+      '.',
+      'a/b',
+      'C:\\x',
+      '/etc/x',
+      '..\\..',
+      '/../../../../etc/passwd',
+    ];
+
+    test('createUserFile weist unsichere Namen ab, ohne etwas zu schreiben',
+        () async {
+      final fs = FakeFileService();
+      final mgr = UserManagerImpl(fs);
+
+      for (final name in unsafeNames) {
+        final result = await mgr.createUserFile(name, 'de', {});
+        expect(result, contains('Ungültiger Benutzername'),
+            reason: 'Name "$name" wurde nicht abgelehnt');
+      }
+      expect(fs.store, isEmpty);
+    });
+
+    test('loadUserdata liefert für unsichere Namen null (kein Dateizugriff)',
+        () async {
+      final mgr = UserManagerImpl(FakeFileService());
+      for (final name in unsafeNames) {
+        expect(await mgr.loadUserdata(name), isNull,
+            reason: 'Name "$name" wurde nicht zurückgewiesen');
+      }
+    });
+
+    test('saveUserdata lehnt unsichere Namen kontrolliert ab', () async {
+      final fs = FakeFileService();
+      final mgr = UserManagerImpl(fs);
+
+      await expectLater(
+        () => mgr.saveUserdata('../attacker', _minimalUser('x', 'de')),
+        throwsA(isA<PathRejectedException>()),
+      );
+      expect(fs.store, isEmpty);
+    });
+
+    test('addNewUserToList lehnt unsichere Namen ab und schreibt nichts',
+        () async {
+      final fs = FakeFileService();
+      final mgr = UserManagerImpl(fs);
+
+      await expectLater(
+        () => mgr.addNewUserToList('../attacker'),
+        throwsA(isA<PathRejectedException>()),
+      );
+      expect(fs.store, isEmpty);
+    });
+
+    test('setLoggedUname lehnt unsichere Namen ab und schreibt nichts',
+        () async {
+      final fs = FakeFileService();
+      final mgr = UserManagerImpl(fs);
+
+      await expectLater(
+        () => mgr.setLoggedUname('a/b'),
+        throwsA(isA<PathRejectedException>()),
+      );
+      expect(fs.store, isEmpty);
+    });
+
+    test('deleteUser entfernt manipulative Namen aus der Liste, löscht aber '
+        'keine Dateien über den Traversal-Pfad', () async {
+      final dir = await Directory.systemTemp.createTemp('lal_delunsafe_');
+      addTearDown(() => dir.delete(recursive: true));
+      final fs = FileServiceImpl(baseDirOverride: dir.path);
+      await fs.saveJson('data_app/app_data.json', {
+        'registered_user': ['/../../../../etc/passwd'],
+      });
+      // „Kannarinen"-Datei: Sie darf durch deleteUser NIE angetastet werden.
+      final victim = File('${dir.path}/data_secret_canary.json');
+      await victim.parent.create(recursive: true);
+      await victim.writeAsString('{"secret": true}');
+
+      final mgr = UserManagerImpl(fs);
+      final result = await mgr.deleteUser('/../../../../etc/passwd');
+
+      // Benutzer ist aus der Liste entfernt (kein Auto-Login-Mehrfachzugriff).
+      final appData =
+          AppData.fromJson(await fs.loadJson('data_app/app_data.json'));
+      expect(appData.registeredUser, isEmpty);
+      // Die Datei wurde NICHT gelöscht und der Versuch wird nicht als
+      // stiller Erfolg verkauft (Hinweistext enthält „Datei").
+      expect(await victim.exists(), isTrue);
+      expect(result, contains('Datei'));
+    });
+
+    test('Legacy-Profile (Whitelist-ferne Namen) bleiben erhalten und lassen '
+        'sich sicher löschen', () async {
+      final dir = await Directory.systemTemp.createTemp('lal_legacy_');
+      addTearDown(() => dir.delete(recursive: true));
+      final fs = FileServiceImpl(baseDirOverride: dir.path);
+      await fs.saveJson('data_app/app_data.json', {
+        'registered_user': ['Max Müller'],
+      });
+      final legacyFile =
+          File('${dir.path}/data_app/files_user/data_Max Müller.json');
+      await legacyFile.parent.create(recursive: true);
+      await legacyFile.writeAsString('{"u_name": "Max Müller"}');
+
+      final mgr = UserManagerImpl(fs);
+
+      // 1) Lesen: Whitelist-ferner Name → null (sichtbar „nicht registriert"),
+      //    die Datei selbst bleibt aber unangetastet (kein stiller Verlust).
+      expect(await mgr.loadUserdata('Max Müller'), isNull);
+      expect(await legacyFile.exists(), isTrue);
+
+      // 2) Löschen ist über die Containment-Prüfung von deleteFile sicher.
+      final result = await mgr.deleteUser('Max Müller');
+      expect(result, contains('gelöscht'));
+      expect(await legacyFile.exists(), isFalse);
+      final appData =
+          AppData.fromJson(await fs.loadJson('data_app/app_data.json'));
+      expect(appData.registeredUser, isEmpty);
+    });
+  });
+
 }

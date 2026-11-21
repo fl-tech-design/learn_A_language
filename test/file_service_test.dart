@@ -139,4 +139,90 @@ void main() {
           throwsA(isA<PersistenceException>()));
     });
   });
+
+  group('Pfad-Containment (Path-Traversal-Abwehr, Ticket 1)', () {
+    test('saveJson mit ../-Traversal wird abgelehnt, nichts wird geschrieben',
+        () async {
+      await expectLater(
+        () => fs.saveJson('../escape.json', {'x': 1}),
+        throwsA(isA<PathRejectedException>()),
+      );
+      expect(await File('${tmpDir.parent.path}/escape.json').exists(), isFalse);
+    });
+
+    test('loadJson mit ../-Traversal wird abgelehnt', () {
+      expect(
+        () => fs.loadJson('../../x.json'),
+        throwsA(isA<PathRejectedException>()),
+      );
+    });
+
+    test('absolute Pfade werden abgelehnt (Unix & Windows-Drive)', () async {
+      expect(() => fs.loadJson('/etc/passwd'),
+          throwsA(isA<PathRejectedException>()));
+      expect(() => fs.saveJson('C:\\x.json', {'a': 1}),
+          throwsA(isA<PathRejectedException>()));
+      expect(() => fs.loadJson('C:/x.json'),
+          throwsA(isA<PathRejectedException>()));
+    });
+
+    test('Backslash-Traversal wird abgelehnt', () {
+      expect(
+        () => fs.loadJson('data_app\\..\\..\\x.json'),
+        throwsA(isA<PathRejectedException>()),
+      );
+    });
+
+    test('NUL-Zeichen und leerer Pfad werden abgelehnt', () {
+      expect(() => fs.loadJson('a\x00b.json'),
+          throwsA(isA<PathRejectedException>()));
+      expect(() => fs.loadJson(''), throwsA(isA<PathRejectedException>()));
+    });
+
+    test('`.`-Segmente werden abgelehnt', () {
+      expect(() => fs.loadJson('./data_app/x.json'),
+          throwsA(isA<PathRejectedException>()));
+    });
+
+    test('updateJsonKey lehnt Traversal-Pfade ab (voller Aufrufpfad)', () async {
+      await writeFile('data_app/app_data.json', '{"a": 1}');
+      await expectLater(
+        () => fs.updateJsonKey('../app_data.json', 'k', 1),
+        throwsA(isA<PathRejectedException>()),
+      );
+    });
+
+    test('legitime Unterverzeichnisse bleiben nutzbar (Roundtrip)', () async {
+      await fs.saveJson('a/b/c/data.json', {'x': 1});
+      expect(await fs.loadJson('a/b/c/data.json'), {'x': 1});
+    });
+
+    test('Symlink-Ausbruch wird abgelehnt (Lesen, Schreiben, Löschen)', () async {
+      if (Platform.isWindows) return; // Link-Erzeugung setzt unter Windows Rechte voraus
+      final outside = await Directory.systemTemp.createTemp('lal_outside_');
+      addTearDown(() => outside.delete(recursive: true));
+      await Link('${tmpDir.path}/linked').create(outside.path);
+
+      await expectLater(
+        () => fs.saveJson('linked/x.json', {'x': 1}),
+        throwsA(isA<PathRejectedException>()),
+      );
+
+      final outsideFile = File('${outside.path}/x.json');
+      await outsideFile.parent.create(recursive: true);
+      await outsideFile.writeAsString('{"y": 2}');
+
+      await expectLater(
+        () => fs.loadJson('linked/x.json'),
+        throwsA(isA<PathRejectedException>()),
+      );
+      await expectLater(
+        () => fs.deleteFile('linked/x.json'),
+        throwsA(isA<PathRejectedException>()),
+      );
+      // Die Datei ausserhalb bleibt unangetastet.
+      expect(await outsideFile.exists(), isTrue);
+    });
+  });
+
 }

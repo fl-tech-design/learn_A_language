@@ -80,6 +80,15 @@ class FakeFileService implements FileService {
   }
 
   @override
+  Future<void> deleteFile(String relativePath) async {
+    if (appDirThrows) {
+      throw PersistenceException(
+          relativePath, StateError('simulierter appDir-Fehler'));
+    }
+    store.remove(relativePath);
+  }
+
+  @override
   Future<Map<String, dynamic>> loadBundledJson(String assetPath) async {
     bundledLoadCount++;
     return bundled;

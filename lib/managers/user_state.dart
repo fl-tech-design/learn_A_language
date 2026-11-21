@@ -80,9 +80,14 @@ class UserState extends ChangeNotifier {
       return result;
     }
 
-    await _userManager.addNewUserToList(username);
-    await _userManager.changeLoginState(newState: true);
-    await _userManager.setLoggedUname(username);
+    try {
+      await _userManager.addNewUserToList(username);
+      await _userManager.changeLoginState(newState: true);
+      await _userManager.setLoggedUname(username);
+    } on PathRejectedException catch (e) {
+      log('registerUser: Benutzername $username wurde abgelehnt ($e)');
+      return 'Benutzer konnte nicht registriert werden (ungültiger Name).';
+    }
 
     final targetLang = mLang == 'de' ? 'en' : 'de';
     final langDict = await _vocabManager.loadLanguageDictFromDir(targetLang);
@@ -123,6 +128,9 @@ class UserState extends ChangeNotifier {
   Future<void> _saveSafe(String username, UserData data) async {
     try {
       await _userManager.saveUserdata(username, data);
+    } on PathRejectedException catch (e) {
+      log('user_state: Speichern für $username abgelehnt ($e)');
+      StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
     } on PersistenceException catch (e) {
       log('user_state: Speichern für $username fehlgeschlagen ($e)');
       StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
