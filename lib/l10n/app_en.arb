@@ -174,5 +174,16 @@
   "hangmanLives": "Lives",
   "hangmanWrongLetters": "Wrong letters:",
   "hangmanRoundLost": "Round lost!",
-  "hangmanRoundWon": "Round won!"
+  "hangmanRoundWon": "Round won!",
+  "btnFillIn": "Fill In",
+  "fillInEasy": "Easy (25 sentences)",
+  "fillInHard": "Hard (100 sentences)",
+  "fillInMedium": "Medium (50 sentences)",
+  "fillInTime": "Time",
+  "fillInBestTime": "Best time",
+  "fillInPoints": "Points",
+  "fillInSkip": "Skip",
+  "spanish": "Spanish",
+  "french": "French",
+  "russian": "Russian"
 }

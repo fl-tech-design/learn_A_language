@@ -128,6 +128,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           flagAsset: 'assets/images/flag_uk.png',
                           label: l10n.english,
                           onTap: () => context.read<DataState>().changeLanguage('englisch')),
+                      const SizedBox(height: AppTheme.contentSpacing),
+                      FlagBox(
+                          flagAsset: 'assets/images/flag_spa.png',
+                          label: l10n.spanish,
+                          onTap: () => context.read<DataState>().changeLanguage('spanisch')),
+                      const SizedBox(height: AppTheme.contentSpacing),
+                      FlagBox(
+                          flagAsset: 'assets/images/flag_fra.png',
+                          label: l10n.french,
+                          onTap: () => context.read<DataState>().changeLanguage('französisch')),
+                      const SizedBox(height: AppTheme.contentSpacing),
+                      FlagBox(
+                          flagAsset: 'assets/images/flag_rus.png',
+                          label: l10n.russian,
+                          onTap: () => context.read<DataState>().changeLanguage('russisch')),
                       const SizedBox(height: 20),
                       Row(children: [
                         SizedBox(

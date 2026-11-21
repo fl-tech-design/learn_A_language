@@ -1,0 +1,14 @@
+{
+  "@@locale": "ru",
+  "btnFillIn": "Fill In",
+  "fillInEasy": "Лёгкий (25 предложений)",
+  "fillInHard": "Сложный (100 предложений)",
+  "fillInMedium": "Средний (50 предложений)",
+  "fillInTime": "Время",
+  "fillInBestTime": "Лучшее время",
+  "fillInPoints": "Очки",
+  "fillInSkip": "Пропустить",
+  "spanish": "Испанский",
+  "french": "Французский",
+  "russian": "Русский"
+}

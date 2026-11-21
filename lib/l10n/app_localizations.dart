@@ -7,6 +7,9 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_ru.dart';
 
 // ignore_for_file: type=lint
 
@@ -95,7 +98,10 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('de'),
-    Locale('en')
+    Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('ru')
   ];
 
   /// No description provided for @allDueDone.
@@ -985,6 +991,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Round won!'**
   String get hangmanRoundWon;
+
+  /// No description provided for @btnFillIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill In'**
+  String get btnFillIn;
+
+  /// No description provided for @fillInEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy (25 sentences)'**
+  String get fillInEasy;
+
+  /// No description provided for @fillInHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard (100 sentences)'**
+  String get fillInHard;
+
+  /// No description provided for @fillInMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium (50 sentences)'**
+  String get fillInMedium;
+
+  /// No description provided for @fillInTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get fillInTime;
+
+  /// No description provided for @fillInBestTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Best time'**
+  String get fillInBestTime;
+
+  /// No description provided for @fillInPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Points'**
+  String get fillInPoints;
+
+  /// No description provided for @fillInSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get fillInSkip;
+
+  /// No description provided for @spanish.
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get spanish;
+
+  /// No description provided for @french.
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get french;
+
+  /// No description provided for @russian.
+  ///
+  /// In en, this message translates to:
+  /// **'Russian'**
+  String get russian;
 }
 
 class _AppLocalizationsDelegate
@@ -998,7 +1070,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['de', 'en'].contains(locale.languageCode);
+      <String>['de', 'en', 'es', 'fr', 'ru'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -1011,6 +1083,12 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'ru':
+      return AppLocalizationsRu();
   }
 
   throw FlutterError(

@@ -31,6 +31,9 @@ class DataState extends ChangeNotifier {
   Locale get appLocale => switch (_currLang) {
         'de' => const Locale('de'),
         'en' => const Locale('en'),
+        'es' => const Locale('es'),
+        'fr' => const Locale('fr'),
+        'ru' => const Locale('ru'),
         _    => const Locale('en'),
       };
   AppData get appData => _appData;
@@ -94,8 +97,14 @@ class DataState extends ChangeNotifier {
     const mapping = {
       'deutsch': 'de',
       'englisch': 'en',
+      'spanisch': 'es',
+      'französisch': 'fr',
+      'russisch': 'ru',
       'german': 'de',
       'english': 'en',
+      'spanish': 'es',
+      'french': 'fr',
+      'russian': 'ru',
     };
     final langCode = mapping[norm];
     if (langCode == null) return;

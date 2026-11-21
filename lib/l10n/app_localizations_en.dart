@@ -465,4 +465,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hangmanRoundWon => 'Round won!';
+
+  @override
+  String get btnFillIn => 'Fill In';
+
+  @override
+  String get fillInEasy => 'Easy (25 sentences)';
+
+  @override
+  String get fillInHard => 'Hard (100 sentences)';
+
+  @override
+  String get fillInMedium => 'Medium (50 sentences)';
+
+  @override
+  String get fillInTime => 'Time';
+
+  @override
+  String get fillInBestTime => 'Best time';
+
+  @override
+  String get fillInPoints => 'Points';
+
+  @override
+  String get fillInSkip => 'Skip';
+
+  @override
+  String get spanish => 'Spanish';
+
+  @override
+  String get french => 'French';
+
+  @override
+  String get russian => 'Russian';
 }

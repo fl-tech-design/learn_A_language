@@ -1,0 +1,14 @@
+{
+  "@@locale": "fr",
+  "btnFillIn": "Fill In",
+  "fillInEasy": "Facile (25 phrases)",
+  "fillInHard": "Difficile (100 phrases)",
+  "fillInMedium": "Moyen (50 phrases)",
+  "fillInTime": "Temps",
+  "fillInBestTime": "Meilleur temps",
+  "fillInPoints": "Points",
+  "fillInSkip": "Passer",
+  "spanish": "Espagnol",
+  "french": "Français",
+  "russian": "Russe"
+}

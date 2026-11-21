@@ -179,6 +179,7 @@ class UserData {
   final DayStreak? dayStreak;
   final int gameHighscore;
   final Map<String, int> crosswordBestTimes;
+  final Map<String, int> fillInBestTimes;
   final List<String> selectedCourses;
 
   UserData({
@@ -191,6 +192,7 @@ class UserData {
     this.dayStreak,
     this.gameHighscore = 0,
     this.crosswordBestTimes = const {},
+    this.fillInBestTimes = const {},
     this.selectedCourses = const [],
   });
 
@@ -215,6 +217,7 @@ class UserData {
           : null,
       gameHighscore: json['game_highscore'] as int? ?? 0,
       crosswordBestTimes: _parseIntMap(json['crossword_best_times']),
+      fillInBestTimes: _parseIntMap(json['fill_in_best_times']),
       selectedCourses: List<String>.from(json['selected_courses'] ?? []),
     );
   }
@@ -231,6 +234,7 @@ class UserData {
       if (gameHighscore > 0) 'game_highscore': gameHighscore,
       if (crosswordBestTimes.isNotEmpty)
         'crossword_best_times': crosswordBestTimes,
+      if (fillInBestTimes.isNotEmpty) 'fill_in_best_times': fillInBestTimes,
       'selected_courses': selectedCourses,
     };
   }
@@ -246,6 +250,7 @@ class UserData {
     bool clearDayStreak = false,
     int? gameHighscore,
     Map<String, int>? crosswordBestTimes,
+    Map<String, int>? fillInBestTimes,
     List<String>? selectedCourses,
   }) {
     return UserData(
@@ -259,6 +264,7 @@ class UserData {
           clearDayStreak ? null : (dayStreak ?? this.dayStreak),
       gameHighscore: gameHighscore ?? this.gameHighscore,
       crosswordBestTimes: crosswordBestTimes ?? this.crosswordBestTimes,
+      fillInBestTimes: fillInBestTimes ?? this.fillInBestTimes,
       selectedCourses: selectedCourses ?? this.selectedCourses,
     );
   }

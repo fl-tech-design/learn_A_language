@@ -470,4 +470,37 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get hangmanRoundWon => 'Runde gewonnen!';
+
+  @override
+  String get btnFillIn => 'Fill In';
+
+  @override
+  String get fillInEasy => 'Leicht (25 Sätze)';
+
+  @override
+  String get fillInHard => 'Schwer (100 Sätze)';
+
+  @override
+  String get fillInMedium => 'Mittel (50 Sätze)';
+
+  @override
+  String get fillInTime => 'Zeit';
+
+  @override
+  String get fillInBestTime => 'Bestzeit';
+
+  @override
+  String get fillInPoints => 'Punkte';
+
+  @override
+  String get fillInSkip => 'Überspringen';
+
+  @override
+  String get spanish => 'Spanisch';
+
+  @override
+  String get french => 'Französisch';
+
+  @override
+  String get russian => 'Russisch';
 }
