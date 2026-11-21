@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../services/audio_service.dart';
 import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
@@ -25,10 +28,23 @@ class _WordScreenState extends State<WordScreen> {
   Color _feedbackColor = AppTheme.green2;
   DayStreak? _streak;
 
+  AudioService? _audio;
+  Timer? _audioTimer;
+  bool _hasAudioWord = false;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    _audio = context.read<AudioService?>();
     _loadWords();
+  }
+
+  @override
+  void dispose() {
+    _audioTimer?.cancel();
+    final audio = _audio;
+    if (audio != null) unawaited(audio.stop());
+    super.dispose();
   }
 
   Future<void> _loadWords() async {
@@ -68,6 +84,7 @@ class _WordScreenState extends State<WordScreen> {
         _answerChecked = false;
         _feedback = '';
       });
+      _onWordChanged();
     }
   }
 
@@ -99,6 +116,7 @@ class _WordScreenState extends State<WordScreen> {
           _answerChecked = false;
           _feedback = '';
         });
+        _onWordChanged();
       } else {
         setState(() {
           _feedback = result.message;
@@ -149,6 +167,7 @@ class _WordScreenState extends State<WordScreen> {
       _answerChecked = false;
       _feedback = '';
     });
+    _onWordChanged();
   }
 
   WordCategory? _categoryById(String? id) {
@@ -166,6 +185,56 @@ class _WordScreenState extends State<WordScreen> {
       _answerChecked = false;
       _feedback = '';
     });
+    _onWordChanged();
+  }
+
+  VocabEntry? get _currentWord {
+    if (_words.isEmpty || _index >= _words.length) return null;
+    return _words[_index];
+  }
+
+  /// Nach jedem Wortwechsel: aktuelles Wort per Auto-Play (nach kurzer Pause)
+  /// vorsprechen und prüfen, ob Audio für den Replay-Button existiert.
+  void _onWordChanged() {
+    _audioTimer?.cancel();
+    final audio = _audio;
+    final w = _currentWord;
+    if (audio == null || w == null) {
+      if (_hasAudioWord) setState(() => _hasAudioWord = false);
+      return;
+    }
+    final uname = context.read<DataState>().appData.loggedUName;
+    final verbKey = vocabVerbKey(w.key);
+    final tense = vocabTenseKey(w.key);
+    final person = vocabPersonIndex(w.key);
+
+    _audioTimer = Timer(const Duration(milliseconds: 400), () {
+      if (!mounted) return;
+      unawaited(audio.play(
+          username: uname, verbKey: verbKey, tense: tense, person: person));
+    });
+
+    audio
+        .hasAudio(
+            username: uname, verbKey: verbKey, tense: tense, person: person)
+        .then((has) {
+      if (mounted && has != _hasAudioWord) {
+        setState(() => _hasAudioWord = has);
+      }
+    });
+  }
+
+  /// Wiederholt die Aussprache des aktuellen Wortes (Replay-Button).
+  void _replay() {
+    final audio = _audio;
+    final w = _currentWord;
+    if (audio == null || w == null) return;
+    final uname = context.read<DataState>().appData.loggedUName;
+    unawaited(audio.play(
+        username: uname,
+        verbKey: vocabVerbKey(w.key),
+        tense: vocabTenseKey(w.key),
+        person: vocabPersonIndex(w.key)));
   }
 
   @override
@@ -174,8 +243,7 @@ class _WordScreenState extends State<WordScreen> {
     final mode = context.read<NavigationState>().wordMode;
     final isNew = mode == 'new';
     final isReview = mode == 'read' || mode == 'learned';
-    final word =
-        (_words.isNotEmpty && _index < _words.length) ? _words[_index] : null;
+    final word = _currentWord;
     final examples = word?.examples ?? const [''];  // Vorgabe [''] wie altes _parseList
     final examplesNative = word?.examplesNative ?? const [''];  // Vorgabe [''] wie altes _parseList
 
@@ -233,6 +301,17 @@ class _WordScreenState extends State<WordScreen> {
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: AppTheme.lblFontSize, color: Colors.white70)),
+          if (_hasAudioWord)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: IconButton(
+                iconSize: 38,
+                padding: EdgeInsets.zero,
+                onPressed: _replay,
+                icon: const Icon(Icons.volume_up),
+                color: AppTheme.colorPrimary,
+              ),
+            ),
           const SizedBox(height: 8),
           if (examples.any((e) => e.isNotEmpty))
             Padding(

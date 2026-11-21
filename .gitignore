@@ -38,3 +38,7 @@ web/
 
 # Test
 # test/  # war fälschlich ignoriert, force-added Tests sind getrackt
+
+# Python (Tools)
+__pycache__/
+*.pyc

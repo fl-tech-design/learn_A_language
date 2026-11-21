@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/arbeiten/audio_ich_arbeitete_m.mp3",
+        "audio/de/verben/arbeiten/audio_du_arbeitetest_m.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_arbeitete_m.mp3",
+        "audio/de/verben/arbeiten/audio_wir_arbeiteten_m.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_arbeitetet_m.mp3",
+        "audio/de/verben/arbeiten/audio_sie_arbeiteten_m.mp3"
+      ],
+      [
+        "audio/de/verben/arbeiten/audio_ich_arbeitete_f.mp3",
+        "audio/de/verben/arbeiten/audio_du_arbeitetest_f.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_arbeitete_f.mp3",
+        "audio/de/verben/arbeiten/audio_wir_arbeiteten_f.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_arbeitetet_f.mp3",
+        "audio/de/verben/arbeiten/audio_sie_arbeiteten_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/arbeiten/audio_ich_arbeite_m.mp3",
+        "audio/de/verben/arbeiten/audio_du_arbeitest_m.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_arbeitet_m.mp3",
+        "audio/de/verben/arbeiten/audio_wir_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_arbeitet_m.mp3",
+        "audio/de/verben/arbeiten/audio_sie_arbeiten_m.mp3"
+      ],
+      [
+        "audio/de/verben/arbeiten/audio_ich_arbeite_f.mp3",
+        "audio/de/verben/arbeiten/audio_du_arbeitest_f.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_arbeitet_f.mp3",
+        "audio/de/verben/arbeiten/audio_wir_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_arbeitet_f.mp3",
+        "audio/de/verben/arbeiten/audio_sie_arbeiten_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/arbeiten/audio_ich_werde_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_du_wirst_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_wird_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_wir_werden_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_werdet_arbeiten_m.mp3",
+        "audio/de/verben/arbeiten/audio_sie_werden_arbeiten_m.mp3"
+      ],
+      [
+        "audio/de/verben/arbeiten/audio_ich_werde_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_du_wirst_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_er_sie_es_wird_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_wir_werden_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_ihr_werdet_arbeiten_f.mp3",
+        "audio/de/verben/arbeiten/audio_sie_werden_arbeiten_f.mp3"
+      ]
     ]
   }
 }

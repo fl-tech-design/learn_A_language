@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/können/audio_ich_konnte_m.mp3",
+        "audio/de/verben/können/audio_du_konntest_m.mp3",
+        "audio/de/verben/können/audio_er_sie_es_konnte_m.mp3",
+        "audio/de/verben/können/audio_wir_konnten_m.mp3",
+        "audio/de/verben/können/audio_ihr_konntet_m.mp3",
+        "audio/de/verben/können/audio_sie_konnten_m.mp3"
+      ],
+      [
+        "audio/de/verben/können/audio_ich_konnte_f.mp3",
+        "audio/de/verben/können/audio_du_konntest_f.mp3",
+        "audio/de/verben/können/audio_er_sie_es_konnte_f.mp3",
+        "audio/de/verben/können/audio_wir_konnten_f.mp3",
+        "audio/de/verben/können/audio_ihr_konntet_f.mp3",
+        "audio/de/verben/können/audio_sie_konnten_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/können/audio_ich_kann_m.mp3",
+        "audio/de/verben/können/audio_du_kannst_m.mp3",
+        "audio/de/verben/können/audio_er_sie_es_kann_m.mp3",
+        "audio/de/verben/können/audio_wir_können_m.mp3",
+        "audio/de/verben/können/audio_ihr_könnt_m.mp3",
+        "audio/de/verben/können/audio_sie_können_m.mp3"
+      ],
+      [
+        "audio/de/verben/können/audio_ich_kann_f.mp3",
+        "audio/de/verben/können/audio_du_kannst_f.mp3",
+        "audio/de/verben/können/audio_er_sie_es_kann_f.mp3",
+        "audio/de/verben/können/audio_wir_können_f.mp3",
+        "audio/de/verben/können/audio_ihr_könnt_f.mp3",
+        "audio/de/verben/können/audio_sie_können_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/können/audio_ich_werde_können_m.mp3",
+        "audio/de/verben/können/audio_du_wirst_können_m.mp3",
+        "audio/de/verben/können/audio_er_sie_es_wird_können_m.mp3",
+        "audio/de/verben/können/audio_wir_werden_können_m.mp3",
+        "audio/de/verben/können/audio_ihr_werdet_können_m.mp3",
+        "audio/de/verben/können/audio_sie_werden_können_m.mp3"
+      ],
+      [
+        "audio/de/verben/können/audio_ich_werde_können_f.mp3",
+        "audio/de/verben/können/audio_du_wirst_können_f.mp3",
+        "audio/de/verben/können/audio_er_sie_es_wird_können_f.mp3",
+        "audio/de/verben/können/audio_wir_werden_können_f.mp3",
+        "audio/de/verben/können/audio_ihr_werdet_können_f.mp3",
+        "audio/de/verben/können/audio_sie_werden_können_f.mp3"
+      ]
     ]
   }
 }

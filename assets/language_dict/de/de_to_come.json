@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/kommen/audio_ich_kam_m.mp3",
+        "audio/de/verben/kommen/audio_du_kamst_m.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_kam_m.mp3",
+        "audio/de/verben/kommen/audio_wir_kamen_m.mp3",
+        "audio/de/verben/kommen/audio_ihr_kamt_m.mp3",
+        "audio/de/verben/kommen/audio_sie_kamen_m.mp3"
+      ],
+      [
+        "audio/de/verben/kommen/audio_ich_kam_f.mp3",
+        "audio/de/verben/kommen/audio_du_kamst_f.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_kam_f.mp3",
+        "audio/de/verben/kommen/audio_wir_kamen_f.mp3",
+        "audio/de/verben/kommen/audio_ihr_kamt_f.mp3",
+        "audio/de/verben/kommen/audio_sie_kamen_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/kommen/audio_ich_komme_m.mp3",
+        "audio/de/verben/kommen/audio_du_kommst_m.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_kommt_m.mp3",
+        "audio/de/verben/kommen/audio_wir_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_ihr_kommt_m.mp3",
+        "audio/de/verben/kommen/audio_sie_kommen_m.mp3"
+      ],
+      [
+        "audio/de/verben/kommen/audio_ich_komme_f.mp3",
+        "audio/de/verben/kommen/audio_du_kommst_f.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_kommt_f.mp3",
+        "audio/de/verben/kommen/audio_wir_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_ihr_kommt_f.mp3",
+        "audio/de/verben/kommen/audio_sie_kommen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/kommen/audio_ich_werde_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_du_wirst_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_wird_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_wir_werden_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_ihr_werdet_kommen_m.mp3",
+        "audio/de/verben/kommen/audio_sie_werden_kommen_m.mp3"
+      ],
+      [
+        "audio/de/verben/kommen/audio_ich_werde_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_du_wirst_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_er_sie_es_wird_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_wir_werden_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_ihr_werdet_kommen_f.mp3",
+        "audio/de/verben/kommen/audio_sie_werden_kommen_f.mp3"
+      ]
     ]
   }
 }

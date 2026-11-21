@@ -12,6 +12,7 @@ dependencies:
   provider: ^6.1.1
   path_provider: ^2.1.1
   package_info_plus: ^10.2.2
+  audioplayers: ^6.8.1
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.3
@@ -34,6 +35,66 @@ flutter:
     - assets/language_dict/de/
     - assets/language_dict/en/
     - assets/grammar/
+    - assets/audio/de/verben/arbeiten/
+    - assets/audio/de/verben/beginnen/
+    - assets/audio/de/verben/brauchen/
+    - assets/audio/de/verben/dürfen/
+    - assets/audio/de/verben/enden/
+    - assets/audio/de/verben/essen/
+    - assets/audio/de/verben/finden/
+    - assets/audio/de/verben/gehen/
+    - assets/audio/de/verben/haben/
+    - assets/audio/de/verben/helfen/
+    - assets/audio/de/verben/kaufen/
+    - assets/audio/de/verben/kommen/
+    - assets/audio/de/verben/können/
+    - assets/audio/de/verben/lernen/
+    - assets/audio/de/verben/lesen/
+    - assets/audio/de/verben/machen/
+    - assets/audio/de/verben/mögen/
+    - assets/audio/de/verben/müssen/
+    - assets/audio/de/verben/schließen/
+    - assets/audio/de/verben/schreiben/
+    - assets/audio/de/verben/sehen/
+    - assets/audio/de/verben/sein/
+    - assets/audio/de/verben/sollen/
+    - assets/audio/de/verben/sprechen/
+    - assets/audio/de/verben/trinken/
+    - assets/audio/de/verben/verkaufen/
+    - assets/audio/de/verben/verstehen/
+    - assets/audio/de/verben/wohnen/
+    - assets/audio/de/verben/wollen/
+    - assets/audio/de/verben/öffnen/
+    - assets/audio/en/must/
+    - assets/audio/en/should/
+    - assets/audio/en/to be/
+    - assets/audio/en/to be able to/
+    - assets/audio/en/to be allowed to/
+    - assets/audio/en/to begin/
+    - assets/audio/en/to buy/
+    - assets/audio/en/to close/
+    - assets/audio/en/to come/
+    - assets/audio/en/to drink/
+    - assets/audio/en/to eat/
+    - assets/audio/en/to end/
+    - assets/audio/en/to find/
+    - assets/audio/en/to go/
+    - assets/audio/en/to have/
+    - assets/audio/en/to help/
+    - assets/audio/en/to learn/
+    - assets/audio/en/to like/
+    - assets/audio/en/to live/
+    - assets/audio/en/to make/
+    - assets/audio/en/to need/
+    - assets/audio/en/to open/
+    - assets/audio/en/to read/
+    - assets/audio/en/to see/
+    - assets/audio/en/to sell/
+    - assets/audio/en/to speak/
+    - assets/audio/en/to understand/
+    - assets/audio/en/to want/
+    - assets/audio/en/to work/
+    - assets/audio/en/to write/
 
   fonts:
     - family: Jura

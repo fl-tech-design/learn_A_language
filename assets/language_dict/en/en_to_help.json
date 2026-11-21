@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to help/audio_i_helped_m.mp3",
+        "audio/en/to help/audio_you_helped_m.mp3",
+        "audio/en/to help/audio_he_she_it_helped_m.mp3",
+        "audio/en/to help/audio_we_helped_m.mp3",
+        "audio/en/to help/audio_you_helped_(pl)_m.mp3",
+        "audio/en/to help/audio_they_helped_m.mp3"
+      ],
+      [
+        "audio/en/to help/audio_i_helped_f.mp3",
+        "audio/en/to help/audio_you_helped_f.mp3",
+        "audio/en/to help/audio_he_she_it_helped_f.mp3",
+        "audio/en/to help/audio_we_helped_f.mp3",
+        "audio/en/to help/audio_you_helped_(pl)_f.mp3",
+        "audio/en/to help/audio_they_helped_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to help/audio_i_help_m.mp3",
+        "audio/en/to help/audio_you_help_m.mp3",
+        "audio/en/to help/audio_he_she_it_helps_m.mp3",
+        "audio/en/to help/audio_we_help_m.mp3",
+        "audio/en/to help/audio_you_help_(pl)_m.mp3",
+        "audio/en/to help/audio_they_help_m.mp3"
+      ],
+      [
+        "audio/en/to help/audio_i_help_f.mp3",
+        "audio/en/to help/audio_you_help_f.mp3",
+        "audio/en/to help/audio_he_she_it_helps_f.mp3",
+        "audio/en/to help/audio_we_help_f.mp3",
+        "audio/en/to help/audio_you_help_(pl)_f.mp3",
+        "audio/en/to help/audio_they_help_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to help/audio_i_will_help_m.mp3",
+        "audio/en/to help/audio_you_will_help_m.mp3",
+        "audio/en/to help/audio_he_she_it_will_help_m.mp3",
+        "audio/en/to help/audio_we_will_help_m.mp3",
+        "audio/en/to help/audio_you_will_help_(pl)_m.mp3",
+        "audio/en/to help/audio_they_will_help_m.mp3"
+      ],
+      [
+        "audio/en/to help/audio_i_will_help_f.mp3",
+        "audio/en/to help/audio_you_will_help_f.mp3",
+        "audio/en/to help/audio_he_she_it_will_help_f.mp3",
+        "audio/en/to help/audio_we_will_help_f.mp3",
+        "audio/en/to help/audio_you_will_help_(pl)_f.mp3",
+        "audio/en/to help/audio_they_will_help_f.mp3"
+      ]
     ]
   }
 }

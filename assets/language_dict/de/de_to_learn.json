@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/lernen/audio_ich_lernte_m.mp3",
+        "audio/de/verben/lernen/audio_du_lerntest_m.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_lernte_m.mp3",
+        "audio/de/verben/lernen/audio_wir_lernten_m.mp3",
+        "audio/de/verben/lernen/audio_ihr_lerntet_m.mp3",
+        "audio/de/verben/lernen/audio_sie_lernten_m.mp3"
+      ],
+      [
+        "audio/de/verben/lernen/audio_ich_lernte_f.mp3",
+        "audio/de/verben/lernen/audio_du_lerntest_f.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_lernte_f.mp3",
+        "audio/de/verben/lernen/audio_wir_lernten_f.mp3",
+        "audio/de/verben/lernen/audio_ihr_lerntet_f.mp3",
+        "audio/de/verben/lernen/audio_sie_lernten_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/lernen/audio_ich_lerne_m.mp3",
+        "audio/de/verben/lernen/audio_du_lernst_m.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_lernt_m.mp3",
+        "audio/de/verben/lernen/audio_wir_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_ihr_lernt_m.mp3",
+        "audio/de/verben/lernen/audio_sie_lernen_m.mp3"
+      ],
+      [
+        "audio/de/verben/lernen/audio_ich_lerne_f.mp3",
+        "audio/de/verben/lernen/audio_du_lernst_f.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_lernt_f.mp3",
+        "audio/de/verben/lernen/audio_wir_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_ihr_lernt_f.mp3",
+        "audio/de/verben/lernen/audio_sie_lernen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/lernen/audio_ich_werde_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_du_wirst_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_wird_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_wir_werden_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_ihr_werdet_lernen_m.mp3",
+        "audio/de/verben/lernen/audio_sie_werden_lernen_m.mp3"
+      ],
+      [
+        "audio/de/verben/lernen/audio_ich_werde_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_du_wirst_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_er_sie_es_wird_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_wir_werden_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_ihr_werdet_lernen_f.mp3",
+        "audio/de/verben/lernen/audio_sie_werden_lernen_f.mp3"
+      ]
     ]
   }
 }

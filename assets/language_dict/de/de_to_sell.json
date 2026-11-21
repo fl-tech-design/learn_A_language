@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/verkaufen/audio_ich_verkaufte_m.mp3",
+        "audio/de/verben/verkaufen/audio_du_verkauftest_m.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_verkaufte_m.mp3",
+        "audio/de/verben/verkaufen/audio_wir_verkauften_m.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_verkauftet_m.mp3",
+        "audio/de/verben/verkaufen/audio_sie_verkauften_m.mp3"
+      ],
+      [
+        "audio/de/verben/verkaufen/audio_ich_verkaufte_f.mp3",
+        "audio/de/verben/verkaufen/audio_du_verkauftest_f.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_verkaufte_f.mp3",
+        "audio/de/verben/verkaufen/audio_wir_verkauften_f.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_verkauftet_f.mp3",
+        "audio/de/verben/verkaufen/audio_sie_verkauften_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/verkaufen/audio_ich_verkaufe_m.mp3",
+        "audio/de/verben/verkaufen/audio_du_verkaufst_m.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_verkauft_m.mp3",
+        "audio/de/verben/verkaufen/audio_wir_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_verkauft_m.mp3",
+        "audio/de/verben/verkaufen/audio_sie_verkaufen_m.mp3"
+      ],
+      [
+        "audio/de/verben/verkaufen/audio_ich_verkaufe_f.mp3",
+        "audio/de/verben/verkaufen/audio_du_verkaufst_f.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_verkauft_f.mp3",
+        "audio/de/verben/verkaufen/audio_wir_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_verkauft_f.mp3",
+        "audio/de/verben/verkaufen/audio_sie_verkaufen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/verkaufen/audio_ich_werde_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_du_wirst_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_wird_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_wir_werden_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_werdet_verkaufen_m.mp3",
+        "audio/de/verben/verkaufen/audio_sie_werden_verkaufen_m.mp3"
+      ],
+      [
+        "audio/de/verben/verkaufen/audio_ich_werde_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_du_wirst_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_er_sie_es_wird_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_wir_werden_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_ihr_werdet_verkaufen_f.mp3",
+        "audio/de/verben/verkaufen/audio_sie_werden_verkaufen_f.mp3"
+      ]
     ]
   }
 }

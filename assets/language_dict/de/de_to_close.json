@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/schließen/audio_ich_schloss_m.mp3",
+        "audio/de/verben/schließen/audio_du_schlossest_m.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_schloss_m.mp3",
+        "audio/de/verben/schließen/audio_wir_schlossen_m.mp3",
+        "audio/de/verben/schließen/audio_ihr_schlosst_m.mp3",
+        "audio/de/verben/schließen/audio_sie_schlossen_m.mp3"
+      ],
+      [
+        "audio/de/verben/schließen/audio_ich_schloss_f.mp3",
+        "audio/de/verben/schließen/audio_du_schlossest_f.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_schloss_f.mp3",
+        "audio/de/verben/schließen/audio_wir_schlossen_f.mp3",
+        "audio/de/verben/schließen/audio_ihr_schlosst_f.mp3",
+        "audio/de/verben/schließen/audio_sie_schlossen_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/schließen/audio_ich_schließe_m.mp3",
+        "audio/de/verben/schließen/audio_du_schließt_m.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_schließt_m.mp3",
+        "audio/de/verben/schließen/audio_wir_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_ihr_schließt_m.mp3",
+        "audio/de/verben/schließen/audio_sie_schließen_m.mp3"
+      ],
+      [
+        "audio/de/verben/schließen/audio_ich_schließe_f.mp3",
+        "audio/de/verben/schließen/audio_du_schließt_f.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_schließt_f.mp3",
+        "audio/de/verben/schließen/audio_wir_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_ihr_schließt_f.mp3",
+        "audio/de/verben/schließen/audio_sie_schließen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/schließen/audio_ich_werde_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_du_wirst_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_wird_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_wir_werden_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_ihr_werdet_schließen_m.mp3",
+        "audio/de/verben/schließen/audio_sie_werden_schließen_m.mp3"
+      ],
+      [
+        "audio/de/verben/schließen/audio_ich_werde_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_du_wirst_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_er_sie_es_wird_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_wir_werden_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_ihr_werdet_schließen_f.mp3",
+        "audio/de/verben/schließen/audio_sie_werden_schließen_f.mp3"
+      ]
     ]
   }
 }

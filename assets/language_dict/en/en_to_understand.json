@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to understand/audio_i_understood_m.mp3",
+        "audio/en/to understand/audio_you_understood_m.mp3",
+        "audio/en/to understand/audio_he_she_it_understood_m.mp3",
+        "audio/en/to understand/audio_we_understood_m.mp3",
+        "audio/en/to understand/audio_you_understood_(pl)_m.mp3",
+        "audio/en/to understand/audio_they_understood_m.mp3"
+      ],
+      [
+        "audio/en/to understand/audio_i_understood_f.mp3",
+        "audio/en/to understand/audio_you_understood_f.mp3",
+        "audio/en/to understand/audio_he_she_it_understood_f.mp3",
+        "audio/en/to understand/audio_we_understood_f.mp3",
+        "audio/en/to understand/audio_you_understood_(pl)_f.mp3",
+        "audio/en/to understand/audio_they_understood_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to understand/audio_i_understand_m.mp3",
+        "audio/en/to understand/audio_you_understand_m.mp3",
+        "audio/en/to understand/audio_he_she_it_understands_m.mp3",
+        "audio/en/to understand/audio_we_understand_m.mp3",
+        "audio/en/to understand/audio_you_understand_(pl)_m.mp3",
+        "audio/en/to understand/audio_they_understand_m.mp3"
+      ],
+      [
+        "audio/en/to understand/audio_i_understand_f.mp3",
+        "audio/en/to understand/audio_you_understand_f.mp3",
+        "audio/en/to understand/audio_he_she_it_understands_f.mp3",
+        "audio/en/to understand/audio_we_understand_f.mp3",
+        "audio/en/to understand/audio_you_understand_(pl)_f.mp3",
+        "audio/en/to understand/audio_they_understand_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to understand/audio_i_will_understand_m.mp3",
+        "audio/en/to understand/audio_you_will_understand_m.mp3",
+        "audio/en/to understand/audio_he_she_it_will_understand_m.mp3",
+        "audio/en/to understand/audio_we_will_understand_m.mp3",
+        "audio/en/to understand/audio_you_will_understand_(pl)_m.mp3",
+        "audio/en/to understand/audio_they_will_understand_m.mp3"
+      ],
+      [
+        "audio/en/to understand/audio_i_will_understand_f.mp3",
+        "audio/en/to understand/audio_you_will_understand_f.mp3",
+        "audio/en/to understand/audio_he_she_it_will_understand_f.mp3",
+        "audio/en/to understand/audio_we_will_understand_f.mp3",
+        "audio/en/to understand/audio_you_will_understand_(pl)_f.mp3",
+        "audio/en/to understand/audio_they_will_understand_f.mp3"
+      ]
     ]
   }
 }

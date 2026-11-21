@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/öffnen/audio_ich_öffnete_m.mp3",
+        "audio/de/verben/öffnen/audio_du_öffnetest_m.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_öffnete_m.mp3",
+        "audio/de/verben/öffnen/audio_wir_öffneten_m.mp3",
+        "audio/de/verben/öffnen/audio_ihr_öffnetet_m.mp3",
+        "audio/de/verben/öffnen/audio_sie_öffneten_m.mp3"
+      ],
+      [
+        "audio/de/verben/öffnen/audio_ich_öffnete_f.mp3",
+        "audio/de/verben/öffnen/audio_du_öffnetest_f.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_öffnete_f.mp3",
+        "audio/de/verben/öffnen/audio_wir_öffneten_f.mp3",
+        "audio/de/verben/öffnen/audio_ihr_öffnetet_f.mp3",
+        "audio/de/verben/öffnen/audio_sie_öffneten_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/öffnen/audio_ich_öffne_m.mp3",
+        "audio/de/verben/öffnen/audio_du_öffnest_m.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_öffnet_m.mp3",
+        "audio/de/verben/öffnen/audio_wir_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_ihr_öffnet_m.mp3",
+        "audio/de/verben/öffnen/audio_sie_öffnen_m.mp3"
+      ],
+      [
+        "audio/de/verben/öffnen/audio_ich_öffne_f.mp3",
+        "audio/de/verben/öffnen/audio_du_öffnest_f.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_öffnet_f.mp3",
+        "audio/de/verben/öffnen/audio_wir_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_ihr_öffnet_f.mp3",
+        "audio/de/verben/öffnen/audio_sie_öffnen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/öffnen/audio_ich_werde_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_du_wirst_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_wird_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_wir_werden_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_ihr_werdet_öffnen_m.mp3",
+        "audio/de/verben/öffnen/audio_sie_werden_öffnen_m.mp3"
+      ],
+      [
+        "audio/de/verben/öffnen/audio_ich_werde_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_du_wirst_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_er_sie_es_wird_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_wir_werden_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_ihr_werdet_öffnen_f.mp3",
+        "audio/de/verben/öffnen/audio_sie_werden_öffnen_f.mp3"
+      ]
     ]
   }
 }

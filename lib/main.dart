@@ -12,6 +12,7 @@ import 'managers/vocab_manager.dart';
 import 'managers/vocab_queries.dart';
 import 'managers/user_manager.dart';
 import 'services/file_service.dart';
+import 'services/audio_service.dart';
 import 'theme/app_theme.dart';
 import 'widgets/app_widgets.dart';
 import 'screens/loading_screen.dart';
@@ -56,6 +57,8 @@ void main() {
   final navigationState = NavigationState();
   final userState =
       UserState(userManager: userManager, vocabManager: vocabManager);
+  final audioService =
+      AudioService(fileService: fileService, userManager: userManager);
 
   runApp(MultiProvider(
     providers: [
@@ -63,6 +66,7 @@ void main() {
       Provider<UserManager>.value(value: userManager),
       Provider<VocabQueries>.value(value: vocabQueries),
       Provider<GrammarManager>.value(value: grammarManager),
+      Provider<AudioService>.value(value: audioService),
       ChangeNotifierProvider.value(value: dataState),
       ChangeNotifierProvider.value(value: navigationState),
       ChangeNotifierProvider.value(value: userState),

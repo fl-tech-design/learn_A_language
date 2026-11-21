@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/dürfen/audio_ich_durfte_m.mp3",
+        "audio/de/verben/dürfen/audio_du_durftest_m.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_durfte_m.mp3",
+        "audio/de/verben/dürfen/audio_wir_durften_m.mp3",
+        "audio/de/verben/dürfen/audio_ihr_durftet_m.mp3",
+        "audio/de/verben/dürfen/audio_sie_durften_m.mp3"
+      ],
+      [
+        "audio/de/verben/dürfen/audio_ich_durfte_f.mp3",
+        "audio/de/verben/dürfen/audio_du_durftest_f.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_durfte_f.mp3",
+        "audio/de/verben/dürfen/audio_wir_durften_f.mp3",
+        "audio/de/verben/dürfen/audio_ihr_durftet_f.mp3",
+        "audio/de/verben/dürfen/audio_sie_durften_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/dürfen/audio_ich_darf_m.mp3",
+        "audio/de/verben/dürfen/audio_du_darfst_m.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_darf_m.mp3",
+        "audio/de/verben/dürfen/audio_wir_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_ihr_dürft_m.mp3",
+        "audio/de/verben/dürfen/audio_sie_dürfen_m.mp3"
+      ],
+      [
+        "audio/de/verben/dürfen/audio_ich_darf_f.mp3",
+        "audio/de/verben/dürfen/audio_du_darfst_f.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_darf_f.mp3",
+        "audio/de/verben/dürfen/audio_wir_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_ihr_dürft_f.mp3",
+        "audio/de/verben/dürfen/audio_sie_dürfen_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/de/verben/dürfen/audio_ich_werde_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_du_wirst_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_wird_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_wir_werden_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_ihr_werdet_dürfen_m.mp3",
+        "audio/de/verben/dürfen/audio_sie_werden_dürfen_m.mp3"
+      ],
+      [
+        "audio/de/verben/dürfen/audio_ich_werde_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_du_wirst_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_er_sie_es_wird_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_wir_werden_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_ihr_werdet_dürfen_f.mp3",
+        "audio/de/verben/dürfen/audio_sie_werden_dürfen_f.mp3"
+      ]
     ]
   }
 }

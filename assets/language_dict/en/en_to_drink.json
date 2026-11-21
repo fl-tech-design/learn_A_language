@@ -42,12 +42,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to drink/audio_i_drank_m.mp3",
+        "audio/en/to drink/audio_you_drank_m.mp3",
+        "audio/en/to drink/audio_he_she_it_drank_m.mp3",
+        "audio/en/to drink/audio_we_drank_m.mp3",
+        "audio/en/to drink/audio_you_drank_(pl)_m.mp3",
+        "audio/en/to drink/audio_they_drank_m.mp3"
+      ],
+      [
+        "audio/en/to drink/audio_i_drank_f.mp3",
+        "audio/en/to drink/audio_you_drank_f.mp3",
+        "audio/en/to drink/audio_he_she_it_drank_f.mp3",
+        "audio/en/to drink/audio_we_drank_f.mp3",
+        "audio/en/to drink/audio_you_drank_(pl)_f.mp3",
+        "audio/en/to drink/audio_they_drank_f.mp3"
+      ]
     ]
   },
   "present": {
@@ -92,12 +102,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to drink/audio_i_drink_m.mp3",
+        "audio/en/to drink/audio_you_drink_m.mp3",
+        "audio/en/to drink/audio_he_she_it_drinks_m.mp3",
+        "audio/en/to drink/audio_we_drink_m.mp3",
+        "audio/en/to drink/audio_you_drink_(pl)_m.mp3",
+        "audio/en/to drink/audio_they_drink_m.mp3"
+      ],
+      [
+        "audio/en/to drink/audio_i_drink_f.mp3",
+        "audio/en/to drink/audio_you_drink_f.mp3",
+        "audio/en/to drink/audio_he_she_it_drinks_f.mp3",
+        "audio/en/to drink/audio_we_drink_f.mp3",
+        "audio/en/to drink/audio_you_drink_(pl)_f.mp3",
+        "audio/en/to drink/audio_they_drink_f.mp3"
+      ]
     ]
   },
   "future": {
@@ -142,12 +162,22 @@
       ]
     ],
     "audio": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      [
+        "audio/en/to drink/audio_i_will_drink_m.mp3",
+        "audio/en/to drink/audio_you_will_drink_m.mp3",
+        "audio/en/to drink/audio_he_she_it_will_drink_m.mp3",
+        "audio/en/to drink/audio_we_will_drink_m.mp3",
+        "audio/en/to drink/audio_you_will_drink_(pl)_m.mp3",
+        "audio/en/to drink/audio_they_will_drink_m.mp3"
+      ],
+      [
+        "audio/en/to drink/audio_i_will_drink_f.mp3",
+        "audio/en/to drink/audio_you_will_drink_f.mp3",
+        "audio/en/to drink/audio_he_she_it_will_drink_f.mp3",
+        "audio/en/to drink/audio_we_will_drink_f.mp3",
+        "audio/en/to drink/audio_you_will_drink_(pl)_f.mp3",
+        "audio/en/to drink/audio_they_will_drink_f.mp3"
+      ]
     ]
   }
 }
