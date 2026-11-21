@@ -12,7 +12,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get allDueDone => 'Alle fälligen Wörter bearbeitet!';
 
   @override
-  String get back => 'zurück';
+  String get back => 'Zurück';
 
   @override
   String get baseTitle => 'Neue App';
@@ -90,13 +90,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get catSelectSubcategory => 'Wähle eine Unterkategorie';
 
   @override
-  String get chancel => 'abbrechen';
+  String get chancel => 'Abbrechen';
 
   @override
-  String get close => 'schliessen';
+  String get close => 'Schliessen';
 
   @override
-  String get confirm => 'bestätigen';
+  String get confirm => 'Bestätigen';
 
   @override
   String get difficultyEasy => 'Leicht (20s / +3s)';
@@ -117,7 +117,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get difficultyMediumShort => 'Mittel';
 
   @override
-  String get english => 'englisch';
+  String get english => 'Englisch';
 
   @override
   String get examplesTitle => 'Beispiele:';
@@ -190,7 +190,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get gameTime => 'Zeit';
 
   @override
-  String get german => 'deutsch';
+  String get german => 'Deutsch';
 
   @override
   String get infDeleteUser =>
@@ -239,7 +239,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get limitReached => 'Tageslimit erreicht!';
 
   @override
-  String get loading => 'laden';
+  String get loading => 'Laden';
 
   @override
   String get loadingComplete => 'Daten wurden geladen.';
@@ -288,7 +288,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get register => 'registrieren';
+  String get register => 'Registrieren';
 
   @override
   String get selectDifficulty => 'Wähle eine Schwierigkeit:';
@@ -393,13 +393,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get colLevel => 'Level';
 
   @override
-  String get labNewShort => 'neu';
+  String get labNewShort => 'Neu';
 
   @override
-  String get labDueShort => 'fällig';
+  String get labDueShort => 'Fällig';
 
   @override
-  String get labLearnedShort => 'gelernt';
+  String get labLearnedShort => 'Gelernt';
 
   @override
   String get msgSaveFailed =>

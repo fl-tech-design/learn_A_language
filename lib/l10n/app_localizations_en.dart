@@ -12,7 +12,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get allDueDone => 'All due words completed!';
 
   @override
-  String get back => 'back';
+  String get back => 'Back';
 
   @override
   String get baseTitle => 'New App';
@@ -90,13 +90,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get catSelectSubcategory => 'Select a subcategory';
 
   @override
-  String get chancel => 'chancel';
+  String get chancel => 'Cancel';
 
   @override
-  String get close => 'close';
+  String get close => 'Close';
 
   @override
-  String get confirm => 'confirm';
+  String get confirm => 'Confirm';
 
   @override
   String get difficultyEasy => 'Easy (20s / +3s)';
@@ -117,7 +117,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get difficultyMediumShort => 'Medium';
 
   @override
-  String get english => 'english';
+  String get english => 'English';
 
   @override
   String get examplesTitle => 'Examples:';
@@ -190,7 +190,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gameTime => 'Time';
 
   @override
-  String get german => 'german';
+  String get german => 'German';
 
   @override
   String get infDeleteUser => 'Enter the username to delete.';
@@ -236,10 +236,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get limitReached => 'Daily limit reached!';
 
   @override
-  String get loading => 'loading';
+  String get loading => 'Loading';
 
   @override
-  String get loadingComplete => 'loading complete';
+  String get loadingComplete => 'Loading complete';
 
   @override
   String get mLang => 'Mother tongue';
@@ -284,7 +284,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get register => 'register';
+  String get register => 'Register';
 
   @override
   String get selectDifficulty => 'Select a difficulty:';
@@ -389,13 +389,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get colLevel => 'Level';
 
   @override
-  String get labNewShort => 'new';
+  String get labNewShort => 'New';
 
   @override
-  String get labDueShort => 'due';
+  String get labDueShort => 'Due';
 
   @override
-  String get labLearnedShort => 'learned';
+  String get labLearnedShort => 'Learned';
 
   @override
   String get msgSaveFailed =>

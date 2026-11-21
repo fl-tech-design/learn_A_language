@@ -107,7 +107,7 @@ abstract class AppLocalizations {
   /// No description provided for @back.
   ///
   /// In en, this message translates to:
-  /// **'back'**
+  /// **'Back'**
   String get back;
 
   /// No description provided for @baseTitle.
@@ -263,19 +263,19 @@ abstract class AppLocalizations {
   /// No description provided for @chancel.
   ///
   /// In en, this message translates to:
-  /// **'chancel'**
+  /// **'Cancel'**
   String get chancel;
 
   /// No description provided for @close.
   ///
   /// In en, this message translates to:
-  /// **'close'**
+  /// **'Close'**
   String get close;
 
   /// No description provided for @confirm.
   ///
   /// In en, this message translates to:
-  /// **'confirm'**
+  /// **'Confirm'**
   String get confirm;
 
   /// No description provided for @difficultyEasy.
@@ -317,7 +317,7 @@ abstract class AppLocalizations {
   /// No description provided for @english.
   ///
   /// In en, this message translates to:
-  /// **'english'**
+  /// **'English'**
   String get english;
 
   /// No description provided for @examplesTitle.
@@ -461,7 +461,7 @@ abstract class AppLocalizations {
   /// No description provided for @german.
   ///
   /// In en, this message translates to:
-  /// **'german'**
+  /// **'German'**
   String get german;
 
   /// No description provided for @infDeleteUser.
@@ -545,13 +545,13 @@ abstract class AppLocalizations {
   /// No description provided for @loading.
   ///
   /// In en, this message translates to:
-  /// **'loading'**
+  /// **'Loading'**
   String get loading;
 
   /// No description provided for @loadingComplete.
   ///
   /// In en, this message translates to:
-  /// **'loading complete'**
+  /// **'Loading complete'**
   String get loadingComplete;
 
   /// No description provided for @mLang.
@@ -635,7 +635,7 @@ abstract class AppLocalizations {
   /// No description provided for @register.
   ///
   /// In en, this message translates to:
-  /// **'register'**
+  /// **'Register'**
   String get register;
 
   /// No description provided for @selectDifficulty.
@@ -839,19 +839,19 @@ abstract class AppLocalizations {
   /// No description provided for @labNewShort.
   ///
   /// In en, this message translates to:
-  /// **'new'**
+  /// **'New'**
   String get labNewShort;
 
   /// No description provided for @labDueShort.
   ///
   /// In en, this message translates to:
-  /// **'due'**
+  /// **'Due'**
   String get labDueShort;
 
   /// No description provided for @labLearnedShort.
   ///
   /// In en, this message translates to:
-  /// **'learned'**
+  /// **'Learned'**
   String get labLearnedShort;
 
   /// No description provided for @msgSaveFailed.
