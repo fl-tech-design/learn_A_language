@@ -47,17 +47,34 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
                           builder: (context, snapshot) {
                             final enabled =
                                 snapshot.hasData && snapshot.data! >= 3;
-                            return SizedBox(
-                                height: 56,
-                                width: double.infinity,
-                                child: OutlinedButton(
-                                    onPressed: enabled
-                                        ? () => Navigator.of(context)
-                                            .pushNamed('/gameselect')
-                                        : null,
-                                    child: Text(l10n.btnTurbo,
-                                        style: const TextStyle(
-                                            fontSize: AppTheme.btnFontSize))));
+                            return Column(children: [
+                              SizedBox(
+                                  height: 56,
+                                  width: double.infinity,
+                                  child: OutlinedButton(
+                                      onPressed: enabled
+                                          ? () => Navigator.of(context)
+                                              .pushNamed('/gameselect')
+                                          : null,
+                                      child: Text(l10n.btnTurbo,
+                                          style: const TextStyle(
+                                              fontSize:
+                                                  AppTheme.btnFontSize)))),
+                              const SizedBox(
+                                  height: AppTheme.contentSpacing),
+                              SizedBox(
+                                  height: 56,
+                                  width: double.infinity,
+                                  child: OutlinedButton(
+                                      onPressed: enabled
+                                          ? () => Navigator.of(context)
+                                              .pushNamed('/wordsearch')
+                                          : null,
+                                      child: Text(l10n.btnWordSearch,
+                                          style: const TextStyle(
+                                              fontSize:
+                                                  AppTheme.btnFontSize)))),
+                            ]);
                           }),
                       const SizedBox(height: AppTheme.contentSpacing),
                       SizedBox(

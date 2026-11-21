@@ -66,6 +66,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get btnTurbo => 'Turbo';
 
   @override
+  String get btnWordSearch => 'Word Search';
+
+  @override
   String get catDueWords => 'Due words';
 
   @override
@@ -344,6 +347,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get wordsPerSession => 'Words per session';
+
+  @override
+  String get wsHint => 'Find these words:';
+
+  @override
+  String get wsSolution => 'Show solution';
+
+  @override
+  String get wsAllFound => 'All words found!';
 
   @override
   String get btnProgress => 'Learning Progress';

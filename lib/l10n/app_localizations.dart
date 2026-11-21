@@ -212,6 +212,12 @@ abstract class AppLocalizations {
   /// **'Turbo'**
   String get btnTurbo;
 
+  /// No description provided for @btnWordSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Word Search'**
+  String get btnWordSearch;
+
   /// No description provided for @catDueWords.
   ///
   /// In en, this message translates to:
@@ -751,6 +757,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Words per session'**
   String get wordsPerSession;
+
+  /// No description provided for @wsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Find these words:'**
+  String get wsHint;
+
+  /// No description provided for @wsSolution.
+  ///
+  /// In en, this message translates to:
+  /// **'Show solution'**
+  String get wsSolution;
+
+  /// No description provided for @wsAllFound.
+  ///
+  /// In en, this message translates to:
+  /// **'All words found!'**
+  String get wsAllFound;
 
   /// No description provided for @btnProgress.
   ///
