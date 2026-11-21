@@ -7,6 +7,7 @@ import 'l10n/app_localizations.dart';
 import 'managers/user_state.dart';
 import 'managers/data_state.dart';
 import 'managers/navigation_state.dart';
+import 'managers/session_manager.dart';
 import 'managers/grammar_manager.dart';
 import 'managers/vocab_manager.dart';
 import 'managers/vocab_queries.dart';
@@ -52,6 +53,7 @@ void main() {
   final vocabManager = VocabManagerImpl(userManager, fileService);
   final vocabQueries = VocabQueriesImpl(userManager);
   final grammarManager = GrammarManagerImpl(fileService);
+  final sessionManager = SessionManager(fileService, grammarManager);
 
   final dataState = DataState(fileService);
   final navigationState = NavigationState();
@@ -60,6 +62,12 @@ void main() {
   final audioService =
       AudioService(fileService: fileService, userManager: userManager);
 
+  // Persistiert die zuletzt geöffnete Seite, damit die App nach einem
+  // Android-Prozess-Kill („Alle Apps schliessen“) dort weitermacht.
+  final sessionObserver =
+      SessionObserver(sessionManager, navigationState, dataState);
+  sessionObserver.attach();
+
   runApp(MultiProvider(
     providers: [
       Provider<FileService>.value(value: fileService),
@@ -67,16 +75,20 @@ void main() {
       Provider<VocabQueries>.value(value: vocabQueries),
       Provider<GrammarManager>.value(value: grammarManager),
       Provider<AudioService>.value(value: audioService),
+      Provider<SessionManager>.value(value: sessionManager),
       ChangeNotifierProvider.value(value: dataState),
       ChangeNotifierProvider.value(value: navigationState),
       ChangeNotifierProvider.value(value: userState),
     ],
-    child: const LearnALanguageApp(),
+    child: LearnALanguageApp(sessionObserver: sessionObserver),
   ));
 }
 
 class LearnALanguageApp extends StatelessWidget {
-  const LearnALanguageApp({super.key});
+  const LearnALanguageApp({super.key, required this.sessionObserver});
+
+  /// Beobachtet die Navigation und speichert die zuletzt geöffnete Seite.
+  final SessionObserver sessionObserver;
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +100,7 @@ class LearnALanguageApp extends StatelessWidget {
       locale: dataState.appLocale,
       supportedLocales: AppLocalizations.supportedLocales,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
-      navigatorObservers: [routeObserver],
+      navigatorObservers: [routeObserver, sessionObserver],
       // Globaler, einmaliger Kanäle für Speicherwarnungen (SnackBar statt
       // Dialog), auch für Meldungen, die der LoadingScreen während des
       // Auto-Logins auslöst.

@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import 'package:provider/provider.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/session_manager.dart';
 import '../managers/user_state.dart';
 import '../theme/app_theme.dart';
 import '../l10n/app_localizations.dart';
@@ -36,6 +38,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Future<void> _bootstrap() async {
     final dataState = context.read<DataState>();
     final userState = context.read<UserState>();
+    final sessionManager = context.read<SessionManager>();
 
     // Schritt 1: Dateisystem + App-Daten (Asset-Kopien, App/Player-Daten).
     await dataState.initialize();
@@ -57,12 +60,41 @@ class _LoadingScreenState extends State<LoadingScreen> {
       if (!mounted) return;
     }
 
+    // Schritt 3: Gespeicherte Session laden (zuletzt geöffnete Seite), damit
+    // die App nach einem Android-Prozess-Kill dort weitermacht. Fehler sind
+    // unkritisch: ohne gültige Session geht es normal auf das Start-Menü.
+    SessionSnapshot? snapshot;
+    try {
+      snapshot = await sessionManager.loadSnapshotForUser(
+          dataState.appData.loggedUName);
+    } catch (e) {
+      log('LoadingScreen: Session-Wiederherstellung fehlgeschlagen ($e)');
+      snapshot = null;
+    }
+    if (!mounted) return;
+
     setState(() => _progress = 100);
-    // Kurz den abgeschlossenen Splash zeigen, dann weiter zum Start-Menü
-    // (auch wenn nicht eingeloggt).
+
+    // Kurz den abgeschlossenen Splash zeigen, dann zur zuletzt geöffneten
+    // Seite (oder ohne Session zum Start-Menü).
+    final navState = context.read<NavigationState>();
+    final routes = snapshot?.routes ?? const <SessionRoute>[];
     unawaited(Future<void>.delayed(const Duration(milliseconds: 300), () {
-      if (mounted) {
-        Navigator.of(context).pushReplacementNamed('/start');
+      if (!mounted) return;
+      final nav = Navigator.of(context);
+      nav.pushReplacementNamed('/start');
+      if (snapshot != null && routes.isNotEmpty) {
+        // Word-Modus + gewählte Kategorie für /word und /dueword übernehmen.
+        navState.setWordMode(snapshot.wordMode);
+        navState.setSelectedCategoryId(snapshot.selectedCategoryId);
+        try {
+          for (final r in routes) {
+            nav.pushNamed(r.name, arguments: r.arguments);
+          }
+        } catch (e) {
+          log('LoadingScreen: Wiederhergestellte Routen nicht navigierbar ($e)');
+          unawaited(sessionManager.clear());
+        }
       }
     }));
   }

@@ -4,6 +4,9 @@ import 'package:provider/provider.dart';
 
 import 'package:learn_a_language/l10n/app_localizations.dart';
 import 'package:learn_a_language/managers/data_state.dart';
+import 'package:learn_a_language/managers/grammar_manager.dart';
+import 'package:learn_a_language/managers/navigation_state.dart';
+import 'package:learn_a_language/managers/session_manager.dart';
 import 'package:learn_a_language/managers/user_state.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/screens/loading_screen.dart';
@@ -22,6 +25,24 @@ class _StartMarker extends StatelessWidget {
       const Scaffold(body: Text('START-MARKER'));
 }
 
+/// Marker für eine wiederhergestellte Lern-Route.
+class _LearningMarker extends StatelessWidget {
+  const _LearningMarker();
+
+  @override
+  Widget build(BuildContext context) =>
+      const Scaffold(body: Text('LEARNING-MARKER'));
+}
+
+/// Marker für eine wiederhergestellte Kategorie-Route.
+class _CategoryMarker extends StatelessWidget {
+  const _CategoryMarker();
+
+  @override
+  Widget build(BuildContext context) =>
+      const Scaffold(body: Text('CATEGORY-MARKER'));
+}
+
 Widget _app({
   required Map<String, Map<String, dynamic>> store,
   FakeUserManager? userManager,
@@ -33,10 +54,13 @@ Widget _app({
     userManager: userManager ?? FakeUserManager(),
     vocabManager: vocabManager ?? FakeVocabManager(),
   );
+  final sessionManager = SessionManager(fs, GrammarManagerImpl(fs));
   return MultiProvider(
     providers: [
       ChangeNotifierProvider<DataState>.value(value: dataState),
+      ChangeNotifierProvider<NavigationState>.value(value: NavigationState()),
       ChangeNotifierProvider<UserState>.value(value: userState),
+      Provider<SessionManager>.value(value: sessionManager),
     ],
     child: MaterialApp(
       locale: const Locale('de'),
@@ -48,9 +72,34 @@ Widget _app({
       routes: {
         '/': (_) => const LoadingScreen(),
         '/start': (_) => const _StartMarker(),
+        '/learning': (_) => const _LearningMarker(),
+        '/category': (_) => const _CategoryMarker(),
       },
     ),
   );
+}
+
+/// App-Daten mit eingeloggtem Benutzer [logged].
+Map<String, Map<String, dynamic>> _appDataStore({String logged = 'alice'}) => {
+      'data_app/app_data.json': {
+        'registered_user': [logged],
+        'logged_u_name': logged,
+        'user_logged_in': true,
+        'stay_logged_in': true,
+      },
+    };
+
+FakeUserManager _userManagerWith(String username) {
+  final um = FakeUserManager();
+  um.seed(username, UserData(
+        uName: username,
+        mLang: 'de',
+        progress: const {},
+        learnedLanguages: const [],
+        language: const {},
+        vocab: const {},
+      ));
+  return um;
 }
 
 void main() {
@@ -69,26 +118,11 @@ void main() {
   testWidgets(
       'Bootstrap mit Auto-Login: genau ein Init- + Migrationslauf -> /start',
       (tester) async {
-    final um = FakeUserManager();
-    um.seed('alice', UserData(
-          uName: 'alice',
-          mLang: 'de',
-          progress: const {},
-          learnedLanguages: const [],
-          language: const {},
-          vocab: const {},
-        ));
+    final um = _userManagerWith('alice');
     final vm = FakeVocabManager();
 
     await tester.pumpWidget(_app(
-      store: {
-        'data_app/app_data.json': {
-          'registered_user': ['alice'],
-          'logged_u_name': 'alice',
-          'user_logged_in': true,
-          'stay_logged_in': true,
-        },
-      },
+      store: _appDataStore(),
       userManager: um,
       vocabManager: vm,
     ));
@@ -107,13 +141,7 @@ void main() {
     final um = FakeUserManager(unreadableUsers: {'alice'});
 
     await tester.pumpWidget(_app(
-      store: {
-        'data_app/app_data.json': {
-          'logged_u_name': 'alice',
-          'user_logged_in': true,
-          'stay_logged_in': true,
-        },
-      },
+      store: _appDataStore(),
       userManager: um,
     ));
     await tester.pump(const Duration(seconds: 1));
@@ -124,5 +152,104 @@ void main() {
     expect(
         find.text('Deine Benutzerdaten konnten nicht geladen werden.'),
         findsOneWidget);
+  });
+
+  testWidgets(
+      'Gespeicherte Session: Bootstrap stellt die zuletzt geöffnete Seite '
+      'wieder her', (tester) async {
+    final store = _appDataStore();
+    store['data_app/last_session.json'] = {
+      'version': 1,
+      'user': 'alice',
+      'wordMode': 'new',
+      'selectedCategoryId': null,
+      'routes': [
+        {'name': '/learning'},
+      ],
+    };
+
+    await tester.pumpWidget(_app(
+      store: store,
+      userManager: _userManagerWith('alice'),
+    ));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    // Statt des Start-Menüs erscheint die zuletzt geöffnete Lern-Seite.
+    expect(find.byType(_LearningMarker), findsOneWidget);
+  });
+
+  testWidgets(
+      'Gespeicherte Session mit Argumenten: Kategorie wird samt Argument '
+      'wiederhergestellt', (tester) async {
+    final store = _appDataStore();
+    store['data_app/last_session.json'] = {
+      'version': 1,
+      'user': 'alice',
+      'wordMode': 'new',
+      'selectedCategoryId': 'erste_verben',
+      'routes': [
+        {'name': '/learning'},
+        {
+          'name': '/category',
+          'args': {'type': 'string', 'value': 'erste_verben'},
+        },
+      ],
+    };
+
+    await tester.pumpWidget(_app(
+      store: store,
+      userManager: _userManagerWith('alice'),
+    ));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(_CategoryMarker), findsOneWidget);
+  });
+
+  testWidgets(
+      'Session eines anderen Benutzers wird verworfen -> normaler Start',
+      (tester) async {
+    final store = _appDataStore(logged: 'bob');
+    store['data_app/last_session.json'] = {
+      'version': 1,
+      'user': 'alice', // gehört NICHT dem eingeloggten bob
+      'wordMode': 'new',
+      'selectedCategoryId': null,
+      'routes': [
+        {'name': '/learning'},
+      ],
+    };
+
+    await tester.pumpWidget(_app(
+      store: store,
+      userManager: _userManagerWith('bob'),
+    ));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(_StartMarker), findsOneWidget);
+    // Fremde Session wurde gelöscht.
+    expect(store['data_app/last_session.json'], isNull);
+  });
+
+  testWidgets('Korrupte Session führt zum normalen Start', (tester) async {
+    final store = _appDataStore();
+    store['data_app/last_session.json'] = {
+      'version': 99, // unbekannte Version -> verwerfen
+      'user': 'alice',
+      'routes': [
+        {'name': '/learning'},
+      ],
+    };
+
+    await tester.pumpWidget(_app(
+      store: store,
+      userManager: _userManagerWith('alice'),
+    ));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(_StartMarker), findsOneWidget);
   });
 }
