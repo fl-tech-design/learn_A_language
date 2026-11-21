@@ -121,4 +121,4 @@ Untersucht wurden alle `catch`-Blöcke, die `PersistenceException` fangen. Da `P
 - **Legacy (3):** Erhalt der Profile, sichtbarer Hinweis statt stillem Verlust, sicheres Löschen via `deleteFile`; keine Automatik-Migration.
 - **Fehler (4):** alle relevanten Catch-Blöcke geprüft; explizite `PathRejectedException`-Zweige; kein „als normaler Dateifehler verpacken“.
 
-→ Ergebnis, geänderte Dateien, Testergebnisse, Restrisiken und Commit-Hash: **ACT_SECURITY_PATHS_UMSETZUNG.md** (Commit `2599b58`)
+→ Ergebnis, geänderte Dateien, Testergebnisse, Restrisiken und Commit-Hash: **ACT_SECURITY_PATHS_UMSETZUNG.md** (Commit `39fe9ac`)

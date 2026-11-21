@@ -44,5 +44,5 @@
 
 ## 5. Commit
 
-- Local Commit: **`2599b58`** auf `main` („security(paths): Benutzer- und Dateipfade absichern (Ticket 1)“, 9 Dateien, +621/−50) – nach erfolgreicher Prüfung (`flutter analyze` 0 Issues, `flutter test` 151/151 grün).
+- Local Commit: **`39fe9ac`** auf `main` („security(paths): Benutzer- und Dateipfade absichern (Ticket 1)“, 9 Dateien, +621/−50) – nach erfolgreicher Prüfung (`flutter analyze` 0 Issues, `flutter test` 151/151 grün).
 - **Push an `origin` bewusst NICHT ausgeführt** – erfolgt erst nach deiner Freigabe („Commit und Push erst nach erfolgreicher Prüfung“).
