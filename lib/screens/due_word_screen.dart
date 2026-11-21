@@ -24,12 +24,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
   String _userInput = '';
   final _inputCtrl = TextEditingController();
   final _focusNode = FocusNode();
+  final _scrollCtrl = ScrollController();
   String _feedback = '';
   Color _feedbackColor = AppTheme.green2;
   String _correctDisplay = '';
 
   @override
   void dispose() {
+    _scrollCtrl.dispose();
     _inputCtrl.dispose();
     _focusNode.dispose();
     super.dispose();
@@ -252,9 +254,12 @@ class _DueWordScreenState extends State<DueWordScreen> {
         _feedback = '';
         _correctDisplay = '';
         _inputCtrl.clear();
-        // Re-focus the hidden input
+        // Neues Wort: wieder ganz oben anzeigen und das versteckte Feld
+        // fokussieren.
         WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted) _focusNode.requestFocus();
+          if (!mounted) return;
+          if (_scrollCtrl.hasClients) _scrollCtrl.jumpTo(0);
+          _focusNode.requestFocus();
         });
       }
     });
@@ -281,13 +286,40 @@ class _DueWordScreenState extends State<DueWordScreen> {
     final answerFontSize = compact ? 24.0 : 28.0;
     final gapSmall = compact ? 2.0 : 4.0;
     final gapMedium = compact ? 4.0 : 8.0;
-    final gapLarge = compact ? 6.0 : 12.0;
 
     return Scaffold(
       body: Column(children: [
+        // Verstecktes Einzelzeichen-Eingabefeld – bewusst AUSSERHALB des
+        // ScrollViews platziert. Läge es im scrollbaren Bereich, würde
+        // EditableText bei Fokus/Tippen automatisch dorthin scrollen
+        // („Caret on screen") und die Anzeige im Querformat aus dem oberen
+        // Bereich kippen – dann müsste man ständig wieder nach oben scrollen.
+        if (!allDone && !_checked)
+          SizedBox(
+              width: 1,
+              height: 1,
+              child: Opacity(
+                opacity: 0,
+                child: TextField(
+                  focusNode: _focusNode,
+                  controller: _inputCtrl,
+                  autofocus: true,
+                  showCursor: false,
+                  maxLength: 1,
+                  buildCounter:
+                      (_, {int? currentLength, int? maxLength, bool? isFocused}) =>
+                          const SizedBox.shrink(),
+                  autocorrect: false,
+                  enableSuggestions: false,
+                  keyboardType: TextInputType.text,
+                  textInputAction: TextInputAction.done,
+                  onChanged: _onCharInput,
+                ),
+              )),
         BoxTitle(title: l10n.titPageLearning),
         Expanded(
             child: SingleChildScrollView(
+                controller: _scrollCtrl,
                 padding: EdgeInsets.all(outerPadding),
                 child: Column(children: [
                   SizedBox(
@@ -325,37 +357,14 @@ class _DueWordScreenState extends State<DueWordScreen> {
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: answerFontSize)),
                   SizedBox(height: gapSmall),
-                  Text(_correctDisplay,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: AppTheme.lblFontSize,
-                          color: _feedbackColor)),
-                  SizedBox(height: gapMedium),
-                    // Hidden single-character input field
-                    if (!allDone && !_checked)
-                      SizedBox(
-                        width: 1,
-                        height: 1,
-                        child: Opacity(
-                          opacity: 0,
-                          child: TextField(
-                            focusNode: _focusNode,
-                            controller: _inputCtrl,
-                            autofocus: true,
-                            showCursor: false,
-                            maxLength: 1,
-                            buildCounter: (_, {int? currentLength, int? maxLength, bool? isFocused}) =>
-                                const SizedBox.shrink(),
-                            autocorrect: false,
-                            enableSuggestions: false,
-                            keyboardType: TextInputType.text,
-                            textInputAction: TextInputAction.done,
-                            onChanged: _onCharInput,
-                          ),
-                        ),
-                      ),
-                    SizedBox(height: gapLarge),
-                  if (_checked)
+                  if (_correctDisplay.isNotEmpty)
+                    Text(_correctDisplay,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: AppTheme.lblFontSize,
+                            color: _feedbackColor)),
+                  if (_checked) ...[
+                    SizedBox(height: gapMedium),
                     SizedBox(
                         height: 56,
                         width: double.infinity,
@@ -364,9 +373,11 @@ class _DueWordScreenState extends State<DueWordScreen> {
                             child: Text(l10n.btnNext,
                                 style: const TextStyle(
                                     fontSize: AppTheme.btnFontSize)))),
-                  Text(_feedback,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20, color: _feedbackColor)),
+                  ],
+                  if (_feedback.isNotEmpty)
+                    Text(_feedback,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 20, color: _feedbackColor)),
                   SizedBox(height: compact ? 4.0 : AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,

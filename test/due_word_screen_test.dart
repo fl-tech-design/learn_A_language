@@ -318,4 +318,33 @@ testWidgets('Feedback bleibt nach Lösung stehen (kein Reload bei Tastatur-Ände
     expect(input.top, greaterThanOrEqualTo(0));
     expect(input.bottom, lessThan(screenHeight));
   });
+testWidgets(
+      'Querformat: Fokus/Tippen verschiebt die Ansicht nicht (oben fixiert)',
+      (tester) async {
+    tester.view.physicalSize = const Size(800, 360);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    // Bildschirmtastatur offen simulieren.
+    tester.view.viewInsets = const FakeViewPadding(bottom: 250);
+    addTearDown(tester.view.resetViewInsets);
+
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_3', 'he/she/it can', 'er/sie/es kann', level: 2),
+    ]);
+    await tester.pumpAndSettle();
+
+    final before = tester.getRect(find.text('er/sie/es kann'));
+    // Erster Buchstabe: Das versteckte Eingabefeld erhält Fokus – der
+    // ScrollView darf dadurch NICHT nach unten springen.
+    await _typeLetters(tester, 'h');
+    await tester.pumpAndSettle();
+    final after = tester.getRect(find.text('er/sie/es kann'));
+
+    expect(after.top, greaterThanOrEqualTo(0),
+        reason: 'Übersetzung muss nach dem Tippen sichtbar bleiben');
+    expect((after.top - before.top).abs(), lessThan(1.0),
+        reason: 'Ansicht darf beim Tippen nicht verrutschen');
+    expect(tester.takeException(), isNull);
+  });
 }
