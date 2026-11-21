@@ -166,5 +166,13 @@
   "msgSaveFailed": "Saving failed. The last progress could not be saved.",
   "msgUserDataRecovered": "Your user data was damaged and has been restored from a backup.",
   "msgUserDataUnloadable": "Your user data could not be loaded.",
-  "msgAppDataRecovered": "App data was damaged. The user list was rebuilt from existing files."
+  "msgAppDataRecovered": "App data was damaged. The user list was rebuilt from existing files.",
+  "btnHangman": "Hangman",
+  "hangmanEasy": "Easy — Translation",
+  "hangmanMedium": "Medium — Example (native)",
+  "hangmanHard": "Hard — Example (target language)",
+  "hangmanLives": "Lives",
+  "hangmanWrongLetters": "Wrong letters:",
+  "hangmanRoundLost": "Round lost!",
+  "hangmanRoundWon": "Round won!"
 }

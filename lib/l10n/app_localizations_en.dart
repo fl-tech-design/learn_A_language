@@ -441,4 +441,28 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get msgAppDataRecovered =>
       'App data was damaged. The user list was rebuilt from existing files.';
+
+  @override
+  String get btnHangman => 'Hangman';
+
+  @override
+  String get hangmanEasy => 'Easy — Translation';
+
+  @override
+  String get hangmanMedium => 'Medium — Example (native)';
+
+  @override
+  String get hangmanHard => 'Hard — Example (target language)';
+
+  @override
+  String get hangmanLives => 'Lives';
+
+  @override
+  String get hangmanWrongLetters => 'Wrong letters:';
+
+  @override
+  String get hangmanRoundLost => 'Round lost!';
+
+  @override
+  String get hangmanRoundWon => 'Round won!';
 }

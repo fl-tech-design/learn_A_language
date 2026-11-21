@@ -446,4 +446,28 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get msgAppDataRecovered =>
       'Die App-Daten waren beschädigt. Die Benutzerliste wurde aus den vorhandenen Dateien wiederhergestellt.';
+
+  @override
+  String get btnHangman => 'Hangman';
+
+  @override
+  String get hangmanEasy => 'Leicht — Übersetzung';
+
+  @override
+  String get hangmanMedium => 'Mittel — Beispielsatz (Muttersprache)';
+
+  @override
+  String get hangmanHard => 'Schwer — Beispielsatz (Zielsprache)';
+
+  @override
+  String get hangmanLives => 'Leben';
+
+  @override
+  String get hangmanWrongLetters => 'Falsche Buchstaben:';
+
+  @override
+  String get hangmanRoundLost => 'Runde verloren!';
+
+  @override
+  String get hangmanRoundWon => 'Runde gewonnen!';
 }

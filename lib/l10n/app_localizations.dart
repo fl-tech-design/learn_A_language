@@ -937,6 +937,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'App data was damaged. The user list was rebuilt from existing files.'**
   String get msgAppDataRecovered;
+
+  /// No description provided for @btnHangman.
+  ///
+  /// In en, this message translates to:
+  /// **'Hangman'**
+  String get btnHangman;
+
+  /// No description provided for @hangmanEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy — Translation'**
+  String get hangmanEasy;
+
+  /// No description provided for @hangmanMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium — Example (native)'**
+  String get hangmanMedium;
+
+  /// No description provided for @hangmanHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard — Example (target language)'**
+  String get hangmanHard;
+
+  /// No description provided for @hangmanLives.
+  ///
+  /// In en, this message translates to:
+  /// **'Lives'**
+  String get hangmanLives;
+
+  /// No description provided for @hangmanWrongLetters.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong letters:'**
+  String get hangmanWrongLetters;
+
+  /// No description provided for @hangmanRoundLost.
+  ///
+  /// In en, this message translates to:
+  /// **'Round lost!'**
+  String get hangmanRoundLost;
+
+  /// No description provided for @hangmanRoundWon.
+  ///
+  /// In en, this message translates to:
+  /// **'Round won!'**
+  String get hangmanRoundWon;
 }
 
 class _AppLocalizationsDelegate

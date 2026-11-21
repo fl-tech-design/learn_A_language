@@ -29,6 +29,8 @@ import 'screens/game_screen.dart';
 import 'screens/word_search_screen.dart';
 import 'screens/crossword_screen.dart';
 import 'screens/crossword_lv_select_screen.dart';
+import 'screens/hangman_screen.dart';
+import 'screens/hangman_lv_select_screen.dart';
 import 'screens/grammar_detail_screen.dart';
 import 'screens/grammar_screen.dart';
 import 'screens/settings_screen.dart';
@@ -124,6 +126,8 @@ class LearnALanguageApp extends StatelessWidget {
         '/wordsearch': (context) => const WordSearchScreen(),
         '/crossword': (context) => const CrosswordScreen(),
         '/crosswordselect': (context) => const CrosswordLvSelectScreen(),
+        '/hangman': (context) => const HangmanScreen(),
+        '/hangmanselect': (context) => const HangmanLvSelectScreen(),
         '/settings': (context) => const SettingsScreen(),
         '/grammar': (context) => const GrammarScreen(),
         '/grammardetail': (context) => const GrammarDetailScreen(),
