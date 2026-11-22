@@ -14,7 +14,7 @@
 **Gesamturteil: Alle geforderten Schutzziele sind umgesetzt und belegt – VERIFIZIERT / BESTANDEN.**
 
 - `flutter analyze` → **No issues found!** (0 Issues)
-- `flutter test` (komplette Suite) → **151/151 bestanden** (`EXIT=0`, „All tests passed!“)
+- `flutter test` (komplette Suite) → **209/209 bestanden** (`EXIT=0`, „All tests passed!“) – *aktualisiert am 22.11.2026, Stand HEAD `93c5e0f`; die Ticket-1-Verifikation zählte 151 Testfälle (siehe Notiz in Abschnitt 5).*
 
 ## 1. Legacy-Benutzer – `deleteUser('Max Müller')`
 
@@ -92,3 +92,11 @@ Je ein Aufruf der Prüfung in:
 4. Abschluss: dieser Bericht; keine Codeänderungen, kein Commit, kein Push.
 
 **Referenzen:** `ACT_SECURITY_PATHS.md` (Phase-1-Audit, Basis `02df0e9`), `ACT_SECURITY_PATHS_UMSETZUNG.md` (Phase-2-Bericht, Commit `39fe9ac`).
+
+## 5. Android-Auto-Backup – User-Daten von Cloud-Backups ausgeschlossen
+
+- **Datum:** 22.11.2026
+- **Fix:** `android/app/src/main/AndroidManifest.xml` Z. 6: `android:allowBackup="false"` im `<application>`-Tag ergänzt (einzige Manifest-Änderung; kein `fullBackupContent`, kein `dataExtractionRules`, keine `res/xml`-Regeln).
+- **Begründung:** Rein lokale App, keine backup-würdigen Daten; Nutzerprofile/Lernfortschritt (`data_app/files_user/data_*.json`, `data_app/app_data.json`, `data_app/last_session.json`) sollen nicht in Google-Cloud-Backups bzw. `adb backup` landen. Ein Geräte-Umzug ist damit **bewusst ausgeschlossen** – Wörterbücher/`data_base` sind aus den Asset-Bundles regenerierbar (`lib/services/file_service.dart` `initialize()`, Z. 238–258). `allowBackup="false"` deaktiviert Auto Backup ab API 23, `adb backup` und – bei targetSdk 36/compileSdk 36, minSdk 24 – Cloud-/Device-Transfer unter API 31+.
+- **Verifikation (Build):** `flutter build apk --debug` ✓ → `aapt dump xmltree app-debug.apk AndroidManifest.xml` ⇒ `A: android:allowBackup(0x01010280)=(type 0x12)0x0` (= **false**). applicationId: `com.example.learn_a_language` (`android/app/build.gradle.kts` Z. 19).
+- **Testanzahl (aktuell gehalten):** `flutter test` → **209/209 bestanden** (`EXIT=0`, „All tests passed!“). Hinweis: Die 151 Testfälle der Ticket-1-Verifikation (Abschnitt 4) sind durch nachfolgende Feature-Commits (WordSearch, Crossword, Hangman, Fill In) auf 209 angewachsen; die Manifest-Änderung betrifft keine Dart-Logik.
