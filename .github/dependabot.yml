@@ -1,0 +1,33 @@
+# Dependabot-Konfiguration: automatische Version-Updates, wöchentlich.
+# Schedule-Zeiten in UTC, außerhalb der GitHub-Hauptlastzeiten gewählt.
+version: 2
+updates:
+  # GitHub Actions (Workflows unter .github/workflows)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    labels:
+      - "dependencies"
+
+  # Gradle/Android: android/settings.gradle.kts (AGP, Kotlin), android/app/build.gradle.kts, Gradle-Wrapper
+  - package-ecosystem: "gradle"
+    directory: "/android"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    labels:
+      - "dependencies"
+
+  # Dart-/Flutter-Pakete: pubspec.yaml + pubspec.lock im Repo-Root
+  - package-ecosystem: "pub"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    labels:
+      - "dependencies"
