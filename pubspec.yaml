@@ -34,6 +34,7 @@ flutter:
     - assets/data_app/files_user/
     - assets/language_dict/de/
     - assets/language_dict/en/
+    - assets/language_dict/fr/
     - assets/grammar/
     - assets/audio/de/verben/arbeiten/
     - assets/audio/de/verben/beginnen/
@@ -95,6 +96,35 @@ flutter:
     - assets/audio/en/to want/
     - assets/audio/en/to work/
     - assets/audio/en/to write/
+    - assets/audio/fr/acheter/
+    - assets/audio/fr/aider/
+    - assets/audio/fr/aimer/
+    - assets/audio/fr/aller/
+    - assets/audio/fr/apprendre/
+    - assets/audio/fr/avoir/
+    - assets/audio/fr/avoir besoin/
+    - assets/audio/fr/avoir le droit de/
+    - assets/audio/fr/boire/
+    - assets/audio/fr/commencer/
+    - assets/audio/fr/comprendre/
+    - assets/audio/fr/devoir/
+    - assets/audio/fr/écrire/
+    - assets/audio/fr/être/
+    - assets/audio/fr/faire/
+    - assets/audio/fr/fermer/
+    - assets/audio/fr/habiter/
+    - assets/audio/fr/lire/
+    - assets/audio/fr/manger/
+    - assets/audio/fr/ouvrir/
+    - assets/audio/fr/parler/
+    - assets/audio/fr/pouvoir/
+    - assets/audio/fr/terminer/
+    - assets/audio/fr/travailler/
+    - assets/audio/fr/trouver/
+    - assets/audio/fr/venir/
+    - assets/audio/fr/vendre/
+    - assets/audio/fr/voir/
+    - assets/audio/fr/vouloir/
 
   fonts:
     - family: Jura
