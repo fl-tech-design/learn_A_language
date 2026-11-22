@@ -91,6 +91,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         l10n.mLang,
         l10n.german,
         l10n.english,
+        l10n.french,
         toBeginningOfSentenceCase(l10n.confirm),
         toBeginningOfSentenceCase(l10n.chancel));
     if (result == null) return;
@@ -100,6 +101,48 @@ class _SettingsScreenState extends State<SettingsScreen> {
     await dataState.loadAppData();
     if (!mounted) return;
     setState(() {});
+  }
+
+  /// Abschnitt „Muttersprache / Übersetzungsrichtung“: Der Nutzer kann seine
+  /// Muttersprache ändern. Das steuert, in welcher Sprache die Übersetzung und
+  /// Beispielsätze zu den (in der Kurssprache) gelernten Wörtern angezeigt
+  /// werden. Über [UserState.changeMotherTongue] wird der Wortschatz aller
+  /// Kurs-Sprachen neu aufgebaut (Fortschritt bleibt erhalten).
+  Widget _motherTongueSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final userState = context.watch<UserState>();
+    final current = userState.userData?.mLang ?? 'de';
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(l10n.mLang,
+            style: const TextStyle(fontSize: AppTheme.lblFontSize)),
+        const SizedBox(height: AppTheme.contentSpacing / 2),
+        Wrap(
+          spacing: 8,
+          children: [
+            _motherLangChip('de', l10n.german, current, userState),
+            _motherLangChip('en', l10n.english, current, userState),
+            _motherLangChip('fr', l10n.french, current, userState),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Text(l10n.motherTongueHint,
+            style: const TextStyle(
+                fontSize: AppTheme.infFontSize, color: AppTheme.grey4)),
+      ],
+    );
+  }
+
+  Widget _motherLangChip(
+      String code, String label, String current, UserState userState) {
+    return ChoiceChip(
+      label: Text(toBeginningOfSentenceCase(label)),
+      selected: current == code,
+      onSelected: current == code
+          ? null
+          : (_) => userState.changeMotherTongue(code),
+    );
   }
 
   @override
@@ -143,6 +186,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           flagAsset: 'assets/images/flag_rus.png',
                           label: l10n.russian,
                           onTap: () => context.read<DataState>().changeLanguage('russisch')),
+                      const SizedBox(height: 20),
+                      _motherTongueSection(context),
                       const SizedBox(height: 20),
                       Row(children: [
                         SizedBox(

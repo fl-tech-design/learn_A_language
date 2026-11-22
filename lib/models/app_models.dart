@@ -171,11 +171,20 @@ class LangDictWord {
 /// Data model for user data stored in data_{username}.json.
 class UserData {
   final String uName;
+
+  /// Muttersprache des Benutzers. Steuert die Übersetzungsrichtung
+  /// (Felder `translation`/`examplesNative`) sowie die Grammatik-Anzeige –
+  /// NICHT mehr, welche Kursdaten geladen werden.
   final String mLang;
   final Map<String, int> progress;
   final List<String> learnedLanguages;
   final Map<String, dynamic> language;
-  final Map<String, VocabEntry> vocab;
+
+  /// Wortschatz getrennt je Zielsprache (Kurssprache), z. B. `'en'`, `'de'`,
+  /// `'fr'`. Der Fortschritt (Level/Status/Dates) jedes Eintrags wird pro
+  /// Sprache unabhängig geführt, damit mehrere Lernsprachen parallel möglich
+  /// sind und der gewählte Kurs die passenden Daten liefert.
+  final Map<String, Map<String, VocabEntry>> vocabByLang;
   final DayStreak? dayStreak;
   final int gameHighscore;
   final Map<String, int> crosswordBestTimes;
@@ -188,30 +197,26 @@ class UserData {
     required this.progress,
     required this.learnedLanguages,
     required this.language,
-    required this.vocab,
+    Map<String, Map<String, VocabEntry>>? vocabByLang,
+    /// Komfort-Parameter für einzelsprachige Anlage (Tests, createUserFile):
+    /// platziert den Wortschatz in den `'de'`-Bucket.
+    Map<String, VocabEntry> vocab = const {},
     this.dayStreak,
     this.gameHighscore = 0,
     this.crosswordBestTimes = const {},
     this.fillInBestTimes = const {},
     this.selectedCourses = const [],
-  });
+  }) : vocabByLang = vocabByLang ??
+            (vocab.isEmpty ? const {} : {'de': vocab});
 
   factory UserData.fromJson(Map<String, dynamic> json) {
-    final vocabRaw = json['vocab'] as Map<String, dynamic>? ?? {};
-    final vocab = <String, VocabEntry>{};
-    vocabRaw.forEach((key, value) {
-      if (value is Map<String, dynamic>) {
-        vocab[key] = VocabEntry.fromJson(key, value);
-      }
-    });
-
     return UserData(
       uName: json['u_name']?.toString() ?? '',
       mLang: json['m_lang']?.toString() ?? 'de',
       progress: _parseProgress(json['progress']),
       learnedLanguages: List<String>.from(json['learned_languages'] ?? []),
       language: json['language'] as Map<String, dynamic>? ?? {},
-      vocab: vocab,
+      vocabByLang: _parseVocabByLang(json),
       dayStreak: json['day_streak'] is Map
           ? DayStreak.fromJson(json['day_streak'])
           : null,
@@ -222,6 +227,43 @@ class UserData {
     );
   }
 
+  /// Liest `vocab_by_lang`. Fallback: Altdaten mit einzelsprachigem `vocab`
+  /// migrieren in die aus der Muttersprache abgeleitete Zielsprache des
+  /// früheren Zweisprachen-Modells (`mLang 'de'` => Inhalt war englisch).
+  static Map<String, Map<String, VocabEntry>> _parseVocabByLang(
+      Map<String, dynamic> json) {
+    final byLangRaw = json['vocab_by_lang'] as Map<String, dynamic>? ?? {};
+    if (byLangRaw.isNotEmpty) {
+      final result = <String, Map<String, VocabEntry>>{};
+      byLangRaw.forEach((lang, value) {
+        final entries = <String, VocabEntry>{};
+        if (value is Map<String, dynamic>) {
+          value.forEach((key, entry) {
+            if (entry is Map<String, dynamic>) {
+              entries[key] = VocabEntry.fromJson(key, entry);
+            }
+          });
+        }
+        if (entries.isNotEmpty) result[lang.toString()] = entries;
+      });
+      return result;
+    }
+
+    final legacy = json['vocab'] as Map<String, dynamic>? ?? {};
+    if (legacy.isNotEmpty) {
+      final mLang = json['m_lang']?.toString() ?? 'de';
+      final legacyLang = mLang == 'de' ? 'en' : 'de';
+      final entries = <String, VocabEntry>{};
+      legacy.forEach((key, value) {
+        if (value is Map<String, dynamic>) {
+          entries[key] = VocabEntry.fromJson(key, value);
+        }
+      });
+      return entries.isEmpty ? const {} : {legacyLang: entries};
+    }
+    return const {};
+  }
+
   Map<String, dynamic> toJson() {
     return {
       'u_name': uName,
@@ -229,7 +271,8 @@ class UserData {
       'progress': progress,
       'learned_languages': learnedLanguages,
       'language': language,
-      'vocab': vocab.map((key, value) => MapEntry(key, value.toJson())),
+      'vocab_by_lang': vocabByLang.map((lang, entries) => MapEntry(
+          lang, entries.map((key, value) => MapEntry(key, value.toJson())))),
       if (dayStreak != null) 'day_streak': dayStreak!.toJson(),
       if (gameHighscore > 0) 'game_highscore': gameHighscore,
       if (crosswordBestTimes.isNotEmpty)
@@ -245,7 +288,7 @@ class UserData {
     Map<String, int>? progress,
     List<String>? learnedLanguages,
     Map<String, dynamic>? language,
-    Map<String, VocabEntry>? vocab,
+    Map<String, Map<String, VocabEntry>>? vocabByLang,
     DayStreak? dayStreak,
     bool clearDayStreak = false,
     int? gameHighscore,
@@ -259,7 +302,7 @@ class UserData {
       progress: progress ?? this.progress,
       learnedLanguages: learnedLanguages ?? this.learnedLanguages,
       language: language ?? this.language,
-      vocab: vocab ?? this.vocab,
+      vocabByLang: vocabByLang ?? this.vocabByLang,
       dayStreak:
           clearDayStreak ? null : (dayStreak ?? this.dayStreak),
       gameHighscore: gameHighscore ?? this.gameHighscore,

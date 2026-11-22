@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../services/audio_service.dart';
 import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -31,6 +32,7 @@ class _WordScreenState extends State<WordScreen> {
   AudioService? _audio;
   Timer? _audioTimer;
   bool _hasAudioWord = false;
+  String _lang = 'de';
 
   @override
   void didChangeDependencies() {
@@ -52,6 +54,8 @@ class _WordScreenState extends State<WordScreen> {
     final navState = context.read<NavigationState>();
     final uname = dataState.appData.loggedUName;
     if (uname.isEmpty) return;
+    // Kurssprache des geöffneten Kurses (bestimmt Wörter und Audio).
+    _lang = navState.resolveActiveLang(context.read<UserState>().userData);
     final mode = navState.wordMode;
     final limit = dataState.appData.wordsPerSession;
     List<VocabEntry> words;
@@ -59,23 +63,24 @@ class _WordScreenState extends State<WordScreen> {
     if (mode == 'new') {
       final cat = _categoryById(navState.selectedCategoryId);
       if (cat != null) {
-        words = await vq.getGroupNewWords(uname, cat, limit: limit);
+        words = await vq.getGroupNewWords(uname, cat,
+            langCode: _lang, limit: limit);
       } else {
-        words = await vq.getNewWords(uname, limit: limit);
+        words = await vq.getNewWords(uname, langCode: _lang, limit: limit);
       }
       _streak = await vq.getDayStreak(uname);
     } else if (mode == 'read') {
       // „Gelesene Wörter": alle schon angeschauten Karten dieser Kategorie.
       final cat = _categoryById(navState.selectedCategoryId);
       words = cat != null
-          ? await vq.getGroupReadWords(uname, cat)
-          : await vq.getReadWords(uname);
+          ? await vq.getGroupReadWords(uname, cat, langCode: _lang)
+          : await vq.getReadWords(uname, langCode: _lang);
     } else {
       // Ordner „Gelernte Wörter": alle fertig gelernten Karten (Level 8).
       final cat = _categoryById(navState.selectedCategoryId);
       words = cat != null
-          ? await vq.getGroupLearnedWords(uname, cat)
-          : await vq.getLearnedWords(uname);
+          ? await vq.getGroupLearnedWords(uname, cat, langCode: _lang)
+          : await vq.getLearnedWords(uname, langCode: _lang);
     }
     if (mounted) {
       setState(() {
@@ -97,7 +102,7 @@ class _WordScreenState extends State<WordScreen> {
     final uname = dataState.appData.loggedUName;
 
     context.read<VocabQueries>().checkWordAnswer(
-            uname, word.key, word.translation)
+            uname, word.key, word.translation, langCode: _lang)
         .then((result) {
       if (!mounted) return;
       setState(() => _answerChecked = true);
@@ -152,9 +157,10 @@ class _WordScreenState extends State<WordScreen> {
     final List<VocabEntry> extra;
     if (cat != null) {
       extra = await vq.getGroupNewWords(uname, cat,
-          limit: limit, offset: _words.length);
+          langCode: _lang, limit: limit, offset: _words.length);
     } else {
-      extra = await vq.getNewWords(uname, limit: limit, offset: _words.length);
+      extra = await vq.getNewWords(uname,
+          langCode: _lang, limit: limit, offset: _words.length);
     }
     if (extra.isEmpty) {
       if (mounted) Navigator.of(context).pop();
@@ -203,20 +209,20 @@ class _WordScreenState extends State<WordScreen> {
       if (_hasAudioWord) setState(() => _hasAudioWord = false);
       return;
     }
-    final uname = context.read<DataState>().appData.loggedUName;
     final verbKey = vocabVerbKey(w.key);
     final tense = vocabTenseKey(w.key);
     final person = vocabPersonIndex(w.key);
+    final lang = _lang;
 
     _audioTimer = Timer(const Duration(milliseconds: 400), () {
       if (!mounted) return;
       unawaited(audio.play(
-          username: uname, verbKey: verbKey, tense: tense, person: person));
+          langCode: lang, verbKey: verbKey, tense: tense, person: person));
     });
 
     audio
         .hasAudio(
-            username: uname, verbKey: verbKey, tense: tense, person: person)
+            langCode: lang, verbKey: verbKey, tense: tense, person: person)
         .then((has) {
       if (mounted && has != _hasAudioWord) {
         setState(() => _hasAudioWord = has);
@@ -229,9 +235,8 @@ class _WordScreenState extends State<WordScreen> {
     final audio = _audio;
     final w = _currentWord;
     if (audio == null || w == null) return;
-    final uname = context.read<DataState>().appData.loggedUName;
     unawaited(audio.play(
-        username: uname,
+        langCode: _lang,
         verbKey: vocabVerbKey(w.key),
         tense: vocabTenseKey(w.key),
         person: vocabPersonIndex(w.key)));

@@ -89,6 +89,7 @@ class _StartScreenState extends State<StartScreen> {
       l10n.mLang,
       l10n.german,
       l10n.english,
+      l10n.french,
       l10n.confirm,
       l10n.chancel,
     );
@@ -647,6 +648,7 @@ class _CourseDetailView extends StatelessWidget {
             child: OutlinedButton(
               onPressed: hasContent
                   ? () {
+                      context.read<NavigationState>().setActiveCourse(course);
                       context.read<NavigationState>().setWordMode('new');
                       Navigator.of(context).pushNamed('/learning');
                     }
@@ -661,7 +663,10 @@ class _CourseDetailView extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: hasContent
-                  ? () => Navigator.of(context).pushNamed('/gamechoose')
+                  ? () {
+                      context.read<NavigationState>().setActiveCourse(course);
+                      Navigator.of(context).pushNamed('/gamechoose');
+                    }
                   : null,
               child: Text(l10n.btnGame,
                   style: const TextStyle(fontSize: AppTheme.btnFontSize)),
@@ -673,10 +678,13 @@ class _CourseDetailView extends StatelessWidget {
             width: double.infinity,
             child: OutlinedButton(
               onPressed: hasContent
-                  ? () => Navigator.of(context).pushNamed(
+                  ? () {
+                      context.read<NavigationState>().setActiveCourse(course);
+                      Navigator.of(context).pushNamed(
                         '/grammar',
                         arguments: course.level,
-                      )
+                      );
+                    }
                   : null,
               child: Text(
                   l10n.btnGrammar,

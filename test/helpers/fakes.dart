@@ -250,12 +250,13 @@ class FakeVocabManager implements VocabManager {
 
   @override
   Future<void> initVocabForUser(
-      String username, Map<String, dynamic> languageDict) async {
+      String username, String langCode, String nativeLang) async {
     initCount++;
   }
 
   @override
-  Future<void> migrateVocabForUser(String username) async {
+  Future<void> migrateVocabForUser(
+      String username, String langCode, String nativeLang) async {
     migrateCount++;
   }
 }

@@ -10,6 +10,7 @@ UserData _userData({
   String uName = 'alice',
   String mLang = 'de',
   Map<String, VocabEntry> vocab = const {},
+  Map<String, Map<String, VocabEntry>> vocabByLang = const {},
   List<String> selectedCourses = const [],
   Map<String, int> progress = const {
     'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0,
@@ -22,6 +23,7 @@ UserData _userData({
       learnedLanguages: const [],
       language: const {},
       vocab: vocab,
+      vocabByLang: vocabByLang.isNotEmpty ? vocabByLang : null,
       selectedCourses: selectedCourses,
     );
 
@@ -34,10 +36,10 @@ VocabEntry _v(String key) => VocabEntry(
     );
 
 void main() {
-  // Zielsprachen-Kurse ('en'), die bei mLang 'de' automatisch ausgewählt
-  // werden, sobald Vokabeln vorhanden sind.
-  final enCourses = availableCourses.entries
-      .where((e) => e.value.languageCode == 'en')
+  // Kurse der Sprache 'de' – werden automatisch gewählt, wenn der Wortschatz
+  // unter 'de' liegt (Kurs-basiertes Modell).
+  final deCourses = availableCourses.entries
+      .where((e) => e.value.languageCode == 'de')
       .map((e) => e.key)
       .toList();
 
@@ -56,9 +58,10 @@ void main() {
       expect(state.userData!.uName, 'alice');
       expect(vm.initCount, 1);
       expect(vm.migrateCount, 1);
-      // mLang 'de' → Zielsprache 'en' → alle en-Kurse werden gespeichert
-      expect(um.lastSaved!.selectedCourses, enCourses);
-      expect(state.selectedCourseIds, enCourses);
+      // Wortschatz liegt unter 'de' → die deutschen Kurse werden automatisch
+      // gewählt (Kurs-basiertes Modell statt mLang-Kopplung).
+      expect(um.lastSaved!.selectedCourses, deCourses);
+      expect(state.selectedCourseIds, deCourses);
     });
   });
 
@@ -115,9 +118,11 @@ void main() {
       expect(result, isNull);
       expect(um.userLoggedIn, true);
       expect(um.loggedUName, 'carl');
-      expect(vm.loadDictCount, 1);
-      expect(vm.initCount, 1);
-      expect(vm.migrateCount, 1);
+      // Kein automatischer Zielsprachen-Init im Kurs-basierten Modell: Der
+      // Wortschatz entsteht erst, wenn ein Kurs hinzugefügt wird.
+      expect(vm.loadDictCount, 0);
+      expect(vm.initCount, 0);
+      expect(vm.migrateCount, 0);
       expect(state.userData!.uName, 'carl');
     });
 
@@ -135,13 +140,13 @@ void main() {
   });
 
   group('UserState Kurs-Getter', () {
-    test('leitet Kurse aus der Zielsprache ab und speichert sie', () async {
+    test('leitet Kurse aus den vorhandenen Wortschatz-Sprachen ab', () async {
       final um = FakeUserManager();
       um.seed('alice', _userData(vocab: {'k': _v('k')}));
       final state = UserState(userManager: um, vocabManager: FakeVocabManager());
       await state.login('alice');
 
-      expect(state.selectedCourseIds, enCourses);
+      expect(state.selectedCourseIds, deCourses);
     });
 
     test('availableNewCourses schließt selektierte aus', () async {
@@ -229,39 +234,48 @@ void main() {
 
       expect(state.userData!.progress['A1'], 0);
       // Vokabeln bleiben, weil noch ein Kurs derselben Sprache gewählt ist.
-      expect(state.userData!.vocab, isNotEmpty);
+      expect(state.userData!.vocabByLang, isNotEmpty);
     });
 
     test('löscht Vokabeln, wenn der letzte Kurs der Sprache entfernt wird',
         () async {
       final um = FakeUserManager();
-      um.seed('alice',
-          _userData(selectedCourses: ['en_verben_a1'], vocab: {'k': _v('k')}));
+      // Wortschatz unter 'en' – der Sprache des zu entfernenden Kurses.
+      um.seed('alice', _userData(selectedCourses: ['en_verben_a1'],
+          vocabByLang: {
+            'en': {'k': _v('k')},
+          }));
       final state = UserState(userManager: um, vocabManager: FakeVocabManager());
       await state.login('alice');
 
       await state.removeCourse('en_verben_a1');
 
       expect(state.selectedCourseIds, isEmpty);
-      expect(state.userData!.vocab, isEmpty);
+      expect(state.userData!.vocabByLang, isEmpty);
     });
 
     test('behält Vokabeln, wenn nur ein fremdsprachiger Kurs übrig bleibt',
         () async {
       final um = FakeUserManager();
+      // Wortschatz getrennt je Sprache: 'de' (zu entfernender Kurs) und
+      // 'en' (bleibender Kurs der verbleibenden Sprache).
       um.seed('alice', _userData(
             selectedCourses: ['de_verben_a1', 'en_verben_a1'],
-            vocab: {'k': _v('k')},
+            vocabByLang: {
+              'de': {'k': _v('k')},
+              'en': {'k2': _v('k2')},
+            },
           ));
       final state = UserState(userManager: um, vocabManager: FakeVocabManager());
       await state.login('alice');
 
-      // de_verben_a1 ist nicht die Zielsprache (mLang 'de' → Ziel 'en'),
-      // der Wortschatz gehört zur Zielsprache und bleibt erhalten.
+      // Nur der Wortschatz der entfernten Sprache ('de') wird gelöscht; der
+      // verbleibende Kurs 'en' behält seinen eigenen Wortschatz.
       await state.removeCourse('de_verben_a1');
 
       expect(state.selectedCourseIds, ['en_verben_a1']);
-      expect(state.userData!.vocab, isNotEmpty);
+      expect(state.userData!.vocabByLang.containsKey('de'), isFalse);
+      expect(state.userData!.vocabByLang['en'], isNotEmpty);
     });
 
     test('ignoriert unbekannte und nicht gewählte Kurs-IDs', () async {

@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:audioplayers/audioplayers.dart';
 
 import 'file_service.dart';
-import '../managers/user_manager.dart';
 
 /// Spielt Verb-Konjugations-Audio (Aussprache von Wort/Übersetzung) ab.
 ///
@@ -14,41 +13,21 @@ import '../managers/user_manager.dart';
 /// assets-relativ (z. B. `audio/de/verben/arbeiten/audio_ich_arbeite_m.mp3`) und
 /// werden direkt an [AssetSource] übergeben; audioplayers ergänzt `assets/`.
 ///
+/// Die Zielsprache wird NICHT mehr aus der Muttersprache abgeleitet: [langCode]
+/// kommt vom Kurs-Kontext und bestimmt, welche Wörterbuch-JSON (und damit
+/// welche Audio-Pfade) geladen wird.
+///
 /// Wird pro Wort abgespielt (Stimme zufällig 0/1), mit automatischem Fallback
 /// auf die jeweils andere Stimme, falls für die gewürfelte Stimme keine Datei
 /// existiert. Fehlt für beide Stimmen ein Pfad, wird lautlos nichts getan.
 class AudioService {
   final FileService _fileService;
-  final UserManager _userManager;
   final Random _random = Random();
   final Map<String, Map<String, dynamic>> _verbCache = {};
-  final Map<String, String> _targetLangCache = {};
   AudioPlayer? _player;
 
-  AudioService({
-    required FileService fileService,
-    required UserManager userManager,
-  })  : _fileService = fileService,
-        _userManager = userManager;
-
-  /// Zielsprache (die Sprache der gezeigten Konjugationen) eines Lernenden.
-  /// Abgeleitet aus der Muttersprache: de-Muttersprachler lernen en und umgekehrt.
-  static String targetForMotherTongue(String motherTongue) =>
-      motherTongue == 'de' ? 'en' : 'de';
-
-  Future<String> _targetLanguage(String username) async {
-    final cached = _targetLangCache[username];
-    if (cached != null) return cached;
-    var target = 'de'; // Vernünftiger Default (meiste Inhalte sind Deutsch).
-    try {
-      final ud = await _userManager.loadUserdata(username);
-      if (ud != null) target = targetForMotherTongue(ud.mLang);
-    } catch (_) {
-      // read-only best effort – ohne Benutzerdaten fällt es auf 'de' zurück.
-    }
-    _targetLangCache[username] = target;
-    return target;
-  }
+  AudioService({required FileService fileService})
+      : _fileService = fileService;
 
   Future<Map<String, dynamic>> _loadVerb(String lang, String verbKey) async {
     final cacheKey = '$lang/$verbKey';
@@ -73,10 +52,10 @@ class AudioService {
   /// Liefert die assets-relativen Pfade beider Stimmen (m, f) zum Eintrag.
   ///
   /// Rückgabe als Record `(m, f)`; leere Strings bedeuten „keine Datei“.
-  Future<(String, String)> _bothPaths(String target, String verbKey,
+  Future<(String, String)> _bothPaths(String lang, String verbKey,
       String tense, int person) async {
     if (verbKey.isEmpty) return ('', '');
-    final verb = await _loadVerb(target, verbKey);
+    final verb = await _loadVerb(lang, verbKey);
     final tenseData = verb[tense];
     if (tenseData is! Map) return ('', '');
     final audio = tenseData['audio'];
@@ -87,20 +66,18 @@ class AudioService {
     );
   }
 
-  /// True, wenn für den Eintrag mindestens ein Audio existiert (Replay-Button).
-  Future<bool> hasAudio({required String username, required String verbKey,
+  /// True, wenn für den Eintrag in [langCode] mindestens ein Audio existiert.
+  Future<bool> hasAudio({required String langCode, required String verbKey,
       required String tense, required int person}) async {
-    final target = await _targetLanguage(username);
-    final (m, f) = await _bothPaths(target, verbKey, tense, person);
+    final (m, f) = await _bothPaths(langCode, verbKey, tense, person);
     return m.isNotEmpty || f.isNotEmpty;
   }
 
   /// Spielt die Aussprache zum Eintrag ab (Stimme zufällig m/f, mit Fallback).
-  Future<void> play({required String username, required String verbKey,
+  Future<void> play({required String langCode, required String verbKey,
       required String tense, required int person}) async {
     if (verbKey.isEmpty) return;
-    final target = await _targetLanguage(username);
-    final (m, f) = await _bothPaths(target, verbKey, tense, person);
+    final (m, f) = await _bothPaths(langCode, verbKey, tense, person);
     final voice = _random.nextInt(2);
     var path = voice == 0 ? m : f;
     if (path.isEmpty) path = voice == 0 ? f : m;
@@ -119,6 +96,5 @@ class AudioService {
   Future<void> dispose() async {
     if (_player != null) await _player!.dispose();
     _verbCache.clear();
-    _targetLangCache.clear();
   }
 }

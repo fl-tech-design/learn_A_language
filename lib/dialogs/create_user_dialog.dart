@@ -10,6 +10,7 @@ Future<Map<String, String>?> showCreateUserDialog(
   String nativeLangLabel,
   String deLabel,
   String enLabel,
+  String frLabel,
   String confirmText,
   String cancelText,
 ) async {
@@ -62,12 +63,20 @@ Future<Map<String, String>?> showCreateUserDialog(
                       onSelected: (_) => setState(() => mLang = 'de'),
                     ),
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 8),
                   Expanded(
                     child: ChoiceChip(
                       label: Text(toBeginningOfSentenceCase(enLabel)),
                       selected: mLang == 'en',
                       onSelected: (_) => setState(() => mLang = 'en'),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: ChoiceChip(
+                      label: Text(toBeginningOfSentenceCase(frLabel)),
+                      selected: mLang == 'fr',
+                      onSelected: (_) => setState(() => mLang = 'fr'),
                     ),
                   ),
                 ],

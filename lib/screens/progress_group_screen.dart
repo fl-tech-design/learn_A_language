@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart' show VocabQueries;
 import '../models/app_models.dart';
 import '../models/vocab_key.dart';
@@ -32,6 +34,9 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
     final l10n = AppLocalizations.of(context);
     final dataState = context.watch<DataState>();
     final uname = dataState.appData.loggedUName;
+    final lang = context
+        .read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
 
     final routeId = ModalRoute.of(context)?.settings.arguments as String?;
     if (_category == null && routeId != null) {
@@ -65,7 +70,9 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
             child: uname.isEmpty || category == null
                 ? const SizedBox.shrink()
                 : FutureBuilder<List<VocabEntry>>(
-                    future: context.read<VocabQueries>().getGroupWords(uname, category),
+                    future: context
+                        .read<VocabQueries>()
+                        .getGroupWords(uname, category, langCode: lang),
                     builder: (context, snapshot) {
                       final entries = snapshot.data;
                       if (entries == null) {

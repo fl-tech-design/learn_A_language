@@ -37,9 +37,10 @@ void main() {
       expect(roundtripped.progress['A1'], 2);
       expect(roundtripped.progress['B1'], 1);
       expect(roundtripped.language['some'], 'dict');
-      expect(roundtripped.vocab.length, 1);
-      expect(roundtripped.vocab['test_word']!.word, 'Test');
-      expect(roundtripped.vocab['test_word']!.translation, 'Test');
+      expect(roundtripped.vocabByLang['de']!.length, 1);
+      expect(roundtripped.vocabByLang['de']!['test_word']!.word, 'Test');
+      expect(
+          roundtripped.vocabByLang['de']!['test_word']!.translation, 'Test');
       expect(roundtripped.dayStreak, isNotNull);
       expect(roundtripped.dayStreak!.current, 5);
       expect(roundtripped.dayStreak!.longest, 10);
@@ -68,7 +69,7 @@ void main() {
       expect(roundtripped.dayStreak, isNull);
       expect(roundtripped.gameHighscore, 0);
       expect(roundtripped.selectedCourses, isEmpty);
-      expect(roundtripped.vocab, isEmpty);
+      expect(roundtripped.vocabByLang, isEmpty);
       expect(roundtripped.language, isEmpty);
     });
   });

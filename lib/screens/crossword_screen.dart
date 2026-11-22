@@ -9,6 +9,8 @@ import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
@@ -85,7 +87,10 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
       _bestTime = ud?.crosswordBestTimes[widget.difficulty] ?? 0;
     }
 
-    var words = await vq.getReadWords(uname);
+    final lang = context
+        .read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter ueber die bestehende Kategorien-Info.
     final cat = wordCategoryById(_category);

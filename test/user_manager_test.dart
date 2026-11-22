@@ -30,7 +30,7 @@ void main() {
       expect(saved['u_name'], 'alice');
       expect(saved['m_lang'], 'de');
       expect(saved['language'], {'custom': 1});
-      expect(saved['vocab'], isEmpty);
+      expect(saved['vocab_by_lang'], isEmpty);
       expect(saved['progress'], isA<Map>());
     });
 

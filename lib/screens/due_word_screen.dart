@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -28,6 +29,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
   String _feedback = '';
   Color _feedbackColor = AppTheme.green2;
   String _correctDisplay = '';
+  String _lang = 'de';
 
   @override
   void dispose() {
@@ -54,10 +56,13 @@ class _DueWordScreenState extends State<DueWordScreen> {
     if (uname.isEmpty) return;
     final vq = context.read<VocabQueries>();
     final navState = context.read<NavigationState>();
+    final lang =
+        navState.resolveActiveLang(context.read<UserState>().userData);
+    _lang = lang;
     final cat = wordCategoryById(navState.selectedCategoryId);
     final words = cat != null
-        ? await vq.getGroupDueWords(uname, cat)
-        : await vq.getDueWords(uname);
+        ? await vq.getGroupDueWords(uname, cat, langCode: lang)
+        : await vq.getDueWords(uname, langCode: lang);
     if (mounted) {
       setState(() {
         _words = words;
@@ -218,7 +223,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       });
       final uname = context.read<DataState>().appData.loggedUName;
       await context.read<VocabQueries>().checkWordAnswer(
-          uname, word.key, word.translation);
+          uname, word.key, word.translation, langCode: _lang);
     } else {
       setState(() => _userInput = newInput);
     }
@@ -237,7 +242,8 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
-    await context.read<VocabQueries>().checkWordAnswer(uname, word.key, '');
+    await context.read<VocabQueries>().checkWordAnswer(
+        uname, word.key, '', langCode: _lang);
   }
 
   void _nextWord() {

@@ -67,7 +67,7 @@ void main() {
   final userState =
       UserState(userManager: userManager, vocabManager: vocabManager);
   final audioService =
-      AudioService(fileService: fileService, userManager: userManager);
+      AudioService(fileService: fileService);
 
   // Persistiert die zuletzt geöffnete Seite, damit die App nach einem
   // Android-Prozess-Kill („Alle Apps schliessen“) dort weitermacht.

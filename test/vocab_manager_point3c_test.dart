@@ -44,7 +44,7 @@ UserData _userData(String username, Map<String, VocabEntry> vocab) => UserData(
       progress: const {},
       learnedLanguages: const [],
       language: const {},
-      vocab: vocab,
+      vocabByLang: {'en': vocab},
     );
 
 VocabEntry _entry({
@@ -172,12 +172,12 @@ void main() {
           'test', _userData('test', const {}));
       userMgr.saveCount = 0;
 
-      await mgr.initVocabForUser('test', {});
+      await mgr.initVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 1);
       final afterFirst = userMgr.lastSaved;
-      expect(afterFirst!.vocab.length, 6);
+      expect(afterFirst!.vocabByLang['en']!.length, 6);
 
-      await mgr.initVocabForUser('test', {});
+      await mgr.initVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 1);
     });
 
@@ -194,13 +194,14 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.initVocabForUser('test', {});
+      await mgr.initVocabForUser('test', 'en', 'de');
 
       final saved = userMgr.lastSaved!;
-      expect(saved.vocab.length, 6);
-      expect(saved.vocab.containsKey('to_go_present_0'), true);
-      expect(saved.vocab['to_go_present_1']!.level, 0);
-      expect(saved.vocab['to_go_present_1']!.status, 'new');
+      final savedVocab = saved.vocabByLang['en']!;
+      expect(savedVocab.length, 6);
+      expect(savedVocab.containsKey('to_go_present_0'), true);
+      expect(savedVocab['to_go_present_1']!.level, 0);
+      expect(savedVocab['to_go_present_1']!.status, 'new');
       expect(userMgr.saveCount, 1);
     });
   });
@@ -218,10 +219,10 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 0);
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 0);
     });
 
@@ -240,12 +241,13 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
 
       final saved = userMgr.lastSaved!;
-      expect(saved.vocab.containsKey('i_want'), false);
-      expect(saved.vocab.containsKey('to_go_present_0'), true);
-      final ve = saved.vocab['to_go_present_0']!;
+      final vocab = saved.vocabByLang['en']!;
+      expect(vocab.containsKey('i_want'), false);
+      expect(vocab.containsKey('to_go_present_0'), true);
+      final ve = vocab['to_go_present_0']!;
       expect(ve.level, 3);
       expect(ve.status, 'seen');
       expect(ve.reviewDue, '2026-01-04');
@@ -263,11 +265,13 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 1);
-      expect(userMgr.lastSaved!.vocab['to_go_present_0']!.word, 'gehen');
+      expect(
+          userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!.word,
+          'gehen');
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
       expect(userMgr.saveCount, 1);
     });
 
@@ -282,11 +286,11 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
 
       expect(userMgr.saveCount, 1);
-      expect(
-          userMgr.lastSaved!.vocab['to_go_present_0']!.translation, 'go');
+      expect(userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!
+          .translation, 'go');
     });
 
     test('synct examplesNative aus Muttersprachen-Dict', () async {
@@ -300,12 +304,11 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
 
       expect(userMgr.saveCount, 1);
-      expect(
-          userMgr.lastSaved!.vocab['to_go_present_0']!.examplesNative,
-          ['I go.', '', '']);
+      expect(userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!
+          .examplesNative, ['I go.', '', '']);
     });
 
     test('stuft status new→seen, wenn level > 0', () async {
@@ -319,10 +322,12 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
 
       expect(userMgr.saveCount, 1);
-      expect(userMgr.lastSaved!.vocab['to_go_present_0']!.status, 'seen');
+      expect(
+          userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!.status,
+          'seen');
     });
 
     test('berechnet reviewDue aus lastReviewed neu (Pass 2)', () async {
@@ -337,11 +342,11 @@ void main() {
       }));
       userMgr.saveCount = 0;
 
-      await mgr.migrateVocabForUser('test');
+      await mgr.migrateVocabForUser('test', 'en', 'de');
 
       expect(userMgr.saveCount, 1);
-      expect(userMgr.lastSaved!.vocab['to_go_present_0']!.reviewDue,
-          '2026-01-02');
+      expect(userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!
+          .reviewDue, '2026-01-02');
     });
   });
 
@@ -362,7 +367,7 @@ void main() {
             progress: const {},
             learnedLanguages: const [],
             language: language,
-            vocab: vocab,
+            vocabByLang: {'en': vocab},
           ));
       userMgr.saveCount = 0;
       return (VocabManagerImpl(userMgr, fs), userMgr, fs);
@@ -377,20 +382,20 @@ void main() {
         ),
       });
 
-      await mgr.initVocabForUser('test', const {});
+      await mgr.initVocabForUser('test', 'en', 'de');
 
       final saved = userMgr.getUser('test')!;
       // language wird geleert (einmalig) – künftig kommen Wörter nur noch aus
       // den aktuellen Asset-Dicts.
       expect(saved.language, isEmpty);
       // Bestehender Fortschritt bleibt unverändert erhalten.
-      final e0 = saved.vocab['to_go_present_0']!;
+      final e0 = saved.vocabByLang['en']!['to_go_present_0']!;
       expect(e0.level, 3);
       expect(e0.status, 'seen');
       expect(e0.reviewDue, '2026-01-04');
       // Neue Asset-Wörter werden ergänzt.
-      expect(saved.vocab.containsKey('to_go_present_1'), isTrue);
-      expect(saved.vocab.length, 6);
+      expect(saved.vocabByLang['en']!.containsKey('to_go_present_1'), isTrue);
+      expect(saved.vocabByLang['en']!.length, 6);
       expect(userMgr.saveCount, 1);
     });
 
@@ -401,12 +406,12 @@ void main() {
       };
       final (mgr, userMgr, _) = setup(vocab: fullVocab);
 
-      await mgr.initVocabForUser('test', const {});
+      await mgr.initVocabForUser('test', 'en', 'de');
 
       final saved = userMgr.getUser('test')!;
       expect(saved.language, isEmpty);
       // Keine neuen Wörter nötig, aber das Feld wird trotzdem geleert.
-      expect(saved.vocab.length, 6);
+      expect(saved.vocabByLang['en']!.length, 6);
       expect(userMgr.saveCount, 1);
     });
   });

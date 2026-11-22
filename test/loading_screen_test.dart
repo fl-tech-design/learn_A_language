@@ -98,6 +98,7 @@ FakeUserManager _userManagerWith(String username) {
         learnedLanguages: const [],
         language: const {},
         vocab: const {},
+        selectedCourses: const ['de_verben_a1'],
       ));
   return um;
 }

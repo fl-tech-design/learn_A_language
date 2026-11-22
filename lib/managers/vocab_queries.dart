@@ -15,36 +15,48 @@ import 'vocab_manager.dart';
 /// Word queries, streak, and answer checking — typed interface extracted
 /// from the former static VocabQueries class.
 abstract class VocabQueries {
-  Future<List<VocabEntry>> getDueWords(String username);
-  Future<List<VocabEntry>> getWordsByLevel(
-      String username, int targetLevel);
+  Future<List<VocabEntry>> getDueWords(String username,
+      {String langCode = 'de'});
+  Future<List<VocabEntry>> getWordsByLevel(String username, int targetLevel,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getNewWords(String username,
-      {int limit = 10, int offset = 0});
-  Future<List<VocabEntry>> getReadWords(String username);
-  Future<List<VocabEntry>> getLearnedWords(String username);
-  Future<int> getWordsDueCount(String username);
-  Future<int> getNewWordsCount(String username);
-  Future<List<VocabEntry>> getAllWords(String username);
-  Future<List<VocabEntry>> getGroupWords(
-      String username, WordCategory category);
+      {String langCode = 'de', int limit = 10, int offset = 0});
+  Future<List<VocabEntry>> getReadWords(String username,
+      {String langCode = 'de'});
+  Future<List<VocabEntry>> getLearnedWords(String username,
+      {String langCode = 'de'});
+  Future<int> getWordsDueCount(String username, {String langCode = 'de'});
+  Future<int> getNewWordsCount(String username, {String langCode = 'de'});
+  Future<List<VocabEntry>> getAllWords(String username,
+      {String langCode = 'de'});
+  Future<List<VocabEntry>> getGroupWords(String username, WordCategory category,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getGroupNewWords(String username,
-      WordCategory category, {int limit = 10, int offset = 0});
+      WordCategory category,
+      {String langCode = 'de', int limit = 10, int offset = 0});
   Future<CategoryCounts> getGroupCounts(
-      String username, WordCategory category);
-  Future<Map<String, CategoryCounts>> getCategoryCounts(String username);
+      String username, WordCategory category,
+      {String langCode = 'de'});
+  Future<Map<String, CategoryCounts>> getCategoryCounts(String username,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getGroupLearnWords(
-      String username, WordCategory category);
+      String username, WordCategory category,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getGroupDueWords(
-      String username, WordCategory category);
+      String username, WordCategory category,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getGroupLearnedWords(
-      String username, WordCategory category);
+      String username, WordCategory category,
+      {String langCode = 'de'});
   Future<List<VocabEntry>> getGroupReadWords(
-      String username, WordCategory category);
+      String username, WordCategory category,
+      {String langCode = 'de'});
   Future<DayStreak> getDayStreak(String username);
-  Future<UserStats> getUserStats(String username);
+  Future<UserStats> getUserStats(String username, {String? langCode});
   Future<void> updateDayStreak(String username);
   Future<AnswerCheckResult> checkWordAnswer(
-      String username, String wordKey, String userInput);
+      String username, String wordKey, String userInput,
+      {String langCode = 'de'});
 }
 
 /// Concrete implementation backed by [UserManager].
@@ -72,13 +84,15 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getDueWords(String username) async {
+  Future<List<VocabEntry>> getDueWords(String username,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
     final today = DateTime.now();
     final dueWords = <VocabEntry>[];
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
 
-    for (final ve in ud.vocab.values) {
+    for (final ve in vocab.values) {
       if (ve.level == 8) continue;
       if (ve.status == 'new') continue;
 
@@ -100,19 +114,21 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getWordsByLevel(
-      String username, int targetLevel) async {
+  Future<List<VocabEntry>> getWordsByLevel(String username, int targetLevel,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    return ud.vocab.values.where((ve) => ve.level == targetLevel).toList();
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    return vocab.values.where((ve) => ve.level == targetLevel).toList();
   }
 
   @override
   Future<List<VocabEntry>> getNewWords(String username,
-      {int limit = 10, int offset = 0}) async {
+      {String langCode = 'de', int limit = 10, int offset = 0}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    final newWords = ud.vocab.values
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    final newWords = vocab.values
         .where((ve) => ve.level == 0 && ve.status == 'new')
         .toList();
     final start = offset.clamp(0, newWords.length);
@@ -121,44 +137,53 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getReadWords(String username) async {
+  Future<List<VocabEntry>> getReadWords(String username,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
     // „Gelesene Wörter": alles, was mindestens einmal angeschaut wurde.
-    return ud.vocab.values.where((ve) => ve.status == 'seen').toList();
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    return vocab.values.where((ve) => ve.status == 'seen').toList();
   }
 
   @override
-  Future<List<VocabEntry>> getLearnedWords(String username) async {
+  Future<List<VocabEntry>> getLearnedWords(String username,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
     // „Gelernte Wörter": fertig gelernt (Level 8) – über alle Kategorien.
-    return ud.vocab.values.where((ve) => ve.level >= 8).toList();
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    return vocab.values.where((ve) => ve.level >= 8).toList();
   }
 
   @override
-  Future<int> getWordsDueCount(String username) async =>
-      (await getDueWords(username)).length;
+  Future<int> getWordsDueCount(String username,
+          {String langCode = 'de'}) async =>
+      (await getDueWords(username, langCode: langCode)).length;
 
   @override
-  Future<int> getNewWordsCount(String username) async {
-    final words = await getWordsByLevel(username, 0);
+  Future<int> getNewWordsCount(String username,
+          {String langCode = 'de'}) async {
+    final words = await getWordsByLevel(username, 0, langCode: langCode);
     return words.where((w) => w.status == 'new').length;
   }
 
   @override
-  Future<List<VocabEntry>> getAllWords(String username) async {
+  Future<List<VocabEntry>> getAllWords(String username,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    return ud.vocab.values.toList();
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    return vocab.values.toList();
   }
 
   @override
-  Future<List<VocabEntry>> getGroupWords(
-      String username, WordCategory category) async {
+  Future<List<VocabEntry>> getGroupWords(String username, WordCategory category,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    final entries = ud.vocab.values
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    final entries = vocab.values
         .where((ve) => category.containsEntryKey(ve.key))
         .toList();
     entries.sort((a, b) => _compareEntries(category, a, b));
@@ -167,10 +192,12 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<List<VocabEntry>> getGroupNewWords(String username,
-      WordCategory category, {int limit = 10, int offset = 0}) async {
+      WordCategory category,
+      {String langCode = 'de', int limit = 10, int offset = 0}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    final newWords = ud.vocab.values
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    final newWords = vocab.values
         .where((ve) =>
             ve.level == 0 &&
             ve.status == 'new' &&
@@ -183,17 +210,19 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<CategoryCounts> getGroupCounts(
-      String username, WordCategory category) async {
-    final all = await getCategoryCounts(username);
+      String username, WordCategory category,
+      {String langCode = 'de'}) async {
+    final all = await getCategoryCounts(username, langCode: langCode);
     return all[category.id] ?? const CategoryCounts();
   }
 
   @override
-  Future<Map<String, CategoryCounts>> getCategoryCounts(
-      String username) async {
+  Future<Map<String, CategoryCounts>> getCategoryCounts(String username,
+      {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     final result = <String, CategoryCounts>{};
     if (ud == null) return result;
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     final today = DateTime.now();
     for (final cat in courseWordCategories) {
       var total = 0;
@@ -201,7 +230,7 @@ class VocabQueriesImpl implements VocabQueries {
       var due = 0;
       var read = 0;
       var learned = 0;
-      for (final ve in ud.vocab.values) {
+      for (final ve in vocab.values) {
         if (!cat.containsEntryKey(ve.key)) continue;
         total++;
         if (ve.status == 'seen') read++;
@@ -229,14 +258,15 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getGroupLearnWords(
-      String username, WordCategory category) async {
+  Future<List<VocabEntry>> getGroupLearnWords(String username,
+      WordCategory category, {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
     final due = <VocabEntry>[];
     final fresh = <VocabEntry>[];
     final today = DateTime.now();
-    for (final ve in ud.vocab.values) {
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    for (final ve in vocab.values) {
       if (!category.containsEntryKey(ve.key)) continue;
       if (ve.level >= 8) continue;
       if (ve.level == 0 && ve.status == 'new') {
@@ -254,13 +284,14 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getGroupDueWords(
-      String username, WordCategory category) async {
+  Future<List<VocabEntry>> getGroupDueWords(String username,
+      WordCategory category, {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
     final today = DateTime.now();
     final due = <VocabEntry>[];
-    for (final ve in ud.vocab.values) {
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    for (final ve in vocab.values) {
       if (!category.containsEntryKey(ve.key)) continue;
       if (ve.level == 8) continue;
       if (ve.status == 'new') continue;
@@ -271,11 +302,12 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getGroupLearnedWords(
-      String username, WordCategory category) async {
+  Future<List<VocabEntry>> getGroupLearnedWords(String username,
+      WordCategory category, {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    final learned = ud.vocab.values
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    final learned = vocab.values
         .where((ve) => ve.level >= 8 && category.containsEntryKey(ve.key))
         .toList();
     learned.sort((a, b) => _compareEntries(category, a, b));
@@ -283,11 +315,12 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<List<VocabEntry>> getGroupReadWords(
-      String username, WordCategory category) async {
+  Future<List<VocabEntry>> getGroupReadWords(String username,
+      WordCategory category, {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    final read = ud.vocab.values
+    final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
+    final read = vocab.values
         .where((ve) =>
             ve.status == 'seen' && category.containsEntryKey(ve.key))
         .toList();
@@ -330,7 +363,7 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   @override
-  Future<UserStats> getUserStats(String username) async {
+  Future<UserStats> getUserStats(String username, {String? langCode}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return const UserStats();
     final today = DateTime.now();
@@ -338,7 +371,11 @@ class VocabQueriesImpl implements VocabQueries {
     var dueCount = 0;
     var readCount = 0;
     var learnedCount = 0;
-    for (final ve in ud.vocab.values) {
+    // Ohne langCode werden alle Sprachen aggregiert (Startbildschirm).
+    final values = (langCode != null && langCode.isNotEmpty)
+        ? (ud.vocabByLang[langCode] ?? const <String, VocabEntry>{}).values
+        : ud.vocabByLang.values.expand((m) => m.values);
+    for (final ve in values) {
       if (ve.level == 0 && ve.status == 'new') newCount++;
       if (ve.status == 'seen') readCount++;
       if (ve.level >= 8) learnedCount++;
@@ -391,12 +428,14 @@ class VocabQueriesImpl implements VocabQueries {
 
   @override
   Future<AnswerCheckResult> checkWordAnswer(
-      String username, String wordKey, String userInput) {
+      String username, String wordKey, String userInput,
+      {String langCode = 'de'}) {
     final completer = Completer<AnswerCheckResult>();
     _answerQueue = _answerQueue.then((_) async {
       try {
-        completer.complete(
-            await _checkWordAnswer(username, wordKey, userInput));
+        completer.complete(await _checkWordAnswer(
+            username, wordKey, userInput,
+            langCode: langCode));
       } catch (e, st) {
         // Letzte Verteidigung: niemals eine unbehandelte Async-Exception in
         // die Screens entlassen – der Antwort-Pfad läuft mit Hinweis weiter.
@@ -412,17 +451,18 @@ class VocabQueriesImpl implements VocabQueries {
   }
 
   /// Actual answer checking + persistence, serialized via [_answerQueue].
-  Future<AnswerCheckResult> _checkWordAnswer(
-      String username, String wordKey, String userInput) async {
+  Future<AnswerCheckResult> _checkWordAnswer(String username, String wordKey,
+      String userInput, {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
-    if (ud == null || !ud.vocab.containsKey(wordKey)) {
+    final vocab = ud?.vocabByLang[langCode];
+    if (ud == null || vocab == null || !vocab.containsKey(wordKey)) {
       return const AnswerCheckResult(
         correct: false,
         message: 'Wort nicht gefunden',
       );
     }
 
-    final ve = ud.vocab[wordKey]!;
+    final ve = vocab[wordKey]!;
     final correctTranslation = ve.translation;
     final currentLevel = ve.level;
     final currentStatus = ve.status;
@@ -449,11 +489,14 @@ class VocabQueriesImpl implements VocabQueries {
         clearReviewDue: newLevel >= 8,
       );
 
-      final newVocab = Map<String, VocabEntry>.from(ud.vocab);
+      final newVocab = Map<String, VocabEntry>.from(vocab);
       newVocab[wordKey] = updated;
+      final vocabByLang =
+          Map<String, Map<String, VocabEntry>>.from(ud.vocabByLang)
+            ..[langCode] = newVocab;
       try {
         await _userManager.saveUserdata(
-            username, ud.copyWith(vocab: newVocab));
+            username, ud.copyWith(vocabByLang: vocabByLang));
       } on PersistenceException catch (e) {
         developer.log('checkWordAnswer: Fortschritt nicht gespeichert ($e)');
         StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
@@ -485,11 +528,14 @@ class VocabQueriesImpl implements VocabQueries {
         reviewDue: fmt(now.add(const Duration(days: 1))),
       );
 
-      final newVocab = Map<String, VocabEntry>.from(ud.vocab);
+      final newVocab = Map<String, VocabEntry>.from(vocab);
       newVocab[wordKey] = updated;
+      final vocabByLang =
+          Map<String, Map<String, VocabEntry>>.from(ud.vocabByLang)
+            ..[langCode] = newVocab;
       try {
         await _userManager.saveUserdata(
-            username, ud.copyWith(vocab: newVocab));
+            username, ud.copyWith(vocabByLang: vocabByLang));
       } on PersistenceException catch (e) {
         developer.log('checkWordAnswer: Fortschritt nicht gespeichert ($e)');
         StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);

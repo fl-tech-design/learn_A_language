@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:learn_a_language/l10n/app_localizations.dart';
 import 'package:learn_a_language/managers/data_state.dart';
 import 'package:learn_a_language/managers/navigation_state.dart';
+import 'package:learn_a_language/managers/user_state.dart';
 import 'package:learn_a_language/managers/vocab_queries.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/screens/due_word_screen.dart';
@@ -63,6 +64,11 @@ Future<void> _pumpDueWordScreen(
         ChangeNotifierProvider<DataState>.value(value: dataState),
         ChangeNotifierProvider<NavigationState>.value(
             value: NavigationState()),
+        // Gebraucht für die Sprachauflösung; der Screen pusht hier nichts.
+        ChangeNotifierProvider<UserState>.value(
+            value: UserState(
+                userManager: userManager,
+                vocabManager: FakeVocabManager())),
         Provider<VocabQueries>.value(value: vq),
       ],
       child: const MaterialApp(

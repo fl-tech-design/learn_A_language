@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -57,7 +58,11 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   Future<void> _refreshCounts() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
-    final counts = await context.read<VocabQueries>().getCategoryCounts(uname);
+    final lang = context.read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    final counts = await context
+        .read<VocabQueries>()
+        .getCategoryCounts(uname, langCode: lang);
     if (mounted) setState(() => _counts = counts);
   }
 

@@ -210,8 +210,8 @@ void main() {
       expect(result.statusChanged, true);
 
       final saved = fake.lastSaved!;
-      expect(saved.vocab['haus']!.level, result.newLevel);
-      expect(saved.vocab['haus']!.status, 'seen');
+      expect(saved.vocabByLang['de']!['haus']!.level, result.newLevel);
+      expect(saved.vocabByLang['de']!['haus']!.status, 'seen');
     });
 
     test('bereits gesehenes Wort meldet statusChanged false', () async {
@@ -230,7 +230,7 @@ void main() {
 
       expect(result.correct, true);
       expect(result.statusChanged, false);
-      expect(fake.lastSaved!.vocab['haus']!.status, 'seen');
+      expect(fake.lastSaved!.vocabByLang['de']!['haus']!.status, 'seen');
     });
 
     test('Level 7 → 8: gelernt-Meldung und reviewDue wird geleert', () async {
@@ -253,8 +253,8 @@ void main() {
       expect(result.statusChanged, false);
 
       final saved = fake.lastSaved!;
-      expect(saved.vocab['haus']!.level, 8);
-      expect(saved.vocab['haus']!.reviewDue, isNull);
+      expect(saved.vocabByLang['de']!['haus']!.level, 8);
+      expect(saved.vocabByLang['de']!['haus']!.reviewDue, isNull);
     });
   });
 
@@ -274,9 +274,9 @@ void main() {
       expect(wrong.correct, false);
       expect(wrong.newLevel, 0);
       final saved = fake.lastSaved!;
-      expect(saved.vocab['haus']!.level, 0);
-      expect(saved.vocab['haus']!.status, 'new');
-      expect(saved.vocab['haus']!.reviewDue, isNotNull);
+      expect(saved.vocabByLang['de']!['haus']!.level, 0);
+      expect(saved.vocabByLang['de']!['haus']!.status, 'new');
+      expect(saved.vocabByLang['de']!['haus']!.reviewDue, isNotNull);
 
       final savedBefore = fake.lastSaved;
       final saveCountBefore = fake.saveCount;
@@ -315,7 +315,7 @@ void main() {
       expect(result.correct, true);
 
       final saved = fake.lastSaved!;
-      final reviewDue = saved.vocab['due']!.reviewDue;
+      final reviewDue = saved.vocabByLang['de']!['due']!.reviewDue;
       expect(reviewDue, isNotNull);
       expect(DateTime.parse(reviewDue!).isAfter(now), true);
 

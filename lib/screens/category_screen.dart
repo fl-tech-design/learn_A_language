@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -60,7 +61,11 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
     final uname = context.read<DataState>().appData.loggedUName;
     final cat = _category;
     if (uname.isEmpty || cat == null) return;
-    final counts = await context.read<VocabQueries>().getGroupCounts(uname, cat);
+    final lang = context.read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    final counts = await context
+        .read<VocabQueries>()
+        .getGroupCounts(uname, cat, langCode: lang);
     if (mounted) setState(() => _counts = counts);
   }
 

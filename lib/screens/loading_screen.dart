@@ -8,6 +8,7 @@ import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/session_manager.dart';
 import '../managers/user_state.dart';
+import '../models/app_models.dart';
 import '../theme/app_theme.dart';
 import '../l10n/app_localizations.dart';
 import '../widgets/version_label.dart';
@@ -87,6 +88,15 @@ class _LoadingScreenState extends State<LoadingScreen> {
         // Word-Modus + gewählte Kategorie für /word und /dueword übernehmen.
         navState.setWordMode(snapshot.wordMode);
         navState.setSelectedCategoryId(snapshot.selectedCategoryId);
+        // Kurs-Kontext wiederherstellen (bestimmt die Kurssprache).
+        final courseId = snapshot.activeCourseId;
+        final course =
+            courseId != null ? availableCourses[courseId] : null;
+        if (course != null) {
+          navState.setActiveCourse(course);
+        } else {
+          navState.clearActiveCourse();
+        }
         try {
           for (final r in routes) {
             nav.pushNamed(r.name, arguments: r.arguments);

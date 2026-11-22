@@ -498,4 +498,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get russian => 'Русский';
+
+  @override
+  String get motherTongueHint =>
+      'Sets the translation direction (word and translation) for all selected course languages.';
 }

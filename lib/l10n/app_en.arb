@@ -185,5 +185,6 @@
   "fillInSkip": "Skip",
   "spanish": "Spanish",
   "french": "French",
-  "russian": "Russian"
+  "russian": "Russian",
+  "motherTongueHint": "Sets the translation direction (word and translation) for all selected course languages."
 }

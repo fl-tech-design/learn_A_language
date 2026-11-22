@@ -1057,6 +1057,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Russian'**
   String get russian;
+
+  /// No description provided for @motherTongueHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Sets the translation direction (word and translation) for all selected course languages.'**
+  String get motherTongueHint;
 }
 
 class _AppLocalizationsDelegate
