@@ -27,7 +27,7 @@ class AppLanguageConfig {
   });
 }
 
-/// UI-Sprachregistry: alle wählbaren UI-Sprachen (de/en/es/fr/ru).
+/// UI-Sprachregistry: alle wählbaren UI-Sprachen (de/en/es/fr/ru/el).
 ///
 /// Diese Liste steuert AUSSCHLIESSLICH die FlagBox-Sprachwahl (UI-Locale).
 /// Für Kurse/Muttersprachen/Dicts gilt [dictLanguageCodes].
@@ -56,6 +56,11 @@ const List<AppLanguageConfig> appLanguages = [
     code: 'ru',
     flagAsset: 'assets/images/flag_rus.png',
     labelKey: 'russian',
+  ),
+  AppLanguageConfig(
+    code: 'el',
+    flagAsset: 'assets/images/flag_gre.png',
+    labelKey: 'greek',
   ),
 ];
 
@@ -147,12 +152,14 @@ const Map<String, String> _languageNameToCode = {
   'spanisch': 'es',
   'französisch': 'fr',
   'russisch': 'ru',
+  'griechisch': 'el',
   // Englisch
   'german': 'de',
   'english': 'en',
   'spanish': 'es',
   'french': 'fr',
   'russian': 'ru',
+  'greek': 'el',
 };
 
 /// Löst einen Sprachnamen (normalisiert) in einen Sprachcode auf oder `null`.

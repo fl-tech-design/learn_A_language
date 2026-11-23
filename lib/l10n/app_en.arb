@@ -186,5 +186,6 @@
   "spanish": "Spanish",
   "french": "French",
   "russian": "Russian",
+  "greek": "Greek",
   "motherTongueHint": "Sets the translation direction (word and translation) for all selected course languages."
 }

@@ -163,6 +163,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         'spanish' => l10n.spanish,
         'french' => l10n.french,
         'russian' => l10n.russian,
+        'greek' => l10n.greek,
         _ => labelKey,
       };
 
@@ -174,6 +175,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         'es' => 'spanisch',
         'fr' => 'französisch',
         'ru' => 'russisch',
+        'el' => 'griechisch',
         _ => code,
       };
 

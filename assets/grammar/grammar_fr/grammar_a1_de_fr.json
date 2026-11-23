@@ -1,0 +1,1384 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-23",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "fr"
+  },
+  "ui_languages": [
+    "de",
+    "fr"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Franzoesisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloecken, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "A1"
+  ],
+  "levels_info": [
+    {
+      "level": "A1",
+      "title": {
+        "de": "Erste Schritte",
+        "fr": "Premiers pas"
+      },
+      "can_do": {
+        "de": "Einfache Saetze ueber sich und den Alltag bilden und verstehen.",
+        "fr": "Comprendre et construire des phrases simples sur soi et la vie quotidienne."
+      },
+      "exams": [
+        "DELF A1",
+        "telc Français A1",
+        "fide A1"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "fr": "Structure de la phrase et ordre des mots"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "fr": "Verbes et temps"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "fr": "Questions et négation"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "fr": "Noms et articles"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "fr": "Pronoms"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "fr": "Adjectifs, adverbes, comparaison"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "fr": "Prépositions"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "be_and_have",
+      "order": 8,
+      "title": {
+        "de": "être und avoir",
+        "fr": "être et avoir"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "modal_verbs",
+      "order": 9,
+      "title": {
+        "de": "Modalverben",
+        "fr": "Verbes modaux"
+      },
+      "levels": [
+        "A1"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_a1_syn_001",
+      "level": "A1",
+      "category": "sentence_structure",
+      "order": 10,
+      "title": {
+        "de": "Subjekt vor dem Verb - und es darf nie fehlen",
+        "fr": "Le sujet avant le verbe - et il ne manque jamais"
+      },
+      "summary": {
+        "de": "Keine Umstellung wie im Deutschen; nach einer Zeitangabe bleibt Subjekt - Verb.",
+        "fr": "Pas d'inversion comme en allemand ; après un complément de temps, sujet - verbe reste en place."
+      },
+      "explanation": {
+        "de": "Im Deutschen rueckt nach einer Zeitangabe das Verb an zweite Stelle und das Subjekt dahinter: 'Heute lese ich ein Buch.' Im Franzoesischen bleibt die Reihenfolge Subjekt - Verb erhalten: 'Aujourd'hui je lis un livre.' Ausserdem braucht jeder Satz ein Subjektpronomen: 'Je lis', nie 'Lis' - Subjekt weglassen wie im Deutschen gibt es nicht. Verb und Objekt werden nicht getrennt: 'Je lis un livre tous les jours.'",
+        "fr": "En allemand, après une expression de temps, le verbe vient en deuxième position et le sujet derrière : 'Heute lese ich ein Buch.' En français, la place sujet - verbe reste : 'Aujourd'hui je lis un livre.' De plus, chaque phrase a un pronom sujet : 'Je lis', jamais 'Lis'. Verbe et complément ne sont pas séparés : 'Je lis un livre tous les jours.'"
+      },
+      "contrast": {
+        "de": "Deutsch: Verb an zweiter Stelle, Subjekt beweglich, Subjekt kann entfallen. Franzoesisch: Subjektpronomen vor dem Verb - immer, auch nach Zeitangaben.",
+        "fr": "Allemand : verbe en deuxième position, sujet mobile, sujet omis possible. Français : pronom sujet devant le verbe - toujours, même après un complément de temps."
+      },
+      "examples": [
+        {
+          "de": "Heute lese ich ein Buch.",
+          "fr": "Aujourd'hui je lis un livre.",
+          "hint": {
+            "de": "keine Umstellung von Subjekt und Verb",
+            "fr": "pas d'inversion sujet - verbe"
+          }
+        },
+        {
+          "de": "Ich lerne jeden Tag Franzoesisch.",
+          "fr": "J'apprends le français tous les jours.",
+          "hint": {
+            "de": "je + Verbeginn mit Vokal: j'apprends",
+            "fr": "je + verbe en voyelle : j'apprends"
+          }
+        },
+        {
+          "de": "Ich habe das Buch gelesen.",
+          "fr": "J'ai lu le livre.",
+          "hint": {
+            "de": "avoir + Partizip bleibt zusammen",
+            "fr": "avoir + participe passé reste ensemble"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Aujourd'hui lis un livre.",
+        "correct": "Aujourd'hui je lis un livre.",
+        "why": {
+          "de": "Das Subjektpronomen ist Pflicht. Verbinversion wie im Deutschen ('Heute lese ich') gibt es im normalen Satz nicht.",
+          "fr": "Le pronom sujet est obligatoire. L'inversion comme en allemand ('Heute lese ich') n'existe pas dans la phrase normale."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Morgen esse ich eine Pizza.'",
+          "fr": "Traduisez : 'Morgen esse ich eine Pizza.'"
+        },
+        "solution": "Demain je mange une pizza.",
+        "accepted": [
+          "Demain, je mange une pizza."
+        ]
+      },
+      "tags": [
+        "word_order",
+        "subject_pronoun",
+        "svo"
+      ]
+    },
+    {
+      "id": "gr_a1_syn_002",
+      "level": "A1",
+      "category": "sentence_structure",
+      "order": 20,
+      "title": {
+        "de": "il y a statt 'es gibt'",
+        "fr": "il y a au lieu de 'es gibt'"
+      },
+      "summary": {
+        "de": "Vorhandenes heisst 'il y a' - Singular fuer beide Mengen, nie 'il a'.",
+        "fr": "Pour dire qu'une chose existe : 'il y a' - une seule forme, jamais 'il a'."
+      },
+      "explanation": {
+        "de": "Das Deutsche sagt 'es gibt' mit Akkusativ: 'Es gibt einen Park.' Franzoesisch nutzt die feste Wendung il y a: 'Il y a un parc.' Diese Form bleibt auch im Plural gleich: 'Il y a deux voitures.' Bei der Verneinung steht de statt Artikel: 'Il n'y a pas de parc.' In der Frage: 'Est-ce qu'il y a un parc ici ?' Achtung auf den Unterschied zu 'il a' (= er hat).",
+        "fr": "En allemand, 'es gibt' + accusatif : 'Es gibt einen Park.' En français, l'expression fixe il y a : 'Il y a un parc.' Elle reste inchangée au pluriel : 'Il y a deux voitures.' Négation avec de : 'Il n'y a pas de parc.' Question : 'Est-ce qu'il y a un parc ici ?' Attention à la différence avec 'il a' (= il possède)."
+      },
+      "contrast": {
+        "de": "Deutsch: 'es gibt' + Akkusativ. Franzoesisch: il y a, immer gleiche Form, Singular wie Plural; nach der Verneinung steht de statt Artikel.",
+        "fr": "Allemand : 'es gibt' + accusatif. Français : il y a, forme invariable ; après la négation, de remplace l'article."
+      },
+      "examples": [
+        {
+          "de": "Es gibt einen Supermarkt in der Naehe.",
+          "fr": "Il y a un supermarché près d'ici.",
+          "hint": {
+            "de": "il y a, nicht il a",
+            "fr": "il y a, pas il a"
+          }
+        },
+        {
+          "de": "Gibt es hier ein Cafe?",
+          "fr": "Est-ce qu'il y a un café ici ?",
+          "hint": {
+            "de": "Frage mit est-ce que",
+            "fr": "question avec est-ce que"
+          }
+        },
+        {
+          "de": "Es gibt keine Parkplaetze.",
+          "fr": "Il n'y a pas de places de parking.",
+          "hint": {
+            "de": "nach Negation: pas de statt Artikel",
+            "fr": "après la négation : pas de"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Il a un supermarché près d'ici.",
+        "correct": "Il y a un supermarché près d'ici.",
+        "why": {
+          "de": "'Il a' heisst 'er hat'. Fuer Vorhandenes braucht es die feste Wendung il y a.",
+          "fr": "'Il a' signifie qu'il possède. Pour l'existence, il faut l'expression fixe il y a."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Gibt es hier eine Apotheke?'",
+          "fr": "Traduisez : 'Gibt es hier eine Apotheke?'"
+        },
+        "solution": "Est-ce qu'il y a une pharmacie ici ?",
+        "accepted": [
+          "Y a-t-il une pharmacie ici ?"
+        ]
+      },
+      "tags": [
+        "il_y_a",
+        "existential",
+        "negation"
+      ]
+    },
+    {
+      "id": "gr_a1_vrb_001",
+      "level": "A1",
+      "category": "verbs_tenses",
+      "order": 10,
+      "title": {
+        "de": "Praesens: Endungen nach Person - auch wenn man sie nicht hoert",
+        "fr": "Le présent : des terminaisons par personne - même quand on ne les entend pas"
+      },
+      "summary": {
+        "de": "-er-Verb: je parle, tu parles, il parle - klingt gleich, der Unterschied steht nur auf dem Papier.",
+        "fr": "Verbe en -er : je parle, tu parles, il parle - des formes écrites différentes qui se prononcent pareil."
+      },
+      "explanation": {
+        "de": "Beide Sprachen haben ein Praesens fuer Gewohnheit und Gegenwart. Beim Konjugieren zeigt Franzoesisch aber mehr schriftliche Unterschiede: parle-r gibt je parle, tu parles, il/elle parle, nous parlons, vous parlez, ils/elles parlent. tu parles, il parle und ils parlent fallen im Klang zusammen - nur auf Papier unterschiedlich. Deutsch unterscheidet vor allem 2. Person (-st) und 3. Person (-t); im Franzoesischen sind nur 1. Person Plural (-ons) und 2. Person Plural (-ez) hoerbar. Unregelmaessige Verben (être, avoir, aller): siehe Kategorie be_and_have.",
+        "fr": "Les deux langues ont un présent pour l'habitude et le présent. Pour les verbes en -er : je parle, tu parles, il/elle parle, nous parlons, vous parlez, ils/elles parlent. Tu parles, il parle et ils parlent se prononcent pareil - la différence est seulement écrite. L'allemand distingue surtout la 2e personne (-st) et la 3e (-t) ; en français, les formes -ons et -ez s'entendent bien."
+      },
+      "contrast": {
+        "de": "Deutsch: ich lerne / du lernst / er lernt - jede Person eine andere Endung, alles hört man. Franzoesisch: je parle / tu parles / il parle / ils parlent - drei gleicher Klang, schriftliche Endung entscheidet.",
+        "fr": "Allemand : ich lerne / du lernst / er lernt - une terminaison audible par personne. Français : je parle / tu parles / il parle / ils parlent - même son, l'orthographe décide."
+      },
+      "examples": [
+        {
+          "de": "Ich trinke jeden Morgen Kaffee.",
+          "fr": "Je bois du café tous les matins.",
+          "hint": {
+            "de": "bois du café: Teilartikel bei Stoffen",
+            "fr": "bois du café : article partitif"
+          }
+        },
+        {
+          "de": "Sie trinkt jeden Morgen Tee.",
+          "fr": "Elle boit du thé tous les matins.",
+          "hint": {
+            "de": "3. Person -t wie im Deutschen",
+            "fr": "3e personne avec -t, comme en allemand"
+          }
+        },
+        {
+          "de": "Wir wohnen in Zuerich.",
+          "fr": "Nous habitons à Zurich.",
+          "hint": {
+            "de": "nous: Endung -ons",
+            "fr": "nous : terminaison -ons"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Il parles français.",
+        "correct": "Il parle français.",
+        "why": {
+          "de": "il/elle bekommt nie ein -s; das -s gehoert zu tu. Der Fehler hoert man nicht heraus, wird aber in Pruefungen gezaehlt.",
+          "fr": "il/elle ne prend jamais de -s ; le -s est pour tu. L'erreur ne s'entend pas, mais elle est comptée aux examens."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Setze die richtige Form ein: 'Mon frère ___ (jouer) au football le dimanche.'",
+          "fr": "Complétez : 'Mon frère ___ (jouer) au football le dimanche.'"
+        },
+        "solution": "joue",
+        "accepted": []
+      },
+      "tags": [
+        "present",
+        "conjugation",
+        "er_verbs"
+      ]
+    },
+    {
+      "id": "gr_a1_vrb_002",
+      "level": "A1",
+      "category": "verbs_tenses",
+      "order": 20,
+      "title": {
+        "de": "Passé composé: avoir oder être - und ein Agreement mehr",
+        "fr": "Le passé composé : avoir ou être - et un accord en plus"
+      },
+      "summary": {
+        "de": "Wie deutsches Perfekt - aber bei Bewegungsverben kommt être und das Partizip passt sich an.",
+        "fr": "Comme le Perfekt allemand - mais les verbes de mouvement prennent être et le participe s'accorde."
+      },
+      "explanation": {
+        "de": "Das deutsche Perfekt ('ich habe gelesen', 'ich bin gegangen') entspricht dem franzoesischen passé composé: Verbkette = avoir/être + Partizip. Wie im Deutschen nutzen Bewegungsverben und Zustaende (aller, venir, arriver, partir, rester, naître, mourir) être statt avoir: 'Je suis allé à Paris.' Dazu kommt ein Agreement, das das Deutsche nur bei 'sein'-Perfekten teils kennt: mit être passt sich das Partizip an Subjekt an: 'Elle est allée', 'Nous sommes allés'. Ohne Verbklammer: Partizip liegt direkt hinter dem Hilfsverb: 'J'ai lu un livre', nicht 'J'ai un livre lu'.",
+        "fr": "Le Perfekt allemand ('ich habe gelesen', 'ich bin gegangen') correspond au passé composé : avoir/être + participe passé. Comme en allemand, les verbes de mouvement et quelques verbes d'état (aller, venir, arriver, partir, rester, naître, mourir) prennent être : 'Je suis allé à Paris.' Avec être, le participe s'accorde avec le sujet : 'Elle est allée', 'Nous sommes allés'. Pas de cadre verbal : participe juste après l'auxiliaire : 'J'ai lu un livre'."
+      },
+      "contrast": {
+        "de": "Deutsch: haben/sein + Partizip am Satzende (Verbklammer), Partizip unver\u00e4ndert. Franzoesisch: avoir/\\u00eatre + Partizip direkt nach dem Hilfsverb; bei \\u00eatre Accord nach Person und Geschlecht.",
+        "fr": "Allemand : haben/sein + participe en fin de phrase (cadre verbal), participe invariable. Français : avoir/être + participe juste après l'auxiliaire ; avec être, accord en genre et en nombre."
+      },
+      "examples": [
+        {
+          "de": "Ich habe das Buch gelesen.",
+          "fr": "J'ai lu le livre."
+        },
+        {
+          "de": "Ich bin nach Paris gefahren.",
+          "fr": "Je suis allé à Paris.",
+          "hint": {
+            "de": "Bewegungsverb: être wie deutsches sein",
+            "fr": "verbe de mouvement : être, comme l'allemand sein"
+          }
+        },
+        {
+          "de": "Sie ist gestern angekommen.",
+          "fr": "Elle est arrivée hier.",
+          "hint": {
+            "de": "weiblich: arriv\u00e9e mit -e",
+            "fr": "féminin : arrivée avec -e"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "J'ai allé à Paris.",
+        "correct": "Je suis allé à Paris.",
+        "why": {
+          "de": "aller gehoert zu den \\u00eatre-Verben - wie das Deutsche bei Bewegungsperfekten mit 'sein'. avoir waere hier falsch.",
+          "fr": "aller fait partie des verbes avec être - comme l'allemand avec 'sein'. Ici, avoir est faux."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Wir sind gestern angekommen.'",
+          "fr": "Traduisez : 'Wir sind gestern angekommen.'"
+        },
+        "solution": "Nous sommes arrivés hier.",
+        "accepted": [
+          "Nous sommes arrivées hier."
+        ]
+      },
+      "tags": [
+        "passe_compose",
+        "avoir_etre",
+        "agreement"
+      ]
+    },
+    {
+      "id": "gr_a1_qst_001",
+      "level": "A1",
+      "category": "questions_negation",
+      "order": 10,
+      "title": {
+        "de": "Fragen mit est-ce que oder Intonation - keine Verbumstellung Pflicht",
+        "fr": "Questions avec est-ce que ou l'intonation - pas d'inversion obligatoire"
+      },
+      "summary": {
+        "de": "Deutsch stellt das Verb vor; Franzoesisch schiebt est-ce que davor oder laesst den Aussagesatz steigen.",
+        "fr": "L'allemand inverse le verbe ; le français ajoute est-ce que ou monte l'intonation."
+      },
+      "explanation": {
+        "de": "Im Deutschen wird eine Frage durch Vorziehen des Verbs gebildet: 'Du kommst.' -> 'Kommst du?' Im Franzoesischen funktioniert der normale Aussagesatz weiter: Du stellst est-ce que davor: 'Est-ce que tu viens ?' oder laesst die Stimme steigen: 'Tu viens ?' Die klassische Umstellung (tu viens -> viens-tu ?) gibt es nur nach Pronomen und klingt formell - mit vollen Nomen wie 'Paul' ist sie ungrammatisch ('Mange Paul?' falsch).",
+        "fr": "En allemand, la question inverse le verbe : 'Du kommst.' -> 'Kommst du ?' En français, la phrase normale reste : on ajoute est-ce que ('Est-ce que tu viens ?') ou on monte l'intonation ('Tu viens ?'). L'inversion classique (viens-tu ?) existe seulement après un pronom et reste formelle - avec un nom propre ('Mange Paul ?'), elle est impossible."
+      },
+      "contrast": {
+        "de": "Deutsch: Verb an erste Stelle ('Kommst du?'). Franzoesisch: est-ce que + Satz, Intonationsfrage oder formelle Pronomenumstellung (viens-tu ?).",
+        "fr": "Allemand : le verbe en première position ('Kommst du ?'). Français : est-ce que + phrase, question par intonation, ou inversion pronominale formelle (viens-tu ?)."
+      },
+      "examples": [
+        {
+          "de": "Spielst du Tennis?",
+          "fr": "Est-ce que tu joues au tennis ?",
+          "hint": {
+            "de": "est-ce que + Aussagesatz",
+            "fr": "est-ce que + phrase affirmative"
+          }
+        },
+        {
+          "de": "Du kommst morgen?",
+          "fr": "Tu viens demain ?",
+          "hint": {
+            "de": "gesprochen: reine Intonationsfrage",
+            "fr": "à l'oral : question par intonation"
+          }
+        },
+        {
+          "de": "Ist Paul da?",
+          "fr": "Paul est là ?",
+          "hint": {
+            "de": "mit Nomen keine Umstellung n\u00f6tig",
+            "fr": "avec un nom, pas d'inversion nécessaire"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Mange Paul la soupe ?",
+        "correct": "Est-ce que Paul mange la soupe ?",
+        "why": {
+          "de": "Die deutsche V1-Stellung mit ganzem Nomen gibt es im Franzoesischen nicht. Somit: est-ce que oder Intonation.",
+          "fr": "L'inversion comme en allemand avec un nom complet n'existe pas. Utilisez est-ce que ou l'intonation."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Kochst du die Suppe?'",
+          "fr": "Traduisez : 'Kochst du die Suppe?'"
+        },
+        "solution": "Est-ce que tu prépares la soupe ?",
+        "accepted": [
+          "Tu prépares la soupe ?"
+        ]
+      },
+      "tags": [
+        "questions",
+        "est_ce_que",
+        "intonation"
+      ]
+    },
+    {
+      "id": "gr_a1_qst_002",
+      "level": "A1",
+      "category": "questions_negation",
+      "order": 20,
+      "title": {
+        "de": "Verneinung als Sandwich: ne ... pas um das Verb",
+        "fr": "La négation en sandwich : ne ... pas autour du verbe"
+      },
+      "summary": {
+        "de": "Nicht nur 'nicht' hinten: ne und pas umklammern das konjugierte Verb.",
+        "fr": "Pas seulement 'nicht' après le verbe : ne et pas encadrent le verbe conjugué."
+      },
+      "explanation": {
+        "de": "Deutsch stellt 'nicht' einmal hinter das Verb bzw. ans Ende: 'Ich komme nicht.' Franzoesisch umklammert: ne + Verb + pas: 'Je ne viens pas.' Bei doit-Verbindungen (passé composé, Modalverb) umklammern ne/pas das erste (konjugierte) Verb: 'Je ne peux pas venir.' Vor einem Infinitiv bleibt die Wendung zusammen: 'Il me dit de ne pas fumer.' Umgangssprachlich faellt ne oft weg - in Schrift und Pruefung ist Pflicht.",
+        "fr": "En allemand, 'nicht' vient une fois après le verbe : 'Ich komme nicht.' En français, ne + verbe + pas encadre : 'Je ne viens pas.' Avec un auxiliaire ou un modal, ne/pas encadrent le premier verbe conjugué : 'Je ne peux pas venir.' Devant un infinitif, l'expression reste ensemble : 'de ne pas fumer.' À l'oral, ne tombe souvent - à l'écrit et à l'examen, il est obligatoire."
+      },
+      "contrast": {
+        "de": "Deutsch: ein W\u00f6rtchen 'nicht'. Franzoesisch: zwei Teile ne ... pas rund um das konjugierte Verb; davor/danach verb\u00fcndete Verben bleiben in der Klammer.",
+        "fr": "Allemand : un seul mot 'nicht'. Français : deux parties ne ... pas autour du verbe conjugué ; en passé composé ou avec un modal, elles encadrent l'auxiliaire."
+      },
+      "examples": [
+        {
+          "de": "Ich komme nicht.",
+          "fr": "Je ne viens pas."
+        },
+        {
+          "de": "Ich kann nicht kommen.",
+          "fr": "Je ne peux pas venir.",
+          "hint": {
+            "de": "ne/pas klammern das Modalverb",
+            "fr": "ne/pas encadrent le verbe modal"
+          }
+        },
+        {
+          "de": "Ich habe nicht gegessen.",
+          "fr": "Je n'ai pas mangé.",
+          "hint": {
+            "de": "n' vor Vokal; Hilfsverb in der Klammer",
+            "fr": "n' devant voyelle ; l'auxiliaire dans l'encadrement"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je parle pas français.",
+        "correct": "Je ne parle pas français.",
+        "why": {
+          "de": "Im Gesprochenen faellt ne oft weg - in Schrift und Pruefungen ist es Pflicht und sein Fehlen wird gezaehlt.",
+          "fr": "À l'oral, ne disparaît souvent - à l'écrit et aux examens, il est obligatoire et son absence est comptée."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Verneine: 'Je comprends.'",
+          "fr": "Mettez à la forme négative : 'Je comprends.'"
+        },
+        "solution": "Je ne comprends pas.",
+        "accepted": []
+      },
+      "tags": [
+        "negation",
+        "ne_pas",
+        "sandwich"
+      ]
+    },
+    {
+      "id": "gr_a1_nou_001",
+      "level": "A1",
+      "category": "nouns_articles",
+      "order": 10,
+      "title": {
+        "de": "Genus nicht uebertragbar: der/die/das wird le/la - neu lernen",
+        "fr": "Le genre ne se traduit pas : der/die/das devient le/la - à réapprendre"
+      },
+      "summary": {
+        "de": "Das deutsche Genus sagt nichts über das französische; neues Wort = neuer Artikel.",
+        "fr": "Le genre allemand ne prédit pas le genre français : chaque nom vient avec son article."
+      },
+      "explanation": {
+        "de": "Deutsche Nomen haben ihr Genus, und es laesst sich nicht uebersetzen: 'der Tisch' ist 'la table', 'die Sonne' 'le soleil'. Franzoesisch kennt nur zwei Genus mit den Artikeln le/la (Singular) und les (Plural), un/une/des unbestimmt. Kasus gibt es keine: der/den/dem fallen alle zu le zusammen. Wichtige Lernstrategie: Nomen immer mit Artikel lernen (la table, nicht nur table).",
+        "fr": "Les noms allemands ont un genre, et il ne se traduit pas : 'der Tisch' est 'la table', 'die Sonne' est 'le soleil'. Le français a deux genres avec le/la (singulier) et les (pluriel), un/une/des à l'indéfini. Pas de cas : der/den/dem deviennent tous le. Stratégie : apprendre chaque nom avec son article (la table, pas table)."
+      },
+      "contrast": {
+        "de": "Deutsch: drei Genera, vier Faelle, Artikel dekliniert (dem Mann). Franzoesisch: zwei Genera, keine Kasus, le/la/les immer gleich - aber vom deutschen Genus unabhaengig.",
+        "fr": "Allemand : trois genres, quatre cas, articles déclinés. Français : deux genres, pas de cas, le/la/les invariables - mais indépendants du genre allemand."
+      },
+      "examples": [
+        {
+          "de": "Das Haus ist alt.",
+          "fr": "La maison est vieille.",
+          "hint": {
+            "de": "der/die/das wird le/la",
+            "fr": "le genre change : 'maison' est féminin"
+          }
+        },
+        {
+          "de": "Die Sonne scheint.",
+          "fr": "Le soleil brille.",
+          "hint": {
+            "de": "'die Sonne' (feminin) wird 'le soleil' (maskulin)",
+            "fr": "l'allemand 'Sonne' est féminin ; soleil est masculin"
+          }
+        },
+        {
+          "de": "Ich sehe den Mann.",
+          "fr": "Je vois l'homme.",
+          "hint": {
+            "de": "kein Akkusativ, Vokal: l'homme",
+            "fr": "pas d'accusatif ; devant voyelle : l'"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Le table est grande.",
+        "correct": "La table est grande.",
+        "why": {
+          "de": "Das deutsche Genus (der Tisch) verleitet zur falschen Uebersetzung - franzoesische Genera muessen mit dem Wort gelernt werden.",
+          "fr": "Le genre allemand (der Tisch) trompe ; le genre français s'apprend avec le mot."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze den Artikel: '___ lune brille ce soir.' (der Mond -> la)",
+          "fr": "Complétez l'article : '___ lune brille ce soir.'"
+        },
+        "solution": "La",
+        "accepted": []
+      },
+      "tags": [
+        "gender",
+        "articles",
+        "no_cases"
+      ]
+    },
+    {
+      "id": "gr_a1_nou_002",
+      "level": "A1",
+      "category": "nouns_articles",
+      "order": 20,
+      "title": {
+        "de": "Plural: meist -s oder -x, aber lautlos - der Artikel signalisiert",
+        "fr": "Le pluriel : surtout -s ou -x, muet - c'est l'article qui le montre"
+      },
+      "summary": {
+        "de": "Fast alle Nomen: -s (leises); einige -x; gehoert wird nur der Artikel (le -> les).",
+        "fr": "Presque tous les noms prennent -s ; quelques-uns -x ; à l'oreille, seul l'article change (le -> les)."
+      },
+      "explanation": {
+        "de": "Deutsche Plurale verraten ihre Form nicht (Auto - Autos, Buch - Buecher, Kind - Kinder). Franzoesisch ist regelmaessig: fast immer -s (jour - jours), nach -eau und -al kommt -x (eau - eaux, journal - journaux). Das gesprochene -s hoert man nicht; im Klang unterscheidet sich der Plural nur durch den Artikel: le jour - les jours: der Artikel traegt den Plural.",
+        "fr": "Les pluriels allemands sont imprévisibles (Auto - Autos, Buch - Bücher). Le français est plus régulier : presque toujours -s (jour - jours), -x après -eau et -al (eau - eaux, journal - journaux). Le -s ne s'entend pas ; à l'oral, seul l'article change : le jour vs. les jours : le jour - les jours."
+      },
+      "contrast": {
+        "de": "Deutsch: fuenf Pluralm\u00f6glichkeiten und haeufiger Umlaut (Haeuser). Franzoesisch: standardmaessig -s oder -x, unbetont im Klang; unbestimmter Artikel wird des, un/une -> des.",
+        "fr": "Allemand : cinq pluriels possibles avec souvent un Umlaut (Häuser). Français : -s ou -x standard, muet à l'oral ; un/une devient des au pluriel."
+      },
+      "examples": [
+        {
+          "de": "ein Kind - Kinder",
+          "fr": "un enfant - des enfants",
+          "hint": {
+            "de": "deutscher Sonderplural (Kind - Kinder); franzoesisch: nur -s",
+            "fr": "pluriel spécial en allemand ; le -s français ne se prononce pas"
+          }
+        },
+        {
+          "de": "ein Haus - Haeuser",
+          "fr": "une maison - des maisons",
+          "hint": {
+            "de": "deutscher Umlaut-Plural; franzoesisch regelmaessig: -s",
+            "fr": "allemand avec Umlaut ; français régulier : -s"
+          }
+        },
+        {
+          "de": "ein Tier - Tiere",
+          "fr": "un animal - des animaux",
+          "hint": {
+            "de": "-al wird -x",
+            "fr": "-al devient -x"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Le enfants jouent.",
+        "correct": "Les enfants jouent.",
+        "why": {
+          "de": "Im Plural steht les (statt le/la); un/une wird des. Der Plural-Artikel ist Pflicht, auch wenn er im Klang fast verschwindet.",
+          "fr": "Au pluriel : les (au lieu de le/la) ; un/une devient des. Le pluriel de l'article est obligatoire, même s'il ne s'entend presque pas."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "'une personne - trois ___'",
+          "fr": "Formez le pluriel : 'une personne - trois ___'"
+        },
+        "solution": "personnes",
+        "accepted": []
+      },
+      "tags": [
+        "plurals",
+        "articles",
+        "silent_s"
+      ]
+    },
+    {
+      "id": "gr_a1_pro_001",
+      "level": "A1",
+      "category": "pronouns",
+      "order": 10,
+      "title": {
+        "de": "tu oder vous - und das Subjektpronomen ist Pflicht",
+        "fr": "tu ou vous - et le pronom sujet est obligatoire"
+      },
+      "summary": {
+        "de": "tu = du, vous = Sie und ihr; das Subjektpronomen steht immer.",
+        "fr": "tu = du ; vous = vouvoiement ou pluriel ; le pronom sujet est toujours là."
+      },
+      "explanation": {
+        "de": "Franzoesisch kennt wie Deutsch du/ihr/Sie, fasst sie aber in zwei Formen zusammen: tu (vertraut, eine Person) und vous (hoeflich oder fuer mehrere). Das Sie/Ihr aus dem Deutschen vereinfacht sich zu vous. Und anders als im Dialekt ('Bin bald zur\\u00fcck') bleibt das Subjektpronomen immer da: je, tu, il, elle, nous, vous, ils, elles.",
+        "fr": "Le français connaît du/ihr/Sie comme l'allemand, mais les résume en deux formes : tu (familier, une personne) et vous (poli ou pluriel). Et contrairement au familier allemand ('Bin bientôt de retour'), le pronom sujet reste toujours : je, tu, il, elle, nous, vous, ils, elles."
+      },
+      "contrast": {
+        "de": "Deutsch: du, ihr, Sie - drei Woerter. Franzoesisch: tu (vertraut, eine Person) und vous (hoeflich oder fuer mehrere).",
+        "fr": "Allemand : du, ihr, Sie - trois mots. Français : tu (familier, une personne) et vous (vouvoiement ou pluriel)." 
+      },
+      "examples": [
+        {
+          "de": "Wie geht es Ihnen?",
+          "fr": "Comment allez-vous ?",
+          "hint": {
+            "de": "hoeflich: vous",
+            "fr": "politesse : vous"
+          }
+        },
+        {
+          "de": "Kommst du mit?",
+          "fr": "Tu viens avec nous ?",
+          "hint": {
+            "de": "vertraut: tu",
+            "fr": "familier : tu"
+          }
+        },
+        {
+          "de": "Ihr seid fertig?",
+          "fr": "Vous êtes prêts ?",
+          "hint": {
+            "de": "mehrere Personen: ebenfalls vous",
+            "fr": "plusieurs personnes : vous aussi"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Comment tu t'appelles, Madame ?",
+        "correct": "Comment vous appelez-vous, Madame ?",
+        "why": {
+          "de": "Gegenueber fremden und aelteren Erwachsenen gilt vous. tu wirkt dort respektlos.",
+          "fr": "Avec des inconnus et des aînés : vous. tu manquerait de respect."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie sind Herr Meier?' (hoeflich, zu einer fremden Person)",
+          "fr": "Traduisez : 'Sie sind Herr Meier?' (poliment)"
+        },
+        "solution": "Vous êtes Monsieur Meier ?",
+        "accepted": []
+      },
+      "tags": [
+        "tu_vous",
+        "politeness",
+        "subject_pronouns"
+      ]
+    },
+    {
+      "id": "gr_a1_pro_002",
+      "level": "A1",
+      "category": "pronouns",
+      "order": 20,
+      "title": {
+        "de": "Objektpronomen stehen VOR dem Verb",
+        "fr": "Les pronoms objets viennent AVANT le verbe"
+      },
+      "summary": {
+        "de": "Wortstellung: Ich sehe ihn - Je le vois. Das Pronomen wandert nach vorne.",
+        "fr": "L'allemand met le pronom après le verbe ; le français le place avant : Je le vois."
+      },
+      "explanation": {
+        "de": "Im Deutschen steht das Objektpronomen nach dem Verb wie ein Nomen: 'Ich sehe ihn', 'Ich gebe ihm das Buch.' Franzoesisch zieht es vor das konjugierte Verb: 'Je le vois', 'Je lui donne le livre.' Die Reihe: me, te, le, la, nous, vous, les (direkt Objekt) und me, te, lui, nous, vous, leur (indirekt). Nach Praepositionen steht die betonte Form: 'avec moi', 'pour lui'.",
+        "fr": "En allemand, le pronom objet suit le verbe comme un nom : 'Ich sehe ihn', 'Ich gebe ihm das Buch.' En français, il se place avant le verbe conjugué : 'Je le vois', 'Je lui donne le livre.' Série : me, te, le, la, nous, vous, les (objet direct) et me, te, lui, nous, vous, leur (objet indirect). Après une préposition : forme tonique 'avec moi', 'pour lui'."
+      },
+      "contrast": {
+        "de": "Deutsch: Objektpronomen stehen nach dem Verb wie Nomen. Franzoesisch: le/la/lui usw. direkt vor dem Verb; mehrere deutsche Formen fallen zusammen (me = mich/mir).",
+        "fr": "Allemand : pronoms objet après le verbe. Français : le/la/lui devant le verbe ; plusieurs cas allemands fusionnent (me = mich/mir)."
+      },
+      "examples": [
+        {
+          "de": "Ich sehe ihn.",
+          "fr": "Je le vois.",
+          "hint": {
+            "de": "Pronomen vor dem Verb",
+            "fr": "pronom avant le verbe"
+          }
+        },
+        {
+          "de": "Sie schenkt mir ein Buch.",
+          "fr": "Elle me donne un livre.",
+          "hint": {
+            "de": "mir = me vor dem Verb",
+            "fr": "mir = me devant le verbe"
+          }
+        },
+        {
+          "de": "Ich denke an dich.",
+          "fr": "Je pense à toi.",
+          "hint": {
+            "de": "nach Praeposition: betonte Form toi",
+            "fr": "après une préposition : forme tonique toi"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je vois lui.",
+        "correct": "Je le vois.",
+        "why": {
+          "de": "Das direkte Objektpronomen (ihn = le) gehört vor das Verb;'lui' steht nur nach Praepositionen oder bei indirekten Objekt-Pronomen (ihm = lui): 'Je lui parle'.",
+          "fr": "Le pronom objet direct (le) se met avant le verbe ; lui s'emploie après préposition ou pour l'objet indirect : 'Je lui parle'."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie hilft uns.'",
+          "fr": "Traduisez : 'Sie hilft uns.'"
+        },
+        "solution": "Elle nous aide.",
+        "accepted": []
+      },
+      "tags": [
+        "object_pronouns",
+        "word_order",
+        "tonic_forms"
+      ]
+    },
+    {
+      "id": "gr_a1_adj_001",
+      "level": "A1",
+      "category": "adjectives_adverbs",
+      "order": 10,
+      "title": {
+        "de": "Adjektiv: hinten am Nomen - und es stimmt sich ueberein",
+        "fr": "L'adjectif : après le nom - et il s'accorde"
+      },
+      "summary": {
+        "de": "Grundstellung nach dem Nomen ('une voiture rapide') und Endung nach Genus/Zahl.",
+        "fr": "Place par défaut : après le nom ('une voiture rapide') et accord en genre et en nombre."
+      },
+      "explanation": {
+        "de": "Beide Sprachen haben Endungen - aber die Grundposition ist anders: Im Deutschen steht das Adjektiv meist VOR dem Nomen ('ein schnelles Auto'). Im Franzoesischen meist DANACH: 'une voiture rapide'. Ausnahmen, die davor stehen: petit, grand, beau, joli, jeune, nouveau ('un grand appartement'). Das Adjektiv stimmt sich mit dem Nomen ueberein: 'une voiture rapide', 'des voitures rapides', 'une maison neuve'.",
+        "fr": "Les deux langues accordent les adjectifs - mais la position de base diffère : en allemand, l'adjectif précède le nom ('ein schnelles Auto'). En français, il suit en général le nom : 'une voiture rapide'. Exceptions mises devant : petit, grand, beau, joli, jeune, nouveau ('un grand appartement'). Accord avec le nom : 'une voiture rapide', 'des voitures rapides', 'une maison neuve'."
+      },
+      "contrast": {
+        "de": "Deutsch: Adjektiv vor dem Nomen, Endungen nach Genus/Fall. Franzoesisch: meist nach dem Nomen, Endungen nach Genus/Zahl, wenige Vorreiter (petit, beau...).",
+        "fr": "Allemand : adjectif avant le nom, terminaisons selon cas et genre. Français : adjectif après le nom (sauf petit, beau...), accord en genre et en nombre."
+      },
+      "examples": [
+        {
+          "de": "ein interessantes Buch",
+          "fr": "un livre intéressant"
+        },
+        {
+          "de": "eine schoene Stadt",
+          "fr": "une belle ville",
+          "hint": {
+            "de": "beau gehoert zu den Vorreiter-Adjektiven",
+            "fr": "beau fait partie des adjectifs antéposés"
+          }
+        },
+        {
+          "de": "Die Katze ist grau.",
+          "fr": "Le chat est gris.",
+          "hint": {
+            "de": "praedikativ keine Extra-Endung bei Genus Mask.",
+            "fr": "attribut : accord au masculin ici"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "une rapide voiture",
+        "correct": "une voiture rapide",
+        "why": {
+          "de": "Wortstellung: Die Grundstellung ist hinter dem Nomen; nur die kurze Liste (petit, grand, beau, joli, jeune, nouveau) steht davor.",
+          "fr": "La place par défaut est après le nom ; seuls petit, grand, beau, joli, jeune, nouveau précèdent."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'eine neue Wohnung'",
+          "fr": "Traduisez : 'eine neue Wohnung.'"
+        },
+        "solution": "un nouvel appartement",
+        "accepted": []
+      },
+      "tags": [
+        "adjective_position",
+        "agreement",
+        "petit_beau"
+      ]
+    },
+    {
+      "id": "gr_a1_adj_002",
+      "level": "A1",
+      "category": "adjectives_adverbs",
+      "order": 20,
+      "title": {
+        "de": "Steigerung: plus ... que und der Superlativ mit Artikel",
+        "fr": "La comparaison : plus ... que et le superlatif avec l'article"
+      },
+      "summary": {
+        "de": "groesser als = plus grand que; am groessten = le plus grand - mit Artikel und Anpassung.",
+        "fr": "'am gr\\u00f6ssten' devient le plus grand : article obligatoire, accord avec le nom."
+      },
+      "explanation": {
+        "de": "Franzoesisch steigert praktisch alles mit plus/moins + Adjektiv: 'plus grand que', 'moins cher que', 'aussi grand que'. 'als' = que. Der Superlativ steht wie im Englischen mit Artikel: 'le plus grand' (Adjektiv danach) - und er akkordiert: 'la plus grande ville', 'les plus grandes villes'. Der Adverbialsuperlativ ohne Nomen: 'Il court le plus vite.' Unregelmaessig nur bon - meilleur - le meilleur.",
+        "fr": "Le français utilise systématiquement plus/moins + adjectif : 'plus grand que', 'moins cher que', 'aussi grand que'. 'als' = que. Le superlatif prend l'article comme en anglais : 'le plus grand' - et il s'accorde : 'la plus grande ville', 'les plus grandes villes'. Sans nom : 'Il court le plus vite.' Seul irrégulier : bon - meilleur - le meilleur."
+      },
+      "contrast": {
+        "de": "Deutsch: groesser (ueber -er), am groessten ohne Artikel. Franzoesisch: alles mit plus/moins, Superlativ mit le/la/les und Accord; 'als' = que.",
+        "fr": "Allemand : comparatif en -er, superlatif 'am -sten' sans article. Français : plus/moins partout, superlatif avec le/la/les et accord ; 'als' = que."
+      },
+      "examples": [
+        {
+          "de": "Zuerich ist groesser als Bern.",
+          "fr": "Zurich est plus grande que Berne.",
+          "hint": {
+            "de": "plus ... que; la ville ist weiblich: grande",
+            "fr": "plus ... que ; accord féminin : grande"
+          }
+        },
+        {
+          "de": "Es ist der hoechste Berg.",
+          "fr": "C'est la montagne la plus haute.",
+          "hint": {
+            "de": "Artikel + plus + Adjektiv",
+            "fr": "article + plus + adjectif"
+          }
+        },
+        {
+          "de": "Er laeuft am schnellsten.",
+          "fr": "Il court le plus vite.",
+          "hint": {
+            "de": "Adverb-Superlativ mit le",
+            "fr": "superlatif d'adverbe avec le"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Elle est plus grande moi.",
+        "correct": "Elle est plus grande que moi.",
+        "why": {
+          "de": "'als' = que gehoert immer dazu; nach que steht die betonte Form (moi, toi, lui...).",
+          "fr": "'als' = que est obligatoire ; après que vient la forme tonique (moi, toi, lui...)."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Er ist der juengste in der Klasse.'",
+          "fr": "Traduisez : 'Er ist der j\\u00fcngste in der Klasse.'"
+        },
+        "solution": "Il est le plus jeune de la classe.",
+        "accepted": []
+      },
+      "tags": [
+        "comparatives",
+        "superlatives",
+        "que"
+      ]
+    },
+    {
+      "id": "gr_a1_prp_001",
+      "level": "A1",
+      "category": "prepositions",
+      "order": 10,
+      "title": {
+        "de": "Richtung und Ort: à, en, au statt nach/in",
+        "fr": "Direction et lieu : à, en, au au lieu de nach/in"
+      },
+      "summary": {
+        "de": "Staedte immer à; Laender je nach Genus en/au; die Uhrzeit ebenfalls à.",
+        "fr": "Toujours à pour les villes ; en/au pour les pays selon le genre ; à aussi pour l'heure."
+      },
+      "explanation": {
+        "de": "Präpositionen: Deutsch unterscheidet nach (Staedte, Laender: 'nach Basel', 'nach Frankreich') und in ('in der Schweiz'). Franzoesisch entscheidet nach Wortart: Staedte immer à ('à Zurich', 'à Bâle'); weibliche Laender und Kontinente en ('en France', 'en Suisse', 'en Europe'); m\u00e4nnliche Laender au/aux ('au Canada', 'aux \\u00c9tats-Unis'). Die Uhrzeit nutzt ebenfalls à: 'à huit heures'.",
+        "fr": "L'allemand distingue nach (villes, pays : 'nach Basel', 'nach Frankreich') et in ('in der Schweiz'). Le français choisit par type : toujours à pour les villes ('à Zurich') ; en pour les pays féminins et les continents ('en France', 'en Suisse') ; au/aux pour les pays masculins ('au Canada', 'aux États-Unis'). L'heure prend aussi à : 'à huit heures'."
+      },
+      "contrast": {
+        "de": "Deutsch: nach/in je nach Bewegung oder Lage. Franzoesisch: à (Stadt), en (Land f., Kontinent), au (Land m.) - unabhaengig von Bewegung oder Lage; Uhrzeit erreichbar mit à.",
+        "fr": "Allemand : nach/in selon le mouvement ou la position. Français : à (ville), en (pays féminin, continent), au (pays masculin) - indépendamment du mouvement ; l'heure prend aussi à."
+      },
+      "examples": [
+        {
+          "de": "Ich fahre nach Zuerich.",
+          "fr": "Je vais à Zurich.",
+          "hint": {
+            "de": "Stadt: immer \\u00e0",
+            "fr": "ville : toujours à"
+          }
+        },
+        {
+          "de": "Ich fahre nach Frankreich.",
+          "fr": "Je vais en France.",
+          "hint": {
+            "de": "weibliches Land: en",
+            "fr": "pays féminin : en"
+          }
+        },
+        {
+          "de": "Wir treffen uns um halb acht.",
+          "fr": "On se voit à sept heures et demie.",
+          "hint": {
+            "de": "Uhrzeit: \\u00e0; halb = 'et demie' nach der vollen Stunde",
+            "fr": "l'heure prend à ; 'half' = et demie"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je vais à la France.",
+        "correct": "Je vais en France.",
+        "why": {
+          "de": "'la France' ist weiblich; weibliche Laender nehmen en. 'à la' klingt sofort deutsch gepraegt.",
+          "fr": "La France est féminin ; les pays féminins prennent en. 'À la' trahit l'allemand."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Ich fahre in die Schweiz.'",
+          "fr": "Traduisez : 'Ich fahre in die Schweiz.'"
+        },
+        "solution": "Je vais en Suisse.",
+        "accepted": []
+      },
+      "tags": [
+        "prepositions",
+        "direction",
+        "a_en_au"
+      ]
+    },
+    {
+      "id": "gr_a1_prp_002",
+      "level": "A1",
+      "category": "prepositions",
+      "order": 20,
+      "title": {
+        "de": "Zeit ohne Praeposition: am Montag = einfach 'lundi'",
+        "fr": "Le temps sans préposition : 'am Montag' = lundi, tout court"
+      },
+      "summary": {
+        "de": "Wochentage und Datum: Deutsch am/in/um - Franzoesisch h\u00e4ufig gar keine Praeposition.",
+        "fr": "Jours et dates : l'allemand met am/in/um ; le français souvent rien du tout."
+      },
+      "explanation": {
+        "de": "'Am Montag arbeite ich' heisst 'Lundi je travaille' - ohne Praeposition. Nur bei wiederholten Vorgaengen steht le: 'Le lundi, je travaille' = jeden Montag. Bei Tageszeiten bleibt Franzoesisch spaarsam: 'am Morgen' = 'le matin', 'in der Nacht' = 'la nuit'. Uhrzeit und Datum mit 'le 3 mai'. Monate mit en: 'im Mai' = 'en mai'.",
+        "fr": "'Am Montag arbeite ich' = 'Lundi je travaille' - sans préposition. Pour l'habitude : 'Le lundi, je travaille' (chaque lundi). Les parties de la journée restent légères : 'le matin', 'la nuit'. La date avec le : 'le 3 mai'. Les mois avec en : 'en mai'."
+      },
+      "contrast": {
+        "de": "Deutsch: am Montag, im Mai, um 8 Uhr - Praeposition fast immer. Franzoesisch: lundi (ohne), en mai, à 8 heures; 'le Montag' markiert Wiederholung.",
+        "fr": "Allemand : am Montag, im Mai, um 8 Uhr - préposition quasi obligatoire. Français : lundi (rien), en mai, à 8 heures ; 'le lundi' marque l'habitude."
+      },
+      "examples": [
+        {
+          "de": "Am Montag arbeite ich.",
+          "fr": "Lundi je travaille.",
+          "hint": {
+            "de": "keine Praeposition",
+            "fr": "pas de préposition"
+          }
+        },
+        {
+          "de": "Jeden Montag arbeite ich.",
+          "fr": "Le lundi je travaille.",
+          "hint": {
+            "de": "'le' markiert Regelmaessigkeit",
+            "fr": "'le' marque l'habitude"
+          }
+        },
+        {
+          "de": "Im Sommer fahren wir ans Meer.",
+          "fr": "En été nous allons à la mer.",
+          "hint": {
+            "de": "Jahreszeiten: en",
+            "fr": "les saisons prennent en"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "On se voit sur lundi.",
+        "correct": "On se voit lundi.",
+        "why": {
+          "de": "Wochentage stehen ohne Praeposition. 'le lundi' heisst nur 'jeden Montag' - deshalb vorsichtig mit le.",
+          "fr": "Les jours s'emploient sans préposition. 'Le lundi' signifie 'chaque lundi'."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie kommt um fuenf nach Hause.'",
+          "fr": "Traduisez : 'Sie kommt um fünf nach Hause.'"
+        },
+        "solution": "Elle rentre chez elle à cinq heures.",
+        "accepted": []
+      },
+      "tags": [
+        "prepositions",
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "gr_a1_bhv_001",
+      "level": "A1",
+      "category": "be_and_have",
+      "order": 10,
+      "title": {
+        "de": "être: nie weggelassen, sechs Formen",
+        "fr": "être : jamais supprimé, six formes"
+      },
+      "summary": {
+        "de": "je suis, tu es, il est, nous sommes, vous êtes, ils sont - in jedem Satz.",
+        "fr": "je suis, tu es, il est, nous sommes, vous êtes, ils sont - dans chaque phrase."
+      },
+      "explanation": {
+        "de": "Jeder franzoesische Satz braucht ein konjugiertes Verb; bei Zustaenden ist das être. Das Deutsche erlaubt im Alltag Verkuerzungen ('Ich muede', 'Das teuer'); im Franzoesischen waere das ungrammatisch ('Je suis fatigué'). Die Formen sind unregelmaessig und muessen rein: je suis, tu es, il/elle est, nous sommes, vous \\u00eates, ils/elles sont.",
+        "fr": "Chaque phrase française a besoin d'un verbe conjugué ; pour les états, c'est être. L'allemand familier autorise des raccourcis ('Ich müde', 'Das teuer') ; en français, c'est impossible : 'Je suis fatigué'. Les formes sont irrégulières et s'apprennent : je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont."
+      },
+      "contrast": {
+        "de": "Deutsch: Zustandssatz ohne Verb moeglich ('Ich muede'). Franzoesisch: être ist Pflicht und unregelmaessig in allen sechs Personen.",
+        "fr": "Allemand : phrase d'état sans verbe possible ('Ich müde'). Français : être obligatoire et irrégulier aux six personnes."
+      },
+      "examples": [
+        {
+          "de": "Ich bin aus Basel.",
+          "fr": "Je suis de Bâle."
+        },
+        {
+          "de": "Es ist kalt heute.",
+          "fr": "Il fait froid aujourd'hui.",
+          "hint": {
+            "de": "Wetter mit faire! s. naechsten Block",
+            "fr": "la météo utilise faire - voir le bloc suivant"
+          }
+        },
+        {
+          "de": "Wir sind bereit.",
+          "fr": "Nous sommes prêts.",
+          "hint": {
+            "de": "nous-sommes: unregelmaessige Form einfach lernen",
+            "fr": "nous sommes : forme spéciale"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je fatigué aujourd'hui.",
+        "correct": "Je suis fatigué aujourd'hui.",
+        "why": {
+          "de": "Ohne 'suis/es/est...' bleibt der Satz unvollstaendig - genau die Verkuerzung, die im Alltag auf Deutsch funktioniert.",
+          "fr": "Sans 'suis/es/est...', la phrase est incomplète - le raccourci que l'allemand permet."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze: 'Elle ___ ma soeur.'",
+          "fr": "Complétez : 'Elle ___ ma sœur.'"
+        },
+        "solution": "est",
+        "accepted": []
+      },
+      "tags": [
+        "etre",
+        "states",
+        "conjugation"
+      ]
+    },
+    {
+      "id": "gr_a1_bhv_002",
+      "level": "A1",
+      "category": "be_and_have",
+      "order": 20,
+      "title": {
+        "de": "haben vs. être: Viele Zustaende mit avoir - und das Wetter mit faire",
+        "fr": "avoir vs. être : beaucoup d'états avec avoir - et la météo avec faire"
+      },
+      "summary": {
+        "de": "'habe Hunger' = j'ai faim (wie dt. haben), aber 'mir ist kalt' = j'ai froid und 'es ist kalt' = il fait froid.",
+        "fr": "Comme l'allemand : j'ai faim, j'ai soif, j'ai peur ; mais 'mir ist kalt' = j'ai froid et la météo : il fait froid."
+      },
+      "explanation": {
+        "de": "Gute Nachricht: Viele Zustaende funktionieren wie im Deutschen mit haben/avoir: 'Ich habe Hunger' = 'J'ai faim', 'habe Durst' = 'j'ai soif', 'habe Angst' = 'j'ai peur'. Anders beim Koerpergefuehl: 'Mir ist kalt' (Dativ!) wird zu 'J'ai froid' - das Subjekt wechselt. Das Wetter nutzt faire: 'Es ist warm' = 'Il fait chaud' (woertlich: 'es macht warm'). Auch das Alter: 'Ich bin 20' = 'J'ai vingt ans'.",
+        "fr": "Bonne nouvelle : comme l'allemand haben, le français emploie avoir pour beaucoup d'états : 'J'ai faim', 'j'ai soif', 'j'ai peur'. Différence pour les sensations : 'Mir ist kalt' (datif) devient 'J'ai froid' - le sujet change. La météo utilise faire : 'Il fait chaud' (littéralement : il fait chaud). L'âge aussi : 'Ich bin 20' = 'J'ai vingt ans'."
+      },
+      "contrast": {
+        "de": "Deutsch: habe Hunger/habe Durst/habe Angst wie Franzoesisch; aber 'mir ist kalt' mit Dativ-Subjekt und Wetter mit sein. Franzoesisch: alles mit avoir bzw. faire - das Subjekt passt sich an.",
+        "fr": "Allemand : habe Hunger = j'ai faim, mais 'mir ist kalt' au datif et la météo avec sein. Français : avoir pour les sensations, faire pour la météo."
+      },
+      "examples": [
+        {
+          "de": "Ich habe Hunger.",
+          "fr": "J'ai faim.",
+          "hint": {
+            "de": "haben = avoir wie im Deutschen",
+            "fr": "avoir, comme l'allemand"
+          }
+        },
+        {
+          "de": "Mir ist kalt.",
+          "fr": "J'ai froid.",
+          "hint": {
+            "de": "Dativ 'mir' wird zum Subjekt j'ai",
+            "fr": "le datif 'mir' devient le sujet j'"
+          }
+        },
+        {
+          "de": "Es ist heute warm.",
+          "fr": "Il fait chaud aujourd'hui.",
+          "hint": {
+            "de": "Wetter mit faire, nicht mit \\u00eatre",
+            "fr": "la météo avec faire, pas être"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je suis faim.",
+        "correct": "J'ai faim.",
+        "why": {
+          "de": "Hunger, Durst, Angst, K\\u00e4lte stehen mit avoir - das Deutsche bildet sie genauso mit haben.",
+          "fr": "faim, soif, peur, froid prennent avoir - l'allemand suit exactement ce modèle avec haben."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Hast du Durst?'",
+          "fr": "Traduisez : 'Hast du Durst?'"
+        },
+        "solution": "Tu as soif ?",
+        "accepted": []
+      },
+      "tags": [
+        "avoir",
+        "states",
+        "weather"
+      ]
+    },
+    {
+      "id": "gr_a1_mdl_001",
+      "level": "A1",
+      "category": "modal_verbs",
+      "order": 10,
+      "title": {
+        "de": "Modal + Infinitiv direkt dahinter - ohne 'zu', ohne Umweg",
+        "fr": "Modal + infinitif immédiatement derrière - pas de préposition"
+      },
+      "summary": {
+        "de": "Ich kann schwimmen - Je peux nager. Verb steht beim Deutschen am Satzende, beim Franzosen direkt nach dem Modal.",
+        "fr": "Ich kann schwimmen - Je peux nager : l'infinitif suit directement le modal."
+      },
+      "explanation": {
+        "de": "Beide Sprachen koppeln Modalverb + Infinitiv ohne Verbindungswort - anders als andere Konstruktionen. Die Stellung unterscheidet sich: Deutsch stellt den ganzen Infinitiv ans Satzende ('Ich kann heute gut kochen'), Franzoesisch direkt nach dem Modal ('Je peux bien cuisiner aujourd'hui'). Die Modalen konjugieren je nach Person wie normale Verben: je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+        "fr": "Les deux langues enchaînent modal + infinitif sans mot de liaison. La position diffère : l'allemand met l'infinitif en fin de phrase ('Ich kann heute gut kochen'), le français juste après le modal ('Je peux bien cuisiner aujourd'hui'). Les modaux se conjuguent comme des verbes réguliers selon la personne : je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent."
+      },
+      "contrast": {
+        "de": "Deutsch: Modal + Infinitiv am Satzende (Satzklammer). Franzoesisch: Modal + Infinitiv direkt hintereinander; Endungen aendern sich je Person (im Gegensatz zum Englischen can).",
+        "fr": "Allemand : modal + infinitif en fin de phrase (cadre verbal). Français : modal + infinitif immédiatement ; les terminaisons changent selon la personne."
+      },
+      "examples": [
+        {
+          "de": "Ich kann schwimmen.",
+          "fr": "Je peux nager."
+        },
+        {
+          "de": "Sie kann sehr gut kochen.",
+          "fr": "Elle sait très bien cuisiner.",
+          "hint": {
+            "de": "Beherrschung = savoir; allgemeine Moeglichkeit = pouvoir",
+            "fr": "compétence = savoir ; possibilité = pouvoir"
+          }
+        },
+        {
+          "de": "Ich muss heute frueh aufstehen.",
+          "fr": "Je dois me lever tôt aujourd'hui.",
+          "hint": {
+            "de": "'aufstehen' ist reflexiv: se lever",
+            "fr": "se lever : verbe pronominal"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Je veux de dormir.",
+        "correct": "Je veux dormir.",
+        "why": {
+          "de": "Zwischen Modal und Infinitiv steht nichts - keine Praeposition, kein Artikel. Auch das englische 'to' gibt es nicht.",
+          "fr": "Rien ne s'intercale entre modal et infinitif ; le 'to' de l'anglais n'existe pas non plus."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Er kann sehr schnell laufen.'",
+          "fr": "Traduisez : 'Er kann sehr schnell laufen.'"
+        },
+        "solution": "Il peut courir très vite.",
+        "accepted": []
+      },
+      "tags": [
+        "modal_verbs",
+        "infinitive",
+        "pouvoir_savoir"
+      ]
+    },
+    {
+      "id": "gr_a1_mdl_002",
+      "level": "A1",
+      "category": "modal_verbs",
+      "order": 20,
+      "title": {
+        "de": "'muss' = devoir/il faut - und 'es ist verboten' = il est interdit",
+        "fr": "devoir / il faut pour la nécessité ; il est interdit pour l'interdiction"
+      },
+      "summary": {
+        "de": "'Man muss' braucht kein Subjekt: il faut + Infinitiv. Verbot: il est interdit de...",
+        "fr": "'Man muss' sans sujet : il faut + infinitif. L'interdiction : il est interdit de..."
+      },
+      "explanation": {
+        "de": "Notwendigkeit: devoir konjugiert normal ('Je dois partir'). F\\u00fcr 'man muss' nutzt Franzoesisch die feste Wendung il faut + Infinitiv - ohne Subjektpronomen: 'Il faut travailler'. Verbot sagen: 'Il est interdit de fumer' oder 'Il ne faut pas fumer'. Achtung: 'Je ne dois pas' ist doppeldeutig (muss nicht / darf nicht) - in Anweisungen steht deshalb oft il est interdit.",
+        "fr": "Pour la nécessité : devoir se conjugue normalement ('Je dois partir'). Pour 'man muss', le français utilise il faut + infinitif - sans pronom sujet. Pour l'interdiction : 'Il est interdit de fumer' ou 'Il ne faut pas fumer'. Attention : 'Je ne dois pas' reste ambigu (muss nicht / darf nicht) ; les consignes utilisent souvent il est interdit."
+      },
+      "contrast": {
+        "de": "Deutsch 'man muss' nutzt das unbestimmte 'man'; Franzoesisch il faut ohne Subjekt. Verbot: Deutsch 'darf nicht', Franzoesisch il est interdit de / il ne faut pas.",
+        "fr": "Allemand : 'man muss' avec le pronom man ; français : il faut sans sujet. Interdiction : allemand 'darf nicht', français il est interdit de."
+      },
+      "examples": [
+        {
+          "de": "Man muss hier anhalten.",
+          "fr": "Il faut s'arrêter ici.",
+          "hint": {
+            "de": "keine Person vor il faut",
+            "fr": "aucun sujet devant il faut"
+          }
+        },
+        {
+          "de": "Hier darf man nicht rauchen.",
+          "fr": "Il est interdit de fumer ici.",
+          "hint": {
+            "de": "Verbot mit interdit",
+            "fr": "l'interdiction : interdit de"
+          }
+        },
+        {
+          "de": "Ich muss heute frueh aufstehen.",
+          "fr": "Je dois me lever tôt aujourd'hui.",
+          "hint": {
+            "de": "Konjugiertes devoir",
+            "fr": "devoir conjugué"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Il je faut travailler.",
+        "correct": "Il faut travailler.",
+        "why": {
+          "de": "il faut ist eine feste Wendung; ein weiteres Subjektpronomen (je, tu) ist ungrammatisch. Fuer eine Person sagt man 'Je dois travailler'.",
+          "fr": "il faut est une expression figée ; aucun pronom sujet ne s'y ajoute. Pour une personne précise : 'Je dois travailler'."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Hier darf man nicht fotografieren.'",
+          "fr": "Traduisez : 'Hier darf man nicht fotografieren.'"
+        },
+        "solution": "Il est interdit de prendre des photos ici.",
+        "accepted": [
+          "Il ne faut pas prendre de photos ici."
+        ]
+      },
+      "tags": [
+        "devoir",
+        "il_faut",
+        "prohibition"
+      ]
+    }
+  ]
+}

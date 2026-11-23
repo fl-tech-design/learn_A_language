@@ -503,6 +503,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get russian => 'Russo';
 
   @override
+  String get greek => 'Greco';
+
+  @override
   String get motherTongueHint =>
       'Imposta la direzione della traduzione (parola e traduzione) per tutte le lingue del corso selezionate.';
 }

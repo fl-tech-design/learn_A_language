@@ -1,7 +1,7 @@
 name: learn_a_language
 description: A language learning app - Flutter migration from Kivy.
 publish_to: 'none'
-version: 1.10.0+22
+version: 1.11.0+23
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
@@ -36,6 +36,8 @@ flutter:
     - assets/language_dict/en/
     - assets/language_dict/fr/
     - assets/language_dict/es/
+    - assets/language_dict/el/
+    - assets/language_dict/ru/
     - assets/grammar/
     - assets/audio/de/verbs/arbeiten/
     - assets/audio/de/verbs/beginnen/
@@ -155,6 +157,65 @@ flutter:
     - assets/audio/es/verbs/venir/
     - assets/audio/es/verbs/ver/
     - assets/audio/es/verbs/vivir/
+    - assets/audio/el/verben/agapo/
+    - assets/audio/el/verben/agorazo/
+    - assets/audio/el/verben/anoigo/
+    - assets/audio/el/verben/boro/
+    - assets/audio/el/verben/chreiazomai/
+    - assets/audio/el/verben/diavazo/
+    - assets/audio/el/verben/doulevo/
+    - assets/audio/el/verben/echo/
+    - assets/audio/el/verben/mathaino/
+    - assets/audio/el/verben/eimai/
+    - assets/audio/el/verben/epitrepo/
+    - assets/audio/el/verben/erchomai/
+    - assets/audio/el/verben/grapho/
+    - assets/audio/el/verben/kano/
+    - assets/audio/el/verben/katalavaino/
+    - assets/audio/el/verben/katoiko/
+    - assets/audio/el/verben/kleino/
+    - assets/audio/el/verben/milao/
+    - assets/audio/el/verben/pigaino/
+    - assets/audio/el/verben/pino/
+    - assets/audio/el/verben/poulino/
+    - assets/audio/el/verben/prepei/
+    - assets/audio/el/verben/prepei_na/
+    - assets/audio/el/verben/teliono/
+    - assets/audio/el/verben/thelo/
+    - assets/audio/el/verben/troo/
+    - assets/audio/el/verben/vlepo/
+    - assets/audio/el/verben/voithao/
+    - assets/audio/el/verben/vrisko/
+    - assets/audio/el/verben/xekino/
+    - assets/audio/ru/verben/byt/
+    - assets/audio/ru/verben/chitat/
+    - assets/audio/ru/verben/delat/
+    - assets/audio/ru/verben/dolzhen/
+    - assets/audio/ru/verben/dolzhenstvovat/
+    - assets/audio/ru/verben/est/
+    - assets/audio/ru/verben/govorit/
+    - assets/audio/ru/verben/idti/
+    - assets/audio/ru/verben/imet/
+    - assets/audio/ru/verben/khotet/
+    - assets/audio/ru/verben/moch/
+    - assets/audio/ru/verben/nachinat/
+    - assets/audio/ru/verben/nakhodit/
+    - assets/audio/ru/verben/nravitsya/
+    - assets/audio/ru/verben/nuzhdatsya/
+    - assets/audio/ru/verben/otkryvat/
+    - assets/audio/ru/verben/pisat/
+    - assets/audio/ru/verben/pit/
+    - assets/audio/ru/verben/pokupat/
+    - assets/audio/ru/verben/pomogat/
+    - assets/audio/ru/verben/ponimat/
+    - assets/audio/ru/verben/prikhodit/
+    - assets/audio/ru/verben/prodavat/
+    - assets/audio/ru/verben/rabotat/
+    - assets/audio/ru/verben/uchit/
+    - assets/audio/ru/verben/videt/
+    - assets/audio/ru/verben/zakanchivat/
+    - assets/audio/ru/verben/zakryvat/
+    - assets/audio/ru/verben/zhit/
 
   fonts:
     - family: Jura

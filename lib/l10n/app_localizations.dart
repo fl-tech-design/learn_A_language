@@ -1064,6 +1064,12 @@ abstract class AppLocalizations {
   /// **'Russian'**
   String get russian;
 
+  /// No description provided for @greek.
+  ///
+  /// In en, this message translates to:
+  /// **'Greek'**
+  String get greek;
+
   /// No description provided for @motherTongueHint.
   ///
   /// In en, this message translates to:
