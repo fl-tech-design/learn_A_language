@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/schreiben/audio_ich_schrieb_m.mp3",
-        "audio/de/verben/schreiben/audio_du_schriebst_m.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_schrieb_m.mp3",
-        "audio/de/verben/schreiben/audio_wir_schrieben_m.mp3",
-        "audio/de/verben/schreiben/audio_ihr_schriebt_m.mp3",
-        "audio/de/verben/schreiben/audio_sie_schrieben_m.mp3"
+        "audio/de/verbs/schreiben/audio_ich_schrieb_m.mp3",
+        "audio/de/verbs/schreiben/audio_du_schriebst_m.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_schrieb_m.mp3",
+        "audio/de/verbs/schreiben/audio_wir_schrieben_m.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_schriebt_m.mp3",
+        "audio/de/verbs/schreiben/audio_sie_schrieben_m.mp3"
       ],
       [
-        "audio/de/verben/schreiben/audio_ich_schrieb_f.mp3",
-        "audio/de/verben/schreiben/audio_du_schriebst_f.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_schrieb_f.mp3",
-        "audio/de/verben/schreiben/audio_wir_schrieben_f.mp3",
-        "audio/de/verben/schreiben/audio_ihr_schriebt_f.mp3",
-        "audio/de/verben/schreiben/audio_sie_schrieben_f.mp3"
+        "audio/de/verbs/schreiben/audio_ich_schrieb_f.mp3",
+        "audio/de/verbs/schreiben/audio_du_schriebst_f.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_schrieb_f.mp3",
+        "audio/de/verbs/schreiben/audio_wir_schrieben_f.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_schriebt_f.mp3",
+        "audio/de/verbs/schreiben/audio_sie_schrieben_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/schreiben/audio_ich_schreibe_m.mp3",
-        "audio/de/verben/schreiben/audio_du_schreibst_m.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_schreibt_m.mp3",
-        "audio/de/verben/schreiben/audio_wir_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_ihr_schreibt_m.mp3",
-        "audio/de/verben/schreiben/audio_sie_schreiben_m.mp3"
+        "audio/de/verbs/schreiben/audio_ich_schreibe_m.mp3",
+        "audio/de/verbs/schreiben/audio_du_schreibst_m.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_schreibt_m.mp3",
+        "audio/de/verbs/schreiben/audio_wir_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_schreibt_m.mp3",
+        "audio/de/verbs/schreiben/audio_sie_schreiben_m.mp3"
       ],
       [
-        "audio/de/verben/schreiben/audio_ich_schreibe_f.mp3",
-        "audio/de/verben/schreiben/audio_du_schreibst_f.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_schreibt_f.mp3",
-        "audio/de/verben/schreiben/audio_wir_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_ihr_schreibt_f.mp3",
-        "audio/de/verben/schreiben/audio_sie_schreiben_f.mp3"
+        "audio/de/verbs/schreiben/audio_ich_schreibe_f.mp3",
+        "audio/de/verbs/schreiben/audio_du_schreibst_f.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_schreibt_f.mp3",
+        "audio/de/verbs/schreiben/audio_wir_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_schreibt_f.mp3",
+        "audio/de/verbs/schreiben/audio_sie_schreiben_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/schreiben/audio_ich_werde_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_du_wirst_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_wird_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_wir_werden_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_ihr_werdet_schreiben_m.mp3",
-        "audio/de/verben/schreiben/audio_sie_werden_schreiben_m.mp3"
+        "audio/de/verbs/schreiben/audio_ich_werde_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_du_wirst_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_wird_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_wir_werden_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_werdet_schreiben_m.mp3",
+        "audio/de/verbs/schreiben/audio_sie_werden_schreiben_m.mp3"
       ],
       [
-        "audio/de/verben/schreiben/audio_ich_werde_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_du_wirst_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_er_sie_es_wird_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_wir_werden_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_ihr_werdet_schreiben_f.mp3",
-        "audio/de/verben/schreiben/audio_sie_werden_schreiben_f.mp3"
+        "audio/de/verbs/schreiben/audio_ich_werde_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_du_wirst_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_er_sie_es_wird_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_wir_werden_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_ihr_werdet_schreiben_f.mp3",
+        "audio/de/verbs/schreiben/audio_sie_werden_schreiben_f.mp3"
       ]
     ]
   }

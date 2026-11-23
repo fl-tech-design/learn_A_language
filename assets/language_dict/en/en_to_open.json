@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to open/audio_i_opened_m.mp3",
-        "audio/en/to open/audio_you_opened_m.mp3",
-        "audio/en/to open/audio_he_she_it_opened_m.mp3",
-        "audio/en/to open/audio_we_opened_m.mp3",
-        "audio/en/to open/audio_you_opened_(pl)_m.mp3",
-        "audio/en/to open/audio_they_opened_m.mp3"
+        "audio/en/verbs/to open/audio_i_opened_m.mp3",
+        "audio/en/verbs/to open/audio_you_opened_m.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_opened_m.mp3",
+        "audio/en/verbs/to open/audio_we_opened_m.mp3",
+        "audio/en/verbs/to open/audio_you_opened_(pl)_m.mp3",
+        "audio/en/verbs/to open/audio_they_opened_m.mp3"
       ],
       [
-        "audio/en/to open/audio_i_opened_f.mp3",
-        "audio/en/to open/audio_you_opened_f.mp3",
-        "audio/en/to open/audio_he_she_it_opened_f.mp3",
-        "audio/en/to open/audio_we_opened_f.mp3",
-        "audio/en/to open/audio_you_opened_(pl)_f.mp3",
-        "audio/en/to open/audio_they_opened_f.mp3"
+        "audio/en/verbs/to open/audio_i_opened_f.mp3",
+        "audio/en/verbs/to open/audio_you_opened_f.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_opened_f.mp3",
+        "audio/en/verbs/to open/audio_we_opened_f.mp3",
+        "audio/en/verbs/to open/audio_you_opened_(pl)_f.mp3",
+        "audio/en/verbs/to open/audio_they_opened_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to open/audio_i_open_m.mp3",
-        "audio/en/to open/audio_you_open_m.mp3",
-        "audio/en/to open/audio_he_she_it_opens_m.mp3",
-        "audio/en/to open/audio_we_open_m.mp3",
-        "audio/en/to open/audio_you_open_(pl)_m.mp3",
-        "audio/en/to open/audio_they_open_m.mp3"
+        "audio/en/verbs/to open/audio_i_open_m.mp3",
+        "audio/en/verbs/to open/audio_you_open_m.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_opens_m.mp3",
+        "audio/en/verbs/to open/audio_we_open_m.mp3",
+        "audio/en/verbs/to open/audio_you_open_(pl)_m.mp3",
+        "audio/en/verbs/to open/audio_they_open_m.mp3"
       ],
       [
-        "audio/en/to open/audio_i_open_f.mp3",
-        "audio/en/to open/audio_you_open_f.mp3",
-        "audio/en/to open/audio_he_she_it_opens_f.mp3",
-        "audio/en/to open/audio_we_open_f.mp3",
-        "audio/en/to open/audio_you_open_(pl)_f.mp3",
-        "audio/en/to open/audio_they_open_f.mp3"
+        "audio/en/verbs/to open/audio_i_open_f.mp3",
+        "audio/en/verbs/to open/audio_you_open_f.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_opens_f.mp3",
+        "audio/en/verbs/to open/audio_we_open_f.mp3",
+        "audio/en/verbs/to open/audio_you_open_(pl)_f.mp3",
+        "audio/en/verbs/to open/audio_they_open_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to open/audio_i_will_open_m.mp3",
-        "audio/en/to open/audio_you_will_open_m.mp3",
-        "audio/en/to open/audio_he_she_it_will_open_m.mp3",
-        "audio/en/to open/audio_we_will_open_m.mp3",
-        "audio/en/to open/audio_you_will_open_(pl)_m.mp3",
-        "audio/en/to open/audio_they_will_open_m.mp3"
+        "audio/en/verbs/to open/audio_i_will_open_m.mp3",
+        "audio/en/verbs/to open/audio_you_will_open_m.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_will_open_m.mp3",
+        "audio/en/verbs/to open/audio_we_will_open_m.mp3",
+        "audio/en/verbs/to open/audio_you_will_open_(pl)_m.mp3",
+        "audio/en/verbs/to open/audio_they_will_open_m.mp3"
       ],
       [
-        "audio/en/to open/audio_i_will_open_f.mp3",
-        "audio/en/to open/audio_you_will_open_f.mp3",
-        "audio/en/to open/audio_he_she_it_will_open_f.mp3",
-        "audio/en/to open/audio_we_will_open_f.mp3",
-        "audio/en/to open/audio_you_will_open_(pl)_f.mp3",
-        "audio/en/to open/audio_they_will_open_f.mp3"
+        "audio/en/verbs/to open/audio_i_will_open_f.mp3",
+        "audio/en/verbs/to open/audio_you_will_open_f.mp3",
+        "audio/en/verbs/to open/audio_he_she_it_will_open_f.mp3",
+        "audio/en/verbs/to open/audio_we_will_open_f.mp3",
+        "audio/en/verbs/to open/audio_you_will_open_(pl)_f.mp3",
+        "audio/en/verbs/to open/audio_they_will_open_f.mp3"
       ]
     ]
   }

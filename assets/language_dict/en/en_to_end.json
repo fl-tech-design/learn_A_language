@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to end/audio_i_ended_m.mp3",
-        "audio/en/to end/audio_you_ended_m.mp3",
-        "audio/en/to end/audio_he_she_it_ended_m.mp3",
-        "audio/en/to end/audio_we_ended_m.mp3",
-        "audio/en/to end/audio_you_ended_(pl)_m.mp3",
-        "audio/en/to end/audio_they_ended_m.mp3"
+        "audio/en/verbs/to end/audio_i_ended_m.mp3",
+        "audio/en/verbs/to end/audio_you_ended_m.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_ended_m.mp3",
+        "audio/en/verbs/to end/audio_we_ended_m.mp3",
+        "audio/en/verbs/to end/audio_you_ended_(pl)_m.mp3",
+        "audio/en/verbs/to end/audio_they_ended_m.mp3"
       ],
       [
-        "audio/en/to end/audio_i_ended_f.mp3",
-        "audio/en/to end/audio_you_ended_f.mp3",
-        "audio/en/to end/audio_he_she_it_ended_f.mp3",
-        "audio/en/to end/audio_we_ended_f.mp3",
-        "audio/en/to end/audio_you_ended_(pl)_f.mp3",
-        "audio/en/to end/audio_they_ended_f.mp3"
+        "audio/en/verbs/to end/audio_i_ended_f.mp3",
+        "audio/en/verbs/to end/audio_you_ended_f.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_ended_f.mp3",
+        "audio/en/verbs/to end/audio_we_ended_f.mp3",
+        "audio/en/verbs/to end/audio_you_ended_(pl)_f.mp3",
+        "audio/en/verbs/to end/audio_they_ended_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to end/audio_i_end_m.mp3",
-        "audio/en/to end/audio_you_end_m.mp3",
-        "audio/en/to end/audio_he_she_it_ends_m.mp3",
-        "audio/en/to end/audio_we_end_m.mp3",
-        "audio/en/to end/audio_you_end_(pl)_m.mp3",
-        "audio/en/to end/audio_they_end_m.mp3"
+        "audio/en/verbs/to end/audio_i_end_m.mp3",
+        "audio/en/verbs/to end/audio_you_end_m.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_ends_m.mp3",
+        "audio/en/verbs/to end/audio_we_end_m.mp3",
+        "audio/en/verbs/to end/audio_you_end_(pl)_m.mp3",
+        "audio/en/verbs/to end/audio_they_end_m.mp3"
       ],
       [
-        "audio/en/to end/audio_i_end_f.mp3",
-        "audio/en/to end/audio_you_end_f.mp3",
-        "audio/en/to end/audio_he_she_it_ends_f.mp3",
-        "audio/en/to end/audio_we_end_f.mp3",
-        "audio/en/to end/audio_you_end_(pl)_f.mp3",
-        "audio/en/to end/audio_they_end_f.mp3"
+        "audio/en/verbs/to end/audio_i_end_f.mp3",
+        "audio/en/verbs/to end/audio_you_end_f.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_ends_f.mp3",
+        "audio/en/verbs/to end/audio_we_end_f.mp3",
+        "audio/en/verbs/to end/audio_you_end_(pl)_f.mp3",
+        "audio/en/verbs/to end/audio_they_end_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to end/audio_i_will_end_m.mp3",
-        "audio/en/to end/audio_you_will_end_m.mp3",
-        "audio/en/to end/audio_he_she_it_will_end_m.mp3",
-        "audio/en/to end/audio_we_will_end_m.mp3",
-        "audio/en/to end/audio_you_will_end_(pl)_m.mp3",
-        "audio/en/to end/audio_they_will_end_m.mp3"
+        "audio/en/verbs/to end/audio_i_will_end_m.mp3",
+        "audio/en/verbs/to end/audio_you_will_end_m.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_will_end_m.mp3",
+        "audio/en/verbs/to end/audio_we_will_end_m.mp3",
+        "audio/en/verbs/to end/audio_you_will_end_(pl)_m.mp3",
+        "audio/en/verbs/to end/audio_they_will_end_m.mp3"
       ],
       [
-        "audio/en/to end/audio_i_will_end_f.mp3",
-        "audio/en/to end/audio_you_will_end_f.mp3",
-        "audio/en/to end/audio_he_she_it_will_end_f.mp3",
-        "audio/en/to end/audio_we_will_end_f.mp3",
-        "audio/en/to end/audio_you_will_end_(pl)_f.mp3",
-        "audio/en/to end/audio_they_will_end_f.mp3"
+        "audio/en/verbs/to end/audio_i_will_end_f.mp3",
+        "audio/en/verbs/to end/audio_you_will_end_f.mp3",
+        "audio/en/verbs/to end/audio_he_she_it_will_end_f.mp3",
+        "audio/en/verbs/to end/audio_we_will_end_f.mp3",
+        "audio/en/verbs/to end/audio_you_will_end_(pl)_f.mp3",
+        "audio/en/verbs/to end/audio_they_will_end_f.mp3"
       ]
     ]
   }

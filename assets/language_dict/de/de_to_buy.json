@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/kaufen/audio_ich_kaufte_m.mp3",
-        "audio/de/verben/kaufen/audio_du_kauftest_m.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_kaufte_m.mp3",
-        "audio/de/verben/kaufen/audio_wir_kauften_m.mp3",
-        "audio/de/verben/kaufen/audio_ihr_kauftet_m.mp3",
-        "audio/de/verben/kaufen/audio_sie_kauften_m.mp3"
+        "audio/de/verbs/kaufen/audio_ich_kaufte_m.mp3",
+        "audio/de/verbs/kaufen/audio_du_kauftest_m.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_kaufte_m.mp3",
+        "audio/de/verbs/kaufen/audio_wir_kauften_m.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_kauftet_m.mp3",
+        "audio/de/verbs/kaufen/audio_sie_kauften_m.mp3"
       ],
       [
-        "audio/de/verben/kaufen/audio_ich_kaufte_f.mp3",
-        "audio/de/verben/kaufen/audio_du_kauftest_f.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_kaufte_f.mp3",
-        "audio/de/verben/kaufen/audio_wir_kauften_f.mp3",
-        "audio/de/verben/kaufen/audio_ihr_kauftet_f.mp3",
-        "audio/de/verben/kaufen/audio_sie_kauften_f.mp3"
+        "audio/de/verbs/kaufen/audio_ich_kaufte_f.mp3",
+        "audio/de/verbs/kaufen/audio_du_kauftest_f.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_kaufte_f.mp3",
+        "audio/de/verbs/kaufen/audio_wir_kauften_f.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_kauftet_f.mp3",
+        "audio/de/verbs/kaufen/audio_sie_kauften_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/kaufen/audio_ich_kaufe_m.mp3",
-        "audio/de/verben/kaufen/audio_du_kaufst_m.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_kauft_m.mp3",
-        "audio/de/verben/kaufen/audio_wir_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_ihr_kauft_m.mp3",
-        "audio/de/verben/kaufen/audio_sie_kaufen_m.mp3"
+        "audio/de/verbs/kaufen/audio_ich_kaufe_m.mp3",
+        "audio/de/verbs/kaufen/audio_du_kaufst_m.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_kauft_m.mp3",
+        "audio/de/verbs/kaufen/audio_wir_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_kauft_m.mp3",
+        "audio/de/verbs/kaufen/audio_sie_kaufen_m.mp3"
       ],
       [
-        "audio/de/verben/kaufen/audio_ich_kaufe_f.mp3",
-        "audio/de/verben/kaufen/audio_du_kaufst_f.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_kauft_f.mp3",
-        "audio/de/verben/kaufen/audio_wir_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_ihr_kauft_f.mp3",
-        "audio/de/verben/kaufen/audio_sie_kaufen_f.mp3"
+        "audio/de/verbs/kaufen/audio_ich_kaufe_f.mp3",
+        "audio/de/verbs/kaufen/audio_du_kaufst_f.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_kauft_f.mp3",
+        "audio/de/verbs/kaufen/audio_wir_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_kauft_f.mp3",
+        "audio/de/verbs/kaufen/audio_sie_kaufen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/kaufen/audio_ich_werde_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_du_wirst_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_wird_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_wir_werden_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_ihr_werdet_kaufen_m.mp3",
-        "audio/de/verben/kaufen/audio_sie_werden_kaufen_m.mp3"
+        "audio/de/verbs/kaufen/audio_ich_werde_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_du_wirst_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_wird_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_wir_werden_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_werdet_kaufen_m.mp3",
+        "audio/de/verbs/kaufen/audio_sie_werden_kaufen_m.mp3"
       ],
       [
-        "audio/de/verben/kaufen/audio_ich_werde_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_du_wirst_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_er_sie_es_wird_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_wir_werden_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_ihr_werdet_kaufen_f.mp3",
-        "audio/de/verben/kaufen/audio_sie_werden_kaufen_f.mp3"
+        "audio/de/verbs/kaufen/audio_ich_werde_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_du_wirst_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_er_sie_es_wird_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_wir_werden_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_ihr_werdet_kaufen_f.mp3",
+        "audio/de/verbs/kaufen/audio_sie_werden_kaufen_f.mp3"
       ]
     ]
   }

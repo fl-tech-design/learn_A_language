@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/travailler/audio_je_travaillais_f.mp3",
-        "audio/fr/travailler/audio_tu_travaillais_f.mp3",
-        "audio/fr/travailler/audio_il_elle_on_travaillait_f.mp3",
-        "audio/fr/travailler/audio_nous_travaillions_f.mp3",
-        "audio/fr/travailler/audio_vous_travailliez_f.mp3",
-        "audio/fr/travailler/audio_ils_elles_travaillaient_f.mp3"
+        "audio/fr/verbs/travailler/audio_je_travaillais_f.mp3",
+        "audio/fr/verbs/travailler/audio_tu_travaillais_f.mp3",
+        "audio/fr/verbs/travailler/audio_il_elle_on_travaillait_f.mp3",
+        "audio/fr/verbs/travailler/audio_nous_travaillions_f.mp3",
+        "audio/fr/verbs/travailler/audio_vous_travailliez_f.mp3",
+        "audio/fr/verbs/travailler/audio_ils_elles_travaillaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/travailler/audio_je_travaille_f.mp3",
-        "audio/fr/travailler/audio_tu_travailles_f.mp3",
-        "audio/fr/travailler/audio_il_elle_on_travaille_f.mp3",
-        "audio/fr/travailler/audio_nous_travaillons_f.mp3",
-        "audio/fr/travailler/audio_vous_travaillez_f.mp3",
-        "audio/fr/travailler/audio_ils_elles_travaillent_f.mp3"
+        "audio/fr/verbs/travailler/audio_je_travaille_f.mp3",
+        "audio/fr/verbs/travailler/audio_tu_travailles_f.mp3",
+        "audio/fr/verbs/travailler/audio_il_elle_on_travaille_f.mp3",
+        "audio/fr/verbs/travailler/audio_nous_travaillons_f.mp3",
+        "audio/fr/verbs/travailler/audio_vous_travaillez_f.mp3",
+        "audio/fr/verbs/travailler/audio_ils_elles_travaillent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/travailler/audio_je_travaillerai_f.mp3",
-        "audio/fr/travailler/audio_tu_travailleras_f.mp3",
-        "audio/fr/travailler/audio_il_elle_on_travaillera_f.mp3",
-        "audio/fr/travailler/audio_nous_travaillerons_f.mp3",
-        "audio/fr/travailler/audio_vous_travaillerez_f.mp3",
-        "audio/fr/travailler/audio_ils_elles_travailleront_f.mp3"
+        "audio/fr/verbs/travailler/audio_je_travaillerai_f.mp3",
+        "audio/fr/verbs/travailler/audio_tu_travailleras_f.mp3",
+        "audio/fr/verbs/travailler/audio_il_elle_on_travaillera_f.mp3",
+        "audio/fr/verbs/travailler/audio_nous_travaillerons_f.mp3",
+        "audio/fr/verbs/travailler/audio_vous_travaillerez_f.mp3",
+        "audio/fr/verbs/travailler/audio_ils_elles_travailleront_f.mp3"
       ]
     ]
   }

@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/trouver/audio_jai_trouve_f.mp3",
-        "audio/fr/trouver/audio_tu_as_trouve_f.mp3",
-        "audio/fr/trouver/audio_il_elle_on_a_trouve_f.mp3",
-        "audio/fr/trouver/audio_nous_avons_trouve_f.mp3",
-        "audio/fr/trouver/audio_vous_avez_trouve_f.mp3",
-        "audio/fr/trouver/audio_ils_elles_ont_trouve_f.mp3"
+        "audio/fr/verbs/trouver/audio_jai_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_tu_as_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_il_elle_on_a_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_nous_avons_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_vous_avez_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_ils_elles_ont_trouve_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/trouver/audio_je_trouve_f.mp3",
-        "audio/fr/trouver/audio_tu_trouves_f.mp3",
-        "audio/fr/trouver/audio_il_elle_on_trouve_f.mp3",
-        "audio/fr/trouver/audio_nous_trouvons_f.mp3",
-        "audio/fr/trouver/audio_vous_trouvez_f.mp3",
-        "audio/fr/trouver/audio_ils_elles_trouvent_f.mp3"
+        "audio/fr/verbs/trouver/audio_je_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_tu_trouves_f.mp3",
+        "audio/fr/verbs/trouver/audio_il_elle_on_trouve_f.mp3",
+        "audio/fr/verbs/trouver/audio_nous_trouvons_f.mp3",
+        "audio/fr/verbs/trouver/audio_vous_trouvez_f.mp3",
+        "audio/fr/verbs/trouver/audio_ils_elles_trouvent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/trouver/audio_je_trouverai_f.mp3",
-        "audio/fr/trouver/audio_tu_trouveras_f.mp3",
-        "audio/fr/trouver/audio_il_elle_on_trouvera_f.mp3",
-        "audio/fr/trouver/audio_nous_trouverons_f.mp3",
-        "audio/fr/trouver/audio_vous_trouverez_f.mp3",
-        "audio/fr/trouver/audio_ils_elles_trouveront_f.mp3"
+        "audio/fr/verbs/trouver/audio_je_trouverai_f.mp3",
+        "audio/fr/verbs/trouver/audio_tu_trouveras_f.mp3",
+        "audio/fr/verbs/trouver/audio_il_elle_on_trouvera_f.mp3",
+        "audio/fr/verbs/trouver/audio_nous_trouverons_f.mp3",
+        "audio/fr/verbs/trouver/audio_vous_trouverez_f.mp3",
+        "audio/fr/verbs/trouver/audio_ils_elles_trouveront_f.mp3"
       ]
     ]
   }

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to have/audio_i_had_m.mp3",
-        "audio/en/to have/audio_you_had_m.mp3",
-        "audio/en/to have/audio_he_she_it_had_m.mp3",
-        "audio/en/to have/audio_we_had_m.mp3",
-        "audio/en/to have/audio_you_had_(pl)_m.mp3",
-        "audio/en/to have/audio_they_had_m.mp3"
+        "audio/en/verbs/to have/audio_i_had_m.mp3",
+        "audio/en/verbs/to have/audio_you_had_m.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_had_m.mp3",
+        "audio/en/verbs/to have/audio_we_had_m.mp3",
+        "audio/en/verbs/to have/audio_you_had_(pl)_m.mp3",
+        "audio/en/verbs/to have/audio_they_had_m.mp3"
       ],
       [
-        "audio/en/to have/audio_i_had_f.mp3",
-        "audio/en/to have/audio_you_had_f.mp3",
-        "audio/en/to have/audio_he_she_it_had_f.mp3",
-        "audio/en/to have/audio_we_had_f.mp3",
-        "audio/en/to have/audio_you_had_(pl)_f.mp3",
-        "audio/en/to have/audio_they_had_f.mp3"
+        "audio/en/verbs/to have/audio_i_had_f.mp3",
+        "audio/en/verbs/to have/audio_you_had_f.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_had_f.mp3",
+        "audio/en/verbs/to have/audio_we_had_f.mp3",
+        "audio/en/verbs/to have/audio_you_had_(pl)_f.mp3",
+        "audio/en/verbs/to have/audio_they_had_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to have/audio_i_have_m.mp3",
-        "audio/en/to have/audio_you_have_m.mp3",
-        "audio/en/to have/audio_he_she_it_has_m.mp3",
-        "audio/en/to have/audio_we_have_m.mp3",
-        "audio/en/to have/audio_you_have_(pl)_m.mp3",
-        "audio/en/to have/audio_they_have_m.mp3"
+        "audio/en/verbs/to have/audio_i_have_m.mp3",
+        "audio/en/verbs/to have/audio_you_have_m.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_has_m.mp3",
+        "audio/en/verbs/to have/audio_we_have_m.mp3",
+        "audio/en/verbs/to have/audio_you_have_(pl)_m.mp3",
+        "audio/en/verbs/to have/audio_they_have_m.mp3"
       ],
       [
-        "audio/en/to have/audio_i_have_f.mp3",
-        "audio/en/to have/audio_you_have_f.mp3",
-        "audio/en/to have/audio_he_she_it_has_f.mp3",
-        "audio/en/to have/audio_we_have_f.mp3",
-        "audio/en/to have/audio_you_have_(pl)_f.mp3",
-        "audio/en/to have/audio_they_have_f.mp3"
+        "audio/en/verbs/to have/audio_i_have_f.mp3",
+        "audio/en/verbs/to have/audio_you_have_f.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_has_f.mp3",
+        "audio/en/verbs/to have/audio_we_have_f.mp3",
+        "audio/en/verbs/to have/audio_you_have_(pl)_f.mp3",
+        "audio/en/verbs/to have/audio_they_have_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to have/audio_i_will_have_m.mp3",
-        "audio/en/to have/audio_you_will_have_m.mp3",
-        "audio/en/to have/audio_he_she_it_will_have_m.mp3",
-        "audio/en/to have/audio_we_will_have_m.mp3",
-        "audio/en/to have/audio_you_will_have_(pl)_m.mp3",
-        "audio/en/to have/audio_they_will_have_m.mp3"
+        "audio/en/verbs/to have/audio_i_will_have_m.mp3",
+        "audio/en/verbs/to have/audio_you_will_have_m.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_will_have_m.mp3",
+        "audio/en/verbs/to have/audio_we_will_have_m.mp3",
+        "audio/en/verbs/to have/audio_you_will_have_(pl)_m.mp3",
+        "audio/en/verbs/to have/audio_they_will_have_m.mp3"
       ],
       [
-        "audio/en/to have/audio_i_will_have_f.mp3",
-        "audio/en/to have/audio_you_will_have_f.mp3",
-        "audio/en/to have/audio_he_she_it_will_have_f.mp3",
-        "audio/en/to have/audio_we_will_have_f.mp3",
-        "audio/en/to have/audio_you_will_have_(pl)_f.mp3",
-        "audio/en/to have/audio_they_will_have_f.mp3"
+        "audio/en/verbs/to have/audio_i_will_have_f.mp3",
+        "audio/en/verbs/to have/audio_you_will_have_f.mp3",
+        "audio/en/verbs/to have/audio_he_she_it_will_have_f.mp3",
+        "audio/en/verbs/to have/audio_we_will_have_f.mp3",
+        "audio/en/verbs/to have/audio_you_will_have_(pl)_f.mp3",
+        "audio/en/verbs/to have/audio_they_will_have_f.mp3"
       ]
     ]
   }

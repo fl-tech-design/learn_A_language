@@ -4,7 +4,7 @@ import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
 
-/// The translations for Greek (`el`).
+/// The translations for Modern Greek (`el`).
 class AppLocalizationsEl extends AppLocalizations {
   AppLocalizationsEl([String locale = 'el']) : super(locale);
 
@@ -202,8 +202,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get infDeleteUser => 'Εισαγάγετε το όνομα χρήστη προς διαγραφή.';
 
   @override
-  String get infLearning =>
-      'Επιλέξτε εδώ ποια ομάδα λέξεων θέλετε να μάθετε.';
+  String get infLearning => 'Επιλέξτε εδώ ποια ομάδα λέξεων θέλετε να μάθετε.';
 
   @override
   String get infSettings =>

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/lesen/audio_ich_las_m.mp3",
-        "audio/de/verben/lesen/audio_du_lasest_m.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_las_m.mp3",
-        "audio/de/verben/lesen/audio_wir_lasen_m.mp3",
-        "audio/de/verben/lesen/audio_ihr_last_m.mp3",
-        "audio/de/verben/lesen/audio_sie_lasen_m.mp3"
+        "audio/de/verbs/lesen/audio_ich_las_m.mp3",
+        "audio/de/verbs/lesen/audio_du_lasest_m.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_las_m.mp3",
+        "audio/de/verbs/lesen/audio_wir_lasen_m.mp3",
+        "audio/de/verbs/lesen/audio_ihr_last_m.mp3",
+        "audio/de/verbs/lesen/audio_sie_lasen_m.mp3"
       ],
       [
-        "audio/de/verben/lesen/audio_ich_las_f.mp3",
-        "audio/de/verben/lesen/audio_du_lasest_f.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_las_f.mp3",
-        "audio/de/verben/lesen/audio_wir_lasen_f.mp3",
-        "audio/de/verben/lesen/audio_ihr_last_f.mp3",
-        "audio/de/verben/lesen/audio_sie_lasen_f.mp3"
+        "audio/de/verbs/lesen/audio_ich_las_f.mp3",
+        "audio/de/verbs/lesen/audio_du_lasest_f.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_las_f.mp3",
+        "audio/de/verbs/lesen/audio_wir_lasen_f.mp3",
+        "audio/de/verbs/lesen/audio_ihr_last_f.mp3",
+        "audio/de/verbs/lesen/audio_sie_lasen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/lesen/audio_ich_lese_m.mp3",
-        "audio/de/verben/lesen/audio_du_liest_m.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_liest_m.mp3",
-        "audio/de/verben/lesen/audio_wir_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_ihr_lest_m.mp3",
-        "audio/de/verben/lesen/audio_sie_lesen_m.mp3"
+        "audio/de/verbs/lesen/audio_ich_lese_m.mp3",
+        "audio/de/verbs/lesen/audio_du_liest_m.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_liest_m.mp3",
+        "audio/de/verbs/lesen/audio_wir_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_ihr_lest_m.mp3",
+        "audio/de/verbs/lesen/audio_sie_lesen_m.mp3"
       ],
       [
-        "audio/de/verben/lesen/audio_ich_lese_f.mp3",
-        "audio/de/verben/lesen/audio_du_liest_f.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_liest_f.mp3",
-        "audio/de/verben/lesen/audio_wir_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_ihr_lest_f.mp3",
-        "audio/de/verben/lesen/audio_sie_lesen_f.mp3"
+        "audio/de/verbs/lesen/audio_ich_lese_f.mp3",
+        "audio/de/verbs/lesen/audio_du_liest_f.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_liest_f.mp3",
+        "audio/de/verbs/lesen/audio_wir_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_ihr_lest_f.mp3",
+        "audio/de/verbs/lesen/audio_sie_lesen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/lesen/audio_ich_werde_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_du_wirst_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_wird_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_wir_werden_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_ihr_werdet_lesen_m.mp3",
-        "audio/de/verben/lesen/audio_sie_werden_lesen_m.mp3"
+        "audio/de/verbs/lesen/audio_ich_werde_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_du_wirst_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_wird_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_wir_werden_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_ihr_werdet_lesen_m.mp3",
+        "audio/de/verbs/lesen/audio_sie_werden_lesen_m.mp3"
       ],
       [
-        "audio/de/verben/lesen/audio_ich_werde_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_du_wirst_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_er_sie_es_wird_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_wir_werden_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_ihr_werdet_lesen_f.mp3",
-        "audio/de/verben/lesen/audio_sie_werden_lesen_f.mp3"
+        "audio/de/verbs/lesen/audio_ich_werde_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_du_wirst_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_er_sie_es_wird_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_wir_werden_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_ihr_werdet_lesen_f.mp3",
+        "audio/de/verbs/lesen/audio_sie_werden_lesen_f.mp3"
       ]
     ]
   }

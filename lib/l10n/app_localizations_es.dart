@@ -57,10 +57,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get btnNextWord => 'Siguiente palabra';
 
   @override
-  String get btnPrev => 'Anterior';
+  String get btnPrev => 'Ant.';
 
   @override
-  String get btnRead => 'Leer';
+  String get btnRead => 'Leído';
 
   @override
   String get btnReview => 'Repasar';
@@ -87,7 +87,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get catNewWords => 'Nuevas palabras';
 
   @override
-  String get catReadWords => 'Leer palabras';
+  String get catReadWords => 'Palabras leídas';
 
   @override
   String get catSelect => 'Seleccionar una categoría';
@@ -221,13 +221,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get infWord =>
-      'Lee la palabra y la traducción, luego haz clic en \"Leer\".';
+      'Lee la palabra y la traducción, luego haz clic en \"Leído\".';
 
   @override
   String get information => 'Información';
 
   @override
-  String get inputHint => 'Lee la palabra y haz clic en \"Leer\"';
+  String get inputHint => 'Lee la palabra y haz clic en \"Leído\"';
 
   @override
   String get inputHintDue => 'Escribe la traducción';

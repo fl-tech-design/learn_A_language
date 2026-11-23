@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/aider/audio_jai_aide_f.mp3",
-        "audio/fr/aider/audio_tu_as_aide_f.mp3",
-        "audio/fr/aider/audio_il_elle_a_aide_f.mp3",
-        "audio/fr/aider/audio_nous_avons_aide_f.mp3",
-        "audio/fr/aider/audio_vous_avez_aide_f.mp3",
-        "audio/fr/aider/audio_ils_elles_ont_aide_f.mp3"
+        "audio/fr/verbs/aider/audio_jai_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_tu_as_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_il_elle_a_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_nous_avons_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_vous_avez_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_ils_elles_ont_aide_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/aider/audio_jaide_f.mp3",
-        "audio/fr/aider/audio_tu_aides_f.mp3",
-        "audio/fr/aider/audio_il_elle_aide_f.mp3",
-        "audio/fr/aider/audio_nous_aidons_f.mp3",
-        "audio/fr/aider/audio_vous_aidez_f.mp3",
-        "audio/fr/aider/audio_ils_elles_aident_f.mp3"
+        "audio/fr/verbs/aider/audio_jaide_f.mp3",
+        "audio/fr/verbs/aider/audio_tu_aides_f.mp3",
+        "audio/fr/verbs/aider/audio_il_elle_aide_f.mp3",
+        "audio/fr/verbs/aider/audio_nous_aidons_f.mp3",
+        "audio/fr/verbs/aider/audio_vous_aidez_f.mp3",
+        "audio/fr/verbs/aider/audio_ils_elles_aident_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/aider/audio_jaiderai_f.mp3",
-        "audio/fr/aider/audio_tu_aideras_f.mp3",
-        "audio/fr/aider/audio_il_elle_aidera_f.mp3",
-        "audio/fr/aider/audio_nous_aiderons_f.mp3",
-        "audio/fr/aider/audio_vous_aiderez_f.mp3",
-        "audio/fr/aider/audio_ils_elles_aideront_f.mp3"
+        "audio/fr/verbs/aider/audio_jaiderai_f.mp3",
+        "audio/fr/verbs/aider/audio_tu_aideras_f.mp3",
+        "audio/fr/verbs/aider/audio_il_elle_aidera_f.mp3",
+        "audio/fr/verbs/aider/audio_nous_aiderons_f.mp3",
+        "audio/fr/verbs/aider/audio_vous_aiderez_f.mp3",
+        "audio/fr/verbs/aider/audio_ils_elles_aideront_f.mp3"
       ]
     ]
   }

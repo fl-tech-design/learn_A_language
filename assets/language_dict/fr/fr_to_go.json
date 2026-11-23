@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/aller/audio_je_suis_alle_f.mp3",
-        "audio/fr/aller/audio_tu_es_alle_f.mp3",
-        "audio/fr/aller/audio_il_elle_on_est_alle_f.mp3",
-        "audio/fr/aller/audio_nous_sommes_alles_f.mp3",
-        "audio/fr/aller/audio_vous_etes_alles_f.mp3",
-        "audio/fr/aller/audio_ils_elles_sont_alles_f.mp3"
+        "audio/fr/verbs/aller/audio_je_suis_alle_f.mp3",
+        "audio/fr/verbs/aller/audio_tu_es_alle_f.mp3",
+        "audio/fr/verbs/aller/audio_il_elle_on_est_alle_f.mp3",
+        "audio/fr/verbs/aller/audio_nous_sommes_alles_f.mp3",
+        "audio/fr/verbs/aller/audio_vous_etes_alles_f.mp3",
+        "audio/fr/verbs/aller/audio_ils_elles_sont_alles_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/aller/audio_je_vais_f.mp3",
-        "audio/fr/aller/audio_tu_vas_f.mp3",
-        "audio/fr/aller/audio_il_elle_on_va_f.mp3",
-        "audio/fr/aller/audio_nous_allons_f.mp3",
-        "audio/fr/aller/audio_vous_allez_f.mp3",
-        "audio/fr/aller/audio_ils_elles_vont_f.mp3"
+        "audio/fr/verbs/aller/audio_je_vais_f.mp3",
+        "audio/fr/verbs/aller/audio_tu_vas_f.mp3",
+        "audio/fr/verbs/aller/audio_il_elle_on_va_f.mp3",
+        "audio/fr/verbs/aller/audio_nous_allons_f.mp3",
+        "audio/fr/verbs/aller/audio_vous_allez_f.mp3",
+        "audio/fr/verbs/aller/audio_ils_elles_vont_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/aller/audio_jirai_f.mp3",
-        "audio/fr/aller/audio_tu_iras_f.mp3",
-        "audio/fr/aller/audio_il_elle_on_ira_f.mp3",
-        "audio/fr/aller/audio_nous_irons_f.mp3",
-        "audio/fr/aller/audio_vous_irez_f.mp3",
-        "audio/fr/aller/audio_ils_elles_iront_f.mp3"
+        "audio/fr/verbs/aller/audio_jirai_f.mp3",
+        "audio/fr/verbs/aller/audio_tu_iras_f.mp3",
+        "audio/fr/verbs/aller/audio_il_elle_on_ira_f.mp3",
+        "audio/fr/verbs/aller/audio_nous_irons_f.mp3",
+        "audio/fr/verbs/aller/audio_vous_irez_f.mp3",
+        "audio/fr/verbs/aller/audio_ils_elles_iront_f.mp3"
       ]
     ]
   }

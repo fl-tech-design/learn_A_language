@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/écrire/audio_jai_ecrit_f.mp3",
-        "audio/fr/écrire/audio_tu_as_ecrit_f.mp3",
-        "audio/fr/écrire/audio_il_elle_on_a_ecrit_f.mp3",
-        "audio/fr/écrire/audio_nous_avons_ecrit_f.mp3",
-        "audio/fr/écrire/audio_vous_avez_ecrit_f.mp3",
-        "audio/fr/écrire/audio_ils_elles_ont_ecrit_f.mp3"
+        "audio/fr/verbs/écrire/audio_jai_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_tu_as_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_il_elle_on_a_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_nous_avons_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_vous_avez_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_ils_elles_ont_ecrit_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/écrire/audio_jecris_f.mp3",
-        "audio/fr/écrire/audio_tu_ecris_f.mp3",
-        "audio/fr/écrire/audio_il_elle_on_ecrit_f.mp3",
-        "audio/fr/écrire/audio_nous_ecrivons_f.mp3",
-        "audio/fr/écrire/audio_vous_ecrivez_f.mp3",
-        "audio/fr/écrire/audio_ils_elles_ecrivent_f.mp3"
+        "audio/fr/verbs/écrire/audio_jecris_f.mp3",
+        "audio/fr/verbs/écrire/audio_tu_ecris_f.mp3",
+        "audio/fr/verbs/écrire/audio_il_elle_on_ecrit_f.mp3",
+        "audio/fr/verbs/écrire/audio_nous_ecrivons_f.mp3",
+        "audio/fr/verbs/écrire/audio_vous_ecrivez_f.mp3",
+        "audio/fr/verbs/écrire/audio_ils_elles_ecrivent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/écrire/audio_jecrirai_f.mp3",
-        "audio/fr/écrire/audio_tu_ecriras_f.mp3",
-        "audio/fr/écrire/audio_il_elle_on_ecrira_f.mp3",
-        "audio/fr/écrire/audio_nous_ecrirons_f.mp3",
-        "audio/fr/écrire/audio_vous_ecrirez_f.mp3",
-        "audio/fr/écrire/audio_ils_elles_ecriront_f.mp3"
+        "audio/fr/verbs/écrire/audio_jecrirai_f.mp3",
+        "audio/fr/verbs/écrire/audio_tu_ecriras_f.mp3",
+        "audio/fr/verbs/écrire/audio_il_elle_on_ecrira_f.mp3",
+        "audio/fr/verbs/écrire/audio_nous_ecrirons_f.mp3",
+        "audio/fr/verbs/écrire/audio_vous_ecrirez_f.mp3",
+        "audio/fr/verbs/écrire/audio_ils_elles_ecriront_f.mp3"
       ]
     ]
   }

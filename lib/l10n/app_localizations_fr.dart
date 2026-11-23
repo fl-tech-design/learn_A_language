@@ -60,7 +60,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get btnPrev => 'Préc.';
 
   @override
-  String get btnRead => 'Lire';
+  String get btnRead => 'Lu';
 
   @override
   String get btnReview => 'Réviser';
@@ -87,7 +87,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get catNewWords => 'Nouveaux mots';
 
   @override
-  String get catReadWords => 'Lire les mots';
+  String get catReadWords => 'Mots lus';
 
   @override
   String get catSelect => 'Sélectionner une catégorie';
@@ -199,8 +199,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get german => 'Allemand';
 
   @override
-  String get infDeleteUser =>
-      'Entrez le nom d\'utilisateur à supprimer.';
+  String get infDeleteUser => 'Entrez le nom d\'utilisateur à supprimer.';
 
   @override
   String get infLearning =>
@@ -215,21 +214,20 @@ class AppLocalizationsFr extends AppLocalizations {
       'Vous êtes sur la page d\'accueil. À partir d\'ici, vous pouvez commencer à explorer toute l\'application.';
 
   @override
-  String get infUserReg =>
-      'Veuillez saisir \nun nom d\'utilisateur.';
+  String get infUserReg => 'Veuillez saisir \nun nom d\'utilisateur.';
 
   @override
   String get infUsername => 'Saisissez au moins 1 caractère.';
 
   @override
   String get infWord =>
-      'Lisez le mot et la traduction, puis cliquez sur « Lire ».';
+      'Lisez le mot et la traduction, puis cliquez sur « Lu ».';
 
   @override
   String get information => 'Informations';
 
   @override
-  String get inputHint => 'Lisez le mot et cliquez sur « Lire »';
+  String get inputHint => 'Lisez le mot et cliquez sur « Lu »';
 
   @override
   String get inputHintDue => 'Saisissez la traduction';

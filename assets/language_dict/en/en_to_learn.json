@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to learn/audio_i_learned_m.mp3",
-        "audio/en/to learn/audio_you_learned_m.mp3",
-        "audio/en/to learn/audio_he_she_it_learned_m.mp3",
-        "audio/en/to learn/audio_we_learned_m.mp3",
-        "audio/en/to learn/audio_you_learned_(pl)_m.mp3",
-        "audio/en/to learn/audio_they_learned_m.mp3"
+        "audio/en/verbs/to learn/audio_i_learned_m.mp3",
+        "audio/en/verbs/to learn/audio_you_learned_m.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_learned_m.mp3",
+        "audio/en/verbs/to learn/audio_we_learned_m.mp3",
+        "audio/en/verbs/to learn/audio_you_learned_(pl)_m.mp3",
+        "audio/en/verbs/to learn/audio_they_learned_m.mp3"
       ],
       [
-        "audio/en/to learn/audio_i_learned_f.mp3",
-        "audio/en/to learn/audio_you_learned_f.mp3",
-        "audio/en/to learn/audio_he_she_it_learned_f.mp3",
-        "audio/en/to learn/audio_we_learned_f.mp3",
-        "audio/en/to learn/audio_you_learned_(pl)_f.mp3",
-        "audio/en/to learn/audio_they_learned_f.mp3"
+        "audio/en/verbs/to learn/audio_i_learned_f.mp3",
+        "audio/en/verbs/to learn/audio_you_learned_f.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_learned_f.mp3",
+        "audio/en/verbs/to learn/audio_we_learned_f.mp3",
+        "audio/en/verbs/to learn/audio_you_learned_(pl)_f.mp3",
+        "audio/en/verbs/to learn/audio_they_learned_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to learn/audio_i_learn_m.mp3",
-        "audio/en/to learn/audio_you_learn_m.mp3",
-        "audio/en/to learn/audio_he_she_it_learns_m.mp3",
-        "audio/en/to learn/audio_we_learn_m.mp3",
-        "audio/en/to learn/audio_you_learn_(pl)_m.mp3",
-        "audio/en/to learn/audio_they_learn_m.mp3"
+        "audio/en/verbs/to learn/audio_i_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_you_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_learns_m.mp3",
+        "audio/en/verbs/to learn/audio_we_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_you_learn_(pl)_m.mp3",
+        "audio/en/verbs/to learn/audio_they_learn_m.mp3"
       ],
       [
-        "audio/en/to learn/audio_i_learn_f.mp3",
-        "audio/en/to learn/audio_you_learn_f.mp3",
-        "audio/en/to learn/audio_he_she_it_learns_f.mp3",
-        "audio/en/to learn/audio_we_learn_f.mp3",
-        "audio/en/to learn/audio_you_learn_(pl)_f.mp3",
-        "audio/en/to learn/audio_they_learn_f.mp3"
+        "audio/en/verbs/to learn/audio_i_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_you_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_learns_f.mp3",
+        "audio/en/verbs/to learn/audio_we_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_you_learn_(pl)_f.mp3",
+        "audio/en/verbs/to learn/audio_they_learn_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to learn/audio_i_will_learn_m.mp3",
-        "audio/en/to learn/audio_you_will_learn_m.mp3",
-        "audio/en/to learn/audio_he_she_it_will_learn_m.mp3",
-        "audio/en/to learn/audio_we_will_learn_m.mp3",
-        "audio/en/to learn/audio_you_will_learn_(pl)_m.mp3",
-        "audio/en/to learn/audio_they_will_learn_m.mp3"
+        "audio/en/verbs/to learn/audio_i_will_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_you_will_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_will_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_we_will_learn_m.mp3",
+        "audio/en/verbs/to learn/audio_you_will_learn_(pl)_m.mp3",
+        "audio/en/verbs/to learn/audio_they_will_learn_m.mp3"
       ],
       [
-        "audio/en/to learn/audio_i_will_learn_f.mp3",
-        "audio/en/to learn/audio_you_will_learn_f.mp3",
-        "audio/en/to learn/audio_he_she_it_will_learn_f.mp3",
-        "audio/en/to learn/audio_we_will_learn_f.mp3",
-        "audio/en/to learn/audio_you_will_learn_(pl)_f.mp3",
-        "audio/en/to learn/audio_they_will_learn_f.mp3"
+        "audio/en/verbs/to learn/audio_i_will_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_you_will_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_he_she_it_will_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_we_will_learn_f.mp3",
+        "audio/en/verbs/to learn/audio_you_will_learn_(pl)_f.mp3",
+        "audio/en/verbs/to learn/audio_they_will_learn_f.mp3"
       ]
     ]
   }

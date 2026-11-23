@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/trinken/audio_ich_trank_m.mp3",
-        "audio/de/verben/trinken/audio_du_trankst_m.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_trank_m.mp3",
-        "audio/de/verben/trinken/audio_wir_tranken_m.mp3",
-        "audio/de/verben/trinken/audio_ihr_trankt_m.mp3",
-        "audio/de/verben/trinken/audio_sie_tranken_m.mp3"
+        "audio/de/verbs/trinken/audio_ich_trank_m.mp3",
+        "audio/de/verbs/trinken/audio_du_trankst_m.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_trank_m.mp3",
+        "audio/de/verbs/trinken/audio_wir_tranken_m.mp3",
+        "audio/de/verbs/trinken/audio_ihr_trankt_m.mp3",
+        "audio/de/verbs/trinken/audio_sie_tranken_m.mp3"
       ],
       [
-        "audio/de/verben/trinken/audio_ich_trank_f.mp3",
-        "audio/de/verben/trinken/audio_du_trankst_f.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_trank_f.mp3",
-        "audio/de/verben/trinken/audio_wir_tranken_f.mp3",
-        "audio/de/verben/trinken/audio_ihr_trankt_f.mp3",
-        "audio/de/verben/trinken/audio_sie_tranken_f.mp3"
+        "audio/de/verbs/trinken/audio_ich_trank_f.mp3",
+        "audio/de/verbs/trinken/audio_du_trankst_f.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_trank_f.mp3",
+        "audio/de/verbs/trinken/audio_wir_tranken_f.mp3",
+        "audio/de/verbs/trinken/audio_ihr_trankt_f.mp3",
+        "audio/de/verbs/trinken/audio_sie_tranken_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/trinken/audio_ich_trinke_m.mp3",
-        "audio/de/verben/trinken/audio_du_trinkst_m.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_trinkt_m.mp3",
-        "audio/de/verben/trinken/audio_wir_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_ihr_trinkt_m.mp3",
-        "audio/de/verben/trinken/audio_sie_trinken_m.mp3"
+        "audio/de/verbs/trinken/audio_ich_trinke_m.mp3",
+        "audio/de/verbs/trinken/audio_du_trinkst_m.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_trinkt_m.mp3",
+        "audio/de/verbs/trinken/audio_wir_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_ihr_trinkt_m.mp3",
+        "audio/de/verbs/trinken/audio_sie_trinken_m.mp3"
       ],
       [
-        "audio/de/verben/trinken/audio_ich_trinke_f.mp3",
-        "audio/de/verben/trinken/audio_du_trinkst_f.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_trinkt_f.mp3",
-        "audio/de/verben/trinken/audio_wir_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_ihr_trinkt_f.mp3",
-        "audio/de/verben/trinken/audio_sie_trinken_f.mp3"
+        "audio/de/verbs/trinken/audio_ich_trinke_f.mp3",
+        "audio/de/verbs/trinken/audio_du_trinkst_f.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_trinkt_f.mp3",
+        "audio/de/verbs/trinken/audio_wir_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_ihr_trinkt_f.mp3",
+        "audio/de/verbs/trinken/audio_sie_trinken_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/trinken/audio_ich_werde_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_du_wirst_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_wird_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_wir_werden_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_ihr_werdet_trinken_m.mp3",
-        "audio/de/verben/trinken/audio_sie_werden_trinken_m.mp3"
+        "audio/de/verbs/trinken/audio_ich_werde_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_du_wirst_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_wird_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_wir_werden_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_ihr_werdet_trinken_m.mp3",
+        "audio/de/verbs/trinken/audio_sie_werden_trinken_m.mp3"
       ],
       [
-        "audio/de/verben/trinken/audio_ich_werde_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_du_wirst_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_er_sie_es_wird_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_wir_werden_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_ihr_werdet_trinken_f.mp3",
-        "audio/de/verben/trinken/audio_sie_werden_trinken_f.mp3"
+        "audio/de/verbs/trinken/audio_ich_werde_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_du_wirst_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_er_sie_es_wird_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_wir_werden_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_ihr_werdet_trinken_f.mp3",
+        "audio/de/verbs/trinken/audio_sie_werden_trinken_f.mp3"
       ]
     ]
   }

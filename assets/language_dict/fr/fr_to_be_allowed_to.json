@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/avoir le droit de/audio_javais_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_tu_avais_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_il_elle_on_avait_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_nous_avions_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_vous_aviez_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_ils_elles_avaient_le_droit_de_f.mp3"
+        "audio/fr/verbs/avoir le droit de/audio_javais_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_tu_avais_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_il_elle_on_avait_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_nous_avions_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_vous_aviez_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_ils_elles_avaient_le_droit_de_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/avoir le droit de/audio_jai_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_tu_as_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_il_elle_on_a_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_nous_avons_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_vous_avez_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_ils_elles_ont_le_droit_de_f.mp3"
+        "audio/fr/verbs/avoir le droit de/audio_jai_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_tu_as_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_il_elle_on_a_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_nous_avons_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_vous_avez_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_ils_elles_ont_le_droit_de_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/avoir le droit de/audio_jaurai_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_tu_auras_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_il_elle_on_aura_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_nous_aurons_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_vous_aurez_le_droit_de_f.mp3",
-        "audio/fr/avoir le droit de/audio_ils_elles_auront_le_droit_de_f.mp3"
+        "audio/fr/verbs/avoir le droit de/audio_jaurai_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_tu_auras_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_il_elle_on_aura_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_nous_aurons_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_vous_aurez_le_droit_de_f.mp3",
+        "audio/fr/verbs/avoir le droit de/audio_ils_elles_auront_le_droit_de_f.mp3"
       ]
     ]
   }

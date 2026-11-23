@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/fermer/audio_je_fermai_f.mp3",
-        "audio/fr/fermer/audio_tu_fermas_f.mp3",
-        "audio/fr/fermer/audio_il_elle_ferma_f.mp3",
-        "audio/fr/fermer/audio_nous_fermames_f.mp3",
-        "audio/fr/fermer/audio_vous_fermates_f.mp3",
-        "audio/fr/fermer/audio_ils_elles_fermerent_f.mp3"
+        "audio/fr/verbs/fermer/audio_je_fermai_f.mp3",
+        "audio/fr/verbs/fermer/audio_tu_fermas_f.mp3",
+        "audio/fr/verbs/fermer/audio_il_elle_ferma_f.mp3",
+        "audio/fr/verbs/fermer/audio_nous_fermames_f.mp3",
+        "audio/fr/verbs/fermer/audio_vous_fermates_f.mp3",
+        "audio/fr/verbs/fermer/audio_ils_elles_fermerent_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/fermer/audio_je_ferme_f.mp3",
-        "audio/fr/fermer/audio_tu_fermes_f.mp3",
-        "audio/fr/fermer/audio_il_elle_ferme_f.mp3",
-        "audio/fr/fermer/audio_nous_fermons_f.mp3",
-        "audio/fr/fermer/audio_vous_fermez_f.mp3",
-        "audio/fr/fermer/audio_ils_elles_ferment_f.mp3"
+        "audio/fr/verbs/fermer/audio_je_ferme_f.mp3",
+        "audio/fr/verbs/fermer/audio_tu_fermes_f.mp3",
+        "audio/fr/verbs/fermer/audio_il_elle_ferme_f.mp3",
+        "audio/fr/verbs/fermer/audio_nous_fermons_f.mp3",
+        "audio/fr/verbs/fermer/audio_vous_fermez_f.mp3",
+        "audio/fr/verbs/fermer/audio_ils_elles_ferment_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/fermer/audio_je_fermerai_f.mp3",
-        "audio/fr/fermer/audio_tu_fermeras_f.mp3",
-        "audio/fr/fermer/audio_il_elle_fermera_f.mp3",
-        "audio/fr/fermer/audio_nous_fermerons_f.mp3",
-        "audio/fr/fermer/audio_vous_fermerez_f.mp3",
-        "audio/fr/fermer/audio_ils_elles_fermeront_f.mp3"
+        "audio/fr/verbs/fermer/audio_je_fermerai_f.mp3",
+        "audio/fr/verbs/fermer/audio_tu_fermeras_f.mp3",
+        "audio/fr/verbs/fermer/audio_il_elle_fermera_f.mp3",
+        "audio/fr/verbs/fermer/audio_nous_fermerons_f.mp3",
+        "audio/fr/verbs/fermer/audio_vous_fermerez_f.mp3",
+        "audio/fr/verbs/fermer/audio_ils_elles_fermeront_f.mp3"
       ]
     ]
   }

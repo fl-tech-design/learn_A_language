@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to be/audio_i_was_m.mp3",
-        "audio/en/to be/audio_you_were_m.mp3",
-        "audio/en/to be/audio_he_she_it_was_m.mp3",
-        "audio/en/to be/audio_we_were_m.mp3",
-        "audio/en/to be/audio_you_were_(pl)_m.mp3",
-        "audio/en/to be/audio_they_were_m.mp3"
+        "audio/en/verbs/to be/audio_i_was_m.mp3",
+        "audio/en/verbs/to be/audio_you_were_m.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_was_m.mp3",
+        "audio/en/verbs/to be/audio_we_were_m.mp3",
+        "audio/en/verbs/to be/audio_you_were_(pl)_m.mp3",
+        "audio/en/verbs/to be/audio_they_were_m.mp3"
       ],
       [
-        "audio/en/to be/audio_i_was_f.mp3",
-        "audio/en/to be/audio_you_were_f.mp3",
-        "audio/en/to be/audio_he_she_it_was_f.mp3",
-        "audio/en/to be/audio_we_were_f.mp3",
-        "audio/en/to be/audio_you_were_(pl)_f.mp3",
-        "audio/en/to be/audio_they_were_f.mp3"
+        "audio/en/verbs/to be/audio_i_was_f.mp3",
+        "audio/en/verbs/to be/audio_you_were_f.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_was_f.mp3",
+        "audio/en/verbs/to be/audio_we_were_f.mp3",
+        "audio/en/verbs/to be/audio_you_were_(pl)_f.mp3",
+        "audio/en/verbs/to be/audio_they_were_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to be/audio_i_am_m.mp3",
-        "audio/en/to be/audio_you_are_m.mp3",
-        "audio/en/to be/audio_he_she_it_is_m.mp3",
-        "audio/en/to be/audio_we_are_m.mp3",
-        "audio/en/to be/audio_you_are_(pl)_m.mp3",
-        "audio/en/to be/audio_they_are_m.mp3"
+        "audio/en/verbs/to be/audio_i_am_m.mp3",
+        "audio/en/verbs/to be/audio_you_are_m.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_is_m.mp3",
+        "audio/en/verbs/to be/audio_we_are_m.mp3",
+        "audio/en/verbs/to be/audio_you_are_(pl)_m.mp3",
+        "audio/en/verbs/to be/audio_they_are_m.mp3"
       ],
       [
-        "audio/en/to be/audio_i_am_f.mp3",
-        "audio/en/to be/audio_you_are_f.mp3",
-        "audio/en/to be/audio_he_she_it_is_f.mp3",
-        "audio/en/to be/audio_we_are_f.mp3",
-        "audio/en/to be/audio_you_are_(pl)_f.mp3",
-        "audio/en/to be/audio_they_are_f.mp3"
+        "audio/en/verbs/to be/audio_i_am_f.mp3",
+        "audio/en/verbs/to be/audio_you_are_f.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_is_f.mp3",
+        "audio/en/verbs/to be/audio_we_are_f.mp3",
+        "audio/en/verbs/to be/audio_you_are_(pl)_f.mp3",
+        "audio/en/verbs/to be/audio_they_are_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to be/audio_i_will_be_m.mp3",
-        "audio/en/to be/audio_you_will_be_m.mp3",
-        "audio/en/to be/audio_he_she_it_will_be_m.mp3",
-        "audio/en/to be/audio_we_will_be_m.mp3",
-        "audio/en/to be/audio_you_will_be_(pl)_m.mp3",
-        "audio/en/to be/audio_they_will_be_m.mp3"
+        "audio/en/verbs/to be/audio_i_will_be_m.mp3",
+        "audio/en/verbs/to be/audio_you_will_be_m.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_will_be_m.mp3",
+        "audio/en/verbs/to be/audio_we_will_be_m.mp3",
+        "audio/en/verbs/to be/audio_you_will_be_(pl)_m.mp3",
+        "audio/en/verbs/to be/audio_they_will_be_m.mp3"
       ],
       [
-        "audio/en/to be/audio_i_will_be_f.mp3",
-        "audio/en/to be/audio_you_will_be_f.mp3",
-        "audio/en/to be/audio_he_she_it_will_be_f.mp3",
-        "audio/en/to be/audio_we_will_be_f.mp3",
-        "audio/en/to be/audio_you_will_be_(pl)_f.mp3",
-        "audio/en/to be/audio_they_will_be_f.mp3"
+        "audio/en/verbs/to be/audio_i_will_be_f.mp3",
+        "audio/en/verbs/to be/audio_you_will_be_f.mp3",
+        "audio/en/verbs/to be/audio_he_she_it_will_be_f.mp3",
+        "audio/en/verbs/to be/audio_we_will_be_f.mp3",
+        "audio/en/verbs/to be/audio_you_will_be_(pl)_f.mp3",
+        "audio/en/verbs/to be/audio_they_will_be_f.mp3"
       ]
     ]
   }

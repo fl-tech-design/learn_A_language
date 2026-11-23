@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/être/audio_jetais_f.mp3",
-        "audio/fr/être/audio_tu_etais_f.mp3",
-        "audio/fr/être/audio_il_elle_on_etait_f.mp3",
-        "audio/fr/être/audio_nous_etions_f.mp3",
-        "audio/fr/être/audio_vous_etiez_f.mp3",
-        "audio/fr/être/audio_ils_elles_etaient_f.mp3"
+        "audio/fr/verbs/être/audio_jetais_f.mp3",
+        "audio/fr/verbs/être/audio_tu_etais_f.mp3",
+        "audio/fr/verbs/être/audio_il_elle_on_etait_f.mp3",
+        "audio/fr/verbs/être/audio_nous_etions_f.mp3",
+        "audio/fr/verbs/être/audio_vous_etiez_f.mp3",
+        "audio/fr/verbs/être/audio_ils_elles_etaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/être/audio_je_suis_f.mp3",
-        "audio/fr/être/audio_tu_es_f.mp3",
-        "audio/fr/être/audio_il_elle_on_est_f.mp3",
-        "audio/fr/être/audio_nous_sommes_f.mp3",
-        "audio/fr/être/audio_vous_etes_f.mp3",
-        "audio/fr/être/audio_ils_elles_sont_f.mp3"
+        "audio/fr/verbs/être/audio_je_suis_f.mp3",
+        "audio/fr/verbs/être/audio_tu_es_f.mp3",
+        "audio/fr/verbs/être/audio_il_elle_on_est_f.mp3",
+        "audio/fr/verbs/être/audio_nous_sommes_f.mp3",
+        "audio/fr/verbs/être/audio_vous_etes_f.mp3",
+        "audio/fr/verbs/être/audio_ils_elles_sont_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/être/audio_je_serai_f.mp3",
-        "audio/fr/être/audio_tu_seras_f.mp3",
-        "audio/fr/être/audio_il_elle_on_sera_f.mp3",
-        "audio/fr/être/audio_nous_serons_f.mp3",
-        "audio/fr/être/audio_vous_serez_f.mp3",
-        "audio/fr/être/audio_ils_elles_seront_f.mp3"
+        "audio/fr/verbs/être/audio_je_serai_f.mp3",
+        "audio/fr/verbs/être/audio_tu_seras_f.mp3",
+        "audio/fr/verbs/être/audio_il_elle_on_sera_f.mp3",
+        "audio/fr/verbs/être/audio_nous_serons_f.mp3",
+        "audio/fr/verbs/être/audio_vous_serez_f.mp3",
+        "audio/fr/verbs/être/audio_ils_elles_seront_f.mp3"
       ]
     ]
   }

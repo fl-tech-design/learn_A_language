@@ -60,7 +60,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get btnPrev => 'Пред.';
 
   @override
-  String get btnRead => 'Читать';
+  String get btnRead => 'Прочитано';
 
   @override
   String get btnReview => 'Повторить';
@@ -87,7 +87,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get catNewWords => 'Новые слова';
 
   @override
-  String get catReadWords => 'Читать слова';
+  String get catReadWords => 'Прочитанные слова';
 
   @override
   String get catSelect => 'Выберите категорию';
@@ -221,13 +221,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get infWord =>
-      'Прочитайте слово и перевод, затем нажмите «Читать».';
+      'Прочитайте слово и перевод, затем нажмите «Прочитано».';
 
   @override
   String get information => 'Информация';
 
   @override
-  String get inputHint => 'Прочитайте слово и нажмите «Читать»';
+  String get inputHint => 'Прочитайте слово и нажмите «Прочитано»';
 
   @override
   String get inputHintDue => 'Введите перевод';

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/wohnen/audio_ich_wohnte_m.mp3",
-        "audio/de/verben/wohnen/audio_du_wohntest_m.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wohnte_m.mp3",
-        "audio/de/verben/wohnen/audio_wir_wohnten_m.mp3",
-        "audio/de/verben/wohnen/audio_ihr_wohntet_m.mp3",
-        "audio/de/verben/wohnen/audio_sie_wohnten_m.mp3"
+        "audio/de/verbs/wohnen/audio_ich_wohnte_m.mp3",
+        "audio/de/verbs/wohnen/audio_du_wohntest_m.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wohnte_m.mp3",
+        "audio/de/verbs/wohnen/audio_wir_wohnten_m.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_wohntet_m.mp3",
+        "audio/de/verbs/wohnen/audio_sie_wohnten_m.mp3"
       ],
       [
-        "audio/de/verben/wohnen/audio_ich_wohnte_f.mp3",
-        "audio/de/verben/wohnen/audio_du_wohntest_f.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wohnte_f.mp3",
-        "audio/de/verben/wohnen/audio_wir_wohnten_f.mp3",
-        "audio/de/verben/wohnen/audio_ihr_wohntet_f.mp3",
-        "audio/de/verben/wohnen/audio_sie_wohnten_f.mp3"
+        "audio/de/verbs/wohnen/audio_ich_wohnte_f.mp3",
+        "audio/de/verbs/wohnen/audio_du_wohntest_f.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wohnte_f.mp3",
+        "audio/de/verbs/wohnen/audio_wir_wohnten_f.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_wohntet_f.mp3",
+        "audio/de/verbs/wohnen/audio_sie_wohnten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/wohnen/audio_ich_wohne_m.mp3",
-        "audio/de/verben/wohnen/audio_du_wohnst_m.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wohnt_m.mp3",
-        "audio/de/verben/wohnen/audio_wir_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_ihr_wohnt_m.mp3",
-        "audio/de/verben/wohnen/audio_sie_wohnen_m.mp3"
+        "audio/de/verbs/wohnen/audio_ich_wohne_m.mp3",
+        "audio/de/verbs/wohnen/audio_du_wohnst_m.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wohnt_m.mp3",
+        "audio/de/verbs/wohnen/audio_wir_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_wohnt_m.mp3",
+        "audio/de/verbs/wohnen/audio_sie_wohnen_m.mp3"
       ],
       [
-        "audio/de/verben/wohnen/audio_ich_wohne_f.mp3",
-        "audio/de/verben/wohnen/audio_du_wohnst_f.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wohnt_f.mp3",
-        "audio/de/verben/wohnen/audio_wir_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_ihr_wohnt_f.mp3",
-        "audio/de/verben/wohnen/audio_sie_wohnen_f.mp3"
+        "audio/de/verbs/wohnen/audio_ich_wohne_f.mp3",
+        "audio/de/verbs/wohnen/audio_du_wohnst_f.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wohnt_f.mp3",
+        "audio/de/verbs/wohnen/audio_wir_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_wohnt_f.mp3",
+        "audio/de/verbs/wohnen/audio_sie_wohnen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/wohnen/audio_ich_werde_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_du_wirst_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wird_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_wir_werden_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_ihr_werdet_wohnen_m.mp3",
-        "audio/de/verben/wohnen/audio_sie_werden_wohnen_m.mp3"
+        "audio/de/verbs/wohnen/audio_ich_werde_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_du_wirst_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wird_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_wir_werden_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_werdet_wohnen_m.mp3",
+        "audio/de/verbs/wohnen/audio_sie_werden_wohnen_m.mp3"
       ],
       [
-        "audio/de/verben/wohnen/audio_ich_werde_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_du_wirst_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_er_sie_es_wird_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_wir_werden_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_ihr_werdet_wohnen_f.mp3",
-        "audio/de/verben/wohnen/audio_sie_werden_wohnen_f.mp3"
+        "audio/de/verbs/wohnen/audio_ich_werde_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_du_wirst_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_er_sie_es_wird_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_wir_werden_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_ihr_werdet_wohnen_f.mp3",
+        "audio/de/verbs/wohnen/audio_sie_werden_wohnen_f.mp3"
       ]
     ]
   }

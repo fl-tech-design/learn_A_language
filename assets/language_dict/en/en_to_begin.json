@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to begin/audio_i_began_m.mp3",
-        "audio/en/to begin/audio_you_began_m.mp3",
-        "audio/en/to begin/audio_he_she_it_began_m.mp3",
-        "audio/en/to begin/audio_we_began_m.mp3",
-        "audio/en/to begin/audio_you_began_(pl)_m.mp3",
-        "audio/en/to begin/audio_they_began_m.mp3"
+        "audio/en/verbs/to begin/audio_i_began_m.mp3",
+        "audio/en/verbs/to begin/audio_you_began_m.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_began_m.mp3",
+        "audio/en/verbs/to begin/audio_we_began_m.mp3",
+        "audio/en/verbs/to begin/audio_you_began_(pl)_m.mp3",
+        "audio/en/verbs/to begin/audio_they_began_m.mp3"
       ],
       [
-        "audio/en/to begin/audio_i_began_f.mp3",
-        "audio/en/to begin/audio_you_began_f.mp3",
-        "audio/en/to begin/audio_he_she_it_began_f.mp3",
-        "audio/en/to begin/audio_we_began_f.mp3",
-        "audio/en/to begin/audio_you_began_(pl)_f.mp3",
-        "audio/en/to begin/audio_they_began_f.mp3"
+        "audio/en/verbs/to begin/audio_i_began_f.mp3",
+        "audio/en/verbs/to begin/audio_you_began_f.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_began_f.mp3",
+        "audio/en/verbs/to begin/audio_we_began_f.mp3",
+        "audio/en/verbs/to begin/audio_you_began_(pl)_f.mp3",
+        "audio/en/verbs/to begin/audio_they_began_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to begin/audio_i_begin_m.mp3",
-        "audio/en/to begin/audio_you_begin_m.mp3",
-        "audio/en/to begin/audio_he_she_it_begins_m.mp3",
-        "audio/en/to begin/audio_we_begin_m.mp3",
-        "audio/en/to begin/audio_you_begin_(pl)_m.mp3",
-        "audio/en/to begin/audio_they_begin_m.mp3"
+        "audio/en/verbs/to begin/audio_i_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_you_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_begins_m.mp3",
+        "audio/en/verbs/to begin/audio_we_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_you_begin_(pl)_m.mp3",
+        "audio/en/verbs/to begin/audio_they_begin_m.mp3"
       ],
       [
-        "audio/en/to begin/audio_i_begin_f.mp3",
-        "audio/en/to begin/audio_you_begin_f.mp3",
-        "audio/en/to begin/audio_he_she_it_begins_f.mp3",
-        "audio/en/to begin/audio_we_begin_f.mp3",
-        "audio/en/to begin/audio_you_begin_(pl)_f.mp3",
-        "audio/en/to begin/audio_they_begin_f.mp3"
+        "audio/en/verbs/to begin/audio_i_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_you_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_begins_f.mp3",
+        "audio/en/verbs/to begin/audio_we_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_you_begin_(pl)_f.mp3",
+        "audio/en/verbs/to begin/audio_they_begin_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to begin/audio_i_will_begin_m.mp3",
-        "audio/en/to begin/audio_you_will_begin_m.mp3",
-        "audio/en/to begin/audio_he_she_it_will_begin_m.mp3",
-        "audio/en/to begin/audio_we_will_begin_m.mp3",
-        "audio/en/to begin/audio_you_will_begin_(pl)_m.mp3",
-        "audio/en/to begin/audio_they_will_begin_m.mp3"
+        "audio/en/verbs/to begin/audio_i_will_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_you_will_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_will_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_we_will_begin_m.mp3",
+        "audio/en/verbs/to begin/audio_you_will_begin_(pl)_m.mp3",
+        "audio/en/verbs/to begin/audio_they_will_begin_m.mp3"
       ],
       [
-        "audio/en/to begin/audio_i_will_begin_f.mp3",
-        "audio/en/to begin/audio_you_will_begin_f.mp3",
-        "audio/en/to begin/audio_he_she_it_will_begin_f.mp3",
-        "audio/en/to begin/audio_we_will_begin_f.mp3",
-        "audio/en/to begin/audio_you_will_begin_(pl)_f.mp3",
-        "audio/en/to begin/audio_they_will_begin_f.mp3"
+        "audio/en/verbs/to begin/audio_i_will_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_you_will_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_he_she_it_will_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_we_will_begin_f.mp3",
+        "audio/en/verbs/to begin/audio_you_will_begin_(pl)_f.mp3",
+        "audio/en/verbs/to begin/audio_they_will_begin_f.mp3"
       ]
     ]
   }

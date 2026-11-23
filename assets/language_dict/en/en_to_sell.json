@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to sell/audio_i_sold_m.mp3",
-        "audio/en/to sell/audio_you_sold_m.mp3",
-        "audio/en/to sell/audio_he_she_it_sold_m.mp3",
-        "audio/en/to sell/audio_we_sold_m.mp3",
-        "audio/en/to sell/audio_you_sold_(pl)_m.mp3",
-        "audio/en/to sell/audio_they_sold_m.mp3"
+        "audio/en/verbs/to sell/audio_i_sold_m.mp3",
+        "audio/en/verbs/to sell/audio_you_sold_m.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_sold_m.mp3",
+        "audio/en/verbs/to sell/audio_we_sold_m.mp3",
+        "audio/en/verbs/to sell/audio_you_sold_(pl)_m.mp3",
+        "audio/en/verbs/to sell/audio_they_sold_m.mp3"
       ],
       [
-        "audio/en/to sell/audio_i_sold_f.mp3",
-        "audio/en/to sell/audio_you_sold_f.mp3",
-        "audio/en/to sell/audio_he_she_it_sold_f.mp3",
-        "audio/en/to sell/audio_we_sold_f.mp3",
-        "audio/en/to sell/audio_you_sold_(pl)_f.mp3",
-        "audio/en/to sell/audio_they_sold_f.mp3"
+        "audio/en/verbs/to sell/audio_i_sold_f.mp3",
+        "audio/en/verbs/to sell/audio_you_sold_f.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_sold_f.mp3",
+        "audio/en/verbs/to sell/audio_we_sold_f.mp3",
+        "audio/en/verbs/to sell/audio_you_sold_(pl)_f.mp3",
+        "audio/en/verbs/to sell/audio_they_sold_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to sell/audio_i_sell_m.mp3",
-        "audio/en/to sell/audio_you_sell_m.mp3",
-        "audio/en/to sell/audio_he_she_it_sells_m.mp3",
-        "audio/en/to sell/audio_we_sell_m.mp3",
-        "audio/en/to sell/audio_you_sell_(pl)_m.mp3",
-        "audio/en/to sell/audio_they_sell_m.mp3"
+        "audio/en/verbs/to sell/audio_i_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_you_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_sells_m.mp3",
+        "audio/en/verbs/to sell/audio_we_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_you_sell_(pl)_m.mp3",
+        "audio/en/verbs/to sell/audio_they_sell_m.mp3"
       ],
       [
-        "audio/en/to sell/audio_i_sell_f.mp3",
-        "audio/en/to sell/audio_you_sell_f.mp3",
-        "audio/en/to sell/audio_he_she_it_sells_f.mp3",
-        "audio/en/to sell/audio_we_sell_f.mp3",
-        "audio/en/to sell/audio_you_sell_(pl)_f.mp3",
-        "audio/en/to sell/audio_they_sell_f.mp3"
+        "audio/en/verbs/to sell/audio_i_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_you_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_sells_f.mp3",
+        "audio/en/verbs/to sell/audio_we_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_you_sell_(pl)_f.mp3",
+        "audio/en/verbs/to sell/audio_they_sell_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to sell/audio_i_will_sell_m.mp3",
-        "audio/en/to sell/audio_you_will_sell_m.mp3",
-        "audio/en/to sell/audio_he_she_it_will_sell_m.mp3",
-        "audio/en/to sell/audio_we_will_sell_m.mp3",
-        "audio/en/to sell/audio_you_will_sell_(pl)_m.mp3",
-        "audio/en/to sell/audio_they_will_sell_m.mp3"
+        "audio/en/verbs/to sell/audio_i_will_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_you_will_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_will_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_we_will_sell_m.mp3",
+        "audio/en/verbs/to sell/audio_you_will_sell_(pl)_m.mp3",
+        "audio/en/verbs/to sell/audio_they_will_sell_m.mp3"
       ],
       [
-        "audio/en/to sell/audio_i_will_sell_f.mp3",
-        "audio/en/to sell/audio_you_will_sell_f.mp3",
-        "audio/en/to sell/audio_he_she_it_will_sell_f.mp3",
-        "audio/en/to sell/audio_we_will_sell_f.mp3",
-        "audio/en/to sell/audio_you_will_sell_(pl)_f.mp3",
-        "audio/en/to sell/audio_they_will_sell_f.mp3"
+        "audio/en/verbs/to sell/audio_i_will_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_you_will_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_he_she_it_will_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_we_will_sell_f.mp3",
+        "audio/en/verbs/to sell/audio_you_will_sell_(pl)_f.mp3",
+        "audio/en/verbs/to sell/audio_they_will_sell_f.mp3"
       ]
     ]
   }

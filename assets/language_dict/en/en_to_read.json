@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to read/audio_i_read_m.mp3",
-        "audio/en/to read/audio_you_read_m.mp3",
-        "audio/en/to read/audio_he_she_it_read_m.mp3",
-        "audio/en/to read/audio_we_read_m.mp3",
-        "audio/en/to read/audio_you_read_(pl)_m.mp3",
-        "audio/en/to read/audio_they_read_m.mp3"
+        "audio/en/verbs/to read/audio_i_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_read_m.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_read_m.mp3",
+        "audio/en/verbs/to read/audio_we_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_read_(pl)_m.mp3",
+        "audio/en/verbs/to read/audio_they_read_m.mp3"
       ],
       [
-        "audio/en/to read/audio_i_read_f.mp3",
-        "audio/en/to read/audio_you_read_f.mp3",
-        "audio/en/to read/audio_he_she_it_read_f.mp3",
-        "audio/en/to read/audio_we_read_f.mp3",
-        "audio/en/to read/audio_you_read_(pl)_f.mp3",
-        "audio/en/to read/audio_they_read_f.mp3"
+        "audio/en/verbs/to read/audio_i_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_read_f.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_read_f.mp3",
+        "audio/en/verbs/to read/audio_we_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_read_(pl)_f.mp3",
+        "audio/en/verbs/to read/audio_they_read_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to read/audio_i_read_m.mp3",
-        "audio/en/to read/audio_you_read_m.mp3",
-        "audio/en/to read/audio_he_she_it_reads_m.mp3",
-        "audio/en/to read/audio_we_read_m.mp3",
-        "audio/en/to read/audio_you_read_(pl)_m.mp3",
-        "audio/en/to read/audio_they_read_m.mp3"
+        "audio/en/verbs/to read/audio_i_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_read_m.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_reads_m.mp3",
+        "audio/en/verbs/to read/audio_we_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_read_(pl)_m.mp3",
+        "audio/en/verbs/to read/audio_they_read_m.mp3"
       ],
       [
-        "audio/en/to read/audio_i_read_f.mp3",
-        "audio/en/to read/audio_you_read_f.mp3",
-        "audio/en/to read/audio_he_she_it_reads_f.mp3",
-        "audio/en/to read/audio_we_read_f.mp3",
-        "audio/en/to read/audio_you_read_(pl)_f.mp3",
-        "audio/en/to read/audio_they_read_f.mp3"
+        "audio/en/verbs/to read/audio_i_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_read_f.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_reads_f.mp3",
+        "audio/en/verbs/to read/audio_we_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_read_(pl)_f.mp3",
+        "audio/en/verbs/to read/audio_they_read_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to read/audio_i_will_read_m.mp3",
-        "audio/en/to read/audio_you_will_read_m.mp3",
-        "audio/en/to read/audio_he_she_it_will_read_m.mp3",
-        "audio/en/to read/audio_we_will_read_m.mp3",
-        "audio/en/to read/audio_you_will_read_(pl)_m.mp3",
-        "audio/en/to read/audio_they_will_read_m.mp3"
+        "audio/en/verbs/to read/audio_i_will_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_will_read_m.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_will_read_m.mp3",
+        "audio/en/verbs/to read/audio_we_will_read_m.mp3",
+        "audio/en/verbs/to read/audio_you_will_read_(pl)_m.mp3",
+        "audio/en/verbs/to read/audio_they_will_read_m.mp3"
       ],
       [
-        "audio/en/to read/audio_i_will_read_f.mp3",
-        "audio/en/to read/audio_you_will_read_f.mp3",
-        "audio/en/to read/audio_he_she_it_will_read_f.mp3",
-        "audio/en/to read/audio_we_will_read_f.mp3",
-        "audio/en/to read/audio_you_will_read_(pl)_f.mp3",
-        "audio/en/to read/audio_they_will_read_f.mp3"
+        "audio/en/verbs/to read/audio_i_will_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_will_read_f.mp3",
+        "audio/en/verbs/to read/audio_he_she_it_will_read_f.mp3",
+        "audio/en/verbs/to read/audio_we_will_read_f.mp3",
+        "audio/en/verbs/to read/audio_you_will_read_(pl)_f.mp3",
+        "audio/en/verbs/to read/audio_they_will_read_f.mp3"
       ]
     ]
   }

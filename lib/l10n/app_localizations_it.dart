@@ -147,7 +147,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get grammarContrast => 'Contrasto';
 
   @override
-  String get grammarExamFocus => "Suggerimento per l'esame";
+  String get grammarExamFocus => 'Suggerimento per l\'esame';
 
   @override
   String get grammarExamples => 'Esempi';
@@ -219,13 +219,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get infUsername => 'Inserisci almeno 1 carattere.';
 
   @override
-  String get infWord => 'Leggi la parola e la traduzione, poi clicca "Leggi".';
+  String get infWord =>
+      'Leggi la parola e la traduzione, poi clicca \"Leggi\".';
 
   @override
   String get information => 'Informazione';
 
   @override
-  String get inputHint => 'Leggi la parola e clicca "Leggi"';
+  String get inputHint => 'Leggi la parola e clicca \"Leggi\"';
 
   @override
   String get inputHintDue => 'Digita la traduzione';
@@ -273,7 +274,8 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noDueWords => 'Nessuna parola in scadenza!';
 
   @override
-  String get noLearnedWords => 'Nessuna parola con cui giocare ancora.\nImpara prima nuove parole!';
+  String get noLearnedWords =>
+      'Nessuna parola con cui giocare ancora.\nImpara prima nuove parole!';
 
   @override
   String get noNewLang => 'Nessuna nuova lingua disponibile';
@@ -436,7 +438,8 @@ class AppLocalizationsIt extends AppLocalizations {
       'I tuoi dati utente erano danneggiati e sono stati ripristinati da un backup.';
 
   @override
-  String get msgUserDataUnloadable => 'I tuoi dati utente non sono stati caricati.';
+  String get msgUserDataUnloadable =>
+      'I tuoi dati utente non sono stati caricati.';
 
   @override
   String get msgAppDataRecovered =>

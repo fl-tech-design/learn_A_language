@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/commencer/audio_je_commencais_f.mp3",
-        "audio/fr/commencer/audio_tu_commencais_f.mp3",
-        "audio/fr/commencer/audio_il_elle_on_commencait_f.mp3",
-        "audio/fr/commencer/audio_nous_commencions_f.mp3",
-        "audio/fr/commencer/audio_vous_commenciez_f.mp3",
-        "audio/fr/commencer/audio_ils_elles_commencaient_f.mp3"
+        "audio/fr/verbs/commencer/audio_je_commencais_f.mp3",
+        "audio/fr/verbs/commencer/audio_tu_commencais_f.mp3",
+        "audio/fr/verbs/commencer/audio_il_elle_on_commencait_f.mp3",
+        "audio/fr/verbs/commencer/audio_nous_commencions_f.mp3",
+        "audio/fr/verbs/commencer/audio_vous_commenciez_f.mp3",
+        "audio/fr/verbs/commencer/audio_ils_elles_commencaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/commencer/audio_je_commence_f.mp3",
-        "audio/fr/commencer/audio_tu_commences_f.mp3",
-        "audio/fr/commencer/audio_il_elle_on_commence_f.mp3",
-        "audio/fr/commencer/audio_nous_commencons_f.mp3",
-        "audio/fr/commencer/audio_vous_commencez_f.mp3",
-        "audio/fr/commencer/audio_ils_elles_commencent_f.mp3"
+        "audio/fr/verbs/commencer/audio_je_commence_f.mp3",
+        "audio/fr/verbs/commencer/audio_tu_commences_f.mp3",
+        "audio/fr/verbs/commencer/audio_il_elle_on_commence_f.mp3",
+        "audio/fr/verbs/commencer/audio_nous_commencons_f.mp3",
+        "audio/fr/verbs/commencer/audio_vous_commencez_f.mp3",
+        "audio/fr/verbs/commencer/audio_ils_elles_commencent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/commencer/audio_je_commencerai_f.mp3",
-        "audio/fr/commencer/audio_tu_commenceras_f.mp3",
-        "audio/fr/commencer/audio_il_elle_on_commencera_f.mp3",
-        "audio/fr/commencer/audio_nous_commencerons_f.mp3",
-        "audio/fr/commencer/audio_vous_commencerez_f.mp3",
-        "audio/fr/commencer/audio_ils_elles_commenceront_f.mp3"
+        "audio/fr/verbs/commencer/audio_je_commencerai_f.mp3",
+        "audio/fr/verbs/commencer/audio_tu_commenceras_f.mp3",
+        "audio/fr/verbs/commencer/audio_il_elle_on_commencera_f.mp3",
+        "audio/fr/verbs/commencer/audio_nous_commencerons_f.mp3",
+        "audio/fr/verbs/commencer/audio_vous_commencerez_f.mp3",
+        "audio/fr/verbs/commencer/audio_ils_elles_commenceront_f.mp3"
       ]
     ]
   }

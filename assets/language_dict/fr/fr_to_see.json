@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/voir/audio_jai_vu_f.mp3",
-        "audio/fr/voir/audio_tu_as_vu_f.mp3",
-        "audio/fr/voir/audio_il_elle_on_a_vu_f.mp3",
-        "audio/fr/voir/audio_nous_avons_vu_f.mp3",
-        "audio/fr/voir/audio_vous_avez_vu_f.mp3",
-        "audio/fr/voir/audio_ils_elles_ont_vu_f.mp3"
+        "audio/fr/verbs/voir/audio_jai_vu_f.mp3",
+        "audio/fr/verbs/voir/audio_tu_as_vu_f.mp3",
+        "audio/fr/verbs/voir/audio_il_elle_on_a_vu_f.mp3",
+        "audio/fr/verbs/voir/audio_nous_avons_vu_f.mp3",
+        "audio/fr/verbs/voir/audio_vous_avez_vu_f.mp3",
+        "audio/fr/verbs/voir/audio_ils_elles_ont_vu_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/voir/audio_je_vois_f.mp3",
-        "audio/fr/voir/audio_tu_vois_f.mp3",
-        "audio/fr/voir/audio_il_elle_on_voit_f.mp3",
-        "audio/fr/voir/audio_nous_voyons_f.mp3",
-        "audio/fr/voir/audio_vous_voyez_f.mp3",
-        "audio/fr/voir/audio_ils_elles_voient_f.mp3"
+        "audio/fr/verbs/voir/audio_je_vois_f.mp3",
+        "audio/fr/verbs/voir/audio_tu_vois_f.mp3",
+        "audio/fr/verbs/voir/audio_il_elle_on_voit_f.mp3",
+        "audio/fr/verbs/voir/audio_nous_voyons_f.mp3",
+        "audio/fr/verbs/voir/audio_vous_voyez_f.mp3",
+        "audio/fr/verbs/voir/audio_ils_elles_voient_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/voir/audio_je_verrai_f.mp3",
-        "audio/fr/voir/audio_tu_verras_f.mp3",
-        "audio/fr/voir/audio_il_elle_on_verra_f.mp3",
-        "audio/fr/voir/audio_nous_verrons_f.mp3",
-        "audio/fr/voir/audio_vous_verrez_f.mp3",
-        "audio/fr/voir/audio_ils_elles_verront_f.mp3"
+        "audio/fr/verbs/voir/audio_je_verrai_f.mp3",
+        "audio/fr/verbs/voir/audio_tu_verras_f.mp3",
+        "audio/fr/verbs/voir/audio_il_elle_on_verra_f.mp3",
+        "audio/fr/verbs/voir/audio_nous_verrons_f.mp3",
+        "audio/fr/verbs/voir/audio_vous_verrez_f.mp3",
+        "audio/fr/verbs/voir/audio_ils_elles_verront_f.mp3"
       ]
     ]
   }
