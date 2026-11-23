@@ -38,7 +38,7 @@ flutter:
     - assets/language_dict/es/
     - assets/language_dict/el/
     - assets/language_dict/ru/
-    - assets/grammar/
+    - assets/grammar/grammar_de/
     - assets/audio/de/verbs/de_audio_to_be/
     - assets/audio/de/verbs/de_audio_to_be_allowed_to/
     - assets/audio/de/verbs/de_audio_to_begin/
