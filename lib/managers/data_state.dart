@@ -2,6 +2,7 @@ import 'dart:developer' show log;
 
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
+import '../models/language_registry.dart' show languageCodeForName;
 import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import 'user_manager.dart' show recoverAppData;
@@ -93,20 +94,7 @@ class DataState extends ChangeNotifier {
 
   // ── Language ──────────────────────────────────────────────────
   Future<void> changeLanguage(String newLanguage) async {
-    final norm = newLanguage.trim().toLowerCase();
-    const mapping = {
-      'deutsch': 'de',
-      'englisch': 'en',
-      'spanisch': 'es',
-      'französisch': 'fr',
-      'russisch': 'ru',
-      'german': 'de',
-      'english': 'en',
-      'spanish': 'es',
-      'french': 'fr',
-      'russian': 'ru',
-    };
-    final langCode = mapping[norm];
+    final langCode = languageCodeForName(newLanguage);
     if (langCode == null) return;
 
     try {

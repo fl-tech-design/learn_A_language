@@ -7,6 +7,7 @@ import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/user_state.dart';
 import '../managers/data_state.dart';
+import '../models/language_registry.dart';
 import '../managers/user_manager.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/create_user_dialog.dart';
@@ -84,14 +85,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final dataState = context.read<DataState>();
     final userState = context.read<UserState>();
     final l10n = AppLocalizations.of(context);
+    // Muttersprachen sind auf Sprachen mit vorhandenen Dicts beschränkt.
+    final motherTongueCodes = dictLanguageCodes.toList()..sort();
+    final motherTongueLabels = [
+      for (final code in motherTongueCodes)
+        _langLabel(
+            l10n,
+            appLanguages.firstWhere((c) => c.code == code).labelKey),
+    ];
     final result = await showCreateUserDialog(
         context,
         l10n.uRegistration,
         l10n.infUserReg,
         l10n.mLang,
-        l10n.german,
-        l10n.english,
-        l10n.french,
+        motherTongueCodes,
+        motherTongueLabels,
         toBeginningOfSentenceCase(l10n.confirm),
         toBeginningOfSentenceCase(l10n.chancel));
     if (result == null) return;
@@ -121,9 +129,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
         Wrap(
           spacing: 8,
           children: [
-            _motherLangChip('de', l10n.german, current, userState),
-            _motherLangChip('en', l10n.english, current, userState),
-            _motherLangChip('fr', l10n.french, current, userState),
+            // Muttersprachen-Auswahl ist auf Sprachen mit vorhandenen Dicts
+            // beschränkt (de/en/fr) – `es`/`ru` haben keine `language_dict/`
+            // und würden leere Übersetzungen liefern.
+            for (final code in dictLanguageCodes.toList()..sort())
+              _motherLangChip(
+                  code,
+                  _langLabel(
+                      l10n,
+                      appLanguages
+                          .firstWhere((c) => c.code == code)
+                          .labelKey),
+                  current,
+                  userState),
           ],
         ),
         const SizedBox(height: 4),
@@ -133,6 +151,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
       ],
     );
   }
+
+  /// Lokalisiertes Label für einen Registry-labelKey über `AppLocalizations`.
+  static String _langLabel(AppLocalizations l10n, String labelKey) =>
+      switch (labelKey) {
+        'german' => l10n.german,
+        'english' => l10n.english,
+        'spanish' => l10n.spanish,
+        'french' => l10n.french,
+        'russian' => l10n.russian,
+        _ => labelKey,
+      };
+
+  /// Deutscher Sprachname für die `changeLanguage`-Auflösung über die Registry.
+  static String _langNameForChangeLanguage(String code) =>
+      switch (code) {
+        'de' => 'deutsch',
+        'en' => 'englisch',
+        'es' => 'spanisch',
+        'fr' => 'französisch',
+        'ru' => 'russisch',
+        _ => code,
+      };
 
   Widget _motherLangChip(
       String code, String label, String current, UserState userState) {
@@ -161,31 +201,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Text(l10n.languages,
                           style:
                               const TextStyle(fontSize: AppTheme.lblFontSize)),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      FlagBox(
-                          flagAsset: 'assets/images/flag_germany.png',
-                          label: l10n.german,
-                          onTap: () => context.read<DataState>().changeLanguage('deutsch')),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      FlagBox(
-                          flagAsset: 'assets/images/flag_uk.png',
-                          label: l10n.english,
-                          onTap: () => context.read<DataState>().changeLanguage('englisch')),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      FlagBox(
-                          flagAsset: 'assets/images/flag_spa.png',
-                          label: l10n.spanish,
-                          onTap: () => context.read<DataState>().changeLanguage('spanisch')),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      FlagBox(
-                          flagAsset: 'assets/images/flag_fra.png',
-                          label: l10n.french,
-                          onTap: () => context.read<DataState>().changeLanguage('französisch')),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      FlagBox(
-                          flagAsset: 'assets/images/flag_rus.png',
-                          label: l10n.russian,
-                          onTap: () => context.read<DataState>().changeLanguage('russisch')),
+                      // UI-Sprachwahl: volle Registry (de/en/es/fr/ru).
+                      for (final lang in appLanguages) ...[
+                        const SizedBox(height: AppTheme.contentSpacing),
+                        FlagBox(
+                            flagAsset: lang.flagAsset,
+                            label: _langLabel(l10n, lang.labelKey),
+                            onTap: () => context
+                                .read<DataState>()
+                                .changeLanguage(
+                                    _langNameForChangeLanguage(lang.code))),
+                      ],
                       const SizedBox(height: 20),
                       _motherTongueSection(context),
                       const SizedBox(height: 20),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../models/app_models.dart';
+import '../models/language_registry.dart';
 import '../managers/user_state.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
@@ -25,6 +26,17 @@ class _StartScreenState extends State<StartScreen> {
   String? _selectedCourseId;
   final Set<String> _expandedMyLanguages = {};
   final Set<String> _expandedNewLanguages = {};
+
+  /// Lokalisiertes Label für einen Registry-labelKey über `AppLocalizations`.
+  static String _langLabel(AppLocalizations l10n, String labelKey) =>
+      switch (labelKey) {
+        'german' => l10n.german,
+        'english' => l10n.english,
+        'spanish' => l10n.spanish,
+        'french' => l10n.french,
+        'russian' => l10n.russian,
+        _ => labelKey,
+      };
 
   @override
   void didChangeDependencies() {
@@ -82,14 +94,20 @@ class _StartScreenState extends State<StartScreen> {
     final dataState = context.read<DataState>();
     final l10n = AppLocalizations.of(context);
     final userState = context.read<UserState>();
+    // Muttersprachen sind auf Sprachen mit vorhandenen Dicts beschränkt.
+    final motherTongueCodes = dictLanguageCodes.toList()..sort();
+    final motherTongueLabels = [
+      for (final code in motherTongueCodes)
+        _langLabel(
+            l10n, appLanguages.firstWhere((c) => c.code == code).labelKey),
+    ];
     final result = await showCreateUserDialog(
       context,
       l10n.uRegistration,
       l10n.infUserReg,
       l10n.mLang,
-      l10n.german,
-      l10n.english,
-      l10n.french,
+      motherTongueCodes,
+      motherTongueLabels,
       l10n.confirm,
       l10n.chancel,
     );

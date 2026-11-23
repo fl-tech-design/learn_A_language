@@ -8,14 +8,13 @@ Future<Map<String, String>?> showCreateUserDialog(
   String title,
   String hintText,
   String nativeLangLabel,
-  String deLabel,
-  String enLabel,
-  String frLabel,
+  List<String> motherTongueCodes,
+  List<String> motherTongueLabels,
   String confirmText,
   String cancelText,
 ) async {
   final nameCtrl = TextEditingController();
-  String mLang = 'de';
+  String mLang = motherTongueCodes.first;
 
   return showDialog<Map<String, String>>(
     context: context,
@@ -56,29 +55,18 @@ Future<Map<String, String>?> showCreateUserDialog(
               const SizedBox(height: 8),
               Row(
                 children: [
-                  Expanded(
-                    child: ChoiceChip(
-                      label: Text(toBeginningOfSentenceCase(deLabel)),
-                      selected: mLang == 'de',
-                      onSelected: (_) => setState(() => mLang = 'de'),
+                  for (var i = 0; i < motherTongueCodes.length; i++) ...[
+                    if (i > 0) const SizedBox(width: 8),
+                    Expanded(
+                      child: ChoiceChip(
+                        label:
+                            Text(toBeginningOfSentenceCase(motherTongueLabels[i])),
+                        selected: mLang == motherTongueCodes[i],
+                        onSelected: (_) =>
+                            setState(() => mLang = motherTongueCodes[i]),
+                      ),
                     ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: ChoiceChip(
-                      label: Text(toBeginningOfSentenceCase(enLabel)),
-                      selected: mLang == 'en',
-                      onSelected: (_) => setState(() => mLang = 'en'),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: ChoiceChip(
-                      label: Text(toBeginningOfSentenceCase(frLabel)),
-                      selected: mLang == 'fr',
-                      onSelected: (_) => setState(() => mLang = 'fr'),
-                    ),
-                  ),
+                  ],
                 ],
               ),
             ],

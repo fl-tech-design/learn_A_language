@@ -9,465 +9,469 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
-  String get allDueDone => 'All due words completed!';
+  String get allDueDone => 'Все запланированные слова выполнены!';
 
   @override
-  String get back => 'Back';
+  String get back => 'Назад';
 
   @override
-  String get baseTitle => 'New App';
+  String get baseTitle => 'Новое приложение';
 
   @override
-  String get btnAddUser => '+ New User';
+  String get btnAddUser => '+ Новый пользователь';
 
   @override
-  String get btnChangeUser => 'Change user';
+  String get btnChangeUser => 'Сменить пользователя';
 
   @override
-  String get btnCheck => 'Check';
+  String get btnCheck => 'Проверить';
 
   @override
-  String get btnContinue => 'Continue';
+  String get btnContinue => 'Продолжить';
 
   @override
-  String get btnCrossword => 'Crossword';
+  String get btnCrossword => 'Кроссворд';
 
   @override
-  String get btnDeleteUser => 'Delete user';
+  String get btnDeleteUser => 'Удалить пользователя';
 
   @override
-  String get btnEndSession => 'End session';
+  String get btnEndSession => 'Завершить сеанс';
 
   @override
-  String get btnGame => 'Game';
+  String get btnGame => 'Игра';
 
   @override
-  String get btnGrammar => 'Grammar';
+  String get btnGrammar => 'Грамматика';
 
   @override
-  String get btnLearn => 'Learn';
+  String get btnLearn => 'Учить';
 
   @override
-  String get btnNewWords => 'New words';
+  String get btnNewWords => 'Новые слова';
 
   @override
-  String get btnNext => 'Next word';
+  String get btnNext => 'Следующее слово';
 
   @override
-  String get btnNextWord => 'Next word';
+  String get btnNextWord => 'Следующее слово';
 
   @override
-  String get btnPrev => 'Prev';
+  String get btnPrev => 'Пред.';
 
   @override
-  String get btnRead => 'Read';
+  String get btnRead => 'Читать';
 
   @override
-  String get btnReview => 'Review';
+  String get btnReview => 'Повторить';
 
   @override
-  String get btnTurbo => 'Turbo';
+  String get btnTurbo => 'Турбо';
 
   @override
-  String get btnWordSearch => 'Word Search';
+  String get btnWordSearch => 'Поиск слов';
 
   @override
-  String get catDueWords => 'Due words';
+  String get catDueWords => 'Запланированные слова';
 
   @override
-  String get catLearnedWords => 'Learned words';
+  String get catLearnedWords => 'Изученные слова';
 
   @override
-  String get catMoreVerbs => 'More Verbs';
+  String get catMoreVerbs => 'Больше глаголов';
 
   @override
-  String get catNewLang => 'Discover new languages';
+  String get catNewLang => 'Открыть новые языки';
 
   @override
-  String get catNewWords => 'New words';
+  String get catNewWords => 'Новые слова';
 
   @override
-  String get catReadWords => 'Read words';
+  String get catReadWords => 'Читать слова';
 
   @override
-  String get catSelect => 'Select a category';
+  String get catSelect => 'Выберите категорию';
 
   @override
-  String get catSelectSubcategory => 'Select a subcategory';
+  String get catSelectSubcategory => 'Выберите подкатегорию';
 
   @override
-  String get chancel => 'Cancel';
+  String get chancel => 'Отмена';
 
   @override
-  String get close => 'Close';
+  String get close => 'Закрыть';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Подтвердить';
 
   @override
-  String get difficultyEasy => 'Easy (20s / +3s)';
+  String get difficultyEasy => 'Лёгкий (20с / +3с)';
 
   @override
-  String get difficultyEasyShort => 'Easy';
+  String get difficultyEasyShort => 'Лёгкий';
 
   @override
-  String get difficultyHard => 'Hard (10s / +1s)';
+  String get difficultyHard => 'Сложный (10с / +1с)';
 
   @override
-  String get difficultyHardShort => 'Hard';
+  String get difficultyHardShort => 'Сложный';
 
   @override
-  String get difficultyMedium => 'Medium (15s / +2s)';
+  String get difficultyMedium => 'Средний (15с / +2с)';
 
   @override
-  String get difficultyMediumShort => 'Medium';
+  String get difficultyMediumShort => 'Средний';
 
   @override
-  String get english => 'English';
+  String get english => 'Английский';
 
   @override
-  String get examplesTitle => 'Examples:';
+  String get examplesTitle => 'Примеры:';
 
   @override
-  String get exit => 'Exit';
+  String get exit => 'Выход';
 
   @override
-  String get feedbackCorrect => 'Correct!';
+  String get feedbackCorrect => 'Правильно!';
 
   @override
-  String get feedbackCorrectWouldBe => 'Correct would be:';
+  String get feedbackCorrectWouldBe => 'Правильный ответ:';
 
   @override
-  String get feedbackWrong => 'Wrong!';
+  String get feedbackWrong => 'Неправильно!';
 
   @override
-  String get free => 'Free';
+  String get free => 'Бесплатно';
 
   @override
-  String get grammarContrast => 'Contrast';
+  String get grammarContrast => 'Сравнение';
 
   @override
-  String get grammarExamFocus => 'Exam tip';
+  String get grammarExamFocus => 'Совет для экзамена';
 
   @override
-  String get grammarExamples => 'Examples';
+  String get grammarExamples => 'Примеры';
 
   @override
-  String get grammarExplanation => 'Explanation';
+  String get grammarExplanation => 'Объяснение';
 
   @override
-  String get grammarNoTopics => 'No grammar topics available.';
+  String get grammarNoTopics => 'Темы грамматики недоступны.';
 
   @override
-  String get grammarPitfall => 'Common mistake';
+  String get grammarPitfall => 'Частая ошибка';
 
   @override
-  String get grammarQuickCheck => 'Quick check';
+  String get grammarQuickCheck => 'Быстрая проверка';
 
   @override
-  String get grammarSolution => 'Solution';
+  String get grammarSolution => 'Решение';
 
   @override
   String get infGrammar =>
-      'Choose a grammar topic to read its explanation in your mother tongue.';
+      'Выберите тему грамматики, чтобы прочитать её объяснение на вашем родном языке.';
 
   @override
-  String get titPageGrammar => 'Grammar';
+  String get titPageGrammar => 'Грамматика';
 
   @override
-  String get gameBack => 'Back';
+  String get gameBack => 'Назад';
 
   @override
-  String get gameLives => 'Lives';
+  String get gameLives => 'Жизни';
 
   @override
-  String get gameOver => 'Game Over!';
+  String get gameOver => 'Игра окончена!';
 
   @override
-  String get gameRecordPrefix => 'R: ';
+  String get gameRecordPrefix => 'Р: ';
 
   @override
-  String get gameRestart => 'Restart';
+  String get gameRestart => 'Перезапустить';
 
   @override
-  String get gameScore => 'Pts';
+  String get gameScore => 'Очк.';
 
   @override
-  String get gameTime => 'Time';
+  String get gameTime => 'Время';
 
   @override
-  String get german => 'German';
+  String get german => 'Немецкий';
 
   @override
-  String get infDeleteUser => 'Enter the username to delete.';
+  String get infDeleteUser => 'Введите имя пользователя для удаления.';
 
   @override
-  String get infLearning => 'Choose here which word group you want to learn.';
+  String get infLearning =>
+      'Выберите здесь, какую группу слов вы хотите изучать.';
 
   @override
   String get infSettings =>
-      'Here you can make various basic settings for the app, such as language and so on.';
+      'Здесь вы можете настроить основные параметры приложения, такие как язык и т. д.';
 
   @override
   String get infStart =>
-      'You are on the home page. From here, you can start exploring the entire app.';
+      'Вы на главной странице. Отсюда вы можете начать изучать всё приложение.';
 
   @override
-  String get infUserReg => 'Please enter \na username.';
+  String get infUserReg => 'Пожалуйста, введите \nимя пользователя.';
 
   @override
-  String get infUsername => 'Enter at least 1 character.';
+  String get infUsername => 'Введите хотя бы 1 символ.';
 
   @override
-  String get infWord => 'Read the word and translation, then click \"Read\".';
+  String get infWord =>
+      'Прочитайте слово и перевод, затем нажмите «Читать».';
 
   @override
-  String get information => 'Information';
+  String get information => 'Информация';
 
   @override
-  String get inputHint => 'Read the word and click \"Read\"';
+  String get inputHint => 'Прочитайте слово и нажмите «Читать»';
 
   @override
-  String get inputHintDue => 'Type the translation';
+  String get inputHintDue => 'Введите перевод';
 
   @override
   String labLevel(int level) {
-    return 'Level: $level';
+    return 'Уровень: $level';
   }
 
   @override
-  String get languages => 'Languages';
+  String get languages => 'Языки';
 
   @override
-  String get limitReached => 'Daily limit reached!';
+  String get limitReached => 'Достигнут дневной лимит!';
 
   @override
-  String get loading => 'Loading';
+  String get loading => 'Загрузка';
 
   @override
-  String get loadingComplete => 'Loading complete';
+  String get loadingComplete => 'Загрузка завершена';
 
   @override
-  String get mLang => 'Mother tongue';
+  String get mLang => 'Родной язык';
 
   @override
   String get msgRemoveCourse =>
-      'If you remove this course, all related learning progress will be deleted.\n\nContinue?';
+      'Если вы удалите этот курс, весь связанный прогресс обучения будет удалён.\n\nПродолжить?';
 
   @override
-  String get msgWordLearned => 'Word learned! (Level 8 reached)';
+  String get msgWordLearned => 'Слово изучено! (Достигнут уровень 8)';
 
   @override
-  String get myCourses => 'My Languages';
+  String get myCourses => 'Мои языки';
 
   @override
-  String get newRecord => 'New record!';
+  String get newRecord => 'Новый рекорд!';
 
   @override
-  String get noContentYet => 'No content available yet.';
+  String get noContentYet => 'Пока нет доступного контента.';
 
   @override
-  String get noCourses => 'No courses';
+  String get noCourses => 'Нет курсов';
 
   @override
-  String get noDueWords => 'No due words!';
+  String get noDueWords => 'Нет запланированных слов!';
 
   @override
-  String get noLearnedWords => 'No words to play yet.\nLearn new words first!';
+  String get noLearnedWords =>
+      'Пока нет слов для игры.\nСначала изучите новые слова!';
 
   @override
-  String get noNewLang => 'No new languages available';
+  String get noNewLang => 'Нет новых доступных языков';
 
   @override
-  String get noUReg => 'No user registered';
+  String get noUReg => 'Нет зарегистрированных пользователей';
 
   @override
-  String get noWords => 'No words available';
+  String get noWords => 'Нет доступных слов';
 
   @override
   String recordWithHighscore(int highscore, String label) {
-    return 'Record: $highscore $label';
+    return 'Рекорд: $highscore $label';
   }
 
   @override
-  String get register => 'Register';
+  String get register => 'Регистрация';
 
   @override
-  String get selectDifficulty => 'Select a difficulty:';
+  String get selectDifficulty => 'Выберите сложность:';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Настройки';
 
   @override
-  String get stayLoggedIn => 'Stay logged in';
+  String get stayLoggedIn => 'Оставаться в системе';
 
   @override
   String streakAndRecord(int current, int longest) {
-    return 'Streak $current  |  Record: $longest';
+    return 'Серия $current  |  Рекорд: $longest';
   }
 
   @override
-  String get titChooseGame => 'Choose Game';
+  String get titChooseGame => 'Выбрать игру';
 
   @override
-  String get titPageLearning => 'Learning';
+  String get titPageLearning => 'Обучение';
 
   @override
-  String get titPageSett => 'Settings';
+  String get titPageSett => 'Настройки';
 
   @override
-  String get titPageStart => 'Startpage';
+  String get titPageStart => 'Главная страница';
 
   @override
-  String get titRemoveCourse => 'Remove course';
+  String get titRemoveCourse => 'Удалить курс';
 
   @override
-  String get translationLabel => 'Translation:';
+  String get translationLabel => 'Перевод:';
 
   @override
-  String get uLogin => 'Login';
+  String get uLogin => 'Вход';
 
   @override
-  String get uName => 'Username';
+  String get uName => 'Имя пользователя';
 
   @override
-  String get uRegistration => 'User Registration';
+  String get uRegistration => 'Регистрация пользователя';
 
   @override
-  String get userDelete => 'Delete user';
+  String get userDelete => 'Удалить пользователя';
 
   @override
-  String get welcomeMessage => 'Welcome to our app!';
+  String get welcomeMessage => 'Добро пожаловать в наше приложение!';
 
   @override
-  String get words10 => '10 words';
+  String get words10 => '10 слов';
 
   @override
-  String get words3 => '3 words';
+  String get words3 => '3 слова';
 
   @override
-  String get words5 => '5 words';
+  String get words5 => '5 слов';
 
   @override
-  String get wordsPerSession => 'Words per session';
+  String get wordsPerSession => 'Слов за сеанс';
 
   @override
-  String get wsHint => 'Find these words:';
+  String get wsHint => 'Найдите эти слова:';
 
   @override
-  String get wsSolution => 'Show solution';
+  String get wsSolution => 'Показать решение';
 
   @override
-  String get wsAllFound => 'All words found!';
+  String get wsAllFound => 'Все слова найдены!';
 
   @override
-  String get crosswordBestTime => 'Best time';
+  String get crosswordBestTime => 'Лучшее время';
 
   @override
-  String get crosswordEasy => 'Easy (8 words)';
+  String get crosswordEasy => 'Лёгкий (8 слов)';
 
   @override
-  String get crosswordHard => 'Hard (16 words)';
+  String get crosswordHard => 'Сложный (16 слов)';
 
   @override
-  String get crosswordMedium => 'Medium (12 words)';
+  String get crosswordMedium => 'Средний (12 слов)';
 
   @override
-  String get crosswordTime => 'Time (s)';
+  String get crosswordTime => 'Время (с)';
 
   @override
-  String get btnProgress => 'Learning Progress';
+  String get btnProgress => 'Прогресс обучения';
 
   @override
-  String get titPageProgress => 'Learning Progress';
+  String get titPageProgress => 'Прогресс обучения';
 
   @override
   String get infProgress =>
-      'Choose a category to view the progress of its words.';
+      'Выберите категорию, чтобы просмотреть прогресс её слов.';
 
   @override
-  String get catFirstVerbs => 'First Verbs';
+  String get catFirstVerbs => 'Первые глаголы';
 
   @override
-  String get catGrpAlltag => 'Everyday & Needs';
+  String get catGrpAlltag => 'Повседневность и потребности';
 
   @override
-  String get catGrpMovement => 'Movement & Stay';
+  String get catGrpMovement => 'Движение и пребывание';
 
   @override
-  String get catGrpLearning => 'Learning & Communication';
+  String get catGrpLearning => 'Обучение и общение';
 
   @override
-  String get catGrpWork => 'Action & Work';
+  String get catGrpWork => 'Действие и работа';
 
   @override
-  String get catGrpEnjoy => 'Enjoyment & Help';
+  String get catGrpEnjoy => 'Удовольствие и помощь';
 
   @override
-  String get tensePast => 'Past';
+  String get tensePast => 'Прошедшее';
 
   @override
-  String get tensePresent => 'Present';
+  String get tensePresent => 'Настоящее';
 
   @override
-  String get tenseFuture => 'Future';
+  String get tenseFuture => 'Будущее';
 
   @override
-  String get colWord => 'Word';
+  String get colWord => 'Слово';
 
   @override
-  String get colLevel => 'Level';
+  String get colLevel => 'Уровень';
 
   @override
-  String get labNewShort => 'New';
+  String get labNewShort => 'Новое';
 
   @override
-  String get labDueShort => 'Due';
+  String get labDueShort => 'Запланировано';
 
   @override
-  String get labLearnedShort => 'Learned';
+  String get labLearnedShort => 'Изучено';
 
   @override
   String get msgSaveFailed =>
-      'Saving failed. The last progress could not be saved.';
+      'Не удалось сохранить. Последний прогресс не был сохранён.';
 
   @override
   String get msgUserDataRecovered =>
-      'Your user data was damaged and has been restored from a backup.';
+      'Ваши данные пользователя были повреждены и восстановлены из резервной копии.';
 
   @override
-  String get msgUserDataUnloadable => 'Your user data could not be loaded.';
+  String get msgUserDataUnloadable =>
+      'Не удалось загрузить ваши данные пользователя.';
 
   @override
   String get msgAppDataRecovered =>
-      'App data was damaged. The user list was rebuilt from existing files.';
+      'Данные приложения были повреждены. Список пользователей был восстановлен из существующих файлов.';
 
   @override
-  String get btnHangman => 'Hangman';
+  String get btnHangman => 'Виселица';
 
   @override
-  String get hangmanEasy => 'Easy — Translation';
+  String get hangmanEasy => 'Лёгкий — Перевод';
 
   @override
-  String get hangmanMedium => 'Medium — Example (native)';
+  String get hangmanMedium => 'Средний — Пример (родной язык)';
 
   @override
-  String get hangmanHard => 'Hard — Example (target language)';
+  String get hangmanHard => 'Сложный — Пример (изучаемый язык)';
 
   @override
-  String get hangmanLives => 'Lives';
+  String get hangmanLives => 'Жизни';
 
   @override
-  String get hangmanWrongLetters => 'Wrong letters:';
+  String get hangmanWrongLetters => 'Неправильные буквы:';
 
   @override
-  String get hangmanRoundLost => 'Round lost!';
+  String get hangmanRoundLost => 'Раунд проигран!';
 
   @override
-  String get hangmanRoundWon => 'Round won!';
+  String get hangmanRoundWon => 'Раунд выигран!';
 
   @override
-  String get btnFillIn => 'Fill In';
+  String get btnFillIn => 'Заполнить';
 
   @override
   String get fillInEasy => 'Лёгкий (25 предложений)';
@@ -501,5 +505,5 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get motherTongueHint =>
-      'Sets the translation direction (word and translation) for all selected course languages.';
+      'Задаёт направление перевода (слово и перевод) для всех выбранных языков курса.';
 }
