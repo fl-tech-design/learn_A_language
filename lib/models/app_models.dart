@@ -409,9 +409,16 @@ class LanguageCourse {
 const Set<String> activeCourseLevels = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'};
 
 /// All available courses in the app (derived from the language registry).
-/// Keine `const`-Map, da aus [buildAvailableCourses] berechnet; die öffentliche
-/// API (Typ `Map<String, LanguageCourse>`, 18 Kurse für de/en/fr) bleibt gleich.
-final Map<String, LanguageCourse> availableCourses = buildAvailableCourses();
+/// Startet mit den Seed-Sprachen (de/en/fr); nach dem Entdecken tatsächlich
+/// vorhandener Wörterbücher ([refreshAvailableCourses]) kommen weitere Sprachen
+/// automatisch hinzu. Öffentliche API (Typ `Map<String, LanguageCourse>`) bleibt
+/// gleich, nur das Set wächst dynamisch.
+Map<String, LanguageCourse> availableCourses = buildAvailableCourses();
+
+/// Erweitert den Kurs-Katalog um die [sprachen], deren Wörterbücher gefunden
+/// wurden. Aufruf nach dem Discovery in `initialize`.
+void refreshAvailableCourses(Set<String> sprachen) => availableCourses =
+    buildAvailableCourses(sprachen);
 
 /// A category that groups vocabulary verb files into learnable units.
 ///

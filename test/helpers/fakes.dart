@@ -99,6 +99,10 @@ class FakeFileService implements FileService {
       String langCode) async {
     return languageDicts[langCode] ?? {};
   }
+
+  @override
+  Future<Set<String>> discoverLanguageDicts() async =>
+      Set<String>.of(languageDicts.keys);
 }
 
 /// In-Memory [UserManager]-Fake: speichert UserData im Speicher und zählt

@@ -5,7 +5,8 @@ import 'dart:io';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
 
-import '../models/language_registry.dart' show buildCourseDictFiles;
+import '../models/language_registry.dart'
+    show buildCourseDictFiles, courseCandidateCodes;
 
 import 'storage_error_bus.dart';
 
@@ -48,6 +49,15 @@ abstract class FileService {
   Future<void> initialize();
   Future<Map<String, dynamic>> loadJson(String relativePath);
   Future<void> saveJson(String relativePath, Map<String, dynamic> data);
+
+  /// Ermittelt zur Laufzeit, für welche Sprachcodes im App-Datenverzeichnis
+  /// tatsächlich Wörterbücher (`language_dict/{code}/{code}_*.json`) existieren.
+  ///
+  /// Grundlage für das dynamische Anbieten von Kursen/Muttersprachen: Eine neue
+  /// Sprache erscheint automatisch, sobald ihre Dicts vorhanden sind – ohne
+  /// den Katalog anzufassen. Leeres Verzeichnis/Fehler → `{}` (Fallback auf
+  /// Seeds übernimmt der Aufrufer).
+  Future<Set<String>> discoverLanguageDicts();
   Future<void> updateJsonKey(
       String relativePath, String key, Object? value);
 
@@ -173,8 +183,9 @@ class FileServiceImpl implements FileService {
     final firstRun = !await flagFile.exists();
 
     // Basis-Dateien plus die Dict-Kopierliste als Produkt aus
-    // dictLanguageCodes × verbKeys (identische Pfade wie bisher; es/ru
-    // werden bewusst NICHT erfasst, da für sie keine language_dict/ existiert).
+    // courseCandidateCodes × verbKeys. Fehlende Assets (z. B. noch nicht
+    // vorhandene es/ru/el/it/pt-Dicts) werden im Loop unten still übersprungen,
+    // sodass neue Sprachen automatisch kopiert werden, sobald vorhanden.
     final files = <String>[
       'data_base/base_data.json',
       'data_app/app_data.json',
@@ -202,6 +213,41 @@ class FileServiceImpl implements FileService {
     }
 
     if (firstRun) await flagFile.create();
+  }
+
+  @override
+  Future<Set<String>> discoverLanguageDicts() async {
+    final String langDirPath;
+    try {
+      langDirPath = await _resolveAppPath('language_dict');
+    } on PathRejectedException catch (e) {
+      log('discoverLanguageDicts: Pfad unzulässig ($e)');
+      return {};
+    }
+    final langDir = Directory(langDirPath);
+    if (!await langDir.exists()) return {};
+
+    final result = <String>{};
+    await for (final entity in langDir.list(followLinks: false)) {
+      if (entity is! Directory) continue;
+      final code = entity.path.split(RegExp(r'[/\\]')).last;
+      // Nur bekannte Kandidaten – verhindert, dass Fremdordner als Sprache
+      // auftauchen.
+      if (!courseCandidateCodes.contains(code)) continue;
+      final prefix = '${code}_';
+      var hasDict = false;
+      await for (final f in entity.list(followLinks: false)) {
+        if (f is File && f.path.endsWith('.json')) {
+          final fname = f.path.split(RegExp(r'[/\\]')).last;
+          if (fname.startsWith(prefix)) {
+            hasDict = true;
+            break;
+          }
+        }
+      }
+      if (hasDict) result.add(code);
+    }
+    return result;
   }
 
   @override

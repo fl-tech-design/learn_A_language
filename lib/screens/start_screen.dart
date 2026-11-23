@@ -95,7 +95,8 @@ class _StartScreenState extends State<StartScreen> {
     final l10n = AppLocalizations.of(context);
     final userState = context.read<UserState>();
     // Muttersprachen sind auf Sprachen mit vorhandenen Dicts beschränkt.
-    final motherTongueCodes = dictLanguageCodes.toList()..sort();
+    final motherTongueCodes =
+        context.read<DataState>().availableDictLanguages.toList()..sort();
     final motherTongueLabels = [
       for (final code in motherTongueCodes)
         _langLabel(

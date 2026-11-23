@@ -59,11 +59,42 @@ const List<AppLanguageConfig> appLanguages = [
   ),
 ];
 
-/// Sprachen mit tatsächlich vorhandenen Wörterbüchern (`language_dict/`).
+/// Seed-Sprachen: garantiert verfügbare Kurssprachen/Wörterbücher.
 ///
-/// Nur diese sind kurssprach-fähig (availableCourses) UND
-/// muttersprachen-fähig (changeMotherTongue/Dict-Kopierliste).
+/// Dienen als stabiler Fallback (First-Run & Tests), bis die tatsächlich
+/// vorhandenen Sprachen per [FileService.discoverLanguageDicts] ermittelt
+/// werden. `availableCourses` startet mit dieser Menge.
 const Set<String> dictLanguageCodes = {'de', 'en', 'fr'};
+
+/// Alle Sprachcodes, die potenziell Kurs-Wörterbücher (und Audio) liefern
+/// könnten.
+///
+/// Der `initialize`-Copy-Loop probiert JEDE dieser Kandidaten × Verb-Keys und
+/// überspringt fehlende Dateien still. Dadurch erscheint eine neue Sprache
+/// automatisch, sobald ihre Dicts ins Bundle und (per Discovery) als vorhanden
+/// erkannt werden – OHNE die Kopierliste/den Katalog jedes Mal anzufassen.
+const List<String> courseCandidateCodes = [
+  'de',
+  'en',
+  'fr',
+  'es',
+  'ru',
+  'el',
+  'it',
+  'pt',
+];
+
+/// Flagassets je Sprachcode (für verfügbare/sichtbare Kurs-Sprachen).
+const Map<String, String> _flagForCode = {
+  'de': 'assets/images/flag_germany.png',
+  'en': 'assets/images/flag_uk.png',
+  'es': 'assets/images/flag_spa.png',
+  'fr': 'assets/images/flag_fra.png',
+  'ru': 'assets/images/flag_rus.png',
+  'el': 'assets/images/flag_gre.png',
+  'it': 'assets/images/flag_ita.png',
+  'pt': 'assets/images/flag_por.png',
+};
 
 /// Alle 30 Verb-Keys (Dict-Datei-Stem ohne Sprach-Präfix).
 ///
@@ -128,25 +159,35 @@ const Map<String, String> _languageNameToCode = {
 String? languageCodeForName(String name) =>
     _languageNameToCode[name.trim().toLowerCase()];
 
-/// Anzeige-/Sortiername eines Kurses (unverändert zu bisher: Deutsche Namen).
+/// Anzeige-/Sortiername eines Kurses (deutscher Name, wie bisher).
 String courseLanguageName(String code) => switch (code) {
       'de' => 'Deutsch',
       'en' => 'Englisch',
+      'es' => 'Spanisch',
       'fr' => 'Französisch',
+      'ru' => 'Russisch',
+      'el' => 'Griechisch',
+      'it' => 'Italienisch',
+      'pt' => 'Portugiesisch',
       _ => code,
     };
 
+/// Flagasset zum Sprachcode ({} → Standard-Fallback „en“).
+String courseFlagAsset(String code) =>
+    _flagForCode[code] ?? appLanguages.first.flagAsset;
+
 /// Die verfügbaren Kurse (Kurs-ID `'{code}_verben_{level}'`).
 ///
-/// Es werden NUR Sprachen aus [dictLanguageCodes] berücksichtigt – `es`/`ru`
-/// erhalten KEINE Kurse, da für sie keine Dicts existieren.
-Map<String, LanguageCourse> buildAvailableCourses() {
+/// Baut Kurse für die übergebene (oder per Default vorhandene) Sprachenmenge.
+/// Kurs-IDs nutzen das kleingeschriebene Level (z. B. 'a1'), während `level`
+/// für Anzeige/Fortschritt großgeschrieben bleibt ('A1'). Nur Sprachen mit
+/// tatsächlich vorhandenen Dicts sollen übergeben werden.
+Map<String, LanguageCourse> buildAvailableCourses([Set<String>? codes]) {
   final result = <String, LanguageCourse>{};
-  for (final code in dictLanguageCodes.toList()..sort()) {
+  final langCodes = (codes ?? dictLanguageCodes).toList()..sort();
+  for (final code in langCodes) {
     final name = courseLanguageName(code);
     for (final level in courseLevels) {
-      // Kurs-ID nutzt das kleingeschriebene Level (z. B. 'a1'), während
-      // `level` für Anzeige/Fortschritt großgeschrieben bleibt ('A1').
       final id = '${code}_verben_${level.toLowerCase()}';
       result[id] = LanguageCourse(
         id: id,
@@ -154,8 +195,7 @@ Map<String, LanguageCourse> buildAvailableCourses() {
         languageName: name,
         level: level,
         category: 'Verben',
-        flagAsset:
-            appLanguages.firstWhere((c) => c.code == code).flagAsset,
+        flagAsset: courseFlagAsset(code),
       );
     }
   }
@@ -163,10 +203,15 @@ Map<String, LanguageCourse> buildAvailableCourses() {
 }
 
 /// Die Dict-Kopierliste für [FileService.initialize]: Produkt aus
-/// [dictLanguageCodes] × [verbKeys] – identische Pfade wie bisher.
+/// [courseCandidateCodes] × [verbKeys].
+///
+/// Zentraler Baustein des Auto-Copy: Fehlende Assets werden beim Kopieren
+/// still übersprungen (bereits vorhandene Try/Catch-Toleranz in `initialize`),
+/// sodass neue Sprachen KEINEN Eintrag hier benötigen – nur die Dateien im
+/// Bundle plus (unvermeidbar) deren `pubspec.yaml`-Asset-Deklaration.
 List<String> buildCourseDictFiles() {
   final result = <String>[];
-  for (final code in dictLanguageCodes.toList()..sort()) {
+  for (final code in courseCandidateCodes) {
     for (final verb in verbKeys) {
       result.add('language_dict/$code/${code}_$verb.json');
     }

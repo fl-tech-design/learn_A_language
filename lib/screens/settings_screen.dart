@@ -86,7 +86,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final userState = context.read<UserState>();
     final l10n = AppLocalizations.of(context);
     // Muttersprachen sind auf Sprachen mit vorhandenen Dicts beschränkt.
-    final motherTongueCodes = dictLanguageCodes.toList()..sort();
+    final motherTongueCodes =
+        context.read<DataState>().availableDictLanguages.toList()..sort();
     final motherTongueLabels = [
       for (final code in motherTongueCodes)
         _langLabel(
@@ -130,9 +131,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
           spacing: 8,
           children: [
             // Muttersprachen-Auswahl ist auf Sprachen mit vorhandenen Dicts
-            // beschränkt (de/en/fr) – `es`/`ru` haben keine `language_dict/`
-            // und würden leere Übersetzungen liefern.
-            for (final code in dictLanguageCodes.toList()..sort())
+            // beschränkt (aus Discovery inkl. Seeds de/en/fr) – Sprachen ohne
+            // `language_dict/` würden leere Übersetzungen liefern.
+            for (final code
+                in context.read<DataState>().availableDictLanguages.toList()
+                  ..sort())
               _motherLangChip(
                   code,
                   _langLabel(
