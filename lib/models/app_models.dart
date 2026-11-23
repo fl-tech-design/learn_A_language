@@ -584,6 +584,48 @@ const List<WordCollection> courseWordCollections = [
   ),
 ];
 
+/// Eine Ueberkategorie (Dach-Ebene) ueber mehreren [WordCollection]s, z. B.
+/// „Verben\". Ermoeglicht spaeter weitere Ueberkategorien (z. B. „Adjektive\")
+/// auf gleicher Ebene, ohne die bestehende Sammlungs-Struktur umzubauen.
+class CourseTopCategory {
+  final String id;
+  final int order;
+
+  /// l10n key fuer den lokalisierten Titel der Ueberkategorie.
+  final String titleKey;
+
+  /// Ids der enthaltenen Sammlungen ([WordCollection]s).
+  final List<String> collectionIds;
+
+  const CourseTopCategory({
+    required this.id,
+    required this.order,
+    required this.titleKey,
+    required this.collectionIds,
+  });
+
+  /// Die enthaltenen Sammlungen (in [collectionIds]-Reihenfolge).
+  List<WordCollection> get collections {
+    final result = <WordCollection>[];
+    for (final id in collectionIds) {
+      final c = wordCollectionById(id);
+      if (c != null) result.add(c);
+    }
+    return result;
+  }
+}
+
+/// Die Ueberkategorien des Kurses. Aktuell nur „Verben\"; Adjektive kommen
+/// spaeter als gleichgeordnete Ueberkategorie hinzu.
+const List<CourseTopCategory> courseTopCategories = [
+  CourseTopCategory(
+    id: 'verbs',
+    order: 1,
+    titleKey: 'catVerbs',
+    collectionIds: ['erste_verben', 'weitere_verben'],
+  ),
+];
+
 /// Aggregierte Fortschritts-Zahlen einer Word-Kategorie.
 class CategoryCounts {
   final int total;

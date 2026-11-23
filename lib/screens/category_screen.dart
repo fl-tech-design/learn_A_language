@@ -125,6 +125,18 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
                             style: const TextStyle(
                                 fontSize: AppTheme.btnFontSize,
                                 color: AppTheme.colorPrimary)))),
+                const SizedBox(height: AppTheme.contentSpacing),
+                SizedBox(
+                    height: 50,
+                    width: double.infinity,
+                    child: OutlinedButton(
+                        onPressed: (cat == null || counts.total == 0)
+                            ? null
+                            : () => Navigator.of(context).pushNamed(
+                                '/progress_group', arguments: cat.id),
+                        child: Text(l10n.btnProgress,
+                            style: const TextStyle(
+                                fontSize: AppTheme.btnFontSize)))),
               ]),
             ),
           ),

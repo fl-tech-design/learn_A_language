@@ -75,6 +75,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get catDueWords => 'Запланированные слова';
 
   @override
+  String get catInProgressWords => 'В работе';
+
+  @override
+  String get catVerbs => 'Глаголы';
+
+  @override
   String get catLearnedWords => 'Изученные слова';
 
   @override

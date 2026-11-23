@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../l10n/app_localizations.dart';
+import '../models/language_registry.dart';
 
 /// Liefert den lokalisierten Titel einer [WordCategory] anhand ihres l10n-Keys.
 String wordCategoryTitle(AppLocalizations l10n, WordCategory category) {
@@ -37,6 +41,16 @@ String wordCollectionTitle(AppLocalizations l10n, WordCollection collection) {
   }
 }
 
+/// Liefert den lokalisierten Titel einer Überkategorie (Dach-Ebene).
+String wordTopCategoryTitle(AppLocalizations l10n, CourseTopCategory top) {
+  switch (top.titleKey) {
+    case 'catVerbs':
+      return l10n.catVerbs;
+    default:
+      return top.id;
+  }
+}
+
 /// Kurz-Label mit den Zählern einer Kategorie, z. B. "3 neu · 2 fällig ·
 /// 1 gelernt".
 String categoryCountLabel(AppLocalizations l10n, CategoryCounts c) {
@@ -56,8 +70,10 @@ class ProgressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final collections =
-        courseWordCollections.toList()..sort((a, b) => a.order.compareTo(b.order));
+    final lang = context.watch<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    final topCategories =
+        courseTopCategories.toList()..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
       body: Column(
@@ -67,53 +83,72 @@ class ProgressScreen extends StatelessWidget {
             onInfo: () => showInfoDialog(
                 context, l10n.infProgress, l10n.information),
           ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(courseFlagAsset(lang), width: 24, height: 16),
+                  const SizedBox(width: 6),
+                  Text(courseLanguageName(lang),
+                      style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                ],
+              ),
+            ),
+          ),
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
                 child: Column(
                   children: [
-                    const SizedBox(
-                      height: 120,
-                      child: Center(
-                        child: Text(
-                          'Lernfortschritt',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: AppTheme.lblFontSize),
-                        ),
+                    
+                    for (final top in topCategories)
+                      ...[
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 6),
+                      child: Text(
+                        wordTopCategoryTitle(l10n, top),
+                        style: const TextStyle(
+                            fontSize: AppTheme.lblFontSize,
+                            color: AppTheme.colorPrimary,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
-                    for (final collection in collections)
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            bottom: AppTheme.contentSpacing),
-                        child: SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: OutlinedButton(
-                            onPressed: () {
-                              if (collection.categories.length == 1) {
-                                Navigator.of(context).pushNamed(
-                                    '/progress_group',
-                                    arguments:
-                                        collection.categoryIds.first);
-                              } else {
-                                Navigator.of(context).pushNamed(
-                                    '/collection',
-                                    arguments: CollectionScreenArgs(
-                                        collectionId: collection.id,
-                                        mode: 'progress'));
-                              }
-                            },
-                            child: Text(
-                              wordCollectionTitle(l10n, collection),
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                  fontSize: AppTheme.btnFontSize),
+                        for (final collection in top.collections)
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                bottom: AppTheme.contentSpacing),
+                            child: SizedBox(
+                              height: 50,
+                              width: double.infinity,
+                              child: OutlinedButton(
+                                onPressed: () {
+                                  if (collection.categories.length == 1) {
+                                    Navigator.of(context).pushNamed(
+                                        '/progress_group',
+                                        arguments:
+                                            collection.categoryIds.first);
+                                  } else {
+                                    Navigator.of(context).pushNamed(
+                                        '/collection',
+                                        arguments: CollectionScreenArgs(
+                                            collectionId: collection.id,
+                                            mode: 'progress'));
+                                  }
+                                },
+                                child: Text(
+                                  wordCollectionTitle(l10n, collection),
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                      fontSize: AppTheme.btnFontSize),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
+                      ],
                     const SizedBox(height: AppTheme.contentSpacing),
                     SizedBox(
                       height: 50,

@@ -22,6 +22,8 @@
   "btnTurbo": "Turbo",
   "btnWordSearch": "Word Search",
   "catDueWords": "Due words",
+  "catInProgressWords": "In progress",
+  "catVerbs": "Verbs",
   "catLearnedWords": "Learned words",
   "catMoreVerbs": "More Verbs",
   "catNewLang": "Discover new languages",

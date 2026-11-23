@@ -242,6 +242,18 @@ abstract class AppLocalizations {
   /// **'Due words'**
   String get catDueWords;
 
+  /// No description provided for @catInProgressWords.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get catInProgressWords;
+
+  /// No description provided for @catVerbs.
+  ///
+  /// In en, this message translates to:
+  /// **'Verbs'**
+  String get catVerbs;
+
   /// No description provided for @catLearnedWords.
   ///
   /// In en, this message translates to:

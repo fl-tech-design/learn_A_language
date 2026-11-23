@@ -22,6 +22,8 @@
   "btnTurbo": "Turbo",
   "btnWordSearch": "Αναζήτηση λέξεων",
   "catDueWords": "Εκκρεμείς λέξεις",
+  "catInProgressWords": "Σε εξέλιξη",
+  "catVerbs": "Ρήματα",
   "catLearnedWords": "Μαθημένες λέξεις",
   "catMoreVerbs": "Περισσότερα ρήματα",
   "catNewLang": "Ανακαλύψτε νέες γλώσσες",

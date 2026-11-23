@@ -49,6 +49,43 @@ void main() {
       expect((collectionArgs as CollectionScreenArgs).mode, 'learn');
     });
 
+    test('E3: Session-Restore /category → /progress_group mit Kategorie-Id '
+        'und activeCourseId', () async {
+      final store = <String, Map<String, dynamic>>{};
+      final fs = FakeFileService(store: store);
+      final manager = SessionManager(fs, GrammarManagerImpl(fs));
+
+      final nav = NavigationState()
+        ..setActiveCourse(const LanguageCourse(
+          id: 'de_verben_a1',
+          languageCode: 'de',
+          languageName: 'Deutsch',
+          level: 'A1',
+          category: 'Verben',
+          flagAsset: 'assets/images/flag_germany.png',
+        ))
+        ..setSelectedCategoryId('erste_verben');
+
+      await manager.save(
+        user: 'alice',
+        navigationState: nav,
+        routes: const [
+          SessionRoute(name: '/learning'),
+          SessionRoute(name: '/category', arguments: 'erste_verben'),
+          SessionRoute(name: '/progress_group', arguments: 'grp_alltag'),
+        ],
+      );
+
+      final snapshot = await manager.loadSnapshotForUser('alice');
+      expect(snapshot, isNotNull);
+      expect(snapshot!.activeCourseId, 'de_verben_a1');
+      expect(snapshot.selectedCategoryId, 'erste_verben');
+      expect(snapshot.routes, hasLength(3));
+      expect(snapshot.routes[2].name, '/progress_group');
+      expect(snapshot.routes[2].arguments, 'grp_alltag');
+    });
+
+
     test('GrammarBlock-Argument wird per Id aufgelöst', () async {
       final store = <String, Map<String, dynamic>>{};
       final fs = FakeFileService(

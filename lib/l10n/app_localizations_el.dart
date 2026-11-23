@@ -75,6 +75,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get catDueWords => 'Εκκρεμείς λέξεις';
 
   @override
+  String get catInProgressWords => 'Σε εξέλιξη';
+
+  @override
+  String get catVerbs => 'Ρήματα';
+
+  @override
   String get catLearnedWords => 'Μαθημένες λέξεις';
 
   @override

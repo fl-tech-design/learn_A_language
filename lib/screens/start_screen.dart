@@ -35,6 +35,7 @@ class _StartScreenState extends State<StartScreen> {
         'spanish' => l10n.spanish,
         'french' => l10n.french,
         'russian' => l10n.russian,
+        'greek' => l10n.greek,
         _ => labelKey,
       };
 

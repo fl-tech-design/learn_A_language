@@ -6,6 +6,7 @@ import '../managers/navigation_state.dart';
 import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart' show VocabQueries;
 import '../models/app_models.dart';
+import '../models/language_registry.dart';
 import '../models/vocab_key.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
@@ -29,6 +30,9 @@ class ProgressGroupScreen extends StatefulWidget {
 class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
   WordCategory? _category;
 
+  /// Namen der aufgeklappten (sichtbaren) Verben. Initial leer = alle zugeklappt.
+  final Set<String> _expanded = {};
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -50,6 +54,21 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
           BoxTitle(
             title: category != null ? wordCategoryTitle(l10n, category) : '',
             onInfo: () => showInfoDialog(context, l10n.infProgress, l10n.information),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(courseFlagAsset(lang), width: 24, height: 16),
+                  const SizedBox(width: 6),
+                  Text(courseLanguageName(lang),
+                      style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                ],
+              ),
+            ),
           ),
           Align(
             alignment: Alignment.centerLeft,
@@ -135,12 +154,17 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
         const SizedBox(height: 4),
         for (final verb in category.verbKeys) ...[
           if (byVerb.containsKey(verb)) ...[
-            _verbHeader(verb),
-            for (final tense in tenses)
-              if (byVerb[verb]!.containsKey(tense)) ...[
-                _tenseHeader(l10n, tense),
-                for (final e in byVerb[verb]![tense]!) _wordRow(e),
-              ],
+            _verbHeader(verb, () => setState(() {
+              if (!_expanded.add(verb)) {
+                _expanded.remove(verb);
+              }
+            })),
+            if (_expanded.contains(verb))
+              for (final tense in tenses)
+                if (byVerb[verb]!.containsKey(tense)) ...[
+                  _tenseHeader(l10n, tense),
+                  for (final e in byVerb[verb]![tense]!) _wordRow(e),
+                ],
           ],
         ],
         const SizedBox(height: AppTheme.contentSpacing),
@@ -165,7 +189,7 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           _summaryItemApp(AppTheme.green2, '$learned', l10n.catLearnedWords),
-          _summaryItemApp(AppTheme.orange1, '$inProgress', l10n.catDueWords),
+          _summaryItemApp(AppTheme.orange1, '$inProgress', l10n.catInProgressWords),
           _summaryItemApp(AppTheme.grey4, '$newCount', l10n.catNewWords),
         ],
       ),
@@ -183,18 +207,30 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
     );
   }
 
-  Widget _verbHeader(String verb) {
+  Widget _verbHeader(String verb, VoidCallback onTap) {
+    final expanded = _expanded.contains(verb);
     final name = _prettifyVerb(verb);
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.only(top: 10, bottom: 4),
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-      decoration: BoxDecoration(
-        color: AppTheme.grey2.withValues(alpha: 0.4),
-        borderRadius: BorderRadius.circular(4),
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(top: 10, bottom: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+        decoration: BoxDecoration(
+          color: AppTheme.grey2.withValues(alpha: 0.4),
+          borderRadius: BorderRadius.circular(4),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(name,
+                  style: const TextStyle(fontSize: AppTheme.infFontSize, color: AppTheme.colorPrimary, fontWeight: FontWeight.bold)),
+            ),
+            Icon(expanded ? Icons.expand_less : Icons.expand_more,
+                size: 20, color: AppTheme.colorPrimary),
+          ],
+        ),
       ),
-      child: Text(name,
-          style: const TextStyle(fontSize: AppTheme.infFontSize, color: AppTheme.colorPrimary, fontWeight: FontWeight.bold)),
     );
   }
 

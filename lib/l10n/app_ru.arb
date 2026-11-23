@@ -22,6 +22,8 @@
   "btnTurbo": "Турбо",
   "btnWordSearch": "Поиск слов",
   "catDueWords": "Запланированные слова",
+  "catInProgressWords": "В работе",
+  "catVerbs": "Глаголы",
   "catLearnedWords": "Изученные слова",
   "catMoreVerbs": "Больше глаголов",
   "catNewLang": "Открыть новые языки",

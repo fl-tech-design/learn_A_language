@@ -75,6 +75,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get catDueWords => 'Palabras pendientes';
 
   @override
+  String get catInProgressWords => 'En curso';
+
+  @override
+  String get catVerbs => 'Verbos';
+
+  @override
   String get catLearnedWords => 'Palabras aprendidas';
 
   @override

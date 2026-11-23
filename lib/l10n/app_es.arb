@@ -22,6 +22,8 @@
   "btnTurbo": "Turbo",
   "btnWordSearch": "Sopa de letras",
   "catDueWords": "Palabras pendientes",
+  "catInProgressWords": "En curso",
+  "catVerbs": "Verbos",
   "catLearnedWords": "Palabras aprendidas",
   "catMoreVerbs": "Más verbos",
   "catNewLang": "Descubrir nuevos idiomas",
