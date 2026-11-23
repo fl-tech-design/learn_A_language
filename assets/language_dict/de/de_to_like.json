@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/mögen/audio_ich_mochte_m.mp3",
-        "audio/de/verbs/mögen/audio_du_mochtest_m.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_mochte_m.mp3",
-        "audio/de/verbs/mögen/audio_wir_mochten_m.mp3",
-        "audio/de/verbs/mögen/audio_ihr_mochtet_m.mp3",
-        "audio/de/verbs/mögen/audio_sie_mochten_m.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_mochte_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_mochtest_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_mochte_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_mochten_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_mochtet_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_mochten_m.mp3"
       ],
       [
-        "audio/de/verbs/mögen/audio_ich_mochte_f.mp3",
-        "audio/de/verbs/mögen/audio_du_mochtest_f.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_mochte_f.mp3",
-        "audio/de/verbs/mögen/audio_wir_mochten_f.mp3",
-        "audio/de/verbs/mögen/audio_ihr_mochtet_f.mp3",
-        "audio/de/verbs/mögen/audio_sie_mochten_f.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_mochte_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_mochtest_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_mochte_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_mochten_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_mochtet_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_mochten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/mögen/audio_ich_mag_m.mp3",
-        "audio/de/verbs/mögen/audio_du_magst_m.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_mag_m.mp3",
-        "audio/de/verbs/mögen/audio_wir_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_ihr_mögt_m.mp3",
-        "audio/de/verbs/mögen/audio_sie_mögen_m.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_mag_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_magst_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_mag_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_mögt_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_mögen_m.mp3"
       ],
       [
-        "audio/de/verbs/mögen/audio_ich_mag_f.mp3",
-        "audio/de/verbs/mögen/audio_du_magst_f.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_mag_f.mp3",
-        "audio/de/verbs/mögen/audio_wir_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_ihr_mögt_f.mp3",
-        "audio/de/verbs/mögen/audio_sie_mögen_f.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_mag_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_magst_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_mag_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_mögt_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_mögen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/mögen/audio_ich_werde_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_du_wirst_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_wird_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_wir_werden_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_ihr_werdet_mögen_m.mp3",
-        "audio/de/verbs/mögen/audio_sie_werden_mögen_m.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_werde_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_wirst_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_wird_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_werden_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_werdet_mögen_m.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_werden_mögen_m.mp3"
       ],
       [
-        "audio/de/verbs/mögen/audio_ich_werde_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_du_wirst_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_er_sie_es_wird_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_wir_werden_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_ihr_werdet_mögen_f.mp3",
-        "audio/de/verbs/mögen/audio_sie_werden_mögen_f.mp3"
+        "audio/de/verbs/de_audio_to_like/audio_ich_werde_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_du_wirst_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_er_sie_es_wird_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_wir_werden_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_ihr_werdet_mögen_f.mp3",
+        "audio/de/verbs/de_audio_to_like/audio_sie_werden_mögen_f.mp3"
       ]
     ]
   }

@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/terminer/audio_jai_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_tu_as_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_il_elle_a_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_nous_avons_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_vous_avez_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_ils_elles_ont_termine_f.mp3"
+        "audio/fr/verbs/fr_audio_to_end/audio_jai_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_as_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_a_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_avons_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_avez_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_ont_termine_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/terminer/audio_je_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_tu_termines_f.mp3",
-        "audio/fr/verbs/terminer/audio_il_elle_termine_f.mp3",
-        "audio/fr/verbs/terminer/audio_nous_terminons_f.mp3",
-        "audio/fr/verbs/terminer/audio_vous_terminez_f.mp3",
-        "audio/fr/verbs/terminer/audio_ils_elles_terminent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_end/audio_je_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_termines_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_terminons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_terminez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_terminent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/terminer/audio_je_terminerai_f.mp3",
-        "audio/fr/verbs/terminer/audio_tu_termineras_f.mp3",
-        "audio/fr/verbs/terminer/audio_il_elle_terminera_f.mp3",
-        "audio/fr/verbs/terminer/audio_nous_terminerons_f.mp3",
-        "audio/fr/verbs/terminer/audio_vous_terminerez_f.mp3",
-        "audio/fr/verbs/terminer/audio_ils_elles_termineront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_end/audio_je_terminerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_termineras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_terminera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_terminerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_terminerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_termineront_f.mp3"
       ]
     ]
   }

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakryl_m.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakryl_m.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakryl_m.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakryli_m.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakryli_m.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakryli_m.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryli_m.mp3"
       ],
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakryl_f.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakryl_f.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakryl_f.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakryli_f.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakryli_f.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakryli_f.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryli_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakryvayu_m.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakryvaesh_m.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakryvaet_m.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakryvaem_m.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakryvaete_m.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakryvayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryvayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryvaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryvaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryvaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryvaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryvayut_m.mp3"
       ],
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakryvayu_f.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakryvaesh_f.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakryvaet_f.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakryvaem_f.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakryvaete_f.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakryvayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryvayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryvaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryvaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryvaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryvaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryvayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakroyu_m.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakroesh_m.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakroet_m.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakroem_m.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakroete_m.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakroyut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakroyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakroesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakroet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakroem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakroete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakroyut_m.mp3"
       ],
       [
-        "audio/ru/verben/zakryvat/audio_ya_zakroyu_f.mp3",
-        "audio/ru/verben/zakryvat/audio_ty_zakroesh_f.mp3",
-        "audio/ru/verben/zakryvat/audio_on_zakroet_f.mp3",
-        "audio/ru/verben/zakryvat/audio_my_zakroem_f.mp3",
-        "audio/ru/verben/zakryvat/audio_vy_zakroete_f.mp3",
-        "audio/ru/verben/zakryvat/audio_oni_zakroyut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakroyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakroesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakroet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakroem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakroete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakroyut_f.mp3"
       ]
     ]
   }

@@ -10,7 +10,7 @@ import 'file_service.dart';
 /// unter dem Schlüssel `audio`: ein Array aus ZWEI parallel gefüllten Listen
 /// (Index 0 = Stimme m, Index 1 = Stimme f), je 6 Einträge in
 /// Konjugationsreihenfolge – identisch zur `translations`-Liste. Die Pfade sind
-/// assets-relativ (z. B. `audio/de/verben/arbeiten/audio_ich_arbeite_m.mp3`) und
+/// assets-relativ (z. B. `audio/de/verbs/de_audio_to_work/audio_ich_arbeite_m.mp3`) und
 /// werden direkt an [AssetSource] übergeben; audioplayers ergänzt `assets/`.
 ///
 /// Die Zielsprache wird NICHT mehr aus der Muttersprache abgeleitet: [langCode]

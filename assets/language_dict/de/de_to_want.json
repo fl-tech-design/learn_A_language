@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/wollen/audio_ich_wollte_m.mp3",
-        "audio/de/verbs/wollen/audio_du_wolltest_m.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_wollte_m.mp3",
-        "audio/de/verbs/wollen/audio_wir_wollten_m.mp3",
-        "audio/de/verbs/wollen/audio_ihr_wolltet_m.mp3",
-        "audio/de/verbs/wollen/audio_sie_wollten_m.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_wollte_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_wolltest_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_wollte_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_wollten_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_wolltet_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_wollten_m.mp3"
       ],
       [
-        "audio/de/verbs/wollen/audio_ich_wollte_f.mp3",
-        "audio/de/verbs/wollen/audio_du_wolltest_f.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_wollte_f.mp3",
-        "audio/de/verbs/wollen/audio_wir_wollten_f.mp3",
-        "audio/de/verbs/wollen/audio_ihr_wolltet_f.mp3",
-        "audio/de/verbs/wollen/audio_sie_wollten_f.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_wollte_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_wolltest_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_wollte_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_wollten_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_wolltet_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_wollten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/wollen/audio_ich_will_m.mp3",
-        "audio/de/verbs/wollen/audio_du_willst_m.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_will_m.mp3",
-        "audio/de/verbs/wollen/audio_wir_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_ihr_wollt_m.mp3",
-        "audio/de/verbs/wollen/audio_sie_wollen_m.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_will_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_willst_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_will_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_wollt_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_wollen_m.mp3"
       ],
       [
-        "audio/de/verbs/wollen/audio_ich_will_f.mp3",
-        "audio/de/verbs/wollen/audio_du_willst_f.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_will_f.mp3",
-        "audio/de/verbs/wollen/audio_wir_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_ihr_wollt_f.mp3",
-        "audio/de/verbs/wollen/audio_sie_wollen_f.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_will_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_willst_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_will_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_wollt_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_wollen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/wollen/audio_ich_werde_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_du_wirst_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_wird_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_wir_werden_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_ihr_werdet_wollen_m.mp3",
-        "audio/de/verbs/wollen/audio_sie_werden_wollen_m.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_werde_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_wirst_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_wird_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_werden_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_werdet_wollen_m.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_werden_wollen_m.mp3"
       ],
       [
-        "audio/de/verbs/wollen/audio_ich_werde_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_du_wirst_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_er_sie_es_wird_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_wir_werden_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_ihr_werdet_wollen_f.mp3",
-        "audio/de/verbs/wollen/audio_sie_werden_wollen_f.mp3"
+        "audio/de/verbs/de_audio_to_want/audio_ich_werde_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_du_wirst_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_er_sie_es_wird_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_wir_werden_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_ihr_werdet_wollen_f.mp3",
+        "audio/de/verbs/de_audio_to_want/audio_sie_werden_wollen_f.mp3"
       ]
     ]
   }

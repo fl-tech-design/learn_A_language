@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/nravitsya/audio_mne_nravilos_m.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_nravilos_m.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_nravilos_m.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_nravilos_m.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_nravilos_m.mp3",
-        "audio/ru/verben/nravitsya/audio_im_nravilos_m.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravilos_m.mp3"
       ],
       [
-        "audio/ru/verben/nravitsya/audio_mne_nravilos_f.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_nravilos_f.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_nravilos_f.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_nravilos_f.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_nravilos_f.mp3",
-        "audio/ru/verben/nravitsya/audio_im_nravilos_f.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravilos_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/nravitsya/audio_mne_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_im_nravitsya_m.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravitsya_m.mp3"
       ],
       [
-        "audio/ru/verben/nravitsya/audio_mne_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_im_nravitsya_f.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravitsya_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/nravitsya/audio_mne_budet_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_budet_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_budet_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_budet_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_budet_nravitsya_m.mp3",
-        "audio/ru/verben/nravitsya/audio_im_budet_nravitsya_m.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_budet_nravitsya_m.mp3"
       ],
       [
-        "audio/ru/verben/nravitsya/audio_mne_budet_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_tebe_budet_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_emu_budet_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_nam_budet_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_vam_budet_nravitsya_f.mp3",
-        "audio/ru/verben/nravitsya/audio_im_budet_nravitsya_f.mp3"
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_budet_nravitsya_f.mp3"
       ]
     ]
   }

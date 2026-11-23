@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/verstehen/audio_ich_verstand_m.mp3",
-        "audio/de/verbs/verstehen/audio_du_verstandest_m.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_verstand_m.mp3",
-        "audio/de/verbs/verstehen/audio_wir_verstanden_m.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_verstandet_m.mp3",
-        "audio/de/verbs/verstehen/audio_sie_verstanden_m.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_verstand_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_verstandest_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_verstand_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_verstanden_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_verstandet_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_verstanden_m.mp3"
       ],
       [
-        "audio/de/verbs/verstehen/audio_ich_verstand_f.mp3",
-        "audio/de/verbs/verstehen/audio_du_verstandest_f.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_verstand_f.mp3",
-        "audio/de/verbs/verstehen/audio_wir_verstanden_f.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_verstandet_f.mp3",
-        "audio/de/verbs/verstehen/audio_sie_verstanden_f.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_verstand_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_verstandest_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_verstand_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_verstanden_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_verstandet_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_verstanden_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/verstehen/audio_ich_verstehe_m.mp3",
-        "audio/de/verbs/verstehen/audio_du_verstehst_m.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_versteht_m.mp3",
-        "audio/de/verbs/verstehen/audio_wir_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_versteht_m.mp3",
-        "audio/de/verbs/verstehen/audio_sie_verstehen_m.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_verstehe_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_verstehst_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_versteht_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_versteht_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_verstehen_m.mp3"
       ],
       [
-        "audio/de/verbs/verstehen/audio_ich_verstehe_f.mp3",
-        "audio/de/verbs/verstehen/audio_du_verstehst_f.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_versteht_f.mp3",
-        "audio/de/verbs/verstehen/audio_wir_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_versteht_f.mp3",
-        "audio/de/verbs/verstehen/audio_sie_verstehen_f.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_verstehe_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_verstehst_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_versteht_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_versteht_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_verstehen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/verstehen/audio_ich_werde_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_du_wirst_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_wird_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_wir_werden_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_werdet_verstehen_m.mp3",
-        "audio/de/verbs/verstehen/audio_sie_werden_verstehen_m.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_werde_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_wirst_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_wird_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_werden_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_werdet_verstehen_m.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_werden_verstehen_m.mp3"
       ],
       [
-        "audio/de/verbs/verstehen/audio_ich_werde_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_du_wirst_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_er_sie_es_wird_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_wir_werden_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_ihr_werdet_verstehen_f.mp3",
-        "audio/de/verbs/verstehen/audio_sie_werden_verstehen_f.mp3"
+        "audio/de/verbs/de_audio_to_understand/audio_ich_werde_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_du_wirst_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_er_sie_es_wird_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_wir_werden_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_ihr_werdet_verstehen_f.mp3",
+        "audio/de/verbs/de_audio_to_understand/audio_sie_werden_verstehen_f.mp3"
       ]
     ]
   }

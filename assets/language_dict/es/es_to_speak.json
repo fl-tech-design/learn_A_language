@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/hablar/audio_yo_hable_m.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablaste_m.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_hablo_m.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablamos_m.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablasteis_m.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablaron_m.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hable_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablaste_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_hablo_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablamos_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablaron_m.mp3"
       ],
       [
-        "audio/es/verbs/hablar/audio_yo_hable_f.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablaste_f.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_hablo_f.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablamos_f.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablasteis_f.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablaron_f.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hable_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablaste_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_hablo_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablamos_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablaron_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/hablar/audio_yo_hablo_m.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablas_m.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_habla_m.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablamos_m.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablais_m.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablan_m.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hablo_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablas_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_habla_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablamos_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablais_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablan_m.mp3"
       ],
       [
-        "audio/es/verbs/hablar/audio_yo_hablo_f.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablas_f.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_habla_f.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablamos_f.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablais_f.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablan_f.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hablo_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablas_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_habla_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablamos_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablais_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablan_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/hablar/audio_yo_hablare_m.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablaras_m.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_hablara_m.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablaremos_m.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablareis_m.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablaran_m.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hablare_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablaras_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_hablara_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablareis_m.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablaran_m.mp3"
       ],
       [
-        "audio/es/verbs/hablar/audio_yo_hablare_f.mp3",
-        "audio/es/verbs/hablar/audio_tu_hablaras_f.mp3",
-        "audio/es/verbs/hablar/audio_el_ella_hablara_f.mp3",
-        "audio/es/verbs/hablar/audio_nosotros_hablaremos_f.mp3",
-        "audio/es/verbs/hablar/audio_vosotros_hablareis_f.mp3",
-        "audio/es/verbs/hablar/audio_ellos_ellas_hablaran_f.mp3"
+        "audio/es/verbs/es_audio_to_speak/audio_yo_hablare_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_tu_hablaras_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_el_ella_hablara_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_nosotros_hablaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_vosotros_hablareis_f.mp3",
+        "audio/es/verbs/es_audio_to_speak/audio_ellos_ellas_hablaran_f.mp3"
       ]
     ]
   }

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/beginnen/audio_ich_begann_m.mp3",
-        "audio/de/verbs/beginnen/audio_du_begannst_m.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_begann_m.mp3",
-        "audio/de/verbs/beginnen/audio_wir_begannen_m.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_begannt_m.mp3",
-        "audio/de/verbs/beginnen/audio_sie_begannen_m.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_begann_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_begannst_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_begann_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_begannen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_begannt_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_begannen_m.mp3"
       ],
       [
-        "audio/de/verbs/beginnen/audio_ich_begann_f.mp3",
-        "audio/de/verbs/beginnen/audio_du_begannst_f.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_begann_f.mp3",
-        "audio/de/verbs/beginnen/audio_wir_begannen_f.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_begannt_f.mp3",
-        "audio/de/verbs/beginnen/audio_sie_begannen_f.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_begann_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_begannst_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_begann_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_begannen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_begannt_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_begannen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/beginnen/audio_ich_beginne_m.mp3",
-        "audio/de/verbs/beginnen/audio_du_beginnst_m.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_beginnt_m.mp3",
-        "audio/de/verbs/beginnen/audio_wir_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_beginnt_m.mp3",
-        "audio/de/verbs/beginnen/audio_sie_beginnen_m.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_beginne_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_beginnst_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_beginnt_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_beginnt_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_beginnen_m.mp3"
       ],
       [
-        "audio/de/verbs/beginnen/audio_ich_beginne_f.mp3",
-        "audio/de/verbs/beginnen/audio_du_beginnst_f.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_beginnt_f.mp3",
-        "audio/de/verbs/beginnen/audio_wir_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_beginnt_f.mp3",
-        "audio/de/verbs/beginnen/audio_sie_beginnen_f.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_beginne_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_beginnst_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_beginnt_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_beginnt_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_beginnen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/beginnen/audio_ich_werde_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_du_wirst_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_wird_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_wir_werden_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_werdet_beginnen_m.mp3",
-        "audio/de/verbs/beginnen/audio_sie_werden_beginnen_m.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_werde_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_wirst_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_wird_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_werden_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_werdet_beginnen_m.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_werden_beginnen_m.mp3"
       ],
       [
-        "audio/de/verbs/beginnen/audio_ich_werde_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_du_wirst_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_er_sie_es_wird_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_wir_werden_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_ihr_werdet_beginnen_f.mp3",
-        "audio/de/verbs/beginnen/audio_sie_werden_beginnen_f.mp3"
+        "audio/de/verbs/de_audio_to_begin/audio_ich_werde_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_du_wirst_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_er_sie_es_wird_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_wir_werden_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_ihr_werdet_beginnen_f.mp3",
+        "audio/de/verbs/de_audio_to_begin/audio_sie_werden_beginnen_f.mp3"
       ]
     ]
   }

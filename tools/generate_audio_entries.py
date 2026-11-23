@@ -25,11 +25,14 @@ EN: Beide Stimmen (`_m` + `_f`) existieren und werden getragen.
 FR: Es gibt nur `_f`-Audios (keine `_m`). Stimme 0 (m) bleibt deshalb BEWUSST
 leer, damit der bestehende audio_service-Fallback (leere Stimme -> andere
 Stimme) automatisch die `_f`-Stimme abspielt. Stimme 1 (f) erhaelt den Pfad
-`audio/fr/<fr_verb_ordner>/audio_<fr_konjugation_normalisiert>_f.mp3`.
-Die Zuordnung JSON-Dateiname -> fr-Audio-Ordner ist eine explizite Konfig-
-Tabelle ([FR_JSON_TO_AUDIO_DIR]); die Normalisierung ([norm_fr]) wurde aus den
-real existierenden Dateinamen abgeleitet (Apostroph-Elision `j'ai` -> `jai`,
-Akzent-Ersetzung `e^tre`-Formen, `/` und Leerzeichen -> `_`).
+`audio/fr/verbs/fr_audio_<verbKey>/audio_<fr_konjugation_normalisiert>_f.mp3`.
+Der Audio-Ordner wird einheitlich aus dem JSON-Dateinamen abgeleitet
+(`<lang>_audio_<verbKey>`, z. B. fr_to_be.json -> fr_audio_to_be). Die
+Normalisierung ([norm_fr]) wurde aus den real existierenden Dateinamen
+abgeleitet (Apostroph-Elision `j'ai` -> `jai`, Akzent-Ersetzung `e^tre`-Formen,
+`/` und Leerzeichen -> `_`). Sonderfall: fr_to_must + fr_to_should nutzen beide
+'devoir' und besitzen nach der Umbenennung zwei getrennte, identisch gefuellte
+Ordner (fr_audio_to_must + fr_audio_to_should).
 
 Validierung: je Stimme/Zeitform = 6, jede referenzierte Datei existiert;
 fehlende/ueberzaehlige Dateien werden gemeldet. Bei FR wird zusaetzlich nach
@@ -56,12 +59,14 @@ AUDIO_ROOT = os.path.join(PROJECT_ROOT, "assets", "audio")
 PERSON_COUNT = 6
 TENSES = ("past", "present", "future")
 
-# ── FR: Explizite Zuordnung JSON-Dateiname -> fr-Audio-Ordner. ────────────────
-# Diese 30er-Tabelle ist die dokumentierte Konfiguration (KEINE Improvisation):
-# Der Ordner ist der franzoesische Verbbegriff, der zum JSON-Dateinamen passt
-# (fr_to_be.json -> être, fr_to_have.json -> avoir, ...). Achtung: fr_to_must
-# UND fr_to_should zeigen beide auf 'devoir' (das Franzoesische deckt "muessen"
-# und "sollen" mit demselben Verb ab) – deshalb 30 JSONs auf 29 Audio-Ordner.
+# ── FR: (Veraltet) Explizite Zuordnung JSON -> fr-Audio-Ordner. ─────────────
+# Seit der Umbenennung auf '<lang>_audio_<verbKey>' ist diese Tabelle
+# ueberfluessig: [audio_subdir] leitet den Audio-Ordner direkt aus dem
+# JSON-Dateinamen ab. Dokumentiert bleibt hier der Hinweis auf den Sonderfall:
+# fr_to_must UND fr_to_should nutzen beide das Verb 'devoir'. Im neuen Stil
+# existieren daher zwei getrennte Ordner (fr_audio_to_must + fr_audio_to_should)
+# mit identischem Inhalt (bewusste Dopplung, damit jede Wort-Datei unabhaengig
+# funktioniert).
 FR_JSON_TO_AUDIO_DIR = {
     "fr_to_be.json": "être",
     "fr_to_be_allowed_to.json": "avoir le droit de",
@@ -151,17 +156,21 @@ def voice_suffix(lang: str, voice: int, de_has_f: bool) -> str:
     return "m" if voice == 0 else "f"
 
 
-def audio_subdir(lang: str, infinitive: str, jfile: str = "") -> str:
-    """Audio-Unterordner je Sprache.
+def verb_key_from_json(jfile: str) -> str:
+    """Leitet aus dem JSON-Dateinamen den Verb-Key ab (z. B. 'to_be')."""
+    m = re.match(r"^[a-z]{2}_(?P<key>to_.+)\.json$", jfile)
+    return m.group("key") if m else ""
 
-    FR nutzt die explizite Zuordnung JSON-Dateiname -> fr-Ordner
-    ([FR_JSON_TO_AUDIO_DIR]); unbekannte Dateien fallen auf den Infinitiv zurueck.
+
+def audio_subdir(lang: str, jfile: str) -> str:
+    """Audio-Unterordner je Sprache (neuer Stil).
+
+    Einheitlich: assets/audio/<lang>/verbs/<lang>_audio_<verbKey>/
+    (z. B. assets/audio/de/verbs/de_audio_to_be/).
     """
-    if lang == "de":
-        return os.path.join(AUDIO_ROOT, "de", "verben", infinitive)
-    if lang == "fr":
-        return os.path.join(AUDIO_ROOT, "fr", FR_JSON_TO_AUDIO_DIR.get(jfile, infinitive))
-    return os.path.join(AUDIO_ROOT, "en", infinitive)
+    verbKey = verb_key_from_json(jfile)
+    return os.path.join(AUDIO_ROOT, lang, "verbs",
+                        f"{lang}_audio_{verbKey}")
 
 
 def load_json(path: str):
@@ -192,8 +201,9 @@ def process_language(lang: str, json_dir: str,
         jpath = os.path.join(json_dir, jfile)
         data = load_json(jpath)
         infinitive = (data.get("infinitive") or "").strip()
-        sub = audio_subdir(lang, infinitive, jfile)
+        sub = audio_subdir(lang, jfile)
         subdir_name = os.path.basename(sub)
+        verbKey = verb_key_from_json(jfile)
 
         if lang == "fr" and not os.path.isdir(sub):
             print(f"  [WARN] {jfile}: Audio-Ordner {sub!r} nicht gefunden – "
@@ -234,7 +244,7 @@ def process_language(lang: str, json_dir: str,
                     phrase = translations[i] if i < len(translations) else ""
                     base_fr = norm_fr(phrase) if phrase else ""
                     if base_fr and base_fr in available["f"]:
-                        lists[1].append("audio/fr/%s/audio_%s_f.mp3"
+                        lists[1].append("audio/fr/verbs/%s/audio_%s_f.mp3"
                                         % (subdir_name, base_fr))
                     else:
                         lists[1].append("")
@@ -250,10 +260,8 @@ def process_language(lang: str, json_dir: str,
                 for voice in (0, 1):
                     g = voice_suffix(lang, voice, de_has_f)
                     if base and base in available[g]:
-                        rel = ("audio/%s/%s/%s/audio_%s_%s.mp3"
-                               % (lang, "verben" if lang == "de" else "",
-                                  infinitive, base, g))
-                        rel = re.sub(r"/+", "/", rel)
+                        rel = ("audio/%s/verbs/%s_audio_%s/audio_%s_%s.mp3"
+                               % (lang, lang, verbKey, base, g))
                         lists[voice].append(rel)
                     else:
                         lists[voice].append("")

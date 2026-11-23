@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to buy/audio_i_bought_m.mp3",
-        "audio/en/verbs/to buy/audio_you_bought_m.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_bought_m.mp3",
-        "audio/en/verbs/to buy/audio_we_bought_m.mp3",
-        "audio/en/verbs/to buy/audio_you_bought_(pl)_m.mp3",
-        "audio/en/verbs/to buy/audio_they_bought_m.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_bought_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_bought_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_bought_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_bought_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_bought_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_bought_m.mp3"
       ],
       [
-        "audio/en/verbs/to buy/audio_i_bought_f.mp3",
-        "audio/en/verbs/to buy/audio_you_bought_f.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_bought_f.mp3",
-        "audio/en/verbs/to buy/audio_we_bought_f.mp3",
-        "audio/en/verbs/to buy/audio_you_bought_(pl)_f.mp3",
-        "audio/en/verbs/to buy/audio_they_bought_f.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_bought_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_bought_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_bought_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_bought_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_bought_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_bought_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to buy/audio_i_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_you_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_buys_m.mp3",
-        "audio/en/verbs/to buy/audio_we_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_you_buy_(pl)_m.mp3",
-        "audio/en/verbs/to buy/audio_they_buy_m.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_buys_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_buy_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_buy_m.mp3"
       ],
       [
-        "audio/en/verbs/to buy/audio_i_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_you_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_buys_f.mp3",
-        "audio/en/verbs/to buy/audio_we_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_you_buy_(pl)_f.mp3",
-        "audio/en/verbs/to buy/audio_they_buy_f.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_buys_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_buy_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_buy_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to buy/audio_i_will_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_you_will_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_will_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_we_will_buy_m.mp3",
-        "audio/en/verbs/to buy/audio_you_will_buy_(pl)_m.mp3",
-        "audio/en/verbs/to buy/audio_they_will_buy_m.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_will_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_will_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_will_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_will_buy_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_will_buy_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_will_buy_m.mp3"
       ],
       [
-        "audio/en/verbs/to buy/audio_i_will_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_you_will_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_he_she_it_will_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_we_will_buy_f.mp3",
-        "audio/en/verbs/to buy/audio_you_will_buy_(pl)_f.mp3",
-        "audio/en/verbs/to buy/audio_they_will_buy_f.mp3"
+        "audio/en/verbs/en_audio_to_buy/audio_i_will_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_will_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_he_she_it_will_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_we_will_buy_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_you_will_buy_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_buy/audio_they_will_buy_f.mp3"
       ]
     ]
   }

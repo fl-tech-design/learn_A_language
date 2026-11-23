@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_byl_m.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_byl_m.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_byl_m.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_byli_m.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_byli_m.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_byli_m.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_byli_m.mp3"
       ],
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_byl_f.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_byl_f.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_byl_f.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_byli_f.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_byli_f.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_byli_f.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_byli_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_m.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_m.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_m.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_m.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_m.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_m.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_m.mp3"
       ],
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_f.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_f.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_f.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_f.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_f.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_f.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_budu_m.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_budesh_m.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_budet_m.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_budem_m.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_budete_m.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_budut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_budu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_budesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_budet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_budem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_budete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_budut_m.mp3"
       ],
       [
-        "audio/ru/verben/dolzhen/audio_ya_dolzhen_budu_f.mp3",
-        "audio/ru/verben/dolzhen/audio_ty_dolzhen_budesh_f.mp3",
-        "audio/ru/verben/dolzhen/audio_on_dolzhen_budet_f.mp3",
-        "audio/ru/verben/dolzhen/audio_my_dolzhny_budem_f.mp3",
-        "audio/ru/verben/dolzhen/audio_vy_dolzhny_budete_f.mp3",
-        "audio/ru/verben/dolzhen/audio_oni_dolzhny_budut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_budu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_budesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_budet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_budem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_budete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_budut_f.mp3"
       ]
     ]
   }

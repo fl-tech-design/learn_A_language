@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/aprender/audio_yo_aprendia_m.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprendias_m.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprendia_m.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprendiamos_m.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendiais_m.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprendian_m.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendia_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendias_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendia_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendiamos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendiais_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprendian_m.mp3"
       ],
       [
-        "audio/es/verbs/aprender/audio_yo_aprendia_f.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprendias_f.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprendia_f.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprendiamos_f.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendiais_f.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprendian_f.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendia_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendias_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendia_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendiamos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendiais_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprendian_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/aprender/audio_yo_aprendo_m.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprendes_m.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprende_m.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprendemos_m.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendeis_m.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprenden_m.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendo_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendes_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprende_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendemos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenden_m.mp3"
       ],
       [
-        "audio/es/verbs/aprender/audio_yo_aprendo_f.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprendes_f.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprende_f.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprendemos_f.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendeis_f.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprenden_f.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendo_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendes_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprende_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendemos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenden_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/aprender/audio_yo_aprendere_m.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprenderas_m.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprendera_m.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprenderemos_m.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendereis_m.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprenderan_m.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendere_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprenderas_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendera_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprenderemos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendereis_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenderan_m.mp3"
       ],
       [
-        "audio/es/verbs/aprender/audio_yo_aprendere_f.mp3",
-        "audio/es/verbs/aprender/audio_tu_aprenderas_f.mp3",
-        "audio/es/verbs/aprender/audio_el_ella_aprendera_f.mp3",
-        "audio/es/verbs/aprender/audio_nosotros_aprenderemos_f.mp3",
-        "audio/es/verbs/aprender/audio_vosotros_aprendeis_f.mp3",
-        "audio/es/verbs/aprender/audio_ellos_ellas_aprenderan_f.mp3"
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendere_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprenderas_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendera_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprenderemos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenderan_f.mp3"
       ]
     ]
   }

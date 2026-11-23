@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to find/audio_i_found_m.mp3",
-        "audio/en/verbs/to find/audio_you_found_m.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_found_m.mp3",
-        "audio/en/verbs/to find/audio_we_found_m.mp3",
-        "audio/en/verbs/to find/audio_you_found_(pl)_m.mp3",
-        "audio/en/verbs/to find/audio_they_found_m.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_found_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_found_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_found_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_found_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_found_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_found_m.mp3"
       ],
       [
-        "audio/en/verbs/to find/audio_i_found_f.mp3",
-        "audio/en/verbs/to find/audio_you_found_f.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_found_f.mp3",
-        "audio/en/verbs/to find/audio_we_found_f.mp3",
-        "audio/en/verbs/to find/audio_you_found_(pl)_f.mp3",
-        "audio/en/verbs/to find/audio_they_found_f.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_found_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_found_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_found_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_found_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_found_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_found_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to find/audio_i_find_m.mp3",
-        "audio/en/verbs/to find/audio_you_find_m.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_finds_m.mp3",
-        "audio/en/verbs/to find/audio_we_find_m.mp3",
-        "audio/en/verbs/to find/audio_you_find_(pl)_m.mp3",
-        "audio/en/verbs/to find/audio_they_find_m.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_finds_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_find_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_find_m.mp3"
       ],
       [
-        "audio/en/verbs/to find/audio_i_find_f.mp3",
-        "audio/en/verbs/to find/audio_you_find_f.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_finds_f.mp3",
-        "audio/en/verbs/to find/audio_we_find_f.mp3",
-        "audio/en/verbs/to find/audio_you_find_(pl)_f.mp3",
-        "audio/en/verbs/to find/audio_they_find_f.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_finds_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_find_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_find_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to find/audio_i_will_find_m.mp3",
-        "audio/en/verbs/to find/audio_you_will_find_m.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_will_find_m.mp3",
-        "audio/en/verbs/to find/audio_we_will_find_m.mp3",
-        "audio/en/verbs/to find/audio_you_will_find_(pl)_m.mp3",
-        "audio/en/verbs/to find/audio_they_will_find_m.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_will_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_will_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_will_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_will_find_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_will_find_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_will_find_m.mp3"
       ],
       [
-        "audio/en/verbs/to find/audio_i_will_find_f.mp3",
-        "audio/en/verbs/to find/audio_you_will_find_f.mp3",
-        "audio/en/verbs/to find/audio_he_she_it_will_find_f.mp3",
-        "audio/en/verbs/to find/audio_we_will_find_f.mp3",
-        "audio/en/verbs/to find/audio_you_will_find_(pl)_f.mp3",
-        "audio/en/verbs/to find/audio_they_will_find_f.mp3"
+        "audio/en/verbs/en_audio_to_find/audio_i_will_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_will_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_he_she_it_will_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_we_will_find_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_you_will_find_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_find/audio_they_will_find_f.mp3"
       ]
     ]
   }

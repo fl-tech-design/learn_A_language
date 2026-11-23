@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/lire/audio_jai_lu_f.mp3",
-        "audio/fr/verbs/lire/audio_tu_as_lu_f.mp3",
-        "audio/fr/verbs/lire/audio_il_elle_on_a_lu_f.mp3",
-        "audio/fr/verbs/lire/audio_nous_avons_lu_f.mp3",
-        "audio/fr/verbs/lire/audio_vous_avez_lu_f.mp3",
-        "audio/fr/verbs/lire/audio_ils_elles_ont_lu_f.mp3"
+        "audio/fr/verbs/fr_audio_to_read/audio_jai_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_as_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_a_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_avons_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_avez_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_ont_lu_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/lire/audio_je_lis_f.mp3",
-        "audio/fr/verbs/lire/audio_tu_lis_f.mp3",
-        "audio/fr/verbs/lire/audio_il_elle_on_lit_f.mp3",
-        "audio/fr/verbs/lire/audio_nous_lisons_f.mp3",
-        "audio/fr/verbs/lire/audio_vous_lisez_f.mp3",
-        "audio/fr/verbs/lire/audio_ils_elles_lisent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_read/audio_je_lis_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_lis_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_lit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_lisons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_lisez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_lisent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/lire/audio_je_lirai_f.mp3",
-        "audio/fr/verbs/lire/audio_tu_liras_f.mp3",
-        "audio/fr/verbs/lire/audio_il_elle_on_lira_f.mp3",
-        "audio/fr/verbs/lire/audio_nous_lirons_f.mp3",
-        "audio/fr/verbs/lire/audio_vous_lirez_f.mp3",
-        "audio/fr/verbs/lire/audio_ils_elles_liront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_read/audio_je_lirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_liras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_lira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_lirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_lirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_liront_f.mp3"
       ]
     ]
   }

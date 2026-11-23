@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to go/audio_i_went_m.mp3",
-        "audio/en/verbs/to go/audio_you_went_m.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_went_m.mp3",
-        "audio/en/verbs/to go/audio_we_went_m.mp3",
-        "audio/en/verbs/to go/audio_you_went_(pl)_m.mp3",
-        "audio/en/verbs/to go/audio_they_went_m.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_went_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_went_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_went_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_went_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_went_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_went_m.mp3"
       ],
       [
-        "audio/en/verbs/to go/audio_i_went_f.mp3",
-        "audio/en/verbs/to go/audio_you_went_f.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_went_f.mp3",
-        "audio/en/verbs/to go/audio_we_went_f.mp3",
-        "audio/en/verbs/to go/audio_you_went_(pl)_f.mp3",
-        "audio/en/verbs/to go/audio_they_went_f.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_went_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_went_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_went_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_went_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_went_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_went_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to go/audio_i_go_m.mp3",
-        "audio/en/verbs/to go/audio_you_go_m.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_goes_m.mp3",
-        "audio/en/verbs/to go/audio_we_go_m.mp3",
-        "audio/en/verbs/to go/audio_you_go_(pl)_m.mp3",
-        "audio/en/verbs/to go/audio_they_go_m.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_goes_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_go_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_go_m.mp3"
       ],
       [
-        "audio/en/verbs/to go/audio_i_go_f.mp3",
-        "audio/en/verbs/to go/audio_you_go_f.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_goes_f.mp3",
-        "audio/en/verbs/to go/audio_we_go_f.mp3",
-        "audio/en/verbs/to go/audio_you_go_(pl)_f.mp3",
-        "audio/en/verbs/to go/audio_they_go_f.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_goes_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_go_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_go_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to go/audio_i_will_go_m.mp3",
-        "audio/en/verbs/to go/audio_you_will_go_m.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_will_go_m.mp3",
-        "audio/en/verbs/to go/audio_we_will_go_m.mp3",
-        "audio/en/verbs/to go/audio_you_will_go_(pl)_m.mp3",
-        "audio/en/verbs/to go/audio_they_will_go_m.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_will_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_will_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_will_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_will_go_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_will_go_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_will_go_m.mp3"
       ],
       [
-        "audio/en/verbs/to go/audio_i_will_go_f.mp3",
-        "audio/en/verbs/to go/audio_you_will_go_f.mp3",
-        "audio/en/verbs/to go/audio_he_she_it_will_go_f.mp3",
-        "audio/en/verbs/to go/audio_we_will_go_f.mp3",
-        "audio/en/verbs/to go/audio_you_will_go_(pl)_f.mp3",
-        "audio/en/verbs/to go/audio_they_will_go_f.mp3"
+        "audio/en/verbs/en_audio_to_go/audio_i_will_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_will_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_he_she_it_will_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_we_will_go_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_you_will_go_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_go/audio_they_will_go_f.mp3"
       ]
     ]
   }

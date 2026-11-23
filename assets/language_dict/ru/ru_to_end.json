@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakanchival_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakanchival_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakanchival_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakanchivali_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakanchivali_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakanchivali_m.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivali_m.mp3"
       ],
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakanchival_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakanchival_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakanchival_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakanchivali_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakanchivali_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakanchivali_f.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivali_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakanchivayu_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakanchivaesh_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakanchivaet_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakanchivaem_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakanchivaete_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakanchivayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchivayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchivaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchivaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivayut_m.mp3"
       ],
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakanchivayu_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakanchivaesh_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakanchivaet_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakanchivaem_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakanchivaete_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakanchivayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchivayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchivaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchivaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakonchu_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakonchish_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakonchit_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakonchim_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakonchite_m.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakonchat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakonchu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakonchish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakonchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakonchim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakonchite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakonchat_m.mp3"
       ],
       [
-        "audio/ru/verben/zakanchivat/audio_ya_zakonchu_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_ty_zakonchish_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_on_zakonchit_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_my_zakonchim_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_vy_zakonchite_f.mp3",
-        "audio/ru/verben/zakanchivat/audio_oni_zakonchat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakonchu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakonchish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakonchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakonchim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakonchite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakonchat_f.mp3"
       ]
     ]
   }

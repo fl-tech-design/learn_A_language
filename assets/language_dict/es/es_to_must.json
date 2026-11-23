@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/tener que/audio_yo_tenia_que_m.mp3",
-        "audio/es/verbs/tener que/audio_tu_tenias_que_m.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tenia_que_m.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_teniamos_que_m.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_teniais_que_m.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tenian_que_m.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tenia_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tenias_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tenia_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_teniamos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teniais_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tenian_que_m.mp3"
       ],
       [
-        "audio/es/verbs/tener que/audio_yo_tenia_que_f.mp3",
-        "audio/es/verbs/tener que/audio_tu_tenias_que_f.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tenia_que_f.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_teniamos_que_f.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_teniais_que_f.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tenian_que_f.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tenia_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tenias_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tenia_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_teniamos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teniais_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tenian_que_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/tener que/audio_yo_tengo_que_m.mp3",
-        "audio/es/verbs/tener que/audio_tu_tienes_que_m.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tiene_que_m.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_tenemos_que_m.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_teneis_que_m.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tienen_que_m.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tengo_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tienes_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tiene_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tenemos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teneis_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tienen_que_m.mp3"
       ],
       [
-        "audio/es/verbs/tener que/audio_yo_tengo_que_f.mp3",
-        "audio/es/verbs/tener que/audio_tu_tienes_que_f.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tiene_que_f.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_tenemos_que_f.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_teneis_que_f.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tienen_que_f.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tengo_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tienes_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tiene_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tenemos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teneis_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tienen_que_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/tener que/audio_yo_tendre_que_m.mp3",
-        "audio/es/verbs/tener que/audio_tu_tendras_que_m.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tendra_que_m.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_tendremos_que_m.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_tendreis_que_m.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tendran_que_m.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tendre_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tendras_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tendra_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tendremos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_tendreis_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tendran_que_m.mp3"
       ],
       [
-        "audio/es/verbs/tener que/audio_yo_tendre_que_f.mp3",
-        "audio/es/verbs/tener que/audio_tu_tendras_que_f.mp3",
-        "audio/es/verbs/tener que/audio_el_ella_tendra_que_f.mp3",
-        "audio/es/verbs/tener que/audio_nosotros_tendremos_que_f.mp3",
-        "audio/es/verbs/tener que/audio_vosotros_tendreis_que_f.mp3",
-        "audio/es/verbs/tener que/audio_ellos_ellas_tendran_que_f.mp3"
+        "audio/es/verbs/es_audio_to_must/audio_yo_tendre_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tendras_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tendra_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tendremos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_tendreis_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tendran_que_f.mp3"
       ]
     ]
   }

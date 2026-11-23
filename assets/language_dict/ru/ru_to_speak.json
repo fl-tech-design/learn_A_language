@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/govorit/audio_ya_govoril_m.mp3",
-        "audio/ru/verben/govorit/audio_ty_govoril_m.mp3",
-        "audio/ru/verben/govorit/audio_on_govoril_m.mp3",
-        "audio/ru/verben/govorit/audio_my_govorili_m.mp3",
-        "audio/ru/verben/govorit/audio_vy_govorili_m.mp3",
-        "audio/ru/verben/govorit/audio_oni_govorili_m.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govorili_m.mp3"
       ],
       [
-        "audio/ru/verben/govorit/audio_ya_govoril_f.mp3",
-        "audio/ru/verben/govorit/audio_ty_govoril_f.mp3",
-        "audio/ru/verben/govorit/audio_on_govoril_f.mp3",
-        "audio/ru/verben/govorit/audio_my_govorili_f.mp3",
-        "audio/ru/verben/govorit/audio_vy_govorili_f.mp3",
-        "audio/ru/verben/govorit/audio_oni_govorili_f.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govorili_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/govorit/audio_ya_govoryu_m.mp3",
-        "audio/ru/verben/govorit/audio_ty_govorish_m.mp3",
-        "audio/ru/verben/govorit/audio_on_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_my_govorim_m.mp3",
-        "audio/ru/verben/govorit/audio_vy_govorite_m.mp3",
-        "audio/ru/verben/govorit/audio_oni_govoryat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoryu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govorish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govoryat_m.mp3"
       ],
       [
-        "audio/ru/verben/govorit/audio_ya_govoryu_f.mp3",
-        "audio/ru/verben/govorit/audio_ty_govorish_f.mp3",
-        "audio/ru/verben/govorit/audio_on_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_my_govorim_f.mp3",
-        "audio/ru/verben/govorit/audio_vy_govorite_f.mp3",
-        "audio/ru/verben/govorit/audio_oni_govoryat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoryu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govorish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govoryat_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/govorit/audio_ya_budu_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_ty_budesh_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_on_budet_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_my_budem_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_vy_budete_govorit_m.mp3",
-        "audio/ru/verben/govorit/audio_oni_budut_govorit_m.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_budu_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_budesh_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_budet_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_budem_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_budete_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_budut_govorit_m.mp3"
       ],
       [
-        "audio/ru/verben/govorit/audio_ya_budu_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_ty_budesh_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_on_budet_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_my_budem_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_vy_budete_govorit_f.mp3",
-        "audio/ru/verben/govorit/audio_oni_budut_govorit_f.mp3"
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_budu_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_budesh_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_budet_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_budem_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_budete_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_budut_govorit_f.mp3"
       ]
     ]
   }

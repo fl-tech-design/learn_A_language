@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/uchit/audio_ya_uchil_m.mp3",
-        "audio/ru/verben/uchit/audio_ty_uchil_m.mp3",
-        "audio/ru/verben/uchit/audio_on_uchil_m.mp3",
-        "audio/ru/verben/uchit/audio_my_uchili_m.mp3",
-        "audio/ru/verben/uchit/audio_vy_uchili_m.mp3",
-        "audio/ru/verben/uchit/audio_oni_uchili_m.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchili_m.mp3"
       ],
       [
-        "audio/ru/verben/uchit/audio_ya_uchil_f.mp3",
-        "audio/ru/verben/uchit/audio_ty_uchil_f.mp3",
-        "audio/ru/verben/uchit/audio_on_uchil_f.mp3",
-        "audio/ru/verben/uchit/audio_my_uchili_f.mp3",
-        "audio/ru/verben/uchit/audio_vy_uchili_f.mp3",
-        "audio/ru/verben/uchit/audio_oni_uchili_f.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchili_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/uchit/audio_ya_uchu_m.mp3",
-        "audio/ru/verben/uchit/audio_ty_uchish_m.mp3",
-        "audio/ru/verben/uchit/audio_on_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_my_uchim_m.mp3",
-        "audio/ru/verben/uchit/audio_vy_uchite_m.mp3",
-        "audio/ru/verben/uchit/audio_oni_uchat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchat_m.mp3"
       ],
       [
-        "audio/ru/verben/uchit/audio_ya_uchu_f.mp3",
-        "audio/ru/verben/uchit/audio_ty_uchish_f.mp3",
-        "audio/ru/verben/uchit/audio_on_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_my_uchim_f.mp3",
-        "audio/ru/verben/uchit/audio_vy_uchite_f.mp3",
-        "audio/ru/verben/uchit/audio_oni_uchat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchat_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/uchit/audio_ya_budu_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_ty_budesh_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_on_budet_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_my_budem_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_vy_budete_uchit_m.mp3",
-        "audio/ru/verben/uchit/audio_oni_budut_uchit_m.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_budu_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_budesh_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_budet_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_budem_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_budete_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_budut_uchit_m.mp3"
       ],
       [
-        "audio/ru/verben/uchit/audio_ya_budu_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_ty_budesh_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_on_budet_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_my_budem_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_vy_budete_uchit_f.mp3",
-        "audio/ru/verben/uchit/audio_oni_budut_uchit_f.mp3"
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_budu_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_budesh_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_budet_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_budem_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_budete_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_budut_uchit_f.mp3"
       ]
     ]
   }

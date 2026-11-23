@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to see/audio_i_saw_m.mp3",
-        "audio/en/verbs/to see/audio_you_saw_m.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_saw_m.mp3",
-        "audio/en/verbs/to see/audio_we_saw_m.mp3",
-        "audio/en/verbs/to see/audio_you_saw_(pl)_m.mp3",
-        "audio/en/verbs/to see/audio_they_saw_m.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_saw_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_saw_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_saw_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_saw_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_saw_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_saw_m.mp3"
       ],
       [
-        "audio/en/verbs/to see/audio_i_saw_f.mp3",
-        "audio/en/verbs/to see/audio_you_saw_f.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_saw_f.mp3",
-        "audio/en/verbs/to see/audio_we_saw_f.mp3",
-        "audio/en/verbs/to see/audio_you_saw_(pl)_f.mp3",
-        "audio/en/verbs/to see/audio_they_saw_f.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_saw_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_saw_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_saw_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_saw_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_saw_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_saw_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to see/audio_i_see_m.mp3",
-        "audio/en/verbs/to see/audio_you_see_m.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_sees_m.mp3",
-        "audio/en/verbs/to see/audio_we_see_m.mp3",
-        "audio/en/verbs/to see/audio_you_see_(pl)_m.mp3",
-        "audio/en/verbs/to see/audio_they_see_m.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_sees_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_see_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_see_m.mp3"
       ],
       [
-        "audio/en/verbs/to see/audio_i_see_f.mp3",
-        "audio/en/verbs/to see/audio_you_see_f.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_sees_f.mp3",
-        "audio/en/verbs/to see/audio_we_see_f.mp3",
-        "audio/en/verbs/to see/audio_you_see_(pl)_f.mp3",
-        "audio/en/verbs/to see/audio_they_see_f.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_sees_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_see_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_see_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to see/audio_i_will_see_m.mp3",
-        "audio/en/verbs/to see/audio_you_will_see_m.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_will_see_m.mp3",
-        "audio/en/verbs/to see/audio_we_will_see_m.mp3",
-        "audio/en/verbs/to see/audio_you_will_see_(pl)_m.mp3",
-        "audio/en/verbs/to see/audio_they_will_see_m.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_will_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_will_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_will_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_will_see_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_will_see_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_will_see_m.mp3"
       ],
       [
-        "audio/en/verbs/to see/audio_i_will_see_f.mp3",
-        "audio/en/verbs/to see/audio_you_will_see_f.mp3",
-        "audio/en/verbs/to see/audio_he_she_it_will_see_f.mp3",
-        "audio/en/verbs/to see/audio_we_will_see_f.mp3",
-        "audio/en/verbs/to see/audio_you_will_see_(pl)_f.mp3",
-        "audio/en/verbs/to see/audio_they_will_see_f.mp3"
+        "audio/en/verbs/en_audio_to_see/audio_i_will_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_will_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_he_she_it_will_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_we_will_see_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_you_will_see_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_see/audio_they_will_see_f.mp3"
       ]
     ]
   }

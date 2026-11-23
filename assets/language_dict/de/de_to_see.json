@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/sehen/audio_ich_sah_m.mp3",
-        "audio/de/verbs/sehen/audio_du_sahst_m.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_sah_m.mp3",
-        "audio/de/verbs/sehen/audio_wir_sahen_m.mp3",
-        "audio/de/verbs/sehen/audio_ihr_saht_m.mp3",
-        "audio/de/verbs/sehen/audio_sie_sahen_m.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_sah_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_sahst_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_sah_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_sahen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_saht_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_sahen_m.mp3"
       ],
       [
-        "audio/de/verbs/sehen/audio_ich_sah_f.mp3",
-        "audio/de/verbs/sehen/audio_du_sahst_f.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_sah_f.mp3",
-        "audio/de/verbs/sehen/audio_wir_sahen_f.mp3",
-        "audio/de/verbs/sehen/audio_ihr_saht_f.mp3",
-        "audio/de/verbs/sehen/audio_sie_sahen_f.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_sah_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_sahst_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_sah_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_sahen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_saht_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_sahen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/sehen/audio_ich_sehe_m.mp3",
-        "audio/de/verbs/sehen/audio_du_siehst_m.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_sieht_m.mp3",
-        "audio/de/verbs/sehen/audio_wir_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_ihr_seht_m.mp3",
-        "audio/de/verbs/sehen/audio_sie_sehen_m.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_sehe_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_siehst_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_sieht_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_seht_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_sehen_m.mp3"
       ],
       [
-        "audio/de/verbs/sehen/audio_ich_sehe_f.mp3",
-        "audio/de/verbs/sehen/audio_du_siehst_f.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_sieht_f.mp3",
-        "audio/de/verbs/sehen/audio_wir_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_ihr_seht_f.mp3",
-        "audio/de/verbs/sehen/audio_sie_sehen_f.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_sehe_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_siehst_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_sieht_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_seht_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_sehen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/sehen/audio_ich_werde_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_du_wirst_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_wird_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_wir_werden_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_ihr_werdet_sehen_m.mp3",
-        "audio/de/verbs/sehen/audio_sie_werden_sehen_m.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_werde_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_wirst_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_wird_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_werden_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_werdet_sehen_m.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_werden_sehen_m.mp3"
       ],
       [
-        "audio/de/verbs/sehen/audio_ich_werde_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_du_wirst_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_er_sie_es_wird_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_wir_werden_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_ihr_werdet_sehen_f.mp3",
-        "audio/de/verbs/sehen/audio_sie_werden_sehen_f.mp3"
+        "audio/de/verbs/de_audio_to_see/audio_ich_werde_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_du_wirst_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_er_sie_es_wird_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_wir_werden_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_ihr_werdet_sehen_f.mp3",
+        "audio/de/verbs/de_audio_to_see/audio_sie_werden_sehen_f.mp3"
       ]
     ]
   }

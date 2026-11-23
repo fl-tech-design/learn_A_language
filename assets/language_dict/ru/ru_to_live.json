@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zhit/audio_ya_zhil_m.mp3",
-        "audio/ru/verben/zhit/audio_ty_zhil_m.mp3",
-        "audio/ru/verben/zhit/audio_on_zhil_m.mp3",
-        "audio/ru/verben/zhit/audio_my_zhili_m.mp3",
-        "audio/ru/verben/zhit/audio_vy_zhili_m.mp3",
-        "audio/ru/verben/zhit/audio_oni_zhili_m.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhili_m.mp3"
       ],
       [
-        "audio/ru/verben/zhit/audio_ya_zhil_f.mp3",
-        "audio/ru/verben/zhit/audio_ty_zhil_f.mp3",
-        "audio/ru/verben/zhit/audio_on_zhil_f.mp3",
-        "audio/ru/verben/zhit/audio_my_zhili_f.mp3",
-        "audio/ru/verben/zhit/audio_vy_zhili_f.mp3",
-        "audio/ru/verben/zhit/audio_oni_zhili_f.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhili_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zhit/audio_ya_zhivu_m.mp3",
-        "audio/ru/verben/zhit/audio_ty_zhivyosh_m.mp3",
-        "audio/ru/verben/zhit/audio_on_zhivyot_m.mp3",
-        "audio/ru/verben/zhit/audio_my_zhivyom_m.mp3",
-        "audio/ru/verben/zhit/audio_vy_zhivyote_m.mp3",
-        "audio/ru/verben/zhit/audio_oni_zhivut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhivu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhivyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhivyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhivyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhivyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhivut_m.mp3"
       ],
       [
-        "audio/ru/verben/zhit/audio_ya_zhivu_f.mp3",
-        "audio/ru/verben/zhit/audio_ty_zhivyosh_f.mp3",
-        "audio/ru/verben/zhit/audio_on_zhivyot_f.mp3",
-        "audio/ru/verben/zhit/audio_my_zhivyom_f.mp3",
-        "audio/ru/verben/zhit/audio_vy_zhivyote_f.mp3",
-        "audio/ru/verben/zhit/audio_oni_zhivut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhivu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhivyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhivyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhivyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhivyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhivut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/zhit/audio_ya_budu_zhit_m.mp3",
-        "audio/ru/verben/zhit/audio_ty_budesh_zhit_m.mp3",
-        "audio/ru/verben/zhit/audio_on_budet_zhit_m.mp3",
-        "audio/ru/verben/zhit/audio_my_budem_zhit_m.mp3",
-        "audio/ru/verben/zhit/audio_vy_budete_zhit_m.mp3",
-        "audio/ru/verben/zhit/audio_oni_budut_zhit_m.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_budu_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_budesh_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_budet_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_budem_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_budete_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_budut_zhit_m.mp3"
       ],
       [
-        "audio/ru/verben/zhit/audio_ya_budu_zhit_f.mp3",
-        "audio/ru/verben/zhit/audio_ty_budesh_zhit_f.mp3",
-        "audio/ru/verben/zhit/audio_on_budet_zhit_f.mp3",
-        "audio/ru/verben/zhit/audio_my_budem_zhit_f.mp3",
-        "audio/ru/verben/zhit/audio_vy_budete_zhit_f.mp3",
-        "audio/ru/verben/zhit/audio_oni_budut_zhit_f.mp3"
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_budu_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_budesh_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_budet_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_budem_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_budete_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_budut_zhit_f.mp3"
       ]
     ]
   }

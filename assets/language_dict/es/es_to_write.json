@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/escribir/audio_yo_escribi_m.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribiste_m.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribio_m.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribimos_m.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribisteis_m.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escribieron_m.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribi_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiste_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribio_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribieron_m.mp3"
       ],
       [
-        "audio/es/verbs/escribir/audio_yo_escribi_f.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribiste_f.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribio_f.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribimos_f.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribisteis_f.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escribieron_f.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribi_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiste_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribio_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribieron_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/escribir/audio_yo_escribo_m.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribes_m.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribe_m.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribimos_m.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribis_m.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escriben_m.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribo_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribes_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribe_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escriben_m.mp3"
       ],
       [
-        "audio/es/verbs/escribir/audio_yo_escribo_f.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribes_f.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribe_f.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribimos_f.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribis_f.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escriben_f.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribo_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribes_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribe_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escriben_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/escribir/audio_yo_escribire_m.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribiras_m.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribira_m.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribiremos_m.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribireis_m.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escribiran_m.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribire_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiras_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribira_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribiremos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribireis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribiran_m.mp3"
       ],
       [
-        "audio/es/verbs/escribir/audio_yo_escribire_f.mp3",
-        "audio/es/verbs/escribir/audio_tu_escribiras_f.mp3",
-        "audio/es/verbs/escribir/audio_el_ella_escribira_f.mp3",
-        "audio/es/verbs/escribir/audio_nosotros_escribiremos_f.mp3",
-        "audio/es/verbs/escribir/audio_vosotros_escribireis_f.mp3",
-        "audio/es/verbs/escribir/audio_ellos_ellas_escribiran_f.mp3"
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribire_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiras_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribira_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribiremos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribireis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribiran_f.mp3"
       ]
     ]
   }

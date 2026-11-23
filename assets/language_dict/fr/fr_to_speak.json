@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/parler/audio_je_parlais_f.mp3",
-        "audio/fr/verbs/parler/audio_tu_parlais_f.mp3",
-        "audio/fr/verbs/parler/audio_il_elle_on_parlait_f.mp3",
-        "audio/fr/verbs/parler/audio_nous_parlions_f.mp3",
-        "audio/fr/verbs/parler/audio_vous_parliez_f.mp3",
-        "audio/fr/verbs/parler/audio_ils_elles_parlaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parlais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parlais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parlait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parliez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parlaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/parler/audio_je_parle_f.mp3",
-        "audio/fr/verbs/parler/audio_tu_parles_f.mp3",
-        "audio/fr/verbs/parler/audio_il_elle_on_parle_f.mp3",
-        "audio/fr/verbs/parler/audio_nous_parlons_f.mp3",
-        "audio/fr/verbs/parler/audio_vous_parlez_f.mp3",
-        "audio/fr/verbs/parler/audio_ils_elles_parlent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parles_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parlez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parlent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/parler/audio_je_parlerai_f.mp3",
-        "audio/fr/verbs/parler/audio_tu_parleras_f.mp3",
-        "audio/fr/verbs/parler/audio_il_elle_on_parlera_f.mp3",
-        "audio/fr/verbs/parler/audio_nous_parlerons_f.mp3",
-        "audio/fr/verbs/parler/audio_vous_parlerez_f.mp3",
-        "audio/fr/verbs/parler/audio_ils_elles_parleront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parlerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parleras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parlera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parlerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parleront_f.mp3"
       ]
     ]
   }

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/cerrar/audio_yo_cerre_m.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cerraste_m.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cerro_m.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerramos_m.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrasteis_m.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cerraron_m.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerre_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraste_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerro_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraron_m.mp3"
       ],
       [
-        "audio/es/verbs/cerrar/audio_yo_cerre_f.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cerraste_f.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cerro_f.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerramos_f.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrasteis_f.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cerraron_f.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerre_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraste_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerro_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraron_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/cerrar/audio_yo_cierro_m.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cierras_m.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cierra_m.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerramos_m.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrais_m.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cierran_m.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cierro_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cierras_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cierra_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrais_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cierran_m.mp3"
       ],
       [
-        "audio/es/verbs/cerrar/audio_yo_cierro_f.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cierras_f.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cierra_f.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerramos_f.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrais_f.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cierran_f.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cierro_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cierras_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cierra_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrais_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cierran_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/cerrar/audio_yo_cerrare_m.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cerraras_m.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cerrara_m.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerraremos_m.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrareis_m.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cerraran_m.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerrare_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraras_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerrara_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerraremos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrareis_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraran_m.mp3"
       ],
       [
-        "audio/es/verbs/cerrar/audio_yo_cerrare_f.mp3",
-        "audio/es/verbs/cerrar/audio_tu_cerraras_f.mp3",
-        "audio/es/verbs/cerrar/audio_el_ella_cerrara_f.mp3",
-        "audio/es/verbs/cerrar/audio_nosotros_cerraremos_f.mp3",
-        "audio/es/verbs/cerrar/audio_vosotros_cerrareis_f.mp3",
-        "audio/es/verbs/cerrar/audio_ellos_ellas_cerraran_f.mp3"
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerrare_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraras_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerrara_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerraremos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrareis_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraran_f.mp3"
       ]
     ]
   }

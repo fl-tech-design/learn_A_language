@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/chitat/audio_ya_chital_m.mp3",
-        "audio/ru/verben/chitat/audio_ty_chital_m.mp3",
-        "audio/ru/verben/chitat/audio_on_chital_m.mp3",
-        "audio/ru/verben/chitat/audio_my_chitali_m.mp3",
-        "audio/ru/verben/chitat/audio_vy_chitali_m.mp3",
-        "audio/ru/verben/chitat/audio_oni_chitali_m.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitali_m.mp3"
       ],
       [
-        "audio/ru/verben/chitat/audio_ya_chital_f.mp3",
-        "audio/ru/verben/chitat/audio_ty_chital_f.mp3",
-        "audio/ru/verben/chitat/audio_on_chital_f.mp3",
-        "audio/ru/verben/chitat/audio_my_chitali_f.mp3",
-        "audio/ru/verben/chitat/audio_vy_chitali_f.mp3",
-        "audio/ru/verben/chitat/audio_oni_chitali_f.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitali_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/chitat/audio_ya_chitayu_m.mp3",
-        "audio/ru/verben/chitat/audio_ty_chitaesh_m.mp3",
-        "audio/ru/verben/chitat/audio_on_chitaet_m.mp3",
-        "audio/ru/verben/chitat/audio_my_chitaem_m.mp3",
-        "audio/ru/verben/chitat/audio_vy_chitaete_m.mp3",
-        "audio/ru/verben/chitat/audio_oni_chitayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chitayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chitaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chitaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitayut_m.mp3"
       ],
       [
-        "audio/ru/verben/chitat/audio_ya_chitayu_f.mp3",
-        "audio/ru/verben/chitat/audio_ty_chitaesh_f.mp3",
-        "audio/ru/verben/chitat/audio_on_chitaet_f.mp3",
-        "audio/ru/verben/chitat/audio_my_chitaem_f.mp3",
-        "audio/ru/verben/chitat/audio_vy_chitaete_f.mp3",
-        "audio/ru/verben/chitat/audio_oni_chitayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chitayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chitaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chitaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/chitat/audio_ya_budu_chitat_m.mp3",
-        "audio/ru/verben/chitat/audio_ty_budesh_chitat_m.mp3",
-        "audio/ru/verben/chitat/audio_on_budet_chitat_m.mp3",
-        "audio/ru/verben/chitat/audio_my_budem_chitat_m.mp3",
-        "audio/ru/verben/chitat/audio_vy_budete_chitat_m.mp3",
-        "audio/ru/verben/chitat/audio_oni_budut_chitat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_budu_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_budesh_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_budet_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_budem_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_budete_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_budut_chitat_m.mp3"
       ],
       [
-        "audio/ru/verben/chitat/audio_ya_budu_chitat_f.mp3",
-        "audio/ru/verben/chitat/audio_ty_budesh_chitat_f.mp3",
-        "audio/ru/verben/chitat/audio_on_budet_chitat_f.mp3",
-        "audio/ru/verben/chitat/audio_my_budem_chitat_f.mp3",
-        "audio/ru/verben/chitat/audio_vy_budete_chitat_f.mp3",
-        "audio/ru/verben/chitat/audio_oni_budut_chitat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_budu_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_budesh_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_budet_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_budem_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_budete_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_budut_chitat_f.mp3"
       ]
     ]
   }

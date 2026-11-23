@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/echo/audio_ego_eicha_m.mp3",
-        "audio/el/verben/echo/audio_esy_eiches_m.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_eiche_m.mp3",
-        "audio/el/verben/echo/audio_emeis_eichame_m.mp3",
-        "audio/el/verben/echo/audio_eseis_eichate_m.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_eichan_m.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_eicha_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_eiches_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_eiche_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_eichame_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_eichate_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_eichan_m.mp3"
       ],
       [
-        "audio/el/verben/echo/audio_ego_eicha_f.mp3",
-        "audio/el/verben/echo/audio_esy_eiches_f.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_eiche_f.mp3",
-        "audio/el/verben/echo/audio_emeis_eichame_f.mp3",
-        "audio/el/verben/echo/audio_eseis_eichate_f.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_eichan_f.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_eicha_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_eiches_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_eiche_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_eichame_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_eichate_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_eichan_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/echo/audio_ego_echo_m.mp3",
-        "audio/el/verben/echo/audio_esy_echeis_m.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_echei_m.mp3",
-        "audio/el/verben/echo/audio_emeis_echoyme_m.mp3",
-        "audio/el/verben/echo/audio_eseis_echete_m.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_echoyn_m.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_echo_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_echeis_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_echei_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_echoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_echete_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_echoyn_m.mp3"
       ],
       [
-        "audio/el/verben/echo/audio_ego_echo_f.mp3",
-        "audio/el/verben/echo/audio_esy_echeis_f.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_echei_f.mp3",
-        "audio/el/verben/echo/audio_emeis_echoyme_f.mp3",
-        "audio/el/verben/echo/audio_eseis_echete_f.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_echoyn_f.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_echo_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_echeis_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_echei_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_echoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_echete_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_echoyn_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/echo/audio_ego_tha_echo_m.mp3",
-        "audio/el/verben/echo/audio_esy_tha_echeis_m.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_tha_echei_m.mp3",
-        "audio/el/verben/echo/audio_emeis_tha_echoyme_m.mp3",
-        "audio/el/verben/echo/audio_eseis_tha_echete_m.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_tha_echoyn_m.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_tha_echo_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_tha_echeis_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_tha_echei_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_tha_echoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_tha_echete_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_tha_echoyn_m.mp3"
       ],
       [
-        "audio/el/verben/echo/audio_ego_tha_echo_f.mp3",
-        "audio/el/verben/echo/audio_esy_tha_echeis_f.mp3",
-        "audio/el/verben/echo/audio_aytosaytiayto_tha_echei_f.mp3",
-        "audio/el/verben/echo/audio_emeis_tha_echoyme_f.mp3",
-        "audio/el/verben/echo/audio_eseis_tha_echete_f.mp3",
-        "audio/el/verben/echo/audio_aytoiaytesayta_tha_echoyn_f.mp3"
+        "audio/el/verbs/el_audio_to_have/audio_ego_tha_echo_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_tha_echeis_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_tha_echei_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_tha_echoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_tha_echete_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_tha_echoyn_f.mp3"
       ]
     ]
   }

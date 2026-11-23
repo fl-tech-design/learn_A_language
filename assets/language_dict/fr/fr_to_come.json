@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/venir/audio_je_suis_venu_f.mp3",
-        "audio/fr/verbs/venir/audio_tu_es_venu_f.mp3",
-        "audio/fr/verbs/venir/audio_il_elle_est_venu_f.mp3",
-        "audio/fr/verbs/venir/audio_nous_sommes_venus_f.mp3",
-        "audio/fr/verbs/venir/audio_vous_etes_venus_f.mp3",
-        "audio/fr/verbs/venir/audio_ils_elles_sont_venus_f.mp3"
+        "audio/fr/verbs/fr_audio_to_come/audio_je_suis_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_es_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_est_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_sommes_venus_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_etes_venus_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_sont_venus_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/venir/audio_je_viens_f.mp3",
-        "audio/fr/verbs/venir/audio_tu_viens_f.mp3",
-        "audio/fr/verbs/venir/audio_il_elle_vient_f.mp3",
-        "audio/fr/verbs/venir/audio_nous_venons_f.mp3",
-        "audio/fr/verbs/venir/audio_vous_venez_f.mp3",
-        "audio/fr/verbs/venir/audio_ils_elles_viennent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_come/audio_je_viens_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_viens_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_vient_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_venons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_venez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_viennent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/venir/audio_je_viendrai_f.mp3",
-        "audio/fr/verbs/venir/audio_tu_viendras_f.mp3",
-        "audio/fr/verbs/venir/audio_il_elle_viendra_f.mp3",
-        "audio/fr/verbs/venir/audio_nous_viendrons_f.mp3",
-        "audio/fr/verbs/venir/audio_vous_viendrez_f.mp3",
-        "audio/fr/verbs/venir/audio_ils_elles_viendront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_come/audio_je_viendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_viendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_viendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_viendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_viendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_viendront_f.mp3"
       ]
     ]
   }

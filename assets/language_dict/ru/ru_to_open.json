@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkryl_m.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkryl_m.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkryl_m.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkryli_m.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkryli_m.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkryli_m.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryli_m.mp3"
       ],
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkryl_f.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkryl_f.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkryl_f.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkryli_f.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkryli_f.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkryli_f.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryli_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkryvayu_m.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkryvaesh_m.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkryvaet_m.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkryvaem_m.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkryvaete_m.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkryvayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryvayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryvaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryvaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryvaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryvaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryvayut_m.mp3"
       ],
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkryvayu_f.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkryvaesh_f.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkryvaet_f.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkryvaem_f.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkryvaete_f.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkryvayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryvayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryvaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryvaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryvaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryvaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryvayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkroyu_m.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkroesh_m.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkroet_m.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkroem_m.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkroete_m.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkroyut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkroyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkroesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkroet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkroem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkroete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkroyut_m.mp3"
       ],
       [
-        "audio/ru/verben/otkryvat/audio_ya_otkroyu_f.mp3",
-        "audio/ru/verben/otkryvat/audio_ty_otkroesh_f.mp3",
-        "audio/ru/verben/otkryvat/audio_on_otkroet_f.mp3",
-        "audio/ru/verben/otkryvat/audio_my_otkroem_f.mp3",
-        "audio/ru/verben/otkryvat/audio_vy_otkroete_f.mp3",
-        "audio/ru/verben/otkryvat/audio_oni_otkroyut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkroyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkroesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkroet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkroem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkroete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkroyut_f.mp3"
       ]
     ]
   }

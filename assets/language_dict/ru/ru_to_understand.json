@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/ponimat/audio_ya_ponimal_m.mp3",
-        "audio/ru/verben/ponimat/audio_ty_ponimal_m.mp3",
-        "audio/ru/verben/ponimat/audio_on_ponimal_m.mp3",
-        "audio/ru/verben/ponimat/audio_my_ponimali_m.mp3",
-        "audio/ru/verben/ponimat/audio_vy_ponimali_m.mp3",
-        "audio/ru/verben/ponimat/audio_oni_ponimali_m.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_ponimal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_ponimal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_ponimal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_ponimali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_ponimali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_ponimali_m.mp3"
       ],
       [
-        "audio/ru/verben/ponimat/audio_ya_ponimal_f.mp3",
-        "audio/ru/verben/ponimat/audio_ty_ponimal_f.mp3",
-        "audio/ru/verben/ponimat/audio_on_ponimal_f.mp3",
-        "audio/ru/verben/ponimat/audio_my_ponimali_f.mp3",
-        "audio/ru/verben/ponimat/audio_vy_ponimali_f.mp3",
-        "audio/ru/verben/ponimat/audio_oni_ponimali_f.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_ponimal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_ponimal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_ponimal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_ponimali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_ponimali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_ponimali_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/ponimat/audio_ya_ponimayu_m.mp3",
-        "audio/ru/verben/ponimat/audio_ty_ponimaesh_m.mp3",
-        "audio/ru/verben/ponimat/audio_on_ponimaet_m.mp3",
-        "audio/ru/verben/ponimat/audio_my_ponimaem_m.mp3",
-        "audio/ru/verben/ponimat/audio_vy_ponimaete_m.mp3",
-        "audio/ru/verben/ponimat/audio_oni_ponimayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_ponimayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_ponimaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_ponimaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_ponimaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_ponimaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_ponimayut_m.mp3"
       ],
       [
-        "audio/ru/verben/ponimat/audio_ya_ponimayu_f.mp3",
-        "audio/ru/verben/ponimat/audio_ty_ponimaesh_f.mp3",
-        "audio/ru/verben/ponimat/audio_on_ponimaet_f.mp3",
-        "audio/ru/verben/ponimat/audio_my_ponimaem_f.mp3",
-        "audio/ru/verben/ponimat/audio_vy_ponimaete_f.mp3",
-        "audio/ru/verben/ponimat/audio_oni_ponimayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_ponimayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_ponimaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_ponimaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_ponimaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_ponimaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_ponimayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/ponimat/audio_ya_budu_ponimat_m.mp3",
-        "audio/ru/verben/ponimat/audio_ty_budesh_ponimat_m.mp3",
-        "audio/ru/verben/ponimat/audio_on_budet_ponimat_m.mp3",
-        "audio/ru/verben/ponimat/audio_my_budem_ponimat_m.mp3",
-        "audio/ru/verben/ponimat/audio_vy_budete_ponimat_m.mp3",
-        "audio/ru/verben/ponimat/audio_oni_budut_ponimat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_budu_ponimat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_budesh_ponimat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_budet_ponimat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_budem_ponimat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_budete_ponimat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_budut_ponimat_m.mp3"
       ],
       [
-        "audio/ru/verben/ponimat/audio_ya_budu_ponimat_f.mp3",
-        "audio/ru/verben/ponimat/audio_ty_budesh_ponimat_f.mp3",
-        "audio/ru/verben/ponimat/audio_on_budet_ponimat_f.mp3",
-        "audio/ru/verben/ponimat/audio_my_budem_ponimat_f.mp3",
-        "audio/ru/verben/ponimat/audio_vy_budete_ponimat_f.mp3",
-        "audio/ru/verben/ponimat/audio_oni_budut_ponimat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_understand/audio_ya_budu_ponimat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_ty_budesh_ponimat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_on_budet_ponimat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_my_budem_ponimat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_vy_budete_ponimat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_understand/audio_oni_budut_ponimat_f.mp3"
       ]
     ]
   }

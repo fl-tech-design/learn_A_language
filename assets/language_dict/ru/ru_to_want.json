@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/khotet/audio_ya_khotel_m.mp3",
-        "audio/ru/verben/khotet/audio_ty_khotel_m.mp3",
-        "audio/ru/verben/khotet/audio_on_khotel_m.mp3",
-        "audio/ru/verben/khotet/audio_my_khoteli_m.mp3",
-        "audio/ru/verben/khotet/audio_vy_khoteli_m.mp3",
-        "audio/ru/verben/khotet/audio_oni_khoteli_m.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khoteli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khoteli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khoteli_m.mp3"
       ],
       [
-        "audio/ru/verben/khotet/audio_ya_khotel_f.mp3",
-        "audio/ru/verben/khotet/audio_ty_khotel_f.mp3",
-        "audio/ru/verben/khotet/audio_on_khotel_f.mp3",
-        "audio/ru/verben/khotet/audio_my_khoteli_f.mp3",
-        "audio/ru/verben/khotet/audio_vy_khoteli_f.mp3",
-        "audio/ru/verben/khotet/audio_oni_khoteli_f.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khoteli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khoteli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khoteli_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/khotet/audio_ya_khochu_m.mp3",
-        "audio/ru/verben/khotet/audio_ty_khochesh_m.mp3",
-        "audio/ru/verben/khotet/audio_on_khochet_m.mp3",
-        "audio/ru/verben/khotet/audio_my_khotim_m.mp3",
-        "audio/ru/verben/khotet/audio_vy_khotite_m.mp3",
-        "audio/ru/verben/khotet/audio_oni_khotyat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khochu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khochesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khochet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khotim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khotite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khotyat_m.mp3"
       ],
       [
-        "audio/ru/verben/khotet/audio_ya_khochu_f.mp3",
-        "audio/ru/verben/khotet/audio_ty_khochesh_f.mp3",
-        "audio/ru/verben/khotet/audio_on_khochet_f.mp3",
-        "audio/ru/verben/khotet/audio_my_khotim_f.mp3",
-        "audio/ru/verben/khotet/audio_vy_khotite_f.mp3",
-        "audio/ru/verben/khotet/audio_oni_khotyat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khochu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khochesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khochet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khotim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khotite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khotyat_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/khotet/audio_ya_budu_khotet_m.mp3",
-        "audio/ru/verben/khotet/audio_ty_budesh_khotet_m.mp3",
-        "audio/ru/verben/khotet/audio_on_budet_khotet_m.mp3",
-        "audio/ru/verben/khotet/audio_my_budem_khotet_m.mp3",
-        "audio/ru/verben/khotet/audio_vy_budete_khotet_m.mp3",
-        "audio/ru/verben/khotet/audio_oni_budut_khotet_m.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_budu_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_budesh_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_budet_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_budem_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_budete_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_budut_khotet_m.mp3"
       ],
       [
-        "audio/ru/verben/khotet/audio_ya_budu_khotet_f.mp3",
-        "audio/ru/verben/khotet/audio_ty_budesh_khotet_f.mp3",
-        "audio/ru/verben/khotet/audio_on_budet_khotet_f.mp3",
-        "audio/ru/verben/khotet/audio_my_budem_khotet_f.mp3",
-        "audio/ru/verben/khotet/audio_vy_budete_khotet_f.mp3",
-        "audio/ru/verben/khotet/audio_oni_budut_khotet_f.mp3"
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_budu_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_budesh_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_budet_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_budem_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_budete_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_budut_khotet_f.mp3"
       ]
     ]
   }

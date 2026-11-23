@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/empezar/audio_yo_empece_m.mp3",
-        "audio/es/verbs/empezar/audio_tu_empezaste_m.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empezo_m.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezamos_m.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezasteis_m.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empezaron_m.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empece_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaste_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezo_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaron_m.mp3"
       ],
       [
-        "audio/es/verbs/empezar/audio_yo_empece_f.mp3",
-        "audio/es/verbs/empezar/audio_tu_empezaste_f.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empezo_f.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezamos_f.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezasteis_f.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empezaron_f.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empece_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaste_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezo_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaron_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/empezar/audio_yo_empiezo_m.mp3",
-        "audio/es/verbs/empezar/audio_tu_empiezas_m.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empieza_m.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezamos_m.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezais_m.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empiezan_m.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empiezo_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empiezas_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empieza_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezais_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empiezan_m.mp3"
       ],
       [
-        "audio/es/verbs/empezar/audio_yo_empiezo_f.mp3",
-        "audio/es/verbs/empezar/audio_tu_empiezas_f.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empieza_f.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezamos_f.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezais_f.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empiezan_f.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empiezo_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empiezas_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empieza_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezais_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empiezan_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/empezar/audio_yo_empezare_m.mp3",
-        "audio/es/verbs/empezar/audio_tu_empezaras_m.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empezara_m.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezaremos_m.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezareis_m.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empezaran_m.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empezare_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaras_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezara_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezareis_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaran_m.mp3"
       ],
       [
-        "audio/es/verbs/empezar/audio_yo_empezare_f.mp3",
-        "audio/es/verbs/empezar/audio_tu_empezaras_f.mp3",
-        "audio/es/verbs/empezar/audio_el_ella_usted_empezara_f.mp3",
-        "audio/es/verbs/empezar/audio_nosotros_empezaremos_f.mp3",
-        "audio/es/verbs/empezar/audio_vosotros_empezareis_f.mp3",
-        "audio/es/verbs/empezar/audio_ellos_ellas_ustedes_empezaran_f.mp3"
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empezare_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaras_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezara_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezareis_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaran_f.mp3"
       ]
     ]
   }

@@ -39,183 +39,186 @@ flutter:
     - assets/language_dict/el/
     - assets/language_dict/ru/
     - assets/grammar/
-    - assets/audio/de/verbs/arbeiten/
-    - assets/audio/de/verbs/beginnen/
-    - assets/audio/de/verbs/brauchen/
-    - assets/audio/de/verbs/dürfen/
-    - assets/audio/de/verbs/enden/
-    - assets/audio/de/verbs/essen/
-    - assets/audio/de/verbs/finden/
-    - assets/audio/de/verbs/gehen/
-    - assets/audio/de/verbs/haben/
-    - assets/audio/de/verbs/helfen/
-    - assets/audio/de/verbs/kaufen/
-    - assets/audio/de/verbs/kommen/
-    - assets/audio/de/verbs/können/
-    - assets/audio/de/verbs/lernen/
-    - assets/audio/de/verbs/lesen/
-    - assets/audio/de/verbs/machen/
-    - assets/audio/de/verbs/mögen/
-    - assets/audio/de/verbs/müssen/
-    - assets/audio/de/verbs/schließen/
-    - assets/audio/de/verbs/schreiben/
-    - assets/audio/de/verbs/sehen/
-    - assets/audio/de/verbs/sein/
-    - assets/audio/de/verbs/sollen/
-    - assets/audio/de/verbs/sprechen/
-    - assets/audio/de/verbs/trinken/
-    - assets/audio/de/verbs/verkaufen/
-    - assets/audio/de/verbs/verstehen/
-    - assets/audio/de/verbs/wohnen/
-    - assets/audio/de/verbs/wollen/
-    - assets/audio/de/verbs/öffnen/
-    - assets/audio/en/verbs/must/
-    - assets/audio/en/verbs/should/
-    - assets/audio/en/verbs/to be/
-    - assets/audio/en/verbs/to be able to/
-    - assets/audio/en/verbs/to be allowed to/
-    - assets/audio/en/verbs/to begin/
-    - assets/audio/en/verbs/to buy/
-    - assets/audio/en/verbs/to close/
-    - assets/audio/en/verbs/to come/
-    - assets/audio/en/verbs/to drink/
-    - assets/audio/en/verbs/to eat/
-    - assets/audio/en/verbs/to end/
-    - assets/audio/en/verbs/to find/
-    - assets/audio/en/verbs/to go/
-    - assets/audio/en/verbs/to have/
-    - assets/audio/en/verbs/to help/
-    - assets/audio/en/verbs/to learn/
-    - assets/audio/en/verbs/to like/
-    - assets/audio/en/verbs/to live/
-    - assets/audio/en/verbs/to make/
-    - assets/audio/en/verbs/to need/
-    - assets/audio/en/verbs/to open/
-    - assets/audio/en/verbs/to read/
-    - assets/audio/en/verbs/to see/
-    - assets/audio/en/verbs/to sell/
-    - assets/audio/en/verbs/to speak/
-    - assets/audio/en/verbs/to understand/
-    - assets/audio/en/verbs/to want/
-    - assets/audio/en/verbs/to work/
-    - assets/audio/en/verbs/to write/
-    - assets/audio/fr/verbs/acheter/
-    - assets/audio/fr/verbs/aider/
-    - assets/audio/fr/verbs/aimer/
-    - assets/audio/fr/verbs/aller/
-    - assets/audio/fr/verbs/apprendre/
-    - assets/audio/fr/verbs/avoir/
-    - assets/audio/fr/verbs/avoir besoin/
-    - assets/audio/fr/verbs/avoir le droit de/
-    - assets/audio/fr/verbs/boire/
-    - assets/audio/fr/verbs/commencer/
-    - assets/audio/fr/verbs/comprendre/
-    - assets/audio/fr/verbs/devoir/
-    - assets/audio/fr/verbs/écrire/
-    - assets/audio/fr/verbs/être/
-    - assets/audio/fr/verbs/faire/
-    - assets/audio/fr/verbs/fermer/
-    - assets/audio/fr/verbs/habiter/
-    - assets/audio/fr/verbs/lire/
-    - assets/audio/fr/verbs/manger/
-    - assets/audio/fr/verbs/ouvrir/
-    - assets/audio/fr/verbs/parler/
-    - assets/audio/fr/verbs/pouvoir/
-    - assets/audio/fr/verbs/terminer/
-    - assets/audio/fr/verbs/travailler/
-    - assets/audio/fr/verbs/trouver/
-    - assets/audio/fr/verbs/venir/
-    - assets/audio/fr/verbs/vendre/
-    - assets/audio/fr/verbs/voir/
-    - assets/audio/fr/verbs/vouloir/
-    - assets/audio/es/verbs/abrir/
-    - assets/audio/es/verbs/aprender/
-    - assets/audio/es/verbs/ayudar/
-    - assets/audio/es/verbs/beber/
-    - assets/audio/es/verbs/cerrar/
-    - assets/audio/es/verbs/comer/
-    - assets/audio/es/verbs/comprar/
-    - assets/audio/es/verbs/deber/
-    - assets/audio/es/verbs/empezar/
-    - assets/audio/es/verbs/encontrar/
-    - assets/audio/es/verbs/entender/
-    - assets/audio/es/verbs/escribir/
-    - assets/audio/es/verbs/gustar/
-    - assets/audio/es/verbs/hablar/
-    - assets/audio/es/verbs/hacer/
-    - assets/audio/es/verbs/ir/
-    - assets/audio/es/verbs/leer/
-    - assets/audio/es/verbs/necesitar/
-    - assets/audio/es/verbs/poder/
-    - assets/audio/es/verbs/querer/
-    - assets/audio/es/verbs/ser/
-    - assets/audio/es/verbs/tener/
-    - assets/audio/es/verbs/tener que/
-    - assets/audio/es/verbs/terminar/
-    - assets/audio/es/verbs/trabajar/
-    - assets/audio/es/verbs/vender/
-    - assets/audio/es/verbs/venir/
-    - assets/audio/es/verbs/ver/
-    - assets/audio/es/verbs/vivir/
-    - assets/audio/el/verben/agapo/
-    - assets/audio/el/verben/agorazo/
-    - assets/audio/el/verben/anoigo/
-    - assets/audio/el/verben/boro/
-    - assets/audio/el/verben/chreiazomai/
-    - assets/audio/el/verben/diavazo/
-    - assets/audio/el/verben/doulevo/
-    - assets/audio/el/verben/echo/
-    - assets/audio/el/verben/mathaino/
-    - assets/audio/el/verben/eimai/
-    - assets/audio/el/verben/epitrepo/
-    - assets/audio/el/verben/erchomai/
-    - assets/audio/el/verben/grapho/
-    - assets/audio/el/verben/kano/
-    - assets/audio/el/verben/katalavaino/
-    - assets/audio/el/verben/katoiko/
-    - assets/audio/el/verben/kleino/
-    - assets/audio/el/verben/milao/
-    - assets/audio/el/verben/pigaino/
-    - assets/audio/el/verben/pino/
-    - assets/audio/el/verben/poulino/
-    - assets/audio/el/verben/prepei/
-    - assets/audio/el/verben/prepei_na/
-    - assets/audio/el/verben/teliono/
-    - assets/audio/el/verben/thelo/
-    - assets/audio/el/verben/troo/
-    - assets/audio/el/verben/vlepo/
-    - assets/audio/el/verben/voithao/
-    - assets/audio/el/verben/vrisko/
-    - assets/audio/el/verben/xekino/
-    - assets/audio/ru/verben/byt/
-    - assets/audio/ru/verben/chitat/
-    - assets/audio/ru/verben/delat/
-    - assets/audio/ru/verben/dolzhen/
-    - assets/audio/ru/verben/dolzhenstvovat/
-    - assets/audio/ru/verben/est/
-    - assets/audio/ru/verben/govorit/
-    - assets/audio/ru/verben/idti/
-    - assets/audio/ru/verben/imet/
-    - assets/audio/ru/verben/khotet/
-    - assets/audio/ru/verben/moch/
-    - assets/audio/ru/verben/nachinat/
-    - assets/audio/ru/verben/nakhodit/
-    - assets/audio/ru/verben/nravitsya/
-    - assets/audio/ru/verben/nuzhdatsya/
-    - assets/audio/ru/verben/otkryvat/
-    - assets/audio/ru/verben/pisat/
-    - assets/audio/ru/verben/pit/
-    - assets/audio/ru/verben/pokupat/
-    - assets/audio/ru/verben/pomogat/
-    - assets/audio/ru/verben/ponimat/
-    - assets/audio/ru/verben/prikhodit/
-    - assets/audio/ru/verben/prodavat/
-    - assets/audio/ru/verben/rabotat/
-    - assets/audio/ru/verben/uchit/
-    - assets/audio/ru/verben/videt/
-    - assets/audio/ru/verben/zakanchivat/
-    - assets/audio/ru/verben/zakryvat/
-    - assets/audio/ru/verben/zhit/
+    - assets/audio/de/verbs/de_audio_to_be/
+    - assets/audio/de/verbs/de_audio_to_be_allowed_to/
+    - assets/audio/de/verbs/de_audio_to_begin/
+    - assets/audio/de/verbs/de_audio_to_buy/
+    - assets/audio/de/verbs/de_audio_to_can/
+    - assets/audio/de/verbs/de_audio_to_close/
+    - assets/audio/de/verbs/de_audio_to_come/
+    - assets/audio/de/verbs/de_audio_to_drink/
+    - assets/audio/de/verbs/de_audio_to_eat/
+    - assets/audio/de/verbs/de_audio_to_end/
+    - assets/audio/de/verbs/de_audio_to_find/
+    - assets/audio/de/verbs/de_audio_to_go/
+    - assets/audio/de/verbs/de_audio_to_have/
+    - assets/audio/de/verbs/de_audio_to_help/
+    - assets/audio/de/verbs/de_audio_to_learn/
+    - assets/audio/de/verbs/de_audio_to_like/
+    - assets/audio/de/verbs/de_audio_to_live/
+    - assets/audio/de/verbs/de_audio_to_make/
+    - assets/audio/de/verbs/de_audio_to_must/
+    - assets/audio/de/verbs/de_audio_to_need/
+    - assets/audio/de/verbs/de_audio_to_open/
+    - assets/audio/de/verbs/de_audio_to_read/
+    - assets/audio/de/verbs/de_audio_to_see/
+    - assets/audio/de/verbs/de_audio_to_sell/
+    - assets/audio/de/verbs/de_audio_to_should/
+    - assets/audio/de/verbs/de_audio_to_speak/
+    - assets/audio/de/verbs/de_audio_to_understand/
+    - assets/audio/de/verbs/de_audio_to_want/
+    - assets/audio/de/verbs/de_audio_to_work/
+    - assets/audio/de/verbs/de_audio_to_write/
+    - assets/audio/el/verbs/el_audio_to_be/
+    - assets/audio/el/verbs/el_audio_to_be_allowed_to/
+    - assets/audio/el/verbs/el_audio_to_begin/
+    - assets/audio/el/verbs/el_audio_to_buy/
+    - assets/audio/el/verbs/el_audio_to_can/
+    - assets/audio/el/verbs/el_audio_to_close/
+    - assets/audio/el/verbs/el_audio_to_come/
+    - assets/audio/el/verbs/el_audio_to_drink/
+    - assets/audio/el/verbs/el_audio_to_eat/
+    - assets/audio/el/verbs/el_audio_to_end/
+    - assets/audio/el/verbs/el_audio_to_find/
+    - assets/audio/el/verbs/el_audio_to_go/
+    - assets/audio/el/verbs/el_audio_to_have/
+    - assets/audio/el/verbs/el_audio_to_help/
+    - assets/audio/el/verbs/el_audio_to_learn/
+    - assets/audio/el/verbs/el_audio_to_like/
+    - assets/audio/el/verbs/el_audio_to_live/
+    - assets/audio/el/verbs/el_audio_to_make/
+    - assets/audio/el/verbs/el_audio_to_must/
+    - assets/audio/el/verbs/el_audio_to_need/
+    - assets/audio/el/verbs/el_audio_to_open/
+    - assets/audio/el/verbs/el_audio_to_read/
+    - assets/audio/el/verbs/el_audio_to_see/
+    - assets/audio/el/verbs/el_audio_to_sell/
+    - assets/audio/el/verbs/el_audio_to_should/
+    - assets/audio/el/verbs/el_audio_to_speak/
+    - assets/audio/el/verbs/el_audio_to_understand/
+    - assets/audio/el/verbs/el_audio_to_want/
+    - assets/audio/el/verbs/el_audio_to_work/
+    - assets/audio/el/verbs/el_audio_to_write/
+    - assets/audio/en/verbs/en_audio_to_be/
+    - assets/audio/en/verbs/en_audio_to_be_allowed_to/
+    - assets/audio/en/verbs/en_audio_to_begin/
+    - assets/audio/en/verbs/en_audio_to_buy/
+    - assets/audio/en/verbs/en_audio_to_can/
+    - assets/audio/en/verbs/en_audio_to_close/
+    - assets/audio/en/verbs/en_audio_to_come/
+    - assets/audio/en/verbs/en_audio_to_drink/
+    - assets/audio/en/verbs/en_audio_to_eat/
+    - assets/audio/en/verbs/en_audio_to_end/
+    - assets/audio/en/verbs/en_audio_to_find/
+    - assets/audio/en/verbs/en_audio_to_go/
+    - assets/audio/en/verbs/en_audio_to_have/
+    - assets/audio/en/verbs/en_audio_to_help/
+    - assets/audio/en/verbs/en_audio_to_learn/
+    - assets/audio/en/verbs/en_audio_to_like/
+    - assets/audio/en/verbs/en_audio_to_live/
+    - assets/audio/en/verbs/en_audio_to_make/
+    - assets/audio/en/verbs/en_audio_to_must/
+    - assets/audio/en/verbs/en_audio_to_need/
+    - assets/audio/en/verbs/en_audio_to_open/
+    - assets/audio/en/verbs/en_audio_to_read/
+    - assets/audio/en/verbs/en_audio_to_see/
+    - assets/audio/en/verbs/en_audio_to_sell/
+    - assets/audio/en/verbs/en_audio_to_should/
+    - assets/audio/en/verbs/en_audio_to_speak/
+    - assets/audio/en/verbs/en_audio_to_understand/
+    - assets/audio/en/verbs/en_audio_to_want/
+    - assets/audio/en/verbs/en_audio_to_work/
+    - assets/audio/en/verbs/en_audio_to_write/
+    - assets/audio/es/verbs/es_audio_to_be/
+    - assets/audio/es/verbs/es_audio_to_be_allowed_to/
+    - assets/audio/es/verbs/es_audio_to_begin/
+    - assets/audio/es/verbs/es_audio_to_buy/
+    - assets/audio/es/verbs/es_audio_to_can/
+    - assets/audio/es/verbs/es_audio_to_close/
+    - assets/audio/es/verbs/es_audio_to_come/
+    - assets/audio/es/verbs/es_audio_to_drink/
+    - assets/audio/es/verbs/es_audio_to_eat/
+    - assets/audio/es/verbs/es_audio_to_end/
+    - assets/audio/es/verbs/es_audio_to_find/
+    - assets/audio/es/verbs/es_audio_to_go/
+    - assets/audio/es/verbs/es_audio_to_have/
+    - assets/audio/es/verbs/es_audio_to_help/
+    - assets/audio/es/verbs/es_audio_to_learn/
+    - assets/audio/es/verbs/es_audio_to_like/
+    - assets/audio/es/verbs/es_audio_to_live/
+    - assets/audio/es/verbs/es_audio_to_make/
+    - assets/audio/es/verbs/es_audio_to_must/
+    - assets/audio/es/verbs/es_audio_to_need/
+    - assets/audio/es/verbs/es_audio_to_open/
+    - assets/audio/es/verbs/es_audio_to_read/
+    - assets/audio/es/verbs/es_audio_to_see/
+    - assets/audio/es/verbs/es_audio_to_sell/
+    - assets/audio/es/verbs/es_audio_to_should/
+    - assets/audio/es/verbs/es_audio_to_speak/
+    - assets/audio/es/verbs/es_audio_to_understand/
+    - assets/audio/es/verbs/es_audio_to_want/
+    - assets/audio/es/verbs/es_audio_to_work/
+    - assets/audio/es/verbs/es_audio_to_write/
+    - assets/audio/fr/verbs/fr_audio_to_be/
+    - assets/audio/fr/verbs/fr_audio_to_be_allowed_to/
+    - assets/audio/fr/verbs/fr_audio_to_begin/
+    - assets/audio/fr/verbs/fr_audio_to_buy/
+    - assets/audio/fr/verbs/fr_audio_to_can/
+    - assets/audio/fr/verbs/fr_audio_to_close/
+    - assets/audio/fr/verbs/fr_audio_to_come/
+    - assets/audio/fr/verbs/fr_audio_to_drink/
+    - assets/audio/fr/verbs/fr_audio_to_eat/
+    - assets/audio/fr/verbs/fr_audio_to_end/
+    - assets/audio/fr/verbs/fr_audio_to_find/
+    - assets/audio/fr/verbs/fr_audio_to_go/
+    - assets/audio/fr/verbs/fr_audio_to_have/
+    - assets/audio/fr/verbs/fr_audio_to_help/
+    - assets/audio/fr/verbs/fr_audio_to_learn/
+    - assets/audio/fr/verbs/fr_audio_to_like/
+    - assets/audio/fr/verbs/fr_audio_to_live/
+    - assets/audio/fr/verbs/fr_audio_to_make/
+    - assets/audio/fr/verbs/fr_audio_to_must/
+    - assets/audio/fr/verbs/fr_audio_to_need/
+    - assets/audio/fr/verbs/fr_audio_to_open/
+    - assets/audio/fr/verbs/fr_audio_to_read/
+    - assets/audio/fr/verbs/fr_audio_to_see/
+    - assets/audio/fr/verbs/fr_audio_to_sell/
+    - assets/audio/fr/verbs/fr_audio_to_should/
+    - assets/audio/fr/verbs/fr_audio_to_speak/
+    - assets/audio/fr/verbs/fr_audio_to_understand/
+    - assets/audio/fr/verbs/fr_audio_to_want/
+    - assets/audio/fr/verbs/fr_audio_to_work/
+    - assets/audio/fr/verbs/fr_audio_to_write/
+    - assets/audio/ru/verbs/ru_audio_to_be/
+    - assets/audio/ru/verbs/ru_audio_to_be_allowed_to/
+    - assets/audio/ru/verbs/ru_audio_to_begin/
+    - assets/audio/ru/verbs/ru_audio_to_buy/
+    - assets/audio/ru/verbs/ru_audio_to_can/
+    - assets/audio/ru/verbs/ru_audio_to_close/
+    - assets/audio/ru/verbs/ru_audio_to_come/
+    - assets/audio/ru/verbs/ru_audio_to_drink/
+    - assets/audio/ru/verbs/ru_audio_to_eat/
+    - assets/audio/ru/verbs/ru_audio_to_end/
+    - assets/audio/ru/verbs/ru_audio_to_find/
+    - assets/audio/ru/verbs/ru_audio_to_go/
+    - assets/audio/ru/verbs/ru_audio_to_have/
+    - assets/audio/ru/verbs/ru_audio_to_help/
+    - assets/audio/ru/verbs/ru_audio_to_learn/
+    - assets/audio/ru/verbs/ru_audio_to_like/
+    - assets/audio/ru/verbs/ru_audio_to_live/
+    - assets/audio/ru/verbs/ru_audio_to_make/
+    - assets/audio/ru/verbs/ru_audio_to_must/
+    - assets/audio/ru/verbs/ru_audio_to_need/
+    - assets/audio/ru/verbs/ru_audio_to_open/
+    - assets/audio/ru/verbs/ru_audio_to_read/
+    - assets/audio/ru/verbs/ru_audio_to_see/
+    - assets/audio/ru/verbs/ru_audio_to_sell/
+    - assets/audio/ru/verbs/ru_audio_to_should/
+    - assets/audio/ru/verbs/ru_audio_to_speak/
+    - assets/audio/ru/verbs/ru_audio_to_understand/
+    - assets/audio/ru/verbs/ru_audio_to_want/
+    - assets/audio/ru/verbs/ru_audio_to_work/
+    - assets/audio/ru/verbs/ru_audio_to_write/
 
   fonts:
     - family: Jura

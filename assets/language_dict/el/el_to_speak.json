@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/milao/audio_ego_miloysa_m.mp3",
-        "audio/el/verben/milao/audio_esy_miloyses_m.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_miloyse_m.mp3",
-        "audio/el/verben/milao/audio_emeis_miloysame_m.mp3",
-        "audio/el/verben/milao/audio_eseis_miloysate_m.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_miloysan_m.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_miloysa_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_miloyses_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_miloyse_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_miloysame_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_miloysate_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_miloysan_m.mp3"
       ],
       [
-        "audio/el/verben/milao/audio_ego_miloysa_f.mp3",
-        "audio/el/verben/milao/audio_esy_miloyses_f.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_miloyse_f.mp3",
-        "audio/el/verben/milao/audio_emeis_miloysame_f.mp3",
-        "audio/el/verben/milao/audio_eseis_miloysate_f.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_miloysan_f.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_miloysa_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_miloyses_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_miloyse_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_miloysame_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_miloysate_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_miloysan_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/milao/audio_ego_milao_m.mp3",
-        "audio/el/verben/milao/audio_esy_milas_m.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_milaei_m.mp3",
-        "audio/el/verben/milao/audio_emeis_milame_m.mp3",
-        "audio/el/verben/milao/audio_eseis_milate_m.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_milane_m.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_milao_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_milas_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_milaei_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_milame_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_milate_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_milane_m.mp3"
       ],
       [
-        "audio/el/verben/milao/audio_ego_milao_f.mp3",
-        "audio/el/verben/milao/audio_esy_milas_f.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_milaei_f.mp3",
-        "audio/el/verben/milao/audio_emeis_milame_f.mp3",
-        "audio/el/verben/milao/audio_eseis_milate_f.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_milane_f.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_milao_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_milas_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_milaei_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_milame_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_milate_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_milane_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/el/verben/milao/audio_ego_tha_miliso_m.mp3",
-        "audio/el/verben/milao/audio_esy_tha_miliseis_m.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_tha_milisei_m.mp3",
-        "audio/el/verben/milao/audio_emeis_tha_milisoyme_m.mp3",
-        "audio/el/verben/milao/audio_eseis_tha_milisete_m.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_tha_milisoyn_m.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_tha_miliso_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_tha_miliseis_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_tha_milisei_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_tha_milisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_tha_milisete_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_tha_milisoyn_m.mp3"
       ],
       [
-        "audio/el/verben/milao/audio_ego_tha_miliso_f.mp3",
-        "audio/el/verben/milao/audio_esy_tha_miliseis_f.mp3",
-        "audio/el/verben/milao/audio_aytosaytiayto_tha_milisei_f.mp3",
-        "audio/el/verben/milao/audio_emeis_tha_milisoyme_f.mp3",
-        "audio/el/verben/milao/audio_eseis_tha_milisete_f.mp3",
-        "audio/el/verben/milao/audio_aytoiaytesayta_tha_milisoyn_f.mp3"
+        "audio/el/verbs/el_audio_to_speak/audio_ego_tha_miliso_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_tha_miliseis_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_tha_milisei_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_tha_milisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_tha_milisete_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_tha_milisoyn_f.mp3"
       ]
     ]
   }

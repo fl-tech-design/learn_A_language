@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/vouloir/audio_je_voulais_f.mp3",
-        "audio/fr/verbs/vouloir/audio_tu_voulais_f.mp3",
-        "audio/fr/verbs/vouloir/audio_il_elle_on_voulait_f.mp3",
-        "audio/fr/verbs/vouloir/audio_nous_voulions_f.mp3",
-        "audio/fr/verbs/vouloir/audio_vous_vouliez_f.mp3",
-        "audio/fr/verbs/vouloir/audio_ils_elles_voulaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_want/audio_je_voulais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_voulais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_voulait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voulions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_vouliez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_voulaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/vouloir/audio_je_veux_f.mp3",
-        "audio/fr/verbs/vouloir/audio_tu_veux_f.mp3",
-        "audio/fr/verbs/vouloir/audio_il_elle_on_veut_f.mp3",
-        "audio/fr/verbs/vouloir/audio_nous_voulons_f.mp3",
-        "audio/fr/verbs/vouloir/audio_vous_voulez_f.mp3",
-        "audio/fr/verbs/vouloir/audio_ils_elles_veulent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_want/audio_je_veux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_veux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_veut_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voulons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_voulez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_veulent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/vouloir/audio_je_voudrai_f.mp3",
-        "audio/fr/verbs/vouloir/audio_tu_voudras_f.mp3",
-        "audio/fr/verbs/vouloir/audio_il_elle_on_voudra_f.mp3",
-        "audio/fr/verbs/vouloir/audio_nous_voudrons_f.mp3",
-        "audio/fr/verbs/vouloir/audio_vous_voudrez_f.mp3",
-        "audio/fr/verbs/vouloir/audio_ils_elles_voudront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_want/audio_je_voudrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_voudras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_voudra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voudrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_voudrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_voudront_f.mp3"
       ]
     ]
   }

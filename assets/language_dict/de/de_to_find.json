@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/finden/audio_ich_fand_m.mp3",
-        "audio/de/verbs/finden/audio_du_fandest_m.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_fand_m.mp3",
-        "audio/de/verbs/finden/audio_wir_fanden_m.mp3",
-        "audio/de/verbs/finden/audio_ihr_fandet_m.mp3",
-        "audio/de/verbs/finden/audio_sie_fanden_m.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_fand_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_fandest_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_fand_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_fanden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_fandet_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_fanden_m.mp3"
       ],
       [
-        "audio/de/verbs/finden/audio_ich_fand_f.mp3",
-        "audio/de/verbs/finden/audio_du_fandest_f.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_fand_f.mp3",
-        "audio/de/verbs/finden/audio_wir_fanden_f.mp3",
-        "audio/de/verbs/finden/audio_ihr_fandet_f.mp3",
-        "audio/de/verbs/finden/audio_sie_fanden_f.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_fand_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_fandest_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_fand_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_fanden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_fandet_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_fanden_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/finden/audio_ich_finde_m.mp3",
-        "audio/de/verbs/finden/audio_du_findest_m.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_findet_m.mp3",
-        "audio/de/verbs/finden/audio_wir_finden_m.mp3",
-        "audio/de/verbs/finden/audio_ihr_findet_m.mp3",
-        "audio/de/verbs/finden/audio_sie_finden_m.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_finde_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_findest_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_findet_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_findet_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_finden_m.mp3"
       ],
       [
-        "audio/de/verbs/finden/audio_ich_finde_f.mp3",
-        "audio/de/verbs/finden/audio_du_findest_f.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_findet_f.mp3",
-        "audio/de/verbs/finden/audio_wir_finden_f.mp3",
-        "audio/de/verbs/finden/audio_ihr_findet_f.mp3",
-        "audio/de/verbs/finden/audio_sie_finden_f.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_finde_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_findest_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_findet_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_findet_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_finden_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/finden/audio_ich_werde_finden_m.mp3",
-        "audio/de/verbs/finden/audio_du_wirst_finden_m.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_wird_finden_m.mp3",
-        "audio/de/verbs/finden/audio_wir_werden_finden_m.mp3",
-        "audio/de/verbs/finden/audio_ihr_werdet_finden_m.mp3",
-        "audio/de/verbs/finden/audio_sie_werden_finden_m.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_werde_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_wirst_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_wird_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_werden_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_werdet_finden_m.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_werden_finden_m.mp3"
       ],
       [
-        "audio/de/verbs/finden/audio_ich_werde_finden_f.mp3",
-        "audio/de/verbs/finden/audio_du_wirst_finden_f.mp3",
-        "audio/de/verbs/finden/audio_er_sie_es_wird_finden_f.mp3",
-        "audio/de/verbs/finden/audio_wir_werden_finden_f.mp3",
-        "audio/de/verbs/finden/audio_ihr_werdet_finden_f.mp3",
-        "audio/de/verbs/finden/audio_sie_werden_finden_f.mp3"
+        "audio/de/verbs/de_audio_to_find/audio_ich_werde_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_du_wirst_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_er_sie_es_wird_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_wir_werden_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_ihr_werdet_finden_f.mp3",
+        "audio/de/verbs/de_audio_to_find/audio_sie_werden_finden_f.mp3"
       ]
     ]
   }

@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/avoir besoin/audio_javais_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_tu_avais_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_il_elle_on_avait_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_nous_avions_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_vous_aviez_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_ils_elles_avaient_besoin_f.mp3"
+        "audio/fr/verbs/fr_audio_to_need/audio_javais_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_avais_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_avait_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_avions_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_aviez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_avaient_besoin_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/avoir besoin/audio_jai_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_tu_as_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_il_elle_on_a_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_nous_avons_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_vous_avez_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_ils_elles_ont_besoin_f.mp3"
+        "audio/fr/verbs/fr_audio_to_need/audio_jai_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_as_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_a_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_avons_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_avez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_ont_besoin_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/avoir besoin/audio_jaurai_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_tu_auras_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_il_elle_on_aura_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_nous_aurons_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_vous_aurez_besoin_f.mp3",
-        "audio/fr/verbs/avoir besoin/audio_ils_elles_auront_besoin_f.mp3"
+        "audio/fr/verbs/fr_audio_to_need/audio_jaurai_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_auras_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_aura_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_aurons_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_aurez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_auront_besoin_f.mp3"
       ]
     ]
   }

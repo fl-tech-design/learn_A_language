@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/ayudar/audio_yo_ayude_m.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudaste_m.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayudo_m.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudamos_m.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudasteis_m.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudaron_m.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayude_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaste_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudo_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaron_m.mp3"
       ],
       [
-        "audio/es/verbs/ayudar/audio_yo_ayude_f.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudaste_f.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayudo_f.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudamos_f.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudasteis_f.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudaron_f.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayude_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaste_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudo_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaron_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/ayudar/audio_yo_ayudo_m.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudas_m.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayuda_m.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudamos_m.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudais_m.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudan_m.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudo_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudas_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayuda_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudais_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudan_m.mp3"
       ],
       [
-        "audio/es/verbs/ayudar/audio_yo_ayudo_f.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudas_f.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayuda_f.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudamos_f.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudais_f.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudan_f.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudo_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudas_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayuda_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudais_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudan_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/ayudar/audio_yo_ayudare_m.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudaras_m.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayudara_m.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudaremos_m.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudareis_m.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudaran_m.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudare_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaras_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudara_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudareis_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaran_m.mp3"
       ],
       [
-        "audio/es/verbs/ayudar/audio_yo_ayudare_f.mp3",
-        "audio/es/verbs/ayudar/audio_tu_ayudaras_f.mp3",
-        "audio/es/verbs/ayudar/audio_el_ella_ayudara_f.mp3",
-        "audio/es/verbs/ayudar/audio_nosotros_ayudaremos_f.mp3",
-        "audio/es/verbs/ayudar/audio_vosotros_ayudareis_f.mp3",
-        "audio/es/verbs/ayudar/audio_ellos_ellas_ayudaran_f.mp3"
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudare_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaras_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudara_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudareis_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaran_f.mp3"
       ]
     ]
   }

@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/pouvoir/audio_je_pouvais_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_tu_pouvais_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_il_elle_on_pouvait_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_nous_pouvions_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_vous_pouviez_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_ils_elles_pouvaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_can/audio_je_pouvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_pouvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_pouvait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pouvions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pouviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_pouvaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/pouvoir/audio_je_peux_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_tu_peux_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_il_elle_on_peut_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_nous_pouvons_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_vous_pouvez_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_ils_elles_peuvent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_can/audio_je_peux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_peux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_peut_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pouvons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pouvez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_peuvent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/pouvoir/audio_je_pourrai_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_tu_pourras_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_il_elle_on_pourra_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_nous_pourrons_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_vous_pourrez_f.mp3",
-        "audio/fr/verbs/pouvoir/audio_ils_elles_pourront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_can/audio_je_pourrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_pourras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_pourra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pourrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pourrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_pourront_f.mp3"
       ]
     ]
   }

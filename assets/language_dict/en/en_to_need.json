@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to need/audio_i_needed_m.mp3",
-        "audio/en/verbs/to need/audio_you_needed_m.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_needed_m.mp3",
-        "audio/en/verbs/to need/audio_we_needed_m.mp3",
-        "audio/en/verbs/to need/audio_you_needed_(pl)_m.mp3",
-        "audio/en/verbs/to need/audio_they_needed_m.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_needed_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_needed_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_needed_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_needed_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_needed_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_needed_m.mp3"
       ],
       [
-        "audio/en/verbs/to need/audio_i_needed_f.mp3",
-        "audio/en/verbs/to need/audio_you_needed_f.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_needed_f.mp3",
-        "audio/en/verbs/to need/audio_we_needed_f.mp3",
-        "audio/en/verbs/to need/audio_you_needed_(pl)_f.mp3",
-        "audio/en/verbs/to need/audio_they_needed_f.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_needed_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_needed_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_needed_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_needed_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_needed_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_needed_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to need/audio_i_need_m.mp3",
-        "audio/en/verbs/to need/audio_you_need_m.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_needs_m.mp3",
-        "audio/en/verbs/to need/audio_we_need_m.mp3",
-        "audio/en/verbs/to need/audio_you_need_(pl)_m.mp3",
-        "audio/en/verbs/to need/audio_they_need_m.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_needs_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_need_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_need_m.mp3"
       ],
       [
-        "audio/en/verbs/to need/audio_i_need_f.mp3",
-        "audio/en/verbs/to need/audio_you_need_f.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_needs_f.mp3",
-        "audio/en/verbs/to need/audio_we_need_f.mp3",
-        "audio/en/verbs/to need/audio_you_need_(pl)_f.mp3",
-        "audio/en/verbs/to need/audio_they_need_f.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_needs_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_need_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_need_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/verbs/to need/audio_i_will_need_m.mp3",
-        "audio/en/verbs/to need/audio_you_will_need_m.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_will_need_m.mp3",
-        "audio/en/verbs/to need/audio_we_will_need_m.mp3",
-        "audio/en/verbs/to need/audio_you_will_need_(pl)_m.mp3",
-        "audio/en/verbs/to need/audio_they_will_need_m.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_will_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_will_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_will_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_will_need_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_will_need_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_will_need_m.mp3"
       ],
       [
-        "audio/en/verbs/to need/audio_i_will_need_f.mp3",
-        "audio/en/verbs/to need/audio_you_will_need_f.mp3",
-        "audio/en/verbs/to need/audio_he_she_it_will_need_f.mp3",
-        "audio/en/verbs/to need/audio_we_will_need_f.mp3",
-        "audio/en/verbs/to need/audio_you_will_need_(pl)_f.mp3",
-        "audio/en/verbs/to need/audio_they_will_need_f.mp3"
+        "audio/en/verbs/en_audio_to_need/audio_i_will_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_will_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_he_she_it_will_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_we_will_need_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_you_will_need_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_need/audio_they_will_need_f.mp3"
       ]
     ]
   }

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/prodavat/audio_ya_prodaval_m.mp3",
-        "audio/ru/verben/prodavat/audio_ty_prodaval_m.mp3",
-        "audio/ru/verben/prodavat/audio_on_prodaval_m.mp3",
-        "audio/ru/verben/prodavat/audio_my_prodavali_m.mp3",
-        "audio/ru/verben/prodavat/audio_vy_prodavali_m.mp3",
-        "audio/ru/verben/prodavat/audio_oni_prodavali_m.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodavali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodavali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodavali_m.mp3"
       ],
       [
-        "audio/ru/verben/prodavat/audio_ya_prodaval_f.mp3",
-        "audio/ru/verben/prodavat/audio_ty_prodaval_f.mp3",
-        "audio/ru/verben/prodavat/audio_on_prodaval_f.mp3",
-        "audio/ru/verben/prodavat/audio_my_prodavali_f.mp3",
-        "audio/ru/verben/prodavat/audio_vy_prodavali_f.mp3",
-        "audio/ru/verben/prodavat/audio_oni_prodavali_f.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodavali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodavali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodavali_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/prodavat/audio_ya_prodayu_m.mp3",
-        "audio/ru/verben/prodavat/audio_ty_prodayosh_m.mp3",
-        "audio/ru/verben/prodavat/audio_on_prodayot_m.mp3",
-        "audio/ru/verben/prodavat/audio_my_prodayom_m.mp3",
-        "audio/ru/verben/prodavat/audio_vy_prodayote_m.mp3",
-        "audio/ru/verben/prodavat/audio_oni_prodayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodayosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodayot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodayom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodayote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodayut_m.mp3"
       ],
       [
-        "audio/ru/verben/prodavat/audio_ya_prodayu_f.mp3",
-        "audio/ru/verben/prodavat/audio_ty_prodayosh_f.mp3",
-        "audio/ru/verben/prodavat/audio_on_prodayot_f.mp3",
-        "audio/ru/verben/prodavat/audio_my_prodayom_f.mp3",
-        "audio/ru/verben/prodavat/audio_vy_prodayote_f.mp3",
-        "audio/ru/verben/prodavat/audio_oni_prodayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodayosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodayot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodayom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodayote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/prodavat/audio_ya_budu_prodavat_m.mp3",
-        "audio/ru/verben/prodavat/audio_ty_budesh_prodavat_m.mp3",
-        "audio/ru/verben/prodavat/audio_on_budet_prodavat_m.mp3",
-        "audio/ru/verben/prodavat/audio_my_budem_prodavat_m.mp3",
-        "audio/ru/verben/prodavat/audio_vy_budete_prodavat_m.mp3",
-        "audio/ru/verben/prodavat/audio_oni_budut_prodavat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_budu_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_budesh_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_budet_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_budem_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_budete_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_budut_prodavat_m.mp3"
       ],
       [
-        "audio/ru/verben/prodavat/audio_ya_budu_prodavat_f.mp3",
-        "audio/ru/verben/prodavat/audio_ty_budesh_prodavat_f.mp3",
-        "audio/ru/verben/prodavat/audio_on_budet_prodavat_f.mp3",
-        "audio/ru/verben/prodavat/audio_my_budem_prodavat_f.mp3",
-        "audio/ru/verben/prodavat/audio_vy_budete_prodavat_f.mp3",
-        "audio/ru/verben/prodavat/audio_oni_budut_prodavat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_budu_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_budesh_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_budet_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_budem_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_budete_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_budut_prodavat_f.mp3"
       ]
     ]
   }

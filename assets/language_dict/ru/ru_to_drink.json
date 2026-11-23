@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pit/audio_ya_pil_m.mp3",
-        "audio/ru/verben/pit/audio_ty_pil_m.mp3",
-        "audio/ru/verben/pit/audio_on_pil_m.mp3",
-        "audio/ru/verben/pit/audio_my_pili_m.mp3",
-        "audio/ru/verben/pit/audio_vy_pili_m.mp3",
-        "audio/ru/verben/pit/audio_oni_pili_m.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pili_m.mp3"
       ],
       [
-        "audio/ru/verben/pit/audio_ya_pil_f.mp3",
-        "audio/ru/verben/pit/audio_ty_pil_f.mp3",
-        "audio/ru/verben/pit/audio_on_pil_f.mp3",
-        "audio/ru/verben/pit/audio_my_pili_f.mp3",
-        "audio/ru/verben/pit/audio_vy_pili_f.mp3",
-        "audio/ru/verben/pit/audio_oni_pili_f.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pili_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pit/audio_ya_pyu_m.mp3",
-        "audio/ru/verben/pit/audio_ty_pyosh_m.mp3",
-        "audio/ru/verben/pit/audio_on_pyot_m.mp3",
-        "audio/ru/verben/pit/audio_my_pyom_m.mp3",
-        "audio/ru/verben/pit/audio_vy_pyote_m.mp3",
-        "audio/ru/verben/pit/audio_oni_pyut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pyut_m.mp3"
       ],
       [
-        "audio/ru/verben/pit/audio_ya_pyu_f.mp3",
-        "audio/ru/verben/pit/audio_ty_pyosh_f.mp3",
-        "audio/ru/verben/pit/audio_on_pyot_f.mp3",
-        "audio/ru/verben/pit/audio_my_pyom_f.mp3",
-        "audio/ru/verben/pit/audio_vy_pyote_f.mp3",
-        "audio/ru/verben/pit/audio_oni_pyut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pyut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pit/audio_ya_budu_pit_m.mp3",
-        "audio/ru/verben/pit/audio_ty_budesh_pit_m.mp3",
-        "audio/ru/verben/pit/audio_on_budet_pit_m.mp3",
-        "audio/ru/verben/pit/audio_my_budem_pit_m.mp3",
-        "audio/ru/verben/pit/audio_vy_budete_pit_m.mp3",
-        "audio/ru/verben/pit/audio_oni_budut_pit_m.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_budu_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_budesh_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_budet_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_budem_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_budete_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_budut_pit_m.mp3"
       ],
       [
-        "audio/ru/verben/pit/audio_ya_budu_pit_f.mp3",
-        "audio/ru/verben/pit/audio_ty_budesh_pit_f.mp3",
-        "audio/ru/verben/pit/audio_on_budet_pit_f.mp3",
-        "audio/ru/verben/pit/audio_my_budem_pit_f.mp3",
-        "audio/ru/verben/pit/audio_vy_budete_pit_f.mp3",
-        "audio/ru/verben/pit/audio_oni_budut_pit_f.mp3"
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_budu_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_budesh_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_budet_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_budem_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_budete_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_budut_pit_f.mp3"
       ]
     ]
   }

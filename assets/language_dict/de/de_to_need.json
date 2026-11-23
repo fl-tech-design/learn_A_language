@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/brauchen/audio_ich_brauchte_m.mp3",
-        "audio/de/verbs/brauchen/audio_du_brauchtest_m.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_brauchte_m.mp3",
-        "audio/de/verbs/brauchen/audio_wir_brauchten_m.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_brauchtet_m.mp3",
-        "audio/de/verbs/brauchen/audio_sie_brauchten_m.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_brauchte_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_brauchtest_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_brauchte_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_brauchten_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_brauchtet_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_brauchten_m.mp3"
       ],
       [
-        "audio/de/verbs/brauchen/audio_ich_brauchte_f.mp3",
-        "audio/de/verbs/brauchen/audio_du_brauchtest_f.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_brauchte_f.mp3",
-        "audio/de/verbs/brauchen/audio_wir_brauchten_f.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_brauchtet_f.mp3",
-        "audio/de/verbs/brauchen/audio_sie_brauchten_f.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_brauchte_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_brauchtest_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_brauchte_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_brauchten_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_brauchtet_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_brauchten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/brauchen/audio_ich_brauche_m.mp3",
-        "audio/de/verbs/brauchen/audio_du_brauchst_m.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_braucht_m.mp3",
-        "audio/de/verbs/brauchen/audio_wir_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_braucht_m.mp3",
-        "audio/de/verbs/brauchen/audio_sie_brauchen_m.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_brauche_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_brauchst_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_braucht_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_braucht_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_brauchen_m.mp3"
       ],
       [
-        "audio/de/verbs/brauchen/audio_ich_brauche_f.mp3",
-        "audio/de/verbs/brauchen/audio_du_brauchst_f.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_braucht_f.mp3",
-        "audio/de/verbs/brauchen/audio_wir_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_braucht_f.mp3",
-        "audio/de/verbs/brauchen/audio_sie_brauchen_f.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_brauche_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_brauchst_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_braucht_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_braucht_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_brauchen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verbs/brauchen/audio_ich_werde_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_du_wirst_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_wird_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_wir_werden_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_werdet_brauchen_m.mp3",
-        "audio/de/verbs/brauchen/audio_sie_werden_brauchen_m.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_werde_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_wirst_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_wird_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_werden_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_werdet_brauchen_m.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_werden_brauchen_m.mp3"
       ],
       [
-        "audio/de/verbs/brauchen/audio_ich_werde_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_du_wirst_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_er_sie_es_wird_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_wir_werden_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_ihr_werdet_brauchen_f.mp3",
-        "audio/de/verbs/brauchen/audio_sie_werden_brauchen_f.mp3"
+        "audio/de/verbs/de_audio_to_need/audio_ich_werde_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_du_wirst_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_er_sie_es_wird_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_wir_werden_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_ihr_werdet_brauchen_f.mp3",
+        "audio/de/verbs/de_audio_to_need/audio_sie_werden_brauchen_f.mp3"
       ]
     ]
   }

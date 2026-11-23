@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pomogat/audio_ya_pomog_m.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomog_m.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomog_m.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomogli_m.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomogli_m.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogli_m.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogli_m.mp3"
       ],
       [
-        "audio/ru/verben/pomogat/audio_ya_pomog_f.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomog_f.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomog_f.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomogli_f.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomogli_f.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogli_f.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogli_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pomogat/audio_ya_pomogayu_m.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomogaesh_m.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomogaet_m.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomogaem_m.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomogaete_m.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomogaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomogaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogayut_m.mp3"
       ],
       [
-        "audio/ru/verben/pomogat/audio_ya_pomogayu_f.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomogaesh_f.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomogaet_f.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomogaem_f.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomogaete_f.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomogaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomogaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pomogat/audio_ya_pomogu_m.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomozhesh_m.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomozhet_m.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomozhem_m.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomozhete_m.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomozhesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomozhet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomozhem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomozhete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogut_m.mp3"
       ],
       [
-        "audio/ru/verben/pomogat/audio_ya_pomogu_f.mp3",
-        "audio/ru/verben/pomogat/audio_ty_pomozhesh_f.mp3",
-        "audio/ru/verben/pomogat/audio_on_pomozhet_f.mp3",
-        "audio/ru/verben/pomogat/audio_my_pomozhem_f.mp3",
-        "audio/ru/verben/pomogat/audio_vy_pomozhete_f.mp3",
-        "audio/ru/verben/pomogat/audio_oni_pomogut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomozhesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomozhet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomozhem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomozhete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogut_f.mp3"
       ]
     ]
   }

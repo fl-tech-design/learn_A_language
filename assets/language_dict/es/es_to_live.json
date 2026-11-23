@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/vivir/audio_yo_vivia_m.mp3",
-        "audio/es/verbs/vivir/audio_tu_vivias_m.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vivia_m.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_viviamos_m.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_viviais_m.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_vivian_m.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivia_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vivias_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivia_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviamos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_viviais_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_vivian_m.mp3"
       ],
       [
-        "audio/es/verbs/vivir/audio_yo_vivia_f.mp3",
-        "audio/es/verbs/vivir/audio_tu_vivias_f.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vivia_f.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_viviamos_f.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_viviais_f.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_vivian_f.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivia_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vivias_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivia_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviamos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_viviais_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_vivian_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/vivir/audio_yo_vivo_m.mp3",
-        "audio/es/verbs/vivir/audio_tu_vives_m.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vive_m.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_vivimos_m.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_vivis_m.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_viven_m.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivo_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vives_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vive_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_vivimos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivis_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viven_m.mp3"
       ],
       [
-        "audio/es/verbs/vivir/audio_yo_vivo_f.mp3",
-        "audio/es/verbs/vivir/audio_tu_vives_f.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vive_f.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_vivimos_f.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_vivis_f.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_viven_f.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivo_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vives_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vive_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_vivimos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivis_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viven_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/es/verbs/vivir/audio_yo_vivire_m.mp3",
-        "audio/es/verbs/vivir/audio_tu_viviras_m.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vivira_m.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_viviremos_m.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_vivireis_m.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_viviran_m.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivire_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_viviras_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivira_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviremos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivireis_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viviran_m.mp3"
       ],
       [
-        "audio/es/verbs/vivir/audio_yo_vivire_f.mp3",
-        "audio/es/verbs/vivir/audio_tu_viviras_f.mp3",
-        "audio/es/verbs/vivir/audio_el_ella_vivira_f.mp3",
-        "audio/es/verbs/vivir/audio_nosotros_viviremos_f.mp3",
-        "audio/es/verbs/vivir/audio_vosotros_vivireis_f.mp3",
-        "audio/es/verbs/vivir/audio_ellos_ellas_viviran_f.mp3"
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivire_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_viviras_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivira_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviremos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivireis_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viviran_f.mp3"
       ]
     ]
   }

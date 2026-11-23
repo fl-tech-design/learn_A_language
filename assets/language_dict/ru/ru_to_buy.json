@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pokupat/audio_ya_pokupal_m.mp3",
-        "audio/ru/verben/pokupat/audio_ty_pokupal_m.mp3",
-        "audio/ru/verben/pokupat/audio_on_pokupal_m.mp3",
-        "audio/ru/verben/pokupat/audio_my_pokupali_m.mp3",
-        "audio/ru/verben/pokupat/audio_vy_pokupali_m.mp3",
-        "audio/ru/verben/pokupat/audio_oni_pokupali_m.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupali_m.mp3"
       ],
       [
-        "audio/ru/verben/pokupat/audio_ya_pokupal_f.mp3",
-        "audio/ru/verben/pokupat/audio_ty_pokupal_f.mp3",
-        "audio/ru/verben/pokupat/audio_on_pokupal_f.mp3",
-        "audio/ru/verben/pokupat/audio_my_pokupali_f.mp3",
-        "audio/ru/verben/pokupat/audio_vy_pokupali_f.mp3",
-        "audio/ru/verben/pokupat/audio_oni_pokupali_f.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupali_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pokupat/audio_ya_pokupayu_m.mp3",
-        "audio/ru/verben/pokupat/audio_ty_pokupaesh_m.mp3",
-        "audio/ru/verben/pokupat/audio_on_pokupaet_m.mp3",
-        "audio/ru/verben/pokupat/audio_my_pokupaem_m.mp3",
-        "audio/ru/verben/pokupat/audio_vy_pokupaete_m.mp3",
-        "audio/ru/verben/pokupat/audio_oni_pokupayut_m.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupayut_m.mp3"
       ],
       [
-        "audio/ru/verben/pokupat/audio_ya_pokupayu_f.mp3",
-        "audio/ru/verben/pokupat/audio_ty_pokupaesh_f.mp3",
-        "audio/ru/verben/pokupat/audio_on_pokupaet_f.mp3",
-        "audio/ru/verben/pokupat/audio_my_pokupaem_f.mp3",
-        "audio/ru/verben/pokupat/audio_vy_pokupaete_f.mp3",
-        "audio/ru/verben/pokupat/audio_oni_pokupayut_f.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupayut_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/ru/verben/pokupat/audio_ya_kuplyu_m.mp3",
-        "audio/ru/verben/pokupat/audio_ty_kupish_m.mp3",
-        "audio/ru/verben/pokupat/audio_on_kupit_m.mp3",
-        "audio/ru/verben/pokupat/audio_my_kupim_m.mp3",
-        "audio/ru/verben/pokupat/audio_vy_kupite_m.mp3",
-        "audio/ru/verben/pokupat/audio_oni_kupyat_m.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_kuplyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_kupish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_kupit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_kupim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_kupite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_kupyat_m.mp3"
       ],
       [
-        "audio/ru/verben/pokupat/audio_ya_kuplyu_f.mp3",
-        "audio/ru/verben/pokupat/audio_ty_kupish_f.mp3",
-        "audio/ru/verben/pokupat/audio_on_kupit_f.mp3",
-        "audio/ru/verben/pokupat/audio_my_kupim_f.mp3",
-        "audio/ru/verben/pokupat/audio_vy_kupite_f.mp3",
-        "audio/ru/verben/pokupat/audio_oni_kupyat_f.mp3"
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_kuplyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_kupish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_kupit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_kupim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_kupite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_kupyat_f.mp3"
       ]
     ]
   }

@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/faire/audio_jai_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_tu_as_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_il_elle_on_a_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_nous_avons_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_vous_avez_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_ils_elles_ont_fait_f.mp3"
+        "audio/fr/verbs/fr_audio_to_make/audio_jai_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_as_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_a_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_avons_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_avez_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_ont_fait_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/faire/audio_je_fais_f.mp3",
-        "audio/fr/verbs/faire/audio_tu_fais_f.mp3",
-        "audio/fr/verbs/faire/audio_il_elle_on_fait_f.mp3",
-        "audio/fr/verbs/faire/audio_nous_faisons_f.mp3",
-        "audio/fr/verbs/faire/audio_vous_faites_f.mp3",
-        "audio/fr/verbs/faire/audio_ils_elles_font_f.mp3"
+        "audio/fr/verbs/fr_audio_to_make/audio_je_fais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_fais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_faisons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_faites_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_font_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/verbs/faire/audio_je_ferai_f.mp3",
-        "audio/fr/verbs/faire/audio_tu_feras_f.mp3",
-        "audio/fr/verbs/faire/audio_il_elle_on_fera_f.mp3",
-        "audio/fr/verbs/faire/audio_nous_ferons_f.mp3",
-        "audio/fr/verbs/faire/audio_vous_ferez_f.mp3",
-        "audio/fr/verbs/faire/audio_ils_elles_feront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_make/audio_je_ferai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_feras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_fera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_ferons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_ferez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_feront_f.mp3"
       ]
     ]
   }
