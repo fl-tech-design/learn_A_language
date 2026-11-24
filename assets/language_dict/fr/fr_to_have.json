@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/avoir/audio_javais_f.mp3",
-        "audio/fr/avoir/audio_tu_avais_f.mp3",
-        "audio/fr/avoir/audio_il_elle_on_avait_f.mp3",
-        "audio/fr/avoir/audio_nous_avions_f.mp3",
-        "audio/fr/avoir/audio_vous_aviez_f.mp3",
-        "audio/fr/avoir/audio_ils_elles_avaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_have/audio_javais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_avais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_avait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_avions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_aviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_avaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/avoir/audio_jai_f.mp3",
-        "audio/fr/avoir/audio_tu_as_f.mp3",
-        "audio/fr/avoir/audio_il_elle_on_a_f.mp3",
-        "audio/fr/avoir/audio_nous_avons_f.mp3",
-        "audio/fr/avoir/audio_vous_avez_f.mp3",
-        "audio/fr/avoir/audio_ils_elles_ont_f.mp3"
+        "audio/fr/verbs/fr_audio_to_have/audio_jai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_as_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_a_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_avons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_avez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_ont_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/avoir/audio_jaurai_f.mp3",
-        "audio/fr/avoir/audio_tu_auras_f.mp3",
-        "audio/fr/avoir/audio_il_elle_on_aura_f.mp3",
-        "audio/fr/avoir/audio_nous_aurons_f.mp3",
-        "audio/fr/avoir/audio_vous_aurez_f.mp3",
-        "audio/fr/avoir/audio_ils_elles_auront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_have/audio_jaurai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_auras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_aura_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_aurons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_aurez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_auront_f.mp3"
       ]
     ]
   }

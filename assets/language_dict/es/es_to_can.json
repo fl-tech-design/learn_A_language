@@ -1,0 +1,183 @@
+{
+  "infinitive": "poder",
+  "past": {
+    "translations": [
+      "yo podía",
+      "tú podías",
+      "él/ella podía",
+      "nosotros podíamos",
+      "vosotros podíais",
+      "ellos/ellas podían"
+    ],
+    "examples": [
+      [
+        "Yo podía nadar.",
+        "",
+        ""
+      ],
+      [
+        "Tú podías bailar.",
+        "",
+        ""
+      ],
+      [
+        "Él podía cantar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros podíamos jugar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros podíais correr.",
+        "",
+        ""
+      ],
+      [
+        "Ellos podían reír.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_podia_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_podias_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_podia_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podiamos_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podiais_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_podian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_podia_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_podias_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_podia_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podiamos_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podiais_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_podian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo puedo",
+      "tú puedes",
+      "él/ella puede",
+      "nosotros podemos",
+      "vosotros podéis",
+      "ellos/ellas pueden"
+    ],
+    "examples": [
+      [
+        "Yo puedo nadar.",
+        "",
+        ""
+      ],
+      [
+        "Tú puedes bailar.",
+        "",
+        ""
+      ],
+      [
+        "Él puede cantar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros podemos jugar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros podéis correr.",
+        "",
+        ""
+      ],
+      [
+        "Ellos pueden reír.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_puedo_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_puedes_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_puede_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podemos_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podeis_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_pueden_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_puedo_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_puedes_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_puede_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podemos_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podeis_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_pueden_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo podré",
+      "tú podrás",
+      "él/ella podrá",
+      "nosotros podremos",
+      "vosotros podréis",
+      "ellos/ellas podrán"
+    ],
+    "examples": [
+      [
+        "Yo podré nadar.",
+        "",
+        ""
+      ],
+      [
+        "Tú podrás bailar.",
+        "",
+        ""
+      ],
+      [
+        "Él podrá cantar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros podremos jugar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros podréis correr.",
+        "",
+        ""
+      ],
+      [
+        "Ellos podrán reír.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_podre_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_podras_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_podra_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podremos_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podreis_m.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_podran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_can/audio_yo_podre_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_tu_podras_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_el_ella_podra_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_nosotros_podremos_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_vosotros_podreis_f.mp3",
+        "audio/es/verbs/es_audio_to_can/audio_ellos_ellas_podran_f.mp3"
+      ]
+    ]
+  }
+}

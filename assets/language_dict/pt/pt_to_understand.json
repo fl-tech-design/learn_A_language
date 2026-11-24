@@ -1,0 +1,183 @@
+{
+  "infinitive": "compreender",
+  "past": {
+    "translations": [
+      "eu compreendi",
+      "tu compreendeste",
+      "ele/ela compreendeu",
+      "nós compreendemos",
+      "vós compreendestes",
+      "eles/elas compreenderam"
+    ],
+    "examples": [
+      [
+        "Eu compreendi a pergunta.",
+        "",
+        ""
+      ],
+      [
+        "Tu compreendeste o problema.",
+        "",
+        ""
+      ],
+      [
+        "Ele compreendeu a situação.",
+        "",
+        ""
+      ],
+      [
+        "Nós compreendemos o plano.",
+        "",
+        ""
+      ],
+      [
+        "Vós compreendestes a tarefa.",
+        "",
+        ""
+      ],
+      [
+        "Eles compreenderam as regras.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/compreender/audio_eu_compreendi_m.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreendeste_m.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreendeu_m.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreendemos_m.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendestes_m.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreenderam_m.mp3"
+      ],
+      [
+        "audio/pt/verben/compreender/audio_eu_compreendi_f.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreendeste_f.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreendeu_f.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreendemos_f.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendestes_f.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreenderam_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu compreendo",
+      "tu compreendes",
+      "ele/ela compreende",
+      "nós compreendemos",
+      "vós compreendeis",
+      "eles/elas compreendem"
+    ],
+    "examples": [
+      [
+        "Eu compreendo a pergunta.",
+        "",
+        ""
+      ],
+      [
+        "Tu compreendes o problema.",
+        "",
+        ""
+      ],
+      [
+        "Ele compreende a situação.",
+        "",
+        ""
+      ],
+      [
+        "Nós compreendemos o plano.",
+        "",
+        ""
+      ],
+      [
+        "Vós compreendeis a tarefa.",
+        "",
+        ""
+      ],
+      [
+        "Eles compreendem as regras.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/compreender/audio_eu_compreendo_m.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreendes_m.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreende_m.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreendemos_m.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendeis_m.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreendem_m.mp3"
+      ],
+      [
+        "audio/pt/verben/compreender/audio_eu_compreendo_f.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreendes_f.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreende_f.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreendemos_f.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendeis_f.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreendem_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu compreenderei",
+      "tu compreenderás",
+      "ele/ela compreenderá",
+      "nós compreenderemos",
+      "vós compreendereis",
+      "eles/elas compreenderão"
+    ],
+    "examples": [
+      [
+        "Eu compreenderei a pergunta.",
+        "",
+        ""
+      ],
+      [
+        "Tu compreenderás o problema.",
+        "",
+        ""
+      ],
+      [
+        "Ele compreenderá a situação.",
+        "",
+        ""
+      ],
+      [
+        "Nós compreenderemos o plano.",
+        "",
+        ""
+      ],
+      [
+        "Vós compreendereis a tarefa.",
+        "",
+        ""
+      ],
+      [
+        "Eles compreenderão as regras.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/compreender/audio_eu_compreenderei_m.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreenderas_m.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreendera_m.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreenderemos_m.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendereis_m.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreenderao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/compreender/audio_eu_compreenderei_f.mp3",
+        "audio/pt/verben/compreender/audio_tu_compreenderas_f.mp3",
+        "audio/pt/verben/compreender/audio_ele_ela_compreendera_f.mp3",
+        "audio/pt/verben/compreender/audio_nos_compreenderemos_f.mp3",
+        "audio/pt/verben/compreender/audio_vos_compreendereis_f.mp3",
+        "audio/pt/verben/compreender/audio_eles_elas_compreenderao_f.mp3"
+      ]
+    ]
+  }
+}   

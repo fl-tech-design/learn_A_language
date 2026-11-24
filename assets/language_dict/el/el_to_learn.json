@@ -1,0 +1,183 @@
+{
+  "infinitive": "μαθαίνω",
+  "past": {
+    "translations": [
+      "εγώ μάθαινα",
+      "εσύ μάθαινες",
+      "αυτός/αυτή/αυτό μάθαινε",
+      "εμείς μαθαίναμε",
+      "εσείς μαθαίνατε",
+      "αυτοί/αυτές/αυτά μάθαιναν"
+    ],
+    "examples": [
+      [
+        "Εγώ μάθαινα γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ μάθαινες γρήγορα.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός μάθαινε αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς μαθαίναμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς μαθαίνατε πολλά.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί μάθαιναν ισπανικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_mathaina_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_mathaines_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_mathaine_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_mathainame_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_mathainate_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_mathainan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_mathaina_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_mathaines_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_mathaine_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_mathainame_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_mathainate_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_mathainan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ μαθαίνω",
+      "εσύ μαθαίνεις",
+      "αυτός/αυτή/αυτό μαθαίνει",
+      "εμείς μαθαίνουμε",
+      "εσείς μαθαίνετε",
+      "αυτοί/αυτές/αυτά μαθαίνουν"
+    ],
+    "examples": [
+      [
+        "Εγώ μαθαίνω γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ μαθαίνεις γρήγορα.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός μαθαίνει αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς μαθαίνουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς μαθαίνετε πολλά.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί μαθαίνουν ισπανικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_mathaino_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_mathaineis_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_mathainei_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_mathainoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_mathainete_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_mathainoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_mathaino_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_mathaineis_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_mathainei_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_mathainoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_mathainete_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_mathainoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα μάθω",
+      "εσύ θα μάθεις",
+      "αυτός/αυτή/αυτό θα μάθει",
+      "εμείς θα μάθουμε",
+      "εσείς θα μάθετε",
+      "αυτοί/αυτές/αυτά θα μάθουν"
+    ],
+    "examples": [
+      [
+        "Εγώ θα μάθω γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ θα μάθεις γρήγορα.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός θα μάθει αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς θα μάθουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς θα μάθετε πολλά.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί θα μάθουν ισπανικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_tha_matho_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_tha_matheis_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_tha_mathei_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_tha_mathoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_tha_mathete_m.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_tha_mathoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_learn/audio_ego_tha_matho_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_esy_tha_matheis_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytosaytiayto_tha_mathei_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_emeis_tha_mathoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_eseis_tha_mathete_f.mp3",
+        "audio/el/verbs/el_audio_to_learn/audio_aytoiaytesayta_tha_mathoyn_f.mp3"
+      ]
+    ]
+  }
+}

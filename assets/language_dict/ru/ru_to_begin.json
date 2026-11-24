@@ -1,0 +1,183 @@
+{
+  "infinitive": "начинать",
+  "past": {
+    "translations": [
+      "я начинал",
+      "ты начинал",
+      "он начинал",
+      "мы начинали",
+      "вы начинали",
+      "они начинали"
+    ],
+    "examples": [
+      [
+        "Я начинал проект.",
+        "",
+        ""
+      ],
+      [
+        "Ты начинал собрание.",
+        "",
+        ""
+      ],
+      [
+        "Он начинал гонку.",
+        "",
+        ""
+      ],
+      [
+        "Мы начинали вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы начинали игру.",
+        "",
+        ""
+      ],
+      [
+        "Они начинали концерт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachinal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachinal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachinal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachinali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachinali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachinali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachinal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachinal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachinal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachinali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachinali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachinali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я начинаю",
+      "ты начинаешь",
+      "он начинает",
+      "мы начинаем",
+      "вы начинаете",
+      "они начинают"
+    ],
+    "examples": [
+      [
+        "Я начинаю проект.",
+        "",
+        ""
+      ],
+      [
+        "Ты начинаешь собрание.",
+        "",
+        ""
+      ],
+      [
+        "Он начинает гонку.",
+        "",
+        ""
+      ],
+      [
+        "Мы начинаем вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы начинаете игру.",
+        "",
+        ""
+      ],
+      [
+        "Они начинают концерт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachinayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachinaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachinaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachinaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachinaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachinayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachinayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachinaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachinaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachinaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachinaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachinayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я начну",
+      "ты начнёшь",
+      "он начнёт",
+      "мы начнём",
+      "вы начнёте",
+      "они начнут"
+    ],
+    "examples": [
+      [
+        "Я начну проект.",
+        "",
+        ""
+      ],
+      [
+        "Ты начнёшь собрание.",
+        "",
+        ""
+      ],
+      [
+        "Он начнёт гонку.",
+        "",
+        ""
+      ],
+      [
+        "Мы начнём вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы начнёте игру.",
+        "",
+        ""
+      ],
+      [
+        "Они начнут концерт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachnu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachnyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachnyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachnyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachnyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachnut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_begin/audio_ya_nachnu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_ty_nachnyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_on_nachnyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_my_nachnyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_vy_nachnyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_begin/audio_oni_nachnut_f.mp3"
+      ]
+    ]
+  }
+}

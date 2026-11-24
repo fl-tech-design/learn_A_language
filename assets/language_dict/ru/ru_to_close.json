@@ -1,0 +1,183 @@
+{
+  "infinitive": "закрывать",
+  "past": {
+    "translations": [
+      "я закрыл",
+      "ты закрыл",
+      "он закрыл",
+      "мы закрыли",
+      "вы закрыли",
+      "они закрыли"
+    ],
+    "examples": [
+      [
+        "Я закрыл дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты закрыл окно.",
+        "",
+        ""
+      ],
+      [
+        "Он закрыл ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы закрыли посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы закрыли двери.",
+        "",
+        ""
+      ],
+      [
+        "Они закрыли окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я закрываю",
+      "ты закрываешь",
+      "он закрывает",
+      "мы закрываем",
+      "вы закрываете",
+      "они закрывают"
+    ],
+    "examples": [
+      [
+        "Я закрываю дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты закрываешь окно.",
+        "",
+        ""
+      ],
+      [
+        "Он закрывает ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы закрываем посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы закрываете двери.",
+        "",
+        ""
+      ],
+      [
+        "Они закрывают окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryvayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryvaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryvaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryvaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryvaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryvayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakryvayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakryvaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakryvaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakryvaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakryvaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakryvayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я закрою",
+      "ты закроешь",
+      "он закроет",
+      "мы закроем",
+      "вы закроете",
+      "они закроют"
+    ],
+    "examples": [
+      [
+        "Я закрою дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты закроешь окно.",
+        "",
+        ""
+      ],
+      [
+        "Он закроет ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы закроем посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы закроете двери.",
+        "",
+        ""
+      ],
+      [
+        "Они закроют окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakroyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakroesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakroet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakroem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakroete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakroyut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_close/audio_ya_zakroyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_ty_zakroesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_on_zakroet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_my_zakroem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_vy_zakroete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_close/audio_oni_zakroyut_f.mp3"
+      ]
+    ]
+  }
+}

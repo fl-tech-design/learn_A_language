@@ -1,0 +1,183 @@
+{
+  "infinitive": "hacer",
+  "past": {
+    "translations": [
+      "yo hacía",
+      "tú hacías",
+      "él/ella hacía",
+      "nosotros hacíamos",
+      "vosotros hacíais",
+      "ellos/ellas hacían"
+    ],
+    "examples": [
+      [
+        "Yo hacía un pastel.",
+        "",
+        ""
+      ],
+      [
+        "Tú hacías café.",
+        "",
+        ""
+      ],
+      [
+        "Él preparaba la cena.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros hacíamos un plan.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cometíais un error.",
+        "",
+        ""
+      ],
+      [
+        "Ellos hacían una película.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hacia_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_hacias_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hacia_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_haciamos_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_haciais_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_hacian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hacia_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_hacias_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hacia_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_haciamos_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_haciais_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_hacian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo hago",
+      "tú haces",
+      "él/ella hace",
+      "nosotros hacemos",
+      "vosotros hacéis",
+      "ellos/ellas hacen"
+    ],
+    "examples": [
+      [
+        "Yo hago café.",
+        "",
+        ""
+      ],
+      [
+        "Tú preparas la cena.",
+        "",
+        ""
+      ],
+      [
+        "Él hace un plan.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros hacemos una película.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cometéis un error.",
+        "",
+        ""
+      ],
+      [
+        "Ellos hacen café.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hago_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_haces_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hace_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_hacemos_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_haceis_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_hacen_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hago_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_haces_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hace_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_hacemos_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_haceis_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_hacen_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo haré",
+      "tú harás",
+      "él/ella hará",
+      "nosotros haremos",
+      "vosotros haréis",
+      "ellos/ellas harán"
+    ],
+    "examples": [
+      [
+        "Yo haré un pastel.",
+        "",
+        ""
+      ],
+      [
+        "Tú harás café.",
+        "",
+        ""
+      ],
+      [
+        "Él preparará la cena.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros haremos un plan.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cometeréis un error.",
+        "",
+        ""
+      ],
+      [
+        "Ellos harán una película.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hare_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_haras_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hara_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_haremos_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_hareis_m.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_haran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_make/audio_yo_hare_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_tu_haras_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_el_ella_hara_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_nosotros_haremos_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_vosotros_hareis_f.mp3",
+        "audio/es/verbs/es_audio_to_make/audio_ellos_ellas_haran_f.mp3"
+      ]
+    ]
+  }
+}

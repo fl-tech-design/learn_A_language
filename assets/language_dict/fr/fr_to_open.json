@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/ouvrir/audio_jai_ouvert_f.mp3",
-        "audio/fr/ouvrir/audio_tu_as_ouvert_f.mp3",
-        "audio/fr/ouvrir/audio_il_elle_on_a_ouvert_f.mp3",
-        "audio/fr/ouvrir/audio_nous_avons_ouvert_f.mp3",
-        "audio/fr/ouvrir/audio_vous_avez_ouvert_f.mp3",
-        "audio/fr/ouvrir/audio_ils_elles_ont_ouvert_f.mp3"
+        "audio/fr/verbs/fr_audio_to_open/audio_jai_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_as_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_a_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_avons_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_avez_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ont_ouvert_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/ouvrir/audio_jouvre_f.mp3",
-        "audio/fr/ouvrir/audio_tu_ouvres_f.mp3",
-        "audio/fr/ouvrir/audio_il_elle_on_ouvre_f.mp3",
-        "audio/fr/ouvrir/audio_nous_ouvrons_f.mp3",
-        "audio/fr/ouvrir/audio_vous_ouvrez_f.mp3",
-        "audio/fr/ouvrir/audio_ils_elles_ouvrent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_open/audio_jouvre_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_ouvres_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_ouvre_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_ouvrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_ouvrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ouvrent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/ouvrir/audio_jouvrirai_f.mp3",
-        "audio/fr/ouvrir/audio_tu_ouvriras_f.mp3",
-        "audio/fr/ouvrir/audio_il_elle_on_ouvrira_f.mp3",
-        "audio/fr/ouvrir/audio_nous_ouvrirons_f.mp3",
-        "audio/fr/ouvrir/audio_vous_ouvrirez_f.mp3",
-        "audio/fr/ouvrir/audio_ils_elles_ouvriront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_open/audio_jouvrirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_ouvriras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_ouvrira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_ouvrirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_ouvrirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ouvriront_f.mp3"
       ]
     ]
   }

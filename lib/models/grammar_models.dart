@@ -1,5 +1,5 @@
 /// Typed models for the grammar catalogue
-/// (`assets/grammar/grammar_de_en.json`).
+/// (`assets/grammar/grammar_de/grammar_de_en.json`).
 ///
 /// The document is schema-versioned, bilingual (de/en) and CEFR-based. Every
 /// human-readable string is stored as [LocalizedText] keyed by language code

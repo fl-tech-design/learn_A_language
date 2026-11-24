@@ -1,0 +1,183 @@
+{
+  "infinitive": "ξεκινώ",
+  "past": {
+    "translations": [
+      "εγώ ξεκίνησα",
+      "εσύ ξεκίνησες",
+      "αυτός/αυτή/αυτό ξεκίνησε",
+      "εμείς ξεκινήσαμε",
+      "εσείς ξεκινήσατε",
+      "αυτοί/αυτές/αυτά ξεκίνησαν"
+    ],
+    "examples": [
+      [
+        "Ξεκίνησα το έργο.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκίνησες τη συνάντηση.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκίνησε τον αγώνα.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινήσαμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινήσατε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκίνησαν τη συναυλία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_xekinisa_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_xekinises_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_xekinise_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_xekinisame_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_xekinisate_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_xekinisan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_xekinisa_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_xekinises_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_xekinise_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_xekinisame_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_xekinisate_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_xekinisan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ ξεκινώ",
+      "εσύ ξεκινάς",
+      "αυτός/αυτή/αυτό ξεκινά",
+      "εμείς ξεκινάμε",
+      "εσείς ξεκινάτε",
+      "αυτοί/αυτές/αυτά ξεκινούν"
+    ],
+    "examples": [
+      [
+        "Ξεκινώ το έργο.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινάς τη συνάντηση.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινά τον αγώνα.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινάμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινάτε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Ξεκινούν τη συναυλία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_xekino_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_xekinas_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_xekina_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_xekiname_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_xekinate_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_xekinoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_xekino_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_xekinas_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_xekina_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_xekiname_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_xekinate_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_xekinoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα ξεκινήσω",
+      "εσύ θα ξεκινήσεις",
+      "αυτός/αυτή/αυτό θα ξεκινήσει",
+      "εμείς θα ξεκινήσουμε",
+      "εσείς θα ξεκινήσετε",
+      "αυτοί/αυτές/αυτά θα ξεκινήσουν"
+    ],
+    "examples": [
+      [
+        "Θα ξεκινήσω το έργο.",
+        "",
+        ""
+      ],
+      [
+        "Θα ξεκινήσεις τη συνάντηση.",
+        "",
+        ""
+      ],
+      [
+        "Θα ξεκινήσει τον αγώνα.",
+        "",
+        ""
+      ],
+      [
+        "Θα ξεκινήσουμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα ξεκινήσετε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Θα ξεκινήσουν τη συναυλία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_tha_xekiniso_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_tha_xekiniseis_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_tha_xekinisei_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_tha_xekinisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_tha_xekinisete_m.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_tha_xekinisoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_begin/audio_ego_tha_xekiniso_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_esy_tha_xekiniseis_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytosaytiayto_tha_xekinisei_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_emeis_tha_xekinisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_eseis_tha_xekinisete_f.mp3",
+        "audio/el/verbs/el_audio_to_begin/audio_aytoiaytesayta_tha_xekinisoyn_f.mp3"
+      ]
+    ]
+  }
+}

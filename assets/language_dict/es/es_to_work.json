@@ -1,0 +1,183 @@
+{
+  "infinitive": "trabajar",
+  "past": {
+    "translations": [
+      "yo trabajaba",
+      "tú trabajabas",
+      "él/ella trabajaba",
+      "nosotros trabajábamos",
+      "vosotros trabajabais",
+      "ellos/ellas trabajaban"
+    ],
+    "examples": [
+      [
+        "Yo trabajaba en una oficina.",
+        "",
+        ""
+      ],
+      [
+        "Tú trabajabas mucho.",
+        "",
+        ""
+      ],
+      [
+        "Él trabajaba en una fábrica.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros trabajábamos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros trabajabais hasta tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos trabajaban en un proyecto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajaba_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajabas_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabajaba_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajabamos_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajabais_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajaban_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajaba_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajabas_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabajaba_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajabamos_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajabais_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajaban_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo trabajo",
+      "tú trabajas",
+      "él/ella trabaja",
+      "nosotros trabajamos",
+      "vosotros trabajáis",
+      "ellos/ellas trabajan"
+    ],
+    "examples": [
+      [
+        "Yo trabajo en una oficina.",
+        "",
+        ""
+      ],
+      [
+        "Tú trabajas mucho.",
+        "",
+        ""
+      ],
+      [
+        "Él trabaja en una fábrica.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros trabajamos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros trabajáis hasta tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos trabajan en un proyecto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajo_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajas_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabaja_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajamos_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajais_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajo_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajas_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabaja_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajamos_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajais_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajan_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo trabajaré",
+      "tú trabajarás",
+      "él/ella trabajará",
+      "nosotros trabajaremos",
+      "vosotros trabajaréis",
+      "ellos/ellas trabajarán"
+    ],
+    "examples": [
+      [
+        "Yo trabajaré en una oficina.",
+        "",
+        ""
+      ],
+      [
+        "Tú trabajarás mucho.",
+        "",
+        ""
+      ],
+      [
+        "Él trabajará en una fábrica.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros trabajaremos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros trabajaréis hasta tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos trabajarán en un proyecto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajare_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajaras_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabajara_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajareis_m.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajaran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_work/audio_yo_trabajare_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_tu_trabajaras_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_el_ella_trabajara_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_nosotros_trabajaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_vosotros_trabajareis_f.mp3",
+        "audio/es/verbs/es_audio_to_work/audio_ellos_ellas_trabajaran_f.mp3"
+      ]
+    ]
+  }
+}

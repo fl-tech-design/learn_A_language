@@ -1,0 +1,183 @@
+{
+  "infinitive": "нуждаться",
+  "past": {
+    "translations": [
+      "я нуждался",
+      "ты нуждался",
+      "он нуждался",
+      "мы нуждались",
+      "вы нуждались",
+      "они нуждались"
+    ],
+    "examples": [
+      [
+        "Мне нужна была помощь.",
+        "",
+        ""
+      ],
+      [
+        "Тебе было нужно время.",
+        "",
+        ""
+      ],
+      [
+        "Ему нужны были деньги.",
+        "",
+        ""
+      ],
+      [
+        "Мы нуждались в поддержке.",
+        "",
+        ""
+      ],
+      [
+        "Вы нуждались в советах.",
+        "",
+        ""
+      ],
+      [
+        "Им был нужен покой.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_nuzhdalsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_nuzhdalsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_nuzhdalsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_nuzhdalis_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_nuzhdalis_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_nuzhdalis_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_nuzhdalsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_nuzhdalsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_nuzhdalsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_nuzhdalis_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_nuzhdalis_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_nuzhdalis_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я нуждаюсь",
+      "ты нуждаешься",
+      "он нуждается",
+      "мы нуждаемся",
+      "вы нуждаетесь",
+      "они нуждаются"
+    ],
+    "examples": [
+      [
+        "Мне нужна помощь.",
+        "",
+        ""
+      ],
+      [
+        "Тебе нужно время.",
+        "",
+        ""
+      ],
+      [
+        "Ему нужны деньги.",
+        "",
+        ""
+      ],
+      [
+        "Мы нуждаемся в поддержке.",
+        "",
+        ""
+      ],
+      [
+        "Вам нужны советы.",
+        "",
+        ""
+      ],
+      [
+        "Им нужен покой.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_nuzhdayus_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_nuzhdaeshsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_nuzhdaetsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_nuzhdaemsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_nuzhdaetes_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_nuzhdayutsya_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_nuzhdayus_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_nuzhdaeshsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_nuzhdaetsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_nuzhdaemsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_nuzhdaetes_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_nuzhdayutsya_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду нуждаться",
+      "ты будешь нуждаться",
+      "он будет нуждаться",
+      "мы будем нуждаться",
+      "вы будете нуждаться",
+      "они будут нуждаться"
+    ],
+    "examples": [
+      [
+        "Мне понадобится помощь.",
+        "",
+        ""
+      ],
+      [
+        "Тебе понадобится время.",
+        "",
+        ""
+      ],
+      [
+        "Ему понадобятся деньги.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем нуждаться в поддержке.",
+        "",
+        ""
+      ],
+      [
+        "Вам понадобятся советы.",
+        "",
+        ""
+      ],
+      [
+        "Им понадобится покой.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_budu_nuzhdatsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_budesh_nuzhdatsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_budet_nuzhdatsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_budem_nuzhdatsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_budete_nuzhdatsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_budut_nuzhdatsya_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_need/audio_ya_budu_nuzhdatsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_ty_budesh_nuzhdatsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_on_budet_nuzhdatsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_my_budem_nuzhdatsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_vy_budete_nuzhdatsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_need/audio_oni_budut_nuzhdatsya_f.mp3"
+      ]
+    ]
+  }
+}

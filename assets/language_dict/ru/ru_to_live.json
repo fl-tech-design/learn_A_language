@@ -1,0 +1,183 @@
+{
+  "infinitive": "жить",
+  "past": {
+    "translations": [
+      "я жил",
+      "ты жил",
+      "он жил",
+      "мы жили",
+      "вы жили",
+      "они жили"
+    ],
+    "examples": [
+      [
+        "Я жил в Берлине.",
+        "",
+        ""
+      ],
+      [
+        "Ты жил в доме.",
+        "",
+        ""
+      ],
+      [
+        "Он жил в квартире.",
+        "",
+        ""
+      ],
+      [
+        "Мы жили вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы жили в городе.",
+        "",
+        ""
+      ],
+      [
+        "Они жили в деревне.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhili_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhili_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я живу",
+      "ты живёшь",
+      "он живёт",
+      "мы живём",
+      "вы живёте",
+      "они живут"
+    ],
+    "examples": [
+      [
+        "Я живу в Берлине.",
+        "",
+        ""
+      ],
+      [
+        "Ты живёшь в доме.",
+        "",
+        ""
+      ],
+      [
+        "Он живёт в квартире.",
+        "",
+        ""
+      ],
+      [
+        "Мы живём вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы живёте в городе.",
+        "",
+        ""
+      ],
+      [
+        "Они живут в деревне.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhivu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhivyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhivyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhivyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhivyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhivut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_zhivu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_zhivyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_zhivyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_zhivyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_zhivyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_zhivut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду жить",
+      "ты будешь жить",
+      "он будет жить",
+      "мы будем жить",
+      "вы будете жить",
+      "они будут жить"
+    ],
+    "examples": [
+      [
+        "Я буду жить в Берлине.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь жить в доме.",
+        "",
+        ""
+      ],
+      [
+        "Он будет жить в квартире.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем жить вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете жить в городе.",
+        "",
+        ""
+      ],
+      [
+        "Они будут жить в деревне.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_budu_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_budesh_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_budet_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_budem_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_budete_zhit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_budut_zhit_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_live/audio_ya_budu_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_ty_budesh_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_on_budet_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_my_budem_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_vy_budete_zhit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_live/audio_oni_budut_zhit_f.mp3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "infinitive": "находить",
+  "past": {
+    "translations": [
+      "я нашёл",
+      "ты нашёл",
+      "он нашёл",
+      "мы нашли",
+      "вы нашли",
+      "они нашли"
+    ],
+    "examples": [
+      [
+        "Я нашёл свой ключ.",
+        "",
+        ""
+      ],
+      [
+        "Ты нашёл свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он нашёл свой кошелёк.",
+        "",
+        ""
+      ],
+      [
+        "Мы нашли решение.",
+        "",
+        ""
+      ],
+      [
+        "Вы нашли ключи.",
+        "",
+        ""
+      ],
+      [
+        "Они нашли кошку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_nashyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_nashyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_nashyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_nashli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_nashli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_nashli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_nashyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_nashyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_nashyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_nashli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_nashli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_nashli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я нахожу",
+      "ты находишь",
+      "он находит",
+      "мы находим",
+      "вы находите",
+      "они находят"
+    ],
+    "examples": [
+      [
+        "Я не нахожу свой ключ.",
+        "",
+        ""
+      ],
+      [
+        "Ты находишь свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он находит свой кошелёк.",
+        "",
+        ""
+      ],
+      [
+        "Мы находим решение.",
+        "",
+        ""
+      ],
+      [
+        "Вы находите ключи.",
+        "",
+        ""
+      ],
+      [
+        "Они находят кошку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_nakhozhu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_nakhodish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_nakhodit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_nakhodim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_nakhodite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_nakhodyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_nakhozhu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_nakhodish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_nakhodit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_nakhodim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_nakhodite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_nakhodyat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я найду",
+      "ты найдёшь",
+      "он найдёт",
+      "мы найдём",
+      "вы найдёте",
+      "они найдут"
+    ],
+    "examples": [
+      [
+        "Я найду свой ключ.",
+        "",
+        ""
+      ],
+      [
+        "Ты найдёшь свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он найдёт свой кошелёк.",
+        "",
+        ""
+      ],
+      [
+        "Мы найдём решение.",
+        "",
+        ""
+      ],
+      [
+        "Вы найдёте ключи.",
+        "",
+        ""
+      ],
+      [
+        "Они найдут кошку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_naydu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_naydyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_naydyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_naydyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_naydyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_naydut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_find/audio_ya_naydu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_ty_naydyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_on_naydyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_my_naydyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_vy_naydyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_find/audio_oni_naydut_f.mp3"
+      ]
+    ]
+  }
+}

@@ -46,7 +46,7 @@ class _PerPathBundle extends FakeFileService {
 
 void main() {
   group('Kurs-basiertes Sprachenmodell (Bug: de-Kurs lud en-Daten)', () {
-    Future<UserState> _stateWith({
+    Future<UserState> stateWith({
       required Map<String, Map<String, dynamic>> languageDicts,
     }) async {
       final userMgr = FakeUserManager();
@@ -67,10 +67,10 @@ void main() {
 
     test('de-Kurs (mLang de) lädt deutsche Wörter, nicht englische',
         () async {
-      final state = await _stateWith(languageDicts: {
-        'de': {'to_go': _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verben/gehen/audio_ich_gehe')},
-        'en': {'to_go': _verb(infinitive: 'go', trans0: 'I go', audioPath: 'audio/en/to go/audio_i_go')},
-        'fr': {'to_go': _verb(infinitive: 'aller', trans0: "je vais", audioPath: 'audio/fr/aller/audio_je_vais')},
+      final state = await stateWith(languageDicts: {
+        'de': {'to_go': _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verbs/de_audio_to_go/audio_ich_gehe')},
+        'en': {'to_go': _verb(infinitive: 'go', trans0: 'I go', audioPath: 'audio/en/verbs/en_audio_to_go/audio_i_go')},
+        'fr': {'to_go': _verb(infinitive: 'aller', trans0: "je vais", audioPath: 'audio/fr/verbs/fr_audio_to_go/audio_je_vais')},
       });
 
       await state.addCourse('de_verben_a1');
@@ -83,10 +83,10 @@ void main() {
     });
 
     test('fr-Kurs (mLang de) lädt französische Wörter', () async {
-      final state = await _stateWith(languageDicts: {
-        'de': {'to_go': _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verben/gehen/audio_ich_gehe')},
-        'en': {'to_go': _verb(infinitive: 'go', trans0: 'I go', audioPath: 'audio/en/to go/audio_i_go')},
-        'fr': {'to_go': _verb(infinitive: 'aller', trans0: "je vais", audioPath: 'audio/fr/aller/audio_je_vais')},
+      final state = await stateWith(languageDicts: {
+        'de': {'to_go': _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verbs/de_audio_to_go/audio_ich_gehe')},
+        'en': {'to_go': _verb(infinitive: 'go', trans0: 'I go', audioPath: 'audio/en/verbs/en_audio_to_go/audio_i_go')},
+        'fr': {'to_go': _verb(infinitive: 'aller', trans0: "je vais", audioPath: 'audio/fr/verbs/fr_audio_to_go/audio_je_vais')},
       });
 
       await state.addCourse('fr_verben_a1');
@@ -100,7 +100,7 @@ void main() {
     test('Audio folgt der Kurssprache (de vs. en)', () async {
       final fake = _PerPathBundle(byPath: {
         'assets/language_dict/de/de_to_go.json':
-            _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verben/gehen/audio_ich_gehe'),
+            _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verbs/de_audio_to_go/audio_ich_gehe'),
       });
       final audio = AudioService(fileService: fake);
 

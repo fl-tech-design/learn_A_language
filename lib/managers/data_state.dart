@@ -2,6 +2,7 @@ import 'dart:developer' show log;
 
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
+import '../models/language_registry.dart' show dictLanguageCodes, languageCodeForName;
 import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import 'user_manager.dart' show recoverAppData;
@@ -19,6 +20,11 @@ class DataState extends ChangeNotifier {
   String _currLang = 'de';
   AppData _appData = AppData();
 
+  /// Sprachen, deren Wörterbücher zur Laufzeit gefunden wurden (Seed-Sprachen
+  /// de/en/fr immer enthalten → stabiler Fallback). Steuern, welche Kurse und
+  /// Muttersprachen angeboten werden.
+  Set<String> _dictLanguages = Set<String>.of(dictLanguageCodes);
+
   // Colors from base_data.json (fallback)
   List<double> _color1 = [12 / 255, 12 / 255, 12 / 255, 1];
   List<double> _color2 = [12 / 255, 12 / 255, 200 / 255, 1];
@@ -34,9 +40,13 @@ class DataState extends ChangeNotifier {
         'es' => const Locale('es'),
         'fr' => const Locale('fr'),
         'ru' => const Locale('ru'),
+        'el' => const Locale('el'),
         _    => const Locale('en'),
       };
   AppData get appData => _appData;
+
+  /// Sprachen mit tatsächlich vorhandenen Wörterbüchern (inclusive [dictLanguageCodes]-Seeds).
+  Set<String> get availableDictLanguages => _dictLanguages;
   List<double> get color1 => _color1;
   List<double> get color2 => _color2;
   List<double> get color3 => _color3;
@@ -44,7 +54,19 @@ class DataState extends ChangeNotifier {
   // ── Initialization ─────────────────────────────────────────────
   Future<void> initialize() async {
     await _fileService.initialize();
+    await _discoverDictLanguages();
     await loadAppData();
+  }
+
+  /// Ermittelt vorhandene Wörterbücher und aktualisiert daraus den Kurs-Katalog
+  /// plus das Muttersprachen-Angebot. Seed-Sprachen (de/en/fr) bleiben immer
+  /// enthalten, damit First-Run und Tests stabil sind.
+  Future<void> _discoverDictLanguages() async {
+    final discovered = await _fileService.discoverLanguageDicts();
+    final effective = Set<String>.of(dictLanguageCodes)..addAll(discovered);
+    _dictLanguages = effective;
+    refreshAvailableCourses(effective);
+    notifyListeners();
   }
 
   Future<void> loadAppData() async {
@@ -93,20 +115,7 @@ class DataState extends ChangeNotifier {
 
   // ── Language ──────────────────────────────────────────────────
   Future<void> changeLanguage(String newLanguage) async {
-    final norm = newLanguage.trim().toLowerCase();
-    const mapping = {
-      'deutsch': 'de',
-      'englisch': 'en',
-      'spanisch': 'es',
-      'französisch': 'fr',
-      'russisch': 'ru',
-      'german': 'de',
-      'english': 'en',
-      'spanish': 'es',
-      'french': 'fr',
-      'russian': 'ru',
-    };
-    final langCode = mapping[norm];
+    final langCode = languageCodeForName(newLanguage);
     if (langCode == null) return;
 
     try {

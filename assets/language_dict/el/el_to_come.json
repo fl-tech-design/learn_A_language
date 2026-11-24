@@ -1,0 +1,183 @@
+{
+  "infinitive": "έρχομαι",
+  "past": {
+    "translations": [
+      "εγώ ήρθα",
+      "εσύ ήρθες",
+      "αυτός/αυτή/αυτό ήρθε",
+      "εμείς ήρθαμε",
+      "εσείς ήρθατε",
+      "αυτοί/αυτές/αυτά ήρθαν"
+    ],
+    "examples": [
+      [
+        "Ήρθα στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Ήρθες αργά.",
+        "",
+        ""
+      ],
+      [
+        "Ήρθε στο πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Ήρθαμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Ήρθατε νωρίς.",
+        "",
+        ""
+      ],
+      [
+        "Ήρθαν στη συνάντηση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_irtha_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_irthes_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_irthe_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_irthame_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_irthate_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_irthan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_irtha_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_irthes_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_irthe_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_irthame_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_irthate_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_irthan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ έρχομαι",
+      "εσύ έρχεσαι",
+      "αυτός/αυτή/αυτό έρχεται",
+      "εμείς ερχόμαστε",
+      "εσείς έρχεστε",
+      "αυτοί/αυτές/αυτά έρχονται"
+    ],
+    "examples": [
+      [
+        "Έρχομαι στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Έρχεσαι αργά.",
+        "",
+        ""
+      ],
+      [
+        "Έρχεται στο πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Ερχόμαστε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Έρχεστε νωρίς.",
+        "",
+        ""
+      ],
+      [
+        "Έρχονται στη συνάντηση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_erchomai_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_erchesai_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_erchetai_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_erchomaste_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_ercheste_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_erchontai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_erchomai_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_erchesai_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_erchetai_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_erchomaste_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_ercheste_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_erchontai_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα έρθω",
+      "εσύ θα έρθεις",
+      "αυτός/αυτή/αυτό θα έρθει",
+      "εμείς θα έρθουμε",
+      "εσείς θα έρθετε",
+      "αυτοί/αυτές/αυτά θα έρθουν"
+    ],
+    "examples": [
+      [
+        "Θα έρθω στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα έρθεις αργά.",
+        "",
+        ""
+      ],
+      [
+        "Θα έρθει στο πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα έρθουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Θα έρθετε νωρίς.",
+        "",
+        ""
+      ],
+      [
+        "Θα έρθουν στη συνάντηση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_tha_ertho_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_tha_ertheis_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_tha_erthei_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_tha_erthoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_tha_erthete_m.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_tha_erthoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_come/audio_ego_tha_ertho_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_esy_tha_ertheis_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytosaytiayto_tha_erthei_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_emeis_tha_erthoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_eseis_tha_erthete_f.mp3",
+        "audio/el/verbs/el_audio_to_come/audio_aytoiaytesayta_tha_erthoyn_f.mp3"
+      ]
+    ]
+  }
+}

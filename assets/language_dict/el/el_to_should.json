@@ -1,0 +1,181 @@
+{
+  "infinitive": "πρέπει να",
+  "past": {
+    "translations": [
+      "εγώ έπρεπε να",
+      "εσύ έπρεπε να",
+      "αυτός/αυτή/αυτό έπρεπε να",
+      "εμείς έπρεπε να",
+      "εσείς έπρεπε να",
+      "αυτοί/αυτές/αυτά έπρεπε να"
+    ],
+    "examples": [
+      [
+        "Έπρεπε να μάθω.",
+        "",
+        ""
+      ],
+      [
+        "Έπρεπε να βοηθήσεις.",
+        "",
+        ""
+      ],
+      [
+        "Έπρεπε να ακούσει προσεκτικά.",
+        "",
+        ""
+      ],
+      [
+        "Έπρεπε να περιμένουμε.",
+        "",
+        ""
+      ],
+      [
+        "Έπρεπε να ρωτήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Έπρεπε να μείνουν."
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_eprepe_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_eprepe_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_eprepe_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_eprepe_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_eprepe_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_eprepe_na_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_eprepe_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_eprepe_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_eprepe_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_eprepe_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_eprepe_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_eprepe_na_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ πρέπει να",
+      "εσύ πρέπει να",
+      "αυτός/αυτή/αυτό πρέπει να",
+      "εμείς πρέπει να",
+      "εσείς πρέπει να",
+      "αυτοί/αυτές/αυτά πρέπει να"
+    ],
+    "examples": [
+      [
+        "Πρέπει να μάθω.",
+        "",
+        ""
+      ],
+      [
+        "Πρέπει να βοηθήσεις.",
+        "",
+        ""
+      ],
+      [
+        "Πρέπει να ακούσει προσεκτικά.",
+        "",
+        ""
+      ],
+      [
+        "Πρέπει να περιμένουμε.",
+        "",
+        ""
+      ],
+      [
+        "Πρέπει να ρωτήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Πρέπει να μείνουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_prepei_na_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_prepei_na_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα πρέπει να",
+      "εσύ θα πρέπει να",
+      "αυτός/αυτή/αυτό θα πρέπει να",
+      "εμείς θα πρέπει να",
+      "εσείς θα πρέπει να",
+      "αυτοί/αυτές/αυτά θα πρέπει να"
+    ],
+    "examples": [
+      [
+        "Θα πρέπει να μάθω.",
+        "",
+        ""
+      ],
+      [
+        "Θα πρέπει να βοηθήσεις.",
+        "",
+        ""
+      ],
+      [
+        "Θα πρέπει να ακούσει προσεκτικά.",
+        "",
+        ""
+      ],
+      [
+        "Θα πρέπει να περιμένουμε.",
+        "",
+        ""
+      ],
+      [
+        "Θα πρέπει να ρωτήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Θα πρέπει να μείνουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_tha_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_tha_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_tha_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_tha_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_tha_prepei_na_m.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_tha_prepei_na_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_should/audio_ego_tha_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_esy_tha_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytosaytiayto_tha_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_emeis_tha_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_eseis_tha_prepei_na_f.mp3",
+        "audio/el/verbs/el_audio_to_should/audio_aytoiaytesayta_tha_prepei_na_f.mp3"
+      ]
+    ]
+  }
+}

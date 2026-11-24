@@ -1,0 +1,183 @@
+{
+  "infinitive": "vivir",
+  "past": {
+    "translations": [
+      "yo vivía",
+      "tú vivías",
+      "él/ella vivía",
+      "nosotros vivíamos",
+      "vosotros vivíais",
+      "ellos/ellas vivían"
+    ],
+    "examples": [
+      [
+        "Yo vivía en Berlín.",
+        "",
+        ""
+      ],
+      [
+        "Tú vivías en una casa.",
+        "",
+        ""
+      ],
+      [
+        "Él vivía en un piso.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vivíamos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vivíais en la ciudad.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vivían en un pueblo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivia_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vivias_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivia_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviamos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_viviais_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_vivian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivia_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vivias_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivia_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviamos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_viviais_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_vivian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo vivo",
+      "tú vives",
+      "él/ella vive",
+      "nosotros vivimos",
+      "vosotros vivís",
+      "ellos/ellas viven"
+    ],
+    "examples": [
+      [
+        "Yo vivo en Berlín.",
+        "",
+        ""
+      ],
+      [
+        "Tú vives en una casa.",
+        "",
+        ""
+      ],
+      [
+        "Él vive en un piso.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vivimos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vivís en la ciudad.",
+        "",
+        ""
+      ],
+      [
+        "Ellos viven en un pueblo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivo_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vives_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vive_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_vivimos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivis_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viven_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivo_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_vives_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vive_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_vivimos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivis_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viven_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo viviré",
+      "tú vivirás",
+      "él/ella vivirá",
+      "nosotros viviremos",
+      "vosotros viviréis",
+      "ellos/ellas vivirán"
+    ],
+    "examples": [
+      [
+        "Yo viviré en Berlín.",
+        "",
+        ""
+      ],
+      [
+        "Tú vivirás en una casa.",
+        "",
+        ""
+      ],
+      [
+        "Él vivirá en un piso.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros viviremos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros viviréis en la ciudad.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vivirán en un pueblo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivire_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_viviras_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivira_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviremos_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivireis_m.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viviran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_live/audio_yo_vivire_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_tu_viviras_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_el_ella_vivira_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_nosotros_viviremos_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_vosotros_vivireis_f.mp3",
+        "audio/es/verbs/es_audio_to_live/audio_ellos_ellas_viviran_f.mp3"
+      ]
+    ]
+  }
+}

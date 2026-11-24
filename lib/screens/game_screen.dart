@@ -78,14 +78,16 @@ class _GameScreenState extends State<GameScreen> {
     final vq = context.read<VocabQueries>();
     final uname = dataState.appData.loggedUName;
 
+    final um = context.read<UserManager>();
+    final navState = context.read<NavigationState>();
+    final userState = context.read<UserState>();
+    
     if (uname.isNotEmpty) {
-      final ud = await context.read<UserManager>().loadUserdata(uname);
+      final ud = await um.loadUserdata(uname);
       _highscore = ud?.gameHighscore ?? 0;
     }
 
-    final lang = context
-        .read<NavigationState>()
-        .resolveActiveLang(context.read<UserState>().userData);
+    final lang = navState.resolveActiveLang(userState.userData);
     final allWords = await vq.getReadWords(uname, langCode: lang);
     if (allWords.isEmpty) {
       if (!mounted) return;

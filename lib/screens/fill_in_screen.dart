@@ -90,14 +90,16 @@ class _FillInScreenState extends State<FillInScreen> {
     final vq = context.read<VocabQueries>();
 
     _bestTime = 0;
+    final um = context.read<UserManager>();
+    final navState = context.read<NavigationState>();
+    final userState = context.read<UserState>();
+    
     if (uname.isNotEmpty) {
-      final ud = await context.read<UserManager>().loadUserdata(uname);
+      final ud = await um.loadUserdata(uname);
       _bestTime = ud?.fillInBestTimes[widget.difficulty] ?? 0;
     }
 
-    final lang = context
-        .read<NavigationState>()
-        .resolveActiveLang(context.read<UserState>().userData);
+    final lang = navState.resolveActiveLang(userState.userData);
     var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter ueber die bestehende Kategorien-Info.

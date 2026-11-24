@@ -1,0 +1,183 @@
+{
+  "infinitive": "πίνω",
+  "past": {
+    "translations": [
+      "εγώ ήπια",
+      "εσύ ήπιες",
+      "αυτός/αυτή/αυτό ήπιε",
+      "εμείς ήπιαμε",
+      "εσείς ήπιατε",
+      "αυτοί/αυτές/αυτά ήπιαν"
+    ],
+    "examples": [
+      [
+        "Ήπια νερό.",
+        "",
+        ""
+      ],
+      [
+        "Ήπιες καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Ήπιε τσάι.",
+        "",
+        ""
+      ],
+      [
+        "Ήπιαμε μπύρα.",
+        "",
+        ""
+      ],
+      [
+        "Ήπιατε κρασί.",
+        "",
+        ""
+      ],
+      [
+        "Ήπιαν χυμό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_ipia_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_ipies_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_ipie_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_ipiame_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_ipiate_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_ipian_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_ipia_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_ipies_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_ipie_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_ipiame_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_ipiate_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_ipian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ πίνω",
+      "εσύ πίνεις",
+      "αυτός/αυτή/αυτό πίνει",
+      "εμείς πίνουμε",
+      "εσείς πίνετε",
+      "αυτοί/αυτές/αυτά πίνουν"
+    ],
+    "examples": [
+      [
+        "Πίνω νερό.",
+        "",
+        ""
+      ],
+      [
+        "Πίνεις καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Πίνει τσάι.",
+        "",
+        ""
+      ],
+      [
+        "Πίνουμε μπύρα.",
+        "",
+        ""
+      ],
+      [
+        "Πίνετε κρασί.",
+        "",
+        ""
+      ],
+      [
+        "Πίνουν χυμό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_pino_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_pineis_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_pinei_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_pinoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_pinete_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_pinoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_pino_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_pineis_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_pinei_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_pinoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_pinete_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_pinoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα πιω",
+      "εσύ θα πιεις",
+      "αυτός/αυτή/αυτό θα πιει",
+      "εμείς θα πιούμε",
+      "εσείς θα πιείτε",
+      "αυτοί/αυτές/αυτά θα πιουν"
+    ],
+    "examples": [
+      [
+        "Θα πιω νερό.",
+        "",
+        ""
+      ],
+      [
+        "Θα πιεις καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Θα πιει τσάι.",
+        "",
+        ""
+      ],
+      [
+        "Θα πιούμε μπύρα.",
+        "",
+        ""
+      ],
+      [
+        "Θα πιείτε κρασί.",
+        "",
+        ""
+      ],
+      [
+        "Θα πιουν χυμό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_tha_pio_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_tha_pieis_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_tha_piei_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_tha_pioyme_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_tha_pieite_m.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_tha_pioyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_drink/audio_ego_tha_pio_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_esy_tha_pieis_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytosaytiayto_tha_piei_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_emeis_tha_pioyme_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_eseis_tha_pieite_f.mp3",
+        "audio/el/verbs/el_audio_to_drink/audio_aytoiaytesayta_tha_pioyn_f.mp3"
+      ]
+    ]
+  }
+}

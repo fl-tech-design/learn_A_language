@@ -1,0 +1,183 @@
+{
+  "infinitive": "учить",
+  "past": {
+    "translations": [
+      "я учил",
+      "ты учил",
+      "он учил",
+      "мы учили",
+      "вы учили",
+      "они учили"
+    ],
+    "examples": [
+      [
+        "Я учил немецкий язык.",
+        "",
+        ""
+      ],
+      [
+        "Ты учился быстро.",
+        "",
+        ""
+      ],
+      [
+        "Он учил английский язык.",
+        "",
+        ""
+      ],
+      [
+        "Мы учились вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы много учились.",
+        "",
+        ""
+      ],
+      [
+        "Они учили испанский язык.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchili_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchili_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я учу",
+      "ты учишь",
+      "он учит",
+      "мы учим",
+      "вы учите",
+      "они учат"
+    ],
+    "examples": [
+      [
+        "Я учу немецкий язык.",
+        "",
+        ""
+      ],
+      [
+        "Ты быстро учишься.",
+        "",
+        ""
+      ],
+      [
+        "Он учит английский язык.",
+        "",
+        ""
+      ],
+      [
+        "Мы учимся вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы много учитесь.",
+        "",
+        ""
+      ],
+      [
+        "Они учат испанский язык.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_uchu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_uchish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_uchim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_uchite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_uchat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду учить",
+      "ты будешь учить",
+      "он будет учить",
+      "мы будем учить",
+      "вы будете учить",
+      "они будут учить"
+    ],
+    "examples": [
+      [
+        "Я буду учить немецкий язык.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь быстро учиться.",
+        "",
+        ""
+      ],
+      [
+        "Он будет учить английский язык.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем учиться вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете много учиться.",
+        "",
+        ""
+      ],
+      [
+        "Они будут учить испанский язык.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_budu_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_budesh_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_budet_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_budem_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_budete_uchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_budut_uchit_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_learn/audio_ya_budu_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_ty_budesh_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_on_budet_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_my_budem_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_vy_budete_uchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_learn/audio_oni_budut_uchit_f.mp3"
+      ]
+    ]
+  }
+}

@@ -10,7 +10,7 @@ import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../l10n/app_localizations.dart';
 import 'progress_screen.dart'
-    show categoryCountLabel, wordCollectionTitle;
+    show categoryCountLabel, wordCollectionTitle, wordTopCategoryTitle;
 
 /// Learning category selection screen.
 ///
@@ -136,7 +136,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final collections = courseWordCollections.toList()
+    final topCategories = courseTopCategories.toList()
       ..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
@@ -156,8 +156,20 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                           style: const TextStyle(
                               fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: AppTheme.contentSpacing),
-                      for (final collection in collections)
-                        Padding(
+                      for (final top in topCategories)
+                        ...[
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text(
+                          wordTopCategoryTitle(l10n, top),
+                          style: const TextStyle(
+                              fontSize: AppTheme.lblFontSize,
+                              color: AppTheme.colorPrimary,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                        for (final collection in top.collections)
+                          Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppTheme.contentSpacing),
                             child: SizedBox(
@@ -194,6 +206,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                             ),
                                           ],
                                         ))))),
+                      ],
                       const SizedBox(height: AppTheme.contentSpacing),
                       _learnedWordsButton(),
                       const SizedBox(height: AppTheme.contentSpacing),

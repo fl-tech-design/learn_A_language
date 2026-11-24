@@ -1,0 +1,183 @@
+{
+  "infinitive": "beber",
+  "past": {
+    "translations": [
+      "eu bebi",
+      "tu bebeste",
+      "ele/ela bebeu",
+      "nós bebemos",
+      "vós bebestes",
+      "eles/elas beberam"
+    ],
+    "examples": [
+      [
+        "Eu bebi água.",
+        "",
+        ""
+      ],
+      [
+        "Tu bebeste café.",
+        "",
+        ""
+      ],
+      [
+        "Ele bebeu chá.",
+        "",
+        ""
+      ],
+      [
+        "Nós bebemos cerveja.",
+        "",
+        ""
+      ],
+      [
+        "Vós bebestes vinho.",
+        "",
+        ""
+      ],
+      [
+        "Eles beberam sumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/beber/audio_eu_bebi_m.mp3",
+        "audio/pt/verben/beber/audio_tu_bebeste_m.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebeu_m.mp3",
+        "audio/pt/verben/beber/audio_nos_bebemos_m.mp3",
+        "audio/pt/verben/beber/audio_vos_bebestes_m.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_beberam_m.mp3"
+      ],
+      [
+        "audio/pt/verben/beber/audio_eu_bebi_f.mp3",
+        "audio/pt/verben/beber/audio_tu_bebeste_f.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebeu_f.mp3",
+        "audio/pt/verben/beber/audio_nos_bebemos_f.mp3",
+        "audio/pt/verben/beber/audio_vos_bebestes_f.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_beberam_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu bebo",
+      "tu bebes",
+      "ele/ela bebe",
+      "nós bebemos",
+      "vós bebeis",
+      "eles/elas bebem"
+    ],
+    "examples": [
+      [
+        "Eu bebo água.",
+        "",
+        ""
+      ],
+      [
+        "Tu bebes café.",
+        "",
+        ""
+      ],
+      [
+        "Ele bebe chá.",
+        "",
+        ""
+      ],
+      [
+        "Nós bebemos cerveja.",
+        "",
+        ""
+      ],
+      [
+        "Vós bebeis vinho.",
+        "",
+        ""
+      ],
+      [
+        "Eles bebem sumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/beber/audio_eu_bebo_m.mp3",
+        "audio/pt/verben/beber/audio_tu_bebes_m.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebe_m.mp3",
+        "audio/pt/verben/beber/audio_nos_bebemos_m.mp3",
+        "audio/pt/verben/beber/audio_vos_bebeis_m.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_bebem_m.mp3"
+      ],
+      [
+        "audio/pt/verben/beber/audio_eu_bebo_f.mp3",
+        "audio/pt/verben/beber/audio_tu_bebes_f.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebe_f.mp3",
+        "audio/pt/verben/beber/audio_nos_bebemos_f.mp3",
+        "audio/pt/verben/beber/audio_vos_bebeis_f.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_bebem_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu beberei",
+      "tu beberás",
+      "ele/ela beberá",
+      "nós beberemos",
+      "vós bebereis",
+      "eles/elas beberão"
+    ],
+    "examples": [
+      [
+        "Eu beberei água.",
+        "",
+        ""
+      ],
+      [
+        "Tu beberás café.",
+        "",
+        ""
+      ],
+      [
+        "Ele beberá chá.",
+        "",
+        ""
+      ],
+      [
+        "Nós beberemos cerveja.",
+        "",
+        ""
+      ],
+      [
+        "Vós bebereis vinho.",
+        "",
+        ""
+      ],
+      [
+        "Eles beberão sumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/beber/audio_eu_beberei_m.mp3",
+        "audio/pt/verben/beber/audio_tu_beberas_m.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebera_m.mp3",
+        "audio/pt/verben/beber/audio_nos_beberemos_m.mp3",
+        "audio/pt/verben/beber/audio_vos_bebereis_m.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_beberao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/beber/audio_eu_beberei_f.mp3",
+        "audio/pt/verben/beber/audio_tu_beberas_f.mp3",
+        "audio/pt/verben/beber/audio_ele_ela_bebera_f.mp3",
+        "audio/pt/verben/beber/audio_nos_beberemos_f.mp3",
+        "audio/pt/verben/beber/audio_vos_bebereis_f.mp3",
+        "audio/pt/verben/beber/audio_eles_elas_beberao_f.mp3"
+      ]
+    ]
+  }
+}

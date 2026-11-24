@@ -1,0 +1,183 @@
+{
+  "infinitive": "tener",
+  "past": {
+    "translations": [
+      "yo tenía",
+      "tú tenías",
+      "él/ella tenía",
+      "nosotros teníamos",
+      "vosotros teníais",
+      "ellos/ellas tenían"
+    ],
+    "examples": [
+      [
+        "Yo tenía un perro.",
+        "",
+        ""
+      ],
+      [
+        "Tú tenías un coche.",
+        "",
+        ""
+      ],
+      [
+        "Él tenía un libro.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros teníamos tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros os divertíais.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tenían una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tenia_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tenias_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tenia_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_teniamos_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_teniais_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tenian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tenia_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tenias_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tenia_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_teniamos_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_teniais_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tenian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo tengo",
+      "tú tienes",
+      "él/ella tiene",
+      "nosotros tenemos",
+      "vosotros tenéis",
+      "ellos/ellas tienen"
+    ],
+    "examples": [
+      [
+        "Yo tengo un gato.",
+        "",
+        ""
+      ],
+      [
+        "Tú tienes un bolígrafo.",
+        "",
+        ""
+      ],
+      [
+        "Él tiene una bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros tenemos tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros os divertís.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tienen una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tengo_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tienes_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tiene_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_tenemos_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_teneis_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tienen_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tengo_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tienes_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tiene_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_tenemos_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_teneis_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tienen_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo tendré",
+      "tú tendrás",
+      "él/ella tendrá",
+      "nosotros tendremos",
+      "vosotros tendréis",
+      "ellos/ellas tendrán"
+    ],
+    "examples": [
+      [
+        "Yo tendré un coche.",
+        "",
+        ""
+      ],
+      [
+        "Tú tendrás tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Él tendrá una bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros nos divertiremos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros tendréis una casa.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tendrán tiempo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tendre_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tendras_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tendra_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_tendremos_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_tendreis_m.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tendran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_have/audio_yo_tendre_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_tu_tendras_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_el_ella_tendra_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_nosotros_tendremos_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_vosotros_tendreis_f.mp3",
+        "audio/es/verbs/es_audio_to_have/audio_ellos_ellas_tendran_f.mp3"
+      ]
+    ]
+  }
+}

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/essen/audio_ich_aß_m.mp3",
-        "audio/de/verben/essen/audio_du_aßest_m.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_aß_m.mp3",
-        "audio/de/verben/essen/audio_wir_aßen_m.mp3",
-        "audio/de/verben/essen/audio_ihr_aßt_m.mp3",
-        "audio/de/verben/essen/audio_sie_aßen_m.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_aß_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_aßest_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_aß_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_aßen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_aßt_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_aßen_m.mp3"
       ],
       [
-        "audio/de/verben/essen/audio_ich_aß_f.mp3",
-        "audio/de/verben/essen/audio_du_aßest_f.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_aß_f.mp3",
-        "audio/de/verben/essen/audio_wir_aßen_f.mp3",
-        "audio/de/verben/essen/audio_ihr_aßt_f.mp3",
-        "audio/de/verben/essen/audio_sie_aßen_f.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_aß_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_aßest_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_aß_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_aßen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_aßt_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_aßen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/essen/audio_ich_esse_m.mp3",
-        "audio/de/verben/essen/audio_du_isst_m.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_isst_m.mp3",
-        "audio/de/verben/essen/audio_wir_essen_m.mp3",
-        "audio/de/verben/essen/audio_ihr_esst_m.mp3",
-        "audio/de/verben/essen/audio_sie_essen_m.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_esse_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_isst_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_isst_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_esst_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_essen_m.mp3"
       ],
       [
-        "audio/de/verben/essen/audio_ich_esse_f.mp3",
-        "audio/de/verben/essen/audio_du_isst_f.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_isst_f.mp3",
-        "audio/de/verben/essen/audio_wir_essen_f.mp3",
-        "audio/de/verben/essen/audio_ihr_esst_f.mp3",
-        "audio/de/verben/essen/audio_sie_essen_f.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_esse_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_isst_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_isst_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_esst_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_essen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/essen/audio_ich_werde_essen_m.mp3",
-        "audio/de/verben/essen/audio_du_wirst_essen_m.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_wird_essen_m.mp3",
-        "audio/de/verben/essen/audio_wir_werden_essen_m.mp3",
-        "audio/de/verben/essen/audio_ihr_werdet_essen_m.mp3",
-        "audio/de/verben/essen/audio_sie_werden_essen_m.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_werde_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_wirst_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_wird_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_werden_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_werdet_essen_m.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_werden_essen_m.mp3"
       ],
       [
-        "audio/de/verben/essen/audio_ich_werde_essen_f.mp3",
-        "audio/de/verben/essen/audio_du_wirst_essen_f.mp3",
-        "audio/de/verben/essen/audio_er_sie_es_wird_essen_f.mp3",
-        "audio/de/verben/essen/audio_wir_werden_essen_f.mp3",
-        "audio/de/verben/essen/audio_ihr_werdet_essen_f.mp3",
-        "audio/de/verben/essen/audio_sie_werden_essen_f.mp3"
+        "audio/de/verbs/de_audio_to_eat/audio_ich_werde_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_du_wirst_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_er_sie_es_wird_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_wir_werden_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_ihr_werdet_essen_f.mp3",
+        "audio/de/verbs/de_audio_to_eat/audio_sie_werden_essen_f.mp3"
       ]
     ]
   }

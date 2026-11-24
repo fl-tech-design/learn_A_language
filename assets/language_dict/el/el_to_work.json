@@ -1,0 +1,183 @@
+{
+  "infinitive": "δουλεύω",
+  "past": {
+    "translations": [
+      "εγώ δούλευα",
+      "εσύ δούλευες",
+      "αυτός/αυτή/αυτό δούλευε",
+      "εμείς δουλεύαμε",
+      "εσείς δουλεύατε",
+      "αυτοί/αυτές/αυτά δούλευαν"
+    ],
+    "examples": [
+      [
+        "Δούλευα σε ένα γραφείο.",
+        "",
+        ""
+      ],
+      [
+        "Δούλευες σκληρά.",
+        "",
+        ""
+      ],
+      [
+        "Δούλευε σε ένα εργοστάσιο.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύαμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύατε μέχρι αργά.",
+        "",
+        ""
+      ],
+      [
+        "Δούλευαν σε ένα έργο.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_doyleya_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_doyleyes_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_doyleye_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_doyleyame_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_doyleyate_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_doyleyan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_doyleya_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_doyleyes_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_doyleye_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_doyleyame_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_doyleyate_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_doyleyan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ δουλεύω",
+      "εσύ δουλεύεις",
+      "αυτός/αυτή/αυτό δουλεύει",
+      "εμείς δουλεύουμε",
+      "εσείς δουλεύετε",
+      "αυτοί/αυτές/αυτά δουλεύουν"
+    ],
+    "examples": [
+      [
+        "Δουλεύω σε ένα γραφείο.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύεις σκληρά.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύει σε ένα εργοστάσιο.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύετε μέχρι αργά.",
+        "",
+        ""
+      ],
+      [
+        "Δουλεύουν σε ένα έργο.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_doyleyo_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_doyleyeis_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_doyleyei_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_doyleyoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_doyleyete_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_doyleyoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_doyleyo_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_doyleyeis_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_doyleyei_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_doyleyoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_doyleyete_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_doyleyoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα δουλέψω",
+      "εσύ θα δουλέψεις",
+      "αυτός/αυτή/αυτό θα δουλέψει",
+      "εμείς θα δουλέψουμε",
+      "εσείς θα δουλέψετε",
+      "αυτοί/αυτές/αυτά θα δουλέψουν"
+    ],
+    "examples": [
+      [
+        "Θα δουλέψω σε ένα γραφείο.",
+        "",
+        ""
+      ],
+      [
+        "Θα δουλέψεις σκληρά.",
+        "",
+        ""
+      ],
+      [
+        "Θα δουλέψει σε ένα εργοστάσιο.",
+        "",
+        ""
+      ],
+      [
+        "Θα δουλέψουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Θα δουλέψετε μέχρι αργά.",
+        "",
+        ""
+      ],
+      [
+        "Θα δουλέψουν σε ένα έργο.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_tha_doylepso_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_tha_doylepseis_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_tha_doylepsei_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_tha_doylepsoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_tha_doylepsete_m.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_tha_doylepsoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_work/audio_ego_tha_doylepso_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_esy_tha_doylepseis_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytosaytiayto_tha_doylepsei_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_emeis_tha_doylepsoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_eseis_tha_doylepsete_f.mp3",
+        "audio/el/verbs/el_audio_to_work/audio_aytoiaytesayta_tha_doylepsoyn_f.mp3"
+      ]
+    ]
+  }
+}

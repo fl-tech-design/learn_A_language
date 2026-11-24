@@ -1,0 +1,1386 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "0.1.0",
+  "generated": "2026-11-23",
+  "framework": "CEFR",
+  "direction": {
+    "l1": "de",
+    "l2": "es"
+  },
+  "ui_languages": [
+    "de",
+    "es"
+  ],
+  "english_variant": "en-GB",
+  "german_variant": "de-CH",
+  "content_status": "draft",
+  "field_docs": {
+    "id": "stabil, eindeutig, nie wiederverwenden (Fortschritts-Schluessel)",
+    "order": "Sortierung innerhalb der Kategorie, in 10er-Schritten fuer spaetere Einschuebe",
+    "summary": "Ein Satz fuer die Listenansicht",
+    "contrast": "Kernunterschied Deutsch - Spanisch",
+    "pitfall": "typischer Fehler deutschsprachiger Lernender",
+    "quick_check": "optional, eine Mini-Aufgabe mit Musterloesung und akzeptierten Varianten",
+    "hint": "optional, kurzer Hinweis zu einem Beispiel",
+    "prerequisites": "optional, IDs von Bloecken, die vorher gelesen sein sollten",
+    "exam_focus": "optional, Pruefungshinweis"
+  },
+  "levels": [
+    "A1"
+  ],
+  "levels_info": [
+    {
+      "level": "A1",
+      "title": {
+        "de": "Erste Schritte",
+        "es": "Primeros pasos"
+      },
+      "can_do": {
+        "de": "Einfache Saetze ueber sich und den Alltag bilden und verstehen.",
+        "es": "Comprender y construir frases sencillas sobre uno mismo y la vida cotidiana."
+      },
+      "exams": [
+        "DELE A1",
+        "telc Español A1",
+        "SIELE A1"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "sentence_structure",
+      "order": 1,
+      "title": {
+        "de": "Satzbau und Wortstellung",
+        "es": "Estructura de la frase y orden de las palabras"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "verbs_tenses",
+      "order": 2,
+      "title": {
+        "de": "Verben und Zeiten",
+        "es": "Verbos y tiempos"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "questions_negation",
+      "order": 3,
+      "title": {
+        "de": "Fragen und Verneinung",
+        "es": "Preguntas y negación"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "nouns_articles",
+      "order": 4,
+      "title": {
+        "de": "Nomen und Artikel",
+        "es": "Sustantivos y artículos"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "order": 5,
+      "title": {
+        "de": "Pronomen",
+        "es": "Pronombres"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "adjectives_adverbs",
+      "order": 6,
+      "title": {
+        "de": "Adjektive, Adverbien, Steigerung",
+        "es": "Adjetivos, adverbios, comparación"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "order": 7,
+      "title": {
+        "de": "Praepositionen",
+        "es": "Preposiciones"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "be_and_have",
+      "order": 8,
+      "title": {
+        "de": "ser, estar und tener",
+        "es": "ser, estar y tener"
+      },
+      "levels": [
+        "A1"
+      ]
+    },
+    {
+      "id": "modal_verbs",
+      "order": 9,
+      "title": {
+        "de": "Modalverben",
+        "es": "Verbos modales"
+      },
+      "levels": [
+        "A1"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gr_a1_syn_001",
+      "level": "A1",
+      "category": "sentence_structure",
+      "order": 10,
+      "title": {
+        "de": "Das Subjektpronomen darf wegfallen",
+        "es": "El pronombre sujeto puede omitirse"
+      },
+      "summary": {
+        "de": "Die Endung verrät die Person: 'Hablo alemán' - ganz ohne 'yo'.",
+        "es": "La terminación indica la persona: 'Hablo alemán', sin 'yo'."
+      },
+      "explanation": {
+        "de": "Jede spanische Verbform zeigt Person und Zahl: 'hablo' heisst 'ich spreche'. Deshalb faellt das Subjektpronomen fast immer weg: 'Trabajo en Berna' statt 'Yo trabajo en Berna'. Das Deutsche erlaubt das Weglassen nur in Kurzformen ('Bin bald zuruck'); im Normalsatz bleibt ein Subjekt Pflicht. Betont man etwas oder besteht Missverstaendnisgefahr, steht das Pronomen: 'Yo no', 'Yo trabajo en Berna, no en Roma'.",
+        "es": "Cada forma verbal del español indica persona y número: 'hablo' significa 'yo'. Por eso el pronombre sujeto casi siempre se omite: 'Trabajo en Berna' en lugar de 'Yo trabajo en Berna'. El alemán hablado también llega a omitirlo ('Bin bald zuruck'), pero en la frase normal es obligatorio. Con énfasis o para evitar ambigüedad aparece el pronombre: 'Yo no', 'Yo trabajo en Berna, no en Roma'."
+      },
+      "contrast": {
+        "de": "Deutsch: Subjekt verpflichtend, Weglassen nur literarisch oder telefonisch. Spanisch: die Endung genuegt - Subjektpronomen nur bei Betonung oder Mehrdeutigkeit.",
+        "es": "Alemán: el sujeto es obligatorio, con excepciones de registro. Español: la terminación basta - pronombre sujeto solo con énfasis o ambigüedad."
+      },
+      "examples": [
+        {
+          "de": "Ich lerne jeden Tag Spanisch.",
+          "es": "Aprendo español todos los días.",
+          "hint": {
+            "de": "kein yo noetig - die Endung -o zeigt 'ich'",
+            "es": "sin yo: la -o indica primera persona"
+          }
+        },
+        {
+          "de": "Wohnst du hier?",
+          "es": "¿Vives aquí?",
+          "hint": {
+            "de": "tu steckt in der Endung -s",
+            "es": "tú queda dentro de la terminación -s"
+          }
+        },
+        {
+          "de": "Ich nicht. (Betonung)",
+          "es": "Yo no.",
+          "hint": {
+            "de": "mit Betonung bleibt das Pronomen",
+            "es": "con énfasis, el pronombre se queda"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Yo tengo 30 años y yo vivo en Berna.",
+        "correct": "Tengo 30 años y vivo en Berna.",
+        "why": {
+          "de": "Zwei 'yo' hintereinander klingen wie eine woertliche Uebersetzung. Die Endung genuegt - Spanier wiederholen das Subjektpronomen nicht in einer Kette.",
+          "es": "Dos 'yo' seguidos suenan a extranjero. La terminación basta: el español no repite el pronombre sujeto en cadena."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Morgen esse ich eine Pizza.'",
+          "es": "Traduce: 'Morgen esse ich eine Pizza.'"
+        },
+        "solution": "Mañana como una pizza.",
+        "accepted": [
+          "Mañana me como una pizza."
+        ]
+      },
+      "tags": [
+        "subject_pronouns",
+        "verb_ending",
+        "pro_drop"
+      ]
+    },
+    {
+      "id": "gr_a1_syn_002",
+      "level": "A1",
+      "category": "sentence_structure",
+      "order": 20,
+      "title": {
+        "de": "hay statt 'es gibt'",
+        "es": "hay en lugar de 'es gibt'"
+      },
+      "summary": {
+        "de": "'Es gibt' heisst hay - eine Form fuer Singular und Plural, nie 'hayan' oder 'está'.",
+        "es": "'Es gibt' se dice hay - una forma para singular y plural, nunca 'hayan' ni 'está'."
+      },
+      "explanation": {
+        "de": "Deutsch sagt 'es gibt' mit Akkusativ: 'Es gibt einen Park.' Spanisch nutzt die feste Wendung hay (von haber): 'Hay un parque.' Anders als im Englischen (there is/are) bleibt hay auch im Plural gleich: 'Hay dos coches.' In der Verneinung entfaellt der Artikel oft ganz: 'No hay parking.' In der Frage: '¿Hay una farmacia por aquí?'.",
+        "es": "En alemán, 'es gibt' + acusativo. El español usa la forma fija hay (de haber): 'Hay un parque.' A diferencia del inglés (there is/are), hay no cambia en plural: 'Hay dos coches.' En negación el artículo suele desaparecer: 'No hay parking.' Pregunta: '¿Hay una farmacia por aquí?'."
+      },
+      "contrast": {
+        "de": "Deutsch: 'es gibt' + Akkusativ. Spanisch: hay ohne Formwechsel - Singular wie Plural; in der Verneinung meist ohne Artikel.",
+        "es": "Alemán: 'es gibt' + acusativo. Español: hay, forma invariable para singular y plural; en negación casi sin artículo."
+      },
+      "examples": [
+        {
+          "de": "Es gibt einen Supermarkt in der Naehe.",
+          "es": "Hay un supermercado cerca.",
+          "hint": {
+            "de": "hay, ni está ni tiene",
+            "es": "hay, no está"
+          }
+        },
+        {
+          "de": "Gibt es hier ein Cafe?",
+          "es": "¿Hay un café por aquí?"
+        },
+        {
+          "de": "Es gibt zwei Baeder im Haus.",
+          "es": "Hay dos baños en la casa.",
+          "hint": {
+            "de": "Plural ohne Formwechsel",
+            "es": "plural sin cambiar la forma"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Hayan dos baños en la casa.",
+        "correct": "Hay dos baños en la casa.",
+        "why": {
+          "de": "'hayan' ist eine ganz andere Form (Konjunktiv). Fuer Vorhandenes gibt es nur hay.",
+          "es": "hayan es subjuntivo y no cabe aquí; para lo que existe siempre hay."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Gibt es hier eine Apotheke?'",
+          "es": "Traduce: 'Gibt es hier eine Apotheke?'"
+        },
+        "solution": "¿Hay una farmacia por aquí?",
+        "accepted": [
+          "¿Hay una farmacia aquí?"
+        ]
+      },
+      "tags": [
+        "hay",
+        "existential",
+        "invariable"
+      ]
+    },
+    {
+      "id": "gr_a1_vrb_001",
+      "level": "A1",
+      "category": "verbs_tenses",
+      "order": 10,
+      "title": {
+        "de": "Praesens: Drei Konjugationsklassen, jede Person ihre Endung",
+        "es": "Presente: tres conjugaciones, cada persona su terminación"
+      },
+      "summary": {
+        "de": "Drei Modellverben: trabajar (-ar), comer (-er), vivir (-ir) - mit klaren Endungsreihen.",
+        "es": "Tres modelos: trabajar (-ar), comer (-er), vivir (-ir), cada persona con su terminación."
+      },
+      "explanation": {
+        "de": "Spanisch konjugiert das Praesens wie das Deutsche fuer Gewohnheit und Gegenwart - aber mit drei Verbklassen: trabajar (trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan), comer, leben. Die Person steckt in der Endung; genau deshalb darf das Subjektpronomen wegfallen (siehe Kategorie sentence_structure). Anders als das Englische braucht Spanisch in Fragen und Verneinung kein Hilfsverb (siehe questions_negation).",
+        "es": "El español usa el presente para costumbre y acción actual igual que el alemán, pero con tres grupos: trabajar (trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan), comer y vivir. La persona está en la terminación; por eso el sujeto puede omitirse. A diferencia del inglés, no hace falta auxiliar para preguntar o negar."
+      },
+      "contrast": {
+        "de": "Deutsch: Endungen vor allem in 2. und 3. Person (-st, -t). Spanisch: sechs klare Endungen pro Klasse - und genau sie ersetzen das Subjektpronomen.",
+        "es": "Alemán: terminaciones sobre todo en 2ª y 3ª persona. Español: seis terminaciones por grupo, y ellas sustituyen al sujeto."
+      },
+      "examples": [
+        {
+          "de": "Ich arbeite jeden Tag.",
+          "es": "Trabajo todos los días.",
+          "hint": {
+            "de": "-ar: trabajo",
+            "es": "-ar : trabajo"
+          }
+        },
+        {
+          "de": "Sie trinkt jeden Morgen Tee.",
+          "es": "Ella bebe té todas las mañanas.",
+          "hint": {
+            "de": "-er: bebe",
+            "es": "-er : bebe"
+          }
+        },
+        {
+          "de": "Wir wohnen in Zuerich.",
+          "es": "Vivimos en Zúrich.",
+          "hint": {
+            "de": "-ir + nosotros: -imos",
+            "es": "-ir + nosotros : -imos"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Ella hablar español.",
+        "correct": "Ella habla español.",
+        "why": {
+          "de": "Nach dem Subjekt muss die Personalform stehen; der nackte Infinitiv reicht nicht - wie im Deutschen 'sie spricht', nicht 'sie sprechen'.",
+          "es": "Tras el sujeto hace falta la forma personal; el infinitivo solo no vale."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Setze die richtige Form ein: 'Mi hermano ___ (jugar) al fútbol los domingos.'",
+          "es": "Rellena: 'Mi hermano ___ (jugar) al fútbol los domingos.'"
+        },
+        "solution": "juega",
+        "accepted": []
+      },
+      "tags": [
+        "present",
+        "conjugation",
+        "ar_er_ir"
+      ]
+    },
+    {
+      "id": "gr_a1_vrb_002",
+      "level": "A1",
+      "category": "verbs_tenses",
+      "order": 20,
+      "title": {
+        "de": "Perfekt: immer haber - auch bei Bewegung, ohne Agreement",
+        "es": "Pretérito perfecto: siempre haber - también de movimiento y sin concordancia"
+      },
+      "summary": {
+        "de": "Wie deutsches Perfekt - aber 'ich bin gegangen' heisst 'He ido': haber statt sein, Partizip unveraendert.",
+        "es": "Como el Perfekt alemán, pero con haber también con verbos de movimiento: 'He ido'."
+      },
+      "explanation": {
+        "de": "Deutsch trennt haben- und sein-Perfekt ('ich habe gelesen' / 'ich bin gegangen'). Spanisch nutzt immer haber + Partizip: 'He leído el libro', 'He ido a Madrid'. Das Partizip passt sich dem Subjekt nicht an: 'Ella ha llegado', nie 'ha llegada'. Und es steht direkt hinter dem Hilfsverb - keine Verbklammer wie im Deutschen ('He leído un libro', nicht 'He un libro leído').",
+        "es": "El alemán distingue prefecto con haben y mit sein. El español usa siempre haber + participio: 'He leído', 'He ido a Madrid'. El participio no concuerda con el sujeto después de haber ('Ella ha llegado', no 'ha llegada') y va justo detrás del auxiliar, sin marco verbal."
+      },
+      "contrast": {
+        "de": "Deutsch: haben oder sein + Partizip am Satzende (Verbklammer), bei sein Agreement moeglich. Spanisch: nur haber + Partizip direkt nach dem Hilfsverb, formstarr.",
+        "es": "Alemán: haben o sein + participio al final de la frase. Español: solo haber, participio inmediatamente después y sin concordancia."
+      },
+      "examples": [
+        {
+          "de": "Ich habe das Buch gelesen.",
+          "es": "He leído el libro."
+        },
+        {
+          "de": "Ich bin nach Madrid gefahren.",
+          "es": "He ido a Madrid.",
+          "hint": {
+            "de": "Bewegungsverb: trotzdem haber",
+            "es": "verbo de movimiento : igual con haber"
+          }
+        },
+        {
+          "de": "Sie ist gestern angekommen.",
+          "es": "Ha llegado ayer.",
+          "hint": {
+            "de": "keine Anpassung an 'ella' nach haber",
+            "es": "sin concordancia con el sujeto"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Soy ido a Madrid.",
+        "correct": "He ido a Madrid.",
+        "why": {
+          "de": "Das deutsche sein-Perfekt verfuehrt zu ser - Spanisch hat kein sein-Perfekt: Bewegung nimmt haber. 'Soy' heisst nur 'ich bin (deutscher)'.",
+          "es": "El 'sein' del alemán invita a usar ser, pero el movimiento lleva haber; ser es solo para identidad ('soy alemán')."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Wir sind gestern angekommen.'",
+          "es": "Traduce: 'Wir sind gestern angekommen.'"
+        },
+        "solution": "Hemos llegado ayer.",
+        "accepted": [
+          "Ayer hemos llegado."
+        ]
+      },
+      "tags": [
+        "perfecto",
+        "haber",
+        "participio"
+      ]
+    },
+    {
+      "id": "gr_a1_qst_001",
+      "level": "A1",
+      "category": "questions_negation",
+      "order": 10,
+      "title": {
+        "de": "Fragen: Umstellung wie im Deutschen - plus ¿ am Anfang",
+        "es": "Preguntas: inversión como el alemán - más ¿ al principio"
+      },
+      "summary": {
+        "de": "Verb vor das Subjekt wie bei uns; kein do (Englisch), kein est-ce que (Franzoesisch) - aber zwei Fragezeichen.",
+        "es": "Sin do (inglés) ni est-ce que (francés) ; pero dos signos: ¿ y ?"
+      },
+      "explanation": {
+        "de": "Spanisch formt Fragen wie das Deutsche durch Umstellung: 'Trabajas.' -> '¿Trabajas tú?' oder '¿Tú trabajas?' Anders als Englisch braucht es kein do; anders als Franzoesisch kein est-ce que. Besonderheit: Jede Frage beginnt mit dem umgekehrten Fragezeichen ¿ und endet mit ?: '¿De dónde eres?' Auch reine Intonationsfragen gibt es: '¿Vienes mañana?'",
+        "es": "El español forma preguntas invirtiendo, como el alemán: 'Trabajas.' -> '¿Trabajas tú?' Sin do (inglés) ni est-ce que (francés). Toda pregunta empieza con ¿ y termina con ?: '¿De dónde eres?' También hay preguntas por entonación: '¿Vienes mañana?'"
+      },
+      "contrast": {
+        "de": "Deutsch: Verb an erste Stelle, nur ein Fragezeichen. Spanisch: Umstellung plus ¿ am Satzanfang und ? am Schluss; kein Hilfswort noetig.",
+        "es": "Alemán: verbo en primera posición, solo un signo. Español: inversión más ¿ inicial y ? final; sin auxiliares."
+      },
+      "examples": [
+        {
+          "de": "Spielst du Tennis?",
+          "es": "¿Juegas al tenis?",
+          "hint": {
+            "de": "Umstellung wie im Deutschen",
+            "es": "inversión como en alemán"
+          }
+        },
+        {
+          "de": "Du kommst morgen?",
+          "es": "¿Vienes mañana?",
+          "hint": {
+            "de": "gesprochen: Frage ohne Umstellung, aber mit ¿...?",
+            "es": "a la oral: entonación, con ¿...?"
+          }
+        },
+        {
+          "de": "Ist Paul da?",
+          "es": "¿Está Paul?",
+          "hint": {
+            "de": "be-Verb: direkt umstellen, kein do noetig",
+            "es": "ser/estar: sin do"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Cómo estás?",
+        "correct": "¿Cómo estás?",
+        "why": {
+          "de": "In der Schrift gehoert das umgekehrte Fragezeichen an den Anfang. Ohne ¿ gilt der Satz als fehlerhaft - auch in Pruefungen.",
+          "es": "En la escritura, ¿ abre la pregunta; omitirlo cuenta como error, también en los exámenes."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Kochst du die Suppe?'",
+          "es": "Traduce: 'Kochst du la sopa?'"
+        },
+        "solution": "¿Cocinas tú la sopa?",
+        "accepted": [
+          "¿Cocinas la sopa?"
+        ]
+      },
+      "tags": [
+        "questions",
+        "inversion",
+        "signos"
+      ]
+    },
+    {
+      "id": "gr_a1_qst_002",
+      "level": "A1",
+      "category": "questions_negation",
+      "order": 20,
+      "title": {
+        "de": "Verneinung: 'no' vor dem Verb - und doppelte Verneinung mit nada/nadie",
+        "es": "La negación: no delante del verbo - y doble negación con nada/nadie"
+      },
+      "summary": {
+        "de": "Kein Sandwich wie im Franzoesischen: no steht direkt vor dem konjugierten Verb; 'nada/nadie' brauchen dieses no als Partner.",
+        "es": "Sin 'sandwich' francés: no va justo delante del verbo; nada/nadie lo exigen como compañero."
+      },
+      "explanation": {
+        "de": "Deutsch stellt 'nicht' meist ans Satzende: 'Ich arbeite nicht.' Spanisch setzt no direkt vor das konjugierte Verb: 'No trabajo', 'No puedo venir' (auch beim Modal nur ein no davor, kein zweite Klammer). Stehen nada, nadie oder nie hinter dem Verb, kommt trotzdem ein no davor: 'No veo nada' (woertlich 'Ich sehe nicht nichts') - die doppelte Verneinung ist hier Grammatik, kein Widerspruch.",
+        "es": "El alemán pone 'nicht' normalmente al final: 'Ich arbeite nicht.' El español coloca no delante del verbo conjugado: 'No trabajo', 'No puedo venir'. Si nada, nadie o nunca van tras el verbo, aparece además un no delante: 'No veo nada'. La doble negación aquí no se contradice: es la forma correcta."
+      },
+      "contrast": {
+        "de": "Deutsch: ein Wörtchen 'nicht', ein 'nichts'. Spanisch: no + Verbs; wenn nada/nadie/nunca im Satz stehen, zwingend zusammen mit no.",
+        "es": "Alemán: un solo 'nicht' / 'nada'. Español: no + verbo; nada, nadie y nunca se usan junto con no - la doble negación es la norma."
+      },
+      "examples": [
+        {
+          "de": "Ich komme nicht.",
+          "es": "No vengo."
+        },
+        {
+          "de": "Ich kann nicht kommen.",
+          "es": "No puedo venir.",
+          "hint": {
+            "de": "no direkt vor dem Modal",
+            "es": "no delante del modal"
+          }
+        },
+        {
+          "de": "Ich sehe niemanden.",
+          "es": "No veo a nadie.",
+          "hint": {
+            "de": "nadie braucht das no davor",
+            "es": "nadie pide el no delante"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Veo nada.",
+        "correct": "No veo nada.",
+        "why": {
+          "de": "Spanisch verlangt die doppelte Verneinung: kommt nada/nadie/nunca nach dem Verb, muss no davorstehen - anders als bei 'Ich sehe nichts'.",
+          "es": "El español exige la doble negación: si nada, nadie o nunca van tras el verbo, hace falta el no delante."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Verneine: 'Comprendo.'",
+          "es": "Pon en negativa: 'Comprendo.'"
+        },
+        "solution": "No comprendo.",
+        "accepted": []
+      },
+      "tags": [
+        "negation",
+        "no",
+        "double_negation"
+      ]
+    },
+    {
+      "id": "gr_a1_nou_001",
+      "level": "A1",
+      "category": "nouns_articles",
+      "order": 10,
+      "title": {
+        "de": "Genus nicht uebertragbar: der/die/das wird el/la - neu lernen",
+        "es": "El género no se traduce: der/die/das pasa a el/la - a reaprender"
+      },
+      "summary": {
+        "de": "Das deutsche Genus hilft nicht: 'der Tisch' ist 'la mesa', 'die Sonne' 'el sol'.",
+        "es": "El género alemán no ayuda: 'der Tisch' es 'la mesa', 'die Sonne' 'el sol'."
+      },
+      "explanation": {
+        "de": "Wie im Franzoesischen: das spanische Genus ist unabhaengig - 'der Tisch' ist la mesa, 'die Sonne' el sol. Spanisch kennt el (m.), la (f.) und als Plural los/las; un/una unbestimmt. Faelle gibt es nicht: 'den Mann' wird schlicht 'al hombre' (a + el). Wichtige Strategie: Nomen immer mit Artikel lernen (la mesa, nicht mesa). Sonderfaelle wie el problema (maennlich!) und el día muss man mitlernen.",
+        "es": "Como en francés: el género español es independiente del alemán - 'der Tisch' es la mesa, 'die Sonne' es el sol. Hay el (m.), la (f.), los/las para el plural y un/una para el indefinido. No hay casos: 'den Mann' se convierte simplemente en 'al hombre' (a + el). Estrategia: aprender cada sustantivo con su artículo (la mesa, no mesa). Ojo con falsos amigos como el problema (masculino) o el día."
+      },
+      "contrast": {
+        "de": "Deutsch: drei Genera, vier Faelle, Artikel dekliniert (dem Mann). Spanisch: zwei Genera, keine Faelle, el/la/los/las immer gleich - aber unabhaengig vom deutschen Genus.",
+        "es": "Alemán: tres géneros, cuatro casos, artículos declinados. Español: dos géneros, sin casos, el/la/los/las fijos - pero independientes del género alemán."
+      },
+      "examples": [
+        {
+          "de": "Der Kaffee ist teuer.",
+          "es": "El café es caro.",
+          "hint": {
+            "de": "der Kaffee: masculin wie im Deutschen",
+            "es": "el café: masculino, como el alemán"
+          }
+        },
+        {
+          "de": "Die Sonne scheint.",
+          "es": "El sol brilla.",
+          "hint": {
+            "de": "'die Sonne' (feminin) wird 'el sol' (maskulin)",
+            "es": "la 'Sonne' alemana (f.) pasa a ser el sol (m.)"
+          }
+        },
+        {
+          "de": "Ich sehe den Mann.",
+          "es": "Veo al hombre.",
+          "hint": {
+            "de": "kein Akkusativartikel; a + el = al",
+            "es": "sin acusativo ; a + el = al"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "La problema es grave.",
+        "correct": "El problema es grave.",
+        "why": {
+          "de": "Wörter auf -ma aus dem Griechischen sind im Spanischen maennlich: el problema, el tema, el idioma.",
+          "es": "Las palabras griegas en -ma son masculinas: el problema, el tema, el idioma."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze den Artikel: '___ luna brilla esta noche.'",
+          "es": "Rellena el artículo: '___ luna brilla esta noche.'"
+        },
+        "solution": "La",
+        "accepted": []
+      },
+      "tags": [
+        "gender",
+        "articles",
+        "no_cases"
+      ]
+    },
+    {
+      "id": "gr_a1_nou_002",
+      "level": "A1",
+      "category": "nouns_articles",
+      "order": 20,
+      "title": {
+        "de": "Plural: -s nach Vokal, -es nach Konsonant - lautlos hinterm Artikel",
+        "es": "El plural: -s tras vocal, -es tras consonante - mudo tras el artículo"
+      },
+      "summary": {
+        "de": "Libro - libros, profesor - profesores; gehoert wird im Klang nur der Artikel (el -> los).",
+        "es": "libro - libros, profesor - profesores ; a la oreja, solo cambia el artículo (el -> los)."
+      },
+      "explanation": {
+        "de": "Deutsche Plurale verraten ihre Form nicht (Auto - Autos, Buch - Buecher, Kind - Kinder). Spanisch ist regelmässig: nach Vokal -s (libro - libros), nach Konsonant -es (profesor - profesores); nach -z schreibt man c (lápiz - lápices). Wie im Franzoesischen hoert man das Plural-s meist nicht; im Klang unterscheidet sich der Plural durch den Artikel: el libro - los libros.",
+        "es": "Los plurales alemanes son imprevisibles (Auto - Autos, Buch - Bücher). El español es regular: tras vocal -s (libro - libros), tras consonante -es (profesor - profesores); tras -z cambia la escritura a c (lápiz - lápices). Como en francés, la -s no suena ; en la pronunciación el plural lo marca el artículo: el libro vs. los libros."
+      },
+      "contrast": {
+        "de": "Deutsch: fuenf Pluralmoeglichkeiten und haeufiger Umlaut (Buecher). Spanisch: konsequent -s oder -es, im Klang fast unsichtbar; un/una unbestimmt, aber regelmässig.",
+        "es": "Alemán: cinco plurales posibles con Umlaut frecuente. Español: -s o -es regular, casi inaudible; el artículo lleva el plural (un/una -> unos/unas)."
+      },
+      "examples": [
+        {
+          "de": "ein Kind - Kinder",
+          "es": "un niño - unos niños",
+          "hint": {
+            "de": "Kind -> niño - niños: regelmässig",
+            "es": "niño - niños, regular"
+          }
+        },
+        {
+          "de": "ein Professor - Professoren",
+          "es": "un profesor - unos profesores",
+          "hint": {
+            "de": "Konsonant: -es statt deutschem Umlaut",
+            "es": "consonante : -es"
+          }
+        },
+        {
+          "de": "ein Tier - Tiere",
+          "es": "un animal - unos animales",
+          "hint": {
+            "de": "-al wird -es",
+            "es": "-al lleva -es"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Dos profesors.",
+        "correct": "Dos profesores.",
+        "why": {
+          "de": "Nach Konsonant kommt -es: 'profesor - profesores'; diese Endung hört man auch deutlich.",
+          "es": "Tras consonante, -es: 'profesor - profesores'; esta terminación sí se oye."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Bilde den Plural: 'una persona - tres ___'",
+          "es": "Forma el plural: 'una persona - tres ___'"
+        },
+        "solution": "personas",
+        "accepted": []
+      },
+      "tags": [
+        "plurals",
+        "articles",
+        "regular_plurals"
+      ]
+    },
+    {
+      "id": "gr_a1_pro_001",
+      "level": "A1",
+      "category": "pronouns",
+      "order": 10,
+      "title": {
+        "de": "tu oder usted - und vosotros fuer 'ihr'",
+        "es": "tú o usted - y vosotros para 'ihr'"
+      },
+      "summary": {
+        "de": "tu = du, usted = Sie, vosotros = ihr - und usted konjugiert wie dritte Person.",
+        "es": "tú = du ; usted = Sie ; vosotros = ihr ; usted se conjuga como él/ella."
+      },
+      "explanation": {
+        "de": "Spanisch kennt wie Deutsch du / Sie / ihr - aber in vier Formen: tu (vertraut, eine Person), usted (hoeflich, eine Person), vosotros (frei nachbarlich, Mehrzahl), ustedes (hoefliche oder allgemeine Mehrzahl). Wichtig: usted verhaelt sich grammatisch wie el/ella: '¿Usted viene?' mit 3.-Person-Endung. In Spanien ist usted im Alltag seltener als das deutsche 'Sie'; unter Kollegen sagt man meist tu.",
+        "es": "El español tiene cuatro formas donde el alemán tres: tú (familiar, una persona), usted (formal, una persona), vosotros (familiar plural), ustedes (formal plural o América). Importante: usted se conjuga como él/ella: '¿Usted viene?' En España, usted es menos habitual en el trabajo que el 'Sie' alemán; entre colegas se habla de tú."
+      },
+      "contrast": {
+        "de": "Deutsch: du, ihr, Sie - drei Woerter. Spanisch: tu, vosotros, usted, ustedes - vier Formen; usted wie el/ella konjugiert.",
+        "es": "Alemán: du, ihr, Sie - tres formas. Español: tú, vosotros, usted, ustedes - cuatro; usted con conjugación de él/ella."
+      },
+      "examples": [
+        {
+          "de": "Wie geht es Ihnen?",
+          "es": "¿Cómo está usted?",
+          "hint": {
+            "de": "usted mit 3.-Person-Endung",
+            "es": "usted : conjugación de él/ella"
+          }
+        },
+        {
+          "de": "Kommst du mit?",
+          "es": "¿Vienes con nosotros?",
+          "hint": {
+            "de": "tu steckt in der Endung -s",
+            "es": "tú : terminación -s"
+          }
+        },
+        {
+          "de": "Ihr seid fertig?",
+          "es": "¿Estáis listos?",
+          "hint": {
+            "de": "ihr = vosotros: Formen auf -áis/-éis",
+            "es": "vosotros : formas en -áis/-éis"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "¿Usted vienes con nosotros?",
+        "correct": "¿Usted viene con nosotros?",
+        "why": {
+          "de": "usted verlangt die 3. Person: viene. 'Vienes' gehoert zu tu - dieser Mix ist ein klassischer deutscher Anfaengerfehler.",
+          "es": "usted pide tercera persona: viene. 'Vienes' va con tú."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze hoeflich: 'Sind Sie Herr Meier?'",
+          "es": "Traduce (formal): 'Sind Sie Herr Meier?'"
+        },
+        "solution": "¿Es usted el señor Meier?",
+        "accepted": [
+          "¿Usted es el señor Meier?"
+        ]
+      },
+      "tags": [
+        "tu_usted",
+        "vosotros",
+        "politeness"
+      ]
+    },
+    {
+      "id": "gr_a1_pro_002",
+      "level": "A1",
+      "category": "pronouns",
+      "order": 20,
+      "title": {
+        "de": "Objektpronomen stehen VOR dem Verb - und 'ihn' ist lo",
+        "es": "Los pronombres de objeto van ANTES del verbo - y 'ihn' es lo"
+      },
+      "summary": {
+        "de": "Wortstellung: Ich sehe ihn - Lo veo. mir (Empfaenger) wird me, ihm wird le.",
+        "es": "Orden como el francés: 'Ich sehe ihn' - lo veo ; 'mir' receptor es me ; 'ihm' es le."
+      },
+      "explanation": {
+        "de": "Deutsch stellt Objektpronomen hinter das Verb: 'Ich sehe ihn', 'Ich gebe ihm das Buch.' Spanisch zieht sie vor das konjugierte Verb: 'Lo veo', 'Le doy el libro.' Das direkte ihn/sie/es ist lo/la (Plural los/las), das indirekte ihm/ihr ist le (Plural les) - Spanisch trennt also direkt/indirekt schaerfer als das deutsche mich/mir. Nach Praeposition steht die betonte Form: 'conmigo', 'para él'.",
+        "es": "En alemán, el pronombre de objeto va tras el verbo: 'Ich sehe ihn', 'Ich gebe ihm das Buch.' El español lo coloca delante del verbo conjugado: 'Lo veo', 'Le doy el libro.' El objeto directo (ihn/sie/es) es lo/la (plural los/las); el indirecto (ihm/ihr) es le (plural les). Tras preposición: forma tónica - 'conmigo', 'para él'."
+      },
+      "contrast": {
+        "de": "Deutsch: mich/mir vor allem Kasus, Pronomen nach dem Verb. Spanisch: lo/la (direkt) und le (indirekt) direkt vor dem Verb.",
+        "es": "Alemán: mich/mir distinguen caso, pronombre tras el verbo. Español: lo/la (directo) y le (indirecto) delante del verbo."
+      },
+      "examples": [
+        {
+          "de": "Ich sehe ihn.",
+          "es": "Lo veo.",
+          "hint": {
+            "de": "Pronomen vor dem Verb",
+            "es": "pronombre antes del verbo"
+          }
+        },
+        {
+          "de": "Sie schenkt mir ein Buch.",
+          "es": "Me regala un libro.",
+          "hint": {
+            "de": "mir (Empfaengerin) = me",
+            "es": "el receptor 'mir' = me"
+          }
+        },
+        {
+          "de": "Ich denke an dich.",
+          "es": "Pienso en ti.",
+          "hint": {
+            "de": "nach Praeposition: betonte Form",
+            "es": "tras preposición: forma tónica"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Yo veo lo.",
+        "correct": "Yo lo veo.",
+        "why": {
+          "de": "Das Objektpronomen gehoert vor das konjugierte Verb, nie danach. Und das direkte 'ihn' ist lo, nicht le (le = 'ihm').",
+          "es": "El pronombre va delante del verbo conjugado, nunca detrás. Y el objeto directo 'ihn' es lo, no le."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie hilft uns.'",
+          "es": "Traduce: 'Sie hilft uns.'"
+        },
+        "solution": "Nos ayuda.",
+        "accepted": []
+      },
+      "tags": [
+        "object_pronouns",
+        "lo_la_le",
+        "word_order"
+      ]
+    },
+    {
+      "id": "gr_a1_adj_001",
+      "level": "A1",
+      "category": "adjectives_adverbs",
+      "order": 10,
+      "title": {
+        "de": "Adjektiv: hinten am Nomen - und es stimmt sich ueberein",
+        "es": "El adjetivo: después del nombre - y concuerda"
+      },
+      "summary": {
+        "de": "Grundstellung nach dem Nomen ('un coche rápido') und Endung nach Genus/Zahl.",
+        "es": "Posición básica tras el nombre ('un coche rápido') y concordancia de género y número."
+      },
+      "explanation": {
+        "de": "Wie im Franzoesischen, anders als im Deutschen: Spanisch stellt das Adjektiv meist HINTER das Nomen. Aenderung: 'ein grosses Auto' -> 'un coche grande'. Ausnahmen, die davor stehen: gute kurze Werte wie bueno, malo, grande (kurz: gran), nuevo, primero ('un buen piso', 'un gran hombre'). Das Adjektiv passt sich an Genus und Zahl an: 'una casa grande', 'dos casas grandes'.",
+        "es": "Como en francés y a diferencia del alemán: el adjetivo español suele ir detrás del nombre. 'Ein grosses Auto' se convierte en 'un coche grande'. Algunos adjetivos van delante: bueno, malo, gran (forma corta de grande), nuevo, primero: 'un buen piso', 'un gran hombre'. Siempre concuerda: 'una casa grande', 'dos casas grandes'."
+      },
+      "contrast": {
+        "de": "Deutsch: Adjektiv vor dem Nomen, Endungen nach Genus/Fall. Spanisch: meist nach dem Nomen, Endungen nach Genus/Zahl, wenige Vorreiter (buen, gran, primero...).",
+        "es": "Alemán: adjetivo antes del nombre, terminaciones de caso y género. Español: adjetivo tras el nombre (salvo buen, gran, primero...), concordancia de género y número."
+      },
+      "examples": [
+        {
+          "de": "ein interessantes Buch",
+          "es": "un libro interesante"
+        },
+        {
+          "de": "eine schoene Stadt",
+          "es": "una ciudad bonita"
+        },
+        {
+          "de": "Die Katze ist grau.",
+          "es": "El gato es gris."
+        }
+      ],
+      "pitfall": {
+        "wrong": "una rápida coche.",
+        "correct": "un coche rápido.",
+        "why": {
+          "de": "Wortstellung und Genus: Die Grundstellung ist hinter dem Nomen, und coche ist maennlich - beides im Deutschen nicht vorhersagbar.",
+          "es": "Posición y género: lo básico es el nombre primero, y 'coche' es masculino."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'eine neue Wohnung'",
+          "es": "Traduce: 'eine neue Wohnung.'"
+        },
+        "solution": "un piso nuevo",
+        "accepted": [
+          "un apartamento nuevo"
+        ]
+      },
+      "tags": [
+        "adjective_position",
+        "agreement",
+        "buen_gran"
+      ]
+    },
+    {
+      "id": "gr_a1_adj_002",
+      "level": "A1",
+      "category": "adjectives_adverbs",
+      "order": 20,
+      "title": {
+        "de": "Steigerung: más ... que und der Superlativ mit Artikel",
+        "es": "La comparación: más ... que y el superlativo con artículo"
+      },
+      "summary": {
+        "de": "groesser als = más grande que; am groessten = el más grande - mit Artikel und Anpassung.",
+        "es": "'am grössten' se dice el más grande : artículo obligatorio, concordancia con el nombre."
+      },
+      "explanation": {
+        "de": "Spanisch steigert praktisch alles mit más/menos + Adjektiv: 'más grande que', 'menos caro que', 'tan grande como'. 'als' = que. Der Superlativ steht wie im Englischen mit Artikel: 'el más grande' - und er akkordiert: 'la más grande', 'los más grandes'. Beim Ortsbezug steht wie im Franzoesischen de statt in: 'der groesste der Klasse' = 'el más alto de la clase'. Unregelmaessig nur: bueno - mejor, malo - peor.",
+        "es": "El español usa sistemáticamente más/menos + adjetivo: 'más grande que', 'menos caro que', 'tan grande como'. 'als' = que. El superlativo lleva artículo: 'el más grande' - y concuerda: 'la más grande', 'los más grandes'. Para 'in der Klasse' se usa de: 'el más alto de la clase'. Irregulares: bueno - mejor, malo - peor."
+      },
+      "contrast": {
+        "de": "Deutsch: groesser (ueber -er), am groessten ohne Artikel, 'in der Klasse'. Spanisch: alles mit más/menos, Superlativ mit el/la/los/las + más..., 'de' statt 'in'.",
+        "es": "Alemán: comparativo en -er, superlativo 'am -sten' sin artículo, 'in der Klasse'. Español: más/menos siempre, superlativo con artículo y 'de' para el grupo."
+      },
+      "examples": [
+        {
+          "de": "Zuerich ist groesser als Bern.",
+          "es": "Zúrich es más grande que Berna.",
+          "hint": {
+            "de": "más ... que; la ciudad ist weiblich: grande",
+            "es": "más ... que ; concordancia femenina : grande"
+          }
+        },
+        {
+          "de": "Es ist der hoechste Berg.",
+          "es": "Es la montaña más alta.",
+          "hint": {
+            "de": "Artikel + más + Adjektiv",
+            "es": "artículo + más + adjetivo"
+          }
+        },
+        {
+          "de": "Er ist am schnellsten.",
+          "es": "Es el más rápido.",
+          "hint": {
+            "de": "ohne Nomen: el + más + Adjektiv",
+            "es": "sin nombre : el + más + adjetivo"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Ella es más alta yo.",
+        "correct": "Ella es más alta que yo.",
+        "why": {
+          "de": "'als' = que gehoert immer dazu; nach que steht die betonte Form (yo, ti, él...).",
+          "es": "'als' = que es obligatorio ; después de que va la forma tónica (yo, tú, él...)."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Er ist der juengste in der Klasse.'",
+          "es": "Traduce: 'Er ist der jüngste in der Klasse.'"
+        },
+        "solution": "Es el más joven de la clase.",
+        "accepted": []
+      },
+      "tags": [
+        "comparatives",
+        "superlatives",
+        "que"
+      ]
+    },
+    {
+      "id": "gr_a1_prp_001",
+      "level": "A1",
+      "category": "prepositions",
+      "order": 10,
+      "title": {
+        "de": "Richtung und Ort: a und en statt nach/in",
+        "es": "Dirección y lugar: a y en en lugar de nach/in"
+      },
+      "summary": {
+        "de": "Saedte und Laender gleichbehandelt: a bei Bewegung ('a Berna'), en bei Aufenthalt ('en Berna') - meist ohne Artikel.",
+        "es": "Ciudades y países igual : a para el movimiento ('a Berna'), en para la ubicación ('en Berna') - casi sin artículo."
+      },
+      "explanation": {
+        "de": "Deutsch unterscheidet nach (+ Dativ, ohne Artikel: 'nach Basel', 'nach Frankreich') und in (+ Artikel: 'in der Schweiz'). Spanisch trennt Bewegung und Lage: Bewegung mit a und Name ohne Artikel ('Voy a Berna', 'Voy a Alemania'); Ort mit en, ebenfalls ohne Artikel ('Vivo en Berna'). Nur wenige Staaten tragen Artikel ('los Estados Unidos', 'el Reino Unido'). Die Uhrzeit nutzt a: 'a las ocho'.",
+        "es": "El alemán distingue nach (sin artículo: 'nach Basel') e in (con artículo: 'in der Schweiz'). El español distingue movimiento y estado: movimiento con a, nombre sin artículo ('Voy a Berna', 'Voy a Alemania'); ubicación con en, también sin artículo ('Vivo en Berna'). Solo unos pocos nombres llevan artículo ('los Estados Unidos', 'el Reino Unido'). La hora toma a: 'a las ocho'."
+      },
+      "contrast": {
+        "de": "Deutsch: nach bleibt ohne Artikel, in mit Artikel. Spanisch: a fuer Bewegung und en fuer Aufenthalt, meist ohne Artikel; Uhrzeit mit a las.",
+        "es": "Alemán: nach sin artículo, in con artículo. Español: a para el movimiento, en para la ubicación, casi sin artículo ; la hora con a las."
+      },
+      "examples": [
+        {
+          "de": "Ich fahre nach Zuerich.",
+          "es": "Voy a Zúrich.",
+          "hint": {
+            "de": "Stadt: immer a bei Bewegung",
+            "es": "ciudad : a"
+          }
+        },
+        {
+          "de": "Ich fahre nach Frankreich.",
+          "es": "Voy a Francia.",
+          "hint": {
+            "de": "Laender: auch a, kein Artikel",
+            "es": "países : a, sin artículo"
+          }
+        },
+        {
+          "de": "Wir treffen uns um halb acht.",
+          "es": "Nos vemos a las siete y media.",
+          "hint": {
+            "de": "Uhrzeit: a las; 'halb' = die naechste volle Stunde minus 30 Minuten",
+            "es": "la hora toma a las ; 'y media' después de la hora"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Voy a la Alemania.",
+        "correct": "Voy a Alemania.",
+        "why": {
+          "de": "Laendernamen stehen wie beim deutschen 'nach' ohne Artikel. Mit Artikel nur Mehrwort-Namen wie los Estados Unidos.",
+          "es": "El nombre del país va sin artículo: 'voy a Alemania', 'vivo en Alemania'. Con artículo solo en nombres compuestos (los Estados Unidos)."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Ich fahre in die Schweiz.'",
+          "es": "Traduce: 'Ich fahre in die Schweiz.'"
+        },
+        "solution": "Voy a Suiza.",
+        "accepted": []
+      },
+      "tags": [
+        "prepositions",
+        "direction",
+        "a_en"
+      ]
+    },
+    {
+      "id": "gr_a1_prp_002",
+      "level": "A1",
+      "category": "prepositions",
+      "order": 20,
+      "title": {
+        "de": "Zeit mit Artikel: am Montag = el lunes",
+        "es": "El tiempo con artículo: 'am Montag' = el lunes"
+      },
+      "summary": {
+        "de": "Wochentage mit el (keine Praeposition), Monate/Jahreszeiten mit en, Uhrzeit mit a las.",
+        "es": "Días con el (sin preposición), meses y estaciones con en, horas con a las."
+      },
+      "explanation": {
+        "de": "'Am Montag arbeite ich' heisst 'El lunes trabajo' - mit Artikel, aber ohne Praeposition. Fuer 'jeden Montag' steht der Plural: 'Los lunes trabajo' - anders als im Franzoesischen, wo 'le lundi' die Wiederholung markiert. Monate und Jahreszeiten mit en: 'im Mai' = 'en mayo', 'im Sommer' = 'en verano'. Uhrzeiten mit a las: 'um fuenf' = 'a las cinco'. Datum: 'el 3 de mayo'.",
+        "es": "'Am Montag arbeite ich' = 'El lunes trabajo' (con artículo, sin preposición). Para 'jeden Montag' se usa el plural: 'Los lunes trabajo' - a diferencia del francés, donde 'le lundi' marca la costumbre. Meses y estaciones con en: 'en mayo', 'en verano'. La hora con a las: 'a las cinco'. Las fechas: 'el 3 de mayo'."
+      },
+      "contrast": {
+        "de": "Deutsch: am Montag, im Mai, um 8 Uhr - Praeposition plus Artikel. Spanisch: Artikel, aber keine Praeposition (el lunes), en mayo, a las 8; Wiederholung mit los lunes.",
+        "es": "Alemán: am Montag, im Mai, um 8 Uhr - preposición + artículo. Español: artículo sin preposición (el lunes), en mayo, a las 8 ; costumbre con plural: los lunes."
+      },
+      "examples": [
+        {
+          "de": "Am Montag arbeite ich.",
+          "es": "El lunes trabajo.",
+          "hint": {
+            "de": "Artikel el, aber keine Praeposition",
+            "es": "el, sin preposición"
+          }
+        },
+        {
+          "de": "Jeden Montag arbeite ich.",
+          "es": "Los lunes trabajo.",
+          "hint": {
+            "de": "Plural markiert die Wiederholung",
+            "es": "el plural marca la repetición"
+          }
+        },
+        {
+          "de": "Im Sommer fahren wir ans Meer.",
+          "es": "En verano vamos al mar.",
+          "hint": {
+            "de": "a + el = al",
+            "es": "a + el = al"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Nos vemos en lunes.",
+        "correct": "Nos vemos el lunes.",
+        "why": {
+          "de": "Wochentage stehen mit el/los und ohne Praeposition. 'en' kommt bei Monaten und Jahreszeiten vor, nicht bei Tagen.",
+          "es": "Los días toman el/los y ninguna preposición ; en se reserva para meses y estaciones."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Sie kommt um fuenf nach Hause.'",
+          "es": "Traduce: 'Sie kommt um fünf nach Hause.'"
+        },
+        "solution": "Vuelve a casa a las cinco.",
+        "accepted": [
+          "Regresa a casa a las cinco."
+        ]
+      },
+      "tags": [
+        "prepositions",
+        "time",
+        "days"
+      ]
+    },
+    {
+      "id": "gr_a1_bhv_001",
+      "level": "A1",
+      "category": "be_and_have",
+      "order": 10,
+      "title": {
+        "de": "ser oder estar: zwei Verben fuer deutsches 'sein'",
+        "es": "ser o estar : dos verbos para el 'sein' alemán"
+      },
+      "summary": {
+        "de": "ser = was/wer jemand ist, estar = wie es jemand geht und wo er ist: 'Soy alemán', 'Estoy cansado'.",
+        "es": "ser = identidad, estar = estado y ubicación : 'Soy alemán', 'Estoy cansado'."
+      },
+      "explanation": {
+        "de": "Deutsch hat nur ein 'sein'; Spanisch verteilt: ser fuer Wesen und Identitaet ('Ich bin Arzt' = 'Soy médico', 'Die Suppe ist lecker' = 'La sopa está rica'), estar fuer Zustand und Ort ('Ich bin muede' = 'Estoy cansado', 'Ich bin zu Hause' = 'Estoy en casa'). Merkregel: Wer bin ich? -> ser. Wie fuehl ich mich? Wo genau? -> estar.",
+        "es": "El alemán usa un verbo ('sein'); el español reparte: ser para identidad y esencia ('Soy médico', 'Es una buena sopa'), estar para estado y lugar ('Estoy cansado', 'Estoy en casa'). Regla rápida: ¿quién o cómo es ? -> ser ; ¿cómo se siente, dónde está ? -> estar."
+      },
+      "contrast": {
+        "de": "Deutsch: ein 'sein' fuer alles. Spanisch: ser (Identitaet) und estar (Zustand, Ort) - die Wahl veraendert sogar die Bedeutung ('Soy aburrido' = langweiliger Typ, 'Estoy aburrido' = ich langweile mich).",
+        "es": "Alemán: un verbo para todo. Español : ser (identidad) y estar (estado, lugar) - la elección cambia el sentido."
+      },
+      "examples": [
+        {
+          "de": "Ich bin aus Basel.",
+          "es": "Soy de Basilea.",
+          "hint": {
+            "de": "Herkunft: ser",
+            "es": "origen : ser"
+          }
+        },
+        {
+          "de": "Ich bin muede.",
+          "es": "Estoy cansado.",
+          "hint": {
+            "de": "Zustand: estar",
+            "es": "estado : estar"
+          }
+        },
+        {
+          "de": "Wir sind im Buero.",
+          "es": "Estamos en la oficina.",
+          "hint": {
+            "de": "Ort: estar",
+            "es": "lugar : estar"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Soy cansado hoy.",
+        "correct": "Estoy cansado hoy.",
+        "why": {
+          "de": "Das deutsche 'Ich bin muede' verleitet zu ser - Zustand im Moment ist estar. Nur fuer Identitaet und Herkunft gilt ser.",
+          "es": "El 'sein' alemán invita a usar ser, pero los estados piden estar ; ser queda para identidad y profesión."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Ergaenze: 'Ella ___ médica.'",
+          "es": "Rellena: 'Ella ___ médica.'"
+        },
+        "solution": "es",
+        "accepted": []
+      },
+      "tags": [
+        "ser_estar",
+        "identity",
+        "states"
+      ]
+    },
+    {
+      "id": "gr_a1_bhv_002",
+      "level": "A1",
+      "category": "be_and_have",
+      "order": 20,
+      "title": {
+        "de": "haben vs. tener: viele Zustaende decken sich - Alter und Wetter nicht",
+        "es": "haben vs. tener : muchos estados coinciden - la edad y el clima no"
+      },
+      "summary": {
+        "de": "'Ich habe Hunger' = 'Tengo hambre' (wie bei uns), auch 'Ich bin 20' = 'Tengo veinte años'; Wetter mit hacer: 'Es ist kalt' = 'Hace frío'.",
+        "es": "Como el alemán : tener hambre, tener frío, tener miedo ; la edad también con tener ; el clima con hacer : hace frío."
+      },
+      "explanation": {
+        "de": "Gute Nachricht: viele Zustaende laufen wie im Deutschen mit haben/tener: 'Ich habe Hunger' = 'Tengo hambre', 'habe Durst' = 'tengo sed', 'habe Angst' = 'tengo miedo'. Auch das Alter - hier unterlaeuft das Deutsche: 'Ich bin 20' sagt Spanisch mit haben: 'Tengo veinte años'. Wie im Franzoesischen gilt: 'Mir ist kalt' = 'Tengo frío'. Das Wetter nutzt hacer: 'Es ist kalt' = 'Hace frío'.",
+        "es": "Buena noticia : muchos estados funcionan como en alemán con tener : 'tengo hambre', 'tengo sed', 'tengo miedo', 'tengo tiempo'. La edad también con tener : 'Ich bin 20' = 'Tengo veinte años'. 'Mir ist kalt' = 'Tengo frío'. El clima usa hacer : 'Es ist kalt' = 'Hace frío'."
+      },
+      "contrast": {
+        "de": "Deutsch: habe Hunger/habe Angst mit haben, aber 'Ich bin 20' und 'mir ist kalt' mit sein. Spanisch: all dies mit tener - und das Wetter mit hacer.",
+        "es": "Alemán : haben para estados, sein para edad y sensación ; español : tener para casi todo, hacer para el clima."
+      },
+      "examples": [
+        {
+          "de": "Ich habe Hunger.",
+          "es": "Tengo hambre.",
+          "hint": {
+            "de": "haben = tener wie im Deutschen",
+            "es": "tener, como el alemán"
+          }
+        },
+        {
+          "de": "Ich bin 20 (Jahre alt).",
+          "es": "Tengo veinte años.",
+          "hint": {
+            "de": "Alter mit haben, nicht mit sein",
+            "es": "la edad con tener, no con ser"
+          }
+        },
+        {
+          "de": "Es ist heute warm.",
+          "es": "Hoy hace calor.",
+          "hint": {
+            "de": "Wetter mit hacer, nicht mit estar",
+            "es": "el clima con hacer, no con estar"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Soy veinte años.",
+        "correct": "Tengo veinte años.",
+        "why": {
+          "de": "Das deutsche 'Ich bin 20' fuehrt hier in die Irre - das Alter steht in Spanien mit tener, genau wie 'habe Hunger'.",
+          "es": "El 'sein' del alemán engaña : la edad va con tener , igual que 'hambre'."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Hast du Durst?'",
+          "es": "Traduce: 'Hast du Durst?'"
+        },
+        "solution": "¿Tienes sed?",
+        "accepted": []
+      },
+      "tags": [
+        "tener",
+        "states",
+        "weather"
+      ]
+    },
+    {
+      "id": "gr_a1_mdl_001",
+      "level": "A1",
+      "category": "modal_verbs",
+      "order": 10,
+      "title": {
+        "de": "Modal + Infinitiv direkt dahinter - ohne 'zu'",
+        "es": "Modal + infinitivo justo detrás - sin preposición"
+      },
+      "summary": {
+        "de": "Ich kann schwimmen - Puedo nadar. Deutsch klemmt den Infinitiv ans Satzende, Spanisch direkt danach.",
+        "es": "'Ich kann schwimmen' - 'Puedo nadar' : el alemán pone el infinitivo al final, el español justo tras el modal."
+      },
+      "explanation": {
+        "de": "Beide Sprachen koppeln Modalverb + Infinitiv ohne Verbindungswort (anders als Englisch 'want to swim'). Die Stellung unterscheidet sich: Deutsch stellt den ganzen Infinitiv ans Satzende ('Ich kann heute gut kochen'), Spanisch direkt nach dem Modal ('Puedo cocinar bien hoy'). Fuer Beherrschung (gelerntes Können) steht saber, fuer Moeglichkeit poder: 'Ich kann schwimmen' (durch Training) = 'Sé nadar', 'Puedo venir' = es ist moeglich.",
+        "es": "Las dos lenguas unen modal + infinitivo sin palabra de enlace. La posición difiere : el alemán pone el infinitivo al final de la frase ('Ich kann heute gut kochen'), el español justo después del modal ('Puedo cocinar bien hoy'). Para una habilidad aprendida se usa saber : 'Sé nadar' frente a 'Puedo nadar' (posibilidad)."
+      },
+      "contrast": {
+        "de": "Deutsch: Modal + Infinitiv am Satzende (Satzklammer). Spanisch: Modal + Infinitiv direkt hintereinander; 'saber' (Beherrschung) und 'poder' (Moeglichkeit).",
+        "es": "Alemán : modal + infinitivo al final (marco verbal). Español : modal + infinitivo pegado ; habilidad con saber, posibilidad con poder."
+      },
+      "examples": [
+        {
+          "de": "Ich kann schwimmen.",
+          "es": "Sé nadar.",
+          "hint": {
+            "de": "Beherrschung: saber",
+            "es": "habilidad : saber"
+          }
+        },
+        {
+          "de": "Ich kann kommen.",
+          "es": "Puedo venir.",
+          "hint": {
+            "de": "Moeglichkeit: poder",
+            "es": "posibilidad : poder"
+          }
+        },
+        {
+          "de": "Ich muss heute frueh aufstehen.",
+          "es": "Tengo que levantarme temprano hoy.",
+          "hint": {
+            "de": "'muss' im Alltag: tener que + Infinitiv; aufstehen = levantarse (reflexiv)",
+            "es": "tener que + infinitivo ; levantarse es reflexivo"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Puedo de nadar.",
+        "correct": "Puedo nadar.",
+        "why": {
+          "de": "Zwischen Modal und Infinitiv steht nichts - keine Praeposition; auch das englische 'to' gibt es nicht.",
+          "es": "Nada se interpone entre modal e infinitivo ; tampoco existe el 'to' del inglés."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Er kann sehr schnell laufen.'",
+          "es": "Traduce: 'Er kann sehr schnell laufen.'"
+        },
+        "solution": "Puede correr muy rápido.",
+        "accepted": []
+      },
+      "tags": [
+        "modal_verbs",
+        "infinitive",
+        "poder_saber"
+      ]
+    },
+    {
+      "id": "gr_a1_mdl_002",
+      "level": "A1",
+      "category": "modal_verbs",
+      "order": 20,
+      "title": {
+        "de": "'muss' = tener que / hay que - und 'verboten' = prohibido",
+        "es": "tener que / hay que para la necesidad ; prohibido para la prohibición"
+      },
+      "summary": {
+        "de": "'Man muss' ohne Subjekt: Hay que trabajar. Verbot?: Prohibido fumar / No se puede fumar.",
+        "es": "Sin sujeto para 'man muss' : hay que + infinitivo. La prohibición : prohibido fumar, no se puede fumar."
+      },
+      "explanation": {
+        "de": "Notwendigkeit: tener que + Infinitiv konjugiert personal ('Tengo que irme'). Fuer 'man muss' nutzt Spanisch die feste Wendung hay que + Infinitiv - ohne Subjektpronomen: 'Hay que trabajar'. Verbot sagen: 'Prohibido fumar' (Schilder, Regeln) oder 'No se puede fumar'. Achtung: 'No tengo que trabajar' heisst eigentlich 'Ich muss nicht arbeiten' - fuer Verbot nicht benutzen; Schilder sagen klar prohibido.",
+        "es": "Para la obligación personal : tener que + infinitivo ('Tengo que irme'). Para 'man muss' : la forma fija hay que + infinitivo , sin sujeto. Para la prohibición : 'Prohibido fumar' (carteles, normas) o 'No se puede fumar'. Ojo : 'No tengo que trabajar' significa 'muss nicht' (no necesario) - la prohibición se dice con prohibido o no se puede."
+      },
+      "contrast": {
+        "de": "Deutsch 'man muss' nutzt das unbestimmte 'man'; Spanisch hay que ohne Subjekt. Verbot: Deutsch 'nicht duerfen', Spanisch prohibido / no se puede.",
+        "es": "Alemán : 'man muss' con el pronombre man ; español : hay que sin sujeto. Prohibición : alemán 'nicht duerfen', español prohibido / no se puede."
+      },
+      "examples": [
+        {
+          "de": "Man muss hier anhalten.",
+          "es": "Hay que detenerse aquí.",
+          "hint": {
+            "de": "keine Person vor hay que",
+            "es": "ningún sujeto delante de hay que"
+          }
+        },
+        {
+          "de": "Hier darf man nicht rauchen.",
+          "es": "Prohibido fumar aquí.",
+          "hint": {
+            "de": "Verbot auf Schildern: prohibido + Infinitiv",
+            "es": "carteles : prohibido + infinitivo"
+          }
+        },
+        {
+          "de": "Ich muss heute frueh aufstehen.",
+          "es": "Tengo que levantarme temprano hoy.",
+          "hint": {
+            "de": "konjugiertes tener que",
+            "es": "tener que conjugado"
+          }
+        }
+      ],
+      "pitfall": {
+        "wrong": "Yo hay que trabajar.",
+        "correct": "Tengo que trabajar.",
+        "why": {
+          "de": "hay que ist eine feste Wendung ohne personales Subjekt. Fuer 'ich muss' steht tener que.",
+          "es": "hay que es una expresión fija , sin sujeto personal. Para 'yo' : tengo que."
+        }
+      },
+      "quick_check": {
+        "task": {
+          "de": "Uebersetze: 'Hier darf man nicht fotografieren.'",
+          "es": "Traduce: 'Hier darf man nicht fotografieren.'"
+        },
+        "solution": "Prohibido hacer fotos aquí.",
+        "accepted": [
+          "No se puede hacer fotos aquí."
+        ]
+      },
+      "tags": [
+        "tener_que",
+        "hay_que",
+        "prohibition"
+      ]
+    }
+  ]
+}

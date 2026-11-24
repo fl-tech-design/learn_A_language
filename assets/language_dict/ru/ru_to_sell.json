@@ -1,0 +1,183 @@
+{
+  "infinitive": "продавать",
+  "past": {
+    "translations": [
+      "я продавал",
+      "ты продавал",
+      "он продавал",
+      "мы продавали",
+      "вы продавали",
+      "они продавали"
+    ],
+    "examples": [
+      [
+        "Я продал свою машину.",
+        "",
+        ""
+      ],
+      [
+        "Ты продал свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он продал свой велосипед.",
+        "",
+        ""
+      ],
+      [
+        "Мы продали наш дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы продали свою мебель.",
+        "",
+        ""
+      ],
+      [
+        "Они продали свою машину.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodaval_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodavali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodavali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodavali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodaval_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodavali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodavali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodavali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я продаю",
+      "ты продаёшь",
+      "он продаёт",
+      "мы продаём",
+      "вы продаёте",
+      "они продают"
+    ],
+    "examples": [
+      [
+        "Я продаю свою машину.",
+        "",
+        ""
+      ],
+      [
+        "Ты продаёшь свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он продаёт свой велосипед.",
+        "",
+        ""
+      ],
+      [
+        "Мы продаём наш дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы продаёте свою мебель.",
+        "",
+        ""
+      ],
+      [
+        "Они продают свою машину.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodayosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodayot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodayom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodayote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_prodayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_prodayosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_prodayot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_prodayom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_prodayote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_prodayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду продавать",
+      "ты будешь продавать",
+      "он будет продавать",
+      "мы будем продавать",
+      "вы будете продавать",
+      "они будут продавать"
+    ],
+    "examples": [
+      [
+        "Я продам свою машину.",
+        "",
+        ""
+      ],
+      [
+        "Ты продашь свой телефон.",
+        "",
+        ""
+      ],
+      [
+        "Он продаст свой велосипед.",
+        "",
+        ""
+      ],
+      [
+        "Мы продадим наш дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы продадите свою мебель.",
+        "",
+        ""
+      ],
+      [
+        "Они продадут свою машину.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_budu_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_budesh_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_budet_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_budem_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_budete_prodavat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_budut_prodavat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_sell/audio_ya_budu_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_ty_budesh_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_on_budet_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_my_budem_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_vy_budete_prodavat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_sell/audio_oni_budut_prodavat_f.mp3"
+      ]
+    ]
+  }
+}

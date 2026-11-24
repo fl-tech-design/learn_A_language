@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/comprendre/audio_jai_compris_f.mp3",
-        "audio/fr/comprendre/audio_tu_as_compris_f.mp3",
-        "audio/fr/comprendre/audio_il_elle_on_a_compris_f.mp3",
-        "audio/fr/comprendre/audio_nous_avons_compris_f.mp3",
-        "audio/fr/comprendre/audio_vous_avez_compris_f.mp3",
-        "audio/fr/comprendre/audio_ils_elles_ont_compris_f.mp3"
+        "audio/fr/verbs/fr_audio_to_understand/audio_jai_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_as_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_a_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_avons_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_avez_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_ont_compris_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/comprendre/audio_je_comprends_f.mp3",
-        "audio/fr/comprendre/audio_tu_comprends_f.mp3",
-        "audio/fr/comprendre/audio_il_elle_on_comprend_f.mp3",
-        "audio/fr/comprendre/audio_nous_comprenons_f.mp3",
-        "audio/fr/comprendre/audio_vous_comprenez_f.mp3",
-        "audio/fr/comprendre/audio_ils_elles_comprennent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_understand/audio_je_comprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_comprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_comprend_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_comprenons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_comprenez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_comprennent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/comprendre/audio_je_comprendrai_f.mp3",
-        "audio/fr/comprendre/audio_tu_comprendras_f.mp3",
-        "audio/fr/comprendre/audio_il_elle_on_comprendra_f.mp3",
-        "audio/fr/comprendre/audio_nous_comprendrons_f.mp3",
-        "audio/fr/comprendre/audio_vous_comprendrez_f.mp3",
-        "audio/fr/comprendre/audio_ils_elles_comprendront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_understand/audio_je_comprendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_comprendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_comprendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_comprendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_comprendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_comprendront_f.mp3"
       ]
     ]
   }

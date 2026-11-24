@@ -1,0 +1,183 @@
+{
+  "infinitive": "καταλαβαίνω",
+  "past": {
+    "translations": [
+      "εγώ καταλάβαινα",
+      "εσύ καταλάβαινες",
+      "αυτός/αυτή/αυτό καταλάβαινε",
+      "εμείς καταλαβαίναμε",
+      "εσείς καταλαβαίνατε",
+      "αυτοί/αυτές/αυτά καταλάβαιναν"
+    ],
+    "examples": [
+      [
+        "Καταλάβαινα την ερώτηση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλάβαινες το πρόβλημα.",
+        "",
+        ""
+      ],
+      [
+        "Καταλάβαινε την κατάσταση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίναμε το σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνατε την άσκηση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλάβαιναν τους κανόνες.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_katalavaina_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_katalavaines_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_katalavaine_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_katalavainame_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_katalavainate_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_katalavainan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_katalavaina_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_katalavaines_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_katalavaine_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_katalavainame_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_katalavainate_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_katalavainan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ καταλαβαίνω",
+      "εσύ καταλαβαίνεις",
+      "αυτός/αυτή/αυτό καταλαβαίνει",
+      "εμείς καταλαβαίνουμε",
+      "εσείς καταλαβαίνετε",
+      "αυτοί/αυτές/αυτά καταλαβαίνουν"
+    ],
+    "examples": [
+      [
+        "Καταλαβαίνω την ερώτηση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνεις το πρόβλημα.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνει την κατάσταση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνουμε το σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνετε την άσκηση.",
+        "",
+        ""
+      ],
+      [
+        "Καταλαβαίνουν τους κανόνες.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_katalavaino_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_katalavaineis_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_katalavainei_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_katalavainoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_katalavainete_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_katalavainoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_katalavaino_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_katalavaineis_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_katalavainei_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_katalavainoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_katalavainete_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_katalavainoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα καταλάβω",
+      "εσύ θα καταλάβεις",
+      "αυτός/αυτή/αυτό θα καταλάβει",
+      "εμείς θα καταλάβουμε",
+      "εσείς θα καταλάβετε",
+      "αυτοί/αυτές/αυτά θα καταλάβουν"
+    ],
+    "examples": [
+      [
+        "Θα καταλάβω την ερώτηση.",
+        "",
+        ""
+      ],
+      [
+        "Θα καταλάβεις το πρόβλημα.",
+        "",
+        ""
+      ],
+      [
+        "Θα καταλάβει την κατάσταση.",
+        "",
+        ""
+      ],
+      [
+        "Θα καταλάβουμε το σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Θα καταλάβετε την άσκηση.",
+        "",
+        ""
+      ],
+      [
+        "Θα καταλάβουν τους κανόνες.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_tha_katalavo_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_tha_katalaveis_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_tha_katalavei_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_tha_katalavoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_tha_katalavete_m.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_tha_katalavoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_understand/audio_ego_tha_katalavo_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_esy_tha_katalaveis_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytosaytiayto_tha_katalavei_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_emeis_tha_katalavoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_eseis_tha_katalavete_f.mp3",
+        "audio/el/verbs/el_audio_to_understand/audio_aytoiaytesayta_tha_katalavoyn_f.mp3"
+      ]
+    ]
+  }
+}

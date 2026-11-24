@@ -1,0 +1,183 @@
+{
+  "infinitive": "comer",
+  "past": {
+    "translations": [
+      "yo comí",
+      "tú comiste",
+      "él/ella comió",
+      "nosotros comimos",
+      "vosotros comisteis",
+      "ellos/ellas comieron"
+    ],
+    "examples": [
+      [
+        "Yo desayuné.",
+        "",
+        ""
+      ],
+      [
+        "Tú almorzaste.",
+        "",
+        ""
+      ],
+      [
+        "Él cenó.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros comimos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros comisteis pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ellos comieron sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_comi_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comiste_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_comio_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comimos_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_comi_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comiste_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_comio_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comimos_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo como",
+      "tú comes",
+      "él/ella come",
+      "nosotros comemos",
+      "vosotros coméis",
+      "ellos/ellas comen"
+    ],
+    "examples": [
+      [
+        "Yo desayuno.",
+        "",
+        ""
+      ],
+      [
+        "Tú almuerzas.",
+        "",
+        ""
+      ],
+      [
+        "Él cena.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros comemos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros coméis pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ellos comen sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_como_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comes_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_come_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comemos_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comeis_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comen_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_como_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comes_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_come_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comemos_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comeis_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comen_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo comeré",
+      "tú comerás",
+      "él/ella comerá",
+      "nosotros comeremos",
+      "vosotros comeréis",
+      "ellos/ellas comerán"
+    ],
+    "examples": [
+      [
+        "Yo desayunaré.",
+        "",
+        ""
+      ],
+      [
+        "Tú almorzarás.",
+        "",
+        ""
+      ],
+      [
+        "Él cenará.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros comeremos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros comeréis pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ellos comerán sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_comere_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comeras_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_comera_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comeremos_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comereis_m.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comeran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_eat/audio_yo_comere_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_tu_comeras_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_el_ella_comera_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_nosotros_comeremos_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_vosotros_comereis_f.mp3",
+        "audio/es/verbs/es_audio_to_eat/audio_ellos_ellas_comeran_f.mp3"
+      ]
+    ]
+  }
+}

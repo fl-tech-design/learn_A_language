@@ -1,0 +1,183 @@
+{
+  "infinitive": "τρώω",
+  "past": {
+    "translations": [
+      "εγώ έφαγα",
+      "εσύ έφαγες",
+      "αυτός/αυτή/αυτό έφαγε",
+      "εμείς φάγαμε",
+      "εσείς φάγατε",
+      "αυτοί/αυτές/αυτά έφαγαν"
+    ],
+    "examples": [
+      [
+        "Έφαγα πρωινό.",
+        "",
+        ""
+      ],
+      [
+        "Έφαγες μεσημεριανό.",
+        "",
+        ""
+      ],
+      [
+        "Έφαγε βραδινό.",
+        "",
+        ""
+      ],
+      [
+        "Φάγαμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Φάγατε πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Έφαγαν σούσι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_efaga_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_efages_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_efage_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_fagame_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_fagate_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_efagan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_efaga_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_efages_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_efage_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_fagame_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_fagate_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_efagan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ τρώω",
+      "εσύ τρως",
+      "αυτός/αυτή/αυτό τρώει",
+      "εμείς τρώμε",
+      "εσείς τρώτε",
+      "αυτοί/αυτές/αυτά τρώνε"
+    ],
+    "examples": [
+      [
+        "Τρώω πρωινό.",
+        "",
+        ""
+      ],
+      [
+        "Τρως μεσημεριανό.",
+        "",
+        ""
+      ],
+      [
+        "Τρώει βραδινό.",
+        "",
+        ""
+      ],
+      [
+        "Τρώμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Τρώτε πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Τρώνε σούσι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_troo_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_tros_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_troei_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_trome_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_trote_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_trone_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_troo_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_tros_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_troei_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_trome_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_trote_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_trone_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα φάω",
+      "εσύ θα φας",
+      "αυτός/αυτή/αυτό θα φάει",
+      "εμείς θα φάμε",
+      "εσείς θα φάτε",
+      "αυτοί/αυτές/αυτά θα φάνε"
+    ],
+    "examples": [
+      [
+        "Θα φάω πρωινό.",
+        "",
+        ""
+      ],
+      [
+        "Θα φας μεσημεριανό.",
+        "",
+        ""
+      ],
+      [
+        "Θα φάει βραδινό.",
+        "",
+        ""
+      ],
+      [
+        "Θα φάμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Θα φάτε πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Θα φάνε σούσι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_tha_fao_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_tha_fas_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_tha_faei_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_tha_fame_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_tha_fate_m.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_tha_fane_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_eat/audio_ego_tha_fao_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_esy_tha_fas_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytosaytiayto_tha_faei_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_emeis_tha_fame_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_eseis_tha_fate_f.mp3",
+        "audio/el/verbs/el_audio_to_eat/audio_aytoiaytesayta_tha_fane_f.mp3"
+      ]
+    ]
+  }
+}

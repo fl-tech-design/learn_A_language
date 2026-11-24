@@ -1,0 +1,183 @@
+{
+  "infinitive": "έχω",
+  "past": {
+    "translations": [
+      "εγώ είχα",
+      "εσύ είχες",
+      "αυτός/αυτή/αυτό είχε",
+      "εμείς είχαμε",
+      "εσείς είχατε",
+      "αυτοί/αυτές/αυτά είχαν"
+    ],
+    "examples": [
+      [
+        "Είχα έναν σκύλο.",
+        "",
+        ""
+      ],
+      [
+        "Είχες ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Είχε ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Είχαμε χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Είχατε διασκέδαση.",
+        "",
+        ""
+      ],
+      [
+        "Είχαν ένα σπίτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_eicha_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_eiches_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_eiche_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_eichame_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_eichate_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_eichan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_eicha_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_eiches_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_eiche_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_eichame_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_eichate_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_eichan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ έχω",
+      "εσύ έχεις",
+      "αυτός/αυτή/αυτό έχει",
+      "εμείς έχουμε",
+      "εσείς έχετε",
+      "αυτοί/αυτές/αυτά έχουν"
+    ],
+    "examples": [
+      [
+        "Έχω μια γάτα.",
+        "",
+        ""
+      ],
+      [
+        "Έχεις ένα στυλό.",
+        "",
+        ""
+      ],
+      [
+        "Έχει ένα ποδήλατο.",
+        "",
+        ""
+      ],
+      [
+        "Έχουμε χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Έχετε πλάκα.",
+        "",
+        ""
+      ],
+      [
+        "Έχουν ένα σπίτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_echo_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_echeis_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_echei_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_echoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_echete_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_echoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_echo_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_echeis_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_echei_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_echoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_echete_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_echoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα έχω",
+      "εσύ θα έχεις",
+      "αυτός/αυτή/αυτό θα έχει",
+      "εμείς θα έχουμε",
+      "εσείς θα έχετε",
+      "αυτοί/αυτές/αυτά θα έχουν"
+    ],
+    "examples": [
+      [
+        "Θα έχω ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Θα έχεις χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Θα έχει ένα ποδήλατο.",
+        "",
+        ""
+      ],
+      [
+        "Θα έχουμε διασκέδαση.",
+        "",
+        ""
+      ],
+      [
+        "Θα έχετε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα έχουν χρόνο.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_tha_echo_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_tha_echeis_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_tha_echei_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_tha_echoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_tha_echete_m.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_tha_echoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_have/audio_ego_tha_echo_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_esy_tha_echeis_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytosaytiayto_tha_echei_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_emeis_tha_echoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_eseis_tha_echete_f.mp3",
+        "audio/el/verbs/el_audio_to_have/audio_aytoiaytesayta_tha_echoyn_f.mp3"
+      ]
+    ]
+  }
+}

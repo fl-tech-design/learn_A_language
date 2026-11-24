@@ -22,6 +22,8 @@
   "btnTurbo": "Turbo",
   "btnWordSearch": "Word Search",
   "catDueWords": "Due words",
+  "catInProgressWords": "In progress",
+  "catVerbs": "Verbs",
   "catLearnedWords": "Learned words",
   "catMoreVerbs": "More Verbs",
   "catNewLang": "Discover new languages",
@@ -186,5 +188,6 @@
   "spanish": "Spanish",
   "french": "French",
   "russian": "Russian",
+  "greek": "Greek",
   "motherTongueHint": "Sets the translation direction (word and translation) for all selected course languages."
 }

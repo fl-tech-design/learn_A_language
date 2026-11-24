@@ -1,0 +1,183 @@
+{
+  "infinitive": "aprender",
+  "past": {
+    "translations": [
+      "yo aprendía",
+      "tú aprendías",
+      "él/ella aprendía",
+      "nosotros aprendíamos",
+      "vosotros aprendíais",
+      "ellos/ellas aprendían"
+    ],
+    "examples": [
+      [
+        "Yo aprendía alemán.",
+        "",
+        ""
+      ],
+      [
+        "Tú aprendías rápido.",
+        "",
+        ""
+      ],
+      [
+        "Él aprendía inglés.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros aprendíamos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros aprendíais mucho.",
+        "",
+        ""
+      ],
+      [
+        "Ellos aprendían español.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendia_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendias_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendia_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendiamos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendiais_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprendian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendia_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendias_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendia_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendiamos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendiais_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprendian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo aprendo",
+      "tú aprendes",
+      "él/ella aprende",
+      "nosotros aprendemos",
+      "vosotros aprendéis",
+      "ellos/ellas aprenden"
+    ],
+    "examples": [
+      [
+        "Yo aprendo alemán.",
+        "",
+        ""
+      ],
+      [
+        "Tú aprendes rápido.",
+        "",
+        ""
+      ],
+      [
+        "Él aprende inglés.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros aprendemos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros aprendéis mucho.",
+        "",
+        ""
+      ],
+      [
+        "Ellos aprenden español.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendo_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendes_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprende_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendemos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenden_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendo_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprendes_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprende_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprendemos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenden_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo aprenderé",
+      "tú aprenderás",
+      "él/ella aprenderá",
+      "nosotros aprenderemos",
+      "vosotros aprenderéis",
+      "ellos/ellas aprenderán"
+    ],
+    "examples": [
+      [
+        "Yo aprenderé alemán.",
+        "",
+        ""
+      ],
+      [
+        "Tú aprenderás rápido.",
+        "",
+        ""
+      ],
+      [
+        "Él aprenderá inglés.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros aprenderemos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros aprenderéis mucho.",
+        "",
+        ""
+      ],
+      [
+        "Ellos aprenderán español.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendere_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprenderas_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendera_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprenderemos_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendereis_m.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenderan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_learn/audio_yo_aprendere_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_tu_aprenderas_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_el_ella_aprendera_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_nosotros_aprenderemos_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_vosotros_aprendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_learn/audio_ellos_ellas_aprenderan_f.mp3"
+      ]
+    ]
+  }
+}

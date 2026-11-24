@@ -1,0 +1,183 @@
+{
+  "infinitive": "αγοράζω",
+  "past": {
+    "translations": [
+      "εγώ αγόρασα",
+      "εσύ αγόρασες",
+      "αυτός/αυτή/αυτό αγόρασε",
+      "εμείς αγοράσαμε",
+      "εσείς αγοράσατε",
+      "αυτοί/αυτές/αυτά αγόρασαν"
+    ],
+    "examples": [
+      [
+        "Αγόρασα ψωμί.",
+        "",
+        ""
+      ],
+      [
+        "Αγόρασες ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Αγόρασε ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράσαμε φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράσατε ρούχα.",
+        "",
+        ""
+      ],
+      [
+        "Αγόρασαν ένα σπίτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_agorasa_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_agorases_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_agorase_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_agorasame_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_agorasate_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_agorasan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_agorasa_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_agorases_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_agorase_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_agorasame_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_agorasate_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_agorasan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ αγοράζω",
+      "εσύ αγοράζεις",
+      "αυτός/αυτή/αυτό αγοράζει",
+      "εμείς αγοράζουμε",
+      "εσείς αγοράζετε",
+      "αυτοί/αυτές/αυτά αγοράζουν"
+    ],
+    "examples": [
+      [
+        "Αγοράζω ψωμί.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράζεις ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράζει ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράζουμε φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράζετε ρούχα.",
+        "",
+        ""
+      ],
+      [
+        "Αγοράζουν ένα σπίτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_agorazo_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_agorazeis_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_agorazei_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_agorazoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_agorazete_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_agorazoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_agorazo_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_agorazeis_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_agorazei_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_agorazoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_agorazete_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_agorazoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα αγοράσω",
+      "εσύ θα αγοράσεις",
+      "αυτός/αυτή/αυτό θα αγοράσει",
+      "εμείς θα αγοράσουμε",
+      "εσείς θα αγοράσετε",
+      "αυτοί/αυτές/αυτά θα αγοράσουν"
+    ],
+    "examples": [
+      [
+        "Θα αγοράσω ψωμί.",
+        "",
+        ""
+      ],
+      [
+        "Θα αγοράσεις ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Θα αγοράσει ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Θα αγοράσουμε φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Θα αγοράσετε ρούχα.",
+        "",
+        ""
+      ],
+      [
+        "Θα αγοράσουν ένα σπίτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_tha_agoraso_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_tha_agoraseis_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_tha_agorasei_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_tha_agorasoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_tha_agorasete_m.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_tha_agorasoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_buy/audio_ego_tha_agoraso_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_esy_tha_agoraseis_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytosaytiayto_tha_agorasei_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_emeis_tha_agorasoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_eseis_tha_agorasete_f.mp3",
+        "audio/el/verbs/el_audio_to_buy/audio_aytoiaytesayta_tha_agorasoyn_f.mp3"
+      ]
+    ]
+  }
+}

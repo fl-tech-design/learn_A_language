@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/aimer/audio_jaimais_f.mp3",
-        "audio/fr/aimer/audio_tu_aimais_f.mp3",
-        "audio/fr/aimer/audio_il_elle_aimait_f.mp3",
-        "audio/fr/aimer/audio_nous_aimions_f.mp3",
-        "audio/fr/aimer/audio_vous_aimiez_f.mp3",
-        "audio/fr/aimer/audio_ils_elles_aimaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_like/audio_jaimais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_tu_aimais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_il_elle_aimait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_nous_aimions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_vous_aimiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_ils_elles_aimaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/aimer/audio_jaime_f.mp3",
-        "audio/fr/aimer/audio_tu_aimes_f.mp3",
-        "audio/fr/aimer/audio_il_elle_aime_f.mp3",
-        "audio/fr/aimer/audio_nous_aimons_f.mp3",
-        "audio/fr/aimer/audio_vous_aimez_f.mp3",
-        "audio/fr/aimer/audio_ils_elles_aiment_f.mp3"
+        "audio/fr/verbs/fr_audio_to_like/audio_jaime_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_tu_aimes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_il_elle_aime_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_nous_aimons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_vous_aimez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_ils_elles_aiment_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/aimer/audio_jaimerai_f.mp3",
-        "audio/fr/aimer/audio_tu_aimeras_f.mp3",
-        "audio/fr/aimer/audio_il_elle_aimera_f.mp3",
-        "audio/fr/aimer/audio_nous_aimerons_f.mp3",
-        "audio/fr/aimer/audio_vous_aimerez_f.mp3",
-        "audio/fr/aimer/audio_ils_elles_aimeront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_like/audio_jaimerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_tu_aimeras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_il_elle_aimera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_nous_aimerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_vous_aimerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_like/audio_ils_elles_aimeront_f.mp3"
       ]
     ]
   }

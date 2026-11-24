@@ -1,0 +1,183 @@
+{
+  "infinitive": "работать",
+  "past": {
+    "translations": [
+      "я работал",
+      "ты работал",
+      "он работал",
+      "мы работали",
+      "вы работали",
+      "они работали"
+    ],
+    "examples": [
+      [
+        "Я работал в офисе.",
+        "",
+        ""
+      ],
+      [
+        "Ты усердно работал.",
+        "",
+        ""
+      ],
+      [
+        "Он работал на фабрике.",
+        "",
+        ""
+      ],
+      [
+        "Мы работали вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы работали допоздна.",
+        "",
+        ""
+      ],
+      [
+        "Они работали над проектом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_rabotal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_rabotal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_rabotal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_rabotali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_rabotali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_rabotali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_rabotal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_rabotal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_rabotal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_rabotali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_rabotali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_rabotali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я работаю",
+      "ты работаешь",
+      "он работает",
+      "мы работаем",
+      "вы работаете",
+      "они работают"
+    ],
+    "examples": [
+      [
+        "Я работаю в офисе.",
+        "",
+        ""
+      ],
+      [
+        "Ты усердно работаешь.",
+        "",
+        ""
+      ],
+      [
+        "Он работает на фабрике.",
+        "",
+        ""
+      ],
+      [
+        "Мы работаем вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы работаете допоздна.",
+        "",
+        ""
+      ],
+      [
+        "Они работают над проектом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_rabotayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_rabotaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_rabotaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_rabotaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_rabotaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_rabotayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_rabotayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_rabotaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_rabotaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_rabotaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_rabotaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_rabotayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду работать",
+      "ты будешь работать",
+      "он будет работать",
+      "мы будем работать",
+      "вы будете работать",
+      "они будут работать"
+    ],
+    "examples": [
+      [
+        "Я буду работать в офисе.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь усердно работать.",
+        "",
+        ""
+      ],
+      [
+        "Он будет работать на фабрике.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем работать вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете работать допоздна.",
+        "",
+        ""
+      ],
+      [
+        "Они будут работать над проектом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_budu_rabotat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_budesh_rabotat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_budet_rabotat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_budem_rabotat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_budete_rabotat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_budut_rabotat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_work/audio_ya_budu_rabotat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_ty_budesh_rabotat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_on_budet_rabotat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_my_budem_rabotat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_vy_budete_rabotat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_work/audio_oni_budut_rabotat_f.mp3"
+      ]
+    ]
+  }
+}

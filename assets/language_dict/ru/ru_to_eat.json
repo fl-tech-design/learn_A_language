@@ -1,0 +1,183 @@
+{
+  "infinitive": "есть",
+  "past": {
+    "translations": [
+      "я ел",
+      "ты ел",
+      "он ел",
+      "мы ели",
+      "вы ели",
+      "они ели"
+    ],
+    "examples": [
+      [
+        "Я ел завтрак.",
+        "",
+        ""
+      ],
+      [
+        "Ты ел обед.",
+        "",
+        ""
+      ],
+      [
+        "Он ел ужин.",
+        "",
+        ""
+      ],
+      [
+        "Мы ели вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы ели пиццу.",
+        "",
+        ""
+      ],
+      [
+        "Они ели суши.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_el_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_el_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_el_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_eli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_eli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_eli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_el_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_el_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_el_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_eli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_eli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_eli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я ем",
+      "ты ешь",
+      "он ест",
+      "мы едим",
+      "вы едите",
+      "они едят"
+    ],
+    "examples": [
+      [
+        "Я ем завтрак.",
+        "",
+        ""
+      ],
+      [
+        "Ты ешь обед.",
+        "",
+        ""
+      ],
+      [
+        "Он ест ужин.",
+        "",
+        ""
+      ],
+      [
+        "Мы едим вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы едите пиццу.",
+        "",
+        ""
+      ],
+      [
+        "Они едят суши.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_em_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_esh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_edim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_edite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_edyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_em_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_esh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_edim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_edite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_edyat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду есть",
+      "ты будешь есть",
+      "он будет есть",
+      "мы будем есть",
+      "вы будете есть",
+      "они будут есть"
+    ],
+    "examples": [
+      [
+        "Я буду есть завтрак.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь есть обед.",
+        "",
+        ""
+      ],
+      [
+        "Он будет есть ужин.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем есть вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете есть пиццу.",
+        "",
+        ""
+      ],
+      [
+        "Они будут есть суши.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_budu_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_budesh_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_budet_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_budem_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_budete_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_budut_est_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_eat/audio_ya_budu_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_ty_budesh_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_on_budet_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_my_budem_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_vy_budete_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_eat/audio_oni_budut_est_f.mp3"
+      ]
+    ]
+  }
+}

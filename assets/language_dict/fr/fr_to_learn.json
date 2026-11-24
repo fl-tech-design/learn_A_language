@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/apprendre/audio_jai_appris_f.mp3",
-        "audio/fr/apprendre/audio_tu_as_appris_f.mp3",
-        "audio/fr/apprendre/audio_il_elle_a_appris_f.mp3",
-        "audio/fr/apprendre/audio_nous_avons_appris_f.mp3",
-        "audio/fr/apprendre/audio_vous_avez_appris_f.mp3",
-        "audio/fr/apprendre/audio_ils_elles_ont_appris_f.mp3"
+        "audio/fr/verbs/fr_audio_to_learn/audio_jai_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_as_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_a_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_avons_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_avez_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_ont_appris_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/apprendre/audio_japprends_f.mp3",
-        "audio/fr/apprendre/audio_tu_apprends_f.mp3",
-        "audio/fr/apprendre/audio_il_elle_apprend_f.mp3",
-        "audio/fr/apprendre/audio_nous_apprenons_f.mp3",
-        "audio/fr/apprendre/audio_vous_apprenez_f.mp3",
-        "audio/fr/apprendre/audio_ils_elles_apprennent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_learn/audio_japprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_apprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_apprend_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_apprenons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_apprenez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_apprennent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/apprendre/audio_japprendrai_f.mp3",
-        "audio/fr/apprendre/audio_tu_apprendras_f.mp3",
-        "audio/fr/apprendre/audio_il_elle_apprendra_f.mp3",
-        "audio/fr/apprendre/audio_nous_apprendrons_f.mp3",
-        "audio/fr/apprendre/audio_vous_apprendrez_f.mp3",
-        "audio/fr/apprendre/audio_ils_elles_apprendront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_learn/audio_japprendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_apprendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_apprendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_apprendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_apprendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_apprendront_f.mp3"
       ]
     ]
   }

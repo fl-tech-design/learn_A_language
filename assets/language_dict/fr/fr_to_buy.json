@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/acheter/audio_jachetais_f.mp3",
-        "audio/fr/acheter/audio_tu_achetais_f.mp3",
-        "audio/fr/acheter/audio_il_elle_achetait_f.mp3",
-        "audio/fr/acheter/audio_nous_achetions_f.mp3",
-        "audio/fr/acheter/audio_vous_achetiez_f.mp3",
-        "audio/fr/acheter/audio_ils_elles_achetaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_buy/audio_jachetais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_achetais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achetait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_achetions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_achetiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_achetaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/acheter/audio_jachete_f.mp3",
-        "audio/fr/acheter/audio_tu_achetes_f.mp3",
-        "audio/fr/acheter/audio_il_elle_achete_f.mp3",
-        "audio/fr/acheter/audio_nous_achetons_f.mp3",
-        "audio/fr/acheter/audio_vous_achetez_f.mp3",
-        "audio/fr/acheter/audio_ils_elles_achetent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_buy/audio_jachete_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_achetes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achete_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_achetons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_achetez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_achetent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/acheter/audio_jacheterai_f.mp3",
-        "audio/fr/acheter/audio_tu_acheteras_f.mp3",
-        "audio/fr/acheter/audio_il_elle_achetera_f.mp3",
-        "audio/fr/acheter/audio_nous_acheterons_f.mp3",
-        "audio/fr/acheter/audio_vous_acheterez_f.mp3",
-        "audio/fr/acheter/audio_ils_elles_acheteront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_buy/audio_jacheterai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_acheteras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achetera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_acheterons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_acheterez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_acheteront_f.mp3"
       ]
     ]
   }

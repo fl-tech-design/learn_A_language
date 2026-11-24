@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/machen/audio_ich_machte_m.mp3",
-        "audio/de/verben/machen/audio_du_machtest_m.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_machte_m.mp3",
-        "audio/de/verben/machen/audio_wir_machten_m.mp3",
-        "audio/de/verben/machen/audio_ihr_machtet_m.mp3",
-        "audio/de/verben/machen/audio_sie_machten_m.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_machte_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_machtest_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_machte_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_machten_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_machtet_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_machten_m.mp3"
       ],
       [
-        "audio/de/verben/machen/audio_ich_machte_f.mp3",
-        "audio/de/verben/machen/audio_du_machtest_f.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_machte_f.mp3",
-        "audio/de/verben/machen/audio_wir_machten_f.mp3",
-        "audio/de/verben/machen/audio_ihr_machtet_f.mp3",
-        "audio/de/verben/machen/audio_sie_machten_f.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_machte_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_machtest_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_machte_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_machten_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_machtet_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_machten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/machen/audio_ich_mache_m.mp3",
-        "audio/de/verben/machen/audio_du_machst_m.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_macht_m.mp3",
-        "audio/de/verben/machen/audio_wir_machen_m.mp3",
-        "audio/de/verben/machen/audio_ihr_macht_m.mp3",
-        "audio/de/verben/machen/audio_sie_machen_m.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_mache_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_machst_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_macht_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_macht_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_machen_m.mp3"
       ],
       [
-        "audio/de/verben/machen/audio_ich_mache_f.mp3",
-        "audio/de/verben/machen/audio_du_machst_f.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_macht_f.mp3",
-        "audio/de/verben/machen/audio_wir_machen_f.mp3",
-        "audio/de/verben/machen/audio_ihr_macht_f.mp3",
-        "audio/de/verben/machen/audio_sie_machen_f.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_mache_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_machst_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_macht_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_macht_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_machen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/machen/audio_ich_werde_machen_m.mp3",
-        "audio/de/verben/machen/audio_du_wirst_machen_m.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_wird_machen_m.mp3",
-        "audio/de/verben/machen/audio_wir_werden_machen_m.mp3",
-        "audio/de/verben/machen/audio_ihr_werdet_machen_m.mp3",
-        "audio/de/verben/machen/audio_sie_werden_machen_m.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_werde_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_wirst_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_wird_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_werden_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_werdet_machen_m.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_werden_machen_m.mp3"
       ],
       [
-        "audio/de/verben/machen/audio_ich_werde_machen_f.mp3",
-        "audio/de/verben/machen/audio_du_wirst_machen_f.mp3",
-        "audio/de/verben/machen/audio_er_sie_es_wird_machen_f.mp3",
-        "audio/de/verben/machen/audio_wir_werden_machen_f.mp3",
-        "audio/de/verben/machen/audio_ihr_werdet_machen_f.mp3",
-        "audio/de/verben/machen/audio_sie_werden_machen_f.mp3"
+        "audio/de/verbs/de_audio_to_make/audio_ich_werde_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_du_wirst_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_er_sie_es_wird_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_wir_werden_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_ihr_werdet_machen_f.mp3",
+        "audio/de/verbs/de_audio_to_make/audio_sie_werden_machen_f.mp3"
       ]
     ]
   }

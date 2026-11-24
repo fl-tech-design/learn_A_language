@@ -1,0 +1,183 @@
+{
+  "infinitive": "должен",
+  "past": {
+    "translations": [
+      "я должен был",
+      "ты должен был",
+      "он должен был",
+      "мы должны были",
+      "вы должны были",
+      "они должны были"
+    ],
+    "examples": [
+      [
+        "Мне пришлось работать.",
+        "",
+        ""
+      ],
+      [
+        "Тебе пришлось учиться.",
+        "",
+        ""
+      ],
+      [
+        "Ему пришлось уйти.",
+        "",
+        ""
+      ],
+      [
+        "Нам пришлось ждать.",
+        "",
+        ""
+      ],
+      [
+        "Вам пришлось помочь.",
+        "",
+        ""
+      ],
+      [
+        "Им пришлось остаться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_byli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_byli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я должен",
+      "ты должен",
+      "он должен",
+      "мы должны",
+      "вы должны",
+      "они должны"
+    ],
+    "examples": [
+      [
+        "Я должен работать.",
+        "",
+        ""
+      ],
+      [
+        "Ты должен учиться.",
+        "",
+        ""
+      ],
+      [
+        "Он должен уйти.",
+        "",
+        ""
+      ],
+      [
+        "Мы должны ждать.",
+        "",
+        ""
+      ],
+      [
+        "Вы должны помочь.",
+        "",
+        ""
+      ],
+      [
+        "Они должны остаться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я должен буду",
+      "ты должен будешь",
+      "он должен будет",
+      "мы должны будем",
+      "вы должны будете",
+      "они должны будут"
+    ],
+    "examples": [
+      [
+        "Мне придётся работать.",
+        "",
+        ""
+      ],
+      [
+        "Тебе придётся учиться.",
+        "",
+        ""
+      ],
+      [
+        "Ему придётся уйти.",
+        "",
+        ""
+      ],
+      [
+        "Нам придётся ждать.",
+        "",
+        ""
+      ],
+      [
+        "Вам придётся помочь.",
+        "",
+        ""
+      ],
+      [
+        "Им придётся остаться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_budu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_budesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_budet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_budem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_budete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_budut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_must/audio_ya_dolzhen_budu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_ty_dolzhen_budesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_on_dolzhen_budet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_my_dolzhny_budem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_vy_dolzhny_budete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_must/audio_oni_dolzhny_budut_f.mp3"
+      ]
+    ]
+  }
+}

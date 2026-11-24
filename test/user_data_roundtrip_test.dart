@@ -56,7 +56,6 @@ void main() {
         progress: {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
         learnedLanguages: const [],
         language: const {},
-        vocab: const {},
         // dayStreak bleibt null (weggelassen)
         // gameHighscore bleibt Default 0
         // selectedCourses bleibt Default []

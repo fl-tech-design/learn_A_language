@@ -1,0 +1,183 @@
+{
+  "infinitive": "βλέπω",
+  "past": {
+    "translations": [
+      "εγώ έβλεπα",
+      "εσύ έβλεπες",
+      "αυτός/αυτή/αυτό έβλεπε",
+      "εμείς βλέπαμε",
+      "εσείς βλέπατε",
+      "αυτοί/αυτές/αυτά έβλεπαν"
+    ],
+    "examples": [
+      [
+        "Εγώ έβλεπα μια ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ έβλεπες ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός έβλεπε έναν σκύλο.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς βλέπαμε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς βλέπατε ένα δέντρο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί έβλεπαν ένα πουλί.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_evlepa_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_evlepes_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_evlepe_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_vlepame_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_vlepate_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_evlepan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_evlepa_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_evlepes_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_evlepe_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_vlepame_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_vlepate_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_evlepan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ βλέπω",
+      "εσύ βλέπεις",
+      "αυτός/αυτή/αυτό βλέπει",
+      "εμείς βλέπουμε",
+      "εσείς βλέπετε",
+      "αυτοί/αυτές/αυτά βλέπουν"
+    ],
+    "examples": [
+      [
+        "Εγώ βλέπω μια ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ βλέπεις ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός βλέπει έναν σκύλο.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς βλέπουμε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς βλέπετε ένα δέντρο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί βλέπουν ένα πουλί.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_vlepo_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_vlepeis_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_vlepei_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_vlepoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_vlepete_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_vlepoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_vlepo_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_vlepeis_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_vlepei_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_vlepoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_vlepete_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_vlepoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα δω",
+      "εσύ θα δεις",
+      "αυτός/αυτή/αυτό θα δει",
+      "εμείς θα δούμε",
+      "εσείς θα δείτε",
+      "αυτοί/αυτές/αυτά θα δουν"
+    ],
+    "examples": [
+      [
+        "Εγώ θα δω μια ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ θα δεις ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός θα δει έναν σκύλο.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς θα δούμε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς θα δείτε ένα δέντρο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί θα δουν ένα πουλί.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_tha_do_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_tha_deis_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_tha_dei_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_tha_doyme_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_tha_deite_m.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_tha_doyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_see/audio_ego_tha_do_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_esy_tha_deis_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytosaytiayto_tha_dei_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_emeis_tha_doyme_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_eseis_tha_deite_f.mp3",
+        "audio/el/verbs/el_audio_to_see/audio_aytoiaytesayta_tha_doyn_f.mp3"
+      ]
+    ]
+  }
+}

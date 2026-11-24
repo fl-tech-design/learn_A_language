@@ -1,0 +1,183 @@
+{
+  "infinitive": "κλείνω",
+  "past": {
+    "translations": [
+      "εγώ έκλεισα",
+      "εσύ έκλεισες",
+      "αυτός/αυτή/αυτό έκλεισε",
+      "εμείς κλείσαμε",
+      "εσείς κλείσατε",
+      "αυτοί/αυτές/αυτά έκλεισαν"
+    ],
+    "examples": [
+      [
+        "Έκλεισα την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Έκλεισες το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Έκλεισε το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Κλείσαμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Κλείσατε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Έκλεισαν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_ekleisa_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_ekleises_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_ekleise_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_kleisame_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_kleisate_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_ekleisan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_ekleisa_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_ekleises_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_ekleise_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_kleisame_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_kleisate_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_ekleisan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ κλείνω",
+      "εσύ κλείνεις",
+      "αυτός/αυτή/αυτό κλείνει",
+      "εμείς κλείνουμε",
+      "εσείς κλείνετε",
+      "αυτοί/αυτές/αυτά κλείνουν"
+    ],
+    "examples": [
+      [
+        "Κλείνω την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Κλείνεις το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Κλείνει το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Κλείνουμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Κλείνετε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Κλείνουν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_kleino_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_kleineis_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_kleinei_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_kleinoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_kleinete_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_kleinoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_kleino_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_kleineis_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_kleinei_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_kleinoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_kleinete_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_kleinoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα κλείσω",
+      "εσύ θα κλείσεις",
+      "αυτός/αυτή/αυτό θα κλείσει",
+      "εμείς θα κλείσουμε",
+      "εσείς θα κλείσετε",
+      "αυτοί/αυτές/αυτά θα κλείσουν"
+    ],
+    "examples": [
+      [
+        "Θα κλείσω την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Θα κλείσεις το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Θα κλείσει το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Θα κλείσουμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Θα κλείσετε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Θα κλείσουν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_tha_kleiso_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_tha_kleiseis_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_tha_kleisei_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_tha_kleisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_tha_kleisete_m.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_tha_kleisoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_close/audio_ego_tha_kleiso_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_esy_tha_kleiseis_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytosaytiayto_tha_kleisei_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_emeis_tha_kleisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_eseis_tha_kleisete_f.mp3",
+        "audio/el/verbs/el_audio_to_close/audio_aytoiaytesayta_tha_kleisoyn_f.mp3"
+      ]
+    ]
+  }
+}

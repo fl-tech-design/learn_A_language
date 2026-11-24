@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to want/audio_i_wanted_m.mp3",
-        "audio/en/to want/audio_you_wanted_m.mp3",
-        "audio/en/to want/audio_he_she_it_wanted_m.mp3",
-        "audio/en/to want/audio_we_wanted_m.mp3",
-        "audio/en/to want/audio_you_wanted_(pl)_m.mp3",
-        "audio/en/to want/audio_they_wanted_m.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_wanted_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_wanted_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_wanted_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_wanted_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_wanted_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_wanted_m.mp3"
       ],
       [
-        "audio/en/to want/audio_i_wanted_f.mp3",
-        "audio/en/to want/audio_you_wanted_f.mp3",
-        "audio/en/to want/audio_he_she_it_wanted_f.mp3",
-        "audio/en/to want/audio_we_wanted_f.mp3",
-        "audio/en/to want/audio_you_wanted_(pl)_f.mp3",
-        "audio/en/to want/audio_they_wanted_f.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_wanted_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_wanted_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_wanted_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_wanted_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_wanted_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_wanted_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to want/audio_i_want_m.mp3",
-        "audio/en/to want/audio_you_want_m.mp3",
-        "audio/en/to want/audio_he_she_it_wants_m.mp3",
-        "audio/en/to want/audio_we_want_m.mp3",
-        "audio/en/to want/audio_you_want_(pl)_m.mp3",
-        "audio/en/to want/audio_they_want_m.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_wants_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_want_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_want_m.mp3"
       ],
       [
-        "audio/en/to want/audio_i_want_f.mp3",
-        "audio/en/to want/audio_you_want_f.mp3",
-        "audio/en/to want/audio_he_she_it_wants_f.mp3",
-        "audio/en/to want/audio_we_want_f.mp3",
-        "audio/en/to want/audio_you_want_(pl)_f.mp3",
-        "audio/en/to want/audio_they_want_f.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_wants_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_want_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_want_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to want/audio_i_will_want_m.mp3",
-        "audio/en/to want/audio_you_will_want_m.mp3",
-        "audio/en/to want/audio_he_she_it_will_want_m.mp3",
-        "audio/en/to want/audio_we_will_want_m.mp3",
-        "audio/en/to want/audio_you_will_want_(pl)_m.mp3",
-        "audio/en/to want/audio_they_will_want_m.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_will_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_will_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_will_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_will_want_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_will_want_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_will_want_m.mp3"
       ],
       [
-        "audio/en/to want/audio_i_will_want_f.mp3",
-        "audio/en/to want/audio_you_will_want_f.mp3",
-        "audio/en/to want/audio_he_she_it_will_want_f.mp3",
-        "audio/en/to want/audio_we_will_want_f.mp3",
-        "audio/en/to want/audio_you_will_want_(pl)_f.mp3",
-        "audio/en/to want/audio_they_will_want_f.mp3"
+        "audio/en/verbs/en_audio_to_want/audio_i_will_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_will_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_he_she_it_will_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_we_will_want_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_you_will_want_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_want/audio_they_will_want_f.mp3"
       ]
     ]
   }

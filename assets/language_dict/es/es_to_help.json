@@ -1,0 +1,183 @@
+{
+  "infinitive": "ayudar",
+  "past": {
+    "translations": [
+      "yo ayudé",
+      "tú ayudaste",
+      "él/ella ayudó",
+      "nosotros ayudamos",
+      "vosotros ayudasteis",
+      "ellos/ellas ayudaron"
+    ],
+    "examples": [
+      [
+        "Ayudé a mi amigo.",
+        "",
+        ""
+      ],
+      [
+        "Ayudaste a tu hermana.",
+        "",
+        ""
+      ],
+      [
+        "Él ayudó a su vecino.",
+        "",
+        ""
+      ],
+      [
+        "Ayudamos al profesor.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros ayudasteis al equipo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos ayudaron al alumno.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayude_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaste_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudo_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayude_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaste_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudo_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo ayudo",
+      "tú ayudas",
+      "él/ella ayuda",
+      "nosotros ayudamos",
+      "vosotros ayudáis",
+      "ellos/ellas ayudan"
+    ],
+    "examples": [
+      [
+        "Ayudo a mi amigo.",
+        "",
+        ""
+      ],
+      [
+        "Ayudas a tu hermana.",
+        "",
+        ""
+      ],
+      [
+        "Él ayuda a su vecino.",
+        "",
+        ""
+      ],
+      [
+        "Ayudamos al profesor.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros ayudáis al equipo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos ayudan al alumno.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudo_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudas_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayuda_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudais_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudo_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudas_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayuda_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudamos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudais_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudan_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo ayudaré",
+      "tú ayudarás",
+      "él/ella ayudará",
+      "nosotros ayudaremos",
+      "vosotros ayudaréis",
+      "ellos/ellas ayudarán"
+    ],
+    "examples": [
+      [
+        "Ayudaré a mi amigo.",
+        "",
+        ""
+      ],
+      [
+        "Ayudarás a tu hermana.",
+        "",
+        ""
+      ],
+      [
+        "Él ayudará a su vecino.",
+        "",
+        ""
+      ],
+      [
+        "Ayudaremos al profesor.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros ayudaréis al equipo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos ayudarán al alumno.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudare_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaras_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudara_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudareis_m.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_help/audio_yo_ayudare_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_tu_ayudaras_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_el_ella_ayudara_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_nosotros_ayudaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_vosotros_ayudareis_f.mp3",
+        "audio/es/verbs/es_audio_to_help/audio_ellos_ellas_ayudaran_f.mp3"
+      ]
+    ]
+  }
+}

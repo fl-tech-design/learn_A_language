@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/manger/audio_je_mangeai_f.mp3",
-        "audio/fr/manger/audio_tu_mangeas_f.mp3",
-        "audio/fr/manger/audio_il_elle_mangea_f.mp3",
-        "audio/fr/manger/audio_nous_mangeames_f.mp3",
-        "audio/fr/manger/audio_vous_mangeates_f.mp3",
-        "audio/fr/manger/audio_ils_elles_mangerent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mangeai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_mangeas_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mangea_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangeames_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangeates_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangerent_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/manger/audio_je_mange_f.mp3",
-        "audio/fr/manger/audio_tu_manges_f.mp3",
-        "audio/fr/manger/audio_il_elle_mange_f.mp3",
-        "audio/fr/manger/audio_nous_mangeons_f.mp3",
-        "audio/fr/manger/audio_vous_mangez_f.mp3",
-        "audio/fr/manger/audio_ils_elles_mangent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mange_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_manges_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mange_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangeons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/manger/audio_je_mangerai_f.mp3",
-        "audio/fr/manger/audio_tu_mangeras_f.mp3",
-        "audio/fr/manger/audio_il_elle_mangera_f.mp3",
-        "audio/fr/manger/audio_nous_mangerons_f.mp3",
-        "audio/fr/manger/audio_vous_mangerez_f.mp3",
-        "audio/fr/manger/audio_ils_elles_mangeront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mangerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_mangeras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mangera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangeront_f.mp3"
       ]
     ]
   }

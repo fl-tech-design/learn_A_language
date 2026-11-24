@@ -1,0 +1,183 @@
+{
+  "infinitive": "escribir",
+  "past": {
+    "translations": [
+      "yo escribí",
+      "tú escribiste",
+      "él/ella escribió",
+      "nosotros escribimos",
+      "vosotros escribisteis",
+      "ellos/ellas escribieron"
+    ],
+    "examples": [
+      [
+        "Yo escribí una carta.",
+        "",
+        ""
+      ],
+      [
+        "Tú escribiste una historia.",
+        "",
+        ""
+      ],
+      [
+        "Él escribió un poema.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros escribimos un libro.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros escribisteis una nota.",
+        "",
+        ""
+      ],
+      [
+        "Ellos escribieron un informe.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribi_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiste_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribio_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribi_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiste_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribio_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo escribo",
+      "tú escribes",
+      "él/ella escribe",
+      "nosotros escribimos",
+      "vosotros escribís",
+      "ellos/ellas escriben"
+    ],
+    "examples": [
+      [
+        "Yo escribo una carta.",
+        "",
+        ""
+      ],
+      [
+        "Tú escribes una historia.",
+        "",
+        ""
+      ],
+      [
+        "Él escribe un poema.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros escribimos un libro.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros escribís una nota.",
+        "",
+        ""
+      ],
+      [
+        "Ellos escriben un informe.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribo_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribes_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribe_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escriben_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribo_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribes_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribe_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribimos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escriben_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo escribiré",
+      "tú escribirás",
+      "él/ella escribirá",
+      "nosotros escribiremos",
+      "vosotros escribiréis",
+      "ellos/ellas escribirán"
+    ],
+    "examples": [
+      [
+        "Yo escribiré una carta.",
+        "",
+        ""
+      ],
+      [
+        "Tú escribirás una historia.",
+        "",
+        ""
+      ],
+      [
+        "Él escribirá un poema.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros escribiremos un libro.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros escribiréis una nota.",
+        "",
+        ""
+      ],
+      [
+        "Ellos escribirán un informe.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribire_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiras_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribira_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribiremos_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribireis_m.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribiran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_write/audio_yo_escribire_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_tu_escribiras_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_el_ella_escribira_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_nosotros_escribiremos_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_vosotros_escribireis_f.mp3",
+        "audio/es/verbs/es_audio_to_write/audio_ellos_ellas_escribiran_f.mp3"
+      ]
+    ]
+  }
+}

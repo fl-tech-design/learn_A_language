@@ -1,0 +1,183 @@
+{
+  "infinitive": "μιλάω",
+  "past": {
+    "translations": [
+      "εγώ μιλούσα",
+      "εσύ μιλούσες",
+      "αυτός/αυτή/αυτό μιλούσε",
+      "εμείς μιλούσαμε",
+      "εσείς μιλούσατε",
+      "αυτοί/αυτές/αυτά μιλούσαν"
+    ],
+    "examples": [
+      [
+        "Μιλούσα γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλούσες αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλούσε γαλλικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλούσαμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Μιλούσατε ισπανικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλούσαν ιταλικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_miloysa_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_miloyses_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_miloyse_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_miloysame_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_miloysate_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_miloysan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_miloysa_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_miloyses_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_miloyse_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_miloysame_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_miloysate_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_miloysan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ μιλάω",
+      "εσύ μιλάς",
+      "αυτός/αυτή/αυτό μιλάει",
+      "εμείς μιλάμε",
+      "εσείς μιλάτε",
+      "αυτοί/αυτές/αυτά μιλάνε"
+    ],
+    "examples": [
+      [
+        "Μιλάω γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλάς αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλάει γαλλικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλάμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Μιλάτε ισπανικά.",
+        "",
+        ""
+      ],
+      [
+        "Μιλάνε ιταλικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_milao_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_milas_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_milaei_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_milame_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_milate_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_milane_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_milao_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_milas_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_milaei_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_milame_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_milate_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_milane_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα μιλήσω",
+      "εσύ θα μιλήσεις",
+      "αυτός/αυτή/αυτό θα μιλήσει",
+      "εμείς θα μιλήσουμε",
+      "εσείς θα μιλήσετε",
+      "αυτοί/αυτές/αυτά θα μιλήσουν"
+    ],
+    "examples": [
+      [
+        "Θα μιλήσω γερμανικά.",
+        "",
+        ""
+      ],
+      [
+        "Θα μιλήσεις αγγλικά.",
+        "",
+        ""
+      ],
+      [
+        "Θα μιλήσει γαλλικά.",
+        "",
+        ""
+      ],
+      [
+        "Θα μιλήσουμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Θα μιλήσετε ισπανικά.",
+        "",
+        ""
+      ],
+      [
+        "Θα μιλήσουν ιταλικά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_tha_miliso_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_tha_miliseis_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_tha_milisei_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_tha_milisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_tha_milisete_m.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_tha_milisoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_speak/audio_ego_tha_miliso_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_esy_tha_miliseis_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytosaytiayto_tha_milisei_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_emeis_tha_milisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_eseis_tha_milisete_f.mp3",
+        "audio/el/verbs/el_audio_to_speak/audio_aytoiaytesayta_tha_milisoyn_f.mp3"
+      ]
+    ]
+  }
+}

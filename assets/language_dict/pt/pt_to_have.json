@@ -1,0 +1,183 @@
+{
+  "infinitive": "ter",
+  "past": {
+    "translations": [
+      "eu tive",
+      "tu tiveste",
+      "ele/ela teve",
+      "nós tivemos",
+      "vós tivestes",
+      "eles/elas tiveram"
+    ],
+    "examples": [
+      [
+        "Eu tive um cão.",
+        "",
+        ""
+      ],
+      [
+        "Tu tiveste um carro.",
+        "",
+        ""
+      ],
+      [
+        "Ele teve um livro.",
+        "",
+        ""
+      ],
+      [
+        "Nós tivemos tempo.",
+        "",
+        ""
+      ],
+      [
+        "Vós tivestes momentos divertidos.",
+        "",
+        ""
+      ],
+      [
+        "Eles tiveram uma casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/ter/audio_eu_tive_m.mp3",
+        "audio/pt/verben/ter/audio_tu_tiveste_m.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_teve_m.mp3",
+        "audio/pt/verben/ter/audio_nos_tivemos_m.mp3",
+        "audio/pt/verben/ter/audio_vos_tivestes_m.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_tiveram_m.mp3"
+      ],
+      [
+        "audio/pt/verben/ter/audio_eu_tive_f.mp3",
+        "audio/pt/verben/ter/audio_tu_tiveste_f.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_teve_f.mp3",
+        "audio/pt/verben/ter/audio_nos_tivemos_f.mp3",
+        "audio/pt/verben/ter/audio_vos_tivestes_f.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_tiveram_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu tenho",
+      "tu tens",
+      "ele/ela tem",
+      "nós temos",
+      "vós tendes",
+      "eles/elas têm"
+    ],
+    "examples": [
+      [
+        "Eu tenho um gato.",
+        "",
+        ""
+      ],
+      [
+        "Tu tens uma caneta.",
+        "",
+        ""
+      ],
+      [
+        "Ele tem uma bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nós temos tempo.",
+        "",
+        ""
+      ],
+      [
+        "Vós tendes momentos divertidos.",
+        "",
+        ""
+      ],
+      [
+        "Eles têm uma casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/ter/audio_eu_tenho_m.mp3",
+        "audio/pt/verben/ter/audio_tu_tens_m.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_tem_m.mp3",
+        "audio/pt/verben/ter/audio_nos_temos_m.mp3",
+        "audio/pt/verben/ter/audio_vos_tendes_m.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_tem_m.mp3"
+      ],
+      [
+        "audio/pt/verben/ter/audio_eu_tenho_f.mp3",
+        "audio/pt/verben/ter/audio_tu_tens_f.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_tem_f.mp3",
+        "audio/pt/verben/ter/audio_nos_temos_f.mp3",
+        "audio/pt/verben/ter/audio_vos_tendes_f.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_tem_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu terei",
+      "tu terás",
+      "ele/ela terá",
+      "nós teremos",
+      "vós tereis",
+      "eles/elas terão"
+    ],
+    "examples": [
+      [
+        "Eu terei um carro.",
+        "",
+        ""
+      ],
+      [
+        "Tu terás tempo.",
+        "",
+        ""
+      ],
+      [
+        "Ele terá uma bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nós teremos momentos divertidos.",
+        "",
+        ""
+      ],
+      [
+        "Vós tereis uma casa.",
+        "",
+        ""
+      ],
+      [
+        "Eles terão tempo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/ter/audio_eu_terei_m.mp3",
+        "audio/pt/verben/ter/audio_tu_teras_m.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_tera_m.mp3",
+        "audio/pt/verben/ter/audio_nos_teremos_m.mp3",
+        "audio/pt/verben/ter/audio_vos_tereis_m.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_terao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/ter/audio_eu_terei_f.mp3",
+        "audio/pt/verben/ter/audio_tu_teras_f.mp3",
+        "audio/pt/verben/ter/audio_ele_ela_tera_f.mp3",
+        "audio/pt/verben/ter/audio_nos_teremos_f.mp3",
+        "audio/pt/verben/ter/audio_vos_tereis_f.mp3",
+        "audio/pt/verben/ter/audio_eles_elas_terao_f.mp3"
+      ]
+    ]
+  }
+}

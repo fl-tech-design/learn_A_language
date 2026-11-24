@@ -1,0 +1,183 @@
+{
+  "infinitive": "πηγαίνω",
+  "past": {
+    "translations": [
+      "εγώ πήγα",
+      "εσύ πήγες",
+      "αυτός/αυτή/αυτό πήγε",
+      "εμείς πήγαμε",
+      "εσείς πήγατε",
+      "αυτοί/αυτές/αυτά πήγαν"
+    ],
+    "examples": [
+      [
+        "Πήγα στο πάρκο.",
+        "",
+        ""
+      ],
+      [
+        "Πήγες στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Πήγε στο σχολείο.",
+        "",
+        ""
+      ],
+      [
+        "Πήγαμε για ψώνια.",
+        "",
+        ""
+      ],
+      [
+        "Πήγατε στον κινηματογράφο.",
+        "",
+        ""
+      ],
+      [
+        "Πήγαν στο πάρτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_piga_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_piges_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_pige_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_pigame_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_pigate_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_pigan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_piga_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_piges_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_pige_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_pigame_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_pigate_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_pigan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ πηγαίνω",
+      "εσύ πηγαίνεις",
+      "αυτός/αυτή/αυτό πηγαίνει",
+      "εμείς πηγαίνουμε",
+      "εσείς πηγαίνετε",
+      "αυτοί/αυτές/αυτά πηγαίνουν"
+    ],
+    "examples": [
+      [
+        "Πηγαίνω στο σχολείο.",
+        "",
+        ""
+      ],
+      [
+        "Πηγαίνεις στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Πηγαίνει στη δουλειά.",
+        "",
+        ""
+      ],
+      [
+        "Πηγαίνουμε για ψώνια.",
+        "",
+        ""
+      ],
+      [
+        "Πηγαίνετε στον κινηματογράφο.",
+        "",
+        ""
+      ],
+      [
+        "Πηγαίνουν στο πάρτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_pigaino_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_pigaineis_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_pigainei_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_pigainoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_pigainete_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_pigainoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_pigaino_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_pigaineis_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_pigainei_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_pigainoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_pigainete_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_pigainoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα πάω",
+      "εσύ θα πας",
+      "αυτός/αυτή/αυτό θα πάει",
+      "εμείς θα πάμε",
+      "εσείς θα πάτε",
+      "αυτοί/αυτές/αυτά θα πάνε"
+    ],
+    "examples": [
+      [
+        "Θα πάω στο σχολείο.",
+        "",
+        ""
+      ],
+      [
+        "Θα πας στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα πάει στη δουλειά.",
+        "",
+        ""
+      ],
+      [
+        "Θα πάμε για ψώνια.",
+        "",
+        ""
+      ],
+      [
+        "Θα πάτε στον κινηματογράφο.",
+        "",
+        ""
+      ],
+      [
+        "Θα πάνε στο πάρτι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_tha_pao_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_tha_pas_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_tha_paei_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_tha_pame_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_tha_pate_m.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_tha_pane_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_go/audio_ego_tha_pao_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_esy_tha_pas_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytosaytiayto_tha_paei_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_emeis_tha_pame_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_eseis_tha_pate_f.mp3",
+        "audio/el/verbs/el_audio_to_go/audio_aytoiaytesayta_tha_pane_f.mp3"
+      ]
+    ]
+  }
+}

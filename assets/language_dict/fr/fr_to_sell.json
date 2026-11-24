@@ -51,12 +51,12 @@
         ""
       ],
       [
-        "audio/fr/vendre/audio_je_vendais_f.mp3",
-        "audio/fr/vendre/audio_tu_vendais_f.mp3",
-        "audio/fr/vendre/audio_il_elle_on_vendait_f.mp3",
-        "audio/fr/vendre/audio_nous_vendions_f.mp3",
-        "audio/fr/vendre/audio_vous_vendiez_f.mp3",
-        "audio/fr/vendre/audio_ils_elles_vendaient_f.mp3"
+        "audio/fr/verbs/fr_audio_to_sell/audio_je_vendais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_tu_vendais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_il_elle_on_vendait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_nous_vendions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_vous_vendiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_ils_elles_vendaient_f.mp3"
       ]
     ]
   },
@@ -111,12 +111,12 @@
         ""
       ],
       [
-        "audio/fr/vendre/audio_je_vends_f.mp3",
-        "audio/fr/vendre/audio_tu_vends_f.mp3",
-        "audio/fr/vendre/audio_il_elle_on_vend_f.mp3",
-        "audio/fr/vendre/audio_nous_vendons_f.mp3",
-        "audio/fr/vendre/audio_vous_vendez_f.mp3",
-        "audio/fr/vendre/audio_ils_elles_vendent_f.mp3"
+        "audio/fr/verbs/fr_audio_to_sell/audio_je_vends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_tu_vends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_il_elle_on_vend_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_nous_vendons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_vous_vendez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_ils_elles_vendent_f.mp3"
       ]
     ]
   },
@@ -171,12 +171,12 @@
         ""
       ],
       [
-        "audio/fr/vendre/audio_je_vendrai_f.mp3",
-        "audio/fr/vendre/audio_tu_vendras_f.mp3",
-        "audio/fr/vendre/audio_il_elle_on_vendra_f.mp3",
-        "audio/fr/vendre/audio_nous_vendrons_f.mp3",
-        "audio/fr/vendre/audio_vous_vendrez_f.mp3",
-        "audio/fr/vendre/audio_ils_elles_vendront_f.mp3"
+        "audio/fr/verbs/fr_audio_to_sell/audio_je_vendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_tu_vendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_il_elle_on_vendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_nous_vendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_vous_vendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_sell/audio_ils_elles_vendront_f.mp3"
       ]
     ]
   }
