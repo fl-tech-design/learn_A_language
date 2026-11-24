@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_made_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_made_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_made_m.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_made_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_made_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_made_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_made_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_made_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_made_f.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_made_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_made_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_made_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_make_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_makes_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_make_m.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_make_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_make_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_make_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_make_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_makes_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_make_f.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_make_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_make_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_make_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_will_make_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_will_make_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_will_make_m.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_will_make_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_will_make_m.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_will_make_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_make/audio_you_will_make_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_he_she_it_will_make_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_we_will_make_f.mp3",
-        "audio/en/verbs/en_audio_to_make/audio_you_will_make_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_make/audio_you_will_make_f.mp3",
         "audio/en/verbs/en_audio_to_make/audio_they_will_make_f.mp3"
       ]
     ]

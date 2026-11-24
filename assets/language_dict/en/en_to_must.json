@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_had_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_had_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_had_to_m.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_had_to_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_had_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_had_to_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_had_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_had_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_had_to_f.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_had_to_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_had_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_had_to_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_must_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_must_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_must_m.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_must_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_must_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_must_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_must_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_must_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_must_f.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_must_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_must_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_must_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_will_have_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_will_have_to_m.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_m.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_will_have_to_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_he_she_it_will_have_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_we_will_have_to_f.mp3",
-        "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_must/audio_you_will_have_to_f.mp3",
         "audio/en/verbs/en_audio_to_must/audio_they_will_have_to_f.mp3"
       ]
     ]

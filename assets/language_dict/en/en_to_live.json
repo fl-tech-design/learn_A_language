@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_lived_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_lived_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_lived_m.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_lived_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_lived_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_lived_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_lived_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_lived_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_lived_f.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_lived_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_lived_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_lived_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_live_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_lives_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_live_m.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_live_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_live_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_live_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_live_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_lives_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_live_f.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_live_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_live_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_live_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_will_live_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_will_live_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_will_live_m.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_will_live_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_will_live_m.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_will_live_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_live/audio_you_will_live_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_he_she_it_will_live_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_we_will_live_f.mp3",
-        "audio/en/verbs/en_audio_to_live/audio_you_will_live_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_live/audio_you_will_live_f.mp3",
         "audio/en/verbs/en_audio_to_live/audio_they_will_live_f.mp3"
       ]
     ]

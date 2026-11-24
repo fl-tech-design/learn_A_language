@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_should_have_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_should_have_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_should_have_m.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_should_have_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_should_have_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_should_have_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_should_have_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_should_have_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_should_have_f.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_should_have_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_should_have_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_should_have_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_should_m.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_should_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_should_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_should_f.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_should_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_should_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_will_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_will_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_will_should_m.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_will_should_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_will_should_m.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_will_should_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_should/audio_you_will_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_he_she_it_will_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_we_will_should_f.mp3",
-        "audio/en/verbs/en_audio_to_should/audio_you_will_should_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_should/audio_you_will_should_f.mp3",
         "audio/en/verbs/en_audio_to_should/audio_they_will_should_f.mp3"
       ]
     ]

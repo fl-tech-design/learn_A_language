@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_ate_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_ate_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_ate_m.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_ate_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_ate_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_ate_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_ate_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_ate_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_ate_f.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_ate_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_ate_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_ate_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_eat_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_eats_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_eat_m.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_eat_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_eat_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_eat_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_eat_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_eats_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_eat_f.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_eat_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_eat_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_eat_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_will_eat_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_will_eat_m.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_m.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_will_eat_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_he_she_it_will_eat_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_we_will_eat_f.mp3",
-        "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_eat/audio_you_will_eat_f.mp3",
         "audio/en/verbs/en_audio_to_eat/audio_they_will_eat_f.mp3"
       ]
     ]

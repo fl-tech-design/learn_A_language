@@ -253,9 +253,16 @@ def process_language(lang: str, json_dir: str,
                 tense_data["audio"] = lists
                 continue
 
-            # ── de/en (bestehende Logik, unveraendert) ──
+            # ── de/en (bestehende Logik) ──
             for i in range(PERSON_COUNT):
+                # EN-Sonderfall (Ticket #32): Die 2. Person Plural (i=4) wird
+                # von der TTS als "… (pl)" gesprochen. Da in Englisch Plural
+                # und Einzahl identisch sind ("you are"), wird für das
+                # Plural-Audio der Basisname der 2. Person Einzahl (i=1)
+                # verwendet; die Dateien audio_you_…_(pl)_*.mp3 sind entfernt.
                 phrase = translations[i] if i < len(translations) else ""
+                if lang == "en" and i == 4 and len(translations) > 1:
+                    phrase = translations[1]
                 base = norm(phrase) if phrase else ""
                 for voice in (0, 1):
                     g = voice_suffix(lang, voice, de_has_f)
@@ -277,7 +284,11 @@ def process_language(lang: str, json_dir: str,
                 for i in range(PERSON_COUNT):
                     tr = (td.get("translations") or [])
                     if i < len(tr):
-                        wanted.add(norm_func(tr[i]))
+                        # Gleiche EN-Abbildung wie oben (Person 4 -> Einzahl).
+                        phrase = tr[i]
+                        if lang == "en" and i == 4 and len(tr) > 1:
+                            phrase = tr[1]
+                        wanted.add(norm_func(phrase))
         for g in ("m", "f"):
             orphans = sorted(available[g] - wanted)
             if orphans:

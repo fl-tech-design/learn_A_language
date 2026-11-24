@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_came_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_came_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_came_m.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_came_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_came_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_came_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_came_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_came_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_came_f.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_came_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_came_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_came_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_come_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_comes_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_come_m.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_come_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_come_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_come_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_come_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_comes_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_come_f.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_come_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_come_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_come_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_will_come_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_will_come_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_will_come_m.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_will_come_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_will_come_m.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_will_come_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_come/audio_you_will_come_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_he_she_it_will_come_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_we_will_come_f.mp3",
-        "audio/en/verbs/en_audio_to_come/audio_you_will_come_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_come/audio_you_will_come_f.mp3",
         "audio/en/verbs/en_audio_to_come/audio_they_will_come_f.mp3"
       ]
     ]

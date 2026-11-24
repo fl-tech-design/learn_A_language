@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_liked_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_liked_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_liked_m.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_liked_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_liked_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_liked_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_liked_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_liked_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_liked_f.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_liked_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_liked_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_liked_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_like_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_likes_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_like_m.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_like_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_like_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_like_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_like_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_likes_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_like_f.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_like_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_like_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_like_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_will_like_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_will_like_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_will_like_m.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_will_like_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_will_like_m.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_will_like_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_like/audio_you_will_like_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_he_she_it_will_like_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_we_will_like_f.mp3",
-        "audio/en/verbs/en_audio_to_like/audio_you_will_like_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_like/audio_you_will_like_f.mp3",
         "audio/en/verbs/en_audio_to_like/audio_they_will_like_f.mp3"
       ]
     ]

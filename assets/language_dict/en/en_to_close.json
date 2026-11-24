@@ -47,7 +47,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_closed_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_closed_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_closed_m.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_closed_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_closed_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_closed_m.mp3"
       ],
       [
@@ -55,7 +55,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_closed_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_closed_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_closed_f.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_closed_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_closed_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_closed_f.mp3"
       ]
     ]
@@ -107,7 +107,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_close_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_closes_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_close_m.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_close_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_close_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_close_m.mp3"
       ],
       [
@@ -115,7 +115,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_close_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_closes_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_close_f.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_close_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_close_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_close_f.mp3"
       ]
     ]
@@ -167,7 +167,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_will_close_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_will_close_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_will_close_m.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_will_close_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_will_close_m.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_will_close_m.mp3"
       ],
       [
@@ -175,7 +175,7 @@
         "audio/en/verbs/en_audio_to_close/audio_you_will_close_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_he_she_it_will_close_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_we_will_close_f.mp3",
-        "audio/en/verbs/en_audio_to_close/audio_you_will_close_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_close/audio_you_will_close_f.mp3",
         "audio/en/verbs/en_audio_to_close/audio_they_will_close_f.mp3"
       ]
     ]
