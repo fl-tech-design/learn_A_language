@@ -26,7 +26,10 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2.23.0
         with:
-          channel: stable
+          # Auf die lokale Entwicklungsversion pinnen (nicht "stable"),
+          # damit CI und lokal konsistent sind und neuere Flutter-Stable-
+          # Versionen (die 'material.dart' deprecated) nicht rot melden.
+          flutter-version: '3.47.9'
           cache: true
           pub-cache: true
 
