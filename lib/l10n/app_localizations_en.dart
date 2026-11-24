@@ -279,6 +279,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noDueWords => 'No due words!';
 
   @override
+  String get dueWordsDone => 'Great! You made it for today.';
+
+  @override
   String get noLearnedWords => 'No words to play yet.\nLearn new words first!';
 
   @override

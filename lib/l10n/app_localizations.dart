@@ -638,6 +638,12 @@ abstract class AppLocalizations {
   /// **'No due words!'**
   String get noDueWords;
 
+  /// No description provided for @dueWordsDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Great! You made it for today.'**
+  String get dueWordsDone;
+
   /// No description provided for @noLearnedWords.
   ///
   /// In en, this message translates to:

@@ -280,6 +280,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noDueWords => 'Nessuna parola in scadenza!';
 
   @override
+  String get dueWordsDone => 'Ottimo! Ce l\'hai fatta per oggi.';
+
+  @override
   String get noLearnedWords =>
       'Nessuna parola con cui giocare ancora.\nImpara prima nuove parole!';
 

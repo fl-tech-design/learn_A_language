@@ -281,6 +281,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noDueWords => 'Aucun mot à réviser !';
 
   @override
+  String get dueWordsDone => 'Bravo ! Tu as terminé pour aujourd\'hui.';
+
+  @override
   String get noLearnedWords =>
       'Aucun mot à jouer pour le moment.\nApprenez d\'abord de nouveaux mots !';
 

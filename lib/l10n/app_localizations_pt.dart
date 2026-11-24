@@ -281,6 +281,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noDueWords => 'Sem palavras pendentes!';
 
   @override
+  String get dueWordsDone => 'Ótimo! Você conseguiu por hoje.';
+
+  @override
   String get noLearnedWords =>
       'Ainda não há palavras para jogar.\nAprenda primeiro palavras novas!';
 

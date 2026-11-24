@@ -281,6 +281,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noDueWords => 'Нет запланированных слов!';
 
   @override
+  String get dueWordsDone => 'Отлично! Ты справился на сегодня.';
+
+  @override
   String get noLearnedWords =>
       'Пока нет слов для игры.\nСначала изучите новые слова!';
 

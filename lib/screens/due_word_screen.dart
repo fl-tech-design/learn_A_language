@@ -251,6 +251,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
     setState(() {
       _index++;
       if (_index >= _words.length) {
+        // Alle fälligen Wörter sind erledigt → End-Screen. `_checked` zurücksetzen,
+        // damit der „Nächstes Wort“-Button dort nicht mehr erscheint.
+        _checked = false;
         _feedback = '';
         _correctDisplay = '';
         _inputCtrl.clear();
@@ -275,6 +278,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final allDone = _words.isEmpty || _index >= _words.length;
+    // Alle fälligen Wörter wurden tatsächlich erledigt (im Gegensatz zu „es gab
+    // von Anfang an keine fälligen Wörter“).
+    final finishedToday = _words.isNotEmpty && _index >= _words.length;
     final word = !allDone ? _words[_index] : null;
     final answerWord = word?.word ?? '';
     final mq = MediaQuery.of(context);
@@ -333,7 +339,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
                       child: Center(
                           child: Text(
                               allDone
-                                  ? l10n.noDueWords
+                                  ? finishedToday
+                                      ? l10n.dueWordsDone
+                                      : l10n.noDueWords
                                   : word!.translation,
                               textAlign: TextAlign.center,
                               style: TextStyle(
@@ -369,7 +377,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
                         style: TextStyle(
                             fontSize: AppTheme.lblFontSize,
                             color: _feedbackColor)),
-                  if (_checked) ...[
+                  if (_checked && !allDone) ...[
                     SizedBox(height: gapMedium),
                     SizedBox(
                         height: 56,

@@ -280,6 +280,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get noDueWords => 'Δεν υπάρχουν εκκρεμείς λέξεις!';
 
   @override
+  String get dueWordsDone => 'Τέλεια! Τα κατάφερες για σήμερα.';
+
+  @override
   String get noLearnedWords =>
       'Δεν υπάρχουν ακόμα λέξεις για παιχνίδι.\nΜάθετε πρώτα νέες λέξεις!';
 

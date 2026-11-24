@@ -282,6 +282,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get noDueWords => 'Keine fälligen Wörter!';
 
   @override
+  String get dueWordsDone => 'Super! Du hast es für heute geschafft.';
+
+  @override
   String get noLearnedWords =>
       'Keine gelesenen Wörter zum Spielen.\nLerne zuerst neue Wörter!';
 

@@ -265,6 +265,39 @@ testWidgets('Feedback bleibt nach Lösung stehen (kein Reload bei Tastatur-Ände
     expect(find.text('du kannst'), findsOneWidget);
   });
 
+  testWidgets(
+      'End-Screen nach letztem Wort: kein „Nächstes Wort“, Abschluss-Satz',
+      (tester) async {
+    await _pumpDueWordScreen(tester, [
+      _dueWord('can_present_1', 'you can', 'du kannst'),
+      _dueWord('can_present_2', 'we can', 'wir können'),
+    ]);
+
+    // Erstes Wort lösen → „Nächstes Wort“ sichtbar.
+    await _typeLetters(tester, 'you can');
+    expect(_isChecked(tester), isTrue);
+    expect(find.text('Nächstes Wort'), findsOneWidget);
+
+    // Auf „Nächstes Wort“ tippen → zweites Wort.
+    await tester.tap(find.text('Nächstes Wort'));
+    await tester.pumpAndSettle();
+    expect(find.text('wir können'), findsOneWidget);
+
+    // Zweites (letztes) Wort lösen → „Nächstes Wort“ zuerst noch sichtbar.
+    await _typeLetters(tester, 'we can');
+    expect(_isChecked(tester), isTrue);
+
+    // Auf „Nächstes Wort“ tippen → End-Screen: Button weg, Abschluss-Satz da.
+    await tester.tap(find.text('Nächstes Wort'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Nächstes Wort'), findsNothing,
+        reason: 'Button muss nach Abschluss aller Wörter verschwinden');
+    expect(find.text('Super! Du hast es für heute geschafft.'), findsOneWidget,
+        reason: 'End-Screen zeigt den Abschluss-Satz');
+    expect(find.text('Keine fälligen Wörter!'), findsNothing);
+  });
+
   testWidgets('geschütztes Leerzeichen (NBSP) zählt als Leerstelle',
       (tester) async {
     await _pumpDueWordScreen(tester, [
