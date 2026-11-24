@@ -259,24 +259,43 @@ void main() {
   });
 
   group('checkWordAnswer – falsch / unbekannt', () {
-    test('reset bei falscher Antwort, kein Save bei unbekanntem Wort', () async {
+    test('falsche Antwort: Zurueck auf LV1 (in Arbeit), nicht LV0 - kein Save bei unbekanntem Wort',
+        () async {
       final fake = FakeUserManager();
+      final now = DateTime.now();
       fake.seed(
         'alice',
         _userData('alice', {
-          'haus': _vocab('haus', level: 5, status: 'seen', translation: 'Haus'),
+          'haus': _vocab('haus',
+              level: 5,
+              status: 'seen',
+              translation: 'Haus',
+              reviewDue: fmt(now.subtract(const Duration(days: 1)))),
         }),
       );
 
       final queries = VocabQueriesImpl(fake);
 
+      // Vor der falschen Antwort: faellig (in Arbeit), kein neues Wort.
+      expect(await queries.getWordsDueCount('alice'), 1);
+      expect(await queries.getNewWordsCount('alice'), 0);
+
       final wrong = await queries.checkWordAnswer('alice', 'haus', 'dog');
       expect(wrong.correct, false);
-      expect(wrong.newLevel, 0);
-      final saved = fake.lastSaved!;
-      expect(saved.vocabByLang['de']!['haus']!.level, 0);
-      expect(saved.vocabByLang['de']!['haus']!.status, 'new');
-      expect(saved.vocabByLang['de']!['haus']!.reviewDue, isNotNull);
+      // LV0 heisst „noch nie gelesen" – ein falsches Wort faellt auf den
+      // Lernanfang LV1 zurueck und bleibt „in Arbeit" (nicht neu).
+      expect(wrong.newLevel, 1);
+      final savedEntry = fake.lastSaved!.vocabByLang['de']!['haus']!;
+      expect(savedEntry.level, 1);
+      expect(savedEntry.status, 'seen');
+      final reviewDue = savedEntry.reviewDue;
+      expect(reviewDue, isNotNull);
+      // reviewDue ist morgen -> das Wort wird wieder faellig.
+      expect(DateTime.parse(reviewDue!).isAfter(now), true);
+
+      // Weder als neues (nie gesehenes) Wort gelistet noch jetzt faellig.
+      expect(await queries.getNewWordsCount('alice'), 0);
+      expect(await queries.getWordsDueCount('alice'), 0);
 
       final savedBefore = fake.lastSaved;
       final saveCountBefore = fake.saveCount;

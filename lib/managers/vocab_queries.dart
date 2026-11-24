@@ -521,9 +521,14 @@ class VocabQueriesImpl implements VocabQueries {
       );
     } else {
       final now = DateTime.now();
+      // Falsch beantwortet: auf den Lernanfang zurueckfallen lassen – aber auf
+      // LV1 ("in Arbeit"), NICHT auf LV0 (LV0 = "noch nie gelesen"). Das Wort
+      // bleibt damit status 'seen' und wird ueber reviewDue (= morgen) wieder
+      // faellig, statt als neues Wort zu gelten.
+      const wrongLevel = 1;
       final updated = ve.copyWith(
-        level: 0,
-        status: 'new',
+        level: wrongLevel,
+        status: 'seen',
         lastReviewed: now.toIso8601String(),
         reviewDue: fmt(now.add(const Duration(days: 1))),
       );
@@ -542,7 +547,7 @@ class VocabQueriesImpl implements VocabQueries {
         return AnswerCheckResult(
           correct: false,
           correctWord: correctTranslation,
-          newLevel: 0,
+          newLevel: wrongLevel,
           message: 'Fortschritt konnte nicht gespeichert werden.',
           persistenceFailed: true,
         );
@@ -551,7 +556,7 @@ class VocabQueriesImpl implements VocabQueries {
       return AnswerCheckResult(
         correct: false,
         correctWord: correctTranslation,
-        newLevel: 0,
+        newLevel: wrongLevel,
         message: 'Leider falsch. Richtig wäre: $correctTranslation',
       );
     }
