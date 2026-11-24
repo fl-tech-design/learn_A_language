@@ -19,9 +19,9 @@ Dieses Projekt ist eine vollständige Migration einer zuvor in Python/Kivy entwi
 
 - **Framework**: Flutter (Dart, SDK >= 3.1.0)
 - **State Management**: Provider (ChangeNotifier)
-- **Navigation**: go_router (deklaratives Routing)
+- **Navigation**: `MaterialApp.routes`-Routen-Tabelle mit `Navigator.pushNamed` (deklaratives Routing)
 - **Datenpersistenz**: Lokale JSON-Speicherung via path_provider (mit automatischem Asset-Copy beim ersten Start)
-- **UI/Design**: google_fonts (Jura, Boycott, LiberationSerif) und ein massgeschneidertes AppTheme für ein konsistentes Erscheinungsbild.
+- **UI/Design**: Gebündelte Fonts (Jura, Boycott, LiberationSerif) und ein massgeschneidertes AppTheme für ein konsistentes Erscheinungsbild.
 
 ## Projektstruktur
 

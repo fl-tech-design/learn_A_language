@@ -19,9 +19,9 @@ Este proyecto es una migración completa de una aplicación previamente desarrol
 
 - **Framework**: Flutter (Dart, SDK >= 3.1.0)
 - **Gestión de estado**: Provider (ChangeNotifier)
-- **Navegación**: go_router (enrutamiento declarativo)
+- **Navegación**: tabla de rutas `MaterialApp.routes` con `Navigator.pushNamed` (enrutamiento declarativo)
 - **Persistencia de datos**: Almacenamiento local en JSON mediante path_provider (con copia automática de assets en el primer inicio)
-- **UI/Diseño**: google_fonts (Jura, Boycott, LiberationSerif) y un AppTheme personalizado para una apariencia consistente.
+- **UI/Diseño**: Fuentes integradas (Jura, Boycott, LiberationSerif) y un AppTheme personalizado para una apariencia consistente.
 
 ## Estructura del proyecto
 
