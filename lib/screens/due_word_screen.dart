@@ -346,52 +346,55 @@ class _DueWordScreenState extends State<DueWordScreen> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: translationFontSize)))),
-                  SizedBox(height: gapSmall),
-                  if (!allDone)
+                  // Abfrage-/Feedback-Block nur bei aktiven Wörtern rendern.
+                  // Auf dem End-Screen (allDone) bleibt nur der Abschluss-Satz
+                  // und der Zurück-Button – kein „Übersetzung:“-Label, keine
+                  // leeren Antwortanzeigen mehr.
+                  if (!allDone) ...[
+                    SizedBox(height: gapSmall),
                     Text(l10n.labLevel(word!.level),
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                             fontSize: AppTheme.infFontSize,
                             color: Colors.white60)),
-                  SizedBox(height: gapMedium),
-                  Text(l10n.translationLabel,
-                      style: const TextStyle(
-                          fontSize: AppTheme.infFontSize,
-                          color: Colors.white60)),
-                  SizedBox(height: gapSmall),
-                  Text.rich(
-                      allDone
-                          ? const TextSpan()
-                          : _buildAnswerSpans(
-                              _checked
-                                  ? word!.word
-                                  : _stripParenthetical(answerWord),
-                              _userInput,
-                              highlightNext: !_checked),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: answerFontSize)),
-                  SizedBox(height: gapSmall),
-                  if (_correctDisplay.isNotEmpty)
-                    Text(_correctDisplay,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: AppTheme.lblFontSize,
-                            color: _feedbackColor)),
-                  if (_checked && !allDone) ...[
                     SizedBox(height: gapMedium),
-                    SizedBox(
-                        height: 56,
-                        width: double.infinity,
-                        child: OutlinedButton(
-                            onPressed: _nextWord,
-                            child: Text(l10n.btnNext,
-                                style: const TextStyle(
-                                    fontSize: AppTheme.btnFontSize)))),
-                  ],
-                  if (_feedback.isNotEmpty)
-                    Text(_feedback,
+                    Text(l10n.translationLabel,
+                        style: const TextStyle(
+                            fontSize: AppTheme.infFontSize,
+                            color: Colors.white60)),
+                    SizedBox(height: gapSmall),
+                    Text.rich(
+                        _buildAnswerSpans(
+                            _checked
+                                ? word.word
+                                : _stripParenthetical(answerWord),
+                            _userInput,
+                            highlightNext: !_checked),
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 20, color: _feedbackColor)),
+                        style: TextStyle(fontSize: answerFontSize)),
+                    SizedBox(height: gapSmall),
+                    if (_correctDisplay.isNotEmpty)
+                      Text(_correctDisplay,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: AppTheme.lblFontSize,
+                              color: _feedbackColor)),
+                    if (_checked) ...[
+                      SizedBox(height: gapMedium),
+                      SizedBox(
+                          height: 56,
+                          width: double.infinity,
+                          child: OutlinedButton(
+                              onPressed: _nextWord,
+                              child: Text(l10n.btnNext,
+                                  style: const TextStyle(
+                                      fontSize: AppTheme.btnFontSize)))),
+                    ],
+                    if (_feedback.isNotEmpty)
+                      Text(_feedback,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 20, color: _feedbackColor)),
+                  ],
                   SizedBox(height: compact ? 4.0 : AppTheme.contentSpacing),
                   SizedBox(
                       height: 50,

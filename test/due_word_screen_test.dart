@@ -296,6 +296,16 @@ testWidgets('Feedback bleibt nach Lösung stehen (kein Reload bei Tastatur-Ände
     expect(find.text('Super! Du hast es für heute geschafft.'), findsOneWidget,
         reason: 'End-Screen zeigt den Abschluss-Satz');
     expect(find.text('Keine fälligen Wörter!'), findsNothing);
+    // Der End-Screen ist wirklich leer: kein „Übersetzung:“-Label, kein
+    // Level-Text, kein Feedback – nur Abschluss-Satz und Zurück-Button.
+    expect(find.text('Übersetzung:'), findsNothing,
+        reason: 'End-Screen darf kein Antwort-Label mehr zeigen');
+    expect(find.textContaining('Level:'), findsNothing,
+        reason: 'End-Screen darf kein Level mehr zeigen');
+    expect(find.text('Richtig!'), findsNothing);
+    expect(find.text('Falsch!'), findsNothing);
+    expect(find.text('Zurück'), findsOneWidget,
+        reason: 'End-Screen hält nur den Zurück-Button');
   });
 
   testWidgets('geschütztes Leerzeichen (NBSP) zählt als Leerstelle',
