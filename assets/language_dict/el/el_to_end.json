@@ -1,0 +1,183 @@
+{
+  "infinitive": "τελειώνω",
+  "past": {
+    "translations": [
+      "εγώ τελείωσα",
+      "εσύ τελείωσες",
+      "αυτός/αυτή/αυτό τελείωσε",
+      "εμείς τελειώσαμε",
+      "εσείς τελειώσατε",
+      "αυτοί/αυτές/αυτά τελείωσαν"
+    ],
+    "examples": [
+      [
+        "Τελείωσα τη σύσκεψη.",
+        "",
+        ""
+      ],
+      [
+        "Τελείωσες τη συζήτηση.",
+        "",
+        ""
+      ],
+      [
+        "Τελείωσε την παράσταση.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώσαμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώσατε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Τελείωσαν την εκδήλωση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_teleiosa_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_teleioses_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_teleiose_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_teleiosame_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_teleiosate_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_teleiosan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_teleiosa_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_teleioses_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_teleiose_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_teleiosame_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_teleiosate_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_teleiosan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ τελειώνω",
+      "εσύ τελειώνεις",
+      "αυτός/αυτή/αυτό τελειώνει",
+      "εμείς τελειώνουμε",
+      "εσείς τελειώνετε",
+      "αυτοί/αυτές/αυτά τελειώνουν"
+    ],
+    "examples": [
+      [
+        "Τελειώνω τη σύσκεψη.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώνεις τη συζήτηση.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώνει την παράσταση.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώνουμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώνετε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Τελειώνουν την εκδήλωση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_teleiono_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_teleioneis_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_teleionei_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_teleionoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_teleionete_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_teleionoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_teleiono_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_teleioneis_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_teleionei_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_teleionoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_teleionete_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_teleionoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα τελειώσω",
+      "εσύ θα τελειώσεις",
+      "αυτός/αυτή/αυτό θα τελειώσει",
+      "εμείς θα τελειώσουμε",
+      "εσείς θα τελειώσετε",
+      "αυτοί/αυτές/αυτά θα τελειώσουν"
+    ],
+    "examples": [
+      [
+        "Θα τελειώσω τη σύσκεψη.",
+        "",
+        ""
+      ],
+      [
+        "Θα τελειώσεις τη συζήτηση.",
+        "",
+        ""
+      ],
+      [
+        "Θα τελειώσει την παράσταση.",
+        "",
+        ""
+      ],
+      [
+        "Θα τελειώσουμε το πάρτι.",
+        "",
+        ""
+      ],
+      [
+        "Θα τελειώσετε το παιχνίδι.",
+        "",
+        ""
+      ],
+      [
+        "Θα τελειώσουν την εκδήλωση.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_tha_teleioso_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_tha_teleioseis_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_tha_teleiosei_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_tha_teleiosoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_tha_teleiosete_m.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_tha_teleiosoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_end/audio_ego_tha_teleioso_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_esy_tha_teleioseis_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytosaytiayto_tha_teleiosei_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_emeis_tha_teleiosoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_eseis_tha_teleiosete_f.mp3",
+        "audio/el/verbs/el_audio_to_end/audio_aytoiaytesayta_tha_teleiosoyn_f.mp3"
+      ]
+    ]
+  }
+}

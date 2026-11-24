@@ -1,0 +1,183 @@
+{
+  "infinitive": "manger",
+  "past": {
+    "translations": [
+      "je mangeai",
+      "tu mangeas",
+      "il/elle mangea",
+      "nous mangeâmes",
+      "vous mangeâtes",
+      "ils/elles mangèrent"
+    ],
+    "examples": [
+      [
+        "Je mangeai mon petit-déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Tu mangeas ton déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Il mangea son dîner.",
+        "",
+        ""
+      ],
+      [
+        "Nous mangeâmes ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous mangeâtes une pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ils mangèrent des sushis.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mangeai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_mangeas_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mangea_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangeames_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangeates_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangerent_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je mange",
+      "tu manges",
+      "il/elle mange",
+      "nous mangeons",
+      "vous mangez",
+      "ils/elles mangent"
+    ],
+    "examples": [
+      [
+        "Je mange mon petit-déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Tu manges ton déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Il mange son dîner.",
+        "",
+        ""
+      ],
+      [
+        "Nous mangeons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous mangez une pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ils mangent des sushis.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mange_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_manges_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mange_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangeons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je mangerai",
+      "tu mangeras",
+      "il/elle mangera",
+      "nous mangerons",
+      "vous mangerez",
+      "ils/elles mangeront"
+    ],
+    "examples": [
+      [
+        "Je mangerai mon petit-déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Tu mangeras ton déjeuner.",
+        "",
+        ""
+      ],
+      [
+        "Il mangera son dîner.",
+        "",
+        ""
+      ],
+      [
+        "Nous mangerons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous mangerez une pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ils mangeront des sushis.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_eat/audio_je_mangerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_tu_mangeras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_il_elle_mangera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_nous_mangerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_vous_mangerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_eat/audio_ils_elles_mangeront_f.mp3"
+      ]
+    ]
+  }
+}

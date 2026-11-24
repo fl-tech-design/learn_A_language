@@ -1,0 +1,183 @@
+{
+  "infinitive": "ser",
+  "past": {
+    "translations": [
+      "yo era",
+      "tú eras",
+      "él/ella/usted era",
+      "nosotros/nosotras éramos",
+      "vosotros/vosotras erais",
+      "ellos/ellas/ustedes eran"
+    ],
+    "examples": [
+      [
+        "Yo estaba en el parque.",
+        "",
+        ""
+      ],
+      [
+        "Tú estabas cansado.",
+        "",
+        ""
+      ],
+      [
+        "Él estaba feliz.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros estábamos en casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros estabais tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos eran amables.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_era_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_eras_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_era_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_eramos_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_erais_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_eran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_era_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_eras_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_era_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_eramos_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_erais_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_eran_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo soy",
+      "tú eres",
+      "él/ella/usted es",
+      "nosotros/nosotras somos",
+      "vosotros/vosotras sois",
+      "ellos/ellas/ustedes son"
+    ],
+    "examples": [
+      [
+        "Yo estoy cansado.",
+        "",
+        ""
+      ],
+      [
+        "Tú eres amable.",
+        "",
+        ""
+      ],
+      [
+        "Él está feliz.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros estamos en casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros estáis tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos son amables.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_soy_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_eres_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_es_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_somos_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_sois_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_son_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_soy_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_eres_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_es_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_somos_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_sois_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_son_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo seré",
+      "tú serás",
+      "él/ella/usted será",
+      "nosotros/nosotras seremos",
+      "vosotros/vosotras seréis",
+      "ellos/ellas/ustedes serán"
+    ],
+    "examples": [
+      [
+        "Yo estaré allí.",
+        "",
+        ""
+      ],
+      [
+        "Tú serás feliz.",
+        "",
+        ""
+      ],
+      [
+        "Él estará aquí.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros estaremos allí.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros estaréis tarde.",
+        "",
+        ""
+      ],
+      [
+        "Ellos estarán listos.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_sere_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_seras_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_sera_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_seremos_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_sereis_m.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_seran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_be/audio_yo_sere_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_tu_seras_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_el_ella_usted_sera_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_nosotros_nosotras_seremos_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_vosotros_vosotras_sereis_f.mp3",
+        "audio/es/verbs/es_audio_to_be/audio_ellos_ellas_ustedes_seran_f.mp3"
+      ]
+    ]
+  }
+}

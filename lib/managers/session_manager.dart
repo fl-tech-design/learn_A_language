@@ -24,12 +24,14 @@ class SessionSnapshot {
   final String user;
   final String wordMode;
   final String? selectedCategoryId;
+  final String? activeCourseId;
   final List<SessionRoute> routes;
 
   const SessionSnapshot({
     required this.user,
     required this.wordMode,
     this.selectedCategoryId,
+    this.activeCourseId,
     required this.routes,
   });
 }
@@ -120,6 +122,7 @@ class SessionManager {
       user: user,
       wordMode: raw['wordMode']?.toString() ?? 'new',
       selectedCategoryId: raw['selectedCategoryId']?.toString(),
+      activeCourseId: raw['activeCourseId']?.toString(),
       routes: routes,
     );
   }
@@ -138,6 +141,7 @@ class SessionManager {
       'user': user,
       'wordMode': navigationState.wordMode,
       'selectedCategoryId': navigationState.selectedCategoryId,
+      'activeCourseId': navigationState.activeCourseId,
       'routes': [for (final r in routes) _encodeRoute(r)],
     };
     try {

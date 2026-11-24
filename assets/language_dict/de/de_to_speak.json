@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sprechen/audio_ich_sprach_m.mp3",
-        "audio/de/verben/sprechen/audio_du_sprachst_m.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_sprach_m.mp3",
-        "audio/de/verben/sprechen/audio_wir_sprachen_m.mp3",
-        "audio/de/verben/sprechen/audio_ihr_spracht_m.mp3",
-        "audio/de/verben/sprechen/audio_sie_sprachen_m.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_sprach_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_sprachst_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_sprach_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_sprachen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_spracht_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_sprachen_m.mp3"
       ],
       [
-        "audio/de/verben/sprechen/audio_ich_sprach_f.mp3",
-        "audio/de/verben/sprechen/audio_du_sprachst_f.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_sprach_f.mp3",
-        "audio/de/verben/sprechen/audio_wir_sprachen_f.mp3",
-        "audio/de/verben/sprechen/audio_ihr_spracht_f.mp3",
-        "audio/de/verben/sprechen/audio_sie_sprachen_f.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_sprach_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_sprachst_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_sprach_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_sprachen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_spracht_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_sprachen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sprechen/audio_ich_spreche_m.mp3",
-        "audio/de/verben/sprechen/audio_du_sprichst_m.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_spricht_m.mp3",
-        "audio/de/verben/sprechen/audio_wir_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_ihr_sprecht_m.mp3",
-        "audio/de/verben/sprechen/audio_sie_sprechen_m.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_spreche_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_sprichst_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_spricht_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_sprecht_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_sprechen_m.mp3"
       ],
       [
-        "audio/de/verben/sprechen/audio_ich_spreche_f.mp3",
-        "audio/de/verben/sprechen/audio_du_sprichst_f.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_spricht_f.mp3",
-        "audio/de/verben/sprechen/audio_wir_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_ihr_sprecht_f.mp3",
-        "audio/de/verben/sprechen/audio_sie_sprechen_f.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_spreche_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_sprichst_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_spricht_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_sprecht_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_sprechen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sprechen/audio_ich_werde_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_du_wirst_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_wird_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_wir_werden_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_ihr_werdet_sprechen_m.mp3",
-        "audio/de/verben/sprechen/audio_sie_werden_sprechen_m.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_werde_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_wirst_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_wird_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_werden_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_werdet_sprechen_m.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_werden_sprechen_m.mp3"
       ],
       [
-        "audio/de/verben/sprechen/audio_ich_werde_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_du_wirst_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_er_sie_es_wird_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_wir_werden_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_ihr_werdet_sprechen_f.mp3",
-        "audio/de/verben/sprechen/audio_sie_werden_sprechen_f.mp3"
+        "audio/de/verbs/de_audio_to_speak/audio_ich_werde_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_du_wirst_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_er_sie_es_wird_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_wir_werden_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_ihr_werdet_sprechen_f.mp3",
+        "audio/de/verbs/de_audio_to_speak/audio_sie_werden_sprechen_f.mp3"
       ]
     ]
   }

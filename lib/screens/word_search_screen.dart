@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
@@ -54,7 +56,10 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
     final vq = context.read<VocabQueries>();
-    var words = await vq.getReadWords(uname);
+    final lang = context
+        .read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter über die bestehende Kategorien-Info.
     final cat = wordCategoryById(_category);

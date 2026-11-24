@@ -1,0 +1,183 @@
+{
+  "infinitive": "ir",
+  "past": {
+    "translations": [
+      "yo fui",
+      "tú fuiste",
+      "él/ella fue",
+      "nosotros fuimos",
+      "vosotros fuisteis",
+      "ellos/ellas fueron"
+    ],
+    "examples": [
+      [
+        "Yo fui al parque.",
+        "",
+        ""
+      ],
+      [
+        "Tú fuiste a casa.",
+        "",
+        ""
+      ],
+      [
+        "Él fue a la escuela.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros fuimos de compras.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros fuisteis al cine.",
+        "",
+        ""
+      ],
+      [
+        "Ellos fueron a la fiesta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_fui_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_fuiste_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_fue_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_fuimos_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_fuisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_fueron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_fui_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_fuiste_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_fue_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_fuimos_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_fuisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_fueron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo voy",
+      "tú vas",
+      "él/ella va",
+      "nosotros vamos",
+      "vosotros vais",
+      "ellos/ellas van"
+    ],
+    "examples": [
+      [
+        "Yo voy a la escuela.",
+        "",
+        ""
+      ],
+      [
+        "Tú vas a casa.",
+        "",
+        ""
+      ],
+      [
+        "Él va al trabajo.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vamos de compras.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vais al cine.",
+        "",
+        ""
+      ],
+      [
+        "Ellos van a la fiesta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_voy_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_vas_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_va_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_vamos_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_vais_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_van_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_voy_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_vas_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_va_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_vamos_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_vais_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_van_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo iré",
+      "tú irás",
+      "él/ella irá",
+      "nosotros iremos",
+      "vosotros iréis",
+      "ellos/ellas irán"
+    ],
+    "examples": [
+      [
+        "Yo iré a la escuela.",
+        "",
+        ""
+      ],
+      [
+        "Tú irás a casa.",
+        "",
+        ""
+      ],
+      [
+        "Él irá al trabajo.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros iremos de compras.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros iréis al cine.",
+        "",
+        ""
+      ],
+      [
+        "Ellos irán a la fiesta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_ire_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_iras_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_ira_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_iremos_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_ireis_m.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_iran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_go/audio_yo_ire_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_tu_iras_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_el_ella_ira_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_nosotros_iremos_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_vosotros_ireis_f.mp3",
+        "audio/es/verbs/es_audio_to_go/audio_ellos_ellas_iran_f.mp3"
+      ]
+    ]
+  }
+}

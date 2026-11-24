@@ -1,0 +1,183 @@
+{
+  "infinitive": "мочь",
+  "past": {
+    "translations": [
+      "я мог",
+      "ты мог",
+      "он мог",
+      "мы могли",
+      "вы могли",
+      "они могли"
+    ],
+    "examples": [
+      [
+        "Я мог уйти.",
+        "",
+        ""
+      ],
+      [
+        "Ты мог остаться.",
+        "",
+        ""
+      ],
+      [
+        "Он мог играть.",
+        "",
+        ""
+      ],
+      [
+        "Мы могли уйти.",
+        "",
+        ""
+      ],
+      [
+        "Вы могли разговаривать.",
+        "",
+        ""
+      ],
+      [
+        "Они могли смеяться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_mog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_mog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_mog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_mogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_mogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_mogli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_mog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_mog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_mog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_mogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_mogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_mogli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я могу",
+      "ты можешь",
+      "он может",
+      "мы можем",
+      "вы можете",
+      "они могут"
+    ],
+    "examples": [
+      [
+        "Я могу уйти.",
+        "",
+        ""
+      ],
+      [
+        "Ты можешь остаться.",
+        "",
+        ""
+      ],
+      [
+        "Он может играть.",
+        "",
+        ""
+      ],
+      [
+        "Мы можем уйти.",
+        "",
+        ""
+      ],
+      [
+        "Вы можете разговаривать.",
+        "",
+        ""
+      ],
+      [
+        "Они могут смеяться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_mogu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_mozhesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_mozhet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_mozhem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_mozhete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_mogut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_mogu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_mozhesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_mozhet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_mozhem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_mozhete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_mogut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я смогу",
+      "ты сможешь",
+      "он сможет",
+      "мы сможем",
+      "вы сможете",
+      "они смогут"
+    ],
+    "examples": [
+      [
+        "Я смогу уйти.",
+        "",
+        ""
+      ],
+      [
+        "Ты сможешь остаться.",
+        "",
+        ""
+      ],
+      [
+        "Он сможет играть.",
+        "",
+        ""
+      ],
+      [
+        "Мы сможем уйти.",
+        "",
+        ""
+      ],
+      [
+        "Вы сможете разговаривать.",
+        "",
+        ""
+      ],
+      [
+        "Они смогут смеяться.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_smogu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_smozhesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_smozhet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_smozhem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_smozhete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_smogut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ya_smogu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_ty_smozhesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_on_smozhet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_my_smozhem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_vy_smozhete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be_allowed_to/audio_oni_smogut_f.mp3"
+      ]
+    ]
+  }
+}

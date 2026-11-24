@@ -1,0 +1,183 @@
+{
+  "infinitive": "necesitar",
+  "past": {
+    "translations": [
+      "yo necesitaba",
+      "tú necesitabas",
+      "él/ella necesitaba",
+      "nosotros necesitábamos",
+      "vosotros necesitabais",
+      "ellos/ellas necesitaban"
+    ],
+    "examples": [
+      [
+        "Necesitaba ayuda.",
+        "",
+        ""
+      ],
+      [
+        "Necesitabas tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Él necesitaba dinero.",
+        "",
+        ""
+      ],
+      [
+        "Necesitábamos apoyo.",
+        "",
+        ""
+      ],
+      [
+        "Necesitabais consejos.",
+        "",
+        ""
+      ],
+      [
+        "Necesitaban tranquilidad.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesitaba_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitabas_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesitaba_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitabamos_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitabais_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitaban_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesitaba_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitabas_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesitaba_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitabamos_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitabais_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitaban_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo necesito",
+      "tú necesitas",
+      "él/ella necesita",
+      "nosotros necesitamos",
+      "vosotros necesitáis",
+      "ellos/ellas necesitan"
+    ],
+    "examples": [
+      [
+        "Necesito ayuda.",
+        "",
+        ""
+      ],
+      [
+        "Necesitas tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Él necesita dinero.",
+        "",
+        ""
+      ],
+      [
+        "Necesitamos apoyo.",
+        "",
+        ""
+      ],
+      [
+        "Necesitáis consejos.",
+        "",
+        ""
+      ],
+      [
+        "Necesitan tranquilidad.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesito_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitas_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesita_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitamos_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitais_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesito_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitas_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesita_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitamos_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitais_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitan_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo necesitaré",
+      "tú necesitarás",
+      "él/ella necesitará",
+      "nosotros necesitaremos",
+      "vosotros necesitaréis",
+      "ellos/ellas necesitarán"
+    ],
+    "examples": [
+      [
+        "Necesitaré ayuda.",
+        "",
+        ""
+      ],
+      [
+        "Necesitarás tiempo.",
+        "",
+        ""
+      ],
+      [
+        "Él necesitará dinero.",
+        "",
+        ""
+      ],
+      [
+        "Necesitaremos apoyo.",
+        "",
+        ""
+      ],
+      [
+        "Necesitaréis consejos.",
+        "",
+        ""
+      ],
+      [
+        "Necesitarán tranquilidad.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesitare_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitaras_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesitara_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitareis_m.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitaran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_need/audio_yo_necesitare_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_tu_necesitaras_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_el_ella_necesitara_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_nosotros_necesitaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_vosotros_necesitareis_f.mp3",
+        "audio/es/verbs/es_audio_to_need/audio_ellos_ellas_necesitaran_f.mp3"
+      ]
+    ]
+  }
+}

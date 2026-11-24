@@ -1,0 +1,183 @@
+{
+  "infinitive": "gustar",
+  "past": {
+    "translations": [
+      "a mí me gustaba",
+      "a ti te gustaba",
+      "a él/ella le gustaba",
+      "a nosotros nos gustaba",
+      "a vosotros os gustaba",
+      "a ellos/ellas les gustaba"
+    ],
+    "examples": [
+      [
+        "Me gustaba el chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Te gustaba el helado.",
+        "",
+        ""
+      ],
+      [
+        "A él le gustaba la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nos gustaba la película.",
+        "",
+        ""
+      ],
+      [
+        "Os gustaba el libro.",
+        "",
+        ""
+      ],
+      [
+        "A ellos les gustaba la música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gustaba_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gustaba_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gustaba_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gustaba_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gustaba_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gustaba_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gustaba_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gustaba_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gustaba_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gustaba_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gustaba_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gustaba_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "a mí me gusta",
+      "a ti te gusta",
+      "a él/ella le gusta",
+      "a nosotros nos gusta",
+      "a vosotros os gusta",
+      "a ellos/ellas les gusta"
+    ],
+    "examples": [
+      [
+        "Me gusta el chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Te gusta el helado.",
+        "",
+        ""
+      ],
+      [
+        "A él le gusta la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nos gusta la película.",
+        "",
+        ""
+      ],
+      [
+        "Os gusta el libro.",
+        "",
+        ""
+      ],
+      [
+        "A ellos les gusta la música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gusta_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gusta_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gusta_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gusta_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gusta_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gusta_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gusta_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gusta_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gusta_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gusta_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gusta_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gusta_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "a mí me gustará",
+      "a ti te gustará",
+      "a él/ella le gustará",
+      "a nosotros nos gustará",
+      "a vosotros os gustará",
+      "a ellos/ellas les gustará"
+    ],
+    "examples": [
+      [
+        "Me gustará el chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Te gustará el helado.",
+        "",
+        ""
+      ],
+      [
+        "A él le gustará la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nos gustará la película.",
+        "",
+        ""
+      ],
+      [
+        "Os gustará el libro.",
+        "",
+        ""
+      ],
+      [
+        "A ellos les gustará la música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gustara_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gustara_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gustara_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gustara_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gustara_m.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gustara_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_like/audio_a_mi_me_gustara_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ti_te_gustara_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_el_ella_le_gustara_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_nosotros_nos_gustara_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_vosotros_os_gustara_f.mp3",
+        "audio/es/verbs/es_audio_to_like/audio_a_ellos_ellas_les_gustara_f.mp3"
+      ]
+    ]
+  }
+}

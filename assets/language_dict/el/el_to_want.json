@@ -1,0 +1,183 @@
+{
+  "infinitive": "θέλω",
+  "past": {
+    "translations": [
+      "εγώ ήθελα",
+      "εσύ ήθελες",
+      "αυτός/αυτή/αυτό ήθελε",
+      "εμείς θέλαμε",
+      "εσείς θέλατε",
+      "αυτοί/αυτές/αυτά ήθελαν"
+    ],
+    "examples": [
+      [
+        "Ήθελα ένα παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Ήθελες ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Ήθελε ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Θέλαμε ένα διάλειμμα.",
+        "",
+        ""
+      ],
+      [
+        "Θέλατε ένα σνακ.",
+        "",
+        ""
+      ],
+      [
+        "Ήθελαν ένα ποτό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_ithela_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_itheles_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_ithele_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_thelame_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_thelate_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_ithelan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_ithela_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_itheles_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_ithele_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_thelame_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_thelate_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_ithelan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ θέλω",
+      "εσύ θέλεις",
+      "αυτός/αυτή/αυτό θέλει",
+      "εμείς θέλουμε",
+      "εσείς θέλετε",
+      "αυτοί/αυτές/αυτά θέλουν"
+    ],
+    "examples": [
+      [
+        "Θέλω ένα παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Θέλεις ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Θέλει ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Θέλουμε ένα διάλειμμα.",
+        "",
+        ""
+      ],
+      [
+        "Θέλετε ένα σνακ.",
+        "",
+        ""
+      ],
+      [
+        "Θέλουν ένα ποτό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_thelo_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_theleis_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_thelei_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_theloyme_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_thelete_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_theloyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_thelo_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_theleis_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_thelei_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_theloyme_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_thelete_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_theloyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα θέλω",
+      "εσύ θα θέλεις",
+      "αυτός/αυτή/αυτό θα θέλει",
+      "εμείς θα θέλουμε",
+      "εσείς θα θέλετε",
+      "αυτοί/αυτές/αυτά θα θέλουν"
+    ],
+    "examples": [
+      [
+        "Θα θέλω ένα παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Θα θέλεις ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Θα θέλει ένα αυτοκίνητο.",
+        "",
+        ""
+      ],
+      [
+        "Θα θέλουμε ένα διάλειμμα.",
+        "",
+        ""
+      ],
+      [
+        "Θα θέλετε ένα σνακ.",
+        "",
+        ""
+      ],
+      [
+        "Θα θέλουν ένα ποτό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_tha_thelo_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_tha_theleis_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_tha_thelei_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_tha_theloyme_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_tha_thelete_m.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_tha_theloyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_want/audio_ego_tha_thelo_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_esy_tha_theleis_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytosaytiayto_tha_thelei_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_emeis_tha_theloyme_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_eseis_tha_thelete_f.mp3",
+        "audio/el/verbs/el_audio_to_want/audio_aytoiaytesayta_tha_theloyn_f.mp3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "infinitive": "comprendre",
+  "past": {
+    "translations": [
+      "j'ai compris",
+      "tu as compris",
+      "il/elle/on a compris",
+      "nous avons compris",
+      "vous avez compris",
+      "ils/elles ont compris"
+    ],
+    "examples": [
+      [
+        "J'ai compris la question.",
+        "",
+        ""
+      ],
+      [
+        "Tu as compris le problème.",
+        "",
+        ""
+      ],
+      [
+        "Il a compris la situation.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons compris le plan.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez compris la tâche.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont compris les règles.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_understand/audio_jai_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_as_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_a_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_avons_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_avez_compris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_ont_compris_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je comprends",
+      "tu comprends",
+      "il/elle/on comprend",
+      "nous comprenons",
+      "vous comprenez",
+      "ils/elles comprennent"
+    ],
+    "examples": [
+      [
+        "Je comprends la question.",
+        "",
+        ""
+      ],
+      [
+        "Tu comprends le problème.",
+        "",
+        ""
+      ],
+      [
+        "Il comprend la situation.",
+        "",
+        ""
+      ],
+      [
+        "Nous comprenons le plan.",
+        "",
+        ""
+      ],
+      [
+        "Vous comprenez la tâche.",
+        "",
+        ""
+      ],
+      [
+        "Ils comprennent les règles.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_understand/audio_je_comprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_comprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_comprend_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_comprenons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_comprenez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_comprennent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je comprendrai",
+      "tu comprendras",
+      "il/elle/on comprendra",
+      "nous comprendrons",
+      "vous comprendrez",
+      "ils/elles comprendront"
+    ],
+    "examples": [
+      [
+        "Je comprendrai la question.",
+        "",
+        ""
+      ],
+      [
+        "Tu comprendras le problème.",
+        "",
+        ""
+      ],
+      [
+        "Il comprendra la situation.",
+        "",
+        ""
+      ],
+      [
+        "Nous comprendrons le plan.",
+        "",
+        ""
+      ],
+      [
+        "Vous comprendrez la tâche.",
+        "",
+        ""
+      ],
+      [
+        "Ils comprendront les règles.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_understand/audio_je_comprendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_tu_comprendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_il_elle_on_comprendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_nous_comprendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_vous_comprendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_understand/audio_ils_elles_comprendront_f.mp3"
+      ]
+    ]
+  }
+}

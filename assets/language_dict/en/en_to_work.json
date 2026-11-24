@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to work/audio_i_worked_m.mp3",
-        "audio/en/to work/audio_you_worked_m.mp3",
-        "audio/en/to work/audio_he_she_it_worked_m.mp3",
-        "audio/en/to work/audio_we_worked_m.mp3",
-        "audio/en/to work/audio_you_worked_(pl)_m.mp3",
-        "audio/en/to work/audio_they_worked_m.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_worked_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_worked_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_worked_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_worked_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_worked_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_worked_m.mp3"
       ],
       [
-        "audio/en/to work/audio_i_worked_f.mp3",
-        "audio/en/to work/audio_you_worked_f.mp3",
-        "audio/en/to work/audio_he_she_it_worked_f.mp3",
-        "audio/en/to work/audio_we_worked_f.mp3",
-        "audio/en/to work/audio_you_worked_(pl)_f.mp3",
-        "audio/en/to work/audio_they_worked_f.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_worked_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_worked_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_worked_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_worked_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_worked_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_worked_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to work/audio_i_work_m.mp3",
-        "audio/en/to work/audio_you_work_m.mp3",
-        "audio/en/to work/audio_he_she_it_works_m.mp3",
-        "audio/en/to work/audio_we_work_m.mp3",
-        "audio/en/to work/audio_you_work_(pl)_m.mp3",
-        "audio/en/to work/audio_they_work_m.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_works_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_work_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_work_m.mp3"
       ],
       [
-        "audio/en/to work/audio_i_work_f.mp3",
-        "audio/en/to work/audio_you_work_f.mp3",
-        "audio/en/to work/audio_he_she_it_works_f.mp3",
-        "audio/en/to work/audio_we_work_f.mp3",
-        "audio/en/to work/audio_you_work_(pl)_f.mp3",
-        "audio/en/to work/audio_they_work_f.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_works_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_work_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_work_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to work/audio_i_will_work_m.mp3",
-        "audio/en/to work/audio_you_will_work_m.mp3",
-        "audio/en/to work/audio_he_she_it_will_work_m.mp3",
-        "audio/en/to work/audio_we_will_work_m.mp3",
-        "audio/en/to work/audio_you_will_work_(pl)_m.mp3",
-        "audio/en/to work/audio_they_will_work_m.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_will_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_will_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_will_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_will_work_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_will_work_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_will_work_m.mp3"
       ],
       [
-        "audio/en/to work/audio_i_will_work_f.mp3",
-        "audio/en/to work/audio_you_will_work_f.mp3",
-        "audio/en/to work/audio_he_she_it_will_work_f.mp3",
-        "audio/en/to work/audio_we_will_work_f.mp3",
-        "audio/en/to work/audio_you_will_work_(pl)_f.mp3",
-        "audio/en/to work/audio_they_will_work_f.mp3"
+        "audio/en/verbs/en_audio_to_work/audio_i_will_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_will_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_he_she_it_will_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_we_will_work_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_you_will_work_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_work/audio_they_will_work_f.mp3"
       ]
     ]
   }

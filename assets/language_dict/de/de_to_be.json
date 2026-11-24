@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sein/audio_ich_war_m.mp3",
-        "audio/de/verben/sein/audio_du_warst_m.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_war_m.mp3",
-        "audio/de/verben/sein/audio_wir_waren_m.mp3",
-        "audio/de/verben/sein/audio_ihr_wart_m.mp3",
-        "audio/de/verben/sein/audio_sie_waren_m.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_war_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_warst_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_war_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_waren_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_wart_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_waren_m.mp3"
       ],
       [
-        "audio/de/verben/sein/audio_ich_war_f.mp3",
-        "audio/de/verben/sein/audio_du_warst_f.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_war_f.mp3",
-        "audio/de/verben/sein/audio_wir_waren_f.mp3",
-        "audio/de/verben/sein/audio_ihr_wart_f.mp3",
-        "audio/de/verben/sein/audio_sie_waren_f.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_war_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_warst_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_war_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_waren_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_wart_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_waren_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sein/audio_ich_bin_m.mp3",
-        "audio/de/verben/sein/audio_du_bist_m.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_ist_m.mp3",
-        "audio/de/verben/sein/audio_wir_sind_m.mp3",
-        "audio/de/verben/sein/audio_ihr_seid_m.mp3",
-        "audio/de/verben/sein/audio_sie_sind_m.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_bin_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_bist_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_ist_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_sind_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_seid_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_sind_m.mp3"
       ],
       [
-        "audio/de/verben/sein/audio_ich_bin_f.mp3",
-        "audio/de/verben/sein/audio_du_bist_f.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_ist_f.mp3",
-        "audio/de/verben/sein/audio_wir_sind_f.mp3",
-        "audio/de/verben/sein/audio_ihr_seid_f.mp3",
-        "audio/de/verben/sein/audio_sie_sind_f.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_bin_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_bist_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_ist_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_sind_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_seid_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_sind_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sein/audio_ich_werde_sein_m.mp3",
-        "audio/de/verben/sein/audio_du_wirst_sein_m.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_wird_sein_m.mp3",
-        "audio/de/verben/sein/audio_wir_werden_sein_m.mp3",
-        "audio/de/verben/sein/audio_ihr_werdet_sein_m.mp3",
-        "audio/de/verben/sein/audio_sie_werden_sein_m.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_werde_sein_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_wirst_sein_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_wird_sein_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_werden_sein_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_werdet_sein_m.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_werden_sein_m.mp3"
       ],
       [
-        "audio/de/verben/sein/audio_ich_werde_sein_f.mp3",
-        "audio/de/verben/sein/audio_du_wirst_sein_f.mp3",
-        "audio/de/verben/sein/audio_er_sie_es_wird_sein_f.mp3",
-        "audio/de/verben/sein/audio_wir_werden_sein_f.mp3",
-        "audio/de/verben/sein/audio_ihr_werdet_sein_f.mp3",
-        "audio/de/verben/sein/audio_sie_werden_sein_f.mp3"
+        "audio/de/verbs/de_audio_to_be/audio_ich_werde_sein_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_du_wirst_sein_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_er_sie_es_wird_sein_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_wir_werden_sein_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_ihr_werdet_sein_f.mp3",
+        "audio/de/verbs/de_audio_to_be/audio_sie_werden_sein_f.mp3"
       ]
     ]
   }

@@ -53,12 +53,14 @@ class UserState extends ChangeNotifier {
     }
 
     _userData = loaded;
-    // Wörterbuch-Quelle sind IMMER die aktuellen Asset-Dicts: Das eventuell
-    // eingebettete language-Feld leert initVocabForUser statt es als Quelle
-    // zu nutzen. Genau ein Init- + Migrationslauf pro Login/Auto-Login.
-    await _vocabManager.initVocabForUser(username, const {});
-    await _vocabManager.migrateVocabForUser(username);
-    log('login: einmaliger Vocab-Init + Migrationslauf für $username');
+    // Wortschatz für alle Kurssprachen sicherstellen (Wörterbuch-Quelle sind
+    // IMMER die aktuellen Asset-Dicts). Genau ein Init- + Migrationslauf pro
+    // Login/Auto-Login und Sprache.
+    for (final lang in _courseLanguages(loaded)) {
+      await _vocabManager.initVocabForUser(username, lang, loaded.mLang);
+      await _vocabManager.migrateVocabForUser(username, lang, loaded.mLang);
+    }
+    log('login: Vocab-Init + Migration für $username');
 
     await _loadUserData(username);
     await _autoSelectCourses(username);
@@ -89,10 +91,8 @@ class UserState extends ChangeNotifier {
       return 'Benutzer konnte nicht registriert werden (ungültiger Name).';
     }
 
-    final targetLang = mLang == 'de' ? 'en' : 'de';
-    final langDict = await _vocabManager.loadLanguageDictFromDir(targetLang);
-    await _vocabManager.initVocabForUser(username, langDict);
-    await _vocabManager.migrateVocabForUser(username);
+    // Kein automatischer Zielsprachen-Init mehr: Der Wortschatz entsteht,
+    // sobald der Nutzer einen Kurs (und damit eine Kurssprache) hinzufügt.
 
     await _loadUserData(username);
     notifyListeners();
@@ -138,14 +138,15 @@ class UserState extends ChangeNotifier {
   }
 
   /// Auto-selects courses for existing users who have vocab but no courses.
+  /// (Legacy-Migration: ableitet Kurse aus den vorhandenen Kurssprachen.)
   Future<void> _autoSelectCourses(String username) async {
     if (_userData == null) return;
     if (_userData!.selectedCourses.isNotEmpty) return;
-    if (_userData!.vocab.isEmpty) return;
+    if (_userData!.vocabByLang.isEmpty) return;
 
-    final targetLang = _userData!.mLang == 'de' ? 'en' : 'de';
+    final langs = _userData!.vocabByLang.keys.toList();
     final derived = availableCourses.entries
-        .where((e) => e.value.languageCode == targetLang)
+        .where((e) => langs.contains(e.value.languageCode))
         .map((e) => e.key)
         .toList();
     if (derived.isEmpty) return;
@@ -159,14 +160,15 @@ class UserState extends ChangeNotifier {
   }
   // ── Course management ─────────────────────────────────────────
 
-  /// Returns the user's selected course IDs, or auto-derives from target lang.
+  /// Returns the user's selected course IDs, or auto-derives from the
+  /// languages present in the vocabulary (Legacy-Migration).
   List<String> get selectedCourseIds {
     final fromUser = _userData?.selectedCourses ?? [];
     if (fromUser.isNotEmpty) return fromUser;
-    if (_userData?.vocab.isNotEmpty ?? false) {
-      final targetLang = _userData!.mLang == 'de' ? 'en' : 'de';
+    final langs = _userData?.vocabByLang.keys ?? const <String>[];
+    if (langs.isNotEmpty) {
       final derived = availableCourses.entries
-          .where((e) => e.value.languageCode == targetLang)
+          .where((e) => langs.contains(e.value.languageCode))
           .map((e) => e.key)
           .toList();
       if (derived.isNotEmpty) return derived;
@@ -209,11 +211,17 @@ class UserState extends ChangeNotifier {
     current.add(courseId);
 
     final uname = _userData!.uName;
+    final course = availableCourses[courseId]!;
     if (uname.isNotEmpty) {
       final userData = await _loadSafe(uname);
       if (userData == null) return;
       final updated = userData.copyWith(selectedCourses: current);
       await _saveSafe(uname, updated);
+      // Wortschatz der neuen Kurssprache sicherstellen (Schrift + Audio).
+      await _vocabManager.initVocabForUser(
+          uname, course.languageCode, userData.mLang);
+      await _vocabManager.migrateVocabForUser(
+          uname, course.languageCode, userData.mLang);
       await _loadUserData(uname);
       notifyListeners();
     }
@@ -246,17 +254,20 @@ class UserState extends ChangeNotifier {
     final progress = Map<String, int>.from(userData.progress);
     progress[course.level] = 0;
 
-    // Vokabeln nur löschen, wenn kein weiterer Kurs derselben Sprache bleibt.
+    // Wortschatz einer Sprache nur löschen, wenn kein weiterer Kurs derselben
+    // Sprache übrig bleibt. Dann wird der komplette Sprach-Bucket entfernt.
     final hasSameLangRemaining = current.any((id) =>
         availableCourses[id]?.languageCode == course.languageCode);
-    final targetLang = userData.mLang == 'de' ? 'en' : 'de';
+    final vocabByLang =
+        Map<String, Map<String, VocabEntry>>.from(userData.vocabByLang);
     final clearVocab = !hasSameLangRemaining &&
-        course.languageCode == targetLang;
+        vocabByLang.containsKey(course.languageCode);
+    if (clearVocab) vocabByLang.remove(course.languageCode);
 
     final updated = userData.copyWith(
       selectedCourses: current,
       progress: progress,
-      vocab: clearVocab ? const {} : userData.vocab,
+      vocabByLang: clearVocab ? vocabByLang : null,
     );
     await _saveSafe(uname, updated);
     await _loadUserData(uname);
@@ -267,5 +278,34 @@ class UserState extends ChangeNotifier {
   /// Momentan nur A1; wird aktiv für alle Levels, sobald die Daten sortiert sind.
   bool courseHasContent(LanguageCourse course) {
     return activeCourseLevels.contains(course.level);
+  }
+
+  /// Alle Zielsprachen, für die dieser Nutzer Kurse gewählt hat (Fallback:
+  /// vorhandene Wortschatz-Sprachen). Dient dem Vocab-Init beim Login.
+  Set<String> _courseLanguages(UserData ud) {
+    final langs = <String>{};
+    for (final id in ud.selectedCourses) {
+      final c = availableCourses[id];
+      if (c != null) langs.add(c.languageCode);
+    }
+    if (langs.isEmpty) langs.addAll(ud.vocabByLang.keys);
+    return langs;
+  }
+
+  /// Ändert die Muttersprache eines Nutzers. Die Muttersprache steuert die
+  /// Übersetzungsrichtung (`translation`/`examplesNative`) aller Kurs-
+  /// Vokabeln; Level/Status/Fortschritt bleiben erhalten. Der Wortschatz wird
+  /// per Migration neu aus den Wörterbüchern aufgebaut.
+  Future<void> changeMotherTongue(String newMLang) async {
+    final uname = _userData?.uName;
+    if (uname == null || uname.isEmpty) return;
+    final ud = await _loadSafe(uname);
+    if (ud == null) return;
+    await _saveSafe(uname, ud.copyWith(mLang: newMLang));
+    for (final lang in ud.vocabByLang.keys.toList()) {
+      await _vocabManager.migrateVocabForUser(uname, lang, newMLang);
+    }
+    await _loadUserData(uname);
+    notifyListeners();
   }
 }

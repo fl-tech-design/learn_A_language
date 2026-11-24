@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/helfen/audio_ich_half_m.mp3",
-        "audio/de/verben/helfen/audio_du_halfst_m.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_half_m.mp3",
-        "audio/de/verben/helfen/audio_wir_halfen_m.mp3",
-        "audio/de/verben/helfen/audio_ihr_halft_m.mp3",
-        "audio/de/verben/helfen/audio_sie_halfen_m.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_half_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_halfst_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_half_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_halfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_halft_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_halfen_m.mp3"
       ],
       [
-        "audio/de/verben/helfen/audio_ich_half_f.mp3",
-        "audio/de/verben/helfen/audio_du_halfst_f.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_half_f.mp3",
-        "audio/de/verben/helfen/audio_wir_halfen_f.mp3",
-        "audio/de/verben/helfen/audio_ihr_halft_f.mp3",
-        "audio/de/verben/helfen/audio_sie_halfen_f.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_half_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_halfst_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_half_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_halfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_halft_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_halfen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/helfen/audio_ich_helfe_m.mp3",
-        "audio/de/verben/helfen/audio_du_hilfst_m.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_hilft_m.mp3",
-        "audio/de/verben/helfen/audio_wir_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_ihr_helft_m.mp3",
-        "audio/de/verben/helfen/audio_sie_helfen_m.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_helfe_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_hilfst_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_hilft_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_helft_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_helfen_m.mp3"
       ],
       [
-        "audio/de/verben/helfen/audio_ich_helfe_f.mp3",
-        "audio/de/verben/helfen/audio_du_hilfst_f.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_hilft_f.mp3",
-        "audio/de/verben/helfen/audio_wir_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_ihr_helft_f.mp3",
-        "audio/de/verben/helfen/audio_sie_helfen_f.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_helfe_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_hilfst_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_hilft_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_helft_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_helfen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/helfen/audio_ich_werde_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_du_wirst_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_wird_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_wir_werden_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_ihr_werdet_helfen_m.mp3",
-        "audio/de/verben/helfen/audio_sie_werden_helfen_m.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_werde_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_wirst_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_wird_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_werden_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_werdet_helfen_m.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_werden_helfen_m.mp3"
       ],
       [
-        "audio/de/verben/helfen/audio_ich_werde_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_du_wirst_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_er_sie_es_wird_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_wir_werden_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_ihr_werdet_helfen_f.mp3",
-        "audio/de/verben/helfen/audio_sie_werden_helfen_f.mp3"
+        "audio/de/verbs/de_audio_to_help/audio_ich_werde_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_du_wirst_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_er_sie_es_wird_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_wir_werden_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_ihr_werdet_helfen_f.mp3",
+        "audio/de/verbs/de_audio_to_help/audio_sie_werden_helfen_f.mp3"
       ]
     ]
   }

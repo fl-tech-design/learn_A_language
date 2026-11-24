@@ -1,0 +1,183 @@
+{
+  "infinitive": "terminer",
+  "past": {
+    "translations": [
+      "j'ai terminé",
+      "tu as terminé",
+      "il/elle a terminé",
+      "nous avons terminé",
+      "vous avez terminé",
+      "ils/elles ont terminé"
+    ],
+    "examples": [
+      [
+        "J'ai terminé la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Tu as terminé la conversation.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle a terminé le spectacle.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons terminé la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez terminé le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles ont terminé l'événement.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_end/audio_jai_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_as_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_a_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_avons_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_avez_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_ont_termine_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je termine",
+      "tu termines",
+      "il/elle termine",
+      "nous terminons",
+      "vous terminez",
+      "ils/elles terminent"
+    ],
+    "examples": [
+      [
+        "Je termine la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Tu termines la conversation.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle termine le spectacle.",
+        "",
+        ""
+      ],
+      [
+        "Nous terminons la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous terminez le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles terminent l'événement.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_end/audio_je_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_termines_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_termine_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_terminons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_terminez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_terminent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je terminerai",
+      "tu termineras",
+      "il/elle terminera",
+      "nous terminerons",
+      "vous terminerez",
+      "ils/elles termineront"
+    ],
+    "examples": [
+      [
+        "Je terminerai la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Tu termineras la conversation.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle terminera le spectacle.",
+        "",
+        ""
+      ],
+      [
+        "Nous terminerons la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous terminerez le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles termineront l'événement.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_end/audio_je_terminerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_tu_termineras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_il_elle_terminera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_nous_terminerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_vous_terminerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_end/audio_ils_elles_termineront_f.mp3"
+      ]
+    ]
+  }
+}

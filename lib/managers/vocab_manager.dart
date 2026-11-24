@@ -15,9 +15,17 @@ abstract class VocabManager {
   Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
   List<LangDictWord> extractAllWordsFromLanguageDict(
       Map<String, dynamic> languageDict);
+  /// Füllt den Wortschatz von [username] für die Zielsprache [langCode] mit
+  /// vorhandenen Asset-Daten. [nativeLang] ist die Muttersprache und bestimmt
+  /// die Übersetzungsrichtung (`translation`/`examplesNative`). Bestehende
+  /// Einträge (Level/Status) bleiben unangetastet.
   Future<void> initVocabForUser(
-      String username, Map<String, dynamic> languageDict);
-  Future<void> migrateVocabForUser(String username);
+      String username, String langCode, String nativeLang);
+  /// Migriert/synchronisiert den Wortschatz von [username] für [langCode]
+  /// gegen die aktuellen Asset-Dicts (Zielsprache [langCode],
+  /// Übersetzungsrichtung [nativeLang]).
+  Future<void> migrateVocabForUser(
+      String username, String langCode, String nativeLang);
 }
 
 /// Concrete implementation backed by [UserManager] and [FileService].
@@ -140,24 +148,22 @@ class VocabManagerImpl implements VocabManager {
 
   @override
   Future<void> initVocabForUser(
-      String username, Map<String, dynamic> languageDict) async {
+      String username, String langCode, String nativeLang) async {
     final ud = await _loadSafe(username);
-    if (ud == null) return;
+    if (ud == null || langCode.isEmpty) return;
 
-    var langDict = languageDict;
-    if (langDict.isEmpty) {
-      // Zielsprache des Users (Gegensprache zur Muttersprache).
-      final targetLang = ud.mLang == 'de' ? 'en' : 'de';
-      langDict = await loadLanguageDictFromDir(targetLang);
-      if (langDict.isEmpty) return;
-    }
+    final langDict = await loadLanguageDictFromDir(langCode);
+    if (langDict.isEmpty) return;
 
+    // Zielsprache des Kurses (z. B. 'de', 'en', 'fr') – NICHT aus der
+    // Muttersprache abgeleitet.
     final targetWords = extractAllWordsFromLanguageDict(langDict);
 
+    // Übersetzungsrichtung über die Muttersprache.
     final nativeWords = <String, String>{};
     final nativeExamples = <String, List<String>>{};
-    if (ud.mLang.isNotEmpty) {
-      final nativeDict = await loadLanguageDictFromDir(ud.mLang);
+    if (nativeLang.isNotEmpty) {
+      final nativeDict = await loadLanguageDictFromDir(nativeLang);
       if (nativeDict.isNotEmpty) {
         for (final nw in extractAllWordsFromLanguageDict(nativeDict)) {
           nativeWords[nw.key] = nw.translation;
@@ -168,12 +174,13 @@ class VocabManagerImpl implements VocabManager {
 
     // Bestehende Einträge UNVERÄNDERT behalten (Fortschritt/Level/Status),
     // nur fehlende Kurs-Wörter als neue Wörter ergänzen (idempotent; ersetzt
-    // das frühere early-exit bei vollem vocab).
+    // das frühere early-exit bei vollem vocab). Je Zielsprache getrennt.
+    final langVocab = Map<String, VocabEntry>.from(
+        ud.vocabByLang[langCode] ?? const <String, VocabEntry>{});
     var changed = false;
-    final vocab = Map<String, VocabEntry>.from(ud.vocab);
     for (final tw in targetWords) {
-      if (vocab.containsKey(tw.key)) continue;
-      vocab[tw.key] = VocabEntry(
+      if (langVocab.containsKey(tw.key)) continue;
+      langVocab[tw.key] = VocabEntry(
         key: tw.key,
         word: tw.translation,
         translation: nativeWords[tw.key] ?? tw.translation,
@@ -185,31 +192,32 @@ class VocabManagerImpl implements VocabManager {
 
     // Eingebettetes language-Feld einmalig leeren, damit künftig IMMER die
     // aktuellen Asset-Dicts als Quelle dienen (bisher übernahm es login).
-    // Leeren auch dann, wenn vocab bereits vollständig war – andernfalls würde
-    // ein Alt-User mit vollem vocab sein Feld nie los. Der Fortschritt liegt
-    // separat in `vocab` und geht durch das Leeren nicht verloren.
     final clearLanguage = ud.language.isNotEmpty;
     if (changed || clearLanguage) {
+      final vocabByLang =
+          Map<String, Map<String, VocabEntry>>.from(ud.vocabByLang)
+            ..[langCode] = langVocab;
       await _saveSafe(username, ud.copyWith(
-        vocab: vocab,
+        vocabByLang: vocabByLang,
         language: clearLanguage ? const {} : ud.language,
       ));
     }
   }
 
   @override
-  Future<void> migrateVocabForUser(String username) async {
+  Future<void> migrateVocabForUser(
+      String username, String langCode, String nativeLang) async {
     final ud = await _loadSafe(username);
     if (ud == null) return;
-    if (ud.vocab.isEmpty) return;
+    final langVocab = ud.vocabByLang[langCode];
+    if (langVocab == null || langVocab.isEmpty) return;
 
-    final vocabMap = Map<String, VocabEntry>.from(ud.vocab);
+    final vocabMap = Map<String, VocabEntry>.from(langVocab);
     var changed = false;
-    final targetLang = ud.mLang == 'de' ? 'en' : 'de';
 
     final targetWordsMap = <String, String>{};
     final targetWordObjects = <String, LangDictWord>{};
-    final targetDict = await loadLanguageDictFromDir(targetLang);
+    final targetDict = await loadLanguageDictFromDir(langCode);
     if (targetDict.isNotEmpty) {
       for (final tw in extractAllWordsFromLanguageDict(targetDict)) {
         targetWordsMap[tw.key] = tw.translation;
@@ -219,8 +227,8 @@ class VocabManagerImpl implements VocabManager {
 
     final nativeWords = <String, String>{};
     final nativeWordsMap = <String, LangDictWord>{};
-    if (ud.mLang.isNotEmpty) {
-      final nativeDict = await loadLanguageDictFromDir(ud.mLang);
+    if (nativeLang.isNotEmpty) {
+      final nativeDict = await loadLanguageDictFromDir(nativeLang);
       if (nativeDict.isNotEmpty) {
         for (final nw in extractAllWordsFromLanguageDict(nativeDict)) {
           nativeWords[nw.key] = nw.translation;
@@ -343,7 +351,10 @@ class VocabManagerImpl implements VocabManager {
     }
 
     if (changed) {
-      await _saveSafe(username, ud.copyWith(vocab: vocabMap));
+      final vocabByLang =
+          Map<String, Map<String, VocabEntry>>.from(ud.vocabByLang)
+            ..[langCode] = vocabMap;
+      await _saveSafe(username, ud.copyWith(vocabByLang: vocabByLang));
     }
   }
 }

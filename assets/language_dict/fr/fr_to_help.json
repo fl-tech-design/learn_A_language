@@ -1,0 +1,183 @@
+{
+  "infinitive": "aider",
+  "past": {
+    "translations": [
+      "j'ai aidé",
+      "tu as aidé",
+      "il/elle a aidé",
+      "nous avons aidé",
+      "vous avez aidé",
+      "ils/elles ont aidé"
+    ],
+    "examples": [
+      [
+        "J'ai aidé mon ami.",
+        "",
+        ""
+      ],
+      [
+        "Tu as aidé ta sœur.",
+        "",
+        ""
+      ],
+      [
+        "Il a aidé son voisin.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons aidé le professeur.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez aidé l'équipe.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont aidé l'élève.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_help/audio_jai_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_tu_as_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_il_elle_a_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_nous_avons_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_vous_avez_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_ils_elles_ont_aide_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'aide",
+      "tu aides",
+      "il/elle aide",
+      "nous aidons",
+      "vous aidez",
+      "ils/elles aident"
+    ],
+    "examples": [
+      [
+        "J'aide mon ami.",
+        "",
+        ""
+      ],
+      [
+        "Tu aides ta sœur.",
+        "",
+        ""
+      ],
+      [
+        "Il aide son voisin.",
+        "",
+        ""
+      ],
+      [
+        "Nous aidons le professeur.",
+        "",
+        ""
+      ],
+      [
+        "Vous aidez l'équipe.",
+        "",
+        ""
+      ],
+      [
+        "Ils aident l'élève.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_help/audio_jaide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_tu_aides_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_il_elle_aide_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_nous_aidons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_vous_aidez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_ils_elles_aident_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'aiderai",
+      "tu aideras",
+      "il/elle aidera",
+      "nous aiderons",
+      "vous aiderez",
+      "ils/elles aideront"
+    ],
+    "examples": [
+      [
+        "J'aiderai mon ami.",
+        "",
+        ""
+      ],
+      [
+        "Tu aideras ta sœur.",
+        "",
+        ""
+      ],
+      [
+        "Il aidera son voisin.",
+        "",
+        ""
+      ],
+      [
+        "Nous aiderons le professeur.",
+        "",
+        ""
+      ],
+      [
+        "Vous aiderez l'équipe.",
+        "",
+        ""
+      ],
+      [
+        "Ils aideront l'élève.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_help/audio_jaiderai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_tu_aideras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_il_elle_aidera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_nous_aiderons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_vous_aiderez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_help/audio_ils_elles_aideront_f.mp3"
+      ]
+    ]
+  }
+}

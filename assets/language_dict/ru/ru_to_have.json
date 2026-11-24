@@ -1,0 +1,183 @@
+{
+  "infinitive": "иметь",
+  "past": {
+    "translations": [
+      "я имел",
+      "ты имел",
+      "он имел",
+      "мы имели",
+      "вы имели",
+      "они имели"
+    ],
+    "examples": [
+      [
+        "У меня была собака.",
+        "",
+        ""
+      ],
+      [
+        "У тебя была машина.",
+        "",
+        ""
+      ],
+      [
+        "У него была книга.",
+        "",
+        ""
+      ],
+      [
+        "У нас было время.",
+        "",
+        ""
+      ],
+      [
+        "Вам было весело.",
+        "",
+        ""
+      ],
+      [
+        "У них был дом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_imel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_imel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_imel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_imeli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_imeli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_imeli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_imel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_imel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_imel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_imeli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_imeli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_imeli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я имею",
+      "ты имеешь",
+      "он имеет",
+      "мы имеем",
+      "вы имеете",
+      "они имеют"
+    ],
+    "examples": [
+      [
+        "У меня есть кошка.",
+        "",
+        ""
+      ],
+      [
+        "У тебя есть ручка.",
+        "",
+        ""
+      ],
+      [
+        "У него есть велосипед.",
+        "",
+        ""
+      ],
+      [
+        "У нас есть время.",
+        "",
+        ""
+      ],
+      [
+        "Вам весело.",
+        "",
+        ""
+      ],
+      [
+        "У них есть дом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_imeyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_imeesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_imeet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_imeem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_imeete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_imeyut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_imeyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_imeesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_imeet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_imeem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_imeete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_imeyut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду иметь",
+      "ты будешь иметь",
+      "он будет иметь",
+      "мы будем иметь",
+      "вы будете иметь",
+      "они будут иметь"
+    ],
+    "examples": [
+      [
+        "У меня будет машина.",
+        "",
+        ""
+      ],
+      [
+        "У тебя будет время.",
+        "",
+        ""
+      ],
+      [
+        "У него будет велосипед.",
+        "",
+        ""
+      ],
+      [
+        "Нам будет весело.",
+        "",
+        ""
+      ],
+      [
+        "У вас будет дом.",
+        "",
+        ""
+      ],
+      [
+        "У них будет время.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_budu_imet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_budesh_imet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_budet_imet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_budem_imet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_budete_imet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_budut_imet_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_have/audio_ya_budu_imet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_ty_budesh_imet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_on_budet_imet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_my_budem_imet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_vy_budete_imet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_have/audio_oni_budut_imet_f.mp3"
+      ]
+    ]
+  }
+}

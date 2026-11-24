@@ -1,0 +1,183 @@
+{
+  "infinitive": "γράφω",
+  "past": {
+    "translations": [
+      "εγώ έγραφα",
+      "εσύ έγραφες",
+      "αυτός/αυτή/αυτό έγραφε",
+      "εμείς γράφαμε",
+      "εσείς γράφατε",
+      "αυτοί/αυτές/αυτά έγραφαν"
+    ],
+    "examples": [
+      [
+        "Έγραφα ένα γράμμα.",
+        "",
+        ""
+      ],
+      [
+        "Έγραφες μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Έγραφε ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Γράφαμε ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Γράφατε μια σημείωση.",
+        "",
+        ""
+      ],
+      [
+        "Έγραφαν μια αναφορά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_egrafa_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_egrafes_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_egrafe_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_grafame_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_grafate_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_egrafan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_egrafa_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_egrafes_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_egrafe_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_grafame_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_grafate_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_egrafan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ γράφω",
+      "εσύ γράφεις",
+      "αυτός/αυτή/αυτό γράφει",
+      "εμείς γράφουμε",
+      "εσείς γράφετε",
+      "αυτοί/αυτές/αυτά γράφουν"
+    ],
+    "examples": [
+      [
+        "Γράφω ένα γράμμα.",
+        "",
+        ""
+      ],
+      [
+        "Γράφεις μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Γράφει ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Γράφουμε ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Γράφετε μια σημείωση.",
+        "",
+        ""
+      ],
+      [
+        "Γράφουν μια αναφορά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_grafo_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_grafeis_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_grafei_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_grafoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_grafete_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_grafoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_grafo_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_grafeis_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_grafei_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_grafoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_grafete_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_grafoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα γράψω",
+      "εσύ θα γράψεις",
+      "αυτός/αυτή/αυτό θα γράψει",
+      "εμείς θα γράψουμε",
+      "εσείς θα γράψετε",
+      "αυτοί/αυτές/αυτά θα γράψουν"
+    ],
+    "examples": [
+      [
+        "Θα γράψω ένα γράμμα.",
+        "",
+        ""
+      ],
+      [
+        "Θα γράψεις μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Θα γράψει ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Θα γράψουμε ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Θα γράψετε μια σημείωση.",
+        "",
+        ""
+      ],
+      [
+        "Θα γράψουν μια αναφορά.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_tha_grapso_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_tha_grapseis_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_tha_grapsei_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_tha_grapsoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_tha_grapsete_m.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_tha_grapsoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_write/audio_ego_tha_grapso_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_esy_tha_grapseis_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytosaytiayto_tha_grapsei_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_emeis_tha_grapsoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_eseis_tha_grapsete_f.mp3",
+        "audio/el/verbs/el_audio_to_write/audio_aytoiaytesayta_tha_grapsoyn_f.mp3"
+      ]
+    ]
+  }
+}

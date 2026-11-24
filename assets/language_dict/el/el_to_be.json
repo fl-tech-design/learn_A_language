@@ -1,0 +1,183 @@
+{
+  "infinitive": "είμαι",
+  "past": {
+    "translations": [
+      "εγώ ήμουν",
+      "εσύ ήσουν",
+      "αυτός/αυτή/αυτό ήταν",
+      "εμείς ήμασταν",
+      "εσείς ήσασταν",
+      "αυτοί/αυτές/αυτά ήταν"
+    ],
+    "examples": [
+      [
+        "Ήμουν στο πάρκο.",
+        "",
+        ""
+      ],
+      [
+        "Ήσουν κουρασμένος.",
+        "",
+        ""
+      ],
+      [
+        "Ήταν ευτυχισμένος.",
+        "",
+        ""
+      ],
+      [
+        "Ήμασταν στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Ήσασταν αργοπορημένοι.",
+        "",
+        ""
+      ],
+      [
+        "Ήταν φιλικοί.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_imoyn_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_isoyn_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_itan_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_imastan_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_isastan_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_itan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_imoyn_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_isoyn_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_itan_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_imastan_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_isastan_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_itan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ είμαι",
+      "εσύ είσαι",
+      "αυτός/αυτή/αυτό είναι",
+      "εμείς είμαστε",
+      "εσείς είστε",
+      "αυτοί/αυτές/αυτά είναι"
+    ],
+    "examples": [
+      [
+        "Είμαι κουρασμένος.",
+        "",
+        ""
+      ],
+      [
+        "Είσαι φιλικός.",
+        "",
+        ""
+      ],
+      [
+        "Είναι ευτυχισμένος.",
+        "",
+        ""
+      ],
+      [
+        "Είμαστε στο σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Είστε αργοπορημένοι.",
+        "",
+        ""
+      ],
+      [
+        "Είναι φιλικοί.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_eimai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_eisai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_einai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_eimaste_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_eiste_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_einai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_eimai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_eisai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_einai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_eimaste_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_eiste_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_einai_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα είμαι",
+      "εσύ θα είσαι",
+      "αυτός/αυτή/αυτό θα είναι",
+      "εμείς θα είμαστε",
+      "εσείς θα είστε",
+      "αυτοί/αυτές/αυτά θα είναι"
+    ],
+    "examples": [
+      [
+        "Θα είμαι εκεί.",
+        "",
+        ""
+      ],
+      [
+        "Θα είσαι ευτυχισμένος.",
+        "",
+        ""
+      ],
+      [
+        "Θα είναι εδώ.",
+        "",
+        ""
+      ],
+      [
+        "Θα είμαστε εκεί.",
+        "",
+        ""
+      ],
+      [
+        "Θα αργήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Θα είναι έτοιμοι.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_tha_eimai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_tha_eisai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_tha_einai_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_tha_eimaste_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_tha_eiste_m.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_tha_einai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be/audio_ego_tha_eimai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_esy_tha_eisai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytosaytiayto_tha_einai_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_emeis_tha_eimaste_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_eseis_tha_eiste_f.mp3",
+        "audio/el/verbs/el_audio_to_be/audio_aytoiaytesayta_tha_einai_f.mp3"
+      ]
+    ]
+  }
+}

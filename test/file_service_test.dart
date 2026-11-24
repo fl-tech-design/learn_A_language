@@ -225,4 +225,24 @@ void main() {
     });
   });
 
+  group('discoverLanguageDicts – Laufzeit-Discovery (dynamische Sprachen)', () {
+    test('findet nur Kandidaten-Sprachen, deren Dicts vorhanden sind', () async {
+      // Dicts für de (Seed) und es (später hinzugefügt) + Fremdordner.
+      await writeFile('language_dict/de/de_to_be.json', '{}');
+      await writeFile('language_dict/es/es_to_go.json', '{}');
+      await writeFile('language_dict/fremd/daten.json', '{}');
+
+      final found = await fs.discoverLanguageDicts();
+
+      expect(found, containsAll(['de', 'es']));
+      // Nicht-Kandidat (fremd) erscheint nicht; Seed de/en/fr bleiben Sache des
+      // Aufrufers (DataState), nicht dieser Discovery.
+      expect(found, isNot(contains('fremd')));
+    });
+
+    test('leeres/fehlendes Verzeichnis liefert {}', () async {
+      expect(await fs.discoverLanguageDicts(), isEmpty);
+    });
+  });
+
 }

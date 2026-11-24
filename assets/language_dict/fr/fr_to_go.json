@@ -1,0 +1,183 @@
+{
+  "infinitive": "aller",
+  "past": {
+    "translations": [
+      "je suis allé",
+      "tu es allé",
+      "il/elle/on est allé",
+      "nous sommes allés",
+      "vous êtes allés",
+      "ils/elles sont allés"
+    ],
+    "examples": [
+      [
+        "Je suis allé au parc.",
+        "",
+        ""
+      ],
+      [
+        "Tu es allé chez toi.",
+        "",
+        ""
+      ],
+      [
+        "Il est allé à l'école.",
+        "",
+        ""
+      ],
+      [
+        "Nous sommes allés faire des courses.",
+        "",
+        ""
+      ],
+      [
+        "Vous êtes allés au cinéma.",
+        "",
+        ""
+      ],
+      [
+        "Ils sont allés à la fête.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_go/audio_je_suis_alle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_tu_es_alle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_il_elle_on_est_alle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_nous_sommes_alles_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_vous_etes_alles_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_ils_elles_sont_alles_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je vais",
+      "tu vas",
+      "il/elle/on va",
+      "nous allons",
+      "vous allez",
+      "ils/elles vont"
+    ],
+    "examples": [
+      [
+        "Je vais à l'école.",
+        "",
+        ""
+      ],
+      [
+        "Tu vas chez toi.",
+        "",
+        ""
+      ],
+      [
+        "Il va au travail.",
+        "",
+        ""
+      ],
+      [
+        "Nous allons faire des courses.",
+        "",
+        ""
+      ],
+      [
+        "Vous allez au cinéma.",
+        "",
+        ""
+      ],
+      [
+        "Ils vont à la fête.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_go/audio_je_vais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_tu_vas_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_il_elle_on_va_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_nous_allons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_vous_allez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_ils_elles_vont_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'irai",
+      "tu iras",
+      "il/elle/on ira",
+      "nous irons",
+      "vous irez",
+      "ils/elles iront"
+    ],
+    "examples": [
+      [
+        "J'irai à l'école.",
+        "",
+        ""
+      ],
+      [
+        "Tu iras chez toi.",
+        "",
+        ""
+      ],
+      [
+        "Il ira au travail.",
+        "",
+        ""
+      ],
+      [
+        "Nous irons faire des courses.",
+        "",
+        ""
+      ],
+      [
+        "Vous irez au cinéma.",
+        "",
+        ""
+      ],
+      [
+        "Ils iront à la fête.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_go/audio_jirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_tu_iras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_il_elle_on_ira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_nous_irons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_vous_irez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_go/audio_ils_elles_iront_f.mp3"
+      ]
+    ]
+  }
+}

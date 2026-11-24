@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/enden/audio_ich_endete_m.mp3",
-        "audio/de/verben/enden/audio_du_endetest_m.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_endete_m.mp3",
-        "audio/de/verben/enden/audio_wir_endeten_m.mp3",
-        "audio/de/verben/enden/audio_ihr_endetet_m.mp3",
-        "audio/de/verben/enden/audio_sie_endeten_m.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_endete_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_endetest_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_endete_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_endeten_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_endetet_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_endeten_m.mp3"
       ],
       [
-        "audio/de/verben/enden/audio_ich_endete_f.mp3",
-        "audio/de/verben/enden/audio_du_endetest_f.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_endete_f.mp3",
-        "audio/de/verben/enden/audio_wir_endeten_f.mp3",
-        "audio/de/verben/enden/audio_ihr_endetet_f.mp3",
-        "audio/de/verben/enden/audio_sie_endeten_f.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_endete_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_endetest_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_endete_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_endeten_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_endetet_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_endeten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/enden/audio_ich_ende_m.mp3",
-        "audio/de/verben/enden/audio_du_endest_m.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_endet_m.mp3",
-        "audio/de/verben/enden/audio_wir_enden_m.mp3",
-        "audio/de/verben/enden/audio_ihr_endet_m.mp3",
-        "audio/de/verben/enden/audio_sie_enden_m.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_ende_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_endest_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_endet_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_endet_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_enden_m.mp3"
       ],
       [
-        "audio/de/verben/enden/audio_ich_ende_f.mp3",
-        "audio/de/verben/enden/audio_du_endest_f.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_endet_f.mp3",
-        "audio/de/verben/enden/audio_wir_enden_f.mp3",
-        "audio/de/verben/enden/audio_ihr_endet_f.mp3",
-        "audio/de/verben/enden/audio_sie_enden_f.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_ende_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_endest_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_endet_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_endet_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_enden_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/enden/audio_ich_werde_enden_m.mp3",
-        "audio/de/verben/enden/audio_du_wirst_enden_m.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_wird_enden_m.mp3",
-        "audio/de/verben/enden/audio_wir_werden_enden_m.mp3",
-        "audio/de/verben/enden/audio_ihr_werdet_enden_m.mp3",
-        "audio/de/verben/enden/audio_sie_werden_enden_m.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_werde_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_wirst_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_wird_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_werden_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_werdet_enden_m.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_werden_enden_m.mp3"
       ],
       [
-        "audio/de/verben/enden/audio_ich_werde_enden_f.mp3",
-        "audio/de/verben/enden/audio_du_wirst_enden_f.mp3",
-        "audio/de/verben/enden/audio_er_sie_es_wird_enden_f.mp3",
-        "audio/de/verben/enden/audio_wir_werden_enden_f.mp3",
-        "audio/de/verben/enden/audio_ihr_werdet_enden_f.mp3",
-        "audio/de/verben/enden/audio_sie_werden_enden_f.mp3"
+        "audio/de/verbs/de_audio_to_end/audio_ich_werde_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_du_wirst_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_er_sie_es_wird_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_wir_werden_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_ihr_werdet_enden_f.mp3",
+        "audio/de/verbs/de_audio_to_end/audio_sie_werden_enden_f.mp3"
       ]
     ]
   }

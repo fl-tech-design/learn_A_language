@@ -1,0 +1,183 @@
+{
+  "infinitive": "être",
+  "past": {
+    "translations": [
+      "j'étais",
+      "tu étais",
+      "il/elle/on était",
+      "nous étions",
+      "vous étiez",
+      "ils/elles étaient"
+    ],
+    "examples": [
+      [
+        "J'étais au parc.",
+        "",
+        ""
+      ],
+      [
+        "Tu étais fatigué.",
+        "",
+        ""
+      ],
+      [
+        "Il était heureux.",
+        "",
+        ""
+      ],
+      [
+        "Nous étions à la maison.",
+        "",
+        ""
+      ],
+      [
+        "Vous étiez en retard.",
+        "",
+        ""
+      ],
+      [
+        "Ils étaient aimables.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be/audio_jetais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_tu_etais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_il_elle_on_etait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_nous_etions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_vous_etiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_ils_elles_etaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je suis",
+      "tu es",
+      "il/elle/on est",
+      "nous sommes",
+      "vous êtes",
+      "ils/elles sont"
+    ],
+    "examples": [
+      [
+        "Je suis fatigué.",
+        "",
+        ""
+      ],
+      [
+        "Tu es aimable.",
+        "",
+        ""
+      ],
+      [
+        "Il est heureux.",
+        "",
+        ""
+      ],
+      [
+        "Nous sommes à la maison.",
+        "",
+        ""
+      ],
+      [
+        "Vous êtes en retard.",
+        "",
+        ""
+      ],
+      [
+        "Ils sont aimables.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be/audio_je_suis_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_tu_es_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_il_elle_on_est_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_nous_sommes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_vous_etes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_ils_elles_sont_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je serai",
+      "tu seras",
+      "il/elle/on sera",
+      "nous serons",
+      "vous serez",
+      "ils/elles seront"
+    ],
+    "examples": [
+      [
+        "Je serai là.",
+        "",
+        ""
+      ],
+      [
+        "Tu seras heureux.",
+        "",
+        ""
+      ],
+      [
+        "Il sera ici.",
+        "",
+        ""
+      ],
+      [
+        "Nous serons là.",
+        "",
+        ""
+      ],
+      [
+        "Vous serez en retard.",
+        "",
+        ""
+      ],
+      [
+        "Ils seront prêts.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be/audio_je_serai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_tu_seras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_il_elle_on_sera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_nous_serons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_vous_serez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be/audio_ils_elles_seront_f.mp3"
+      ]
+    ]
+  }
+}

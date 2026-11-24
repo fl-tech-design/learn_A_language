@@ -1,0 +1,183 @@
+{
+  "infinitive": "κατοικώ",
+  "past": {
+    "translations": [
+      "εγώ κατοικούσα",
+      "εσύ κατοικούσες",
+      "αυτός/αυτή/αυτό κατοικούσε",
+      "εμείς κατοικούσαμε",
+      "εσείς κατοικούσατε",
+      "αυτοί/αυτές/αυτά κατοικούσαν"
+    ],
+    "examples": [
+      [
+        "Εγώ κατοικούσα στο Βερολίνο.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ κατοικούσες σε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός κατοικούσε σε ένα διαμέρισμα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς κατοικούσαμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς κατοικούσατε στην πόλη.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί κατοικούσαν σε ένα χωριό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_katoikoysa_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_katoikoyses_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_katoikoyse_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_katoikoysame_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_katoikoysate_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_katoikoysan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_katoikoysa_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_katoikoyses_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_katoikoyse_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_katoikoysame_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_katoikoysate_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_katoikoysan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ κατοικώ",
+      "εσύ κατοικείς",
+      "αυτός/αυτή/αυτό κατοικεί",
+      "εμείς κατοικούμε",
+      "εσείς κατοικείτε",
+      "αυτοί/αυτές/αυτά κατοικούν"
+    ],
+    "examples": [
+      [
+        "Εγώ κατοικώ στο Βερολίνο.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ κατοικείς σε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός κατοικεί σε ένα διαμέρισμα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς κατοικούμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς κατοικείτε στην πόλη.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί κατοικούν σε ένα χωριό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_katoiko_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_katoikeis_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_katoikei_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_katoikoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_katoikeite_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_katoikoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_katoiko_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_katoikeis_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_katoikei_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_katoikoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_katoikeite_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_katoikoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα κατοικώ",
+      "εσύ θα κατοικείς",
+      "αυτός/αυτή/αυτό θα κατοικεί",
+      "εμείς θα κατοικούμε",
+      "εσείς θα κατοικείτε",
+      "αυτοί/αυτές/αυτά θα κατοικούν"
+    ],
+    "examples": [
+      [
+        "Εγώ θα κατοικώ στο Βερολίνο.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ θα κατοικείς σε ένα σπίτι.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός θα κατοικεί σε ένα διαμέρισμα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς θα κατοικούμε μαζί.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς θα κατοικείτε στην πόλη.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί θα κατοικούν σε ένα χωριό.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_tha_katoiko_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_tha_katoikeis_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_tha_katoikei_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_tha_katoikoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_tha_katoikeite_m.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_tha_katoikoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_live/audio_ego_tha_katoiko_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_esy_tha_katoikeis_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytosaytiayto_tha_katoikei_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_emeis_tha_katoikoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_eseis_tha_katoikeite_f.mp3",
+        "audio/el/verbs/el_audio_to_live/audio_aytoiaytesayta_tha_katoikoyn_f.mp3"
+      ]
+    ]
+  }
+}

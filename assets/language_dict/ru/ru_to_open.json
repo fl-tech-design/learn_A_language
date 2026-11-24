@@ -1,0 +1,183 @@
+{
+  "infinitive": "открывать",
+  "past": {
+    "translations": [
+      "я открыл",
+      "ты открыл",
+      "он открыл",
+      "мы открыли",
+      "вы открыли",
+      "они открыли"
+    ],
+    "examples": [
+      [
+        "Я открыл дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты открыл окно.",
+        "",
+        ""
+      ],
+      [
+        "Он открыл ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы открыли посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы открыли двери.",
+        "",
+        ""
+      ],
+      [
+        "Они открыли окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я открываю",
+      "ты открываешь",
+      "он открывает",
+      "мы открываем",
+      "вы открываете",
+      "они открывают"
+    ],
+    "examples": [
+      [
+        "Я открываю дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты открываешь окно.",
+        "",
+        ""
+      ],
+      [
+        "Он открывает ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы открываем посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы открываете двери.",
+        "",
+        ""
+      ],
+      [
+        "Они открывают окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryvayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryvaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryvaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryvaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryvaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryvayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkryvayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkryvaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkryvaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkryvaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkryvaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkryvayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я открою",
+      "ты откроешь",
+      "он откроет",
+      "мы откроем",
+      "вы откроете",
+      "они откроют"
+    ],
+    "examples": [
+      [
+        "Я открою дверь.",
+        "",
+        ""
+      ],
+      [
+        "Ты откроешь окно.",
+        "",
+        ""
+      ],
+      [
+        "Он откроет ящик.",
+        "",
+        ""
+      ],
+      [
+        "Мы откроем посылку.",
+        "",
+        ""
+      ],
+      [
+        "Вы откроете двери.",
+        "",
+        ""
+      ],
+      [
+        "Они откроют окна.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkroyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkroesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkroet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkroem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkroete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkroyut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_open/audio_ya_otkroyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_ty_otkroesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_on_otkroet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_my_otkroem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_vy_otkroete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_open/audio_oni_otkroyut_f.mp3"
+      ]
+    ]
+  }
+}

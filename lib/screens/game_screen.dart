@@ -7,6 +7,8 @@ import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
@@ -76,12 +78,17 @@ class _GameScreenState extends State<GameScreen> {
     final vq = context.read<VocabQueries>();
     final uname = dataState.appData.loggedUName;
 
+    final um = context.read<UserManager>();
+    final navState = context.read<NavigationState>();
+    final userState = context.read<UserState>();
+    
     if (uname.isNotEmpty) {
-      final ud = await context.read<UserManager>().loadUserdata(uname);
+      final ud = await um.loadUserdata(uname);
       _highscore = ud?.gameHighscore ?? 0;
     }
 
-    final allWords = await vq.getReadWords(uname);
+    final lang = navState.resolveActiveLang(userState.userData);
+    final allWords = await vq.getReadWords(uname, langCode: lang);
     if (allWords.isEmpty) {
       if (!mounted) return;
       setState(() {

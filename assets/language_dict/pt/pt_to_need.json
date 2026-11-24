@@ -1,0 +1,183 @@
+{
+  "infinitive": "precisar",
+  "past": {
+    "translations": [
+      "eu precisei",
+      "tu precisaste",
+      "ele/ela precisou",
+      "nós precisámos",
+      "vós precisastes",
+      "eles/elas precisaram"
+    ],
+    "examples": [
+      [
+        "Eu precisei de ajuda.",
+        "",
+        ""
+      ],
+      [
+        "Tu precisaste de tempo.",
+        "",
+        ""
+      ],
+      [
+        "Ele precisou de dinheiro.",
+        "",
+        ""
+      ],
+      [
+        "Nós precisámos de apoio.",
+        "",
+        ""
+      ],
+      [
+        "Vós precisastes de conselhos.",
+        "",
+        ""
+      ],
+      [
+        "Eles precisaram de sossego.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/precisar/audio_eu_precisei_m.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisaste_m.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisou_m.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisamos_m.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisastes_m.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisaram_m.mp3"
+      ],
+      [
+        "audio/pt/verben/precisar/audio_eu_precisei_f.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisaste_f.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisou_f.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisamos_f.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisastes_f.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisaram_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu preciso",
+      "tu precisas",
+      "ele/ela precisa",
+      "nós precisamos",
+      "vós precisais",
+      "eles/elas precisam"
+    ],
+    "examples": [
+      [
+        "Eu preciso de ajuda.",
+        "",
+        ""
+      ],
+      [
+        "Tu precisas de tempo.",
+        "",
+        ""
+      ],
+      [
+        "Ele precisa de dinheiro.",
+        "",
+        ""
+      ],
+      [
+        "Nós precisamos de apoio.",
+        "",
+        ""
+      ],
+      [
+        "Vós precisais de conselhos.",
+        "",
+        ""
+      ],
+      [
+        "Eles precisam de sossego.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/precisar/audio_eu_preciso_m.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisas_m.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisa_m.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisamos_m.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisais_m.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisam_m.mp3"
+      ],
+      [
+        "audio/pt/verben/precisar/audio_eu_preciso_f.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisas_f.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisa_f.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisamos_f.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisais_f.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisam_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu precisarei",
+      "tu precisarás",
+      "ele/ela precisará",
+      "nós precisaremos",
+      "vós precisareis",
+      "eles/elas precisarão"
+    ],
+    "examples": [
+      [
+        "Eu precisarei de ajuda.",
+        "",
+        ""
+      ],
+      [
+        "Tu precisarás de tempo.",
+        "",
+        ""
+      ],
+      [
+        "Ele precisará de dinheiro.",
+        "",
+        ""
+      ],
+      [
+        "Nós precisaremos de apoio.",
+        "",
+        ""
+      ],
+      [
+        "Vós precisareis de conselhos.",
+        "",
+        ""
+      ],
+      [
+        "Eles precisarão de sossego.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/precisar/audio_eu_precisarei_m.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisaras_m.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisara_m.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisaremos_m.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisareis_m.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisarao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/precisar/audio_eu_precisarei_f.mp3",
+        "audio/pt/verben/precisar/audio_tu_precisaras_f.mp3",
+        "audio/pt/verben/precisar/audio_ele_ela_precisara_f.mp3",
+        "audio/pt/verben/precisar/audio_nos_precisaremos_f.mp3",
+        "audio/pt/verben/precisar/audio_vos_precisareis_f.mp3",
+        "audio/pt/verben/precisar/audio_eles_elas_precisarao_f.mp3"
+      ]
+    ]
+  }
+}

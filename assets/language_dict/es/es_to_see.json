@@ -1,0 +1,183 @@
+{
+  "infinitive": "ver",
+  "past": {
+    "translations": [
+      "yo vi",
+      "tú viste",
+      "él/ella vio",
+      "nosotros vimos",
+      "vosotros visteis",
+      "ellos/ellas vieron"
+    ],
+    "examples": [
+      [
+        "Yo vi una película.",
+        "",
+        ""
+      ],
+      [
+        "Tú viste un coche.",
+        "",
+        ""
+      ],
+      [
+        "Él vio un perro.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vimos una casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros visteis un árbol.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vieron un pájaro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_vi_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_viste_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_vio_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_vimos_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_visteis_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_vieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_vi_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_viste_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_vio_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_vimos_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_visteis_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_vieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo veo",
+      "tú ves",
+      "él/ella ve",
+      "nosotros vemos",
+      "vosotros veis",
+      "ellos/ellas ven"
+    ],
+    "examples": [
+      [
+        "Yo veo una película.",
+        "",
+        ""
+      ],
+      [
+        "Tú ves un coche.",
+        "",
+        ""
+      ],
+      [
+        "Él ve un perro.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vemos una casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros veis un árbol.",
+        "",
+        ""
+      ],
+      [
+        "Ellos ven un pájaro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_veo_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_ves_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_ve_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_vemos_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_veis_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_ven_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_veo_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_ves_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_ve_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_vemos_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_veis_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_ven_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo veré",
+      "tú verás",
+      "él/ella verá",
+      "nosotros veremos",
+      "vosotros veréis",
+      "ellos/ellas verán"
+    ],
+    "examples": [
+      [
+        "Yo veré una película.",
+        "",
+        ""
+      ],
+      [
+        "Tú verás un coche.",
+        "",
+        ""
+      ],
+      [
+        "Él verá un perro.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros veremos una casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros veréis un árbol.",
+        "",
+        ""
+      ],
+      [
+        "Ellos verán un pájaro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_vere_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_veras_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_vera_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_veremos_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_vereis_m.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_veran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_see/audio_yo_vere_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_tu_veras_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_el_ella_vera_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_nosotros_veremos_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_vosotros_vereis_f.mp3",
+        "audio/es/verbs/es_audio_to_see/audio_ellos_ellas_veran_f.mp3"
+      ]
+    ]
+  }
+}

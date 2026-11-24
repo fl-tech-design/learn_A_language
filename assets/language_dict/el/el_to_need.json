@@ -1,0 +1,183 @@
+{
+  "infinitive": "χρειάζομαι",
+  "past": {
+    "translations": [
+      "χρειαζόμουν",
+      "χρειαζόσουν",
+      "χρειαζόταν",
+      "χρειαζόμασταν",
+      "χρειαζόσασταν",
+      "χρειάζονταν"
+    ],
+    "examples": [
+      [
+        "Χρειαζόμουν βοήθεια.",
+        "",
+        ""
+      ],
+      [
+        "Χρειαζόσουν χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Χρειαζόταν χρήματα.",
+        "",
+        ""
+      ],
+      [
+        "Χρειαζόμασταν υποστήριξη.",
+        "",
+        ""
+      ],
+      [
+        "Χρειαζόσασταν συμβουλές.",
+        "",
+        ""
+      ],
+      [
+        "Χρειάζονταν ησυχία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomoyn_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazosoyn_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazotan_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomastan_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazosastan_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazontan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomoyn_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazosoyn_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazotan_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomastan_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazosastan_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazontan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "χρειάζομαι",
+      "χρειάζεσαι",
+      "χρειάζεται",
+      "χρειαζόμαστε",
+      "χρειάζεστε",
+      "χρειάζονται"
+    ],
+    "examples": [
+      [
+        "Χρειάζομαι βοήθεια.",
+        "",
+        ""
+      ],
+      [
+        "Χρειάζεσαι χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Χρειάζεται χρήματα.",
+        "",
+        ""
+      ],
+      [
+        "Χρειαζόμαστε υποστήριξη.",
+        "",
+        ""
+      ],
+      [
+        "Χρειάζεστε συμβουλές.",
+        "",
+        ""
+      ],
+      [
+        "Χρειάζονται ησυχία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomai_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazesai_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazetai_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomaste_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazeste_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazontai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomai_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazesai_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazetai_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazomaste_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazeste_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_chreiazontai_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "θα χρειαστώ",
+      "θα χρειαστείς",
+      "θα χρειαστεί",
+      "θα χρειαστούμε",
+      "θα χρειαστείτε",
+      "θα χρειαστούν"
+    ],
+    "examples": [
+      [
+        "Θα χρειαστώ βοήθεια.",
+        "",
+        ""
+      ],
+      [
+        "Θα χρειαστείς χρόνο.",
+        "",
+        ""
+      ],
+      [
+        "Θα χρειαστεί χρήματα.",
+        "",
+        ""
+      ],
+      [
+        "Θα χρειαστούμε υποστήριξη.",
+        "",
+        ""
+      ],
+      [
+        "Θα χρειαστείτε συμβουλές.",
+        "",
+        ""
+      ],
+      [
+        "Θα χρειαστούν ησυχία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasto_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasteis_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastei_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasteite_m.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasto_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasteis_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastei_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiasteite_f.mp3",
+        "audio/el/verbs/el_audio_to_need/audio_tha_chreiastoyn_f.mp3"
+      ]
+    ]
+  }
+}

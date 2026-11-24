@@ -1,0 +1,183 @@
+{
+  "infinitive": "помогать",
+  "past": {
+    "translations": [
+      "я помог",
+      "ты помог",
+      "он помог",
+      "мы помогли",
+      "вы помогли",
+      "они помогли"
+    ],
+    "examples": [
+      [
+        "Я помог своему другу.",
+        "",
+        ""
+      ],
+      [
+        "Ты помог своей сестре.",
+        "",
+        ""
+      ],
+      [
+        "Он помог своему соседу.",
+        "",
+        ""
+      ],
+      [
+        "Мы помогли учителю.",
+        "",
+        ""
+      ],
+      [
+        "Вы помогли команде.",
+        "",
+        ""
+      ],
+      [
+        "Они помогли ученику.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomog_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomog_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я помогаю",
+      "ты помогаешь",
+      "он помогает",
+      "мы помогаем",
+      "вы помогаете",
+      "они помогают"
+    ],
+    "examples": [
+      [
+        "Я помогаю своему другу.",
+        "",
+        ""
+      ],
+      [
+        "Ты помогаешь своей сестре.",
+        "",
+        ""
+      ],
+      [
+        "Он помогает своему соседу.",
+        "",
+        ""
+      ],
+      [
+        "Мы помогаем учителю.",
+        "",
+        ""
+      ],
+      [
+        "Вы помогаете команде.",
+        "",
+        ""
+      ],
+      [
+        "Они помогают ученику.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomogaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomogaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomogaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomogaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomogaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomogaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я помогу",
+      "ты поможешь",
+      "он поможет",
+      "мы поможем",
+      "вы поможете",
+      "они помогут"
+    ],
+    "examples": [
+      [
+        "Я помогу своему другу.",
+        "",
+        ""
+      ],
+      [
+        "Ты поможешь своей сестре.",
+        "",
+        ""
+      ],
+      [
+        "Он поможет своему соседу.",
+        "",
+        ""
+      ],
+      [
+        "Мы поможем учителю.",
+        "",
+        ""
+      ],
+      [
+        "Вы поможете команде.",
+        "",
+        ""
+      ],
+      [
+        "Они помогут ученику.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomozhesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomozhet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomozhem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomozhete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_help/audio_ya_pomogu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_ty_pomozhesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_on_pomozhet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_my_pomozhem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_vy_pomozhete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_help/audio_oni_pomogut_f.mp3"
+      ]
+    ]
+  }
+}

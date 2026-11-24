@@ -1,0 +1,183 @@
+{
+  "infinitive": "vouloir",
+  "past": {
+    "translations": [
+      "je voulais",
+      "tu voulais",
+      "il/elle/on voulait",
+      "nous voulions",
+      "vous vouliez",
+      "ils/elles voulaient"
+    ],
+    "examples": [
+      [
+        "Je voulais une glace.",
+        "",
+        ""
+      ],
+      [
+        "Tu voulais un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il voulait une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous voulions une pause.",
+        "",
+        ""
+      ],
+      [
+        "Vous vouliez un en-cas.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles voulaient une boisson.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_want/audio_je_voulais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_voulais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_voulait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voulions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_vouliez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_voulaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je veux",
+      "tu veux",
+      "il/elle/on veut",
+      "nous voulons",
+      "vous voulez",
+      "ils/elles veulent"
+    ],
+    "examples": [
+      [
+        "Je veux une glace.",
+        "",
+        ""
+      ],
+      [
+        "Tu veux un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il veut une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous voulons une pause.",
+        "",
+        ""
+      ],
+      [
+        "Vous voulez un en-cas.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles veulent une boisson.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_want/audio_je_veux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_veux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_veut_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voulons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_voulez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_veulent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je voudrai",
+      "tu voudras",
+      "il/elle/on voudra",
+      "nous voudrons",
+      "vous voudrez",
+      "ils/elles voudront"
+    ],
+    "examples": [
+      [
+        "Je voudrai une glace.",
+        "",
+        ""
+      ],
+      [
+        "Tu voudras un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il voudra une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous voudrons une pause.",
+        "",
+        ""
+      ],
+      [
+        "Vous voudrez un en-cas.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles voudront une boisson.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_want/audio_je_voudrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_tu_voudras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_il_elle_on_voudra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_nous_voudrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_vous_voudrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_want/audio_ils_elles_voudront_f.mp3"
+      ]
+    ]
+  }
+}

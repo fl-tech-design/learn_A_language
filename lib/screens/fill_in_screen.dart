@@ -8,6 +8,8 @@ import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
@@ -88,12 +90,17 @@ class _FillInScreenState extends State<FillInScreen> {
     final vq = context.read<VocabQueries>();
 
     _bestTime = 0;
+    final um = context.read<UserManager>();
+    final navState = context.read<NavigationState>();
+    final userState = context.read<UserState>();
+    
     if (uname.isNotEmpty) {
-      final ud = await context.read<UserManager>().loadUserdata(uname);
+      final ud = await um.loadUserdata(uname);
       _bestTime = ud?.fillInBestTimes[widget.difficulty] ?? 0;
     }
 
-    var words = await vq.getReadWords(uname);
+    final lang = navState.resolveActiveLang(userState.userData);
+    var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter ueber die bestehende Kategorien-Info.
     final cat = wordCategoryById(_category);

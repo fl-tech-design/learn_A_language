@@ -22,6 +22,8 @@
   "btnTurbo": "Turbo",
   "btnWordSearch": "Wortsuche",
   "catDueWords": "Fällige Wörter",
+  "catInProgressWords": "In Arbeit",
+  "catVerbs": "Verben",
   "catLearnedWords": "Gelernte Wörter",
   "catMoreVerbs": "Weitere Verben",
   "catNewLang": "Neue Sprachen entdecken",
@@ -185,5 +187,7 @@
   "fillInSkip": "Überspringen",
   "spanish": "Spanisch",
   "french": "Französisch",
-  "russian": "Russisch"
+  "russian": "Russisch",
+  "greek": "Griechisch",
+  "motherTongueHint": "Bestimmt die Übersetzungsrichtung (Wort und Übersetzung) für alle gewählten Kurs-Sprachen."
 }

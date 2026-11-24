@@ -1,0 +1,183 @@
+{
+  "infinitive": "ανοίγω",
+  "past": {
+    "translations": [
+      "άνοιξα",
+      "άνοιξες",
+      "άνοιξε",
+      "ανοίξαμε",
+      "ανοίξατε",
+      "άνοιξαν"
+    ],
+    "examples": [
+      [
+        "Άνοιξα την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Άνοιξες το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Άνοιξε το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίξαμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίξατε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Άνοιξαν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_open/audio_anoixa_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixes_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixe_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixame_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixate_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_open/audio_anoixan_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixes_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixe_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixame_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixate_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoixan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "ανοίγω",
+      "ανοίγεις",
+      "ανοίγει",
+      "ανοίγουμε",
+      "ανοίγετε",
+      "ανοίγουν"
+    ],
+    "examples": [
+      [
+        "Ανοίγω την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίγεις το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίγει το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίγουμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίγετε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Ανοίγουν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_open/audio_anoigo_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigeis_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigei_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigete_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_open/audio_anoigo_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigeis_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigei_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigete_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_anoigoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "θα ανοίξω",
+      "θα ανοίξεις",
+      "θα ανοίξει",
+      "θα ανοίξουμε",
+      "θα ανοίξετε",
+      "θα ανοίξουν"
+    ],
+    "examples": [
+      [
+        "Θα ανοίξω την πόρτα.",
+        "",
+        ""
+      ],
+      [
+        "Θα ανοίξεις το παράθυρο.",
+        "",
+        ""
+      ],
+      [
+        "Θα ανοίξει το κουτί.",
+        "",
+        ""
+      ],
+      [
+        "Θα ανοίξουμε το πακέτο.",
+        "",
+        ""
+      ],
+      [
+        "Θα ανοίξετε τις πόρτες.",
+        "",
+        ""
+      ],
+      [
+        "Θα ανοίξουν τα παράθυρα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixo_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixeis_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixei_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixete_m.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixo_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixeis_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixei_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixete_f.mp3",
+        "audio/el/verbs/el_audio_to_open/audio_tha_anoixoyn_f.mp3"
+      ]
+    ]
+  }
+}

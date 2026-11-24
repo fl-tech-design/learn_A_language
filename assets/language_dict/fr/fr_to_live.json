@@ -1,0 +1,183 @@
+{
+  "infinitive": "habiter",
+  "past": {
+    "translations": [
+      "j'habitais",
+      "tu habitais",
+      "il/elle/on habitait",
+      "nous habitions",
+      "vous habitiez",
+      "ils/elles habitaient"
+    ],
+    "examples": [
+      [
+        "J'habitais à Berlin.",
+        "",
+        ""
+      ],
+      [
+        "Tu habitais dans une maison.",
+        "",
+        ""
+      ],
+      [
+        "Il habitait dans un appartement.",
+        "",
+        ""
+      ],
+      [
+        "Nous habitions ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous habitiez en ville.",
+        "",
+        ""
+      ],
+      [
+        "Ils habitaient dans un village.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_live/audio_jhabitais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_tu_habitais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_il_elle_on_habitait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_nous_habitions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_vous_habitiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_ils_elles_habitaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'habite",
+      "tu habites",
+      "il/elle/on habite",
+      "nous habitons",
+      "vous habitez",
+      "ils/elles habitent"
+    ],
+    "examples": [
+      [
+        "J'habite à Berlin.",
+        "",
+        ""
+      ],
+      [
+        "Tu habites dans une maison.",
+        "",
+        ""
+      ],
+      [
+        "Il habite dans un appartement.",
+        "",
+        ""
+      ],
+      [
+        "Nous habitons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous habitez en ville.",
+        "",
+        ""
+      ],
+      [
+        "Ils habitent dans un village.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_live/audio_jhabite_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_tu_habites_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_il_elle_on_habite_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_nous_habitons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_vous_habitez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_ils_elles_habitent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'habiterai",
+      "tu habiteras",
+      "il/elle/on habitera",
+      "nous habiterons",
+      "vous habiterez",
+      "ils/elles habiteront"
+    ],
+    "examples": [
+      [
+        "J'habiterai à Berlin.",
+        "",
+        ""
+      ],
+      [
+        "Tu habiteras dans une maison.",
+        "",
+        ""
+      ],
+      [
+        "Il habitera dans un appartement.",
+        "",
+        ""
+      ],
+      [
+        "Nous habiterons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous habiterez en ville.",
+        "",
+        ""
+      ],
+      [
+        "Ils habiteront dans un village.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_live/audio_jhabiterai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_tu_habiteras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_il_elle_on_habitera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_nous_habiterons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_vous_habiterez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_live/audio_ils_elles_habiteront_f.mp3"
+      ]
+    ]
+  }
+}

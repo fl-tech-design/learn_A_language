@@ -1,0 +1,183 @@
+{
+  "infinitive": "trouver",
+  "past": {
+    "translations": [
+      "j'ai trouvé",
+      "tu as trouvé",
+      "il/elle/on a trouvé",
+      "nous avons trouvé",
+      "vous avez trouvé",
+      "ils/elles ont trouvé"
+    ],
+    "examples": [
+      [
+        "J'ai trouvé ma clé.",
+        "",
+        ""
+      ],
+      [
+        "Tu as trouvé ton portable.",
+        "",
+        ""
+      ],
+      [
+        "Il a trouvé son portefeuille.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons trouvé la solution.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez trouvé les clés.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont trouvé le chat.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_find/audio_jai_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_tu_as_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_il_elle_on_a_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_nous_avons_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_vous_avez_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_ils_elles_ont_trouve_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je trouve",
+      "tu trouves",
+      "il/elle/on trouve",
+      "nous trouvons",
+      "vous trouvez",
+      "ils/elles trouvent"
+    ],
+    "examples": [
+      [
+        "Je ne trouve pas ma clé.",
+        "",
+        ""
+      ],
+      [
+        "Tu trouves ton portable.",
+        "",
+        ""
+      ],
+      [
+        "Il trouve son portefeuille.",
+        "",
+        ""
+      ],
+      [
+        "Nous trouvons la solution.",
+        "",
+        ""
+      ],
+      [
+        "Vous trouvez les clés.",
+        "",
+        ""
+      ],
+      [
+        "Ils trouvent le chat.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_find/audio_je_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_tu_trouves_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_il_elle_on_trouve_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_nous_trouvons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_vous_trouvez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_ils_elles_trouvent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je trouverai",
+      "tu trouveras",
+      "il/elle/on trouvera",
+      "nous trouverons",
+      "vous trouverez",
+      "ils/elles trouveront"
+    ],
+    "examples": [
+      [
+        "Je trouverai ma clé.",
+        "",
+        ""
+      ],
+      [
+        "Tu trouveras ton portable.",
+        "",
+        ""
+      ],
+      [
+        "Il trouvera son portefeuille.",
+        "",
+        ""
+      ],
+      [
+        "Nous trouverons la solution.",
+        "",
+        ""
+      ],
+      [
+        "Vous trouverez les clés.",
+        "",
+        ""
+      ],
+      [
+        "Ils trouveront le chat.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_find/audio_je_trouverai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_tu_trouveras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_il_elle_on_trouvera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_nous_trouverons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_vous_trouverez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_find/audio_ils_elles_trouveront_f.mp3"
+      ]
+    ]
+  }
+}

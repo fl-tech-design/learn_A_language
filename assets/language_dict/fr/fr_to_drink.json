@@ -1,0 +1,183 @@
+{
+  "infinitive": "boire",
+  "past": {
+    "translations": [
+      "je buvais",
+      "tu buvais",
+      "il/elle/on buvait",
+      "nous buvions",
+      "vous buviez",
+      "ils/elles buvaient"
+    ],
+    "examples": [
+      [
+        "Je buvais de l'eau.",
+        "",
+        ""
+      ],
+      [
+        "Tu buvais du café.",
+        "",
+        ""
+      ],
+      [
+        "Il/Elle buvait du thé.",
+        "",
+        ""
+      ],
+      [
+        "Nous buvions de la bière.",
+        "",
+        ""
+      ],
+      [
+        "Vous buviez du vin.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles buvaient du jus.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_drink/audio_je_buvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_tu_buvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_il_elle_on_buvait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_nous_buvions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_vous_buviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_ils_elles_buvaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je bois",
+      "tu bois",
+      "il/elle/on boit",
+      "nous buvons",
+      "vous buvez",
+      "ils/elles boivent"
+    ],
+    "examples": [
+      [
+        "Je bois de l'eau.",
+        "",
+        ""
+      ],
+      [
+        "Tu bois du café.",
+        "",
+        ""
+      ],
+      [
+        "Il/Elle boit du thé.",
+        "",
+        ""
+      ],
+      [
+        "Nous buvons de la bière.",
+        "",
+        ""
+      ],
+      [
+        "Vous buvez du vin.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles boivent du jus.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_drink/audio_je_bois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_tu_bois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_il_elle_on_boit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_nous_buvons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_vous_buvez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_ils_elles_boivent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je boirai",
+      "tu boiras",
+      "il/elle/on boira",
+      "nous boirons",
+      "vous boirez",
+      "ils/elles boiront"
+    ],
+    "examples": [
+      [
+        "Je boirai de l'eau.",
+        "",
+        ""
+      ],
+      [
+        "Tu boiras du café.",
+        "",
+        ""
+      ],
+      [
+        "Il/Elle boira du thé.",
+        "",
+        ""
+      ],
+      [
+        "Nous boirons de la bière.",
+        "",
+        ""
+      ],
+      [
+        "Vous boirez du vin.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles boiront du jus.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_drink/audio_je_boirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_tu_boiras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_il_elle_on_boira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_nous_boirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_vous_boirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_drink/audio_ils_elles_boiront_f.mp3"
+      ]
+    ]
+  }
+}

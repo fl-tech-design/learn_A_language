@@ -1,0 +1,183 @@
+{
+  "infinitive": "пить",
+  "past": {
+    "translations": [
+      "я пил",
+      "ты пил",
+      "он пил",
+      "мы пили",
+      "вы пили",
+      "они пили"
+    ],
+    "examples": [
+      [
+        "Я пил воду.",
+        "",
+        ""
+      ],
+      [
+        "Ты пил кофе.",
+        "",
+        ""
+      ],
+      [
+        "Он пил чай.",
+        "",
+        ""
+      ],
+      [
+        "Мы пили пиво.",
+        "",
+        ""
+      ],
+      [
+        "Вы пили вино.",
+        "",
+        ""
+      ],
+      [
+        "Они пили сок.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pil_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pili_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pil_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pili_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я пью",
+      "ты пьёшь",
+      "он пьёт",
+      "мы пьём",
+      "вы пьёте",
+      "они пьют"
+    ],
+    "examples": [
+      [
+        "Я пью воду.",
+        "",
+        ""
+      ],
+      [
+        "Ты пьёшь кофе.",
+        "",
+        ""
+      ],
+      [
+        "Он пьёт чай.",
+        "",
+        ""
+      ],
+      [
+        "Мы пьём пиво.",
+        "",
+        ""
+      ],
+      [
+        "Вы пьёте вино.",
+        "",
+        ""
+      ],
+      [
+        "Они пьют сок.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pyut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_pyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_pyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_pyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_pyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_pyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_pyut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду пить",
+      "ты будешь пить",
+      "он будет пить",
+      "мы будем пить",
+      "вы будете пить",
+      "они будут пить"
+    ],
+    "examples": [
+      [
+        "Я буду пить воду.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь пить кофе.",
+        "",
+        ""
+      ],
+      [
+        "Он будет пить чай.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем пить пиво.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете пить вино.",
+        "",
+        ""
+      ],
+      [
+        "Они будут пить сок.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_budu_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_budesh_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_budet_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_budem_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_budete_pit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_budut_pit_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_drink/audio_ya_budu_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_ty_budesh_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_on_budet_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_my_budem_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_vy_budete_pit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_drink/audio_oni_budut_pit_f.mp3"
+      ]
+    ]
+  }
+}

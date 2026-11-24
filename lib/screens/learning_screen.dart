@@ -3,13 +3,14 @@ import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/info_dialog.dart';
 import '../l10n/app_localizations.dart';
 import 'progress_screen.dart'
-    show categoryCountLabel, wordCollectionTitle;
+    show categoryCountLabel, wordCollectionTitle, wordTopCategoryTitle;
 
 /// Learning category selection screen.
 ///
@@ -57,7 +58,11 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   Future<void> _refreshCounts() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
-    final counts = await context.read<VocabQueries>().getCategoryCounts(uname);
+    final lang = context.read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    final counts = await context
+        .read<VocabQueries>()
+        .getCategoryCounts(uname, langCode: lang);
     if (mounted) setState(() => _counts = counts);
   }
 
@@ -131,7 +136,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final collections = courseWordCollections.toList()
+    final topCategories = courseTopCategories.toList()
       ..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
@@ -151,8 +156,20 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                           style: const TextStyle(
                               fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: AppTheme.contentSpacing),
-                      for (final collection in collections)
-                        Padding(
+                      for (final top in topCategories)
+                        ...[
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text(
+                          wordTopCategoryTitle(l10n, top),
+                          style: const TextStyle(
+                              fontSize: AppTheme.lblFontSize,
+                              color: AppTheme.colorPrimary,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                        for (final collection in top.collections)
+                          Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppTheme.contentSpacing),
                             child: SizedBox(
@@ -189,6 +206,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                                             ),
                                           ],
                                         ))))),
+                      ],
                       const SizedBox(height: AppTheme.contentSpacing),
                       _learnedWordsButton(),
                       const SizedBox(height: AppTheme.contentSpacing),

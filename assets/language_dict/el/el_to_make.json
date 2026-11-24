@@ -1,0 +1,183 @@
+{
+  "infinitive": "κάνω",
+  "past": {
+    "translations": [
+      "εγώ έκανα",
+      "εσύ έκανες",
+      "αυτός/αυτή/αυτό έκανε",
+      "εμείς κάναμε",
+      "εσείς κάνατε",
+      "αυτοί/αυτές/αυτά έκαναν"
+    ],
+    "examples": [
+      [
+        "Εγώ έφτιαξα ένα κέικ.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ έφτιαξες καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός ετοίμασε το βραδινό φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς κάναμε ένα σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς κάνατε ένα λάθος.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί γύρισαν μια ταινία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_ekana_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_ekanes_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_ekane_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_kaname_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_kanate_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_ekanan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_ekana_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_ekanes_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_ekane_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_kaname_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_kanate_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_ekanan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ κάνω",
+      "εσύ κάνεις",
+      "αυτός/αυτή/αυτό κάνει",
+      "εμείς κάνουμε",
+      "εσείς κάνετε",
+      "αυτοί/αυτές/αυτά κάνουν"
+    ],
+    "examples": [
+      [
+        "Εγώ φτιάχνω καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ ετοιμάζεις το βραδινό φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός κάνει ένα σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς γυρίζουμε μια ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς κάνετε ένα λάθος.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί φτιάχνουν καφέ.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_kano_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_kaneis_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_kanei_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_kanoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_kanete_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_kanoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_kano_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_kaneis_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_kanei_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_kanoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_kanete_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_kanoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα κάνω",
+      "εσύ θα κάνεις",
+      "αυτός/αυτή/αυτό θα κάνει",
+      "εμείς θα κάνουμε",
+      "εσείς θα κάνετε",
+      "αυτοί/αυτές/αυτά θα κάνουν"
+    ],
+    "examples": [
+      [
+        "Εγώ θα φτιάξω ένα κέικ.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ θα φτιάξεις καφέ.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός θα ετοιμάσει το βραδινό φαγητό.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς θα κάνουμε ένα σχέδιο.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς θα κάνετε ένα λάθος.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί θα γυρίσουν μια ταινία.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_tha_kano_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_tha_kaneis_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_tha_kanei_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_tha_kanoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_tha_kanete_m.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_tha_kanoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_make/audio_ego_tha_kano_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_esy_tha_kaneis_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytosaytiayto_tha_kanei_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_emeis_tha_kanoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_eseis_tha_kanete_f.mp3",
+        "audio/el/verbs/el_audio_to_make/audio_aytoiaytesayta_tha_kanoyn_f.mp3"
+      ]
+    ]
+  }
+}

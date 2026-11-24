@@ -1,0 +1,183 @@
+{
+  "infinitive": "хотеть",
+  "past": {
+    "translations": [
+      "я хотел",
+      "ты хотел",
+      "он хотел",
+      "мы хотели",
+      "вы хотели",
+      "они хотели"
+    ],
+    "examples": [
+      [
+        "Я хотел мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ты хотел книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он хотел машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы хотели сделать перерыв.",
+        "",
+        ""
+      ],
+      [
+        "Вы хотели перекусить.",
+        "",
+        ""
+      ],
+      [
+        "Они хотели напиток.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khotel_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khoteli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khoteli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khoteli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khotel_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khoteli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khoteli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khoteli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я хочу",
+      "ты хочешь",
+      "он хочет",
+      "мы хотим",
+      "вы хотите",
+      "они хотят"
+    ],
+    "examples": [
+      [
+        "Я хочу мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ты хочешь книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он хочет машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы хотим сделать перерыв.",
+        "",
+        ""
+      ],
+      [
+        "Вы хотите перекусить.",
+        "",
+        ""
+      ],
+      [
+        "Они хотят напиток.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khochu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khochesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khochet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khotim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khotite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khotyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_khochu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_khochesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_khochet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_khotim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_khotite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_khotyat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду хотеть",
+      "ты будешь хотеть",
+      "он будет хотеть",
+      "мы будем хотеть",
+      "вы будете хотеть",
+      "они будут хотеть"
+    ],
+    "examples": [
+      [
+        "Я захочу мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ты захочешь книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он захочет машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы захотим сделать перерыв.",
+        "",
+        ""
+      ],
+      [
+        "Вы захотите перекусить.",
+        "",
+        ""
+      ],
+      [
+        "Они захотят напиток.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_budu_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_budesh_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_budet_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_budem_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_budete_khotet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_budut_khotet_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_want/audio_ya_budu_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_ty_budesh_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_on_budet_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_my_budem_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_vy_budete_khotet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_want/audio_oni_budut_khotet_f.mp3"
+      ]
+    ]
+  }
+}

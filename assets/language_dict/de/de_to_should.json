@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sollen/audio_ich_sollte_m.mp3",
-        "audio/de/verben/sollen/audio_du_solltest_m.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_sollte_m.mp3",
-        "audio/de/verben/sollen/audio_wir_sollten_m.mp3",
-        "audio/de/verben/sollen/audio_ihr_solltet_m.mp3",
-        "audio/de/verben/sollen/audio_sie_sollten_m.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_sollte_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_solltest_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_sollte_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_sollten_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_solltet_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_sollten_m.mp3"
       ],
       [
-        "audio/de/verben/sollen/audio_ich_sollte_f.mp3",
-        "audio/de/verben/sollen/audio_du_solltest_f.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_sollte_f.mp3",
-        "audio/de/verben/sollen/audio_wir_sollten_f.mp3",
-        "audio/de/verben/sollen/audio_ihr_solltet_f.mp3",
-        "audio/de/verben/sollen/audio_sie_sollten_f.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_sollte_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_solltest_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_sollte_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_sollten_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_solltet_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_sollten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sollen/audio_ich_soll_m.mp3",
-        "audio/de/verben/sollen/audio_du_sollst_m.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_soll_m.mp3",
-        "audio/de/verben/sollen/audio_wir_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_ihr_sollt_m.mp3",
-        "audio/de/verben/sollen/audio_sie_sollen_m.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_soll_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_sollst_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_soll_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_sollt_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_sollen_m.mp3"
       ],
       [
-        "audio/de/verben/sollen/audio_ich_soll_f.mp3",
-        "audio/de/verben/sollen/audio_du_sollst_f.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_soll_f.mp3",
-        "audio/de/verben/sollen/audio_wir_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_ihr_sollt_f.mp3",
-        "audio/de/verben/sollen/audio_sie_sollen_f.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_soll_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_sollst_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_soll_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_sollt_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_sollen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/sollen/audio_ich_werde_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_du_wirst_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_wird_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_wir_werden_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_ihr_werdet_sollen_m.mp3",
-        "audio/de/verben/sollen/audio_sie_werden_sollen_m.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_werde_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_wirst_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_wird_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_werden_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_werdet_sollen_m.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_werden_sollen_m.mp3"
       ],
       [
-        "audio/de/verben/sollen/audio_ich_werde_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_du_wirst_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_er_sie_es_wird_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_wir_werden_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_ihr_werdet_sollen_f.mp3",
-        "audio/de/verben/sollen/audio_sie_werden_sollen_f.mp3"
+        "audio/de/verbs/de_audio_to_should/audio_ich_werde_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_du_wirst_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_er_sie_es_wird_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_wir_werden_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_ihr_werdet_sollen_f.mp3",
+        "audio/de/verbs/de_audio_to_should/audio_sie_werden_sollen_f.mp3"
       ]
     ]
   }
