@@ -55,27 +55,32 @@ lib/
 3. App starten (z. B. auf Linux Desktop oder einem angeschlossenen Android-Gerät/Emulator):
    flutter run
 
-### Installation über WLAN-Debugging (Android, ohne Datenverlust)
+### Installation über WLAN-Debugging (Android 11+, behält Benutzerdaten)
 
-> `flutter run` oder eine normale Installation **löscht niemals** App-Daten.
-> Daten gehen nur beim **Deinstallieren** der App verloren. Eine neue Version
-> über die bestehende App installieren behält alle lokalen Benutzerdaten
-> (Wörter, Levels, Streaks).
+> Eine Installation über eine bestehende App **löscht niemals** die Daten.
+> Daten gehen nur beim **Deinstallieren** der App verloren. Ein Update mit
+> `install -r` behält alle lokalen Benutzerdaten (Wörter, Levels, Streaks).
 
-1. Auf dem Handy **Entwickleroptionen → Drahtloses Debugging** aktivieren (falls nötig zuerst `adb pair`):
-   adb pair 192.168.0.133:PORT
-2. Mit Adresse/Port verbinden:
-   adb connect 192.168.0.133:40917
-3. Eine **Debug**-Version über die aktuelle App installieren und starten (ohne Datenverlust):
-   flutter run -d 192.168.0.133:40917
-   # oder ein vorbereitetes Debug-APK installieren, ohne zu starten:
+Funktioniert auf Android 11+ mit aktiviertem **Drahtloses Debugging**. Der
+Pairing-Port ist **dynamisch** — immer die auf dem Handy angezeigte IP/Port
+verwenden.
+
+1. Am Handy **Entwickleroptionen → Drahtloses Debugging** aktivieren und
+   **„Gerät mit Code koppeln“** antippen. Das Handy zeigt nun eine IP, einen
+   Port und einen 6-stelligen Pairing-Code.
+2. Am Rechner koppeln und verbinden:
+   adb pair IP:PORT <6-stelliger-Code>
+   adb connect IP:PORT            # Port vom Handy verwenden
+3. Verbindung prüfen (das Gerät muss in der Liste stehen):
+   adb devices
+4. Debug-APK bauen und über die aktuelle App installieren (behält alle Daten):
    flutter build apk --debug
-   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+   adb -s IP:PORT install -r build/app/outputs/flutter-apk/app-debug.apk
 
-> Das Flag `-r` ersetzt die App und behält ihre Daten. Falls eine
-> „signature mismatch“-Meldung kommt, hat die installierte App eine andere
-> Signatur (z. B. eine Release-Version) — Deinstallieren wäre nötig, daher am
-> besten passende Build-Typen verwenden (Debug → Debug).
+> `-r` ersetzt die App und behält ihre Daten. Bei „signature mismatch“ hat die
+> installierte App eine andere Signatur (z. B. eine Release-Version) —
+> Deinstallieren wäre nötig, daher immer den passenden Build-Typ verwenden
+> (Debug → Debug).
 
 ## Migration von Kivy zu Flutter
 

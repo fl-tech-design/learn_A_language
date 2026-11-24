@@ -55,27 +55,32 @@ lib/
 3. Ejecutar la aplicación (p. ej. en Linux Desktop o un dispositivo/emulador Android conectado):
    flutter run
 
-### Instalación mediante depuración Wi-Fi (Android, sin pérdida de datos)
+### Instalación mediante depuración Wi-Fi (Android 11+, conserva los datos)
 
-> `flutter run` o una instalación normal nunca elimina tus datos.
-> Los datos solo se pierden cuando la aplicación se **desinstala**. Instalar una
-> nueva versión sobre la aplicación existente conserva todos los datos locales
-> del usuario (palabras, niveles, rachas).
+> Instalar sobre una aplicación existente nunca elimina tus datos. Los datos
+> solo se pierden cuando la aplicación se **desinstala**. Actualizar con
+> `install -r` conserva todos los datos locales del usuario (palabras, niveles,
+> rachas).
 
-1. Activa **Opciones de desarrollador → Depuración inalámbrica** en el teléfono (si es necesario, `adb pair` primero) :
-   adb pair 192.168.0.133:PORT
-2. Conecta al dispositivo por dirección/puerto :
-   adb connect 192.168.0.133:40917
-3. Instala una versión **debug** sobre la aplicación actual (sin pérdida de datos) :
-   flutter run -d 192.168.0.133:40917
-   # o instala un APK debug preparado sin lanzarlo :
+Funciona en Android 11+ con **Depuración inalámbrica** activada. El puerto de
+emparejamiento es **dinámico** — usa siempre la IP/puerto que muestra el móvil.
+
+1. Activa en el teléfono **Opciones de desarrollador → Depuración inalámbrica**
+   y pulsa **«Emparejar dispositivo con código»**. El móvil muestra ahora una
+   IP, un puerto y un código de emparejamiento de 6 dígitos.
+2. En el ordenador, empareja y conecta:
+   adb pair IP:PORT <código-de-6-dígitos>
+   adb connect IP:PORT            # usa el puerto que muestra el móvil
+3. Verifica que el dispositivo está conectado (debe aparecer en la lista):
+   adb devices
+4. Compila el APK debug e instálalo sobre la aplicación actual (conserva todo):
    flutter build apk --debug
-   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+   adb -s IP:PORT install -r build/app/outputs/flutter-apk/app-debug.apk
 
-> El indicador `-r` reemplaza la aplicación conservando sus datos. Si apareciera
-> un error de « signature mismatch », la aplicación instalada tiene una firma
-> distinta (p. ej. una versión release) — la desinstalación sería necesaria, por
-> lo que es preferible usar tipos de build coincidentes (debug → debug).
+> `-r` reemplaza la aplicación conservando sus datos. Si aparece «signature
+> mismatch», la aplicación instalada tiene una firma distinta (p. ej. una
+> versión release) — sería necesaria la desinstalación, por eso usa siempre el
+> tipo de build coincidente (debug → debug).
 
 ## Migración de Kivy a Flutter
 

@@ -55,26 +55,31 @@ lib/
 3. Run the app (e.g. on Linux Desktop or a connected Android device/emulator):
    flutter run
 
-### Install over WiFi Debugging (Android, without data loss)
+### Install over WiFi Debugging (Android 11+, keeps user data)
 
-> `flutter run` or a normal install **never deletes** your app data.
-> Data is only lost when the app is **uninstalled**. Installing an updated build
-> over an existing app keeps all local user data (words, levels, streaks).
+> Installing over an existing app **never deletes** your data. Data is only lost
+> when the app is **uninstalled**. Updating a build with `install -r` keeps all
+> local user data (words, levels, streaks).
 
-1. Enable **Developer options → Wireless debugging** on the phone (`adb pair` first if needed):
-   adb pair 192.168.0.133:PORT
-2. Connect to the device by address/port:
-   adb connect 192.168.0.133:40917
-3. Build and install a **debug** build over the current app (contributes no data loss):
-   flutter run -d 192.168.0.133:40917
-   # or install a prepared debug APK without launching:
+Works on Android 11+ with **Wireless debugging** enabled. The pairing port is
+**dynamic** — always use the IP/port shown on the phone.
+
+1. On the phone enable **Developer options → Wireless debugging** and tap
+   **Pair device with code**. The phone now shows an IP, a port, and a
+   6-digit pairing code.
+2. On the computer pair and connect:
+   adb pair IP:PORT <6-digit-code>
+   adb connect IP:PORT            # use the port shown on the phone
+3. Verify the device is connected (it must be listed):
+   adb devices
+4. Build the debug APK and install it over the current app (keeps all data):
    flutter build apk --debug
-   adb -s 192.168.0.133:40917 install -r build/app/outputs/flutter-apk/app-debug.apk
+   adb -s IP:PORT install -r build/app/outputs/flutter-apk/app-debug.apk
 
-> The `-r` flag **replaces** the app while keeping its data. If you ever get a
-> "signature mismatch" error, the installed app has a different signature
-> (e.g. a release build) — uninstalling would be required, so prefer matching
-> build types (debug → debug).
+> `-r` replaces the app while keeping its data. A "signature mismatch" error
+> means the installed app has a different signature (e.g. a release build) —
+> uninstalling would be required, so always install the matching build type
+> (debug → debug).
 
 ## Migration from Kivy to Flutter
 
