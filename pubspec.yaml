@@ -31,7 +31,6 @@ flutter:
     - assets/game_assets/
     - assets/data_base/
     - assets/data_app/
-    - assets/data_app/files_user/
     - assets/language_dict/de/
     - assets/language_dict/en/
     - assets/language_dict/fr/
