@@ -1,0 +1,183 @@
+{
+  "infinitive": "encontrar",
+  "past": {
+    "translations": [
+      "eu encontrei",
+      "tu encontraste",
+      "ele/ela encontrou",
+      "nós encontrámos",
+      "vós encontrastes",
+      "eles/elas encontraram"
+    ],
+    "examples": [
+      [
+        "Eu encontrei a minha chave.",
+        "",
+        ""
+      ],
+      [
+        "Tu encontraste o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele encontrou a sua carteira.",
+        "",
+        ""
+      ],
+      [
+        "Nós encontrámos a solução.",
+        "",
+        ""
+      ],
+      [
+        "Vós encontrastes as chaves.",
+        "",
+        ""
+      ],
+      [
+        "Eles encontraram o gato.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontrei_m.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontraste_m.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontrou_m.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontramos_m.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrastes_m.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontraram_m.mp3"
+      ],
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontrei_f.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontraste_f.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontrou_f.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontramos_f.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrastes_f.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontraram_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu encontro",
+      "tu encontras",
+      "ele/ela encontra",
+      "nós encontramos",
+      "vós encontrais",
+      "eles/elas encontram"
+    ],
+    "examples": [
+      [
+        "Eu não encontro a minha chave.",
+        "",
+        ""
+      ],
+      [
+        "Tu encontras o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele encontra a sua carteira.",
+        "",
+        ""
+      ],
+      [
+        "Nós encontramos a solução.",
+        "",
+        ""
+      ],
+      [
+        "Vós encontrais as chaves.",
+        "",
+        ""
+      ],
+      [
+        "Eles encontram o gato.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontro_m.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontras_m.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontra_m.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontramos_m.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrais_m.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontram_m.mp3"
+      ],
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontro_f.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontras_f.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontra_f.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontramos_f.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrais_f.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontram_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu encontrarei",
+      "tu encontrarás",
+      "ele/ela encontrará",
+      "nós encontraremos",
+      "vós encontrareis",
+      "eles/elas encontrarão"
+    ],
+    "examples": [
+      [
+        "Eu encontrarei a minha chave.",
+        "",
+        ""
+      ],
+      [
+        "Tu encontrarás o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele encontrará a sua carteira.",
+        "",
+        ""
+      ],
+      [
+        "Nós encontraremos a solução.",
+        "",
+        ""
+      ],
+      [
+        "Vós encontrareis as chaves.",
+        "",
+        ""
+      ],
+      [
+        "Eles encontrarão o gato.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontrarei_m.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontraras_m.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontrara_m.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontraremos_m.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrareis_m.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontrarao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/encontrar/audio_eu_encontrarei_f.mp3",
+        "audio/pt/verben/encontrar/audio_tu_encontraras_f.mp3",
+        "audio/pt/verben/encontrar/audio_ele_ela_encontrara_f.mp3",
+        "audio/pt/verben/encontrar/audio_nos_encontraremos_f.mp3",
+        "audio/pt/verben/encontrar/audio_vos_encontrareis_f.mp3",
+        "audio/pt/verben/encontrar/audio_eles_elas_encontrarao_f.mp3"
+      ]
+    ]
+  }
+}

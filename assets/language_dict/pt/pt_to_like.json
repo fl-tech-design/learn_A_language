@@ -1,0 +1,183 @@
+{
+  "infinitive": "gostar",
+  "past": {
+    "translations": [
+      "eu gostei",
+      "tu gostaste",
+      "ele/ela gostou",
+      "nós gostámos",
+      "vós gostastes",
+      "eles/elas gostaram"
+    ],
+    "examples": [
+      [
+        "Eu gostei de chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Tu gostaste de gelado.",
+        "",
+        ""
+      ],
+      [
+        "Ele gostou de pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nós gostámos do filme.",
+        "",
+        ""
+      ],
+      [
+        "Vós gostastes do livro.",
+        "",
+        ""
+      ],
+      [
+        "Eles gostaram da música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/gostar/audio_eu_gostei_m.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostaste_m.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gostou_m.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostamos_m.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostastes_m.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostaram_m.mp3"
+      ],
+      [
+        "audio/pt/verben/gostar/audio_eu_gostei_f.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostaste_f.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gostou_f.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostamos_f.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostastes_f.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostaram_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu gosto",
+      "tu gostas",
+      "ele/ela gosta",
+      "nós gostamos",
+      "vós gostais",
+      "eles/elas gostam"
+    ],
+    "examples": [
+      [
+        "Eu gosto de chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Tu gostas de gelado.",
+        "",
+        ""
+      ],
+      [
+        "Ele gosta de pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nós gostamos do filme.",
+        "",
+        ""
+      ],
+      [
+        "Vós gostais do livro.",
+        "",
+        ""
+      ],
+      [
+        "Eles gostam da música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/gostar/audio_eu_gosto_m.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostas_m.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gosta_m.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostamos_m.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostais_m.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostam_m.mp3"
+      ],
+      [
+        "audio/pt/verben/gostar/audio_eu_gosto_f.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostas_f.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gosta_f.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostamos_f.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostais_f.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostam_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu gostarei",
+      "tu gostarás",
+      "ele/ela gostará",
+      "nós gostaremos",
+      "vós gostareis",
+      "eles/elas gostarão"
+    ],
+    "examples": [
+      [
+        "Eu gostarei de chocolate.",
+        "",
+        ""
+      ],
+      [
+        "Tu gostarás de gelado.",
+        "",
+        ""
+      ],
+      [
+        "Ele gostará de pizza.",
+        "",
+        ""
+      ],
+      [
+        "Nós gostaremos do filme.",
+        "",
+        ""
+      ],
+      [
+        "Vós gostareis do livro.",
+        "",
+        ""
+      ],
+      [
+        "Eles gostarão da música.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/gostar/audio_eu_gostarei_m.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostaras_m.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gostara_m.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostaremos_m.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostareis_m.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostarao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/gostar/audio_eu_gostarei_f.mp3",
+        "audio/pt/verben/gostar/audio_tu_gostaras_f.mp3",
+        "audio/pt/verben/gostar/audio_ele_ela_gostara_f.mp3",
+        "audio/pt/verben/gostar/audio_nos_gostaremos_f.mp3",
+        "audio/pt/verben/gostar/audio_vos_gostareis_f.mp3",
+        "audio/pt/verben/gostar/audio_eles_elas_gostarao_f.mp3"
+      ]
+    ]
+  }
+}
