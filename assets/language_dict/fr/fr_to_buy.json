@@ -1,0 +1,183 @@
+{
+  "infinitive": "acheter",
+  "past": {
+    "translations": [
+      "j'achetais",
+      "tu achetais",
+      "il/elle achetait",
+      "nous achetions",
+      "vous achetiez",
+      "ils/elles achetaient"
+    ],
+    "examples": [
+      [
+        "J'achetais du pain.",
+        "",
+        ""
+      ],
+      [
+        "Tu achetais un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il achetait une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous achetions de la nourriture.",
+        "",
+        ""
+      ],
+      [
+        "Vous achetiez des vêtements.",
+        "",
+        ""
+      ],
+      [
+        "Ils achetaient une maison.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_buy/audio_jachetais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_achetais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achetait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_achetions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_achetiez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_achetaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'achète",
+      "tu achètes",
+      "il/elle achète",
+      "nous achetons",
+      "vous achetez",
+      "ils/elles achètent"
+    ],
+    "examples": [
+      [
+        "J'achète du pain.",
+        "",
+        ""
+      ],
+      [
+        "Tu achètes un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il achète une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous achetons de la nourriture.",
+        "",
+        ""
+      ],
+      [
+        "Vous achetez des vêtements.",
+        "",
+        ""
+      ],
+      [
+        "Ils achètent une maison.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_buy/audio_jachete_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_achetes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achete_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_achetons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_achetez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_achetent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'achèterai",
+      "tu achèteras",
+      "il/elle achètera",
+      "nous achèterons",
+      "vous achèterez",
+      "ils/elles achèteront"
+    ],
+    "examples": [
+      [
+        "J'achèterai du pain.",
+        "",
+        ""
+      ],
+      [
+        "Tu achèteras un livre.",
+        "",
+        ""
+      ],
+      [
+        "Il achètera une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Nous achèterons de la nourriture.",
+        "",
+        ""
+      ],
+      [
+        "Vous achèterez des vêtements.",
+        "",
+        ""
+      ],
+      [
+        "Ils achèteront une maison.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_buy/audio_jacheterai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_tu_acheteras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_il_elle_achetera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_nous_acheterons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_vous_acheterez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_buy/audio_ils_elles_acheteront_f.mp3"
+      ]
+    ]
+  }
+}

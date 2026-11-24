@@ -1,0 +1,183 @@
+{
+  "infinitive": "beber",
+  "past": {
+    "translations": [
+      "yo bebí",
+      "tú bebiste",
+      "él/ella/usted bebió",
+      "nosotros/nosotras bebimos",
+      "vosotros/vosotras bebisteis",
+      "ellos/ellas/ustedes bebieron"
+    ],
+    "examples": [
+      [
+        "Yo bebí agua.",
+        "",
+        ""
+      ],
+      [
+        "Tú bebiste café.",
+        "",
+        ""
+      ],
+      [
+        "Él bebió té.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros bebimos cerveza.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros bebisteis vino.",
+        "",
+        ""
+      ],
+      [
+        "Ellos bebieron zumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebi_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_bebiste_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebio_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_bebimos_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_bebieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebi_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_bebiste_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebio_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_bebimos_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_bebieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo bebo",
+      "tú bebes",
+      "él/ella/usted bebe",
+      "nosotros/nosotras bebemos",
+      "vosotros/vosotras bebéis",
+      "ellos/ellas/ustedes beben"
+    ],
+    "examples": [
+      [
+        "Yo bebo agua.",
+        "",
+        ""
+      ],
+      [
+        "Tú bebes café.",
+        "",
+        ""
+      ],
+      [
+        "Él bebe té.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros bebemos cerveza.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros bebéis vino.",
+        "",
+        ""
+      ],
+      [
+        "Ellos beben zumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebo_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_bebes_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebe_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_bebemos_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebeis_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_beben_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebo_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_bebes_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebe_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_bebemos_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebeis_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_beben_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo beberé",
+      "tú beberás",
+      "él/ella/usted beberá",
+      "nosotros/nosotras beberemos",
+      "vosotros/vosotras beberéis",
+      "ellos/ellas/ustedes beberán"
+    ],
+    "examples": [
+      [
+        "Yo beberé agua.",
+        "",
+        ""
+      ],
+      [
+        "Tú beberás café.",
+        "",
+        ""
+      ],
+      [
+        "Él beberá té.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros beberemos cerveza.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros beberéis vino.",
+        "",
+        ""
+      ],
+      [
+        "Ellos beberán zumo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebere_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_beberas_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebera_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_beberemos_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebereis_m.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_beberan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_drink/audio_yo_bebere_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_tu_beberas_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_el_ella_usted_bebera_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_nosotros_nosotras_beberemos_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_vosotros_vosotras_bebereis_f.mp3",
+        "audio/es/verbs/es_audio_to_drink/audio_ellos_ellas_ustedes_beberan_f.mp3"
+      ]
+    ]
+  }
+}

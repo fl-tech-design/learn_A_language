@@ -1,0 +1,183 @@
+{
+  "infinitive": "приходить",
+  "past": {
+    "translations": [
+      "я пришёл",
+      "ты пришёл",
+      "он пришёл",
+      "мы пришли",
+      "вы пришли",
+      "они пришли"
+    ],
+    "examples": [
+      [
+        "Я пришёл домой.",
+        "",
+        ""
+      ],
+      [
+        "Ты пришёл поздно.",
+        "",
+        ""
+      ],
+      [
+        "Он пришёл на вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Мы пришли вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы пришли рано.",
+        "",
+        ""
+      ],
+      [
+        "Они пришли на встречу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_prishyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_prishyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_prishyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_prishli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_prishli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_prishli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_prishyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_prishyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_prishyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_prishli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_prishli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_prishli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я прихожу",
+      "ты приходишь",
+      "он приходит",
+      "мы приходим",
+      "вы приходите",
+      "они приходят"
+    ],
+    "examples": [
+      [
+        "Я прихожу домой.",
+        "",
+        ""
+      ],
+      [
+        "Ты приходишь поздно.",
+        "",
+        ""
+      ],
+      [
+        "Он приходит на вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Мы приходим вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы приходите рано.",
+        "",
+        ""
+      ],
+      [
+        "Они приходят на встречу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_prikhozhu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_prikhodish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_prikhodit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_prikhodim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_prikhodite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_prikhodyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_prikhozhu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_prikhodish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_prikhodit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_prikhodim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_prikhodite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_prikhodyat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я приду",
+      "ты придёшь",
+      "он придёт",
+      "мы придём",
+      "вы придёте",
+      "они придут"
+    ],
+    "examples": [
+      [
+        "Я приду домой.",
+        "",
+        ""
+      ],
+      [
+        "Ты придёшь поздно.",
+        "",
+        ""
+      ],
+      [
+        "Он придёт на вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Мы придём вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы придёте рано.",
+        "",
+        ""
+      ],
+      [
+        "Они придут на встречу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_pridu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_pridyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_pridyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_pridyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_pridyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_pridut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_come/audio_ya_pridu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_ty_pridyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_on_pridyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_my_pridyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_vy_pridyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_come/audio_oni_pridut_f.mp3"
+      ]
+    ]
+  }
+}

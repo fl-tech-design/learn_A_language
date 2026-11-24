@@ -9,7 +9,7 @@ import 'package:learn_a_language/models/grammar_models.dart';
 import 'helpers/fakes.dart';
 
 GrammarDocument _realDoc() {
-  const path = 'assets/grammar/grammar_de_en.json';
+  const path = 'assets/grammar/grammar_de/grammar_de_en.json';
   final file = File(path);
   expect(file.existsSync(), isTrue,
       reason: 'cwd=${Directory.current.path}, expected $path');

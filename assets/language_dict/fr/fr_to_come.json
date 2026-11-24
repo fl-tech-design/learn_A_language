@@ -1,0 +1,183 @@
+{
+  "infinitive": "venir",
+  "past": {
+    "translations": [
+      "je suis venu",
+      "tu es venu",
+      "il/elle est venu",
+      "nous sommes venus",
+      "vous êtes venus",
+      "ils/elles sont venus"
+    ],
+    "examples": [
+      [
+        "Je suis rentré chez moi.",
+        "",
+        ""
+      ],
+      [
+        "Tu es arrivé en retard.",
+        "",
+        ""
+      ],
+      [
+        "Il est venu à la fête.",
+        "",
+        ""
+      ],
+      [
+        "Nous sommes venus ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous êtes arrivés tôt.",
+        "",
+        ""
+      ],
+      [
+        "Ils sont venus à la réunion.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_come/audio_je_suis_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_es_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_est_venu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_sommes_venus_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_etes_venus_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_sont_venus_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je viens",
+      "tu viens",
+      "il/elle vient",
+      "nous venons",
+      "vous venez",
+      "ils/elles viennent"
+    ],
+    "examples": [
+      [
+        "Je rentre chez moi.",
+        "",
+        ""
+      ],
+      [
+        "Tu arrives en retard.",
+        "",
+        ""
+      ],
+      [
+        "Il vient à la fête.",
+        "",
+        ""
+      ],
+      [
+        "Nous venons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous arrivez tôt.",
+        "",
+        ""
+      ],
+      [
+        "Ils viennent à la réunion.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_come/audio_je_viens_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_viens_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_vient_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_venons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_venez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_viennent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je viendrai",
+      "tu viendras",
+      "il/elle viendra",
+      "nous viendrons",
+      "vous viendrez",
+      "ils/elles viendront"
+    ],
+    "examples": [
+      [
+        "Je rentrerai chez moi.",
+        "",
+        ""
+      ],
+      [
+        "Tu arriveras en retard.",
+        "",
+        ""
+      ],
+      [
+        "Il viendra à la fête.",
+        "",
+        ""
+      ],
+      [
+        "Nous viendrons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous arriverez tôt.",
+        "",
+        ""
+      ],
+      [
+        "Ils viendront à la réunion.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_come/audio_je_viendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_tu_viendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_il_elle_viendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_nous_viendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_vous_viendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_come/audio_ils_elles_viendront_f.mp3"
+      ]
+    ]
+  }
+}

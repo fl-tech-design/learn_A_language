@@ -1,0 +1,183 @@
+{
+  "infinitive": "parler",
+  "past": {
+    "translations": [
+      "je parlais",
+      "tu parlais",
+      "il/elle/on parlait",
+      "nous parlions",
+      "vous parliez",
+      "ils/elles parlaient"
+    ],
+    "examples": [
+      [
+        "Je parlais allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu parlais anglais.",
+        "",
+        ""
+      ],
+      [
+        "Il parlait français.",
+        "",
+        ""
+      ],
+      [
+        "Nous parlions ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous parliez espagnol.",
+        "",
+        ""
+      ],
+      [
+        "Ils parlaient italien.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parlais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parlais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parlait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parliez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parlaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je parle",
+      "tu parles",
+      "il/elle/on parle",
+      "nous parlons",
+      "vous parlez",
+      "ils/elles parlent"
+    ],
+    "examples": [
+      [
+        "Je parle allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu parles anglais.",
+        "",
+        ""
+      ],
+      [
+        "Il parle français.",
+        "",
+        ""
+      ],
+      [
+        "Nous parlons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous parlez espagnol.",
+        "",
+        ""
+      ],
+      [
+        "Ils parlent italien.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parles_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parle_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parlez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parlent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je parlerai",
+      "tu parleras",
+      "il/elle/on parlera",
+      "nous parlerons",
+      "vous parlerez",
+      "ils/elles parleront"
+    ],
+    "examples": [
+      [
+        "Je parlerai allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu parleras anglais.",
+        "",
+        ""
+      ],
+      [
+        "Il parlera français.",
+        "",
+        ""
+      ],
+      [
+        "Nous parlerons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous parlerez espagnol.",
+        "",
+        ""
+      ],
+      [
+        "Ils parleront italien.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_speak/audio_je_parlerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_tu_parleras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_il_elle_on_parlera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_nous_parlerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_vous_parlerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_speak/audio_ils_elles_parleront_f.mp3"
+      ]
+    ]
+  }
+}

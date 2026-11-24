@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/gehen/audio_ich_ging_m.mp3",
-        "audio/de/verben/gehen/audio_du_gingst_m.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_ging_m.mp3",
-        "audio/de/verben/gehen/audio_wir_gingen_m.mp3",
-        "audio/de/verben/gehen/audio_ihr_gingt_m.mp3",
-        "audio/de/verben/gehen/audio_sie_gingen_m.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_ging_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_gingst_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_ging_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_gingen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_gingt_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_gingen_m.mp3"
       ],
       [
-        "audio/de/verben/gehen/audio_ich_ging_f.mp3",
-        "audio/de/verben/gehen/audio_du_gingst_f.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_ging_f.mp3",
-        "audio/de/verben/gehen/audio_wir_gingen_f.mp3",
-        "audio/de/verben/gehen/audio_ihr_gingt_f.mp3",
-        "audio/de/verben/gehen/audio_sie_gingen_f.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_ging_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_gingst_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_ging_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_gingen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_gingt_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_gingen_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/gehen/audio_ich_gehe_m.mp3",
-        "audio/de/verben/gehen/audio_du_gehst_m.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_geht_m.mp3",
-        "audio/de/verben/gehen/audio_wir_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_ihr_geht_m.mp3",
-        "audio/de/verben/gehen/audio_sie_gehen_m.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_gehe_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_gehst_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_geht_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_geht_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_gehen_m.mp3"
       ],
       [
-        "audio/de/verben/gehen/audio_ich_gehe_f.mp3",
-        "audio/de/verben/gehen/audio_du_gehst_f.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_geht_f.mp3",
-        "audio/de/verben/gehen/audio_wir_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_ihr_geht_f.mp3",
-        "audio/de/verben/gehen/audio_sie_gehen_f.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_gehe_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_gehst_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_geht_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_geht_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_gehen_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/gehen/audio_ich_werde_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_du_wirst_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_wird_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_wir_werden_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_ihr_werdet_gehen_m.mp3",
-        "audio/de/verben/gehen/audio_sie_werden_gehen_m.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_werde_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_wirst_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_wird_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_werden_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_werdet_gehen_m.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_werden_gehen_m.mp3"
       ],
       [
-        "audio/de/verben/gehen/audio_ich_werde_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_du_wirst_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_er_sie_es_wird_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_wir_werden_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_ihr_werdet_gehen_f.mp3",
-        "audio/de/verben/gehen/audio_sie_werden_gehen_f.mp3"
+        "audio/de/verbs/de_audio_to_go/audio_ich_werde_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_du_wirst_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_er_sie_es_wird_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_wir_werden_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_ihr_werdet_gehen_f.mp3",
+        "audio/de/verbs/de_audio_to_go/audio_sie_werden_gehen_f.mp3"
       ]
     ]
   }

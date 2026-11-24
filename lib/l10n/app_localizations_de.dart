@@ -75,6 +75,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get catDueWords => 'Fällige Wörter';
 
   @override
+  String get catInProgressWords => 'In Arbeit';
+
+  @override
+  String get catVerbs => 'Verben';
+
+  @override
   String get catLearnedWords => 'Gelernte Wörter';
 
   @override
@@ -503,4 +509,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get russian => 'Russisch';
+
+  @override
+  String get greek => 'Griechisch';
+
+  @override
+  String get motherTongueHint =>
+      'Bestimmt die Übersetzungsrichtung (Wort und Übersetzung) für alle gewählten Kurs-Sprachen.';
 }

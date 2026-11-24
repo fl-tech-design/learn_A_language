@@ -1,0 +1,183 @@
+{
+  "infinitive": "commencer",
+  "past": {
+    "translations": [
+      "je commençais",
+      "tu commençais",
+      "il/elle/on commençait",
+      "nous commencions",
+      "vous commenciez",
+      "ils/elles commençaient"
+    ],
+    "examples": [
+      [
+        "J'ai commencé le projet.",
+        "",
+        ""
+      ],
+      [
+        "Tu as commencé la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Il a commencé la course.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons commencé la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez commencé le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont commencé le concert.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_begin/audio_je_commencais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_tu_commencais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_il_elle_on_commencait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_nous_commencions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_vous_commenciez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_ils_elles_commencaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je commence",
+      "tu commences",
+      "il/elle/on commence",
+      "nous commençons",
+      "vous commencez",
+      "ils/elles commencent"
+    ],
+    "examples": [
+      [
+        "Je commence le projet.",
+        "",
+        ""
+      ],
+      [
+        "Tu commences la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Il commence la course.",
+        "",
+        ""
+      ],
+      [
+        "Nous commençons la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous commencez le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils commencent le concert.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_begin/audio_je_commence_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_tu_commences_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_il_elle_on_commence_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_nous_commencons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_vous_commencez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_ils_elles_commencent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je commencerai",
+      "tu commenceras",
+      "il/elle/on commencera",
+      "nous commencerons",
+      "vous commencerez",
+      "ils/elles commenceront"
+    ],
+    "examples": [
+      [
+        "Je commencerai le projet.",
+        "",
+        ""
+      ],
+      [
+        "Tu commenceras la réunion.",
+        "",
+        ""
+      ],
+      [
+        "Il commencera la course.",
+        "",
+        ""
+      ],
+      [
+        "Nous commencerons la fête.",
+        "",
+        ""
+      ],
+      [
+        "Vous commencerez le jeu.",
+        "",
+        ""
+      ],
+      [
+        "Ils commenceront le concert.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_begin/audio_je_commencerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_tu_commenceras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_il_elle_on_commencera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_nous_commencerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_vous_commencerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_begin/audio_ils_elles_commenceront_f.mp3"
+      ]
+    ]
+  }
+}

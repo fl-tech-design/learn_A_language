@@ -1,0 +1,183 @@
+{
+  "infinitive": "abrir",
+  "past": {
+    "translations": [
+      "yo abrí",
+      "tú abriste",
+      "él/ella abrió",
+      "nosotros abrimos",
+      "vosotros abristeis",
+      "ellos/ellas abrieron"
+    ],
+    "examples": [
+      [
+        "Abrí la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Abriste la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él abrió la caja.",
+        "",
+        ""
+      ],
+      [
+        "Abrimos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Abristeis las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Abrieron las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abri_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abriste_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abrio_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abrimos_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abristeis_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abrieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abri_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abriste_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abrio_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abrimos_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abristeis_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abrieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo abro",
+      "tú abres",
+      "él/ella abre",
+      "nosotros abrimos",
+      "vosotros abrís",
+      "ellos/ellas abren"
+    ],
+    "examples": [
+      [
+        "Abro la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Abres la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él abre la caja.",
+        "",
+        ""
+      ],
+      [
+        "Abrimos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Abrís las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Abren las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abro_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abres_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abre_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abrimos_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abris_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abren_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abro_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abres_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abre_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abrimos_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abris_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abren_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo abriré",
+      "tú abrirás",
+      "él/ella abrirá",
+      "nosotros abriremos",
+      "vosotros abriréis",
+      "ellos/ellas abrirán"
+    ],
+    "examples": [
+      [
+        "Abriré la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Abrirás la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él abrirá la caja.",
+        "",
+        ""
+      ],
+      [
+        "Abriremos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Abriréis las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Abrirán las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abrire_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abriras_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abrira_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abriremos_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abrireis_m.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abriran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_open/audio_yo_abrire_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_tu_abriras_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_el_ella_abrira_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_nosotros_abriremos_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_vosotros_abrireis_f.mp3",
+        "audio/es/verbs/es_audio_to_open/audio_ellos_ellas_abriran_f.mp3"
+      ]
+    ]
+  }
+}

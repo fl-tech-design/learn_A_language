@@ -1,0 +1,183 @@
+{
+  "infinitive": "επιτρέπεται",
+  "past": {
+    "translations": [
+      "μου επιτρεπόταν",
+      "σου επιτρεπόταν",
+      "του/της επιτρεπόταν",
+      "μας επιτρεπόταν",
+      "σας επιτρεπόταν",
+      "τους επιτρεπόταν"
+    ],
+    "examples": [
+      [
+        "Μου επιτρεπόταν να φύγω.",
+        "",
+        ""
+      ],
+      [
+        "Σου επιτρεπόταν να μείνεις.",
+        "",
+        ""
+      ],
+      [
+        "Του επιτρεπόταν να παίξει.",
+        "",
+        ""
+      ],
+      [
+        "Μας επιτρεπόταν να φύγουμε.",
+        "",
+        ""
+      ],
+      [
+        "Σας επιτρεπόταν να μιλήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Τους επιτρεπόταν να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_moy_epitrepotan_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_soy_epitrepotan_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toytis_epitrepotan_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_mas_epitrepotan_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_sas_epitrepotan_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toys_epitrepotan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_moy_epitrepotan_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_soy_epitrepotan_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toytis_epitrepotan_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_mas_epitrepotan_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_sas_epitrepotan_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toys_epitrepotan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "μου επιτρέπεται",
+      "σου επιτρέπεται",
+      "του/της επιτρέπεται",
+      "μας επιτρέπεται",
+      "σας επιτρέπεται",
+      "τους επιτρέπεται"
+    ],
+    "examples": [
+      [
+        "Μου επιτρέπεται να φύγω.",
+        "",
+        ""
+      ],
+      [
+        "Σου επιτρέπεται να μείνεις.",
+        "",
+        ""
+      ],
+      [
+        "Του επιτρέπεται να παίξει.",
+        "",
+        ""
+      ],
+      [
+        "Μας επιτρέπεται να φύγουμε.",
+        "",
+        ""
+      ],
+      [
+        "Σας επιτρέπεται να μιλήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Τους επιτρέπεται να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_moy_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_soy_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toytis_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_mas_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_sas_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toys_epitrepetai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_moy_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_soy_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toytis_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_mas_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_sas_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_toys_epitrepetai_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "θα μου επιτρέπεται",
+      "θα σου επιτρέπεται",
+      "θα του/της επιτρέπεται",
+      "θα μας επιτρέπεται",
+      "θα σας επιτρέπεται",
+      "θα τους επιτρέπεται"
+    ],
+    "examples": [
+      [
+        "Θα μου επιτρέπεται να φύγω.",
+        "",
+        ""
+      ],
+      [
+        "Θα σου επιτρέπεται να μείνεις.",
+        "",
+        ""
+      ],
+      [
+        "Θα του επιτρέπεται να παίξει.",
+        "",
+        ""
+      ],
+      [
+        "Θα μας επιτρέπεται να φύγουμε.",
+        "",
+        ""
+      ],
+      [
+        "Θα σας επιτρέπεται να μιλήσετε.",
+        "",
+        ""
+      ],
+      [
+        "Θα τους επιτρέπεται να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_moy_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_soy_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_toytis_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_mas_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_sas_epitrepetai_m.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_toys_epitrepetai_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_moy_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_soy_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_toytis_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_mas_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_sas_epitrepetai_f.mp3",
+        "audio/el/verbs/el_audio_to_be_allowed_to/audio_tha_toys_epitrepetai_f.mp3"
+      ]
+    ]
+  }
+}

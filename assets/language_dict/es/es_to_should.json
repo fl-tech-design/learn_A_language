@@ -1,0 +1,183 @@
+{
+  "infinitive": "deber",
+  "past": {
+    "translations": [
+      "yo debía",
+      "tú debías",
+      "él/ella debía",
+      "nosotros debíamos",
+      "vosotros debíais",
+      "ellos/ellas debían"
+    ],
+    "examples": [
+      [
+        "Yo debía estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Tú debías ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Él debía escuchar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros debíamos esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros debíais preguntar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos debían quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debia_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_debias_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debia_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_debiamos_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debiais_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_debian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debia_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_debias_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debia_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_debiamos_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debiais_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_debian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo debo",
+      "tú debes",
+      "él/ella debe",
+      "nosotros debemos",
+      "vosotros debéis",
+      "ellos/ellas deben"
+    ],
+    "examples": [
+      [
+        "Yo debo estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Tú debes ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Él debe escuchar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros debemos esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros debéis preguntar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos deben quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debo_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_debes_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debe_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_debemos_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debeis_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_deben_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debo_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_debes_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debe_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_debemos_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debeis_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_deben_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo deberé",
+      "tú deberás",
+      "él/ella deberá",
+      "nosotros deberemos",
+      "vosotros deberéis",
+      "ellos/ellas deberán"
+    ],
+    "examples": [
+      [
+        "Yo tendré que estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Tú tendrás que ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Él tendrá que escuchar.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros tendremos que esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros tendréis que preguntar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tendrán que quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debere_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_deberas_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debera_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_deberemos_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debereis_m.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_deberan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_should/audio_yo_debere_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_tu_deberas_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_el_ella_debera_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_nosotros_deberemos_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_vosotros_debereis_f.mp3",
+        "audio/es/verbs/es_audio_to_should/audio_ellos_ellas_deberan_f.mp3"
+      ]
+    ]
+  }
+}

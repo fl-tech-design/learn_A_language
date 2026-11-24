@@ -1,0 +1,183 @@
+{
+  "infinitive": "αγαπώ",
+  "past": {
+    "translations": [
+      "εγώ αγαπούσα",
+      "εσύ αγαπούσες",
+      "αυτός/αυτή/αυτό αγαπούσε",
+      "εμείς αγαπούσαμε",
+      "εσείς αγαπούσατε",
+      "αυτοί/αυτές/αυτά αγαπούσαν"
+    ],
+    "examples": [
+      [
+        "Εγώ αγαπούσα τη σοκολάτα.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ αγαπούσες το παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός αγαπούσε την πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς αγαπούσαμε την ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς αγαπούσατε το βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί αγαπούσαν τη μουσική.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_agapoysa_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_agapoyses_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_agapoyse_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_agapoysame_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_agapoysate_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_agapoysan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_agapoysa_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_agapoyses_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_agapoyse_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_agapoysame_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_agapoysate_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_agapoysan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ αγαπώ",
+      "εσύ αγαπάς",
+      "αυτός/αυτή/αυτό αγαπά",
+      "εμείς αγαπάμε",
+      "εσείς αγαπάτε",
+      "αυτοί/αυτές/αυτά αγαπούν"
+    ],
+    "examples": [
+      [
+        "Εγώ αγαπώ τη σοκολάτα.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ αγαπάς το παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός αγαπά την πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς αγαπάμε την ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς αγαπάτε το βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί αγαπούν τη μουσική.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_agapo_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_agapas_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_agapa_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_agapame_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_agapate_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_agapoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_agapo_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_agapas_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_agapa_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_agapame_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_agapate_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_agapoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα αγαπώ",
+      "εσύ θα αγαπάς",
+      "αυτός/αυτή/αυτό θα αγαπά",
+      "εμείς θα αγαπάμε",
+      "εσείς θα αγαπάτε",
+      "αυτοί/αυτές/αυτά θα αγαπούν"
+    ],
+    "examples": [
+      [
+        "Εγώ θα αγαπώ τη σοκολάτα.",
+        "",
+        ""
+      ],
+      [
+        "Εσύ θα αγαπάς το παγωτό.",
+        "",
+        ""
+      ],
+      [
+        "Αυτός θα αγαπά την πίτσα.",
+        "",
+        ""
+      ],
+      [
+        "Εμείς θα αγαπάμε την ταινία.",
+        "",
+        ""
+      ],
+      [
+        "Εσείς θα αγαπάτε το βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Αυτοί θα αγαπούν τη μουσική.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_tha_agapo_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_tha_agapas_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_tha_agapa_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_tha_agapame_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_tha_agapate_m.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_tha_agapoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_like/audio_ego_tha_agapo_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_esy_tha_agapas_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytosaytiayto_tha_agapa_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_emeis_tha_agapame_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_eseis_tha_agapate_f.mp3",
+        "audio/el/verbs/el_audio_to_like/audio_aytoiaytesayta_tha_agapoyn_f.mp3"
+      ]
+    ]
+  }
+}

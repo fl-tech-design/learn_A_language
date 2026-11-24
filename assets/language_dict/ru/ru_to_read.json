@@ -1,0 +1,183 @@
+{
+  "infinitive": "читать",
+  "past": {
+    "translations": [
+      "я читал",
+      "ты читал",
+      "он читал",
+      "мы читали",
+      "вы читали",
+      "они читали"
+    ],
+    "examples": [
+      [
+        "Я прочитал книгу.",
+        "",
+        ""
+      ],
+      [
+        "Ты прочитал журнал.",
+        "",
+        ""
+      ],
+      [
+        "Он прочитал газету.",
+        "",
+        ""
+      ],
+      [
+        "Мы прочитали рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Вы прочитали стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Они прочитали письмо.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chital_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chital_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я читаю",
+      "ты читаешь",
+      "он читает",
+      "мы читаем",
+      "вы читаете",
+      "они читают"
+    ],
+    "examples": [
+      [
+        "Я читаю книгу.",
+        "",
+        ""
+      ],
+      [
+        "Ты читаешь журнал.",
+        "",
+        ""
+      ],
+      [
+        "Он читает газету.",
+        "",
+        ""
+      ],
+      [
+        "Мы читаем рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Вы читаете стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Они читают письмо.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chitayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chitaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chitaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_chitayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_chitaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_chitaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_chitaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_chitaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_chitayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду читать",
+      "ты будешь читать",
+      "он будет читать",
+      "мы будем читать",
+      "вы будете читать",
+      "они будут читать"
+    ],
+    "examples": [
+      [
+        "Я буду читать книгу.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь читать журнал.",
+        "",
+        ""
+      ],
+      [
+        "Он будет читать газету.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем читать рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете читать стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Они будут читать письмо.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_budu_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_budesh_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_budet_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_budem_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_budete_chitat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_budut_chitat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_read/audio_ya_budu_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_ty_budesh_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_on_budet_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_my_budem_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_vy_budete_chitat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_read/audio_oni_budut_chitat_f.mp3"
+      ]
+    ]
+  }
+}

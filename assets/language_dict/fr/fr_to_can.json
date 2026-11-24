@@ -1,0 +1,183 @@
+{
+  "infinitive": "pouvoir",
+  "past": {
+    "translations": [
+      "je pouvais",
+      "tu pouvais",
+      "il/elle/on pouvait",
+      "nous pouvions",
+      "vous pouviez",
+      "ils/elles pouvaient"
+    ],
+    "examples": [
+      [
+        "Je pouvais nager.",
+        "",
+        ""
+      ],
+      [
+        "Tu pouvais danser.",
+        "",
+        ""
+      ],
+      [
+        "Il pouvait chanter.",
+        "",
+        ""
+      ],
+      [
+        "Nous pouvions jouer.",
+        "",
+        ""
+      ],
+      [
+        "Vous pouviez courir.",
+        "",
+        ""
+      ],
+      [
+        "Ils pouvaient rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_can/audio_je_pouvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_pouvais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_pouvait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pouvions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pouviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_pouvaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je peux",
+      "tu peux",
+      "il/elle/on peut",
+      "nous pouvons",
+      "vous pouvez",
+      "ils/elles peuvent"
+    ],
+    "examples": [
+      [
+        "Je peux nager.",
+        "",
+        ""
+      ],
+      [
+        "Tu peux danser.",
+        "",
+        ""
+      ],
+      [
+        "Il peut chanter.",
+        "",
+        ""
+      ],
+      [
+        "Nous pouvons jouer.",
+        "",
+        ""
+      ],
+      [
+        "Vous pouvez courir.",
+        "",
+        ""
+      ],
+      [
+        "Ils peuvent rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_can/audio_je_peux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_peux_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_peut_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pouvons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pouvez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_peuvent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je pourrai",
+      "tu pourras",
+      "il/elle/on pourra",
+      "nous pourrons",
+      "vous pourrez",
+      "ils/elles pourront"
+    ],
+    "examples": [
+      [
+        "Je pourrai nager.",
+        "",
+        ""
+      ],
+      [
+        "Tu pourras danser.",
+        "",
+        ""
+      ],
+      [
+        "Il pourra chanter.",
+        "",
+        ""
+      ],
+      [
+        "Nous pourrons jouer.",
+        "",
+        ""
+      ],
+      [
+        "Vous pourrez courir.",
+        "",
+        ""
+      ],
+      [
+        "Ils pourront rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_can/audio_je_pourrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_tu_pourras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_il_elle_on_pourra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_nous_pourrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_vous_pourrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_can/audio_ils_elles_pourront_f.mp3"
+      ]
+    ]
+  }
+}

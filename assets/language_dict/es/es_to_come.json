@@ -1,0 +1,183 @@
+{
+  "infinitive": "venir",
+  "past": {
+    "translations": [
+      "yo vine",
+      "tú viniste",
+      "él/ella vino",
+      "nosotros vinimos",
+      "vosotros vinisteis",
+      "ellos/ellas vinieron"
+    ],
+    "examples": [
+      [
+        "Yo vine a casa.",
+        "",
+        ""
+      ],
+      [
+        "Tú viniste tarde.",
+        "",
+        ""
+      ],
+      [
+        "Él vino a la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vinimos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vinisteis temprano.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vinieron a la reunión.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vine_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_viniste_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_vino_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_vinimos_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_vinisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vinieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vine_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_viniste_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_vino_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_vinimos_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_vinisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vinieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo vengo",
+      "tú vienes",
+      "él/ella viene",
+      "nosotros venimos",
+      "vosotros venís",
+      "ellos/ellas vienen"
+    ],
+    "examples": [
+      [
+        "Yo vengo a casa.",
+        "",
+        ""
+      ],
+      [
+        "Tú vienes tarde.",
+        "",
+        ""
+      ],
+      [
+        "Él viene a la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros venimos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros venís temprano.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vienen a la reunión.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vengo_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_vienes_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_viene_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_venimos_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_venis_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vienen_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vengo_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_vienes_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_viene_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_venimos_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_venis_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vienen_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo vendré",
+      "tú vendrás",
+      "él/ella vendrá",
+      "nosotros vendremos",
+      "vosotros vendréis",
+      "ellos/ellas vendrán"
+    ],
+    "examples": [
+      [
+        "Yo vendré a casa.",
+        "",
+        ""
+      ],
+      [
+        "Tú vendrás tarde.",
+        "",
+        ""
+      ],
+      [
+        "Él vendrá a la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vendremos juntos.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vendréis temprano.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vendrán a la reunión.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vendre_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_vendras_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_vendra_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_vendremos_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_vendreis_m.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vendran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_come/audio_yo_vendre_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_tu_vendras_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_el_ella_vendra_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_nosotros_vendremos_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_vosotros_vendreis_f.mp3",
+        "audio/es/verbs/es_audio_to_come/audio_ellos_ellas_vendran_f.mp3"
+      ]
+    ]
+  }
+}

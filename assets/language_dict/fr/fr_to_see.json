@@ -1,0 +1,183 @@
+{
+  "infinitive": "voir",
+  "past": {
+    "translations": [
+      "j'ai vu",
+      "tu as vu",
+      "il/elle/on a vu",
+      "nous avons vu",
+      "vous avez vu",
+      "ils/elles ont vu"
+    ],
+    "examples": [
+      [
+        "J'ai vu un film.",
+        "",
+        ""
+      ],
+      [
+        "Tu as vu une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Il a vu un chien.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons vu une maison.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez vu un arbre.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont vu un oiseau.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_see/audio_jai_vu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_tu_as_vu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_il_elle_on_a_vu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_nous_avons_vu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_vous_avez_vu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_ils_elles_ont_vu_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je vois",
+      "tu vois",
+      "il/elle/on voit",
+      "nous voyons",
+      "vous voyez",
+      "ils/elles voient"
+    ],
+    "examples": [
+      [
+        "Je vois un film.",
+        "",
+        ""
+      ],
+      [
+        "Tu vois une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Il voit un chien.",
+        "",
+        ""
+      ],
+      [
+        "Nous voyons une maison.",
+        "",
+        ""
+      ],
+      [
+        "Vous voyez un arbre.",
+        "",
+        ""
+      ],
+      [
+        "Ils voient un oiseau.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_see/audio_je_vois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_tu_vois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_il_elle_on_voit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_nous_voyons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_vous_voyez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_ils_elles_voient_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je verrai",
+      "tu verras",
+      "il/elle/on verra",
+      "nous verrons",
+      "vous verrez",
+      "ils/elles verront"
+    ],
+    "examples": [
+      [
+        "Je verrai un film.",
+        "",
+        ""
+      ],
+      [
+        "Tu verras une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Il verra un chien.",
+        "",
+        ""
+      ],
+      [
+        "Nous verrons une maison.",
+        "",
+        ""
+      ],
+      [
+        "Vous verrez un arbre.",
+        "",
+        ""
+      ],
+      [
+        "Ils verront un oiseau.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_see/audio_je_verrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_tu_verras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_il_elle_on_verra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_nous_verrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_vous_verrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_see/audio_ils_elles_verront_f.mp3"
+      ]
+    ]
+  }
+}

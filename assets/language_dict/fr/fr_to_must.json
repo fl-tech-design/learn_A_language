@@ -1,0 +1,183 @@
+{
+  "infinitive": "devoir",
+  "past": {
+    "translations": [
+      "je devais",
+      "tu devais",
+      "il/elle/on devait",
+      "nous devions",
+      "vous deviez",
+      "ils/elles devaient"
+    ],
+    "examples": [
+      [
+        "Je devais travailler.",
+        "",
+        ""
+      ],
+      [
+        "Tu devais étudier.",
+        "",
+        ""
+      ],
+      [
+        "Il devait partir.",
+        "",
+        ""
+      ],
+      [
+        "Nous devions attendre.",
+        "",
+        ""
+      ],
+      [
+        "Vous deviez aider.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles devaient rester.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_must/audio_je_devais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_tu_devais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_il_elle_on_devait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_nous_devions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_vous_deviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_ils_elles_devaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je dois",
+      "tu dois",
+      "il/elle/on doit",
+      "nous devons",
+      "vous devez",
+      "ils/elles doivent"
+    ],
+    "examples": [
+      [
+        "Je dois travailler.",
+        "",
+        ""
+      ],
+      [
+        "Tu dois étudier.",
+        "",
+        ""
+      ],
+      [
+        "Il doit partir.",
+        "",
+        ""
+      ],
+      [
+        "Nous devons attendre.",
+        "",
+        ""
+      ],
+      [
+        "Vous devez aider.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles doivent rester.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_must/audio_je_dois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_tu_dois_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_il_elle_on_doit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_nous_devons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_vous_devez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_ils_elles_doivent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je devrai",
+      "tu devras",
+      "il/elle/on devra",
+      "nous devrons",
+      "vous devrez",
+      "ils/elles devront"
+    ],
+    "examples": [
+      [
+        "Je devrai travailler.",
+        "",
+        ""
+      ],
+      [
+        "Tu devras étudier.",
+        "",
+        ""
+      ],
+      [
+        "Il devra partir.",
+        "",
+        ""
+      ],
+      [
+        "Nous devrons attendre.",
+        "",
+        ""
+      ],
+      [
+        "Vous devrez aider.",
+        "",
+        ""
+      ],
+      [
+        "Ils/Elles devront rester.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_must/audio_je_devrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_tu_devras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_il_elle_on_devra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_nous_devrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_vous_devrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_must/audio_ils_elles_devront_f.mp3"
+      ]
+    ]
+  }
+}

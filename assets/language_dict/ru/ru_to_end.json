@@ -1,0 +1,183 @@
+{
+  "infinitive": "заканчивать",
+  "past": {
+    "translations": [
+      "я заканчивал",
+      "ты заканчивал",
+      "он заканчивал",
+      "мы заканчивали",
+      "вы заканчивали",
+      "они заканчивали"
+    ],
+    "examples": [
+      [
+        "Я закончил совещание.",
+        "",
+        ""
+      ],
+      [
+        "Ты закончил разговор.",
+        "",
+        ""
+      ],
+      [
+        "Он закончил шоу.",
+        "",
+        ""
+      ],
+      [
+        "Мы закончили вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы закончили игру.",
+        "",
+        ""
+      ],
+      [
+        "Они закончили мероприятие.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchival_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchival_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я заканчиваю",
+      "ты заканчиваешь",
+      "он заканчивает",
+      "мы заканчиваем",
+      "вы заканчиваете",
+      "они заканчивают"
+    ],
+    "examples": [
+      [
+        "Я заканчиваю совещание.",
+        "",
+        ""
+      ],
+      [
+        "Ты заканчиваешь разговор.",
+        "",
+        ""
+      ],
+      [
+        "Он заканчивает шоу.",
+        "",
+        ""
+      ],
+      [
+        "Мы заканчиваем вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы заканчиваете игру.",
+        "",
+        ""
+      ],
+      [
+        "Они заканчивают мероприятие.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchivayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchivaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchivaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakanchivayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakanchivaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakanchivaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakanchivaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakanchivaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakanchivayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я закончу",
+      "ты закончишь",
+      "он закончит",
+      "мы закончим",
+      "вы закончите",
+      "они закончат"
+    ],
+    "examples": [
+      [
+        "Я закончу совещание.",
+        "",
+        ""
+      ],
+      [
+        "Ты закончишь разговор.",
+        "",
+        ""
+      ],
+      [
+        "Он закончит шоу.",
+        "",
+        ""
+      ],
+      [
+        "Мы закончим вечеринку.",
+        "",
+        ""
+      ],
+      [
+        "Вы закончите игру.",
+        "",
+        ""
+      ],
+      [
+        "Они закончат мероприятие.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakonchu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakonchish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakonchit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakonchim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakonchite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakonchat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_end/audio_ya_zakonchu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_ty_zakonchish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_on_zakonchit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_my_zakonchim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_vy_zakonchite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_end/audio_oni_zakonchat_f.mp3"
+      ]
+    ]
+  }
+}

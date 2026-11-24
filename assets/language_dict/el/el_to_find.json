@@ -1,0 +1,183 @@
+{
+  "infinitive": "βρίσκω",
+  "past": {
+    "translations": [
+      "εγώ βρήκα",
+      "εσύ βρήκες",
+      "αυτός/αυτή/αυτό βρήκε",
+      "εμείς βρήκαμε",
+      "εσείς βρήκατε",
+      "αυτοί/αυτές/αυτά βρήκαν"
+    ],
+    "examples": [
+      [
+        "Βρήκα το κλειδί μου.",
+        "",
+        ""
+      ],
+      [
+        "Βρήκες το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Βρήκε το πορτοφόλι του.",
+        "",
+        ""
+      ],
+      [
+        "Βρήκαμε τη λύση.",
+        "",
+        ""
+      ],
+      [
+        "Βρήκατε τα κλειδιά.",
+        "",
+        ""
+      ],
+      [
+        "Βρήκαν τη γάτα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_vrika_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_vrikes_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_vrike_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_vrikame_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_vrikate_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_vrikan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_vrika_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_vrikes_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_vrike_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_vrikame_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_vrikate_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_vrikan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ βρίσκω",
+      "εσύ βρίσκεις",
+      "αυτός/αυτή/αυτό βρίσκει",
+      "εμείς βρίσκουμε",
+      "εσείς βρίσκετε",
+      "αυτοί/αυτές/αυτά βρίσκουν"
+    ],
+    "examples": [
+      [
+        "Δεν βρίσκω το κλειδί μου.",
+        "",
+        ""
+      ],
+      [
+        "Βρίσκεις το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Βρίσκει το πορτοφόλι του.",
+        "",
+        ""
+      ],
+      [
+        "Βρίσκουμε τη λύση.",
+        "",
+        ""
+      ],
+      [
+        "Βρίσκετε τα κλειδιά.",
+        "",
+        ""
+      ],
+      [
+        "Βρίσκουν τη γάτα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_vrisko_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_vriskeis_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_vriskei_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_vriskoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_vriskete_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_vriskoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_vrisko_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_vriskeis_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_vriskei_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_vriskoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_vriskete_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_vriskoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα βρω",
+      "εσύ θα βρεις",
+      "αυτός/αυτή/αυτό θα βρει",
+      "εμείς θα βρούμε",
+      "εσείς θα βρείτε",
+      "αυτοί/αυτές/αυτά θα βρουν"
+    ],
+    "examples": [
+      [
+        "Θα βρω το κλειδί μου.",
+        "",
+        ""
+      ],
+      [
+        "Θα βρεις το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Θα βρει το πορτοφόλι του.",
+        "",
+        ""
+      ],
+      [
+        "Θα βρούμε τη λύση.",
+        "",
+        ""
+      ],
+      [
+        "Θα βρείτε τα κλειδιά.",
+        "",
+        ""
+      ],
+      [
+        "Θα βρουν τη γάτα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_tha_vro_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_tha_vreis_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_tha_vrei_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_tha_vroyme_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_tha_vreite_m.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_tha_vroyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_find/audio_ego_tha_vro_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_esy_tha_vreis_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytosaytiayto_tha_vrei_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_emeis_tha_vroyme_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_eseis_tha_vreite_f.mp3",
+        "audio/el/verbs/el_audio_to_find/audio_aytoiaytesayta_tha_vroyn_f.mp3"
+      ]
+    ]
+  }
+}

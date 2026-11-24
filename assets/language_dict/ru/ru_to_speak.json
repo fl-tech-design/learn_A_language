@@ -1,0 +1,183 @@
+{
+  "infinitive": "говорить",
+  "past": {
+    "translations": [
+      "я говорил",
+      "ты говорил",
+      "он говорил",
+      "мы говорили",
+      "вы говорили",
+      "они говорили"
+    ],
+    "examples": [
+      [
+        "Я говорил по-немецки.",
+        "",
+        ""
+      ],
+      [
+        "Ты говорил по-английски.",
+        "",
+        ""
+      ],
+      [
+        "Он говорил по-французски.",
+        "",
+        ""
+      ],
+      [
+        "Мы говорили вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы говорили по-испански.",
+        "",
+        ""
+      ],
+      [
+        "Они говорили по-итальянски.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govoril_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorili_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govorili_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govoril_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorili_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govorili_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я говорю",
+      "ты говоришь",
+      "он говорит",
+      "мы говорим",
+      "вы говорите",
+      "они говорят"
+    ],
+    "examples": [
+      [
+        "Я говорю по-немецки.",
+        "",
+        ""
+      ],
+      [
+        "Ты говоришь по-английски.",
+        "",
+        ""
+      ],
+      [
+        "Он говорит по-французски.",
+        "",
+        ""
+      ],
+      [
+        "Мы говорим вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы говорите по-испански.",
+        "",
+        ""
+      ],
+      [
+        "Они говорят по-итальянски.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoryu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govorish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govoryat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_govoryu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_govorish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_govorim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_govorite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_govoryat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду говорить",
+      "ты будешь говорить",
+      "он будет говорить",
+      "мы будем говорить",
+      "вы будете говорить",
+      "они будут говорить"
+    ],
+    "examples": [
+      [
+        "Я буду говорить по-немецки.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь говорить по-английски.",
+        "",
+        ""
+      ],
+      [
+        "Он будет говорить по-французски.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем говорить вместе.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете говорить по-испански.",
+        "",
+        ""
+      ],
+      [
+        "Они будут говорить по-итальянски.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_budu_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_budesh_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_budet_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_budem_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_budete_govorit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_budut_govorit_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_speak/audio_ya_budu_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_ty_budesh_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_on_budet_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_my_budem_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_vy_budete_govorit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_speak/audio_oni_budut_govorit_f.mp3"
+      ]
+    ]
+  }
+}

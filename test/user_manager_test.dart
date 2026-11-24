@@ -14,7 +14,6 @@ UserData _minimalUser(String username, String mLang) => UserData(
       progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
       learnedLanguages: const [],
       language: const {},
-      vocab: const {},
     );
 
 void main() {
@@ -30,7 +29,7 @@ void main() {
       expect(saved['u_name'], 'alice');
       expect(saved['m_lang'], 'de');
       expect(saved['language'], {'custom': 1});
-      expect(saved['vocab'], isEmpty);
+      expect(saved['vocab_by_lang'], isEmpty);
       expect(saved['progress'], isA<Map>());
     });
 

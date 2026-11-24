@@ -1,0 +1,183 @@
+{
+  "infinitive": "leer",
+  "past": {
+    "translations": [
+      "yo leí",
+      "tú leíste",
+      "él/ella leyó",
+      "nosotros leímos",
+      "vosotros leísteis",
+      "ellos/ellas leyeron"
+    ],
+    "examples": [
+      [
+        "Leí un libro.",
+        "",
+        ""
+      ],
+      [
+        "Leíste una revista.",
+        "",
+        ""
+      ],
+      [
+        "Él leyó un periódico.",
+        "",
+        ""
+      ],
+      [
+        "Leímos una historia.",
+        "",
+        ""
+      ],
+      [
+        "Leísteis un poema.",
+        "",
+        ""
+      ],
+      [
+        "Leyeron una carta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_lei_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_leiste_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_leyo_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leimos_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leyeron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_lei_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_leiste_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_leyo_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leimos_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leyeron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo leo",
+      "tú lees",
+      "él/ella lee",
+      "nosotros leemos",
+      "vosotros leéis",
+      "ellos/ellas leen"
+    ],
+    "examples": [
+      [
+        "Leo un libro.",
+        "",
+        ""
+      ],
+      [
+        "Lees una revista.",
+        "",
+        ""
+      ],
+      [
+        "Él lee un periódico.",
+        "",
+        ""
+      ],
+      [
+        "Leemos una historia.",
+        "",
+        ""
+      ],
+      [
+        "Leéis un poema.",
+        "",
+        ""
+      ],
+      [
+        "Leen una carta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_leo_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_lees_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_lee_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leemos_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leeis_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leen_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_leo_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_lees_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_lee_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leemos_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leeis_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leen_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo leeré",
+      "tú leerás",
+      "él/ella leerá",
+      "nosotros leeremos",
+      "vosotros leeréis",
+      "ellos/ellas leerán"
+    ],
+    "examples": [
+      [
+        "Leeré un libro.",
+        "",
+        ""
+      ],
+      [
+        "Leerás una revista.",
+        "",
+        ""
+      ],
+      [
+        "Él leerá un periódico.",
+        "",
+        ""
+      ],
+      [
+        "Leeremos una historia.",
+        "",
+        ""
+      ],
+      [
+        "Leeréis un poema.",
+        "",
+        ""
+      ],
+      [
+        "Leerán una carta.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_leere_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_leeras_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_leera_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leeremos_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leereis_m.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leeran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_read/audio_yo_leere_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_tu_leeras_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_el_ella_leera_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_nosotros_leeremos_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_vosotros_leereis_f.mp3",
+        "audio/es/verbs/es_audio_to_read/audio_ellos_ellas_leeran_f.mp3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "infinitive": "πουλώ",
+  "past": {
+    "translations": [
+      "εγώ πούλησα",
+      "εσύ πούλησες",
+      "αυτός/αυτή/αυτό πούλησε",
+      "εμείς πουλήσαμε",
+      "εσείς πουλήσατε",
+      "αυτοί/αυτές/αυτά πούλησαν"
+    ],
+    "examples": [
+      [
+        "Πούλησα το αυτοκίνητό μου.",
+        "",
+        ""
+      ],
+      [
+        "Πούλησες το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Πούλησε το ποδήλατό του.",
+        "",
+        ""
+      ],
+      [
+        "Πουλήσαμε το σπίτι μας.",
+        "",
+        ""
+      ],
+      [
+        "Πουλήσατε τα έπιπλά σας.",
+        "",
+        ""
+      ],
+      [
+        "Πούλησαν το αυτοκίνητό τους.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_poylisa_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_poylises_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_poylise_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_poylisame_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_poylisate_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_poylisan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_poylisa_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_poylises_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_poylise_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_poylisame_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_poylisate_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_poylisan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ πουλώ",
+      "εσύ πουλάς",
+      "αυτός/αυτή/αυτό πουλάει",
+      "εμείς πουλάμε",
+      "εσείς πουλάτε",
+      "αυτοί/αυτές/αυτά πουλάνε"
+    ],
+    "examples": [
+      [
+        "Πουλώ το αυτοκίνητό μου.",
+        "",
+        ""
+      ],
+      [
+        "Πουλάς το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Πουλάει το ποδήλατό του.",
+        "",
+        ""
+      ],
+      [
+        "Πουλάμε το σπίτι μας.",
+        "",
+        ""
+      ],
+      [
+        "Πουλάτε τα έπιπλά σας.",
+        "",
+        ""
+      ],
+      [
+        "Πουλάνε το αυτοκίνητό τους.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_poylo_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_poylas_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_poylaei_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_poylame_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_poylate_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_poylane_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_poylo_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_poylas_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_poylaei_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_poylame_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_poylate_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_poylane_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα πουλήσω",
+      "εσύ θα πουλήσεις",
+      "αυτός/αυτή/αυτό θα πουλήσει",
+      "εμείς θα πουλήσουμε",
+      "εσείς θα πουλήσετε",
+      "αυτοί/αυτές/αυτά θα πουλήσουν"
+    ],
+    "examples": [
+      [
+        "Θα πουλήσω το αυτοκίνητό μου.",
+        "",
+        ""
+      ],
+      [
+        "Θα πουλήσεις το κινητό σου.",
+        "",
+        ""
+      ],
+      [
+        "Θα πουλήσει το ποδήλατό του.",
+        "",
+        ""
+      ],
+      [
+        "Θα πουλήσουμε το σπίτι μας.",
+        "",
+        ""
+      ],
+      [
+        "Θα πουλήσετε τα έπιπλά σας.",
+        "",
+        ""
+      ],
+      [
+        "Θα πουλήσουν το αυτοκίνητό τους.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_tha_poyliso_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_tha_poyliseis_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_tha_poylisei_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_tha_poylisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_tha_poylisete_m.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_tha_poylisoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_sell/audio_ego_tha_poyliso_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_esy_tha_poyliseis_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytosaytiayto_tha_poylisei_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_emeis_tha_poylisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_eseis_tha_poylisete_f.mp3",
+        "audio/el/verbs/el_audio_to_sell/audio_aytoiaytesayta_tha_poylisoyn_f.mp3"
+      ]
+    ]
+  }
+}

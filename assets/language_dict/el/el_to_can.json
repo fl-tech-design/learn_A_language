@@ -1,0 +1,183 @@
+{
+  "infinitive": "μπορώ",
+  "past": {
+    "translations": [
+      "εγώ μπορούσα",
+      "εσύ μπορούσες",
+      "αυτός/αυτή/αυτό μπορούσε",
+      "εμείς μπορούσαμε",
+      "εσείς μπορούσατε",
+      "αυτοί/αυτές/αυτά μπορούσαν"
+    ],
+    "examples": [
+      [
+        "Μπορούσα να κολυμπήσω.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούσες να χορέψεις.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούσε να τραγουδήσει.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούσαμε να παίξουμε.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούσατε να τρέξετε.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούσαν να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_mporoysa_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_mporoyses_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_mporoyse_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_mporoysame_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_mporoysate_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_mporoysan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_mporoysa_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_mporoyses_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_mporoyse_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_mporoysame_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_mporoysate_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_mporoysan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ μπορώ",
+      "εσύ μπορείς",
+      "αυτός/αυτή/αυτό μπορεί",
+      "εμείς μπορούμε",
+      "εσείς μπορείτε",
+      "αυτοί/αυτές/αυτά μπορούν"
+    ],
+    "examples": [
+      [
+        "Μπορώ να κολυμπήσω.",
+        "",
+        ""
+      ],
+      [
+        "Μπορείς να χορέψεις.",
+        "",
+        ""
+      ],
+      [
+        "Μπορεί να τραγουδήσει.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούμε να παίξουμε.",
+        "",
+        ""
+      ],
+      [
+        "Μπορείτε να τρέξετε.",
+        "",
+        ""
+      ],
+      [
+        "Μπορούν να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_mporo_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_mporeis_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_mporei_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_mporoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_mporeite_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_mporoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_mporo_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_mporeis_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_mporei_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_mporoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_mporeite_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_mporoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα μπορώ",
+      "εσύ θα μπορείς",
+      "αυτός/αυτή/αυτό θα μπορεί",
+      "εμείς θα μπορούμε",
+      "εσείς θα μπορείτε",
+      "αυτοί/αυτές/αυτά θα μπορούν"
+    ],
+    "examples": [
+      [
+        "Θα μπορώ να κολυμπήσω.",
+        "",
+        ""
+      ],
+      [
+        "Θα μπορείς να χορέψεις.",
+        "",
+        ""
+      ],
+      [
+        "Θα μπορεί να τραγουδήσει.",
+        "",
+        ""
+      ],
+      [
+        "Θα μπορούμε να παίξουμε.",
+        "",
+        ""
+      ],
+      [
+        "Θα μπορείτε να τρέξετε.",
+        "",
+        ""
+      ],
+      [
+        "Θα μπορούν να γελάσουν.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_tha_mporo_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_tha_mporeis_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_tha_mporei_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_tha_mporoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_tha_mporeite_m.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_tha_mporoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_can/audio_ego_tha_mporo_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_esy_tha_mporeis_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytosaytiayto_tha_mporei_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_emeis_tha_mporoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_eseis_tha_mporeite_f.mp3",
+        "audio/el/verbs/el_audio_to_can/audio_aytoiaytesayta_tha_mporoyn_f.mp3"
+      ]
+    ]
+  }
+}

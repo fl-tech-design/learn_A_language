@@ -1,0 +1,183 @@
+{
+  "infinitive": "empezar",
+  "past": {
+    "translations": [
+      "yo empecé",
+      "tú empezaste",
+      "él/ella/usted empezó",
+      "nosotros empezamos",
+      "vosotros empezasteis",
+      "ellos/ellas/ustedes empezaron"
+    ],
+    "examples": [
+      [
+        "Yo empecé el proyecto.",
+        "",
+        ""
+      ],
+      [
+        "Tú empezaste la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Él empezó la carrera.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros empezamos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros empezasteis el juego.",
+        "",
+        ""
+      ],
+      [
+        "Ellos empezaron el concierto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empece_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaste_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezo_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empece_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaste_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezo_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo empiezo",
+      "tú empiezas",
+      "él/ella/usted empieza",
+      "nosotros empezamos",
+      "vosotros empezáis",
+      "ellos/ellas/ustedes empiezan"
+    ],
+    "examples": [
+      [
+        "Yo empiezo el proyecto.",
+        "",
+        ""
+      ],
+      [
+        "Tú empiezas la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Él empieza la carrera.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros empezamos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros empezáis el juego.",
+        "",
+        ""
+      ],
+      [
+        "Ellos empiezan el concierto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empiezo_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empiezas_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empieza_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezais_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empiezan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empiezo_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empiezas_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empieza_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezamos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezais_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empiezan_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo empezaré",
+      "tú empezarás",
+      "él/ella/usted empezará",
+      "nosotros empezaremos",
+      "vosotros empezaréis",
+      "ellos/ellas/ustedes empezarán"
+    ],
+    "examples": [
+      [
+        "Yo empezaré el proyecto.",
+        "",
+        ""
+      ],
+      [
+        "Tú empezarás la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Él empezará la carrera.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros empezaremos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros empezaréis el juego.",
+        "",
+        ""
+      ],
+      [
+        "Ellos empezarán el concierto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empezare_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaras_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezara_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezareis_m.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_begin/audio_yo_empezare_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_tu_empezaras_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_el_ella_usted_empezara_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_nosotros_empezaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_vosotros_empezareis_f.mp3",
+        "audio/es/verbs/es_audio_to_begin/audio_ellos_ellas_ustedes_empezaran_f.mp3"
+      ]
+    ]
+  }
+}

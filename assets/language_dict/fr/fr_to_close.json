@@ -1,0 +1,183 @@
+{
+  "infinitive": "fermer",
+  "past": {
+    "translations": [
+      "je fermai",
+      "tu fermas",
+      "il/elle ferma",
+      "nous fermâmes",
+      "vous fermâtes",
+      "ils/elles fermèrent"
+    ],
+    "examples": [
+      [
+        "Je fermai la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu fermas la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il ferma la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous fermâmes le colis.",
+        "",
+        ""
+      ],
+      [
+        "Vous fermâtes les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils fermèrent les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_close/audio_je_fermai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_tu_fermas_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_il_elle_ferma_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_nous_fermames_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_vous_fermates_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_ils_elles_fermerent_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je ferme",
+      "tu fermes",
+      "il/elle ferme",
+      "nous fermons",
+      "vous fermez",
+      "ils/elles ferment"
+    ],
+    "examples": [
+      [
+        "Je ferme la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu fermes la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il ferme la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous fermons le colis.",
+        "",
+        ""
+      ],
+      [
+        "Vous fermez les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils ferment les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_close/audio_je_ferme_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_tu_fermes_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_il_elle_ferme_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_nous_fermons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_vous_fermez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_ils_elles_ferment_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je fermerai",
+      "tu fermeras",
+      "il/elle fermera",
+      "nous fermerons",
+      "vous fermerez",
+      "ils/elles fermeront"
+    ],
+    "examples": [
+      [
+        "Je fermerai la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu fermeras la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il fermera la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous fermerons le colis.",
+        "",
+        ""
+      ],
+      [
+        "Vous fermerez les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils fermeront les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_close/audio_je_fermerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_tu_fermeras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_il_elle_fermera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_nous_fermerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_vous_fermerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_close/audio_ils_elles_fermeront_f.mp3"
+      ]
+    ]
+  }
+}

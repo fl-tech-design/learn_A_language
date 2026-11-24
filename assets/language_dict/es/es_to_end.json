@@ -1,0 +1,183 @@
+{
+  "infinitive": "terminar",
+  "past": {
+    "translations": [
+      "yo terminé",
+      "tú terminaste",
+      "él/ella terminó",
+      "nosotros terminamos",
+      "vosotros terminasteis",
+      "ellos/ellas terminaron"
+    ],
+    "examples": [
+      [
+        "Yo terminé la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Tú terminaste la conversación.",
+        "",
+        ""
+      ],
+      [
+        "Él terminó el espectáculo.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros terminamos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros terminasteis el partido.",
+        "",
+        ""
+      ],
+      [
+        "Ellos terminaron el evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_termine_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminaste_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_termino_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminamos_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminaron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_termine_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminaste_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_termino_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminamos_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminaron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo termino",
+      "tú terminas",
+      "él/ella termina",
+      "nosotros terminamos",
+      "vosotros termináis",
+      "ellos/ellas terminan"
+    ],
+    "examples": [
+      [
+        "Yo termino la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Tú terminas la conversación.",
+        "",
+        ""
+      ],
+      [
+        "Él termina el espectáculo.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros terminamos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros termináis el partido.",
+        "",
+        ""
+      ],
+      [
+        "Ellos terminan el evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_termino_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminas_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_termina_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminamos_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminais_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_termino_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminas_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_termina_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminamos_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminais_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminan_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo terminaré",
+      "tú terminarás",
+      "él/ella terminará",
+      "nosotros terminaremos",
+      "vosotros terminaréis",
+      "ellos/ellas terminarán"
+    ],
+    "examples": [
+      [
+        "Yo terminaré la reunión.",
+        "",
+        ""
+      ],
+      [
+        "Tú terminarás la conversación.",
+        "",
+        ""
+      ],
+      [
+        "Él terminará el espectáculo.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros terminaremos la fiesta.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros terminaréis el partido.",
+        "",
+        ""
+      ],
+      [
+        "Ellos terminarán el evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_terminare_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminaras_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_terminara_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminaremos_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminareis_m.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminaran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_end/audio_yo_terminare_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_tu_terminaras_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_el_ella_terminara_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_nosotros_terminaremos_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_vosotros_terminareis_f.mp3",
+        "audio/es/verbs/es_audio_to_end/audio_ellos_ellas_terminaran_f.mp3"
+      ]
+    ]
+  }
+}

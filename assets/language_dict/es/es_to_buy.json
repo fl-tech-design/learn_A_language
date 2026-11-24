@@ -1,0 +1,183 @@
+{
+  "infinitive": "comprar",
+  "past": {
+    "translations": [
+      "yo compré",
+      "tú compraste",
+      "él/ella/usted compró",
+      "nosotros/nosotras compramos",
+      "vosotros/vosotras comprasteis",
+      "ellos/ellas/ustedes compraron"
+    ],
+    "examples": [
+      [
+        "Yo compré pan.",
+        "",
+        ""
+      ],
+      [
+        "Tú compraste un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él compró un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros compramos comida.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros comprasteis ropa.",
+        "",
+        ""
+      ],
+      [
+        "Ellos compraron una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_compre_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compraste_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_compro_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compramos_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compraron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_compre_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compraste_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_compro_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compramos_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compraron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo compro",
+      "tú compras",
+      "él/ella/usted compra",
+      "nosotros/nosotras compramos",
+      "vosotros/vosotras compráis",
+      "ellos/ellas/ustedes compran"
+    ],
+    "examples": [
+      [
+        "Yo compro pan.",
+        "",
+        ""
+      ],
+      [
+        "Tú compras un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él compra un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros compramos comida.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros compráis ropa.",
+        "",
+        ""
+      ],
+      [
+        "Ellos compran una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_compro_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compras_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_compra_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compramos_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprais_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_compro_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compras_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_compra_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compramos_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprais_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compran_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo compraré",
+      "tú comprarás",
+      "él/ella/usted comprará",
+      "nosotros/nosotras compraremos",
+      "vosotros/vosotras compraréis",
+      "ellos/ellas/ustedes comprarán"
+    ],
+    "examples": [
+      [
+        "Yo compraré pan.",
+        "",
+        ""
+      ],
+      [
+        "Tú comprarás un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él comprará un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros compraremos comida.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros compraréis ropa.",
+        "",
+        ""
+      ],
+      [
+        "Ellos comprarán una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_comprare_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compraras_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_comprara_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compraremos_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprareis_m.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compraran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_buy/audio_yo_comprare_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_tu_compraras_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_el_ella_usted_comprara_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_nosotros_nosotras_compraremos_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_vosotros_vosotras_comprareis_f.mp3",
+        "audio/es/verbs/es_audio_to_buy/audio_ellos_ellas_ustedes_compraran_f.mp3"
+      ]
+    ]
+  }
+}

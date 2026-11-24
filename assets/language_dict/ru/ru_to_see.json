@@ -1,0 +1,183 @@
+{
+  "infinitive": "видеть",
+  "past": {
+    "translations": [
+      "я видел",
+      "ты видел",
+      "он видел",
+      "мы видели",
+      "вы видели",
+      "они видели"
+    ],
+    "examples": [
+      [
+        "Я посмотрел фильм.",
+        "",
+        ""
+      ],
+      [
+        "Ты увидел машину.",
+        "",
+        ""
+      ],
+      [
+        "Он увидел собаку.",
+        "",
+        ""
+      ],
+      [
+        "Мы увидели дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы увидели дерево.",
+        "",
+        ""
+      ],
+      [
+        "Они увидели птицу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_videl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_videl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_videl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_videli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_videli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_videli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_videl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_videl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_videl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_videli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_videli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_videli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я вижу",
+      "ты видишь",
+      "он видит",
+      "мы видим",
+      "вы видите",
+      "они видят"
+    ],
+    "examples": [
+      [
+        "Я смотрю фильм.",
+        "",
+        ""
+      ],
+      [
+        "Ты видишь машину.",
+        "",
+        ""
+      ],
+      [
+        "Он видит собаку.",
+        "",
+        ""
+      ],
+      [
+        "Мы видим дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы видите дерево.",
+        "",
+        ""
+      ],
+      [
+        "Они видят птицу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_vizhu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_vidish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_vidit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_vidim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_vidite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_vidyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_vizhu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_vidish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_vidit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_vidim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_vidite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_vidyat_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду видеть",
+      "ты будешь видеть",
+      "он будет видеть",
+      "мы будем видеть",
+      "вы будете видеть",
+      "они будут видеть"
+    ],
+    "examples": [
+      [
+        "Я посмотрю фильм.",
+        "",
+        ""
+      ],
+      [
+        "Ты увидишь машину.",
+        "",
+        ""
+      ],
+      [
+        "Он увидит собаку.",
+        "",
+        ""
+      ],
+      [
+        "Мы увидим дом.",
+        "",
+        ""
+      ],
+      [
+        "Вы увидите дерево.",
+        "",
+        ""
+      ],
+      [
+        "Они увидят птицу.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_budu_videt_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_budesh_videt_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_budet_videt_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_budem_videt_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_budete_videt_m.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_budut_videt_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_see/audio_ya_budu_videt_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_ty_budesh_videt_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_on_budet_videt_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_my_budem_videt_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_vy_budete_videt_f.mp3",
+        "audio/ru/verbs/ru_audio_to_see/audio_oni_budut_videt_f.mp3"
+      ]
+    ]
+  }
+}

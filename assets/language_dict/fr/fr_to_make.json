@@ -1,0 +1,183 @@
+{
+  "infinitive": "faire",
+  "past": {
+    "translations": [
+      "j'ai fait",
+      "tu as fait",
+      "il/elle/on a fait",
+      "nous avons fait",
+      "vous avez fait",
+      "ils/elles ont fait"
+    ],
+    "examples": [
+      [
+        "J'ai fait un gâteau.",
+        "",
+        ""
+      ],
+      [
+        "Tu as fait du café.",
+        "",
+        ""
+      ],
+      [
+        "Il a fait le dîner.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons fait un plan.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez fait une erreur.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont fait un film.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_make/audio_jai_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_as_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_a_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_avons_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_avez_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_ont_fait_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je fais",
+      "tu fais",
+      "il/elle/on fait",
+      "nous faisons",
+      "vous faites",
+      "ils/elles font"
+    ],
+    "examples": [
+      [
+        "Je fais du café.",
+        "",
+        ""
+      ],
+      [
+        "Tu fais le dîner.",
+        "",
+        ""
+      ],
+      [
+        "Il fait un plan.",
+        "",
+        ""
+      ],
+      [
+        "Nous faisons un film.",
+        "",
+        ""
+      ],
+      [
+        "Vous faites une erreur.",
+        "",
+        ""
+      ],
+      [
+        "Ils font du café.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_make/audio_je_fais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_fais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_fait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_faisons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_faites_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_font_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je ferai",
+      "tu feras",
+      "il/elle/on fera",
+      "nous ferons",
+      "vous ferez",
+      "ils/elles feront"
+    ],
+    "examples": [
+      [
+        "Je ferai un gâteau.",
+        "",
+        ""
+      ],
+      [
+        "Tu feras du café.",
+        "",
+        ""
+      ],
+      [
+        "Il fera le dîner.",
+        "",
+        ""
+      ],
+      [
+        "Nous ferons un plan.",
+        "",
+        ""
+      ],
+      [
+        "Vous ferez une erreur.",
+        "",
+        ""
+      ],
+      [
+        "Ils feront un film.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_make/audio_je_ferai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_tu_feras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_il_elle_on_fera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_nous_ferons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_vous_ferez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_make/audio_ils_elles_feront_f.mp3"
+      ]
+    ]
+  }
+}

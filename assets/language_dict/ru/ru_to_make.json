@@ -1,0 +1,183 @@
+{
+  "infinitive": "делать",
+  "past": {
+    "translations": [
+      "я делал",
+      "ты делал",
+      "он делал",
+      "мы делали",
+      "вы делали",
+      "они делали"
+    ],
+    "examples": [
+      [
+        "Я испёк пирог.",
+        "",
+        ""
+      ],
+      [
+        "Ты приготовил кофе.",
+        "",
+        ""
+      ],
+      [
+        "Он приготовил ужин.",
+        "",
+        ""
+      ],
+      [
+        "Мы составили план.",
+        "",
+        ""
+      ],
+      [
+        "Вы допустили ошибку.",
+        "",
+        ""
+      ],
+      [
+        "Они сняли фильм.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_delal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_delal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_delal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_delali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_delali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_delali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_delal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_delal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_delal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_delali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_delali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_delali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я делаю",
+      "ты делаешь",
+      "он делает",
+      "мы делаем",
+      "вы делаете",
+      "они делают"
+    ],
+    "examples": [
+      [
+        "Я готовлю кофе.",
+        "",
+        ""
+      ],
+      [
+        "Ты готовишь ужин.",
+        "",
+        ""
+      ],
+      [
+        "Он составляет план.",
+        "",
+        ""
+      ],
+      [
+        "Мы снимаем фильм.",
+        "",
+        ""
+      ],
+      [
+        "Вы допускаете ошибку.",
+        "",
+        ""
+      ],
+      [
+        "Они готовят кофе.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_delayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_delaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_delaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_delaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_delaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_delayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_delayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_delaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_delaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_delaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_delaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_delayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду делать",
+      "ты будешь делать",
+      "он будет делать",
+      "мы будем делать",
+      "вы будете делать",
+      "они будут делать"
+    ],
+    "examples": [
+      [
+        "Я испеку пирог.",
+        "",
+        ""
+      ],
+      [
+        "Ты приготовишь кофе.",
+        "",
+        ""
+      ],
+      [
+        "Он приготовит ужин.",
+        "",
+        ""
+      ],
+      [
+        "Мы составим план.",
+        "",
+        ""
+      ],
+      [
+        "Вы допустите ошибку.",
+        "",
+        ""
+      ],
+      [
+        "Они снимут фильм.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_budu_delat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_budesh_delat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_budet_delat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_budem_delat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_budete_delat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_budut_delat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_make/audio_ya_budu_delat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_ty_budesh_delat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_on_budet_delat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_my_budem_delat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_vy_budete_delat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_make/audio_oni_budut_delat_f.mp3"
+      ]
+    ]
+  }
+}

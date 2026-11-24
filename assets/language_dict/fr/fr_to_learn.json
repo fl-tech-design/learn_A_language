@@ -1,0 +1,183 @@
+{
+  "infinitive": "apprendre",
+  "past": {
+    "translations": [
+      "j'ai appris",
+      "tu as appris",
+      "il/elle a appris",
+      "nous avons appris",
+      "vous avez appris",
+      "ils/elles ont appris"
+    ],
+    "examples": [
+      [
+        "J'ai appris l'allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu as appris vite.",
+        "",
+        ""
+      ],
+      [
+        "Il a appris l'anglais.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons appris ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez appris beaucoup.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont appris l'espagnol.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_learn/audio_jai_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_as_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_a_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_avons_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_avez_appris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_ont_appris_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'apprends",
+      "tu apprends",
+      "il/elle apprend",
+      "nous apprenons",
+      "vous apprenez",
+      "ils/elles apprennent"
+    ],
+    "examples": [
+      [
+        "J'apprends l'allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu apprends vite.",
+        "",
+        ""
+      ],
+      [
+        "Il apprend l'anglais.",
+        "",
+        ""
+      ],
+      [
+        "Nous apprenons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous apprenez beaucoup.",
+        "",
+        ""
+      ],
+      [
+        "Ils apprennent l'espagnol.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_learn/audio_japprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_apprends_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_apprend_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_apprenons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_apprenez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_apprennent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'apprendrai",
+      "tu apprendras",
+      "il/elle apprendra",
+      "nous apprendrons",
+      "vous apprendrez",
+      "ils/elles apprendront"
+    ],
+    "examples": [
+      [
+        "J'apprendrai l'allemand.",
+        "",
+        ""
+      ],
+      [
+        "Tu apprendras vite.",
+        "",
+        ""
+      ],
+      [
+        "Il apprendra l'anglais.",
+        "",
+        ""
+      ],
+      [
+        "Nous apprendrons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous apprendrez beaucoup.",
+        "",
+        ""
+      ],
+      [
+        "Ils apprendront l'espagnol.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_learn/audio_japprendrai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_tu_apprendras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_il_elle_apprendra_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_nous_apprendrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_vous_apprendrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_learn/audio_ils_elles_apprendront_f.mp3"
+      ]
+    ]
+  }
+}

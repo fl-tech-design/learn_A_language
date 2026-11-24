@@ -1,0 +1,183 @@
+{
+  "infinitive": "vender",
+  "past": {
+    "translations": [
+      "eu vendi",
+      "tu vendeste",
+      "ele/ela vendeu",
+      "nós vendemos",
+      "vós vendestes",
+      "eles/elas venderam"
+    ],
+    "examples": [
+      [
+        "Eu vendi o meu carro.",
+        "",
+        ""
+      ],
+      [
+        "Tu vendeste o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele vendeu a sua bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nós vendemos a nossa casa.",
+        "",
+        ""
+      ],
+      [
+        "Vós vendestes os vossos móveis.",
+        "",
+        ""
+      ],
+      [
+        "Eles venderam o seu carro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/vender/audio_eu_vendi_m.mp3",
+        "audio/pt/verben/vender/audio_tu_vendeste_m.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vendeu_m.mp3",
+        "audio/pt/verben/vender/audio_nos_vendemos_m.mp3",
+        "audio/pt/verben/vender/audio_vos_vendestes_m.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_venderam_m.mp3"
+      ],
+      [
+        "audio/pt/verben/vender/audio_eu_vendi_f.mp3",
+        "audio/pt/verben/vender/audio_tu_vendeste_f.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vendeu_f.mp3",
+        "audio/pt/verben/vender/audio_nos_vendemos_f.mp3",
+        "audio/pt/verben/vender/audio_vos_vendestes_f.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_venderam_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "eu vendo",
+      "tu vendes",
+      "ele/ela vende",
+      "nós vendemos",
+      "vós vendeis",
+      "eles/elas vendem"
+    ],
+    "examples": [
+      [
+        "Eu vendo o meu carro.",
+        "",
+        ""
+      ],
+      [
+        "Tu vendes o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele vende a sua bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nós vendemos a nossa casa.",
+        "",
+        ""
+      ],
+      [
+        "Vós vendeis os vossos móveis.",
+        "",
+        ""
+      ],
+      [
+        "Eles vendem o seu carro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/vender/audio_eu_vendo_m.mp3",
+        "audio/pt/verben/vender/audio_tu_vendes_m.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vende_m.mp3",
+        "audio/pt/verben/vender/audio_nos_vendemos_m.mp3",
+        "audio/pt/verben/vender/audio_vos_vendeis_m.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_vendem_m.mp3"
+      ],
+      [
+        "audio/pt/verben/vender/audio_eu_vendo_f.mp3",
+        "audio/pt/verben/vender/audio_tu_vendes_f.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vende_f.mp3",
+        "audio/pt/verben/vender/audio_nos_vendemos_f.mp3",
+        "audio/pt/verben/vender/audio_vos_vendeis_f.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_vendem_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "eu venderei",
+      "tu venderás",
+      "ele/ela venderá",
+      "nós venderemos",
+      "vós vendereis",
+      "eles/elas venderão"
+    ],
+    "examples": [
+      [
+        "Eu venderei o meu carro.",
+        "",
+        ""
+      ],
+      [
+        "Tu venderás o teu telemóvel.",
+        "",
+        ""
+      ],
+      [
+        "Ele venderá a sua bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nós venderemos a nossa casa.",
+        "",
+        ""
+      ],
+      [
+        "Vós vendereis os vossos móveis.",
+        "",
+        ""
+      ],
+      [
+        "Eles venderão o seu carro.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/pt/verben/vender/audio_eu_venderei_m.mp3",
+        "audio/pt/verben/vender/audio_tu_venderas_m.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vendera_m.mp3",
+        "audio/pt/verben/vender/audio_nos_venderemos_m.mp3",
+        "audio/pt/verben/vender/audio_vos_vendereis_m.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_venderao_m.mp3"
+      ],
+      [
+        "audio/pt/verben/vender/audio_eu_venderei_f.mp3",
+        "audio/pt/verben/vender/audio_tu_venderas_f.mp3",
+        "audio/pt/verben/vender/audio_ele_ela_vendera_f.mp3",
+        "audio/pt/verben/vender/audio_nos_venderemos_f.mp3",
+        "audio/pt/verben/vender/audio_vos_vendereis_f.mp3",
+        "audio/pt/verben/vender/audio_eles_elas_venderao_f.mp3"
+      ]
+    ]
+  }
+}

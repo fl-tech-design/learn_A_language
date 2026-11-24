@@ -1,0 +1,183 @@
+{
+  "infinitive": "écrire",
+  "past": {
+    "translations": [
+      "j'ai écrit",
+      "tu as écrit",
+      "il/elle/on a écrit",
+      "nous avons écrit",
+      "vous avez écrit",
+      "ils/elles ont écrit"
+    ],
+    "examples": [
+      [
+        "J'ai écrit une lettre.",
+        "",
+        ""
+      ],
+      [
+        "Tu as écrit une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Il a écrit un poème.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons écrit un livre.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez écrit une note.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont écrit un rapport.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_write/audio_jai_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_tu_as_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_il_elle_on_a_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_nous_avons_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_vous_avez_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_ils_elles_ont_ecrit_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'écris",
+      "tu écris",
+      "il/elle/on écrit",
+      "nous écrivons",
+      "vous écrivez",
+      "ils/elles écrivent"
+    ],
+    "examples": [
+      [
+        "J'écris une lettre.",
+        "",
+        ""
+      ],
+      [
+        "Tu écris une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Il écrit un poème.",
+        "",
+        ""
+      ],
+      [
+        "Nous écrivons un livre.",
+        "",
+        ""
+      ],
+      [
+        "Vous écrivez une note.",
+        "",
+        ""
+      ],
+      [
+        "Ils écrivent un rapport.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_write/audio_jecris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_tu_ecris_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_il_elle_on_ecrit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_nous_ecrivons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_vous_ecrivez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_ils_elles_ecrivent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'écrirai",
+      "tu écriras",
+      "il/elle/on écrira",
+      "nous écrirons",
+      "vous écrirez",
+      "ils/elles écriront"
+    ],
+    "examples": [
+      [
+        "J'écrirai une lettre.",
+        "",
+        ""
+      ],
+      [
+        "Tu écriras une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Il écrira un poème.",
+        "",
+        ""
+      ],
+      [
+        "Nous écrirons un livre.",
+        "",
+        ""
+      ],
+      [
+        "Vous écrirez une note.",
+        "",
+        ""
+      ],
+      [
+        "Ils écriront un rapport.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_write/audio_jecrirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_tu_ecriras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_il_elle_on_ecrira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_nous_ecrirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_vous_ecrirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_write/audio_ils_elles_ecriront_f.mp3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "infinitive": "писать",
+  "past": {
+    "translations": [
+      "я писал",
+      "ты писал",
+      "он писал",
+      "мы писали",
+      "вы писали",
+      "они писали"
+    ],
+    "examples": [
+      [
+        "Я написал письмо.",
+        "",
+        ""
+      ],
+      [
+        "Ты написал рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Он написал стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Мы написали книгу.",
+        "",
+        ""
+      ],
+      [
+        "Вы написали заметку.",
+        "",
+        ""
+      ],
+      [
+        "Они написали отчёт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_pisal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_pisal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_pisal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_pisali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_pisali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_pisali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_pisal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_pisal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_pisal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_pisali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_pisali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_pisali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я пишу",
+      "ты пишешь",
+      "он пишет",
+      "мы пишем",
+      "вы пишете",
+      "они пишут"
+    ],
+    "examples": [
+      [
+        "Я пишу письмо.",
+        "",
+        ""
+      ],
+      [
+        "Ты пишешь рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Он пишет стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Мы пишем книгу.",
+        "",
+        ""
+      ],
+      [
+        "Вы пишете заметку.",
+        "",
+        ""
+      ],
+      [
+        "Они пишут отчёт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_pishu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_pishesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_pishet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_pishem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_pishete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_pishut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_pishu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_pishesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_pishet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_pishem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_pishete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_pishut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду писать",
+      "ты будешь писать",
+      "он будет писать",
+      "мы будем писать",
+      "вы будете писать",
+      "они будут писать"
+    ],
+    "examples": [
+      [
+        "Я буду писать письмо.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь писать рассказ.",
+        "",
+        ""
+      ],
+      [
+        "Он будет писать стихотворение.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем писать книгу.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете писать заметку.",
+        "",
+        ""
+      ],
+      [
+        "Они будут писать отчёт.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_budu_pisat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_budesh_pisat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_budet_pisat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_budem_pisat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_budete_pisat_m.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_budut_pisat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_write/audio_ya_budu_pisat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_ty_budesh_pisat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_on_budet_pisat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_my_budem_pisat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_vy_budete_pisat_f.mp3",
+        "audio/ru/verbs/ru_audio_to_write/audio_oni_budut_pisat_f.mp3"
+      ]
+    ]
+  }
+}

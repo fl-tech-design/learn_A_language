@@ -1,0 +1,183 @@
+{
+  "infinitive": "διαβάζω",
+  "past": {
+    "translations": [
+      "διάβαζα",
+      "διάβαζες",
+      "διάβαζε",
+      "διαβάζαμε",
+      "διαβάζατε",
+      "διάβαζαν"
+    ],
+    "examples": [
+      [
+        "Διάβαζα ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Διάβαζες ένα περιοδικό.",
+        "",
+        ""
+      ],
+      [
+        "Διάβαζε μια εφημερίδα.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζαμε μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζατε ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Διάβαζαν ένα γράμμα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_read/audio_diavaza_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazes_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavaze_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazame_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazate_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_read/audio_diavaza_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazes_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavaze_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazame_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazate_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "διαβάζω",
+      "διαβάζεις",
+      "διαβάζει",
+      "διαβάζουμε",
+      "διαβάζετε",
+      "διαβάζουν"
+    ],
+    "examples": [
+      [
+        "Διαβάζω ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζεις ένα περιοδικό.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζει μια εφημερίδα.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζουμε μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζετε ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Διαβάζουν ένα γράμμα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_read/audio_diavazo_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazeis_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazei_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazete_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_read/audio_diavazo_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazeis_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazei_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazete_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_diavazoyn_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "θα διαβάσω",
+      "θα διαβάσεις",
+      "θα διαβάσει",
+      "θα διαβάσουμε",
+      "θα διαβάσετε",
+      "θα διαβάσουν"
+    ],
+    "examples": [
+      [
+        "Θα διαβάσω ένα βιβλίο.",
+        "",
+        ""
+      ],
+      [
+        "Θα διαβάσεις ένα περιοδικό.",
+        "",
+        ""
+      ],
+      [
+        "Θα διαβάσει μια εφημερίδα.",
+        "",
+        ""
+      ],
+      [
+        "Θα διαβάσουμε μια ιστορία.",
+        "",
+        ""
+      ],
+      [
+        "Θα διαβάσετε ένα ποίημα.",
+        "",
+        ""
+      ],
+      [
+        "Θα διαβάσουν ένα γράμμα.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavaso_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavaseis_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasei_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasete_m.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavaso_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavaseis_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasei_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasete_f.mp3",
+        "audio/el/verbs/el_audio_to_read/audio_tha_diavasoyn_f.mp3"
+      ]
+    ]
+  }
+}

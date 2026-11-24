@@ -1,0 +1,183 @@
+{
+  "infinitive": "идти",
+  "past": {
+    "translations": [
+      "я шёл",
+      "ты шёл",
+      "он шёл",
+      "мы шли",
+      "вы шли",
+      "они шли"
+    ],
+    "examples": [
+      [
+        "Я шёл в парк.",
+        "",
+        ""
+      ],
+      [
+        "Ты шёл домой.",
+        "",
+        ""
+      ],
+      [
+        "Он шёл в школу.",
+        "",
+        ""
+      ],
+      [
+        "Мы ходили за покупками.",
+        "",
+        ""
+      ],
+      [
+        "Вы шли в кино.",
+        "",
+        ""
+      ],
+      [
+        "Они шли на вечеринку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_shyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_shyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_shyol_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_shli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_shli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_shli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_shyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_shyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_shyol_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_shli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_shli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_shli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я иду",
+      "ты идёшь",
+      "он идёт",
+      "мы идём",
+      "вы идёте",
+      "они идут"
+    ],
+    "examples": [
+      [
+        "Я иду в школу.",
+        "",
+        ""
+      ],
+      [
+        "Ты идёшь домой.",
+        "",
+        ""
+      ],
+      [
+        "Он идёт на работу.",
+        "",
+        ""
+      ],
+      [
+        "Мы ходим за покупками.",
+        "",
+        ""
+      ],
+      [
+        "Вы идёте в кино.",
+        "",
+        ""
+      ],
+      [
+        "Они идут на вечеринку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_idu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_idyosh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_idyot_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_idyom_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_idyote_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_idut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_idu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_idyosh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_idyot_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_idyom_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_idyote_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_idut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду идти",
+      "ты будешь идти",
+      "он будет идти",
+      "мы будем идти",
+      "вы будете идти",
+      "они будут идти"
+    ],
+    "examples": [
+      [
+        "Я буду идти в школу.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь идти домой.",
+        "",
+        ""
+      ],
+      [
+        "Он будет идти на работу.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем ходить за покупками.",
+        "",
+        ""
+      ],
+      [
+        "Вы будете идти в кино.",
+        "",
+        ""
+      ],
+      [
+        "Они будут идти на вечеринку.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_budu_idti_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_budesh_idti_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_budet_idti_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_budem_idti_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_budete_idti_m.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_budut_idti_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_go/audio_ya_budu_idti_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_ty_budesh_idti_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_on_budet_idti_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_my_budem_idti_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_vy_budete_idti_f.mp3",
+        "audio/ru/verbs/ru_audio_to_go/audio_oni_budut_idti_f.mp3"
+      ]
+    ]
+  }
+}

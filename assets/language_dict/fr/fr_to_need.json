@@ -1,0 +1,183 @@
+{
+  "infinitive": "avoir besoin",
+  "past": {
+    "translations": [
+      "j'avais besoin",
+      "tu avais besoin",
+      "il/elle/on avait besoin",
+      "nous avions besoin",
+      "vous aviez besoin",
+      "ils/elles avaient besoin"
+    ],
+    "examples": [
+      [
+        "J'avais besoin d'aide.",
+        "",
+        ""
+      ],
+      [
+        "Tu avais besoin de temps.",
+        "",
+        ""
+      ],
+      [
+        "Il avait besoin d'argent.",
+        "",
+        ""
+      ],
+      [
+        "Nous avions besoin de soutien.",
+        "",
+        ""
+      ],
+      [
+        "Vous aviez besoin de conseils.",
+        "",
+        ""
+      ],
+      [
+        "Ils avaient besoin de calme.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_need/audio_javais_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_avais_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_avait_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_avions_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_aviez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_avaient_besoin_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'ai besoin",
+      "tu as besoin",
+      "il/elle/on a besoin",
+      "nous avons besoin",
+      "vous avez besoin",
+      "ils/elles ont besoin"
+    ],
+    "examples": [
+      [
+        "J'ai besoin d'aide.",
+        "",
+        ""
+      ],
+      [
+        "Tu as besoin de temps.",
+        "",
+        ""
+      ],
+      [
+        "Il a besoin d'argent.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons besoin de soutien.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez besoin de conseils.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont besoin de calme.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_need/audio_jai_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_as_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_a_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_avons_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_avez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_ont_besoin_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'aurai besoin",
+      "tu auras besoin",
+      "il/elle/on aura besoin",
+      "nous aurons besoin",
+      "vous aurez besoin",
+      "ils/elles auront besoin"
+    ],
+    "examples": [
+      [
+        "J'aurai besoin d'aide.",
+        "",
+        ""
+      ],
+      [
+        "Tu auras besoin de temps.",
+        "",
+        ""
+      ],
+      [
+        "Il aura besoin d'argent.",
+        "",
+        ""
+      ],
+      [
+        "Nous aurons besoin de soutien.",
+        "",
+        ""
+      ],
+      [
+        "Vous aurez besoin de conseils.",
+        "",
+        ""
+      ],
+      [
+        "Ils auront besoin de calme.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_need/audio_jaurai_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_tu_auras_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_il_elle_on_aura_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_nous_aurons_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_vous_aurez_besoin_f.mp3",
+        "audio/fr/verbs/fr_audio_to_need/audio_ils_elles_auront_besoin_f.mp3"
+      ]
+    ]
+  }
+}

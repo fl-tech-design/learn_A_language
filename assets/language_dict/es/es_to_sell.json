@@ -1,0 +1,183 @@
+{
+  "infinitive": "vender",
+  "past": {
+    "translations": [
+      "yo vendí",
+      "tú vendiste",
+      "él/ella vendió",
+      "nosotros vendimos",
+      "vosotros vendisteis",
+      "ellos/ellas vendieron"
+    ],
+    "examples": [
+      [
+        "Yo vendí mi coche.",
+        "",
+        ""
+      ],
+      [
+        "Tú vendiste tu móvil.",
+        "",
+        ""
+      ],
+      [
+        "Él vendió su bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vendimos nuestra casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vendisteis vuestros muebles.",
+        "",
+        ""
+      ],
+      [
+        "Ellos vendieron su coche.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendi_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_vendiste_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vendio_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_vendimos_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_vendieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendi_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_vendiste_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vendio_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_vendimos_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_vendieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo vendo",
+      "tú vendes",
+      "él/ella vende",
+      "nosotros vendemos",
+      "vosotros vendéis",
+      "ellos/ellas venden"
+    ],
+    "examples": [
+      [
+        "Yo vendo mi coche.",
+        "",
+        ""
+      ],
+      [
+        "Tú vendes tu móvil.",
+        "",
+        ""
+      ],
+      [
+        "Él vende su bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros vendemos nuestra casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros vendéis vuestros muebles.",
+        "",
+        ""
+      ],
+      [
+        "Ellos venden su coche.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendo_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_vendes_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vende_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_vendemos_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendeis_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_venden_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendo_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_vendes_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vende_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_vendemos_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_venden_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo venderé",
+      "tú venderás",
+      "él/ella venderá",
+      "nosotros venderemos",
+      "vosotros venderéis",
+      "ellos/ellas venderán"
+    ],
+    "examples": [
+      [
+        "Yo venderé mi coche.",
+        "",
+        ""
+      ],
+      [
+        "Tú venderás tu móvil.",
+        "",
+        ""
+      ],
+      [
+        "Él venderá su bicicleta.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros venderemos nuestra casa.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros venderéis vuestros muebles.",
+        "",
+        ""
+      ],
+      [
+        "Ellos venderán su coche.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendere_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_venderas_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vendera_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_venderemos_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendereis_m.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_venderan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_sell/audio_yo_vendere_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_tu_venderas_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_el_ella_vendera_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_nosotros_venderemos_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_vosotros_vendereis_f.mp3",
+        "audio/es/verbs/es_audio_to_sell/audio_ellos_ellas_venderan_f.mp3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "infinitive": "entender",
+  "past": {
+    "translations": [
+      "yo entendí",
+      "tú entendiste",
+      "él/ella entendió",
+      "nosotros entendimos",
+      "vosotros entendisteis",
+      "ellos/ellas entendieron"
+    ],
+    "examples": [
+      [
+        "Yo entendí la pregunta.",
+        "",
+        ""
+      ],
+      [
+        "Tú entendiste el problema.",
+        "",
+        ""
+      ],
+      [
+        "Él entendió la situación.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros entendimos el plan.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros entendisteis la tarea.",
+        "",
+        ""
+      ],
+      [
+        "Ellos entendieron las reglas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entendi_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entendiste_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entendio_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entendimos_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendisteis_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entendieron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entendi_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entendiste_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entendio_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entendimos_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendisteis_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entendieron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo entiendo",
+      "tú entiendes",
+      "él/ella entiende",
+      "nosotros entendemos",
+      "vosotros entendéis",
+      "ellos/ellas entienden"
+    ],
+    "examples": [
+      [
+        "Yo entiendo la pregunta.",
+        "",
+        ""
+      ],
+      [
+        "Tú entiendes el problema.",
+        "",
+        ""
+      ],
+      [
+        "Él entiende la situación.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros entendemos el plan.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros entendéis la tarea.",
+        "",
+        ""
+      ],
+      [
+        "Ellos entienden las reglas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entiendo_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entiendes_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entiende_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entendemos_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendeis_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entienden_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entiendo_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entiendes_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entiende_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entendemos_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendeis_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entienden_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo entenderé",
+      "tú entenderás",
+      "él/ella entenderá",
+      "nosotros entenderemos",
+      "vosotros entenderéis",
+      "ellos/ellas entenderán"
+    ],
+    "examples": [
+      [
+        "Yo entenderé la pregunta.",
+        "",
+        ""
+      ],
+      [
+        "Tú entenderás el problema.",
+        "",
+        ""
+      ],
+      [
+        "Él entenderá la situación.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros entenderemos el plan.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros entenderéis la tarea.",
+        "",
+        ""
+      ],
+      [
+        "Ellos entenderán las reglas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entendere_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entenderas_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entendera_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entenderemos_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendereis_m.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entenderan_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_understand/audio_yo_entendere_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_tu_entenderas_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_el_ella_entendera_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_nosotros_entenderemos_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_vosotros_entendereis_f.mp3",
+        "audio/es/verbs/es_audio_to_understand/audio_ellos_ellas_entenderan_f.mp3"
+      ]
+    ]
+  }
+}

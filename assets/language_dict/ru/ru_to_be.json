@@ -1,0 +1,183 @@
+{
+  "infinitive": "быть",
+  "past": {
+    "translations": [
+      "я был",
+      "ты был",
+      "он был",
+      "мы были",
+      "вы были",
+      "они были"
+    ],
+    "examples": [
+      [
+        "Я был в парке.",
+        "",
+        ""
+      ],
+      [
+        "Ты был уставшим.",
+        "",
+        ""
+      ],
+      [
+        "Он был счастлив.",
+        "",
+        ""
+      ],
+      [
+        "Мы были дома.",
+        "",
+        ""
+      ],
+      [
+        "Вы опоздали.",
+        "",
+        ""
+      ],
+      [
+        "Они были дружелюбными.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_byl_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_byli_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_byli_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_byl_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_byli_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_byli_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я есть",
+      "ты есть",
+      "он есть",
+      "мы есть",
+      "вы есть",
+      "они есть"
+    ],
+    "examples": [
+      [
+        "Я устал.",
+        "",
+        ""
+      ],
+      [
+        "Ты дружелюбный.",
+        "",
+        ""
+      ],
+      [
+        "Он счастлив.",
+        "",
+        ""
+      ],
+      [
+        "Мы дома.",
+        "",
+        ""
+      ],
+      [
+        "Вы опаздываете.",
+        "",
+        ""
+      ],
+      [
+        "Они дружелюбные.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_est_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_est_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_est_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_est_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я буду",
+      "ты будешь",
+      "он будет",
+      "мы будем",
+      "вы будете",
+      "они будут"
+    ],
+    "examples": [
+      [
+        "Я буду там.",
+        "",
+        ""
+      ],
+      [
+        "Ты будешь счастлив.",
+        "",
+        ""
+      ],
+      [
+        "Он будет здесь.",
+        "",
+        ""
+      ],
+      [
+        "Мы будем там.",
+        "",
+        ""
+      ],
+      [
+        "Вы опоздаете.",
+        "",
+        ""
+      ],
+      [
+        "Они будут готовы.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_budu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_budesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_budet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_budem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_budete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_budut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_be/audio_ya_budu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_ty_budesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_on_budet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_my_budem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_vy_budete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_be/audio_oni_budut_f.mp3"
+      ]
+    ]
+  }
+}

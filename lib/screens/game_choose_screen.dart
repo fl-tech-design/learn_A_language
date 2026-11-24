@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
+import '../managers/navigation_state.dart';
+import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
 import '../l10n/app_localizations.dart';
@@ -26,7 +28,11 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
   Future<int> _loadMasteredCount() async {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
-    final words = await context.read<VocabQueries>().getReadWords(uname);
+    final lang = context.read<NavigationState>()
+        .resolveActiveLang(context.read<UserState>().userData);
+    final words = await context
+        .read<VocabQueries>()
+        .getReadWords(uname, langCode: lang);
     return words.length;
   }
 

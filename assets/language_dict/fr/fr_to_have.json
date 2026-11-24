@@ -1,0 +1,183 @@
+{
+  "infinitive": "avoir",
+  "past": {
+    "translations": [
+      "j'avais",
+      "tu avais",
+      "il/elle/on avait",
+      "nous avions",
+      "vous aviez",
+      "ils/elles avaient"
+    ],
+    "examples": [
+      [
+        "J'avais un chien.",
+        "",
+        ""
+      ],
+      [
+        "Tu avais une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Il avait un livre.",
+        "",
+        ""
+      ],
+      [
+        "Nous avions le temps.",
+        "",
+        ""
+      ],
+      [
+        "Vous vous amusiez.",
+        "",
+        ""
+      ],
+      [
+        "Ils avaient une maison.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_have/audio_javais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_avais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_avait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_avions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_aviez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_avaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'ai",
+      "tu as",
+      "il/elle/on a",
+      "nous avons",
+      "vous avez",
+      "ils/elles ont"
+    ],
+    "examples": [
+      [
+        "J'ai un chat.",
+        "",
+        ""
+      ],
+      [
+        "Tu as un stylo.",
+        "",
+        ""
+      ],
+      [
+        "Il a un vélo.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons le temps.",
+        "",
+        ""
+      ],
+      [
+        "Vous vous amusez.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont une maison.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_have/audio_jai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_as_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_a_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_avons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_avez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_ont_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'aurai",
+      "tu auras",
+      "il/elle/on aura",
+      "nous aurons",
+      "vous aurez",
+      "ils/elles auront"
+    ],
+    "examples": [
+      [
+        "J'aurai une voiture.",
+        "",
+        ""
+      ],
+      [
+        "Tu auras le temps.",
+        "",
+        ""
+      ],
+      [
+        "Il aura un vélo.",
+        "",
+        ""
+      ],
+      [
+        "Nous nous amuserons.",
+        "",
+        ""
+      ],
+      [
+        "Vous aurez une maison.",
+        "",
+        ""
+      ],
+      [
+        "Ils auront le temps.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_have/audio_jaurai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_tu_auras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_il_elle_on_aura_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_nous_aurons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_vous_aurez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_have/audio_ils_elles_auront_f.mp3"
+      ]
+    ]
+  }
+}

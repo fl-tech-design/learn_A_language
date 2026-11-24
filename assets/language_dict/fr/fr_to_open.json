@@ -1,0 +1,183 @@
+{
+  "infinitive": "ouvrir",
+  "past": {
+    "translations": [
+      "j'ai ouvert",
+      "tu as ouvert",
+      "il/elle/on a ouvert",
+      "nous avons ouvert",
+      "vous avez ouvert",
+      "ils/elles ont ouvert"
+    ],
+    "examples": [
+      [
+        "J'ai ouvert la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu as ouvert la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il a ouvert la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons ouvert le paquet.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez ouvert les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont ouvert les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_open/audio_jai_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_as_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_a_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_avons_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_avez_ouvert_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ont_ouvert_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'ouvre",
+      "tu ouvres",
+      "il/elle/on ouvre",
+      "nous ouvrons",
+      "vous ouvrez",
+      "ils/elles ouvrent"
+    ],
+    "examples": [
+      [
+        "J'ouvre la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu ouvres la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il ouvre la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous ouvrons le paquet.",
+        "",
+        ""
+      ],
+      [
+        "Vous ouvrez les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils ouvrent les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_open/audio_jouvre_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_ouvres_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_ouvre_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_ouvrons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_ouvrez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ouvrent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'ouvrirai",
+      "tu ouvriras",
+      "il/elle/on ouvrira",
+      "nous ouvrirons",
+      "vous ouvrirez",
+      "ils/elles ouvriront"
+    ],
+    "examples": [
+      [
+        "J'ouvrirai la porte.",
+        "",
+        ""
+      ],
+      [
+        "Tu ouvriras la fenêtre.",
+        "",
+        ""
+      ],
+      [
+        "Il ouvrira la caisse.",
+        "",
+        ""
+      ],
+      [
+        "Nous ouvrirons le paquet.",
+        "",
+        ""
+      ],
+      [
+        "Vous ouvrirez les portes.",
+        "",
+        ""
+      ],
+      [
+        "Ils ouvriront les fenêtres.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_open/audio_jouvrirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_tu_ouvriras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_il_elle_on_ouvrira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_nous_ouvrirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_vous_ouvrirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_open/audio_ils_elles_ouvriront_f.mp3"
+      ]
+    ]
+  }
+}

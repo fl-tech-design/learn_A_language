@@ -1,0 +1,183 @@
+{
+  "infinitive": "cerrar",
+  "past": {
+    "translations": [
+      "yo cerré",
+      "tú cerraste",
+      "él/ella cerró",
+      "nosotros cerramos",
+      "vosotros cerrasteis",
+      "ellos/ellas cerraron"
+    ],
+    "examples": [
+      [
+        "Yo cerré la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Tú cerraste la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él cerró la caja.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros cerramos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cerrasteis las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Ellos cerraron las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerre_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraste_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerro_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrasteis_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraron_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerre_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraste_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerro_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrasteis_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraron_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo cierro",
+      "tú cierras",
+      "él/ella cierra",
+      "nosotros cerramos",
+      "vosotros cerráis",
+      "ellos/ellas cierran"
+    ],
+    "examples": [
+      [
+        "Yo cierro la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Tú cierras la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él cierra la caja.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros cerramos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cerráis las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Ellos cierran las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cierro_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cierras_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cierra_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrais_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cierran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cierro_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cierras_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cierra_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerramos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrais_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cierran_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo cerraré",
+      "tú cerrarás",
+      "él/ella cerrará",
+      "nosotros cerraremos",
+      "vosotros cerraréis",
+      "ellos/ellas cerrarán"
+    ],
+    "examples": [
+      [
+        "Yo cerraré la puerta.",
+        "",
+        ""
+      ],
+      [
+        "Tú cerrarás la ventana.",
+        "",
+        ""
+      ],
+      [
+        "Él cerrará la caja.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros cerraremos el paquete.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros cerraréis las puertas.",
+        "",
+        ""
+      ],
+      [
+        "Ellos cerrarán las ventanas.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerrare_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraras_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerrara_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerraremos_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrareis_m.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_close/audio_yo_cerrare_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_tu_cerraras_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_el_ella_cerrara_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_nosotros_cerraremos_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_vosotros_cerrareis_f.mp3",
+        "audio/es/verbs/es_audio_to_close/audio_ellos_ellas_cerraran_f.mp3"
+      ]
+    ]
+  }
+}

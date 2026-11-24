@@ -1,0 +1,183 @@
+{
+  "infinitive": "tener que",
+  "past": {
+    "translations": [
+      "yo tenía que",
+      "tú tenías que",
+      "él/ella tenía que",
+      "nosotros teníamos que",
+      "vosotros teníais que",
+      "ellos/ellas tenían que"
+    ],
+    "examples": [
+      [
+        "Yo tenía que trabajar.",
+        "",
+        ""
+      ],
+      [
+        "Tú tenías que estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Él tenía que irse.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros teníamos que esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros teníais que ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tenían que quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tenia_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tenias_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tenia_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_teniamos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teniais_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tenian_que_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tenia_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tenias_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tenia_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_teniamos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teniais_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tenian_que_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo tengo que",
+      "tú tienes que",
+      "él/ella tiene que",
+      "nosotros tenemos que",
+      "vosotros tenéis que",
+      "ellos/ellas tienen que"
+    ],
+    "examples": [
+      [
+        "Yo tengo que trabajar.",
+        "",
+        ""
+      ],
+      [
+        "Tú tienes que estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Él tiene que irse.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros tenemos que esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros tenéis que ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tienen que quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tengo_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tienes_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tiene_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tenemos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teneis_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tienen_que_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tengo_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tienes_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tiene_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tenemos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_teneis_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tienen_que_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo tendré que",
+      "tú tendrás que",
+      "él/ella tendrá que",
+      "nosotros tendremos que",
+      "vosotros tendréis que",
+      "ellos/ellas tendrán que"
+    ],
+    "examples": [
+      [
+        "Yo tendré que trabajar.",
+        "",
+        ""
+      ],
+      [
+        "Tú tendrás que estudiar.",
+        "",
+        ""
+      ],
+      [
+        "Él tendrá que irse.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros tendremos que esperar.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros tendréis que ayudar.",
+        "",
+        ""
+      ],
+      [
+        "Ellos tendrán que quedarse.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tendre_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tendras_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tendra_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tendremos_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_tendreis_que_m.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tendran_que_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_must/audio_yo_tendre_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_tu_tendras_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_el_ella_tendra_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_nosotros_tendremos_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_vosotros_tendreis_que_f.mp3",
+        "audio/es/verbs/es_audio_to_must/audio_ellos_ellas_tendran_que_f.mp3"
+      ]
+    ]
+  }
+}

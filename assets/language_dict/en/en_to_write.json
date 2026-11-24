@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/en/to write/audio_i_wrote_m.mp3",
-        "audio/en/to write/audio_you_wrote_m.mp3",
-        "audio/en/to write/audio_he_she_it_wrote_m.mp3",
-        "audio/en/to write/audio_we_wrote_m.mp3",
-        "audio/en/to write/audio_you_wrote_(pl)_m.mp3",
-        "audio/en/to write/audio_they_wrote_m.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_wrote_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_wrote_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_wrote_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_wrote_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_wrote_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_wrote_m.mp3"
       ],
       [
-        "audio/en/to write/audio_i_wrote_f.mp3",
-        "audio/en/to write/audio_you_wrote_f.mp3",
-        "audio/en/to write/audio_he_she_it_wrote_f.mp3",
-        "audio/en/to write/audio_we_wrote_f.mp3",
-        "audio/en/to write/audio_you_wrote_(pl)_f.mp3",
-        "audio/en/to write/audio_they_wrote_f.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_wrote_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_wrote_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_wrote_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_wrote_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_wrote_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_wrote_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/en/to write/audio_i_write_m.mp3",
-        "audio/en/to write/audio_you_write_m.mp3",
-        "audio/en/to write/audio_he_she_it_writes_m.mp3",
-        "audio/en/to write/audio_we_write_m.mp3",
-        "audio/en/to write/audio_you_write_(pl)_m.mp3",
-        "audio/en/to write/audio_they_write_m.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_writes_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_write_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_write_m.mp3"
       ],
       [
-        "audio/en/to write/audio_i_write_f.mp3",
-        "audio/en/to write/audio_you_write_f.mp3",
-        "audio/en/to write/audio_he_she_it_writes_f.mp3",
-        "audio/en/to write/audio_we_write_f.mp3",
-        "audio/en/to write/audio_you_write_(pl)_f.mp3",
-        "audio/en/to write/audio_they_write_f.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_writes_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_write_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_write_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/en/to write/audio_i_will_write_m.mp3",
-        "audio/en/to write/audio_you_will_write_m.mp3",
-        "audio/en/to write/audio_he_she_it_will_write_m.mp3",
-        "audio/en/to write/audio_we_will_write_m.mp3",
-        "audio/en/to write/audio_you_will_write_(pl)_m.mp3",
-        "audio/en/to write/audio_they_will_write_m.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_will_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_will_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_will_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_will_write_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_will_write_(pl)_m.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_will_write_m.mp3"
       ],
       [
-        "audio/en/to write/audio_i_will_write_f.mp3",
-        "audio/en/to write/audio_you_will_write_f.mp3",
-        "audio/en/to write/audio_he_she_it_will_write_f.mp3",
-        "audio/en/to write/audio_we_will_write_f.mp3",
-        "audio/en/to write/audio_you_will_write_(pl)_f.mp3",
-        "audio/en/to write/audio_they_will_write_f.mp3"
+        "audio/en/verbs/en_audio_to_write/audio_i_will_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_will_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_he_she_it_will_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_we_will_write_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_you_will_write_(pl)_f.mp3",
+        "audio/en/verbs/en_audio_to_write/audio_they_will_write_f.mp3"
       ]
     ]
   }

@@ -1,0 +1,183 @@
+{
+  "infinitive": "querer",
+  "past": {
+    "translations": [
+      "yo quería",
+      "tú querías",
+      "él/ella quería",
+      "nosotros queríamos",
+      "vosotros queríais",
+      "ellos/ellas querían"
+    ],
+    "examples": [
+      [
+        "Yo quería un helado.",
+        "",
+        ""
+      ],
+      [
+        "Tú querías un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él quería un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros queríamos un descanso.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros queríais un aperitivo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos querían una bebida.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_queria_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_querias_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_queria_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_queriamos_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_queriais_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_querian_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_queria_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_querias_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_queria_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_queriamos_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_queriais_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_querian_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "yo quiero",
+      "tú quieres",
+      "él/ella quiere",
+      "nosotros queremos",
+      "vosotros queréis",
+      "ellos/ellas quieren"
+    ],
+    "examples": [
+      [
+        "Yo quiero un helado.",
+        "",
+        ""
+      ],
+      [
+        "Tú quieres un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él quiere un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros queremos un descanso.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros queréis un aperitivo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos quieren una bebida.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_quiero_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_quieres_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_quiere_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_queremos_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_quereis_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_quieren_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_quiero_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_quieres_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_quiere_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_queremos_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_quereis_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_quieren_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "yo querré",
+      "tú querrás",
+      "él/ella querrá",
+      "nosotros querremos",
+      "vosotros querréis",
+      "ellos/ellas querrán"
+    ],
+    "examples": [
+      [
+        "Yo querré un helado.",
+        "",
+        ""
+      ],
+      [
+        "Tú querrás un libro.",
+        "",
+        ""
+      ],
+      [
+        "Él querrá un coche.",
+        "",
+        ""
+      ],
+      [
+        "Nosotros querremos un descanso.",
+        "",
+        ""
+      ],
+      [
+        "Vosotros querréis un aperitivo.",
+        "",
+        ""
+      ],
+      [
+        "Ellos querrán una bebida.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_querre_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_querras_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_querra_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_querremos_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_querreis_m.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_querran_m.mp3"
+      ],
+      [
+        "audio/es/verbs/es_audio_to_want/audio_yo_querre_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_tu_querras_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_el_ella_querra_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_nosotros_querremos_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_vosotros_querreis_f.mp3",
+        "audio/es/verbs/es_audio_to_want/audio_ellos_ellas_querran_f.mp3"
+      ]
+    ]
+  }
+}

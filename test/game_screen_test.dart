@@ -6,6 +6,7 @@ import 'package:learn_a_language/l10n/app_localizations.dart';
 import 'package:learn_a_language/managers/data_state.dart';
 import 'package:learn_a_language/managers/navigation_state.dart';
 import 'package:learn_a_language/managers/user_manager.dart';
+import 'package:learn_a_language/managers/user_state.dart';
 import 'package:learn_a_language/managers/vocab_queries.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/screens/game_screen.dart';
@@ -62,6 +63,11 @@ Future<void> _pumpGameScreen(
       providers: [
         ChangeNotifierProvider<DataState>.value(value: dataState),
         ChangeNotifierProvider<NavigationState>.value(value: NavigationState()),
+        // Gebraucht für die Sprachauflösung des Spiels.
+        ChangeNotifierProvider<UserState>.value(
+            value: UserState(
+                userManager: userManager,
+                vocabManager: FakeVocabManager())),
         Provider<UserManager>.value(value: userManager),
         Provider<VocabQueries>.value(value: vq),
       ],

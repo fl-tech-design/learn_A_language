@@ -1,0 +1,183 @@
+{
+  "infinitive": "покупать",
+  "past": {
+    "translations": [
+      "я покупал",
+      "ты покупал",
+      "он покупал",
+      "мы покупали",
+      "вы покупали",
+      "они покупали"
+    ],
+    "examples": [
+      [
+        "Я покупал хлеб.",
+        "",
+        ""
+      ],
+      [
+        "Ты покупал книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он покупал машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы покупали еду.",
+        "",
+        ""
+      ],
+      [
+        "Вы покупали одежду.",
+        "",
+        ""
+      ],
+      [
+        "Они покупали дом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupal_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupali_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupali_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupal_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupali_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupali_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "я покупаю",
+      "ты покупаешь",
+      "он покупает",
+      "мы покупаем",
+      "вы покупаете",
+      "они покупают"
+    ],
+    "examples": [
+      [
+        "Я покупаю хлеб.",
+        "",
+        ""
+      ],
+      [
+        "Ты покупаешь книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он покупает машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы покупаем еду.",
+        "",
+        ""
+      ],
+      [
+        "Вы покупаете одежду.",
+        "",
+        ""
+      ],
+      [
+        "Они покупают дом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupayu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupaesh_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupaet_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupaem_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupaete_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupayut_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_pokupayu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_pokupaesh_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_pokupaet_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_pokupaem_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_pokupaete_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_pokupayut_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "я куплю",
+      "ты купишь",
+      "он купит",
+      "мы купим",
+      "вы купите",
+      "они купят"
+    ],
+    "examples": [
+      [
+        "Я куплю хлеб.",
+        "",
+        ""
+      ],
+      [
+        "Ты купишь книгу.",
+        "",
+        ""
+      ],
+      [
+        "Он купит машину.",
+        "",
+        ""
+      ],
+      [
+        "Мы купим еду.",
+        "",
+        ""
+      ],
+      [
+        "Вы купите одежду.",
+        "",
+        ""
+      ],
+      [
+        "Они купят дом.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_kuplyu_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_kupish_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_kupit_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_kupim_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_kupite_m.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_kupyat_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_buy/audio_ya_kuplyu_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_ty_kupish_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_on_kupit_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_my_kupim_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_vy_kupite_f.mp3",
+        "audio/ru/verbs/ru_audio_to_buy/audio_oni_kupyat_f.mp3"
+      ]
+    ]
+  }
+}

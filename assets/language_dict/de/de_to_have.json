@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/haben/audio_ich_hatte_m.mp3",
-        "audio/de/verben/haben/audio_du_hattest_m.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_hatte_m.mp3",
-        "audio/de/verben/haben/audio_wir_hatten_m.mp3",
-        "audio/de/verben/haben/audio_ihr_hattet_m.mp3",
-        "audio/de/verben/haben/audio_sie_hatten_m.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_hatte_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_hattest_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_hatte_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_hatten_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_hattet_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_hatten_m.mp3"
       ],
       [
-        "audio/de/verben/haben/audio_ich_hatte_f.mp3",
-        "audio/de/verben/haben/audio_du_hattest_f.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_hatte_f.mp3",
-        "audio/de/verben/haben/audio_wir_hatten_f.mp3",
-        "audio/de/verben/haben/audio_ihr_hattet_f.mp3",
-        "audio/de/verben/haben/audio_sie_hatten_f.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_hatte_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_hattest_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_hatte_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_hatten_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_hattet_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_hatten_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/haben/audio_ich_habe_m.mp3",
-        "audio/de/verben/haben/audio_du_hast_m.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_hat_m.mp3",
-        "audio/de/verben/haben/audio_wir_haben_m.mp3",
-        "audio/de/verben/haben/audio_ihr_habt_m.mp3",
-        "audio/de/verben/haben/audio_sie_haben_m.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_habe_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_hast_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_hat_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_habt_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_haben_m.mp3"
       ],
       [
-        "audio/de/verben/haben/audio_ich_habe_f.mp3",
-        "audio/de/verben/haben/audio_du_hast_f.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_hat_f.mp3",
-        "audio/de/verben/haben/audio_wir_haben_f.mp3",
-        "audio/de/verben/haben/audio_ihr_habt_f.mp3",
-        "audio/de/verben/haben/audio_sie_haben_f.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_habe_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_hast_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_hat_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_habt_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_haben_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/de/verben/haben/audio_ich_werde_haben_m.mp3",
-        "audio/de/verben/haben/audio_du_wirst_haben_m.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_wird_haben_m.mp3",
-        "audio/de/verben/haben/audio_wir_werden_haben_m.mp3",
-        "audio/de/verben/haben/audio_ihr_werdet_haben_m.mp3",
-        "audio/de/verben/haben/audio_sie_werden_haben_m.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_werde_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_wirst_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_wird_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_werden_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_werdet_haben_m.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_werden_haben_m.mp3"
       ],
       [
-        "audio/de/verben/haben/audio_ich_werde_haben_f.mp3",
-        "audio/de/verben/haben/audio_du_wirst_haben_f.mp3",
-        "audio/de/verben/haben/audio_er_sie_es_wird_haben_f.mp3",
-        "audio/de/verben/haben/audio_wir_werden_haben_f.mp3",
-        "audio/de/verben/haben/audio_ihr_werdet_haben_f.mp3",
-        "audio/de/verben/haben/audio_sie_werden_haben_f.mp3"
+        "audio/de/verbs/de_audio_to_have/audio_ich_werde_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_du_wirst_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_er_sie_es_wird_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_wir_werden_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_ihr_werdet_haben_f.mp3",
+        "audio/de/verbs/de_audio_to_have/audio_sie_werden_haben_f.mp3"
       ]
     ]
   }

@@ -1,0 +1,183 @@
+{
+  "infinitive": "нравиться",
+  "past": {
+    "translations": [
+      "мне нравилось",
+      "тебе нравилось",
+      "ему нравилось",
+      "нам нравилось",
+      "вам нравилось",
+      "им нравилось"
+    ],
+    "examples": [
+      [
+        "Мне нравился шоколад.",
+        "",
+        ""
+      ],
+      [
+        "Тебе нравилось мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ему нравилась пицца.",
+        "",
+        ""
+      ],
+      [
+        "Нам нравился этот фильм.",
+        "",
+        ""
+      ],
+      [
+        "Вам нравилась эта книга.",
+        "",
+        ""
+      ],
+      [
+        "Им нравилась эта музыка.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravilos_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravilos_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravilos_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravilos_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "мне нравится",
+      "тебе нравится",
+      "ему нравится",
+      "нам нравится",
+      "вам нравится",
+      "им нравится"
+    ],
+    "examples": [
+      [
+        "Мне нравится шоколад.",
+        "",
+        ""
+      ],
+      [
+        "Тебе нравится мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ему нравится пицца.",
+        "",
+        ""
+      ],
+      [
+        "Нам нравится этот фильм.",
+        "",
+        ""
+      ],
+      [
+        "Вам нравится эта книга.",
+        "",
+        ""
+      ],
+      [
+        "Им нравится эта музыка.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravitsya_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_nravitsya_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "мне будет нравиться",
+      "тебе будет нравиться",
+      "ему будет нравиться",
+      "нам будет нравиться",
+      "вам будет нравиться",
+      "им будет нравиться"
+    ],
+    "examples": [
+      [
+        "Мне будет нравиться шоколад.",
+        "",
+        ""
+      ],
+      [
+        "Тебе будет нравиться мороженое.",
+        "",
+        ""
+      ],
+      [
+        "Ему будет нравиться пицца.",
+        "",
+        ""
+      ],
+      [
+        "Нам будет нравиться этот фильм.",
+        "",
+        ""
+      ],
+      [
+        "Вам будет нравиться эта книга.",
+        "",
+        ""
+      ],
+      [
+        "Им будет нравиться эта музыка.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_budet_nravitsya_m.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_budet_nravitsya_m.mp3"
+      ],
+      [
+        "audio/ru/verbs/ru_audio_to_like/audio_mne_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_tebe_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_emu_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_nam_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_vam_budet_nravitsya_f.mp3",
+        "audio/ru/verbs/ru_audio_to_like/audio_im_budet_nravitsya_f.mp3"
+      ]
+    ]
+  }
+}

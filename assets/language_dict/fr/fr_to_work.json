@@ -1,0 +1,183 @@
+{
+  "infinitive": "travailler",
+  "past": {
+    "translations": [
+      "je travaillais",
+      "tu travaillais",
+      "il/elle/on travaillait",
+      "nous travaillions",
+      "vous travailliez",
+      "ils/elles travaillaient"
+    ],
+    "examples": [
+      [
+        "Je travaillais dans un bureau.",
+        "",
+        ""
+      ],
+      [
+        "Tu travaillais dur.",
+        "",
+        ""
+      ],
+      [
+        "Il travaillait dans une usine.",
+        "",
+        ""
+      ],
+      [
+        "Nous travaillions ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous travailliez tard.",
+        "",
+        ""
+      ],
+      [
+        "Ils travaillaient sur un projet.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_work/audio_je_travaillais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_tu_travaillais_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_il_elle_on_travaillait_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_nous_travaillions_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_vous_travailliez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_ils_elles_travaillaient_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je travaille",
+      "tu travailles",
+      "il/elle/on travaille",
+      "nous travaillons",
+      "vous travaillez",
+      "ils/elles travaillent"
+    ],
+    "examples": [
+      [
+        "Je travaille dans un bureau.",
+        "",
+        ""
+      ],
+      [
+        "Tu travailles dur.",
+        "",
+        ""
+      ],
+      [
+        "Il travaille dans une usine.",
+        "",
+        ""
+      ],
+      [
+        "Nous travaillons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous travaillez tard.",
+        "",
+        ""
+      ],
+      [
+        "Ils travaillent sur un projet.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_work/audio_je_travaille_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_tu_travailles_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_il_elle_on_travaille_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_nous_travaillons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_vous_travaillez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_ils_elles_travaillent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je travaillerai",
+      "tu travailleras",
+      "il/elle/on travaillera",
+      "nous travaillerons",
+      "vous travaillerez",
+      "ils/elles travailleront"
+    ],
+    "examples": [
+      [
+        "Je travaillerai dans un bureau.",
+        "",
+        ""
+      ],
+      [
+        "Tu travailleras dur.",
+        "",
+        ""
+      ],
+      [
+        "Il travaillera dans une usine.",
+        "",
+        ""
+      ],
+      [
+        "Nous travaillerons ensemble.",
+        "",
+        ""
+      ],
+      [
+        "Vous travaillerez tard.",
+        "",
+        ""
+      ],
+      [
+        "Ils travailleront sur un projet.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_work/audio_je_travaillerai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_tu_travailleras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_il_elle_on_travaillera_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_nous_travaillerons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_vous_travaillerez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_work/audio_ils_elles_travailleront_f.mp3"
+      ]
+    ]
+  }
+}

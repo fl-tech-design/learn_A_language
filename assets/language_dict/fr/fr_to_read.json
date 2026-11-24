@@ -1,0 +1,183 @@
+{
+  "infinitive": "lire",
+  "past": {
+    "translations": [
+      "j'ai lu",
+      "tu as lu",
+      "il/elle/on a lu",
+      "nous avons lu",
+      "vous avez lu",
+      "ils/elles ont lu"
+    ],
+    "examples": [
+      [
+        "J'ai lu un livre.",
+        "",
+        ""
+      ],
+      [
+        "Tu as lu un magazine.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle/on a lu un journal.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons lu une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez lu un poème.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles ont lu une lettre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_read/audio_jai_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_as_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_a_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_avons_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_avez_lu_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_ont_lu_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "je lis",
+      "tu lis",
+      "il/elle/on lit",
+      "nous lisons",
+      "vous lisez",
+      "ils/elles lisent"
+    ],
+    "examples": [
+      [
+        "Je lis un livre.",
+        "",
+        ""
+      ],
+      [
+        "Tu lis un magazine.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle/on lit un journal.",
+        "",
+        ""
+      ],
+      [
+        "Nous lisons une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Vous lisez un poème.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles lisent une lettre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_read/audio_je_lis_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_lis_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_lit_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_lisons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_lisez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_lisent_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "je lirai",
+      "tu liras",
+      "il/elle/on lira",
+      "nous lirons",
+      "vous lirez",
+      "ils/elles liront"
+    ],
+    "examples": [
+      [
+        "Je lirai un livre.",
+        "",
+        ""
+      ],
+      [
+        "Tu liras un magazine.",
+        "",
+        ""
+      ],
+      [
+        "Il/elle/on lira un journal.",
+        "",
+        ""
+      ],
+      [
+        "Nous lirons une histoire.",
+        "",
+        ""
+      ],
+      [
+        "Vous lirez un poème.",
+        "",
+        ""
+      ],
+      [
+        "Ils/elles liront une lettre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_read/audio_je_lirai_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_tu_liras_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_il_elle_on_lira_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_nous_lirons_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_vous_lirez_f.mp3",
+        "audio/fr/verbs/fr_audio_to_read/audio_ils_elles_liront_f.mp3"
+      ]
+    ]
+  }
+}

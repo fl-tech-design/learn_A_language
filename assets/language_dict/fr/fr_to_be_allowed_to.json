@@ -1,0 +1,183 @@
+{
+  "infinitive": "avoir le droit de",
+  "past": {
+    "translations": [
+      "j'avais le droit de",
+      "tu avais le droit de",
+      "il/elle/on avait le droit de",
+      "nous avions le droit de",
+      "vous aviez le droit de",
+      "ils/elles avaient le droit de"
+    ],
+    "examples": [
+      [
+        "J'avais le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Tu avais le droit de rester.",
+        "",
+        ""
+      ],
+      [
+        "Il avait le droit de jouer.",
+        "",
+        ""
+      ],
+      [
+        "Nous avions le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Vous aviez le droit de parler.",
+        "",
+        ""
+      ],
+      [
+        "Ils avaient le droit de rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_javais_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_tu_avais_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_il_elle_on_avait_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_nous_avions_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_vous_aviez_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_ils_elles_avaient_le_droit_de_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "j'ai le droit de",
+      "tu as le droit de",
+      "il/elle/on a le droit de",
+      "nous avons le droit de",
+      "vous avez le droit de",
+      "ils/elles ont le droit de"
+    ],
+    "examples": [
+      [
+        "J'ai le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Tu as le droit de rester.",
+        "",
+        ""
+      ],
+      [
+        "Il a le droit de jouer.",
+        "",
+        ""
+      ],
+      [
+        "Nous avons le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Vous avez le droit de parler.",
+        "",
+        ""
+      ],
+      [
+        "Ils ont le droit de rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_jai_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_tu_as_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_il_elle_on_a_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_nous_avons_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_vous_avez_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_ils_elles_ont_le_droit_de_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "j'aurai le droit de",
+      "tu auras le droit de",
+      "il/elle/on aura le droit de",
+      "nous aurons le droit de",
+      "vous aurez le droit de",
+      "ils/elles auront le droit de"
+    ],
+    "examples": [
+      [
+        "J'aurai le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Tu auras le droit de rester.",
+        "",
+        ""
+      ],
+      [
+        "Il aura le droit de jouer.",
+        "",
+        ""
+      ],
+      [
+        "Nous aurons le droit de partir.",
+        "",
+        ""
+      ],
+      [
+        "Vous aurez le droit de parler.",
+        "",
+        ""
+      ],
+      [
+        "Ils auront le droit de rire.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_jaurai_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_tu_auras_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_il_elle_on_aura_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_nous_aurons_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_vous_aurez_le_droit_de_f.mp3",
+        "audio/fr/verbs/fr_audio_to_be_allowed_to/audio_ils_elles_auront_le_droit_de_f.mp3"
+      ]
+    ]
+  }
+}

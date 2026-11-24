@@ -1,0 +1,183 @@
+{
+  "infinitive": "βοηθάω",
+  "past": {
+    "translations": [
+      "εγώ βοήθησα",
+      "εσύ βοήθησες",
+      "αυτός/αυτή/αυτό βοήθησε",
+      "εμείς βοηθήσαμε",
+      "εσείς βοηθήσατε",
+      "αυτοί/αυτές/αυτά βοήθησαν"
+    ],
+    "examples": [
+      [
+        "Βοήθησα τον φίλο μου.",
+        "",
+        ""
+      ],
+      [
+        "Βοήθησες την αδελφή σου.",
+        "",
+        ""
+      ],
+      [
+        "Βοήθησε τον γείτονά του.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθήσαμε τον δάσκαλο.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθήσατε την ομάδα.",
+        "",
+        ""
+      ],
+      [
+        "Βοήθησαν τον μαθητή.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_voithisa_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_voithises_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_voithise_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_voithisame_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_voithisate_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_voithisan_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_voithisa_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_voithises_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_voithise_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_voithisame_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_voithisate_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_voithisan_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "εγώ βοηθάω",
+      "εσύ βοηθάς",
+      "αυτός/αυτή/αυτό βοηθάει",
+      "εμείς βοηθάμε",
+      "εσείς βοηθάτε",
+      "αυτοί/αυτές/αυτά βοηθάνε"
+    ],
+    "examples": [
+      [
+        "Βοηθάω τον φίλο μου.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθάς την αδελφή σου.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθάει τον γείτονά του.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθάμε τον δάσκαλο.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθάτε την ομάδα.",
+        "",
+        ""
+      ],
+      [
+        "Βοηθάνε τον μαθητή.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_voithao_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_voithas_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_voithaei_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_voithame_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_voithate_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_voithane_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_voithao_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_voithas_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_voithaei_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_voithame_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_voithate_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_voithane_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "εγώ θα βοηθήσω",
+      "εσύ θα βοηθήσεις",
+      "αυτός/αυτή/αυτό θα βοηθήσει",
+      "εμείς θα βοηθήσουμε",
+      "εσείς θα βοηθήσετε",
+      "αυτοί/αυτές/αυτά θα βοηθήσουν"
+    ],
+    "examples": [
+      [
+        "Θα βοηθήσω τον φίλο μου.",
+        "",
+        ""
+      ],
+      [
+        "Θα βοηθήσεις την αδελφή σου.",
+        "",
+        ""
+      ],
+      [
+        "Θα βοηθήσει τον γείτονά του.",
+        "",
+        ""
+      ],
+      [
+        "Θα βοηθήσουμε τον δάσκαλο.",
+        "",
+        ""
+      ],
+      [
+        "Θα βοηθήσετε την ομάδα.",
+        "",
+        ""
+      ],
+      [
+        "Θα βοηθήσουν τον μαθητή.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_tha_voithiso_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_tha_voithiseis_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_tha_voithisei_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_tha_voithisoyme_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_tha_voithisete_m.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_tha_voithisoyn_m.mp3"
+      ],
+      [
+        "audio/el/verbs/el_audio_to_help/audio_ego_tha_voithiso_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_esy_tha_voithiseis_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytosaytiayto_tha_voithisei_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_emeis_tha_voithisoyme_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_eseis_tha_voithisete_f.mp3",
+        "audio/el/verbs/el_audio_to_help/audio_aytoiaytesayta_tha_voithisoyn_f.mp3"
+      ]
+    ]
+  }
+}
