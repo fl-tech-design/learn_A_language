@@ -231,7 +231,10 @@ class _WordScreenState extends State<WordScreen> {
   }
 
   /// Wiederholt die Aussprache des aktuellen Wortes (Replay-Button).
-  void _replay() {
+  ///
+  /// [tempo] wählt die Geschwindigkeit: Standard [AudioService.normalTempo]
+  /// oder langsamer via [AudioService.slowTempo] (Slow-Button, Ticket #32).
+  void _replay([double tempo = AudioService.normalTempo]) {
     final audio = _audio;
     final w = _currentWord;
     if (audio == null || w == null) return;
@@ -239,7 +242,8 @@ class _WordScreenState extends State<WordScreen> {
         langCode: _lang,
         verbKey: vocabVerbKey(w.key),
         tense: vocabTenseKey(w.key),
-        person: vocabPersonIndex(w.key)));
+        person: vocabPersonIndex(w.key),
+        tempo: tempo));
   }
 
   @override
@@ -309,12 +313,9 @@ class _WordScreenState extends State<WordScreen> {
           if (_hasAudioWord)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8),
-              child: IconButton(
-                iconSize: 38,
-                padding: EdgeInsets.zero,
-                onPressed: _replay,
-                icon: const Icon(Icons.volume_up),
-                color: AppTheme.colorPrimary,
+              child: PlaybackButtons(
+                onPlay: _replay,
+                onSlow: () => _replay(AudioService.slowTempo),
               ),
             ),
           const SizedBox(height: 8),

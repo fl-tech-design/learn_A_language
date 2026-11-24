@@ -21,6 +21,13 @@ import 'file_service.dart';
 /// auf die jeweils andere Stimme, falls für die gewürfelte Stimme keine Datei
 /// existiert. Fehlt für beide Stimmen ein Pfad, wird lautlos nichts getan.
 class AudioService {
+  /// Standard-Abspieltempo (Ticket #32): global 0.98, damit manche
+  /// TTS-Ausgaben nicht „zu schnell“ wirken.
+  static const double normalTempo = 0.98;
+
+  /// Langsames Abspieltempo für den Slow-Button (Anfänger-Modus, Ticket #32).
+  static const double slowTempo = 0.8;
+
   final FileService _fileService;
   final Random _random = Random();
   final Map<String, Map<String, dynamic>> _verbCache = {};
@@ -74,8 +81,13 @@ class AudioService {
   }
 
   /// Spielt die Aussprache zum Eintrag ab (Stimme zufällig m/f, mit Fallback).
+  ///
+  /// [tempo] ist die Abspielgeschwindigkeit (1.0 = Original); Standard siehe
+  /// [normalTempo], der Slow-Button nutzt [slowTempo] (Ticket #32).
+  /// Plattformen ohne `setPlaybackRate` spielen unverändert (still abgefangen).
   Future<void> play({required String langCode, required String verbKey,
-      required String tense, required int person}) async {
+      required String tense, required int person,
+      double tempo = normalTempo}) async {
     if (verbKey.isEmpty) return;
     final (m, f) = await _bothPaths(langCode, verbKey, tense, person);
     final voice = _random.nextInt(2);
@@ -84,6 +96,11 @@ class AudioService {
     if (path.isEmpty) return; // Stille statt Fehler.
 
     _player ??= AudioPlayer();
+    try {
+      await _player!.setPlaybackRate(tempo);
+    } catch (_) {
+      // Nicht unterstützte Plattform: mit Original-Tempo weiter.
+    }
     await _player!.stop();
     await _player!.play(AssetSource(path));
   }

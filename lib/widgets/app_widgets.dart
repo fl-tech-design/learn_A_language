@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show toBeginningOfSentenceCase;
 import '../l10n/app_localizations.dart';
+import '../services/audio_service.dart';
 import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
 
@@ -222,6 +223,66 @@ class FlagBox extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Aussprache-Buttons (Replay + Slow) für Wort-Screens.
+///
+/// Beide Buttons nutzen das gleiche Speaker-Icon; der Slow-Button trägt
+/// zusätzlich das Tempo-Label (z. B. „0.8×“) inline im Icon, damit
+/// langsameres Anhören für Anfänger direkt erkennbar ist (Ticket #32).
+class PlaybackButtons extends StatelessWidget {
+  final VoidCallback onPlay;
+  final VoidCallback onSlow;
+
+  const PlaybackButtons({
+    super.key,
+    required this.onPlay,
+    required this.onSlow,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _speakerButton(onPressed: onPlay),
+        const SizedBox(width: 18),
+        _speakerButton(
+          onPressed: onSlow,
+          label: '${AudioService.slowTempo.toStringAsFixed(1)}×',
+        ),
+      ],
+    );
+  }
+
+  Widget _speakerButton({required VoidCallback onPressed, String? label}) {
+    return IconButton(
+      iconSize: 38,
+      padding: EdgeInsets.zero,
+      onPressed: onPressed,
+      color: AppTheme.colorPrimary,
+      icon: label == null
+          ? const Icon(Icons.volume_up)
+          : Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.volume_up,
+                    size: 30, color: AppTheme.colorPrimary),
+                Padding(
+                  padding: const EdgeInsets.only(left: 3),
+                  child: Text(
+                    label,
+                    style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.colorPrimary,
+                    ),
+                  ),
+                ),
+              ],
+            ),
     );
   }
 }
