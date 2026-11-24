@@ -167,7 +167,6 @@ class FakeUserManager implements UserManager {
       progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
       learnedLanguages: const [],
       language: languageDict,
-      vocab: const {},
     );
     _users[username] = userData;
     _lastSaved = userData;
