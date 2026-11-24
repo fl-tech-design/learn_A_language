@@ -236,4 +236,34 @@ void main() {
     expect(find.text('bob'), findsOneWidget);
     expect(find.text('Neue Wörter: 1'), findsOneWidget);
   });
+
+  testWidgets('frischer User: Meine Kurse leer, Neue Kurse bietet Englisch an',
+      (tester) async {
+    // Ticket #35: Soeben erstellter User ohne Kurse und ohne Vokabeln.
+    _useLandscapeSize(tester);
+    final um = FakeUserManager();
+    um.seed('carol', _userData('carol', const {}));
+    final fs = FakeFileService(store: _appDataStore(logged: 'carol'));
+    final dataState = DataState(fs);
+    await dataState.loadAppData();
+    final navState = NavigationState();
+
+    await tester.pumpWidget(_app(
+      userManager: um,
+      vocabManager: FakeVocabManager(),
+      dataState: dataState,
+      navState: navState,
+    ));
+    await tester.pumpAndSettle();
+
+    // „Meine Kurse“ ist beim neuen User leer (kein Auto-Load von Kursen).
+    // Hinweis: Im leeren Zustand wird ausschließlich „Keine Kurse“ gezeigt.
+    expect(find.text('Keine Kurse'), findsOneWidget);
+
+    // „Neue Kurse“ darunter bietet (u. a.) Englisch zum eigenständigen
+    // Hinzufügen an – es wird weiterhin nichts vorausgewählt.
+    expect(find.text('Neue Sprachen entdecken'), findsOneWidget);
+    expect(find.text('Englisch'), findsOneWidget);
+    expect(find.text('Deutsch'), findsOneWidget);
+  });
 }

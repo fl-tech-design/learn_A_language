@@ -124,6 +124,11 @@ void main() {
       expect(vm.initCount, 0);
       expect(vm.migrateCount, 0);
       expect(state.userData!.uName, 'carl');
+      // Ticket #35: Ein neu erstellter User startet mit LEERER Kursliste –
+      // es werden keine (Englisch-)Kurse automatisch geladen. Kurse kommen
+      // erst über addCourse aus der „Neue Kurse“-Sektion hinzu.
+      expect(state.selectedCourseIds, isEmpty);
+      expect(state.availableNewCourses, isNotEmpty);
     });
 
     test('bricht ab, wenn der Benutzer bereits existiert', () async {
