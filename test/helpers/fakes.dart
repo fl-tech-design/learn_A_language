@@ -158,19 +158,28 @@ class FakeUserManager implements UserManager {
   @override
   Future<String> createUserFile(
       String username, String mLang, Map<String, dynamic> languageDict) async {
-    if (_users.containsKey(username)) {
-      return 'Benutzer $username existiert bereits.';
+    // Reale Semantik (UserManagerImpl): Unsichere Benutzernamen werden wie in
+    // saveUserdata/addNewUserToList/setLoggedUname als PathRejectedException
+    // abgelehnt; Namen werden vor dem Speichern getrimmt.
+    final normalized = username.trim();
+    if (normalized.isEmpty ||
+        !RegExp(r'^[A-Za-z0-9_-]+$').hasMatch(normalized)) {
+      throw PathRejectedException('data_app/files_user/data_$username.json',
+          StateError('Ungültiger Benutzername "$username"'));
+    }
+    if (_users.containsKey(normalized)) {
+      return 'Benutzer $normalized existiert bereits.';
     }
     final userData = UserData(
-      uName: username,
+      uName: normalized,
       mLang: mLang,
       progress: const {'A1': 0, 'A2': 0, 'B1': 0, 'B2': 0, 'C1': 0, 'C2': 0},
       learnedLanguages: const [],
       language: languageDict,
     );
-    _users[username] = userData;
+    _users[normalized] = userData;
     _lastSaved = userData;
-    return 'Benutzer $username wurde erfolgreich erstellt.';
+    return 'Benutzer $normalized wurde erfolgreich erstellt.';
   }
 
   @override

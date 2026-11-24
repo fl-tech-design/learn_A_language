@@ -73,6 +73,12 @@ class UserState extends ChangeNotifier {
     final String result;
     try {
       result = await _userManager.createUserFile(username, mLang, {});
+    } on PathRejectedException catch (e) {
+      // createUserFile lehnt unsichere Benutzernamen jetzt über
+      // PathRejectedException ab (einheitlicher Kanal wie saveUserdata &
+      // Co.) – der Aufrufer bekommt eine verständliche Meldung statt Crash.
+      log('registerUser: Benutzername $username wurde abgelehnt ($e)');
+      return 'Benutzer konnte nicht erstellt werden (ungültiger Name).';
     } on PersistenceException catch (e) {
       log('registerUser: Anlegen von $username fehlgeschlagen ($e)');
       StorageErrorBus.instance.report(StorageErrorKind.saveFailed);

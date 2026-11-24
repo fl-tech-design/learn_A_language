@@ -87,7 +87,7 @@
 
 ### Ebene B – `UserManagerImpl` (zentrale Namensvalidierung)
 - Eine Privatmethode `String? _safeUsername(String)` = `trim` + bestehende Whitelist; angewendet in **allen** Benutzernamen-Pfaden:
-  - `createUserFile`: Semantik unverändert (über Helper).
+  - `createUserFile`: ungültig ⇒ `PathRejectedException` (einheitlicher Validierungs-Fehlerkanal wie `saveUserdata`); Business-Meldungen („existiert bereits“, „beschädigt“, „erfolgreich“) bleiben String-Rückgaben.
   - `loadUserdata`: ungültig ⇒ `null` (kein Dateizugriff; sichtbar als „nicht registriert“).
   - `saveUserdata`: ungültig ⇒ `PathRejectedException`.
   - `addNewUserToList`/`setLoggedUname`: ungültig ⇒ `PathRejectedException` – manipulierte Namen können nie mehr in `registered_user`/`logged_u_name` landen (Auto-Login-Vektor geschlossen). Nebeneffekt: gepolsterte Namen werden normalisiert (behebt Trim-Inkonsistenz aus `registerUser`).

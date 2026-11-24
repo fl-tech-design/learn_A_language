@@ -31,10 +31,6 @@ class UserManagerImpl implements UserManager {
   /// Benutzernamen gehen direkt in Dateipfade ein – deshalb die Whitelist.
   static final RegExp _userNamePattern = RegExp(r'^[A-Za-z0-9_-]+$');
 
-  static const _invalidNameMessage =
-      'Ungültiger Benutzername. Erlaubt sind Buchstaben, Ziffern, '
-      'Unterstrich (_) und Bindestrich (-).';
-
   /// ZENTRALE Username-Validierung: Alle Pfad-relevanten Operationen laufen
   /// über diese eine Stelle. Geliefert wird der getrimmte Name, wenn er der
   /// Whitelist entspricht, sonst `null`. Damit kann ein Benutzername niemals
@@ -50,7 +46,11 @@ class UserManagerImpl implements UserManager {
       String username, String mLang, Map<String, dynamic> languageDict) async {
     final normalized = _safeUsername(username);
     if (normalized == null) {
-      return _invalidNameMessage;
+      // Einheitlicher Validierungs-Fehlerkanal: Derselbe Fall (unsicherer
+      // Benutzername) wird in saveUserdata/addNewUserToList/setLoggedUname
+      // ebenfalls als PathRejectedException gemeldet (Befund A4).
+      throw PathRejectedException('data_app/files_user/data_$username.json',
+          StateError('Ungültiger Benutzername "$username"'));
     }
 
     final filePath = 'data_app/files_user/data_$normalized.json';

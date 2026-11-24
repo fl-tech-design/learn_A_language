@@ -172,9 +172,11 @@ void main() {
         'user name',
         'u%näme',
       ]) {
-        final result = await mgr.createUserFile(name, 'de', {});
-        expect(result, contains('Ungültiger Benutzername'),
-            reason: 'Name "$name" wurde nicht abgelehnt');
+        await expectLater(
+          () => mgr.createUserFile(name, 'de', {}),
+          throwsA(isA<PathRejectedException>()),
+          reason: 'Name "$name" wurde nicht abgelehnt',
+        );
       }
       // Es darf KEINE Datei angelegt worden sein (kein Pfad-Traversal).
       expect(fs.store.keys.any((k) => k.startsWith('data_')), isFalse);
@@ -299,9 +301,11 @@ void main() {
       final mgr = UserManagerImpl(fs);
 
       for (final name in unsafeNames) {
-        final result = await mgr.createUserFile(name, 'de', {});
-        expect(result, contains('Ungültiger Benutzername'),
-            reason: 'Name "$name" wurde nicht abgelehnt');
+        await expectLater(
+          () => mgr.createUserFile(name, 'de', {}),
+          throwsA(isA<PathRejectedException>()),
+          reason: 'Name "$name" wurde nicht abgelehnt',
+        );
       }
       expect(fs.store, isEmpty);
     });
