@@ -35,7 +35,8 @@ lib/
 ├── models/              # Datenmodelle
 ├── widgets/             # Wiederverwendbare UI-Komponenten
 ├── dialogs/             # Pop-ups und Dialoge (Info, Login, GameOver, etc.)
-└── theme/               # Zentrale Farbpalette und ThemeData
+└── test/                # Unit- & Widget-Tests (flutter test)
+├── theme/               # Zentrale Farbpalette und ThemeData
 
 ## Erste Schritte
 

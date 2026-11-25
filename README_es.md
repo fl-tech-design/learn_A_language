@@ -35,7 +35,8 @@ lib/
 ├── models/              # Modelos de datos
 ├── widgets/             # Componentes de UI reutilizables
 ├── dialogs/             # Ventanas emergentes y diálogos (Info, Login, GameOver, etc.)
-└── theme/               # Paleta de colores central y ThemeData
+└── test/                # Pruebas unitarias y de widgets (flutter test)
+├── theme/               # Paleta de colores central y ThemeData
 
 ## Primeros pasos
 

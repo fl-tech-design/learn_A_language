@@ -35,7 +35,8 @@ lib/
 ├── models/              # Modèles de données
 ├── widgets/             # Composants d'interface réutilisables
 ├── dialogs/             # Fenêtres contextuelles et dialogues (Info, Login, GameOver, etc.)
-└── theme/               # Palette de couleurs centrale et ThemeData
+└── test/                # Tests unitaires et de widgets (flutter test)
+├── theme/               # Palette de couleurs centrale et ThemeData
 
 ## Premiers pas
 
