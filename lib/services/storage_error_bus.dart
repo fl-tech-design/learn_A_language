@@ -22,6 +22,11 @@ enum StorageErrorKind {
   /// `app_data.json` war beschädigt; die Benutzerliste wurde aus den
   /// vorhandenen `data_*.json`-Dateien rekonstruiert.
   appDataRecovered,
+
+  /// Beim Start konnten nicht alle Bundle-Assets (Wörterbücher/Daten) ins
+  /// App-Verzeichnis kopiert werden – die App läuft, aber mit unvollständigen
+  /// Daten. Details (betroffene Pfade) liefert `FileService.initialize`.
+  assetsCopyFailed,
 }
 
 /// Appweiter, einmaliger Fehlerkanal für Persistenzprobleme.

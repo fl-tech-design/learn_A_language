@@ -55,6 +55,7 @@ class _StorageWarningListenerState extends State<StorageWarningListener> {
         StorageErrorKind.userDataRecovered => l10n.msgUserDataRecovered,
         StorageErrorKind.userDataUnloadable => l10n.msgUserDataUnloadable,
         StorageErrorKind.appDataRecovered => l10n.msgAppDataRecovered,
+        StorageErrorKind.assetsCopyFailed => l10n.msgAssetsCopyFailed,
       };
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(message)));

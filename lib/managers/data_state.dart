@@ -52,10 +52,13 @@ class DataState extends ChangeNotifier {
   List<double> get color3 => _color3;
 
   // ── Initialization ─────────────────────────────────────────────
-  Future<void> initialize() async {
-    await _fileService.initialize();
+  /// Initialisiert das Dateisystem (Asset-Kopien, Ticket #42) und liefert die
+  /// relative Pfade der fehlgeschlagenen Kopien zurück (leer = vollständig).
+  Future<Set<String>> initialize() async {
+    final failedCopies = await _fileService.initialize();
     await _discoverDictLanguages();
     await loadAppData();
+    return failedCopies;
   }
 
   /// Ermittelt vorhandene Wörterbücher und aktualisiert daraus den Kurs-Katalog

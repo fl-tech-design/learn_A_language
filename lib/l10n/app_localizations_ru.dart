@@ -456,6 +456,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'Данные приложения были повреждены. Список пользователей был восстановлен из существующих файлов.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Не удалось скопировать все словари при запуске. Приложение может быть неполным.';
+
+  @override
   String get btnHangman => 'Виселица';
 
   @override

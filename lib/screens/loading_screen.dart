@@ -42,7 +42,14 @@ class _LoadingScreenState extends State<LoadingScreen> {
     final sessionManager = context.read<SessionManager>();
 
     // Schritt 1: Dateisystem + App-Daten (Asset-Kopien, App/Player-Daten).
-    await dataState.initialize();
+    // Unvollständige Kopien (Ticket #42) sind KEIN Abbruchgrund – die App
+    // startet, aber die SnackBar kommt über den StorageErrorBus (von
+    // FileService.initialize gesetzt) und das Log zeigt die betroffenen Pfade.
+    final failedCopies = await dataState.initialize();
+    if (failedCopies.isNotEmpty) {
+      log('LoadingScreen: ${failedCopies.length} Asset-Kopien fehlgeschlagen: '
+          '$failedCopies');
+    }
     if (!mounted) return;
     setState(() => _progress = 40);
 

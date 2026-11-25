@@ -456,6 +456,10 @@ class AppLocalizationsPt extends AppLocalizations {
       'Os dados da app estavam danificados. A lista de utilizadores foi reconstruída a partir dos ficheiros existentes.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Não foi possível copiar todos os dicionários no arranque. A aplicação pode estar incompleta.';
+
+  @override
   String get btnHangman => 'Forca';
 
   @override

@@ -968,6 +968,12 @@ abstract class AppLocalizations {
   /// **'App data was damaged. The user list was rebuilt from existing files.'**
   String get msgAppDataRecovered;
 
+  /// No description provided for @msgAssetsCopyFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Not all dictionaries could be copied on startup. The app may be incomplete.'**
+  String get msgAssetsCopyFailed;
+
   /// No description provided for @btnHangman.
   ///
   /// In en, this message translates to:

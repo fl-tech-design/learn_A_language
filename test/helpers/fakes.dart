@@ -2,6 +2,7 @@ import 'package:learn_a_language/managers/user_manager.dart';
 import 'package:learn_a_language/managers/vocab_manager.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/services/file_service.dart';
+import 'package:learn_a_language/services/storage_error_bus.dart';
 
 /// In-Memory [FileService]-Fake.
 ///
@@ -24,6 +25,10 @@ class FakeFileService implements FileService {
   /// (simulierter Schreibfehler) – additiv, Default = kein Fehlerverhalten.
   final Set<String> failSavePaths;
 
+  /// Pfade, die [initialize] als fehlgeschlagene Asset-Kopien zurückmeldet
+  /// (Ticket #42) – Default = leer (vollständig kopiert).
+  final Set<String> failedCopyPaths;
+
   /// Zuletzt per [loadBundledJson] ausgelieferte Daten.
   Map<String, dynamic> bundled;
 
@@ -38,6 +43,7 @@ class FakeFileService implements FileService {
     this.appDirThrows = false,
     this.corruptPaths = const {},
     this.failSavePaths = const {},
+    this.failedCopyPaths = const {},
   })  : store = store ?? {},
         languageDicts = languageDicts ?? {};
 
@@ -48,8 +54,12 @@ class FakeFileService implements FileService {
   }
 
   @override
-  Future<void> initialize() async {
+  Future<Set<String>> initialize() async {
     initializeCount++;
+    if (failedCopyPaths.isNotEmpty) {
+      StorageErrorBus.instance.report(StorageErrorKind.assetsCopyFailed);
+    }
+    return failedCopyPaths;
   }
 
   @override

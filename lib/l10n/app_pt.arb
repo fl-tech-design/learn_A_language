@@ -170,6 +170,7 @@
   "msgUserDataRecovered": "Os seus dados de utilizador estavam danificados e foram restaurados a partir de uma cópia de segurança.",
   "msgUserDataUnloadable": "Não foi possível carregar os seus dados de utilizador.",
   "msgAppDataRecovered": "Os dados da app estavam danificados. A lista de utilizadores foi reconstruída a partir dos ficheiros existentes.",
+  "msgAssetsCopyFailed": "Não foi possível copiar todos os dicionários no arranque. A aplicação pode estar incompleta.",
   "btnHangman": "Forca",
   "hangmanEasy": "Fácil — Tradução",
   "hangmanMedium": "Médio — Exemplo (língua materna)",

@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:developer' show log;
 import 'dart:io';
+import 'dart:typed_data' show ByteData;
 
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
@@ -46,7 +47,16 @@ class PathRejectedException extends PersistenceException {
 /// the static-manager decoupling (point2, Commit A).
 abstract class FileService {
   Future<String> get appDir;
-  Future<void> initialize();
+
+  /// Kopiert Bundle-Assets (Basis-/App-Daten, Wörterbücher) ins
+  /// App-Datenverzeichnis – beim ersten Start alles, danach nur Wörterbücher.
+  ///
+  /// Rückgabe: relative Pfade der Dateien, deren Kopie **fehlgeschlagen** ist
+  /// (leere Menge = vollständig). Fehlende Bundle-Assets (noch nicht vorhandene
+  /// Sprachen) sind bewusst KEIN Fehler und tauchen nicht in der Menge auf.
+  /// Bei mindestens einem Kopierfehler wird zusätzlich
+  /// [StorageErrorBus] mit [StorageErrorKind.assetsCopyFailed] benachrichtigt.
+  Future<Set<String>> initialize();
   Future<Map<String, dynamic>> loadJson(String relativePath);
   Future<void> saveJson(String relativePath, Map<String, dynamic> data);
 
@@ -76,7 +86,14 @@ abstract class FileService {
 class FileServiceImpl implements FileService {
   final String? baseDirOverride;
 
-  FileServiceImpl({this.baseDirOverride});
+  /// Injizierbarer Asset-Loader (Default: [rootBundle.load]) – macht die
+  /// Kopierlogik in Unit-Tests prüfbar, ohne echte Bundle-Assets zu binden.
+  final Future<ByteData> Function(String assetPath) _loadAsset;
+
+  FileServiceImpl({
+    this.baseDirOverride,
+    Future<ByteData> Function(String assetPath)? loadAsset,
+  }) : _loadAsset = loadAsset ?? rootBundle.load;
 
   String? _appDir;
   String? _canonicalAppDir;
@@ -177,20 +194,25 @@ class FileServiceImpl implements FileService {
   }
 
   @override
-  Future<void> initialize() async {
+  Future<Set<String>> initialize() async {
     final dir = await appDir;
     final flagFile = File('$dir/.initialized');
     final firstRun = !await flagFile.exists();
 
     // Basis-Dateien plus die Dict-Kopierliste als Produkt aus
     // courseCandidateCodes × verbKeys. Fehlende Assets (z. B. noch nicht
-    // vorhandene es/ru/el/it/pt-Dicts) werden im Loop unten still übersprungen,
-    // sodass neue Sprachen automatisch kopiert werden, sobald vorhanden.
+    // vorhandene es/ru/el/it/pt-Dicts) sind bewusst kein Fehler und werden
+    // still übersprungen, sodass neue Sprachen automatisch kopiert werden,
+    // sobald vorhanden.
     final files = <String>[
       'data_base/base_data.json',
       'data_app/app_data.json',
       ...buildCourseDictFiles(),
     ];
+
+    // Echte Kopierfehler (Asset vorhanden, aber Kopie schlägt fehl) werden
+    // gesammelt und an den Aufrufer gemeldet (Ticket #42).
+    final failedCopies = <String>{};
 
     for (final rel in files) {
       // Bei bestehenden Installationen werden nur die Wörterbücher aus dem
@@ -200,8 +222,20 @@ class FileServiceImpl implements FileService {
       if (!firstRun && !rel.startsWith('language_dict/')) continue;
       final assetPath = 'assets/$rel';
       final targetFile = File('$dir/$rel');
+
+      // Stufe 1: Asset laden. Fehlende Bundle-Assets sind der bewusste
+      // Normalfall (neue Sprache kommt später dazu) → kein Fehler, überspringen.
+      final ByteData bytes;
       try {
-        final bytes = await rootBundle.load(assetPath);
+        bytes = await _loadAsset(assetPath);
+      } catch (e) {
+        log('initialize: Asset $assetPath nicht verfügbar (übersprungen): $e');
+        continue;
+      }
+
+      // Stufe 2: In App-Verzeichnis schreiben. Echte Kopierfehler (z. B. volle
+      // Disk, fehlende Schreibrechte) werden gesammelt und am Ende gemeldet.
+      try {
         final parent = targetFile.parent;
         if (!await parent.exists()) {
           await parent.create(recursive: true);
@@ -209,10 +243,16 @@ class FileServiceImpl implements FileService {
         await targetFile.writeAsBytes(bytes.buffer.asUint8List());
       } catch (e) {
         log('initialize: Kopie von $rel fehlgeschlagen: $e');
+        failedCopies.add(rel);
       }
     }
 
     if (firstRun) await flagFile.create();
+
+    if (failedCopies.isNotEmpty) {
+      StorageErrorBus.instance.report(StorageErrorKind.assetsCopyFailed);
+    }
+    return failedCopies;
   }
 
   @override

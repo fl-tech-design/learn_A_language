@@ -456,6 +456,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'Les données de l\'application étaient endommagées. La liste des utilisateurs a été reconstruite à partir des fichiers existants.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Tous les dictionnaires n\'ont pas pu être copiés au démarrage. L\'application peut être incomplète.';
+
+  @override
   String get btnHangman => 'Pendu';
 
   @override

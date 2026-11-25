@@ -170,6 +170,7 @@
   "msgUserDataRecovered": "Vos données utilisateur étaient endommagées et ont été restaurées à partir d'une sauvegarde.",
   "msgUserDataUnloadable": "Vos données utilisateur n'ont pas pu être chargées.",
   "msgAppDataRecovered": "Les données de l'application étaient endommagées. La liste des utilisateurs a été reconstruite à partir des fichiers existants.",
+  "msgAssetsCopyFailed": "Tous les dictionnaires n'ont pas pu être copiés au démarrage. L'application peut être incomplète.",
   "btnHangman": "Pendu",
   "hangmanEasy": "Facile — Traduction",
   "hangmanMedium": "Moyen — Exemple (langue maternelle)",

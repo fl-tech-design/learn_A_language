@@ -457,6 +457,10 @@ class AppLocalizationsDe extends AppLocalizations {
       'Die App-Daten waren beschädigt. Die Benutzerliste wurde aus den vorhandenen Dateien wiederhergestellt.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Beim Start konnten nicht alle Wörterbücher kopiert werden. Die App ist möglicherweise unvollständig.';
+
+  @override
   String get btnHangman => 'Hangman';
 
   @override

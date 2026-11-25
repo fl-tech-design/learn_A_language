@@ -47,8 +47,9 @@ Widget _app({
   required Map<String, Map<String, dynamic>> store,
   FakeUserManager? userManager,
   FakeVocabManager? vocabManager,
+  Set<String> failedCopyPaths = const {},
 }) {
-  final fs = FakeFileService(store: store);
+  final fs = FakeFileService(store: store, failedCopyPaths: failedCopyPaths);
   final dataState = DataState(fs);
   final userState = UserState(
     userManager: userManager ?? FakeUserManager(),
@@ -151,6 +152,28 @@ void main() {
     expect(find.byType(_StartMarker), findsOneWidget);
     expect(
         find.text('Deine Benutzerdaten konnten nicht geladen werden.'),
+        findsOneWidget);
+  });
+
+  testWidgets(
+      'Unvollständige Asset-Kopien (Ticket #42): SnackBar sichtbar, '
+      'App startet weiter', (tester) async {
+    StorageErrorBus.instance.clear();
+
+    await tester.pumpWidget(_app(
+      store: {},
+      failedCopyPaths: {'language_dict/es/es_to_be.json'},
+    ));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    // Kopierfehler ist KEIN Abbruchgrund: Navigation läuft normal ...
+    expect(find.byType(_StartMarker), findsOneWidget);
+    // ... aber der Fehler wird als UI-Hinweis (SnackBar) sichtbar.
+    expect(
+        find.text(
+            'Beim Start konnten nicht alle Wörterbücher kopiert werden. '
+            'Die App ist möglicherweise unvollständig.'),
         findsOneWidget);
   });
 

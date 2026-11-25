@@ -170,6 +170,7 @@
   "msgUserDataRecovered": "Deine Benutzerdaten waren beschädigt und wurden aus einer Sicherung wiederhergestellt.",
   "msgUserDataUnloadable": "Deine Benutzerdaten konnten nicht geladen werden.",
   "msgAppDataRecovered": "Die App-Daten waren beschädigt. Die Benutzerliste wurde aus den vorhandenen Dateien wiederhergestellt.",
+  "msgAssetsCopyFailed": "Beim Start konnten nicht alle Wörterbücher kopiert werden. Die App ist möglicherweise unvollständig.",
   "btnHangman": "Hangman",
   "hangmanEasy": "Leicht — Übersetzung",
   "hangmanMedium": "Mittel — Beispielsatz (Muttersprache)",

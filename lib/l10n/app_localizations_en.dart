@@ -452,6 +452,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'App data was damaged. The user list was rebuilt from existing files.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Not all dictionaries could be copied on startup. The app may be incomplete.';
+
+  @override
   String get btnHangman => 'Hangman';
 
   @override

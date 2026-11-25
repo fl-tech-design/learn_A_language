@@ -455,6 +455,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Τα δεδομένα της εφαρμογής ήταν κατεστραμμένα. Η λίστα χρηστών ανακατασκευάστηκε από τα υπάρχοντα αρχεία.';
 
   @override
+  String get msgAssetsCopyFailed =>
+      'Δεν ήταν δυνατή η αντιγραφή όλων των λεξικών κατά την εκκίνηση. Η εφαρμογή μπορεί να είναι ελλιπής.';
+
+  @override
   String get btnHangman => 'Κρεμάλα';
 
   @override
