@@ -1,0 +1,183 @@
+{
+  "infinitive": "chiudere",
+  "past": {
+    "translations": [
+      "io ho chiuso",
+      "tu hai chiuso",
+      "lui/lei ha chiuso",
+      "noi abbiamo chiuso",
+      "voi avete chiuso",
+      "loro hanno chiuso"
+    ],
+    "examples": [
+      [
+        "Ho chiuso la porta.",
+        "",
+        ""
+      ],
+      [
+        "Hai chiuso la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Ha chiuso la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo chiuso il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Avete chiuso le porte.",
+        "",
+        ""
+      ],
+      [
+        "Hanno chiuso le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_ho_chiuso_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_hai_chiuso_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_ha_chiuso_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_abbiamo_chiuso_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_avete_chiuso_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_hanno_chiuso_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_ho_chiuso_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_hai_chiuso_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_ha_chiuso_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_abbiamo_chiuso_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_avete_chiuso_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_hanno_chiuso_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io chiudo",
+      "tu chiudi",
+      "lui/lei chiude",
+      "noi chiudiamo",
+      "voi chiudete",
+      "loro chiudono"
+    ],
+    "examples": [
+      [
+        "Chiudo la porta.",
+        "",
+        ""
+      ],
+      [
+        "Chiudi la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Chiude la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Chiudiamo il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Chiudete le porte.",
+        "",
+        ""
+      ],
+      [
+        "Chiudono le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_chiudo_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_chiudi_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_chiude_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_chiudiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_chiudete_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_chiudono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_chiudo_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_chiudi_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_chiude_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_chiudiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_chiudete_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_chiudono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io chiuderò",
+      "tu chiuderai",
+      "lui/lei chiuderà",
+      "noi chiuderemo",
+      "voi chiuderete",
+      "loro chiuderanno"
+    ],
+    "examples": [
+      [
+        "Chiuderò la porta.",
+        "",
+        ""
+      ],
+      [
+        "Chiuderai la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Chiuderà la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Chiuderemo il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Chiuderete le porte.",
+        "",
+        ""
+      ],
+      [
+        "Chiuderanno le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_chiudero_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_chiuderai_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_chiudera_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_chiuderemo_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_chiuderete_m.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_chiuderanno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_close/audio_io_chiudero_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_tu_chiuderai_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_lui_lei_chiudera_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_noi_chiuderemo_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_voi_chiuderete_f.mp3",
+        "audio/it/verbs/it_audio_to_close/audio_loro_chiuderanno_f.mp3"
+      ]
+    ]
+  }
+}

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/vender/audio_eu_vendi_m.mp3",
-        "audio/pt/verben/vender/audio_tu_vendeste_m.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vendeu_m.mp3",
-        "audio/pt/verben/vender/audio_nos_vendemos_m.mp3",
-        "audio/pt/verben/vender/audio_vos_vendestes_m.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_venderam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_vendi_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_vendeste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vendeu_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_vendemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_venderam_m.mp3"
       ],
       [
-        "audio/pt/verben/vender/audio_eu_vendi_f.mp3",
-        "audio/pt/verben/vender/audio_tu_vendeste_f.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vendeu_f.mp3",
-        "audio/pt/verben/vender/audio_nos_vendemos_f.mp3",
-        "audio/pt/verben/vender/audio_vos_vendestes_f.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_venderam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_vendi_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_vendeste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vendeu_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_vendemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_venderam_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/vender/audio_eu_vendo_m.mp3",
-        "audio/pt/verben/vender/audio_tu_vendes_m.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vende_m.mp3",
-        "audio/pt/verben/vender/audio_nos_vendemos_m.mp3",
-        "audio/pt/verben/vender/audio_vos_vendeis_m.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_vendem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_vendo_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_vendes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vende_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_vendemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendeis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_vendem_m.mp3"
       ],
       [
-        "audio/pt/verben/vender/audio_eu_vendo_f.mp3",
-        "audio/pt/verben/vender/audio_tu_vendes_f.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vende_f.mp3",
-        "audio/pt/verben/vender/audio_nos_vendemos_f.mp3",
-        "audio/pt/verben/vender/audio_vos_vendeis_f.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_vendem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_vendo_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_vendes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vende_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_vendemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendeis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_vendem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/vender/audio_eu_venderei_m.mp3",
-        "audio/pt/verben/vender/audio_tu_venderas_m.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vendera_m.mp3",
-        "audio/pt/verben/vender/audio_nos_venderemos_m.mp3",
-        "audio/pt/verben/vender/audio_vos_vendereis_m.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_venderao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_venderei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_venderas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vendera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_venderemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_venderao_m.mp3"
       ],
       [
-        "audio/pt/verben/vender/audio_eu_venderei_f.mp3",
-        "audio/pt/verben/vender/audio_tu_venderas_f.mp3",
-        "audio/pt/verben/vender/audio_ele_ela_vendera_f.mp3",
-        "audio/pt/verben/vender/audio_nos_venderemos_f.mp3",
-        "audio/pt/verben/vender/audio_vos_vendereis_f.mp3",
-        "audio/pt/verben/vender/audio_eles_elas_venderao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_sell/audio_eu_venderei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_tu_venderas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_ele_ela_vendera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_nos_venderemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_vos_vendereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_sell/audio_eles_elas_venderao_f.mp3"
       ]
     ]
   }

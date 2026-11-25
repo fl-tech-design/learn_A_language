@@ -1,0 +1,183 @@
+{
+  "infinitive": "volere",
+  "past": {
+    "translations": [
+      "io volevo",
+      "tu volevi",
+      "lui/lei voleva",
+      "noi volevamo",
+      "voi volevate",
+      "loro volevano"
+    ],
+    "examples": [
+      [
+        "Volevo un gelato.",
+        "",
+        ""
+      ],
+      [
+        "Volevi un libro.",
+        "",
+        ""
+      ],
+      [
+        "Voleva un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Volevamo una pausa.",
+        "",
+        ""
+      ],
+      [
+        "Volevate uno spuntino.",
+        "",
+        ""
+      ],
+      [
+        "Volevano una bevanda.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_volevo_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_volevi_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_voleva_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_volevamo_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_volevate_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_volevano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_volevo_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_volevi_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_voleva_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_volevamo_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_volevate_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_volevano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io voglio",
+      "tu vuoi",
+      "lui/lei vuole",
+      "noi vogliamo",
+      "voi volete",
+      "loro vogliono"
+    ],
+    "examples": [
+      [
+        "Voglio un gelato.",
+        "",
+        ""
+      ],
+      [
+        "Vuoi un libro.",
+        "",
+        ""
+      ],
+      [
+        "Vuole un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Vogliamo una pausa.",
+        "",
+        ""
+      ],
+      [
+        "Volete uno spuntino.",
+        "",
+        ""
+      ],
+      [
+        "Vogliono una bevanda.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_voglio_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_vuoi_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_vuole_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_vogliamo_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_volete_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_vogliono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_voglio_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_vuoi_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_vuole_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_vogliamo_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_volete_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_vogliono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io vorrò",
+      "tu vorrai",
+      "lui/lei vorrà",
+      "noi vorremo",
+      "voi vorrete",
+      "loro vorranno"
+    ],
+    "examples": [
+      [
+        "Vorrò un gelato.",
+        "",
+        ""
+      ],
+      [
+        "Vorrai un libro.",
+        "",
+        ""
+      ],
+      [
+        "Vorrà un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Vorremo una pausa.",
+        "",
+        ""
+      ],
+      [
+        "Vorrete uno spuntino.",
+        "",
+        ""
+      ],
+      [
+        "Vorranno una bevanda.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_vorro_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_vorrai_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_vorra_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_vorremo_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_vorrete_m.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_vorranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_want/audio_io_vorro_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_tu_vorrai_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_lui_lei_vorra_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_noi_vorremo_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_voi_vorrete_f.mp3",
+        "audio/it/verbs/it_audio_to_want/audio_loro_vorranno_f.mp3"
+      ]
+    ]
+  }
+}

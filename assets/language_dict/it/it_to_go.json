@@ -1,0 +1,183 @@
+{
+  "infinitive": "andare",
+  "past": {
+    "translations": [
+      "io sono andato",
+      "tu sei andato",
+      "lui/lei è andato",
+      "noi siamo andati",
+      "voi siete andati",
+      "loro sono andati"
+    ],
+    "examples": [
+      [
+        "Sono andato al parco.",
+        "",
+        ""
+      ],
+      [
+        "Sei andato a casa.",
+        "",
+        ""
+      ],
+      [
+        "È andato a scuola.",
+        "",
+        ""
+      ],
+      [
+        "Siamo andati a fare la spesa.",
+        "",
+        ""
+      ],
+      [
+        "Siete andati al cinema.",
+        "",
+        ""
+      ],
+      [
+        "Sono andati alla festa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_sono_andato_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_sei_andato_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_e_andato_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_siamo_andati_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_siete_andati_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_sono_andati_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_sono_andato_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_sei_andato_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_e_andato_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_siamo_andati_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_siete_andati_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_sono_andati_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io vado",
+      "tu vai",
+      "lui/lei va",
+      "noi andiamo",
+      "voi andate",
+      "loro vanno"
+    ],
+    "examples": [
+      [
+        "Vado a scuola.",
+        "",
+        ""
+      ],
+      [
+        "Vai a casa.",
+        "",
+        ""
+      ],
+      [
+        "Va al lavoro.",
+        "",
+        ""
+      ],
+      [
+        "Andiamo a fare la spesa.",
+        "",
+        ""
+      ],
+      [
+        "Andate al cinema.",
+        "",
+        ""
+      ],
+      [
+        "Vanno alla festa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_vado_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_vai_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_va_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_andiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_andate_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_vanno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_vado_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_vai_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_va_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_andiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_andate_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_vanno_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io andrò",
+      "tu andrai",
+      "lui/lei andrà",
+      "noi andremo",
+      "voi andrete",
+      "loro andranno"
+    ],
+    "examples": [
+      [
+        "Andrò a scuola.",
+        "",
+        ""
+      ],
+      [
+        "Andrai a casa.",
+        "",
+        ""
+      ],
+      [
+        "Andrà al lavoro.",
+        "",
+        ""
+      ],
+      [
+        "Andremo a fare la spesa.",
+        "",
+        ""
+      ],
+      [
+        "Andrete al cinema.",
+        "",
+        ""
+      ],
+      [
+        "Andranno alla festa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_andro_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_andrai_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_andra_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_andremo_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_andrete_m.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_andranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_go/audio_io_andro_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_tu_andrai_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_lui_lei_andra_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_noi_andremo_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_voi_andrete_f.mp3",
+        "audio/it/verbs/it_audio_to_go/audio_loro_andranno_f.mp3"
+      ]
+    ]
+  }
+}

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/beber/audio_eu_bebi_m.mp3",
-        "audio/pt/verben/beber/audio_tu_bebeste_m.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebeu_m.mp3",
-        "audio/pt/verben/beber/audio_nos_bebemos_m.mp3",
-        "audio/pt/verben/beber/audio_vos_bebestes_m.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_beberam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_bebi_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_bebeste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebeu_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_bebemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_beberam_m.mp3"
       ],
       [
-        "audio/pt/verben/beber/audio_eu_bebi_f.mp3",
-        "audio/pt/verben/beber/audio_tu_bebeste_f.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebeu_f.mp3",
-        "audio/pt/verben/beber/audio_nos_bebemos_f.mp3",
-        "audio/pt/verben/beber/audio_vos_bebestes_f.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_beberam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_bebi_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_bebeste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebeu_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_bebemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_beberam_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/beber/audio_eu_bebo_m.mp3",
-        "audio/pt/verben/beber/audio_tu_bebes_m.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebe_m.mp3",
-        "audio/pt/verben/beber/audio_nos_bebemos_m.mp3",
-        "audio/pt/verben/beber/audio_vos_bebeis_m.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_bebem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_bebo_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_bebes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebe_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_bebemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebeis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_bebem_m.mp3"
       ],
       [
-        "audio/pt/verben/beber/audio_eu_bebo_f.mp3",
-        "audio/pt/verben/beber/audio_tu_bebes_f.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebe_f.mp3",
-        "audio/pt/verben/beber/audio_nos_bebemos_f.mp3",
-        "audio/pt/verben/beber/audio_vos_bebeis_f.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_bebem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_bebo_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_bebes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebe_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_bebemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebeis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_bebem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/beber/audio_eu_beberei_m.mp3",
-        "audio/pt/verben/beber/audio_tu_beberas_m.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebera_m.mp3",
-        "audio/pt/verben/beber/audio_nos_beberemos_m.mp3",
-        "audio/pt/verben/beber/audio_vos_bebereis_m.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_beberao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_beberei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_beberas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_beberemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_beberao_m.mp3"
       ],
       [
-        "audio/pt/verben/beber/audio_eu_beberei_f.mp3",
-        "audio/pt/verben/beber/audio_tu_beberas_f.mp3",
-        "audio/pt/verben/beber/audio_ele_ela_bebera_f.mp3",
-        "audio/pt/verben/beber/audio_nos_beberemos_f.mp3",
-        "audio/pt/verben/beber/audio_vos_bebereis_f.mp3",
-        "audio/pt/verben/beber/audio_eles_elas_beberao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_drink/audio_eu_beberei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_tu_beberas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_ele_ela_bebera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_nos_beberemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_vos_bebereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_drink/audio_eles_elas_beberao_f.mp3"
       ]
     ]
   }

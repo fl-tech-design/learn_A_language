@@ -1,0 +1,183 @@
+{
+  "infinitive": "finire",
+  "past": {
+    "translations": [
+      "io ho finito",
+      "tu hai finito",
+      "lui/lei ha finito",
+      "noi abbiamo finito",
+      "voi avete finito",
+      "loro hanno finito"
+    ],
+    "examples": [
+      [
+        "Ho terminato la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Hai concluso la conversazione.",
+        "",
+        ""
+      ],
+      [
+        "Ha terminato lo spettacolo.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo finito la festa.",
+        "",
+        ""
+      ],
+      [
+        "Avete concluso la partita.",
+        "",
+        ""
+      ],
+      [
+        "Hanno terminato l'evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_end/audio_io_ho_finito_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_tu_hai_finito_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_ha_finito_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_abbiamo_finito_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_avete_finito_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_loro_hanno_finito_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_end/audio_io_ho_finito_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_tu_hai_finito_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_ha_finito_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_abbiamo_finito_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_avete_finito_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_loro_hanno_finito_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io finisco",
+      "tu finisci",
+      "lui/lei finisce",
+      "noi finiamo",
+      "voi finite",
+      "loro finiscono"
+    ],
+    "examples": [
+      [
+        "Finisco la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Finisci la conversazione.",
+        "",
+        ""
+      ],
+      [
+        "Finisce lo spettacolo.",
+        "",
+        ""
+      ],
+      [
+        "Finiamo la festa.",
+        "",
+        ""
+      ],
+      [
+        "Finite la partita.",
+        "",
+        ""
+      ],
+      [
+        "Finiscono l'evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_end/audio_io_finisco_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_tu_finisci_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_finisce_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_finiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_finite_m.mp3",
+        ""
+      ],
+      [
+        "audio/it/verbs/it_audio_to_end/audio_io_finisco_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_tu_finisci_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_finisce_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_finiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_finite_f.mp3",
+        ""
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io finirò",
+      "tu finirai",
+      "lui/lei finirà",
+      "noi finiremo",
+      "voi finirete",
+      "loro finiranno"
+    ],
+    "examples": [
+      [
+        "Finirò la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Finirai la conversazione.",
+        "",
+        ""
+      ],
+      [
+        "Finirà lo spettacolo.",
+        "",
+        ""
+      ],
+      [
+        "Finiremo la festa.",
+        "",
+        ""
+      ],
+      [
+        "Finirete la partita.",
+        "",
+        ""
+      ],
+      [
+        "Finiranno l'evento.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "audio/it/verbs/it_audio_to_end/audio_tu_finirai_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_finira_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_finiremo_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_finirete_m.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_loro_finiranno_m.mp3"
+      ],
+      [
+        "",
+        "audio/it/verbs/it_audio_to_end/audio_tu_finirai_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_lui_lei_finira_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_noi_finiremo_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_voi_finirete_f.mp3",
+        "audio/it/verbs/it_audio_to_end/audio_loro_finiranno_f.mp3"
+      ]
+    ]
+  }
+}

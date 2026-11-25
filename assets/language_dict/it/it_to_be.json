@@ -1,0 +1,183 @@
+{
+  "infinitive": "essere",
+  "past": {
+    "translations": [
+      "io ero",
+      "tu eri",
+      "lui/lei era",
+      "noi eravamo",
+      "voi eravate",
+      "loro erano"
+    ],
+    "examples": [
+      [
+        "Ero al parco.",
+        "",
+        ""
+      ],
+      [
+        "Eri stanco.",
+        "",
+        ""
+      ],
+      [
+        "Era felice.",
+        "",
+        ""
+      ],
+      [
+        "Eravamo a casa.",
+        "",
+        ""
+      ],
+      [
+        "Eravate in ritardo.",
+        "",
+        ""
+      ],
+      [
+        "Erano gentili.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_ero_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_eri_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_era_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_eravamo_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_eravate_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_erano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_ero_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_eri_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_era_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_eravamo_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_eravate_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_erano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io sono",
+      "tu sei",
+      "lui/lei è",
+      "noi siamo",
+      "voi siete",
+      "loro sono"
+    ],
+    "examples": [
+      [
+        "Sono stanco.",
+        "",
+        ""
+      ],
+      [
+        "Sei gentile.",
+        "",
+        ""
+      ],
+      [
+        "È felice.",
+        "",
+        ""
+      ],
+      [
+        "Siamo a casa.",
+        "",
+        ""
+      ],
+      [
+        "Siete in ritardo.",
+        "",
+        ""
+      ],
+      [
+        "Sono gentili.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_sono_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_sei_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_e_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_siamo_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_siete_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_sono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_sono_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_sei_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_e_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_siamo_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_siete_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_sono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io sarò",
+      "tu sarai",
+      "lui/lei sarà",
+      "noi saremo",
+      "voi sarete",
+      "loro saranno"
+    ],
+    "examples": [
+      [
+        "Ci sarò.",
+        "",
+        ""
+      ],
+      [
+        "Sarai felice.",
+        "",
+        ""
+      ],
+      [
+        "Sarà qui.",
+        "",
+        ""
+      ],
+      [
+        "Ci saremo.",
+        "",
+        ""
+      ],
+      [
+        "Sarete in ritardo.",
+        "",
+        ""
+      ],
+      [
+        "Saranno pronti.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_saro_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_sarai_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_sara_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_saremo_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_sarete_m.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_saranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be/audio_io_saro_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_tu_sarai_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_lui_lei_sara_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_noi_saremo_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_voi_sarete_f.mp3",
+        "audio/it/verbs/it_audio_to_be/audio_loro_saranno_f.mp3"
+      ]
+    ]
+  }
+}

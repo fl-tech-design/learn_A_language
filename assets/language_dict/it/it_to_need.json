@@ -1,0 +1,183 @@
+{
+  "infinitive": "avere bisogno",
+  "past": {
+    "translations": [
+      "io avevo bisogno",
+      "tu avevi bisogno",
+      "lui/lei aveva bisogno",
+      "noi avevamo bisogno",
+      "voi avevate bisogno",
+      "loro avevano bisogno"
+    ],
+    "examples": [
+      [
+        "Avevo bisogno di aiuto.",
+        "",
+        ""
+      ],
+      [
+        "Avevi bisogno di tempo.",
+        "",
+        ""
+      ],
+      [
+        "Aveva bisogno di soldi.",
+        "",
+        ""
+      ],
+      [
+        "Avevamo bisogno di sostegno.",
+        "",
+        ""
+      ],
+      [
+        "Avevate bisogno di consigli.",
+        "",
+        ""
+      ],
+      [
+        "Avevano bisogno di tranquillità.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_avevo_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_avevi_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_aveva_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_avevamo_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avevate_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_avevano_bisogno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_avevo_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_avevi_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_aveva_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_avevamo_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avevate_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_avevano_bisogno_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io ho bisogno",
+      "tu hai bisogno",
+      "lui/lei ha bisogno",
+      "noi abbiamo bisogno",
+      "voi avete bisogno",
+      "loro hanno bisogno"
+    ],
+    "examples": [
+      [
+        "Ho bisogno di aiuto.",
+        "",
+        ""
+      ],
+      [
+        "Hai bisogno di tempo.",
+        "",
+        ""
+      ],
+      [
+        "Ha bisogno di soldi.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo bisogno di sostegno.",
+        "",
+        ""
+      ],
+      [
+        "Avete bisogno di consigli.",
+        "",
+        ""
+      ],
+      [
+        "Hanno bisogno di tranquillità.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_ho_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_hai_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_ha_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_abbiamo_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avete_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_hanno_bisogno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_ho_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_hai_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_ha_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_abbiamo_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avete_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_hanno_bisogno_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io avrò bisogno",
+      "tu avrai bisogno",
+      "lui/lei avrà bisogno",
+      "noi avremo bisogno",
+      "voi avrete bisogno",
+      "loro avranno bisogno"
+    ],
+    "examples": [
+      [
+        "Avrò bisogno di aiuto.",
+        "",
+        ""
+      ],
+      [
+        "Avrai bisogno di tempo.",
+        "",
+        ""
+      ],
+      [
+        "Avrà bisogno di soldi.",
+        "",
+        ""
+      ],
+      [
+        "Avremo bisogno di sostegno.",
+        "",
+        ""
+      ],
+      [
+        "Avrete bisogno di consigli.",
+        "",
+        ""
+      ],
+      [
+        "Avranno bisogno di tranquillità.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_avro_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_avrai_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_avra_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_avremo_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avrete_bisogno_m.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_avranno_bisogno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_need/audio_io_avro_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_tu_avrai_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_lui_lei_avra_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_noi_avremo_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_voi_avrete_bisogno_f.mp3",
+        "audio/it/verbs/it_audio_to_need/audio_loro_avranno_bisogno_f.mp3"
+      ]
+    ]
+  }
+}

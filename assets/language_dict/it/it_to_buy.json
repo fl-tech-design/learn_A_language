@@ -1,0 +1,183 @@
+{
+  "infinitive": "comprare",
+  "past": {
+    "translations": [
+      "io ho comprato",
+      "tu hai comprato",
+      "lui/lei ha comprato",
+      "noi abbiamo comprato",
+      "voi avete comprato",
+      "loro hanno comprato"
+    ],
+    "examples": [
+      [
+        "Ho comprato del pane.",
+        "",
+        ""
+      ],
+      [
+        "Hai comprato un libro.",
+        "",
+        ""
+      ],
+      [
+        "Ha comprato un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo comprato da mangiare.",
+        "",
+        ""
+      ],
+      [
+        "Avete comprato dei vestiti.",
+        "",
+        ""
+      ],
+      [
+        "Hanno comprato una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_ho_comprato_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_hai_comprato_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_ha_comprato_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_abbiamo_comprato_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_avete_comprato_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_hanno_comprato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_ho_comprato_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_hai_comprato_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_ha_comprato_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_abbiamo_comprato_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_avete_comprato_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_hanno_comprato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io compro",
+      "tu compri",
+      "lui/lei compra",
+      "noi compriamo",
+      "voi comprate",
+      "loro comprano"
+    ],
+    "examples": [
+      [
+        "Compro del pane.",
+        "",
+        ""
+      ],
+      [
+        "Compri un libro.",
+        "",
+        ""
+      ],
+      [
+        "Compra un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Compriamo da mangiare.",
+        "",
+        ""
+      ],
+      [
+        "Comprate dei vestiti.",
+        "",
+        ""
+      ],
+      [
+        "Comprano una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_compro_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_compri_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_compra_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_compriamo_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_comprate_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_comprano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_compro_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_compri_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_compra_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_compriamo_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_comprate_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_comprano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io comprerò",
+      "tu comprerai",
+      "lui/lei comprerà",
+      "noi compreremo",
+      "voi comprerete",
+      "loro compreranno"
+    ],
+    "examples": [
+      [
+        "Comprerò del pane.",
+        "",
+        ""
+      ],
+      [
+        "Comprerai un libro.",
+        "",
+        ""
+      ],
+      [
+        "Comprerà un'auto.",
+        "",
+        ""
+      ],
+      [
+        "Compreremo da mangiare.",
+        "",
+        ""
+      ],
+      [
+        "Comprerete dei vestiti.",
+        "",
+        ""
+      ],
+      [
+        "Compreranno una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_comprero_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_comprerai_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_comprera_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_compreremo_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_comprerete_m.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_compreranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_buy/audio_io_comprero_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_tu_comprerai_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_lui_lei_comprera_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_noi_compreremo_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_voi_comprerete_f.mp3",
+        "audio/it/verbs/it_audio_to_buy/audio_loro_compreranno_f.mp3"
+      ]
+    ]
+  }
+}

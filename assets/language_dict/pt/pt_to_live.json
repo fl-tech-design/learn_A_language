@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/morar/audio_eu_morei_m.mp3",
-        "audio/pt/verben/morar/audio_tu_moraste_m.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_morou_m.mp3",
-        "audio/pt/verben/morar/audio_nos_moramos_m.mp3",
-        "audio/pt/verben/morar/audio_vos_morastes_m.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_moraram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_morei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moraste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_morou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_moraram_m.mp3"
       ],
       [
-        "audio/pt/verben/morar/audio_eu_morei_f.mp3",
-        "audio/pt/verben/morar/audio_tu_moraste_f.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_morou_f.mp3",
-        "audio/pt/verben/morar/audio_nos_moramos_f.mp3",
-        "audio/pt/verben/morar/audio_vos_morastes_f.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_moraram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_morei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moraste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_morou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_moraram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/morar/audio_eu_moro_m.mp3",
-        "audio/pt/verben/morar/audio_tu_moras_m.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_mora_m.mp3",
-        "audio/pt/verben/morar/audio_nos_moramos_m.mp3",
-        "audio/pt/verben/morar/audio_vos_morais_m.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_moram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_moro_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_mora_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_moram_m.mp3"
       ],
       [
-        "audio/pt/verben/morar/audio_eu_moro_f.mp3",
-        "audio/pt/verben/morar/audio_tu_moras_f.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_mora_f.mp3",
-        "audio/pt/verben/morar/audio_nos_moramos_f.mp3",
-        "audio/pt/verben/morar/audio_vos_morais_f.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_moram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_moro_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_mora_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_moram_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/morar/audio_eu_morarei_m.mp3",
-        "audio/pt/verben/morar/audio_tu_moraras_m.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_morara_m.mp3",
-        "audio/pt/verben/morar/audio_nos_moraremos_m.mp3",
-        "audio/pt/verben/morar/audio_vos_morareis_m.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_morarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_morarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moraras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_morara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moraremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_morarao_m.mp3"
       ],
       [
-        "audio/pt/verben/morar/audio_eu_morarei_f.mp3",
-        "audio/pt/verben/morar/audio_tu_moraras_f.mp3",
-        "audio/pt/verben/morar/audio_ele_ela_morara_f.mp3",
-        "audio/pt/verben/morar/audio_nos_moraremos_f.mp3",
-        "audio/pt/verben/morar/audio_vos_morareis_f.mp3",
-        "audio/pt/verben/morar/audio_eles_elas_morarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_live/audio_eu_morarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_tu_moraras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_ele_ela_morara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_nos_moraremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_vos_morareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_live/audio_eles_elas_morarao_f.mp3"
       ]
     ]
   }

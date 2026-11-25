@@ -1,0 +1,183 @@
+{
+  "infinitive": "leggere",
+  "past": {
+    "translations": [
+      "io ho letto",
+      "tu hai letto",
+      "lui/lei ha letto",
+      "noi abbiamo letto",
+      "voi avete letto",
+      "loro hanno letto"
+    ],
+    "examples": [
+      [
+        "Ho letto un libro.",
+        "",
+        ""
+      ],
+      [
+        "Hai letto una rivista.",
+        "",
+        ""
+      ],
+      [
+        "Ha letto un giornale.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo letto una storia.",
+        "",
+        ""
+      ],
+      [
+        "Avete letto una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Hanno letto una lettera.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_read/audio_io_ho_letto_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_tu_hai_letto_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_lui_lei_ha_letto_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_noi_abbiamo_letto_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_avete_letto_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_hanno_letto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_read/audio_io_ho_letto_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_tu_hai_letto_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_lui_lei_ha_letto_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_noi_abbiamo_letto_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_avete_letto_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_hanno_letto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io leggo",
+      "tu leggi",
+      "lui/lei legge",
+      "noi leggiamo",
+      "voi leggete",
+      "loro leggono"
+    ],
+    "examples": [
+      [
+        "Leggo un libro.",
+        "",
+        ""
+      ],
+      [
+        "Leggi una rivista.",
+        "",
+        ""
+      ],
+      [
+        "Legge un giornale.",
+        "",
+        ""
+      ],
+      [
+        "Leggiamo una storia.",
+        "",
+        ""
+      ],
+      [
+        "Leggete una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Leggono una lettera.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_read/audio_io_leggo_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_tu_leggi_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_lui_lei_legge_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_noi_leggiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_leggete_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_leggono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_read/audio_io_leggo_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_tu_leggi_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_lui_lei_legge_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_noi_leggiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_leggete_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_leggono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io leggerò",
+      "tu leggerai",
+      "lui/lei leggerà",
+      "noi leggeremo",
+      "voi leggerete",
+      "loro leggeranno"
+    ],
+    "examples": [
+      [
+        "Leggerò un libro.",
+        "",
+        ""
+      ],
+      [
+        "Leggerai una rivista.",
+        "",
+        ""
+      ],
+      [
+        "Leggerà un giornale.",
+        "",
+        ""
+      ],
+      [
+        "Leggeremo una storia.",
+        "",
+        ""
+      ],
+      [
+        "Leggerete una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Leggeranno una lettera.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "audio/it/verbs/it_audio_to_read/audio_tu_leggerai_m.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_read/audio_noi_leggeremo_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_leggerete_m.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_leggeranno_m.mp3"
+      ],
+      [
+        "",
+        "audio/it/verbs/it_audio_to_read/audio_tu_leggerai_f.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_read/audio_noi_leggeremo_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_voi_leggerete_f.mp3",
+        "audio/it/verbs/it_audio_to_read/audio_loro_leggeranno_f.mp3"
+      ]
+    ]
+  }
+}

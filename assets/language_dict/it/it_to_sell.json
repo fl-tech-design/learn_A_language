@@ -1,0 +1,183 @@
+{
+  "infinitive": "vendere",
+  "past": {
+    "translations": [
+      "io ho venduto",
+      "tu hai venduto",
+      "lui/lei ha venduto",
+      "noi abbiamo venduto",
+      "voi avete venduto",
+      "loro hanno venduto"
+    ],
+    "examples": [
+      [
+        "Ho venduto la mia macchina.",
+        "",
+        ""
+      ],
+      [
+        "Hai venduto il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Ha venduto la sua bicicletta.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo venduto la nostra casa.",
+        "",
+        ""
+      ],
+      [
+        "Avete venduto i vostri mobili.",
+        "",
+        ""
+      ],
+      [
+        "Hanno venduto la loro macchina.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_ho_venduto_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_hai_venduto_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_ha_venduto_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_abbiamo_venduto_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_avete_venduto_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_hanno_venduto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_ho_venduto_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_hai_venduto_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_ha_venduto_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_abbiamo_venduto_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_avete_venduto_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_hanno_venduto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io vendo",
+      "tu vendi",
+      "lui/lei vende",
+      "noi vendiamo",
+      "voi vendete",
+      "loro vendono"
+    ],
+    "examples": [
+      [
+        "Vendo la mia macchina.",
+        "",
+        ""
+      ],
+      [
+        "Vendi il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Vende la sua bicicletta.",
+        "",
+        ""
+      ],
+      [
+        "Vendiamo la nostra casa.",
+        "",
+        ""
+      ],
+      [
+        "Vendete i vostri mobili.",
+        "",
+        ""
+      ],
+      [
+        "Vendono la loro macchina.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_vendo_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_vendi_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_vende_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_vendiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_vendete_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_vendono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_vendo_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_vendi_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_vende_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_vendiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_vendete_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_vendono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io venderò",
+      "tu venderai",
+      "lui/lei venderà",
+      "noi venderemo",
+      "voi venderete",
+      "loro venderanno"
+    ],
+    "examples": [
+      [
+        "Venderò la mia macchina.",
+        "",
+        ""
+      ],
+      [
+        "Venderai il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Venderà la sua bicicletta.",
+        "",
+        ""
+      ],
+      [
+        "Venderemo la nostra casa.",
+        "",
+        ""
+      ],
+      [
+        "Venderete i vostri mobili.",
+        "",
+        ""
+      ],
+      [
+        "Venderanno la loro macchina.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_vendero_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_venderai_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_vendera_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_venderemo_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_venderete_m.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_venderanno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_sell/audio_io_vendero_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_tu_venderai_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_lui_lei_vendera_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_noi_venderemo_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_voi_venderete_f.mp3",
+        "audio/it/verbs/it_audio_to_sell/audio_loro_venderanno_f.mp3"
+      ]
+    ]
+  }
+}

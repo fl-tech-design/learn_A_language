@@ -1,0 +1,183 @@
+{
+  "infinitive": "vedere",
+  "past": {
+    "translations": [
+      "io ho visto",
+      "tu hai visto",
+      "lui/lei ha visto",
+      "noi abbiamo visto",
+      "voi avete visto",
+      "loro hanno visto"
+    ],
+    "examples": [
+      [
+        "Ho visto un film.",
+        "",
+        ""
+      ],
+      [
+        "Hai visto una macchina.",
+        "",
+        ""
+      ],
+      [
+        "Ha visto un cane.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo visto una casa.",
+        "",
+        ""
+      ],
+      [
+        "Avete visto un albero.",
+        "",
+        ""
+      ],
+      [
+        "Hanno visto un uccello.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_ho_visto_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_hai_visto_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_ha_visto_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_abbiamo_visto_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_avete_visto_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_hanno_visto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_ho_visto_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_hai_visto_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_ha_visto_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_abbiamo_visto_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_avete_visto_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_hanno_visto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io vedo",
+      "tu vedi",
+      "lui/lei vede",
+      "noi vediamo",
+      "voi vedete",
+      "loro vedono"
+    ],
+    "examples": [
+      [
+        "Vedo un film.",
+        "",
+        ""
+      ],
+      [
+        "Vedi una macchina.",
+        "",
+        ""
+      ],
+      [
+        "Vede un cane.",
+        "",
+        ""
+      ],
+      [
+        "Vediamo una casa.",
+        "",
+        ""
+      ],
+      [
+        "Vedete un albero.",
+        "",
+        ""
+      ],
+      [
+        "Vedono un uccello.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_vedo_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_vedi_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_vede_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_vediamo_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_vedete_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_vedono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_vedo_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_vedi_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_vede_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_vediamo_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_vedete_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_vedono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io vedrò",
+      "tu vedrai",
+      "lui/lei vedrà",
+      "noi vedremo",
+      "voi vedrete",
+      "loro vedranno"
+    ],
+    "examples": [
+      [
+        "Vedrò un film.",
+        "",
+        ""
+      ],
+      [
+        "Vedrai una macchina.",
+        "",
+        ""
+      ],
+      [
+        "Vedrà un cane.",
+        "",
+        ""
+      ],
+      [
+        "Vedremo una casa.",
+        "",
+        ""
+      ],
+      [
+        "Vedrete un albero.",
+        "",
+        ""
+      ],
+      [
+        "Vedranno un uccello.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_vedro_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_vedrai_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_vedra_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_vedremo_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_vedrete_m.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_vedranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_see/audio_io_vedro_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_tu_vedrai_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_lui_lei_vedra_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_noi_vedremo_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_voi_vedrete_f.mp3",
+        "audio/it/verbs/it_audio_to_see/audio_loro_vedranno_f.mp3"
+      ]
+    ]
+  }
+}

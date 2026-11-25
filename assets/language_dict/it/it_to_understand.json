@@ -1,0 +1,183 @@
+{
+  "infinitive": "capire",
+  "past": {
+    "translations": [
+      "io ho capito",
+      "tu hai capito",
+      "lui/lei ha capito",
+      "noi abbiamo capito",
+      "voi avete capito",
+      "loro hanno capito"
+    ],
+    "examples": [
+      [
+        "Ho capito la domanda.",
+        "",
+        ""
+      ],
+      [
+        "Hai capito il problema.",
+        "",
+        ""
+      ],
+      [
+        "Ha capito la situazione.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo capito il piano.",
+        "",
+        ""
+      ],
+      [
+        "Avete capito il compito.",
+        "",
+        ""
+      ],
+      [
+        "Hanno capito le regole.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_ho_capito_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_hai_capito_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_ha_capito_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_abbiamo_capito_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_avete_capito_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_hanno_capito_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_ho_capito_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_hai_capito_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_ha_capito_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_abbiamo_capito_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_avete_capito_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_hanno_capito_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io capisco",
+      "tu capisci",
+      "lui/lei capisce",
+      "noi capiamo",
+      "voi capite",
+      "loro capiscono"
+    ],
+    "examples": [
+      [
+        "Capisco la domanda.",
+        "",
+        ""
+      ],
+      [
+        "Capisci il problema.",
+        "",
+        ""
+      ],
+      [
+        "Capisce la situazione.",
+        "",
+        ""
+      ],
+      [
+        "Capiamo il piano.",
+        "",
+        ""
+      ],
+      [
+        "Capite il compito.",
+        "",
+        ""
+      ],
+      [
+        "Capiscono le regole.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_capisco_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_capisci_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_capisce_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_capiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_capite_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_capiscono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_capisco_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_capisci_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_capisce_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_capiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_capite_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_capiscono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io capirò",
+      "tu capirai",
+      "lui/lei capirà",
+      "noi capiremo",
+      "voi capirete",
+      "loro capiranno"
+    ],
+    "examples": [
+      [
+        "Capirò la domanda.",
+        "",
+        ""
+      ],
+      [
+        "Capirai il problema.",
+        "",
+        ""
+      ],
+      [
+        "Capirà la situazione.",
+        "",
+        ""
+      ],
+      [
+        "Capiremo il piano.",
+        "",
+        ""
+      ],
+      [
+        "Capirete il compito.",
+        "",
+        ""
+      ],
+      [
+        "Capiranno le regole.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_capiro_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_capirai_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_capira_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_capiremo_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_capirete_m.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_capiranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_understand/audio_io_capiro_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_tu_capirai_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_lui_lei_capira_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_noi_capiremo_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_voi_capirete_f.mp3",
+        "audio/it/verbs/it_audio_to_understand/audio_loro_capiranno_f.mp3"
+      ]
+    ]
+  }
+}

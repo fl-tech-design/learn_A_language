@@ -1,0 +1,183 @@
+{
+  "infinitive": "parlare",
+  "past": {
+    "translations": [
+      "io ho parlato",
+      "tu hai parlato",
+      "lui/lei ha parlato",
+      "noi abbiamo parlato",
+      "voi avete parlato",
+      "loro hanno parlato"
+    ],
+    "examples": [
+      [
+        "Ho parlato tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Hai parlato inglese.",
+        "",
+        ""
+      ],
+      [
+        "Ha parlato francese.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo parlato insieme.",
+        "",
+        ""
+      ],
+      [
+        "Avete parlato spagnolo.",
+        "",
+        ""
+      ],
+      [
+        "Hanno parlato italiano.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_ho_parlato_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_hai_parlato_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_ha_parlato_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_abbiamo_parlato_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_avete_parlato_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_hanno_parlato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_ho_parlato_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_hai_parlato_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_ha_parlato_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_abbiamo_parlato_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_avete_parlato_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_hanno_parlato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io parlo",
+      "tu parli",
+      "lui/lei parla",
+      "noi parliamo",
+      "voi parlate",
+      "loro parlano"
+    ],
+    "examples": [
+      [
+        "Parlo tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Parli inglese.",
+        "",
+        ""
+      ],
+      [
+        "Parla francese.",
+        "",
+        ""
+      ],
+      [
+        "Parliamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Parlate spagnolo.",
+        "",
+        ""
+      ],
+      [
+        "Parlano italiano.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_parlo_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_parli_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_parla_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_parliamo_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_parlate_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_parlano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_parlo_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_parli_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_parla_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_parliamo_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_parlate_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_parlano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io parlerò",
+      "tu parlerai",
+      "lui/lei parlerà",
+      "noi parleremo",
+      "voi parlerete",
+      "loro parleranno"
+    ],
+    "examples": [
+      [
+        "Parlerò tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Parlerai inglese.",
+        "",
+        ""
+      ],
+      [
+        "Parlerà francese.",
+        "",
+        ""
+      ],
+      [
+        "Parleremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Parlerete spagnolo.",
+        "",
+        ""
+      ],
+      [
+        "Parleranno italiano.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_parlero_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_parlerai_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_parlera_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_parleremo_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_parlerete_m.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_parleranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_speak/audio_io_parlero_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_tu_parlerai_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_lui_lei_parlera_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_noi_parleremo_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_voi_parlerete_f.mp3",
+        "audio/it/verbs/it_audio_to_speak/audio_loro_parleranno_f.mp3"
+      ]
+    ]
+  }
+}

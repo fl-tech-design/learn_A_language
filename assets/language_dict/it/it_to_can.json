@@ -1,0 +1,183 @@
+{
+  "infinitive": "potere",
+  "past": {
+    "translations": [
+      "io potevo",
+      "tu potevi",
+      "lui/lei poteva",
+      "noi potevamo",
+      "voi potevate",
+      "loro potevano"
+    ],
+    "examples": [
+      [
+        "Sapevo nuotare.",
+        "",
+        ""
+      ],
+      [
+        "Sapevi ballare.",
+        "",
+        ""
+      ],
+      [
+        "Sapeva cantare.",
+        "",
+        ""
+      ],
+      [
+        "Potevamo giocare.",
+        "",
+        ""
+      ],
+      [
+        "Potevate correre.",
+        "",
+        ""
+      ],
+      [
+        "Potevano ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_potevo_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_potevi_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_poteva_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_potevamo_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potevate_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_potevano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_potevo_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_potevi_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_poteva_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_potevamo_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potevate_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_potevano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io posso",
+      "tu puoi",
+      "lui/lei può",
+      "noi possiamo",
+      "voi potete",
+      "loro possono"
+    ],
+    "examples": [
+      [
+        "So nuotare.",
+        "",
+        ""
+      ],
+      [
+        "Sai ballare.",
+        "",
+        ""
+      ],
+      [
+        "Sa cantare.",
+        "",
+        ""
+      ],
+      [
+        "Possiamo giocare.",
+        "",
+        ""
+      ],
+      [
+        "Potete correre.",
+        "",
+        ""
+      ],
+      [
+        "Possono ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_posso_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_puoi_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_puo_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_possiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potete_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_possono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_posso_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_puoi_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_puo_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_possiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potete_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_possono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io potrò",
+      "tu potrai",
+      "lui/lei potrà",
+      "noi potremo",
+      "voi potrete",
+      "loro potranno"
+    ],
+    "examples": [
+      [
+        "Potrò nuotare.",
+        "",
+        ""
+      ],
+      [
+        "Potrai ballare.",
+        "",
+        ""
+      ],
+      [
+        "Potrà cantare.",
+        "",
+        ""
+      ],
+      [
+        "Potremo giocare.",
+        "",
+        ""
+      ],
+      [
+        "Potrete correre.",
+        "",
+        ""
+      ],
+      [
+        "Potranno ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_potro_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_potrai_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_potra_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_potremo_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potrete_m.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_potranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_can/audio_io_potro_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_tu_potrai_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_lui_lei_potra_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_noi_potremo_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_voi_potrete_f.mp3",
+        "audio/it/verbs/it_audio_to_can/audio_loro_potranno_f.mp3"
+      ]
+    ]
+  }
+}

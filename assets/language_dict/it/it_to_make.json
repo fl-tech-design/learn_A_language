@@ -1,0 +1,183 @@
+{
+  "infinitive": "fare",
+  "past": {
+    "translations": [
+      "io ho fatto",
+      "tu hai fatto",
+      "lui/lei ha fatto",
+      "noi abbiamo fatto",
+      "voi avete fatto",
+      "loro hanno fatto"
+    ],
+    "examples": [
+      [
+        "Ho preparato una torta.",
+        "",
+        ""
+      ],
+      [
+        "Hai preparato il caffè.",
+        "",
+        ""
+      ],
+      [
+        "Ha preparato la cena.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo fatto un piano.",
+        "",
+        ""
+      ],
+      [
+        "Avete commesso un errore.",
+        "",
+        ""
+      ],
+      [
+        "Hanno girato un film.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_ho_fatto_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_tu_hai_fatto_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_ha_fatto_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_abbiamo_fatto_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_avete_fatto_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_hanno_fatto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_ho_fatto_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_tu_hai_fatto_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_ha_fatto_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_abbiamo_fatto_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_avete_fatto_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_hanno_fatto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io faccio",
+      "tu fai",
+      "lui/lei fa",
+      "noi facciamo",
+      "voi fate",
+      "loro fanno"
+    ],
+    "examples": [
+      [
+        "Preparo il caffè.",
+        "",
+        ""
+      ],
+      [
+        "Prepari la cena.",
+        "",
+        ""
+      ],
+      [
+        "Fa un piano.",
+        "",
+        ""
+      ],
+      [
+        "Giriamo un film.",
+        "",
+        ""
+      ],
+      [
+        "Commettete un errore.",
+        "",
+        ""
+      ],
+      [
+        "Preparano il caffè.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_faccio_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_tu_fai_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_fa_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_facciamo_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_fate_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_fanno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_faccio_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_tu_fai_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_fa_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_facciamo_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_fate_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_fanno_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io farò",
+      "tu farai",
+      "lui/lei farà",
+      "noi faremo",
+      "voi farete",
+      "loro faranno"
+    ],
+    "examples": [
+      [
+        "Preparerò una torta.",
+        "",
+        ""
+      ],
+      [
+        "Preparerai il caffè.",
+        "",
+        ""
+      ],
+      [
+        "Preparerà la cena.",
+        "",
+        ""
+      ],
+      [
+        "Faremo un piano.",
+        "",
+        ""
+      ],
+      [
+        "Commetterete un errore.",
+        "",
+        ""
+      ],
+      [
+        "Gireranno un film.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_faro_m.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_fara_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_faremo_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_farete_m.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_faranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_make/audio_io_faro_f.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_make/audio_lui_lei_fara_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_noi_faremo_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_voi_farete_f.mp3",
+        "audio/it/verbs/it_audio_to_make/audio_loro_faranno_f.mp3"
+      ]
+    ]
+  }
+}

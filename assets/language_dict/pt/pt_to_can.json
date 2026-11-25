@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/poder/audio_eu_podia_m.mp3",
-        "audio/pt/verben/poder/audio_tu_podias_m.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_podia_m.mp3",
-        "audio/pt/verben/poder/audio_nos_podiamos_m.mp3",
-        "audio/pt/verben/poder/audio_vos_podieis_m.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_podiam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_podia_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_podias_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_podia_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_podiamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podieis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_podiam_m.mp3"
       ],
       [
-        "audio/pt/verben/poder/audio_eu_podia_f.mp3",
-        "audio/pt/verben/poder/audio_tu_podias_f.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_podia_f.mp3",
-        "audio/pt/verben/poder/audio_nos_podiamos_f.mp3",
-        "audio/pt/verben/poder/audio_vos_podieis_f.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_podiam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_podia_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_podias_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_podia_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_podiamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podieis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_podiam_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/poder/audio_eu_posso_m.mp3",
-        "audio/pt/verben/poder/audio_tu_podes_m.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_pode_m.mp3",
-        "audio/pt/verben/poder/audio_nos_podemos_m.mp3",
-        "audio/pt/verben/poder/audio_vos_podeis_m.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_podem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_posso_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_podes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_pode_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_podemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podeis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_podem_m.mp3"
       ],
       [
-        "audio/pt/verben/poder/audio_eu_posso_f.mp3",
-        "audio/pt/verben/poder/audio_tu_podes_f.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_pode_f.mp3",
-        "audio/pt/verben/poder/audio_nos_podemos_f.mp3",
-        "audio/pt/verben/poder/audio_vos_podeis_f.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_podem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_posso_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_podes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_pode_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_podemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podeis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_podem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/poder/audio_eu_poderei_m.mp3",
-        "audio/pt/verben/poder/audio_tu_poderas_m.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_podera_m.mp3",
-        "audio/pt/verben/poder/audio_nos_poderemos_m.mp3",
-        "audio/pt/verben/poder/audio_vos_podereis_m.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_poderao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_poderei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_poderas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_podera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_poderemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_poderao_m.mp3"
       ],
       [
-        "audio/pt/verben/poder/audio_eu_poderei_f.mp3",
-        "audio/pt/verben/poder/audio_tu_poderas_f.mp3",
-        "audio/pt/verben/poder/audio_ele_ela_podera_f.mp3",
-        "audio/pt/verben/poder/audio_nos_poderemos_f.mp3",
-        "audio/pt/verben/poder/audio_vos_podereis_f.mp3",
-        "audio/pt/verben/poder/audio_eles_elas_poderao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_can/audio_eu_poderei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_tu_poderas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_ele_ela_podera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_nos_poderemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_vos_podereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_can/audio_eles_elas_poderao_f.mp3"
       ]
     ]
   }

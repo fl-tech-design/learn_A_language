@@ -1,0 +1,183 @@
+{
+  "infinitive": "aprire",
+  "past": {
+    "translations": [
+      "io ho aperto",
+      "tu hai aperto",
+      "lui/lei ha aperto",
+      "noi abbiamo aperto",
+      "voi avete aperto",
+      "loro hanno aperto"
+    ],
+    "examples": [
+      [
+        "Ho aperto la porta.",
+        "",
+        ""
+      ],
+      [
+        "Hai aperto la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Ha aperto la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo aperto il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Avete aperto le porte.",
+        "",
+        ""
+      ],
+      [
+        "Hanno aperto le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_ho_aperto_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_hai_aperto_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_ha_aperto_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_abbiamo_aperto_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_avete_aperto_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_hanno_aperto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_ho_aperto_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_hai_aperto_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_ha_aperto_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_abbiamo_aperto_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_avete_aperto_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_hanno_aperto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io apro",
+      "tu apri",
+      "lui/lei apre",
+      "noi apriamo",
+      "voi aprite",
+      "loro aprono"
+    ],
+    "examples": [
+      [
+        "Apro la porta.",
+        "",
+        ""
+      ],
+      [
+        "Apri la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Apre la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Apriamo il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Aprite le porte.",
+        "",
+        ""
+      ],
+      [
+        "Aprono le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_apro_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_apri_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_apre_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_apriamo_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_aprite_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_aprono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_apro_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_apri_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_apre_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_apriamo_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_aprite_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_aprono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io aprirò",
+      "tu aprirai",
+      "lui/lei aprirà",
+      "noi apriremo",
+      "voi aprirete",
+      "loro apriranno"
+    ],
+    "examples": [
+      [
+        "Aprirò la porta.",
+        "",
+        ""
+      ],
+      [
+        "Aprirai la finestra.",
+        "",
+        ""
+      ],
+      [
+        "Aprirà la scatola.",
+        "",
+        ""
+      ],
+      [
+        "Apriremo il pacco.",
+        "",
+        ""
+      ],
+      [
+        "Aprirete le porte.",
+        "",
+        ""
+      ],
+      [
+        "Apriranno le finestre.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_apriro_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_aprirai_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_aprira_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_apriremo_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_aprirete_m.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_apriranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_open/audio_io_apriro_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_tu_aprirai_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_lui_lei_aprira_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_noi_apriremo_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_voi_aprirete_f.mp3",
+        "audio/it/verbs/it_audio_to_open/audio_loro_apriranno_f.mp3"
+      ]
+    ]
+  }
+}

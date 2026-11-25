@@ -1,0 +1,183 @@
+{
+  "infinitive": "dovere",
+  "past": {
+    "translations": [
+      "io dovevo",
+      "tu dovevi",
+      "lui/lei doveva",
+      "noi dovevamo",
+      "voi dovevate",
+      "loro dovevano"
+    ],
+    "examples": [
+      [
+        "Dovevo studiare.",
+        "",
+        ""
+      ],
+      [
+        "Dovevi aiutare.",
+        "",
+        ""
+      ],
+      [
+        "Doveva ascoltare.",
+        "",
+        ""
+      ],
+      [
+        "Dovevamo aspettare.",
+        "",
+        ""
+      ],
+      [
+        "Dovevate chiedere.",
+        "",
+        ""
+      ],
+      [
+        "Dovevano rimanere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_dovevo_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_dovevi_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_doveva_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dovevamo_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovevate_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_dovevano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_dovevo_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_dovevi_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_doveva_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dovevamo_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovevate_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_dovevano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io devo",
+      "tu devi",
+      "lui/lei deve",
+      "noi dobbiamo",
+      "voi dovete",
+      "loro devono"
+    ],
+    "examples": [
+      [
+        "Devo studiare.",
+        "",
+        ""
+      ],
+      [
+        "Devi aiutare.",
+        "",
+        ""
+      ],
+      [
+        "Deve ascoltare.",
+        "",
+        ""
+      ],
+      [
+        "Dobbiamo aspettare.",
+        "",
+        ""
+      ],
+      [
+        "Dovete chiedere.",
+        "",
+        ""
+      ],
+      [
+        "Devono rimanere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_devo_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_devi_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_deve_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dobbiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovete_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_devono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_devo_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_devi_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_deve_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dobbiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovete_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_devono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io dovrò",
+      "tu dovrai",
+      "lui/lei dovrà",
+      "noi dovremo",
+      "voi dovrete",
+      "loro dovranno"
+    ],
+    "examples": [
+      [
+        "Dovrò studiare.",
+        "",
+        ""
+      ],
+      [
+        "Dovrai aiutare.",
+        "",
+        ""
+      ],
+      [
+        "Dovrà ascoltare.",
+        "",
+        ""
+      ],
+      [
+        "Dovremo aspettare.",
+        "",
+        ""
+      ],
+      [
+        "Dovrete chiedere.",
+        "",
+        ""
+      ],
+      [
+        "Dovranno rimanere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_dovro_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_dovrai_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_dovra_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dovremo_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovrete_m.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_dovranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_should/audio_io_dovro_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_tu_dovrai_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_lui_lei_dovra_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_noi_dovremo_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_voi_dovrete_f.mp3",
+        "audio/it/verbs/it_audio_to_should/audio_loro_dovranno_f.mp3"
+      ]
+    ]
+  }
+}

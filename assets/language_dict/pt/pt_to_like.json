@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/gostar/audio_eu_gostei_m.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostaste_m.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gostou_m.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostamos_m.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostastes_m.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostaram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gostei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gostou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostaram_m.mp3"
       ],
       [
-        "audio/pt/verben/gostar/audio_eu_gostei_f.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostaste_f.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gostou_f.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostamos_f.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostastes_f.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostaram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gostei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gostou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostaram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/gostar/audio_eu_gosto_m.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostas_m.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gosta_m.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostamos_m.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostais_m.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gosto_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gosta_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostam_m.mp3"
       ],
       [
-        "audio/pt/verben/gostar/audio_eu_gosto_f.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostas_f.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gosta_f.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostamos_f.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostais_f.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gosto_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gosta_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostam_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/gostar/audio_eu_gostarei_m.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostaras_m.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gostara_m.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostaremos_m.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostareis_m.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gostarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostaras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gostara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostaremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostarao_m.mp3"
       ],
       [
-        "audio/pt/verben/gostar/audio_eu_gostarei_f.mp3",
-        "audio/pt/verben/gostar/audio_tu_gostaras_f.mp3",
-        "audio/pt/verben/gostar/audio_ele_ela_gostara_f.mp3",
-        "audio/pt/verben/gostar/audio_nos_gostaremos_f.mp3",
-        "audio/pt/verben/gostar/audio_vos_gostareis_f.mp3",
-        "audio/pt/verben/gostar/audio_eles_elas_gostarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_like/audio_eu_gostarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_tu_gostaras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_ele_ela_gostara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_nos_gostaremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_vos_gostareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_like/audio_eles_elas_gostarao_f.mp3"
       ]
     ]
   }

@@ -1,0 +1,183 @@
+{
+  "infinitive": "lavorare",
+  "past": {
+    "translations": [
+      "io lavoravo",
+      "tu lavoravi",
+      "lui/lei lavorava",
+      "noi lavoravamo",
+      "voi lavoravate",
+      "loro lavoravano"
+    ],
+    "examples": [
+      [
+        "Lavoravo in un ufficio.",
+        "",
+        ""
+      ],
+      [
+        "Lavoravi duramente.",
+        "",
+        ""
+      ],
+      [
+        "Lavorava in una fabbrica.",
+        "",
+        ""
+      ],
+      [
+        "Lavoravamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Lavoravate fino a tardi.",
+        "",
+        ""
+      ],
+      [
+        "Lavoravano a un progetto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavoravo_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavoravi_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavorava_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoravamo_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavoravate_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavoravano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavoravo_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavoravi_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavorava_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoravamo_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavoravate_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavoravano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io lavoro",
+      "tu lavori",
+      "lui/lei lavora",
+      "noi lavoriamo",
+      "voi lavorate",
+      "loro lavorano"
+    ],
+    "examples": [
+      [
+        "Lavoro in un ufficio.",
+        "",
+        ""
+      ],
+      [
+        "Lavori duramente.",
+        "",
+        ""
+      ],
+      [
+        "Lavora in una fabbrica.",
+        "",
+        ""
+      ],
+      [
+        "Lavoriamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Lavorate fino a tardi.",
+        "",
+        ""
+      ],
+      [
+        "Lavorano a un progetto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavoro_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavori_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavora_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoriamo_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavorate_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavorano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavoro_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavori_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavora_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoriamo_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavorate_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavorano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io lavorerò",
+      "tu lavorerai",
+      "lui/lei lavorerà",
+      "noi lavoreremo",
+      "voi lavorerete",
+      "loro lavoreranno"
+    ],
+    "examples": [
+      [
+        "Lavorerò in un ufficio.",
+        "",
+        ""
+      ],
+      [
+        "Lavorerai duramente.",
+        "",
+        ""
+      ],
+      [
+        "Lavorerà in una fabbrica.",
+        "",
+        ""
+      ],
+      [
+        "Lavoreremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Lavorerete fino a tardi.",
+        "",
+        ""
+      ],
+      [
+        "Lavoreranno a un progetto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavorero_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavorerai_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavorera_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoreremo_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavorerete_m.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavoreranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_work/audio_io_lavorero_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_tu_lavorerai_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_lui_lei_lavorera_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_noi_lavoreremo_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_voi_lavorerete_f.mp3",
+        "audio/it/verbs/it_audio_to_work/audio_loro_lavoreranno_f.mp3"
+      ]
+    ]
+  }
+}

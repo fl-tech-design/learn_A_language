@@ -1,0 +1,183 @@
+{
+  "infinitive": "piacere",
+  "past": {
+    "translations": [
+      "io gradivo",
+      "tu gradivi",
+      "lui/lei gradiva",
+      "noi gradivamo",
+      "voi gradivate",
+      "loro gradivano"
+    ],
+    "examples": [
+      [
+        "Mi piaceva il cioccolato.",
+        "",
+        ""
+      ],
+      [
+        "Ti piaceva il gelato.",
+        "",
+        ""
+      ],
+      [
+        "Gli piaceva la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ci piaceva il film.",
+        "",
+        ""
+      ],
+      [
+        "Vi piaceva il libro.",
+        "",
+        ""
+      ],
+      [
+        "Gli piaceva la musica.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_like/audio_io_gradivo_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_tu_gradivi_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_lui_lei_gradiva_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_noi_gradivamo_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_gradivate_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_gradivano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_like/audio_io_gradivo_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_tu_gradivi_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_lui_lei_gradiva_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_noi_gradivamo_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_gradivate_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_gradivano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io piaccio",
+      "tu piaci",
+      "lui/lei piace",
+      "noi piacciamo",
+      "voi piacete",
+      "loro piacciono"
+    ],
+    "examples": [
+      [
+        "Mi piace il cioccolato.",
+        "",
+        ""
+      ],
+      [
+        "Ti piace il gelato.",
+        "",
+        ""
+      ],
+      [
+        "Gli piace la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ci piace il film.",
+        "",
+        ""
+      ],
+      [
+        "Vi piace il libro.",
+        "",
+        ""
+      ],
+      [
+        "Gli piace la musica.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_like/audio_io_piaccio_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_tu_piaci_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_lui_lei_piace_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_noi_piacciamo_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_piacete_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_piacciono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_like/audio_io_piaccio_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_tu_piaci_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_lui_lei_piace_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_noi_piacciamo_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_piacete_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_piacciono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io piacerò",
+      "tu piacerai",
+      "lui/lei piacerà",
+      "noi piaceremo",
+      "voi piacerete",
+      "loro piaceranno"
+    ],
+    "examples": [
+      [
+        "Mi piacerà il cioccolato.",
+        "",
+        ""
+      ],
+      [
+        "Ti piacerà il gelato.",
+        "",
+        ""
+      ],
+      [
+        "Gli piacerà la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Ci piacerà il film.",
+        "",
+        ""
+      ],
+      [
+        "Vi piacerà il libro.",
+        "",
+        ""
+      ],
+      [
+        "Gli piacerà la musica.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "",
+        "audio/it/verbs/it_audio_to_like/audio_tu_piacerai_m.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_like/audio_noi_piaceremo_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_piacerete_m.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_piaceranno_m.mp3"
+      ],
+      [
+        "",
+        "audio/it/verbs/it_audio_to_like/audio_tu_piacerai_f.mp3",
+        "",
+        "audio/it/verbs/it_audio_to_like/audio_noi_piaceremo_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_voi_piacerete_f.mp3",
+        "audio/it/verbs/it_audio_to_like/audio_loro_piaceranno_f.mp3"
+      ]
+    ]
+  }
+}

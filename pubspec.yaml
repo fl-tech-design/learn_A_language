@@ -37,6 +37,8 @@ flutter:
     - assets/language_dict/es/
     - assets/language_dict/el/
     - assets/language_dict/ru/
+    - assets/language_dict/it/
+    - assets/language_dict/pt/
     - assets/grammar/grammar_de/
     - assets/audio/de/verbs/de_audio_to_be/
     - assets/audio/de/verbs/de_audio_to_be_allowed_to/
@@ -218,6 +220,66 @@ flutter:
     - assets/audio/ru/verbs/ru_audio_to_want/
     - assets/audio/ru/verbs/ru_audio_to_work/
     - assets/audio/ru/verbs/ru_audio_to_write/
+    - assets/audio/it/verbs/it_audio_to_be/
+    - assets/audio/it/verbs/it_audio_to_be_allowed_to/
+    - assets/audio/it/verbs/it_audio_to_begin/
+    - assets/audio/it/verbs/it_audio_to_buy/
+    - assets/audio/it/verbs/it_audio_to_can/
+    - assets/audio/it/verbs/it_audio_to_close/
+    - assets/audio/it/verbs/it_audio_to_come/
+    - assets/audio/it/verbs/it_audio_to_drink/
+    - assets/audio/it/verbs/it_audio_to_eat/
+    - assets/audio/it/verbs/it_audio_to_end/
+    - assets/audio/it/verbs/it_audio_to_find/
+    - assets/audio/it/verbs/it_audio_to_go/
+    - assets/audio/it/verbs/it_audio_to_have/
+    - assets/audio/it/verbs/it_audio_to_help/
+    - assets/audio/it/verbs/it_audio_to_learn/
+    - assets/audio/it/verbs/it_audio_to_like/
+    - assets/audio/it/verbs/it_audio_to_live/
+    - assets/audio/it/verbs/it_audio_to_make/
+    - assets/audio/it/verbs/it_audio_to_must/
+    - assets/audio/it/verbs/it_audio_to_need/
+    - assets/audio/it/verbs/it_audio_to_open/
+    - assets/audio/it/verbs/it_audio_to_read/
+    - assets/audio/it/verbs/it_audio_to_see/
+    - assets/audio/it/verbs/it_audio_to_sell/
+    - assets/audio/it/verbs/it_audio_to_should/
+    - assets/audio/it/verbs/it_audio_to_speak/
+    - assets/audio/it/verbs/it_audio_to_understand/
+    - assets/audio/it/verbs/it_audio_to_want/
+    - assets/audio/it/verbs/it_audio_to_work/
+    - assets/audio/it/verbs/it_audio_to_write/
+    - assets/audio/pt/verbs/pt_audio_to_be/
+    - assets/audio/pt/verbs/pt_audio_to_be_allowed_to/
+    - assets/audio/pt/verbs/pt_audio_to_begin/
+    - assets/audio/pt/verbs/pt_audio_to_buy/
+    - assets/audio/pt/verbs/pt_audio_to_can/
+    - assets/audio/pt/verbs/pt_audio_to_close/
+    - assets/audio/pt/verbs/pt_audio_to_come/
+    - assets/audio/pt/verbs/pt_audio_to_drink/
+    - assets/audio/pt/verbs/pt_audio_to_eat/
+    - assets/audio/pt/verbs/pt_audio_to_end/
+    - assets/audio/pt/verbs/pt_audio_to_find/
+    - assets/audio/pt/verbs/pt_audio_to_go/
+    - assets/audio/pt/verbs/pt_audio_to_have/
+    - assets/audio/pt/verbs/pt_audio_to_help/
+    - assets/audio/pt/verbs/pt_audio_to_learn/
+    - assets/audio/pt/verbs/pt_audio_to_like/
+    - assets/audio/pt/verbs/pt_audio_to_live/
+    - assets/audio/pt/verbs/pt_audio_to_make/
+    - assets/audio/pt/verbs/pt_audio_to_must/
+    - assets/audio/pt/verbs/pt_audio_to_need/
+    - assets/audio/pt/verbs/pt_audio_to_open/
+    - assets/audio/pt/verbs/pt_audio_to_read/
+    - assets/audio/pt/verbs/pt_audio_to_see/
+    - assets/audio/pt/verbs/pt_audio_to_sell/
+    - assets/audio/pt/verbs/pt_audio_to_should/
+    - assets/audio/pt/verbs/pt_audio_to_speak/
+    - assets/audio/pt/verbs/pt_audio_to_understand/
+    - assets/audio/pt/verbs/pt_audio_to_want/
+    - assets/audio/pt/verbs/pt_audio_to_work/
+    - assets/audio/pt/verbs/pt_audio_to_write/
 
   fonts:
     - family: Jura

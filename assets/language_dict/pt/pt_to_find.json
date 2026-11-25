@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/encontrar/audio_eu_encontrei_m.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontraste_m.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontrou_m.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontramos_m.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrastes_m.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontraram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontrei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontraste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontrou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontraram_m.mp3"
       ],
       [
-        "audio/pt/verben/encontrar/audio_eu_encontrei_f.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontraste_f.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontrou_f.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontramos_f.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrastes_f.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontraram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontrei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontraste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontrou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontraram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/encontrar/audio_eu_encontro_m.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontras_m.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontra_m.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontramos_m.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrais_m.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontro_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontra_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontram_m.mp3"
       ],
       [
-        "audio/pt/verben/encontrar/audio_eu_encontro_f.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontras_f.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontra_f.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontramos_f.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrais_f.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontro_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontra_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontram_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/encontrar/audio_eu_encontrarei_m.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontraras_m.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontrara_m.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontraremos_m.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrareis_m.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontrarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontrarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontraras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontrara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontraremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontrarao_m.mp3"
       ],
       [
-        "audio/pt/verben/encontrar/audio_eu_encontrarei_f.mp3",
-        "audio/pt/verben/encontrar/audio_tu_encontraras_f.mp3",
-        "audio/pt/verben/encontrar/audio_ele_ela_encontrara_f.mp3",
-        "audio/pt/verben/encontrar/audio_nos_encontraremos_f.mp3",
-        "audio/pt/verben/encontrar/audio_vos_encontrareis_f.mp3",
-        "audio/pt/verben/encontrar/audio_eles_elas_encontrarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_find/audio_eu_encontrarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_tu_encontraras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_ele_ela_encontrara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_nos_encontraremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_vos_encontrareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_find/audio_eles_elas_encontrarao_f.mp3"
       ]
     ]
   }

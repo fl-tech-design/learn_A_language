@@ -1,0 +1,183 @@
+{
+  "infinitive": "imparare",
+  "past": {
+    "translations": [
+      "io ho imparato",
+      "tu hai imparato",
+      "lui/lei ha imparato",
+      "noi abbiamo imparato",
+      "voi avete imparato",
+      "loro hanno imparato"
+    ],
+    "examples": [
+      [
+        "Ho imparato il tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Hai imparato in fretta.",
+        "",
+        ""
+      ],
+      [
+        "Ha imparato l'inglese.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo imparato insieme.",
+        "",
+        ""
+      ],
+      [
+        "Avete imparato molto.",
+        "",
+        ""
+      ],
+      [
+        "Hanno imparato lo spagnolo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_ho_imparato_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_hai_imparato_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_ha_imparato_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_abbiamo_imparato_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_avete_imparato_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_hanno_imparato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_ho_imparato_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_hai_imparato_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_ha_imparato_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_abbiamo_imparato_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_avete_imparato_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_hanno_imparato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io imparo",
+      "tu impari",
+      "lui/lei impara",
+      "noi impariamo",
+      "voi imparate",
+      "loro imparano"
+    ],
+    "examples": [
+      [
+        "Imparo il tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Impari in fretta.",
+        "",
+        ""
+      ],
+      [
+        "Impara l'inglese.",
+        "",
+        ""
+      ],
+      [
+        "Impariamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Imparate molto.",
+        "",
+        ""
+      ],
+      [
+        "Imparano lo spagnolo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_imparo_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_impari_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_impara_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_impariamo_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_imparate_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_imparano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_imparo_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_impari_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_impara_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_impariamo_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_imparate_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_imparano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io imparerò",
+      "tu imparerai",
+      "lui/lei imparerà",
+      "noi impareremo",
+      "voi imparerete",
+      "loro impareranno"
+    ],
+    "examples": [
+      [
+        "Imparerò il tedesco.",
+        "",
+        ""
+      ],
+      [
+        "Imparerai in fretta.",
+        "",
+        ""
+      ],
+      [
+        "Imparerà l'inglese.",
+        "",
+        ""
+      ],
+      [
+        "Impareremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Imparerete molto.",
+        "",
+        ""
+      ],
+      [
+        "Impareranno lo spagnolo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_imparero_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_imparerai_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_imparera_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_impareremo_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_imparerete_m.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_impareranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_learn/audio_io_imparero_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_tu_imparerai_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_lui_lei_imparera_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_noi_impareremo_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_voi_imparerete_f.mp3",
+        "audio/it/verbs/it_audio_to_learn/audio_loro_impareranno_f.mp3"
+      ]
+    ]
+  }
+}

@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalhei_m.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalhaste_m.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalhou_m.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalhamos_m.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhastes_m.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalharam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalhei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalhaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalhou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalhamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalharam_m.mp3"
       ],
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalhei_f.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalhaste_f.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalhou_f.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalhamos_f.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhastes_f.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalharam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalhei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalhaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalhou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalhamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalharam_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalho_m.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalhas_m.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalha_m.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalhamos_m.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhais_m.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalham_m.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalho_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalhas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalha_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalhamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalham_m.mp3"
       ],
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalho_f.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalhas_f.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalha_f.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalhamos_f.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhais_f.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalham_f.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalho_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalhas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalha_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalhamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalham_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalharei_m.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalharas_m.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalhara_m.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalharemos_m.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhareis_m.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalharao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalharei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalharas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalhara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalharemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalharao_m.mp3"
       ],
       [
-        "audio/pt/verben/trabalhar/audio_eu_trabalharei_f.mp3",
-        "audio/pt/verben/trabalhar/audio_tu_trabalharas_f.mp3",
-        "audio/pt/verben/trabalhar/audio_ele_ela_trabalhara_f.mp3",
-        "audio/pt/verben/trabalhar/audio_nos_trabalharemos_f.mp3",
-        "audio/pt/verben/trabalhar/audio_vos_trabalhareis_f.mp3",
-        "audio/pt/verben/trabalhar/audio_eles_elas_trabalharao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_work/audio_eu_trabalharei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_tu_trabalharas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_ele_ela_trabalhara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_nos_trabalharemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_vos_trabalhareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_work/audio_eles_elas_trabalharao_f.mp3"
       ]
     ]
   }

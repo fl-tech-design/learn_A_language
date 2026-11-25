@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ser/audio_eu_era_m.mp3",
-        "audio/pt/verben/ser/audio_tu_eras_m.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_era_m.mp3",
-        "audio/pt/verben/ser/audio_nos_eramos_m.mp3",
-        "audio/pt/verben/ser/audio_vos_ereis_m.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_eram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_era_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_eras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_era_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_eramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_ereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_eram_m.mp3"
       ],
       [
-        "audio/pt/verben/ser/audio_eu_era_f.mp3",
-        "audio/pt/verben/ser/audio_tu_eras_f.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_era_f.mp3",
-        "audio/pt/verben/ser/audio_nos_eramos_f.mp3",
-        "audio/pt/verben/ser/audio_vos_ereis_f.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_eram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_era_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_eras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_era_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_eramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_ereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_eram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ser/audio_eu_sou_m.mp3",
-        "audio/pt/verben/ser/audio_tu_es_m.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_e_m.mp3",
-        "audio/pt/verben/ser/audio_nos_somos_m.mp3",
-        "audio/pt/verben/ser/audio_vos_sois_m.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_sao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_sou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_es_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_e_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_somos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_sois_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_sao_m.mp3"
       ],
       [
-        "audio/pt/verben/ser/audio_eu_sou_f.mp3",
-        "audio/pt/verben/ser/audio_tu_es_f.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_e_f.mp3",
-        "audio/pt/verben/ser/audio_nos_somos_f.mp3",
-        "audio/pt/verben/ser/audio_vos_sois_f.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_sao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_sou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_es_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_e_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_somos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_sois_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_sao_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ser/audio_eu_serei_m.mp3",
-        "audio/pt/verben/ser/audio_tu_seras_m.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_sera_m.mp3",
-        "audio/pt/verben/ser/audio_nos_seremos_m.mp3",
-        "audio/pt/verben/ser/audio_vos_sereis_m.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_serao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_serei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_seras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_sera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_seremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_sereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_serao_m.mp3"
       ],
       [
-        "audio/pt/verben/ser/audio_eu_serei_f.mp3",
-        "audio/pt/verben/ser/audio_tu_seras_f.mp3",
-        "audio/pt/verben/ser/audio_ele_ela_sera_f.mp3",
-        "audio/pt/verben/ser/audio_nos_seremos_f.mp3",
-        "audio/pt/verben/ser/audio_vos_sereis_f.mp3",
-        "audio/pt/verben/ser/audio_eles_elas_serao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_be/audio_eu_serei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_tu_seras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_ele_ela_sera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_nos_seremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_vos_sereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_be/audio_eles_elas_serao_f.mp3"
       ]
     ]
   }

@@ -1,0 +1,183 @@
+{
+  "infinitive": "abitare",
+  "past": {
+    "translations": [
+      "io abitavo",
+      "tu abitavi",
+      "lui/lei abitava",
+      "noi abitavamo",
+      "voi abitavate",
+      "loro abitavano"
+    ],
+    "examples": [
+      [
+        "Abitavo a Berlino.",
+        "",
+        ""
+      ],
+      [
+        "Abitavi in una casa.",
+        "",
+        ""
+      ],
+      [
+        "Abitava in un appartamento.",
+        "",
+        ""
+      ],
+      [
+        "Abitavamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Abitavate in città.",
+        "",
+        ""
+      ],
+      [
+        "Abitavano in un villaggio.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abitavo_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abitavi_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abitava_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abitavamo_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abitavate_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abitavano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abitavo_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abitavi_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abitava_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abitavamo_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abitavate_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abitavano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io abito",
+      "tu abiti",
+      "lui/lei abita",
+      "noi abitiamo",
+      "voi abitate",
+      "loro abitano"
+    ],
+    "examples": [
+      [
+        "Abito a Berlino.",
+        "",
+        ""
+      ],
+      [
+        "Abiti in una casa.",
+        "",
+        ""
+      ],
+      [
+        "Abita in un appartamento.",
+        "",
+        ""
+      ],
+      [
+        "Abitiamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Abitate in città.",
+        "",
+        ""
+      ],
+      [
+        "Abitano in un villaggio.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abito_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abiti_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abita_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abitiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abitate_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abitano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abito_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abiti_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abita_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abitiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abitate_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abitano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io abiterò",
+      "tu abiterai",
+      "lui/lei abiterà",
+      "noi abiteremo",
+      "voi abiterete",
+      "loro abiteranno"
+    ],
+    "examples": [
+      [
+        "Abiterò a Berlino.",
+        "",
+        ""
+      ],
+      [
+        "Abiterai in una casa.",
+        "",
+        ""
+      ],
+      [
+        "Abiterà in un appartamento.",
+        "",
+        ""
+      ],
+      [
+        "Abiteremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Abiterete in città.",
+        "",
+        ""
+      ],
+      [
+        "Abiteranno in un villaggio.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abitero_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abiterai_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abitera_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abiteremo_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abiterete_m.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abiteranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_live/audio_io_abitero_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_tu_abiterai_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_lui_lei_abitera_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_noi_abiteremo_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_voi_abiterete_f.mp3",
+        "audio/it/verbs/it_audio_to_live/audio_loro_abiteranno_f.mp3"
+      ]
+    ]
+  }
+}

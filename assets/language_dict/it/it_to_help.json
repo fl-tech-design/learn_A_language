@@ -1,0 +1,183 @@
+{
+  "infinitive": "aiutare",
+  "past": {
+    "translations": [
+      "io ho aiutato",
+      "tu hai aiutato",
+      "lui/lei ha aiutato",
+      "noi abbiamo aiutato",
+      "voi avete aiutato",
+      "loro hanno aiutato"
+    ],
+    "examples": [
+      [
+        "Ho aiutato il mio amico.",
+        "",
+        ""
+      ],
+      [
+        "Hai aiutato tua sorella.",
+        "",
+        ""
+      ],
+      [
+        "Ha aiutato il suo vicino.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo aiutato l'insegnante.",
+        "",
+        ""
+      ],
+      [
+        "Avete aiutato la squadra.",
+        "",
+        ""
+      ],
+      [
+        "Hanno aiutato lo studente.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_ho_aiutato_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_hai_aiutato_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_ha_aiutato_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_abbiamo_aiutato_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_avete_aiutato_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_hanno_aiutato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_ho_aiutato_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_hai_aiutato_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_ha_aiutato_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_abbiamo_aiutato_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_avete_aiutato_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_hanno_aiutato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io aiuto",
+      "tu aiuti",
+      "lui/lei aiuta",
+      "noi aiutiamo",
+      "voi aiutate",
+      "loro aiutano"
+    ],
+    "examples": [
+      [
+        "Aiuto il mio amico.",
+        "",
+        ""
+      ],
+      [
+        "Aiuti tua sorella.",
+        "",
+        ""
+      ],
+      [
+        "Aiuta il suo vicino.",
+        "",
+        ""
+      ],
+      [
+        "Aiutiamo l'insegnante.",
+        "",
+        ""
+      ],
+      [
+        "Aiutate la squadra.",
+        "",
+        ""
+      ],
+      [
+        "Aiutano lo studente.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_aiuto_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_aiuti_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_aiuta_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_aiutiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_aiutate_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_aiutano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_aiuto_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_aiuti_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_aiuta_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_aiutiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_aiutate_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_aiutano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io aiuterò",
+      "tu aiuterai",
+      "lui/lei aiuterà",
+      "noi aiuteremo",
+      "voi aiuterete",
+      "loro aiuteranno"
+    ],
+    "examples": [
+      [
+        "Aiuterò il mio amico.",
+        "",
+        ""
+      ],
+      [
+        "Aiuterai tua sorella.",
+        "",
+        ""
+      ],
+      [
+        "Aiuterà il suo vicino.",
+        "",
+        ""
+      ],
+      [
+        "Aiuteremo l'insegnante.",
+        "",
+        ""
+      ],
+      [
+        "Aiuterete la squadra.",
+        "",
+        ""
+      ],
+      [
+        "Aiuteranno lo studente.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_aiutero_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_aiuterai_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_aiutera_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_aiuteremo_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_aiuterete_m.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_aiuteranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_help/audio_io_aiutero_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_tu_aiuterai_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_lui_lei_aiutera_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_noi_aiuteremo_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_voi_aiuterete_f.mp3",
+        "audio/it/verbs/it_audio_to_help/audio_loro_aiuteranno_f.mp3"
+      ]
+    ]
+  }
+}

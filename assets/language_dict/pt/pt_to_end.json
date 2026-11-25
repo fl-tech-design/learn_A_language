@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/terminar/audio_eu_terminei_m.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminaste_m.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_terminou_m.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminamos_m.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminastes_m.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminaram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_terminei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_terminou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminaram_m.mp3"
       ],
       [
-        "audio/pt/verben/terminar/audio_eu_terminei_f.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminaste_f.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_terminou_f.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminamos_f.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminastes_f.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminaram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_terminei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_terminou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminaram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/terminar/audio_eu_termino_m.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminas_m.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_termina_m.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminamos_m.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminais_m.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_termino_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_termina_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminam_m.mp3"
       ],
       [
-        "audio/pt/verben/terminar/audio_eu_termino_f.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminas_f.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_termina_f.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminamos_f.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminais_f.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_termino_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_termina_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminam_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/terminar/audio_eu_terminarei_m.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminaras_m.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_terminara_m.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminaremos_m.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminareis_m.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_terminarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminaras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_terminara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminaremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminarao_m.mp3"
       ],
       [
-        "audio/pt/verben/terminar/audio_eu_terminarei_f.mp3",
-        "audio/pt/verben/terminar/audio_tu_terminaras_f.mp3",
-        "audio/pt/verben/terminar/audio_ele_ela_terminara_f.mp3",
-        "audio/pt/verben/terminar/audio_nos_terminaremos_f.mp3",
-        "audio/pt/verben/terminar/audio_vos_terminareis_f.mp3",
-        "audio/pt/verben/terminar/audio_eles_elas_terminarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_end/audio_eu_terminarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_tu_terminaras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_ele_ela_terminara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_nos_terminaremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_vos_terminareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_end/audio_eles_elas_terminarao_f.mp3"
       ]
     ]
   }

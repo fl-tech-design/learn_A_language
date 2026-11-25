@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fazer/audio_eu_fiz_m.mp3",
-        "audio/pt/verben/fazer/audio_tu_fizeste_m.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_fez_m.mp3",
-        "audio/pt/verben/fazer/audio_nos_fizemos_m.mp3",
-        "audio/pt/verben/fazer/audio_vos_fizestes_m.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_fizeram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_fiz_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_fizeste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_fez_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_fizemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fizestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_fizeram_m.mp3"
       ],
       [
-        "audio/pt/verben/fazer/audio_eu_fiz_f.mp3",
-        "audio/pt/verben/fazer/audio_tu_fizeste_f.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_fez_f.mp3",
-        "audio/pt/verben/fazer/audio_nos_fizemos_f.mp3",
-        "audio/pt/verben/fazer/audio_vos_fizestes_f.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_fizeram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_fiz_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_fizeste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_fez_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_fizemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fizestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_fizeram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fazer/audio_eu_faco_m.mp3",
-        "audio/pt/verben/fazer/audio_tu_fazes_m.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_faz_m.mp3",
-        "audio/pt/verben/fazer/audio_nos_fazemos_m.mp3",
-        "audio/pt/verben/fazer/audio_vos_fazeis_m.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_fazem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_faco_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_fazes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_faz_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_fazemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fazeis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_fazem_m.mp3"
       ],
       [
-        "audio/pt/verben/fazer/audio_eu_faco_f.mp3",
-        "audio/pt/verben/fazer/audio_tu_fazes_f.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_faz_f.mp3",
-        "audio/pt/verben/fazer/audio_nos_fazemos_f.mp3",
-        "audio/pt/verben/fazer/audio_vos_fazeis_f.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_fazem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_faco_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_fazes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_faz_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_fazemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fazeis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_fazem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fazer/audio_eu_farei_m.mp3",
-        "audio/pt/verben/fazer/audio_tu_faras_m.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_fara_m.mp3",
-        "audio/pt/verben/fazer/audio_nos_faremos_m.mp3",
-        "audio/pt/verben/fazer/audio_vos_fareis_m.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_farao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_farei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_faras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_fara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_faremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_farao_m.mp3"
       ],
       [
-        "audio/pt/verben/fazer/audio_eu_farei_f.mp3",
-        "audio/pt/verben/fazer/audio_tu_faras_f.mp3",
-        "audio/pt/verben/fazer/audio_ele_ela_fara_f.mp3",
-        "audio/pt/verben/fazer/audio_nos_faremos_f.mp3",
-        "audio/pt/verben/fazer/audio_vos_fareis_f.mp3",
-        "audio/pt/verben/fazer/audio_eles_elas_farao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_make/audio_eu_farei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_tu_faras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_ele_ela_fara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_nos_faremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_vos_fareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_make/audio_eles_elas_farao_f.mp3"
       ]
     ]
   }

@@ -1,0 +1,183 @@
+{
+  "infinitive": "trovare",
+  "past": {
+    "translations": [
+      "io ho trovato",
+      "tu hai trovato",
+      "lui/lei ha trovato",
+      "noi abbiamo trovato",
+      "voi avete trovato",
+      "loro hanno trovato"
+    ],
+    "examples": [
+      [
+        "Ho trovato la mia chiave.",
+        "",
+        ""
+      ],
+      [
+        "Hai trovato il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Ha trovato il suo portafoglio.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo trovato la soluzione.",
+        "",
+        ""
+      ],
+      [
+        "Avete trovato le chiavi.",
+        "",
+        ""
+      ],
+      [
+        "Hanno trovato il gatto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_ho_trovato_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_hai_trovato_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_ha_trovato_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_abbiamo_trovato_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_avete_trovato_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_hanno_trovato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_ho_trovato_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_hai_trovato_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_ha_trovato_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_abbiamo_trovato_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_avete_trovato_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_hanno_trovato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io trovo",
+      "tu trovi",
+      "lui/lei trova",
+      "noi troviamo",
+      "voi trovate",
+      "loro trovano"
+    ],
+    "examples": [
+      [
+        "Non trovo la mia chiave.",
+        "",
+        ""
+      ],
+      [
+        "Trovi il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Trova il suo portafoglio.",
+        "",
+        ""
+      ],
+      [
+        "Troviamo la soluzione.",
+        "",
+        ""
+      ],
+      [
+        "Trovate le chiavi.",
+        "",
+        ""
+      ],
+      [
+        "Trovano il gatto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_trovo_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_trovi_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_trova_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_troviamo_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_trovate_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_trovano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_trovo_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_trovi_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_trova_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_troviamo_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_trovate_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_trovano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io troverò",
+      "tu troverai",
+      "lui/lei troverà",
+      "noi troveremo",
+      "voi troverete",
+      "loro troveranno"
+    ],
+    "examples": [
+      [
+        "Troverò la mia chiave.",
+        "",
+        ""
+      ],
+      [
+        "Troverai il tuo cellulare.",
+        "",
+        ""
+      ],
+      [
+        "Troverà il suo portafoglio.",
+        "",
+        ""
+      ],
+      [
+        "Troveremo la soluzione.",
+        "",
+        ""
+      ],
+      [
+        "Troverete le chiavi.",
+        "",
+        ""
+      ],
+      [
+        "Troveranno il gatto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_trovero_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_troverai_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_trovera_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_troveremo_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_troverete_m.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_troveranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_find/audio_io_trovero_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_tu_troverai_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_lui_lei_trovera_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_noi_troveremo_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_voi_troverete_f.mp3",
+        "audio/it/verbs/it_audio_to_find/audio_loro_troveranno_f.mp3"
+      ]
+    ]
+  }
+}

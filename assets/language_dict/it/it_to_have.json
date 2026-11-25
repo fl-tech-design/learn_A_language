@@ -1,0 +1,183 @@
+{
+  "infinitive": "avere",
+  "past": {
+    "translations": [
+      "io avevo",
+      "tu avevi",
+      "lui/lei aveva",
+      "noi avevamo",
+      "voi avevate",
+      "loro avevano"
+    ],
+    "examples": [
+      [
+        "Avevo un cane.",
+        "",
+        ""
+      ],
+      [
+        "Avevi una macchina.",
+        "",
+        ""
+      ],
+      [
+        "Aveva un libro.",
+        "",
+        ""
+      ],
+      [
+        "Avevamo tempo.",
+        "",
+        ""
+      ],
+      [
+        "Vi siete divertiti.",
+        "",
+        ""
+      ],
+      [
+        "Avevano una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_avevo_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_avevi_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_aveva_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_avevamo_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avevate_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_avevano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_avevo_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_avevi_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_aveva_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_avevamo_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avevate_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_avevano_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io ho",
+      "tu hai",
+      "lui/lei ha",
+      "noi abbiamo",
+      "voi avete",
+      "loro hanno"
+    ],
+    "examples": [
+      [
+        "Ho un gatto.",
+        "",
+        ""
+      ],
+      [
+        "Hai una penna.",
+        "",
+        ""
+      ],
+      [
+        "Ha una bicicletta.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo tempo.",
+        "",
+        ""
+      ],
+      [
+        "Vi divertite.",
+        "",
+        ""
+      ],
+      [
+        "Hanno una casa.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_ho_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_hai_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_ha_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_abbiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avete_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_hanno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_ho_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_hai_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_ha_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_abbiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avete_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_hanno_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io avrò",
+      "tu avrai",
+      "lui/lei avrà",
+      "noi avremo",
+      "voi avrete",
+      "loro avranno"
+    ],
+    "examples": [
+      [
+        "Avrò una macchina.",
+        "",
+        ""
+      ],
+      [
+        "Avrai tempo.",
+        "",
+        ""
+      ],
+      [
+        "Avrà una bicicletta.",
+        "",
+        ""
+      ],
+      [
+        "Avremo momenti divertenti.",
+        "",
+        ""
+      ],
+      [
+        "Avrete una casa.",
+        "",
+        ""
+      ],
+      [
+        "Avranno tempo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_avro_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_avrai_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_avra_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_avremo_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avrete_m.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_avranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_have/audio_io_avro_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_tu_avrai_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_lui_lei_avra_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_noi_avremo_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_voi_avrete_f.mp3",
+        "audio/it/verbs/it_audio_to_have/audio_loro_avranno_f.mp3"
+      ]
+    ]
+  }
+}

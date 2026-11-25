@@ -1,0 +1,183 @@
+{
+  "infinitive": "cominciare",
+  "past": {
+    "translations": [
+      "io ho cominciato",
+      "tu hai cominciato",
+      "lui/lei ha cominciato",
+      "noi abbiamo cominciato",
+      "voi avete cominciato",
+      "loro hanno cominciato"
+    ],
+    "examples": [
+      [
+        "Ho cominciato il progetto.",
+        "",
+        ""
+      ],
+      [
+        "Hai cominciato la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Ha cominciato la gara.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo cominciato la festa.",
+        "",
+        ""
+      ],
+      [
+        "Avete cominciato la partita.",
+        "",
+        ""
+      ],
+      [
+        "Hanno cominciato il concerto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_ho_cominciato_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_hai_cominciato_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_ha_cominciato_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_abbiamo_cominciato_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_avete_cominciato_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_hanno_cominciato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_ho_cominciato_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_hai_cominciato_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_ha_cominciato_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_abbiamo_cominciato_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_avete_cominciato_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_hanno_cominciato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io comincio",
+      "tu cominci",
+      "lui/lei comincia",
+      "noi cominciamo",
+      "voi cominciate",
+      "loro cominciano"
+    ],
+    "examples": [
+      [
+        "Comincio il progetto.",
+        "",
+        ""
+      ],
+      [
+        "Cominci la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Comincia la gara.",
+        "",
+        ""
+      ],
+      [
+        "Cominciamo la festa.",
+        "",
+        ""
+      ],
+      [
+        "Cominciate la partita.",
+        "",
+        ""
+      ],
+      [
+        "Cominciano il concerto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_comincio_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_cominci_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_comincia_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_cominciamo_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_cominciate_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_cominciano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_comincio_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_cominci_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_comincia_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_cominciamo_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_cominciate_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_cominciano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io comincerò",
+      "tu comincerai",
+      "lui/lei comincerà",
+      "noi cominceremo",
+      "voi comincerete",
+      "loro cominceranno"
+    ],
+    "examples": [
+      [
+        "Comincerò il progetto.",
+        "",
+        ""
+      ],
+      [
+        "Comincerai la riunione.",
+        "",
+        ""
+      ],
+      [
+        "Comincerà la gara.",
+        "",
+        ""
+      ],
+      [
+        "Cominceremo la festa.",
+        "",
+        ""
+      ],
+      [
+        "Comincerete la partita.",
+        "",
+        ""
+      ],
+      [
+        "Cominceranno il concerto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_comincero_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_comincerai_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_comincera_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_cominceremo_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_comincerete_m.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_cominceranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_begin/audio_io_comincero_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_tu_comincerai_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_lui_lei_comincera_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_noi_cominceremo_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_voi_comincerete_f.mp3",
+        "audio/it/verbs/it_audio_to_begin/audio_loro_cominceranno_f.mp3"
+      ]
+    ]
+  }
+}

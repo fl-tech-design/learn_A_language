@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comecar/audio_eu_comecei_m.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecaste_m.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comecou_m.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecamos_m.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecastes_m.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecaram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comecei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comecou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecaram_m.mp3"
       ],
       [
-        "audio/pt/verben/comecar/audio_eu_comecei_f.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecaste_f.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comecou_f.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecamos_f.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecastes_f.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecaram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comecei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comecou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecaram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comecar/audio_eu_comeco_m.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecas_m.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comeca_m.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecamos_m.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecais_m.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comeco_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comeca_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecam_m.mp3"
       ],
       [
-        "audio/pt/verben/comecar/audio_eu_comeco_f.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecas_f.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comeca_f.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecamos_f.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecais_f.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comeco_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comeca_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecam_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comecar/audio_eu_comecarei_m.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecaras_m.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comecara_m.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecaremos_m.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecareis_m.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comecarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecaras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comecara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecaremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecarao_m.mp3"
       ],
       [
-        "audio/pt/verben/comecar/audio_eu_comecarei_f.mp3",
-        "audio/pt/verben/comecar/audio_tu_comecaras_f.mp3",
-        "audio/pt/verben/comecar/audio_ele_ela_comecara_f.mp3",
-        "audio/pt/verben/comecar/audio_nos_comecaremos_f.mp3",
-        "audio/pt/verben/comecar/audio_vos_comecareis_f.mp3",
-        "audio/pt/verben/comecar/audio_eles_elas_comecarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_begin/audio_eu_comecarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_tu_comecaras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_ele_ela_comecara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_nos_comecaremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_vos_comecareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_begin/audio_eles_elas_comecarao_f.mp3"
       ]
     ]
   }

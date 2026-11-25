@@ -1,0 +1,183 @@
+{
+  "infinitive": "mangiare",
+  "past": {
+    "translations": [
+      "io ho mangiato",
+      "tu hai mangiato",
+      "lui/lei ha mangiato",
+      "noi abbiamo mangiato",
+      "voi avete mangiato",
+      "loro hanno mangiato"
+    ],
+    "examples": [
+      [
+        "Ho fatto colazione.",
+        "",
+        ""
+      ],
+      [
+        "Hai pranzato.",
+        "",
+        ""
+      ],
+      [
+        "Ha cenato.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo mangiato insieme.",
+        "",
+        ""
+      ],
+      [
+        "Avete mangiato la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Hanno mangiato sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_ho_mangiato_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_hai_mangiato_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_ha_mangiato_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_abbiamo_mangiato_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_avete_mangiato_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_hanno_mangiato_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_ho_mangiato_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_hai_mangiato_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_ha_mangiato_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_abbiamo_mangiato_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_avete_mangiato_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_hanno_mangiato_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io mangio",
+      "tu mangi",
+      "lui/lei mangia",
+      "noi mangiamo",
+      "voi mangiate",
+      "loro mangiano"
+    ],
+    "examples": [
+      [
+        "Faccio colazione.",
+        "",
+        ""
+      ],
+      [
+        "Pranzi.",
+        "",
+        ""
+      ],
+      [
+        "Cena.",
+        "",
+        ""
+      ],
+      [
+        "Mangiamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Mangiate la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Mangiano sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_mangio_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_mangi_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_mangia_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_mangiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_mangiate_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_mangiano_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_mangio_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_mangi_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_mangia_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_mangiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_mangiate_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_mangiano_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io mangerò",
+      "tu mangerai",
+      "lui/lei mangerà",
+      "noi mangeremo",
+      "voi mangerete",
+      "loro mangeranno"
+    ],
+    "examples": [
+      [
+        "Farò colazione.",
+        "",
+        ""
+      ],
+      [
+        "Pranzerai.",
+        "",
+        ""
+      ],
+      [
+        "Cenerà.",
+        "",
+        ""
+      ],
+      [
+        "Mangeremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Mangerete la pizza.",
+        "",
+        ""
+      ],
+      [
+        "Mangeranno sushi.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_mangero_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_mangerai_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_mangera_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_mangeremo_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_mangerete_m.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_mangeranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_eat/audio_io_mangero_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_tu_mangerai_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_lui_lei_mangera_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_noi_mangeremo_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_voi_mangerete_f.mp3",
+        "audio/it/verbs/it_audio_to_eat/audio_loro_mangeranno_f.mp3"
+      ]
+    ]
+  }
+}

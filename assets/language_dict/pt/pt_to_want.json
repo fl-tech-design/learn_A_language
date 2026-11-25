@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/querer/audio_eu_quis_m.mp3",
-        "audio/pt/verben/querer/audio_tu_quiseste_m.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_quis_m.mp3",
-        "audio/pt/verben/querer/audio_nos_quisemos_m.mp3",
-        "audio/pt/verben/querer/audio_vos_quisestes_m.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_quiseram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_quiseste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_quis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_quisemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_quisestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_quiseram_m.mp3"
       ],
       [
-        "audio/pt/verben/querer/audio_eu_quis_f.mp3",
-        "audio/pt/verben/querer/audio_tu_quiseste_f.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_quis_f.mp3",
-        "audio/pt/verben/querer/audio_nos_quisemos_f.mp3",
-        "audio/pt/verben/querer/audio_vos_quisestes_f.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_quiseram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_quiseste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_quis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_quisemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_quisestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_quiseram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/querer/audio_eu_quero_m.mp3",
-        "audio/pt/verben/querer/audio_tu_queres_m.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_quer_m.mp3",
-        "audio/pt/verben/querer/audio_nos_queremos_m.mp3",
-        "audio/pt/verben/querer/audio_vos_quereis_m.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_querem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quero_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_queres_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_quer_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_queremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_quereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_querem_m.mp3"
       ],
       [
-        "audio/pt/verben/querer/audio_eu_quero_f.mp3",
-        "audio/pt/verben/querer/audio_tu_queres_f.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_quer_f.mp3",
-        "audio/pt/verben/querer/audio_nos_queremos_f.mp3",
-        "audio/pt/verben/querer/audio_vos_quereis_f.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_querem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quero_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_queres_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_quer_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_queremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_quereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_querem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/querer/audio_eu_quererei_m.mp3",
-        "audio/pt/verben/querer/audio_tu_quereras_m.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_querera_m.mp3",
-        "audio/pt/verben/querer/audio_nos_quereremos_m.mp3",
-        "audio/pt/verben/querer/audio_vos_querereis_m.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_quererao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quererei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_quereras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_querera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_quereremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_querereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_quererao_m.mp3"
       ],
       [
-        "audio/pt/verben/querer/audio_eu_quererei_f.mp3",
-        "audio/pt/verben/querer/audio_tu_quereras_f.mp3",
-        "audio/pt/verben/querer/audio_ele_ela_querera_f.mp3",
-        "audio/pt/verben/querer/audio_nos_quereremos_f.mp3",
-        "audio/pt/verben/querer/audio_vos_querereis_f.mp3",
-        "audio/pt/verben/querer/audio_eles_elas_quererao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_want/audio_eu_quererei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_tu_quereras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_ele_ela_querera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_nos_quereremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_vos_querereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_want/audio_eles_elas_quererao_f.mp3"
       ]
     ]
   }

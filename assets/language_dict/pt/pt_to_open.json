@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/abrir/audio_eu_abri_m.mp3",
-        "audio/pt/verben/abrir/audio_tu_abriste_m.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abriu_m.mp3",
-        "audio/pt/verben/abrir/audio_nos_abrimos_m.mp3",
-        "audio/pt/verben/abrir/audio_vos_abristes_m.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abriram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abri_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abriste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abriu_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abrimos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abristes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abriram_m.mp3"
       ],
       [
-        "audio/pt/verben/abrir/audio_eu_abri_f.mp3",
-        "audio/pt/verben/abrir/audio_tu_abriste_f.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abriu_f.mp3",
-        "audio/pt/verben/abrir/audio_nos_abrimos_f.mp3",
-        "audio/pt/verben/abrir/audio_vos_abristes_f.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abriram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abri_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abriste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abriu_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abrimos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abristes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abriram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/abrir/audio_eu_abro_m.mp3",
-        "audio/pt/verben/abrir/audio_tu_abres_m.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abre_m.mp3",
-        "audio/pt/verben/abrir/audio_nos_abrimos_m.mp3",
-        "audio/pt/verben/abrir/audio_vos_abris_m.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abrem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abro_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abres_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abre_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abrimos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abris_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abrem_m.mp3"
       ],
       [
-        "audio/pt/verben/abrir/audio_eu_abro_f.mp3",
-        "audio/pt/verben/abrir/audio_tu_abres_f.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abre_f.mp3",
-        "audio/pt/verben/abrir/audio_nos_abrimos_f.mp3",
-        "audio/pt/verben/abrir/audio_vos_abris_f.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abrem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abro_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abres_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abre_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abrimos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abris_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abrem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/abrir/audio_eu_abrirei_m.mp3",
-        "audio/pt/verben/abrir/audio_tu_abriras_m.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abrira_m.mp3",
-        "audio/pt/verben/abrir/audio_nos_abriremos_m.mp3",
-        "audio/pt/verben/abrir/audio_vos_abrireis_m.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abrirao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abrirei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abriras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abrira_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abriremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abrireis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abrirao_m.mp3"
       ],
       [
-        "audio/pt/verben/abrir/audio_eu_abrirei_f.mp3",
-        "audio/pt/verben/abrir/audio_tu_abriras_f.mp3",
-        "audio/pt/verben/abrir/audio_ele_ela_abrira_f.mp3",
-        "audio/pt/verben/abrir/audio_nos_abriremos_f.mp3",
-        "audio/pt/verben/abrir/audio_vos_abrireis_f.mp3",
-        "audio/pt/verben/abrir/audio_eles_elas_abrirao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_open/audio_eu_abrirei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_tu_abriras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_ele_ela_abrira_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_nos_abriremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_vos_abrireis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_open/audio_eles_elas_abrirao_f.mp3"
       ]
     ]
   }

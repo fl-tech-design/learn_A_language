@@ -1,0 +1,183 @@
+{
+  "infinitive": "scrivere",
+  "past": {
+    "translations": [
+      "io ho scritto",
+      "tu hai scritto",
+      "lui/lei ha scritto",
+      "noi abbiamo scritto",
+      "voi avete scritto",
+      "loro hanno scritto"
+    ],
+    "examples": [
+      [
+        "Ho scritto una lettera.",
+        "",
+        ""
+      ],
+      [
+        "Hai scritto una storia.",
+        "",
+        ""
+      ],
+      [
+        "Ha scritto una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo scritto un libro.",
+        "",
+        ""
+      ],
+      [
+        "Avete scritto una nota.",
+        "",
+        ""
+      ],
+      [
+        "Hanno scritto un rapporto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_ho_scritto_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_hai_scritto_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_ha_scritto_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_abbiamo_scritto_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_avete_scritto_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_hanno_scritto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_ho_scritto_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_hai_scritto_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_ha_scritto_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_abbiamo_scritto_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_avete_scritto_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_hanno_scritto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io scrivo",
+      "tu scrivi",
+      "lui/lei scrive",
+      "noi scriviamo",
+      "voi scrivete",
+      "loro scrivono"
+    ],
+    "examples": [
+      [
+        "Scrivo una lettera.",
+        "",
+        ""
+      ],
+      [
+        "Scrivi una storia.",
+        "",
+        ""
+      ],
+      [
+        "Scrive una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Scriviamo un libro.",
+        "",
+        ""
+      ],
+      [
+        "Scrivete una nota.",
+        "",
+        ""
+      ],
+      [
+        "Scrivono un rapporto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_scrivo_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_scrivi_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_scrive_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_scriviamo_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_scrivete_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_scrivono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_scrivo_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_scrivi_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_scrive_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_scriviamo_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_scrivete_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_scrivono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io scriverò",
+      "tu scriverai",
+      "lui/lei scriverà",
+      "noi scriveremo",
+      "voi scriverete",
+      "loro scriveranno"
+    ],
+    "examples": [
+      [
+        "Scriverò una lettera.",
+        "",
+        ""
+      ],
+      [
+        "Scriverai una storia.",
+        "",
+        ""
+      ],
+      [
+        "Scriverà una poesia.",
+        "",
+        ""
+      ],
+      [
+        "Scriveremo un libro.",
+        "",
+        ""
+      ],
+      [
+        "Scriverete una nota.",
+        "",
+        ""
+      ],
+      [
+        "Scriveranno un rapporto.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_scrivero_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_scriverai_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_scrivera_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_scriveremo_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_scriverete_m.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_scriveranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_write/audio_io_scrivero_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_tu_scriverai_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_lui_lei_scrivera_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_noi_scriveremo_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_voi_scriverete_f.mp3",
+        "audio/it/verbs/it_audio_to_write/audio_loro_scriveranno_f.mp3"
+      ]
+    ]
+  }
+}

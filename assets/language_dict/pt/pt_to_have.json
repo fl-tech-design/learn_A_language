@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ter/audio_eu_tive_m.mp3",
-        "audio/pt/verben/ter/audio_tu_tiveste_m.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_teve_m.mp3",
-        "audio/pt/verben/ter/audio_nos_tivemos_m.mp3",
-        "audio/pt/verben/ter/audio_vos_tivestes_m.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_tiveram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_tive_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_tiveste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_teve_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_tivemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tivestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_tiveram_m.mp3"
       ],
       [
-        "audio/pt/verben/ter/audio_eu_tive_f.mp3",
-        "audio/pt/verben/ter/audio_tu_tiveste_f.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_teve_f.mp3",
-        "audio/pt/verben/ter/audio_nos_tivemos_f.mp3",
-        "audio/pt/verben/ter/audio_vos_tivestes_f.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_tiveram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_tive_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_tiveste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_teve_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_tivemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tivestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_tiveram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ter/audio_eu_tenho_m.mp3",
-        "audio/pt/verben/ter/audio_tu_tens_m.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_tem_m.mp3",
-        "audio/pt/verben/ter/audio_nos_temos_m.mp3",
-        "audio/pt/verben/ter/audio_vos_tendes_m.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_tem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_tenho_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_tens_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_tem_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_temos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tendes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_tem_m.mp3"
       ],
       [
-        "audio/pt/verben/ter/audio_eu_tenho_f.mp3",
-        "audio/pt/verben/ter/audio_tu_tens_f.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_tem_f.mp3",
-        "audio/pt/verben/ter/audio_nos_temos_f.mp3",
-        "audio/pt/verben/ter/audio_vos_tendes_f.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_tem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_tenho_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_tens_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_tem_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_temos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tendes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_tem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ter/audio_eu_terei_m.mp3",
-        "audio/pt/verben/ter/audio_tu_teras_m.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_tera_m.mp3",
-        "audio/pt/verben/ter/audio_nos_teremos_m.mp3",
-        "audio/pt/verben/ter/audio_vos_tereis_m.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_terao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_terei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_teras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_tera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_teremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_terao_m.mp3"
       ],
       [
-        "audio/pt/verben/ter/audio_eu_terei_f.mp3",
-        "audio/pt/verben/ter/audio_tu_teras_f.mp3",
-        "audio/pt/verben/ter/audio_ele_ela_tera_f.mp3",
-        "audio/pt/verben/ter/audio_nos_teremos_f.mp3",
-        "audio/pt/verben/ter/audio_vos_tereis_f.mp3",
-        "audio/pt/verben/ter/audio_eles_elas_terao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_have/audio_eu_terei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_tu_teras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_ele_ela_tera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_nos_teremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_vos_tereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_have/audio_eles_elas_terao_f.mp3"
       ]
     ]
   }

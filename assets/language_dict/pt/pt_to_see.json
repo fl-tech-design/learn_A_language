@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ver/audio_eu_vi_m.mp3",
-        "audio/pt/verben/ver/audio_tu_viste_m.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_viu_m.mp3",
-        "audio/pt/verben/ver/audio_nos_vimos_m.mp3",
-        "audio/pt/verben/ver/audio_vos_vistes_m.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_viram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_vi_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_viste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_viu_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_vimos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vistes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_viram_m.mp3"
       ],
       [
-        "audio/pt/verben/ver/audio_eu_vi_f.mp3",
-        "audio/pt/verben/ver/audio_tu_viste_f.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_viu_f.mp3",
-        "audio/pt/verben/ver/audio_nos_vimos_f.mp3",
-        "audio/pt/verben/ver/audio_vos_vistes_f.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_viram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_vi_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_viste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_viu_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_vimos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vistes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_viram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ver/audio_eu_vejo_m.mp3",
-        "audio/pt/verben/ver/audio_tu_ves_m.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_ve_m.mp3",
-        "audio/pt/verben/ver/audio_nos_vemos_m.mp3",
-        "audio/pt/verben/ver/audio_vos_vedes_m.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_veem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_vejo_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_ves_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_ve_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_vemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vedes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_veem_m.mp3"
       ],
       [
-        "audio/pt/verben/ver/audio_eu_vejo_f.mp3",
-        "audio/pt/verben/ver/audio_tu_ves_f.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_ve_f.mp3",
-        "audio/pt/verben/ver/audio_nos_vemos_f.mp3",
-        "audio/pt/verben/ver/audio_vos_vedes_f.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_veem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_vejo_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_ves_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_ve_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_vemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vedes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_veem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/ver/audio_eu_verei_m.mp3",
-        "audio/pt/verben/ver/audio_tu_veras_m.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_vera_m.mp3",
-        "audio/pt/verben/ver/audio_nos_veremos_m.mp3",
-        "audio/pt/verben/ver/audio_vos_vereis_m.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_verao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_verei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_veras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_vera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_veremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_verao_m.mp3"
       ],
       [
-        "audio/pt/verben/ver/audio_eu_verei_f.mp3",
-        "audio/pt/verben/ver/audio_tu_veras_f.mp3",
-        "audio/pt/verben/ver/audio_ele_ela_vera_f.mp3",
-        "audio/pt/verben/ver/audio_nos_veremos_f.mp3",
-        "audio/pt/verben/ver/audio_vos_vereis_f.mp3",
-        "audio/pt/verben/ver/audio_eles_elas_verao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_see/audio_eu_verei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_tu_veras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_ele_ela_vera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_nos_veremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_vos_vereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_see/audio_eles_elas_verao_f.mp3"
       ]
     ]
   }

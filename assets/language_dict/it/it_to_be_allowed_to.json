@@ -1,0 +1,183 @@
+{
+  "infinitive": "potere",
+  "past": {
+    "translations": [
+      "io ho potuto",
+      "tu hai potuto",
+      "lui/lei ha potuto",
+      "noi abbiamo potuto",
+      "voi avete potuto",
+      "loro hanno potuto"
+    ],
+    "examples": [
+      [
+        "Ho potuto andare.",
+        "",
+        ""
+      ],
+      [
+        "Hai potuto restare.",
+        "",
+        ""
+      ],
+      [
+        "Ha potuto giocare.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo potuto andare.",
+        "",
+        ""
+      ],
+      [
+        "Avete potuto parlare.",
+        "",
+        ""
+      ],
+      [
+        "Hanno potuto ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_ho_potuto_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_hai_potuto_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_ha_potuto_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_abbiamo_potuto_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_avete_potuto_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_hanno_potuto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_ho_potuto_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_hai_potuto_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_ha_potuto_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_abbiamo_potuto_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_avete_potuto_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_hanno_potuto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io posso",
+      "tu puoi",
+      "lui/lei può",
+      "noi possiamo",
+      "voi potete",
+      "loro possono"
+    ],
+    "examples": [
+      [
+        "Posso andare.",
+        "",
+        ""
+      ],
+      [
+        "Puoi restare.",
+        "",
+        ""
+      ],
+      [
+        "Può giocare.",
+        "",
+        ""
+      ],
+      [
+        "Possiamo andare.",
+        "",
+        ""
+      ],
+      [
+        "Potete parlare.",
+        "",
+        ""
+      ],
+      [
+        "Possono ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_posso_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_puoi_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_puo_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_possiamo_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_potete_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_possono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_posso_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_puoi_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_puo_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_possiamo_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_potete_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_possono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io potrò",
+      "tu potrai",
+      "lui/lei potrà",
+      "noi potremo",
+      "voi potrete",
+      "loro potranno"
+    ],
+    "examples": [
+      [
+        "Potrò andare.",
+        "",
+        ""
+      ],
+      [
+        "Potrai restare.",
+        "",
+        ""
+      ],
+      [
+        "Potrà giocare.",
+        "",
+        ""
+      ],
+      [
+        "Potremo andare.",
+        "",
+        ""
+      ],
+      [
+        "Potrete parlare.",
+        "",
+        ""
+      ],
+      [
+        "Potranno ridere.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_potro_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_potrai_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_potra_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_potremo_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_potrete_m.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_potranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_io_potro_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_tu_potrai_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_lui_lei_potra_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_noi_potremo_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_voi_potrete_f.mp3",
+        "audio/it/verbs/it_audio_to_be_allowed_to/audio_loro_potranno_f.mp3"
+      ]
+    ]
+  }
+}

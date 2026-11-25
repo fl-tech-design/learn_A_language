@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comer/audio_eu_comi_m.mp3",
-        "audio/pt/verben/comer/audio_tu_comeste_m.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_comeu_m.mp3",
-        "audio/pt/verben/comer/audio_nos_comemos_m.mp3",
-        "audio/pt/verben/comer/audio_vos_comestes_m.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comeram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_comi_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comeste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_comeu_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comestes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comeram_m.mp3"
       ],
       [
-        "audio/pt/verben/comer/audio_eu_comi_f.mp3",
-        "audio/pt/verben/comer/audio_tu_comeste_f.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_comeu_f.mp3",
-        "audio/pt/verben/comer/audio_nos_comemos_f.mp3",
-        "audio/pt/verben/comer/audio_vos_comestes_f.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comeram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_comi_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comeste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_comeu_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comestes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comeram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comer/audio_eu_como_m.mp3",
-        "audio/pt/verben/comer/audio_tu_comes_m.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_come_m.mp3",
-        "audio/pt/verben/comer/audio_nos_comemos_m.mp3",
-        "audio/pt/verben/comer/audio_vos_comeis_m.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comem_m.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_como_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_come_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comeis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comem_m.mp3"
       ],
       [
-        "audio/pt/verben/comer/audio_eu_como_f.mp3",
-        "audio/pt/verben/comer/audio_tu_comes_f.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_come_f.mp3",
-        "audio/pt/verben/comer/audio_nos_comemos_f.mp3",
-        "audio/pt/verben/comer/audio_vos_comeis_f.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comem_f.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_como_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_come_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comeis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comem_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comer/audio_eu_comerei_m.mp3",
-        "audio/pt/verben/comer/audio_tu_comeras_m.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_comera_m.mp3",
-        "audio/pt/verben/comer/audio_nos_comeremos_m.mp3",
-        "audio/pt/verben/comer/audio_vos_comereis_m.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comerao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_comerei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comeras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_comera_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comeremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comereis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comerao_m.mp3"
       ],
       [
-        "audio/pt/verben/comer/audio_eu_comerei_f.mp3",
-        "audio/pt/verben/comer/audio_tu_comeras_f.mp3",
-        "audio/pt/verben/comer/audio_ele_ela_comera_f.mp3",
-        "audio/pt/verben/comer/audio_nos_comeremos_f.mp3",
-        "audio/pt/verben/comer/audio_vos_comereis_f.mp3",
-        "audio/pt/verben/comer/audio_eles_elas_comerao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_eat/audio_eu_comerei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_tu_comeras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_ele_ela_comera_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_nos_comeremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_vos_comereis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_eat/audio_eles_elas_comerao_f.mp3"
       ]
     ]
   }

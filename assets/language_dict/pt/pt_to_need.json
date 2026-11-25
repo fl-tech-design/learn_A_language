@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/precisar/audio_eu_precisei_m.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisaste_m.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisou_m.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisamos_m.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisastes_m.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisaram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_precisei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisaram_m.mp3"
       ],
       [
-        "audio/pt/verben/precisar/audio_eu_precisei_f.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisaste_f.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisou_f.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisamos_f.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisastes_f.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisaram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_precisei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisaram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/precisar/audio_eu_preciso_m.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisas_m.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisa_m.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisamos_m.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisais_m.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_preciso_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisa_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisam_m.mp3"
       ],
       [
-        "audio/pt/verben/precisar/audio_eu_preciso_f.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisas_f.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisa_f.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisamos_f.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisais_f.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_preciso_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisa_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisam_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/precisar/audio_eu_precisarei_m.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisaras_m.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisara_m.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisaremos_m.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisareis_m.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_precisarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisaras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisaremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisarao_m.mp3"
       ],
       [
-        "audio/pt/verben/precisar/audio_eu_precisarei_f.mp3",
-        "audio/pt/verben/precisar/audio_tu_precisaras_f.mp3",
-        "audio/pt/verben/precisar/audio_ele_ela_precisara_f.mp3",
-        "audio/pt/verben/precisar/audio_nos_precisaremos_f.mp3",
-        "audio/pt/verben/precisar/audio_vos_precisareis_f.mp3",
-        "audio/pt/verben/precisar/audio_eles_elas_precisarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_need/audio_eu_precisarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_tu_precisaras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_ele_ela_precisara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_nos_precisaremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_vos_precisareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_need/audio_eles_elas_precisarao_f.mp3"
       ]
     ]
   }

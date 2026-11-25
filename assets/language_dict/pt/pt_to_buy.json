@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comprar/audio_eu_comprei_m.mp3",
-        "audio/pt/verben/comprar/audio_tu_compraste_m.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_comprou_m.mp3",
-        "audio/pt/verben/comprar/audio_nos_compramos_m.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprastes_m.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_compraram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_comprei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compraste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_comprou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_compraram_m.mp3"
       ],
       [
-        "audio/pt/verben/comprar/audio_eu_comprei_f.mp3",
-        "audio/pt/verben/comprar/audio_tu_compraste_f.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_comprou_f.mp3",
-        "audio/pt/verben/comprar/audio_nos_compramos_f.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprastes_f.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_compraram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_comprei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compraste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_comprou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_compraram_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comprar/audio_eu_compro_m.mp3",
-        "audio/pt/verben/comprar/audio_tu_compras_m.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_compra_m.mp3",
-        "audio/pt/verben/comprar/audio_nos_compramos_m.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprais_m.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_compram_m.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_compro_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_compra_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compramos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_compram_m.mp3"
       ],
       [
-        "audio/pt/verben/comprar/audio_eu_compro_f.mp3",
-        "audio/pt/verben/comprar/audio_tu_compras_f.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_compra_f.mp3",
-        "audio/pt/verben/comprar/audio_nos_compramos_f.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprais_f.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_compram_f.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_compro_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_compra_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compramos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_compram_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/comprar/audio_eu_comprarei_m.mp3",
-        "audio/pt/verben/comprar/audio_tu_compraras_m.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_comprara_m.mp3",
-        "audio/pt/verben/comprar/audio_nos_compraremos_m.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprareis_m.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_comprarao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_comprarei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compraras_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_comprara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compraremos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_comprarao_m.mp3"
       ],
       [
-        "audio/pt/verben/comprar/audio_eu_comprarei_f.mp3",
-        "audio/pt/verben/comprar/audio_tu_compraras_f.mp3",
-        "audio/pt/verben/comprar/audio_ele_ela_comprara_f.mp3",
-        "audio/pt/verben/comprar/audio_nos_compraremos_f.mp3",
-        "audio/pt/verben/comprar/audio_vos_comprareis_f.mp3",
-        "audio/pt/verben/comprar/audio_eles_elas_comprarao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_buy/audio_eu_comprarei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_tu_compraras_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_ele_ela_comprara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_nos_compraremos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_vos_comprareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_buy/audio_eles_elas_comprarao_f.mp3"
       ]
     ]
   }

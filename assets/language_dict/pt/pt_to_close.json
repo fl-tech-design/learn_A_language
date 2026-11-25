@@ -43,20 +43,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fechar/audio_eu_fechei_m.mp3",
-        "audio/pt/verben/fechar/audio_tu_fechaste_m.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fechou_m.mp3",
-        "audio/pt/verben/fechar/audio_nos_fechamos_m.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechastes_m.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecharam_m.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fechei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fechaste_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fechou_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fechamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechastes_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecharam_m.mp3"
       ],
       [
-        "audio/pt/verben/fechar/audio_eu_fechei_f.mp3",
-        "audio/pt/verben/fechar/audio_tu_fechaste_f.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fechou_f.mp3",
-        "audio/pt/verben/fechar/audio_nos_fechamos_f.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechastes_f.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecharam_f.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fechei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fechaste_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fechou_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fechamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechastes_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecharam_f.mp3"
       ]
     ]
   },
@@ -103,20 +103,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fechar/audio_eu_fecho_m.mp3",
-        "audio/pt/verben/fechar/audio_tu_fechas_m.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fecha_m.mp3",
-        "audio/pt/verben/fechar/audio_nos_fechamos_m.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechais_m.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecham_m.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fecho_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fechas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fecha_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fechamos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechais_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecham_m.mp3"
       ],
       [
-        "audio/pt/verben/fechar/audio_eu_fecho_f.mp3",
-        "audio/pt/verben/fechar/audio_tu_fechas_f.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fecha_f.mp3",
-        "audio/pt/verben/fechar/audio_nos_fechamos_f.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechais_f.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecham_f.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fecho_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fechas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fecha_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fechamos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechais_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecham_f.mp3"
       ]
     ]
   },
@@ -163,20 +163,20 @@
     ],
     "audio": [
       [
-        "audio/pt/verben/fechar/audio_eu_fecharei_m.mp3",
-        "audio/pt/verben/fechar/audio_tu_fecharas_m.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fechara_m.mp3",
-        "audio/pt/verben/fechar/audio_nos_fecharemos_m.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechareis_m.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecharao_m.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fecharei_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fecharas_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fechara_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fecharemos_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechareis_m.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecharao_m.mp3"
       ],
       [
-        "audio/pt/verben/fechar/audio_eu_fecharei_f.mp3",
-        "audio/pt/verben/fechar/audio_tu_fecharas_f.mp3",
-        "audio/pt/verben/fechar/audio_ele_ela_fechara_f.mp3",
-        "audio/pt/verben/fechar/audio_nos_fecharemos_f.mp3",
-        "audio/pt/verben/fechar/audio_vos_fechareis_f.mp3",
-        "audio/pt/verben/fechar/audio_eles_elas_fecharao_f.mp3"
+        "audio/pt/verbs/pt_audio_to_close/audio_eu_fecharei_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_tu_fecharas_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_ele_ela_fechara_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_nos_fecharemos_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_vos_fechareis_f.mp3",
+        "audio/pt/verbs/pt_audio_to_close/audio_eles_elas_fecharao_f.mp3"
       ]
     ]
   }

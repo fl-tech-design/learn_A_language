@@ -1,0 +1,183 @@
+{
+  "infinitive": "bere",
+  "past": {
+    "translations": [
+      "io ho bevuto",
+      "tu hai bevuto",
+      "lui/lei ha bevuto",
+      "noi abbiamo bevuto",
+      "voi avete bevuto",
+      "loro hanno bevuto"
+    ],
+    "examples": [
+      [
+        "Ho bevuto acqua.",
+        "",
+        ""
+      ],
+      [
+        "Hai bevuto caffè.",
+        "",
+        ""
+      ],
+      [
+        "Ha bevuto tè.",
+        "",
+        ""
+      ],
+      [
+        "Abbiamo bevuto birra.",
+        "",
+        ""
+      ],
+      [
+        "Avete bevuto vino.",
+        "",
+        ""
+      ],
+      [
+        "Hanno bevuto succo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_ho_bevuto_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_hai_bevuto_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_ha_bevuto_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_abbiamo_bevuto_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_avete_bevuto_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_hanno_bevuto_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_ho_bevuto_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_hai_bevuto_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_ha_bevuto_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_abbiamo_bevuto_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_avete_bevuto_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_hanno_bevuto_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io bevo",
+      "tu bevi",
+      "lui/lei beve",
+      "noi beviamo",
+      "voi bevete",
+      "loro bevono"
+    ],
+    "examples": [
+      [
+        "Bevo acqua.",
+        "",
+        ""
+      ],
+      [
+        "Bevi caffè.",
+        "",
+        ""
+      ],
+      [
+        "Beve tè.",
+        "",
+        ""
+      ],
+      [
+        "Beviamo birra.",
+        "",
+        ""
+      ],
+      [
+        "Bevete vino.",
+        "",
+        ""
+      ],
+      [
+        "Bevono succo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_bevo_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_bevi_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_beve_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_beviamo_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_bevete_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_bevono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_bevo_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_bevi_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_beve_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_beviamo_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_bevete_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_bevono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io berrò",
+      "tu berrai",
+      "lui/lei berrà",
+      "noi berremo",
+      "voi berrete",
+      "loro berranno"
+    ],
+    "examples": [
+      [
+        "Berrò acqua.",
+        "",
+        ""
+      ],
+      [
+        "Berrai caffè.",
+        "",
+        ""
+      ],
+      [
+        "Berrà tè.",
+        "",
+        ""
+      ],
+      [
+        "Berremo birra.",
+        "",
+        ""
+      ],
+      [
+        "Berrete vino.",
+        "",
+        ""
+      ],
+      [
+        "Berranno succo.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_berro_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_berrai_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_berra_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_berremo_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_berrete_m.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_berranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_drink/audio_io_berro_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_tu_berrai_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_lui_lei_berra_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_noi_berremo_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_voi_berrete_f.mp3",
+        "audio/it/verbs/it_audio_to_drink/audio_loro_berranno_f.mp3"
+      ]
+    ]
+  }
+}

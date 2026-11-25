@@ -1,0 +1,183 @@
+{
+  "infinitive": "venire",
+  "past": {
+    "translations": [
+      "io sono venuto",
+      "tu sei venuto",
+      "lui/lei è venuto/a",
+      "noi siamo venuti",
+      "voi siete venuti",
+      "loro sono venuti/e"
+    ],
+    "examples": [
+      [
+        "Sono venuto a casa.",
+        "",
+        ""
+      ],
+      [
+        "Sei arrivato tardi.",
+        "",
+        ""
+      ],
+      [
+        "È venuto alla festa.",
+        "",
+        ""
+      ],
+      [
+        "Siamo venuti insieme.",
+        "",
+        ""
+      ],
+      [
+        "Siete arrivati presto.",
+        "",
+        ""
+      ],
+      [
+        "Sono venuti alla riunione.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_sono_venuto_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_sei_venuto_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_e_venuto_a_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_siamo_venuti_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_siete_venuti_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_sono_venuti_e_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_sono_venuto_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_sei_venuto_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_e_venuto_a_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_siamo_venuti_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_siete_venuti_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_sono_venuti_e_f.mp3"
+      ]
+    ]
+  },
+  "present": {
+    "translations": [
+      "io vengo",
+      "tu vieni",
+      "lui/lei viene",
+      "noi veniamo",
+      "voi venite",
+      "loro vengono"
+    ],
+    "examples": [
+      [
+        "Vengo a casa.",
+        "",
+        ""
+      ],
+      [
+        "Vieni tardi.",
+        "",
+        ""
+      ],
+      [
+        "Viene alla festa.",
+        "",
+        ""
+      ],
+      [
+        "Veniamo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Venite presto.",
+        "",
+        ""
+      ],
+      [
+        "Vengono alla riunione.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_vengo_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_vieni_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_viene_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_veniamo_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_venite_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_vengono_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_vengo_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_vieni_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_viene_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_veniamo_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_venite_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_vengono_f.mp3"
+      ]
+    ]
+  },
+  "future": {
+    "translations": [
+      "io verrò",
+      "tu verrai",
+      "lui/lei verrà",
+      "noi verremo",
+      "voi verrete",
+      "loro verranno"
+    ],
+    "examples": [
+      [
+        "Verrò a casa.",
+        "",
+        ""
+      ],
+      [
+        "Verrai tardi.",
+        "",
+        ""
+      ],
+      [
+        "Verrà alla festa.",
+        "",
+        ""
+      ],
+      [
+        "Verremo insieme.",
+        "",
+        ""
+      ],
+      [
+        "Verrete presto.",
+        "",
+        ""
+      ],
+      [
+        "Verranno alla riunione.",
+        "",
+        ""
+      ]
+    ],
+    "audio": [
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_verro_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_verrai_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_verra_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_verremo_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_verrete_m.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_verranno_m.mp3"
+      ],
+      [
+        "audio/it/verbs/it_audio_to_come/audio_io_verro_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_tu_verrai_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_lui_lei_verra_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_noi_verremo_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_voi_verrete_f.mp3",
+        "audio/it/verbs/it_audio_to_come/audio_loro_verranno_f.mp3"
+      ]
+    ]
+  }
+}
