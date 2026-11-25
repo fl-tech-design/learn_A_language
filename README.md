@@ -3,7 +3,7 @@
 A powerful, **offline** language learning app with **no ads**.
 This project is a complete migration of a previously Python/Kivy-based app to **Flutter (Dart)**, optimized for Android and Linux Desktop.
 
-**[Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Русский](README_ru.md)**
+**[Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
 ## Key Features
 
@@ -31,6 +31,32 @@ lib/
 ├── main.dart            # App entry point
 ├── managers/            # Business logic (AppState, User, Vocab, Language)
 ├── screens/             # UI views (Loading, Start, Learning, Settings, etc.)
+│   ├── loading_screen.dart            # Splash/loading screen with async init & auto-login
+│   ├── start_screen.dart              # Main menu / start page
+│   ├── category_screen.dart           # Sub-category with learning modes (New/Due/Learned)
+│   ├── collection_screen.dart         # Collection view listing its sub-categories
+│   ├── learning_screen.dart           # Learning category selection
+│   ├── word_screen.dart               # Word flash-cards (display & answer check)
+│   ├── due_word_screen.dart           # Due-word review (spaced repetition)
+│   ├── progress_screen.dart           # Progress overview (read-only collections)
+│   ├── progress_group_screen.dart     # Read-only word table per category with level badges
+│   ├── settings_screen.dart           # Settings (auto-login, words per session, users)
+│   ├── game_choose_screen.dart        # "Choose game" hub
+│   ├── game_screen.dart               # Turbo quiz game (lives, score, timer)
+│   ├── turbo_lv_select_screen.dart    # Turbo difficulty selection
+│   ├── grammar_screen.dart            # Grammar topic list (optional CEFR level filter)
+│   ├── grammar_detail_screen.dart     # Detail view of a single grammar topic
+│   ├── crossword_screen.dart          # Crossword game screen
+│   ├── crossword_lv_select_screen.dart# Crossword difficulty selection
+│   ├── fill_in_screen.dart            # Fill-in-the-blank game (sentences with gaps)
+│   ├── fill_in_lv_select_screen.dart  # Fill-in difficulty selection
+│   ├── hangman_screen.dart            # Hangman game screen
+│   ├── hangman_lv_select_screen.dart  # Hangman difficulty selection
+│   ├── word_search_screen.dart        # Word-search puzzle screen
+│   ├── crossword_engine.dart          # Crossword logic (pure Dart, no Flutter)
+│   ├── fill_in_engine.dart            # Fill-in logic (pure Dart, no Flutter)
+│   ├── hangman_engine.dart            # Hangman logic (pure Dart, no Flutter)
+│   └── word_search_engine.dart        # Word-search grid logic (pure Dart, no Flutter)
 ├── services/            # Services (e.g. FileService for JSON persistence)
 ├── models/              # Data models
 ├── widgets/             # Reusable UI components

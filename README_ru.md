@@ -3,7 +3,7 @@
 Мощное приложение для изучения языков, работающее **офлайн** и **без рекламы**.
 Этот проект представляет собой полную миграцию приложения, ранее разработанного на Python/Kivy, на **Flutter (Dart)**, оптимизированную для Android и Linux Desktop.
 
-**[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md)**
+**[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
 ## Основные функции
 
@@ -31,6 +31,32 @@ lib/
 ├── main.dart            # Точка входа приложения
 ├── managers/            # Бизнес-логика (AppState, User, Vocab, Language)
 ├── screens/             # Экранные представления (Loading, Start, Learning, Settings и т.д.)
+│   ├── loading_screen.dart            # Экран загрузки с асинхронной инициализацией и авто-входом
+│   ├── start_screen.dart              # Главное меню / стартовая страница
+│   ├── category_screen.dart           # Подкатегория с режимами (Новые/Нужные/Выученные)
+│   ├── collection_screen.dart         # Коллекция с её подкатегориями
+│   ├── learning_screen.dart           # Выбор категорий для изучения
+│   ├── word_screen.dart               # Карточки слов (показ и проверка ответа)
+│   ├── due_word_screen.dart           # Повторение нужных слов (интервальное повторение)
+│   ├── progress_screen.dart           # Обзор прогресса (коллекции только для чтения)
+│   ├── progress_group_screen.dart     # Таблица только для чтения по категории с уровнями
+│   ├── settings_screen.dart           # Настройки (авто-вход, слов за сеанс, пользователи)
+│   ├── game_choose_screen.dart        # Центр «Выбор игры»
+│   ├── game_screen.dart               # Игра-викторина Turbo (жизни, очки, таймер)
+│   ├── turbo_lv_select_screen.dart    # Выбор сложности Turbo
+│   ├── grammar_screen.dart            # Список тем грамматики (фильтр по уровню, необязательно)
+│   ├── grammar_detail_screen.dart     # Детальный просмотр темы грамматики
+│   ├── crossword_screen.dart          # Экран игры «Кроссворд»
+│   ├── crossword_lv_select_screen.dart# Выбор сложности кроссворда
+│   ├── fill_in_screen.dart            # Игра «Заполни пропуск» (предложения с пропусками)
+│   ├── fill_in_lv_select_screen.dart  # Выбор сложности «Заполни пропуск»
+│   ├── hangman_screen.dart            # Игра «Виселица»
+│   ├── hangman_lv_select_screen.dart  # Выбор сложности «Виселица»
+│   ├── word_search_screen.dart        # Игра «Поиск слов»
+│   ├── crossword_engine.dart          # Логика кроссворда (чистый Dart, без Flutter)
+│   ├── fill_in_engine.dart            # Логика «Заполни пропуск» (чистый Dart, без Flutter)
+│   ├── hangman_engine.dart            # Логика «Виселицы» (чистый Dart, без Flutter)
+│   └── word_search_engine.dart        # Логика сетки «Поиск слов» (чистый Dart, без Flutter)
 ├── services/            # Сервисы (напр. FileService для JSON-персистентности)
 ├── models/              # Модели данных
 ├── widgets/             # Повторно используемые компоненты интерфейса

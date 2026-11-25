@@ -3,7 +3,7 @@
 Una potente aplicación de aprendizaje de idiomas **sin conexión** y **sin anuncios**.
 Este proyecto es una migración completa de una aplicación previamente desarrollada en Python/Kivy a **Flutter (Dart)**, optimizada para Android y Linux Desktop.
 
-**[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Русский](README_ru.md)**
+**[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
 ## Funciones principales
 
@@ -31,6 +31,32 @@ lib/
 ├── main.dart            # Punto de entrada de la aplicación
 ├── managers/            # Lógica de negocio (AppState, User, Vocab, Language)
 ├── screens/             # Vistas de la interfaz (Loading, Start, Learning, Settings, etc.)
+│   ├── loading_screen.dart            # Pantalla de carga con inicialización asíncrona y auto-login
+│   ├── start_screen.dart              # Menú principal / página de inicio
+│   ├── category_screen.dart           # Subcategoría con modos de aprendizaje (Nuevas/Pendientes/Aprendidas)
+│   ├── collection_screen.dart         # Colección que muestra sus subcategorías
+│   ├── learning_screen.dart           # Selección de categorías de aprendizaje
+│   ├── word_screen.dart               # Tarjetas de palabras (visualización y comprobación)
+│   ├── due_word_screen.dart           # Repaso de palabras pendientes (repetición espaciada)
+│   ├── progress_screen.dart           # Resumen de progreso (colecciones de solo lectura)
+│   ├── progress_group_screen.dart     # Tabla de solo lectura por categoría con insignias de nivel
+│   ├── settings_screen.dart           # Ajustes (auto-login, palabras por sesión, usuarios)
+│   ├── game_choose_screen.dart        # Centro «Elegir juego»
+│   ├── game_screen.dart               # Juego de preguntas Turbo (vidas, puntos, temporizador)
+│   ├── turbo_lv_select_screen.dart    # Selección de dificultad Turbo
+│   ├── grammar_screen.dart            # Lista de temas de gramática (filtro opcional por nivel)
+│   ├── grammar_detail_screen.dart     # Vista de detalle de un tema de gramática
+│   ├── crossword_screen.dart          # Pantalla del juego de crucigrama
+│   ├── crossword_lv_select_screen.dart# Selección de dificultad del crucigrama
+│   ├── fill_in_screen.dart            # Juego de completar huecos (frases con huecos)
+│   ├── fill_in_lv_select_screen.dart  # Selección de dificultad de completar huecos
+│   ├── hangman_screen.dart            # Juego del ahorcado
+│   ├── hangman_lv_select_screen.dart  # Selección de dificultad del ahorcado
+│   ├── word_search_screen.dart        # Juego de sopa de letras
+│   ├── crossword_engine.dart          # Lógica del crucigrama (Dart puro, sin Flutter)
+│   ├── fill_in_engine.dart            # Lógica de completar huecos (Dart puro, sin Flutter)
+│   ├── hangman_engine.dart            # Lógica del ahorcado (Dart puro, sin Flutter)
+│   └── word_search_engine.dart        # Lógica de sopa de letras (Dart puro, sin Flutter)
 ├── services/            # Servicios (p. ej. FileService para persistencia JSON)
 ├── models/              # Modelos de datos
 ├── widgets/             # Componentes de UI reutilizables
