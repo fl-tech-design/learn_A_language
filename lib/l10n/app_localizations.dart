@@ -602,12 +602,6 @@ abstract class AppLocalizations {
   /// **'If you remove this course, all related learning progress will be deleted.\n\nContinue?'**
   String get msgRemoveCourse;
 
-  /// No description provided for @msgWordLearned.
-  ///
-  /// In en, this message translates to:
-  /// **'Word learned! (Level 8 reached)'**
-  String get msgWordLearned;
-
   /// No description provided for @myCourses.
   ///
   /// In en, this message translates to:

@@ -262,9 +262,6 @@ class AppLocalizationsIt extends AppLocalizations {
       'Se rimuovi questo corso, tutti i progressi di apprendimento correlati verranno eliminati.\n\nContinuare?';
 
   @override
-  String get msgWordLearned => 'Parola appresa! (Livello 8 raggiunto)';
-
-  @override
   String get myCourses => 'Le mie lingue';
 
   @override

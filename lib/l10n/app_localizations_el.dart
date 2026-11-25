@@ -262,9 +262,6 @@ class AppLocalizationsEl extends AppLocalizations {
       'Εάν αφαιρέσετε αυτό το μάθημα, όλη η σχετική πρόοδος μάθησης θα διαγραφεί.\n\nΣυνέχεια;';
 
   @override
-  String get msgWordLearned => 'Η λέξη μάθεται! (Επίπεδο 8 επιτεύχθηκε)';
-
-  @override
   String get myCourses => 'Οι γλώσσες μου';
 
   @override

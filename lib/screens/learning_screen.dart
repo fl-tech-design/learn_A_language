@@ -17,7 +17,7 @@ import 'progress_screen.dart'
 ///
 /// Zeigt die Lern-Sammlungen ("Erste Verben" direkt lernbar, "Weitere Verben"
 /// mit 5 Unterkategorien) sowie den Ordner "Gelernte Wörter" mit allen fertig
-/// gelernten Wörtern (Level 8). Ein Tipp öffnet den Kategorie- bzw.
+/// gelernten Wörtern (maxLevel). Ein Tipp öffnet den Kategorie- bzw.
 /// Sammlungs-Screen. In jeder Kategorie gibt es die Modi Neue/Fällige/Gelesene
 /// Wörter – jeweils nur mit den Daten dieser Kategorie.
 class LearningScreen extends StatefulWidget {
@@ -103,7 +103,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     }
   }
 
-  /// Anzahl aller fertig gelernten Wörter (Level 8) über alle Kategorien.
+  /// Anzahl aller fertig gelernten Wörter (maxLevel) über alle Kategorien.
   int get _learnedAllCount {
     var l = 0;
     for (final c in _counts.values) {
@@ -112,7 +112,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     return l;
   }
 
-  /// Öffnet den Ordner „Gelernte Wörter": alle Level-8-Wörter als Karten.
+  /// Öffnet den Ordner „Gelernte Wörter": alle auf maxLevel gelernten Karten.
   void _openLearnedWords() {
     if (_learnedAllCount == 0) return;
     final nav = context.read<NavigationState>();
@@ -121,7 +121,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     Navigator.of(context).pushNamed(AppRoutes.word);
   }
 
-  /// Ordner-Button für alle fertig gelernten Wörter (Level 8).
+  /// Ordner-Button für alle fertig gelernten Wörter (maxLevel).
   Widget _learnedWordsButton() {
     final l10n = AppLocalizations.of(context);
     final count = _learnedAllCount;

@@ -263,9 +263,6 @@ class AppLocalizationsRu extends AppLocalizations {
       'Если вы удалите этот курс, весь связанный прогресс обучения будет удалён.\n\nПродолжить?';
 
   @override
-  String get msgWordLearned => 'Слово изучено! (Достигнут уровень 8)';
-
-  @override
   String get myCourses => 'Мои языки';
 
   @override

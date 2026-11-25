@@ -19,8 +19,8 @@ import 'progress_screen.dart' show wordCategoryTitle;
 /// Anzeige im Stil einer Exceltabelle: pro Verb ein Abschnitt, darunter die
 /// 18 konjugierten Formen (3 Zeitformen x 6 Personen), je Zeile das Wort der
 /// Lernsprache und rechts ein farbiger Level-Kreis:
-/// grau = Level 0 (neu), farbig = Level 1-7 (in Arbeit), gruen = Level 8
-/// (gelernt, abgehakt).
+/// grau = Level 0 (neu), farbig = Level 1-(maxLevel-1) (in Arbeit),
+/// gruen = maxLevel (gelernt, abgehakt).
 class ProgressGroupScreen extends StatefulWidget {
   const ProgressGroupScreen({super.key});
 

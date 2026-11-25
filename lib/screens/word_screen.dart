@@ -77,7 +77,7 @@ class _WordScreenState extends State<WordScreen> {
           ? await vq.getGroupReadWords(uname, cat, langCode: _lang)
           : await vq.getReadWords(uname, langCode: _lang);
     } else {
-      // Ordner „Gelernte Wörter": alle fertig gelernten Karten (Level 8).
+      // Ordner „Gelernte Wörter": alle auf maxLevel gelernten Karten.
       final cat = _categoryById(navState.selectedCategoryId);
       words = cat != null
           ? await vq.getGroupLearnedWords(uname, cat, langCode: _lang)

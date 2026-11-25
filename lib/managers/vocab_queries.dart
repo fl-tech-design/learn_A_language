@@ -151,7 +151,7 @@ class VocabQueriesImpl implements VocabQueries {
       {String langCode = 'de'}) async {
     final ud = await _loadSafe(username);
     if (ud == null) return [];
-    // „Gelernte Wörter": fertig gelernt (Level 8) – über alle Kategorien.
+    // „Gelernte Wörter": fertig gelernt (maxLevel) – über alle Kategorien.
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     return vocab.values
         .where((ve) => VocabManager.isMastered(ve.level))

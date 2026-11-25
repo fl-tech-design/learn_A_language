@@ -264,9 +264,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Wenn du den Kurs entfernst, werden alle zugehörigen Lernfortschritte gelöscht.\n\nFortfahren?';
 
   @override
-  String get msgWordLearned => 'Wort gelernt! (Level 8 erreicht)';
-
-  @override
   String get myCourses => 'Meine Sprachen';
 
   @override
