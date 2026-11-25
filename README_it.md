@@ -5,6 +5,16 @@ Questo progetto è la migrazione completa di un'app precedentemente sviluppata i
 
 **[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Português](README_pt.md)**
 
+## Stato attuale
+
+| Componente | Valore |
+|---|---|
+| Hash di commit | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Branch | `main` |
+| Data | 25.11.2026 |
+
+> Questa sezione viene aggiornata a ogni modifica rilevante (ad es., prima dei report di analisi) affinché lo stato documentato del codice resti riproducibile (Ticket #57).
+
 ## Caratteristiche principali
 
 - **100% Offline e senza pubblicità**: Tutti i dati sono salvati localmente sul dispositivo. Nessun tracker, nessuna pubblicità, nessuna dipendenza esterna per le funzionalità principali.

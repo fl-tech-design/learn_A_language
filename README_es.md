@@ -5,6 +5,16 @@ Este proyecto es una migración completa de una aplicación previamente desarrol
 
 **[English](README.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
+## Estado actual
+
+| Componente | Valor |
+|---|---|
+| Hash de commit | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Rama | `main` |
+| Fecha | 25.11.2026 |
+
+> Esta sección se actualiza con cada cambio relevante (p. ej., antes de los informes de análisis) para que el estado documentado del código siga siendo reproducible (Ticket #57).
+
 ## Funciones principales
 
 - **100% Offline y sin anuncios**: Todos los datos se almacenan localmente en el dispositivo. Sin rastreadores, sin anuncios, sin dependencias externas para la funcionalidad principal.

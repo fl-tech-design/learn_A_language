@@ -5,6 +5,16 @@ This project is a complete migration of a previously Python/Kivy-based app to **
 
 **[Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
+## Current Status
+
+| Component | Value |
+|---|---|
+| Commit-Hash | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Branch | `main` |
+| Date | 25.11.2026 |
+
+> This section is updated with every relevant change (e.g., before analysis reports) so that the documented code state remains reproducible (Ticket #57).
+
 ## Key Features
 
 - **100% Offline & Ad-Free**: All data is stored locally on the device. No trackers, no ads, no external dependencies for core functionality.

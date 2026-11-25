@@ -5,6 +5,16 @@ Dieses Projekt ist eine vollständige Migration einer zuvor in Python/Kivy entwi
 
 **[English](README.md) | [Français](README_fr.md) | [Español](README_es.md) | [Русский](README_ru.md) | [Ελληνικά](README_el.md) | [Italiano](README_it.md) | [Português](README_pt.md)**
 
+## Aktueller Stand
+
+| Komponente | Wert |
+|---|---|
+| Commit-Hash | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Branch | `main` |
+| Datum | 25.11.2026 |
+
+> Dieser Abschnitt wird bei jeder relevanten Änderung (z. B. vor Analyse-Berichten) aktualisiert, damit der dokumentierte Code-Stand reproduzierbar bleibt (Ticket #57).
+
 ## Hauptfunktionen
 
 - **100% Offline & Werbefrei**: Alle Daten werden lokal auf dem Gerät gespeichert. Keine Tracker, keine Werbung, keine externen Abhängigkeiten für den Kernbetrieb.
