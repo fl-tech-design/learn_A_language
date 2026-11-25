@@ -93,7 +93,7 @@ class VocabQueriesImpl implements VocabQueries {
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
 
     for (final ve in vocab.values) {
-      if (ve.level == 8) continue;
+      if (VocabManager.isMastered(ve.level)) continue;
       if (ve.status == 'new') continue;
 
       final reviewDueStr = ve.reviewDue;
@@ -129,7 +129,7 @@ class VocabQueriesImpl implements VocabQueries {
     if (ud == null) return [];
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     final newWords = vocab.values
-        .where((ve) => ve.level == 0 && ve.status == 'new')
+        .where((ve) => VocabManager.isNew(ve.level) && ve.status == 'new')
         .toList();
     final start = offset.clamp(0, newWords.length);
     final end = (offset + limit).clamp(0, newWords.length);
@@ -153,7 +153,9 @@ class VocabQueriesImpl implements VocabQueries {
     if (ud == null) return [];
     // „Gelernte Wörter": fertig gelernt (Level 8) – über alle Kategorien.
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
-    return vocab.values.where((ve) => ve.level >= 8).toList();
+    return vocab.values
+        .where((ve) => VocabManager.isMastered(ve.level))
+        .toList();
   }
 
   @override
@@ -199,7 +201,7 @@ class VocabQueriesImpl implements VocabQueries {
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     final newWords = vocab.values
         .where((ve) =>
-            ve.level == 0 &&
+            VocabManager.isNew(ve.level) &&
             ve.status == 'new' &&
             category.containsEntryKey(ve.key))
         .toList();
@@ -234,11 +236,11 @@ class VocabQueriesImpl implements VocabQueries {
         if (!cat.containsEntryKey(ve.key)) continue;
         total++;
         if (ve.status == 'seen') read++;
-        if (ve.level >= 8) {
+        if (VocabManager.isMastered(ve.level)) {
           learned++;
           continue;
         }
-        if (ve.level == 0 && ve.status == 'new') {
+        if (VocabManager.isNew(ve.level) && ve.status == 'new') {
           newC++;
           continue;
         }
@@ -268,8 +270,8 @@ class VocabQueriesImpl implements VocabQueries {
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     for (final ve in vocab.values) {
       if (!category.containsEntryKey(ve.key)) continue;
-      if (ve.level >= 8) continue;
-      if (ve.level == 0 && ve.status == 'new') {
+      if (VocabManager.isMastered(ve.level)) continue;
+      if (VocabManager.isNew(ve.level) && ve.status == 'new') {
         fresh.add(ve);
         continue;
       }
@@ -293,7 +295,7 @@ class VocabQueriesImpl implements VocabQueries {
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     for (final ve in vocab.values) {
       if (!category.containsEntryKey(ve.key)) continue;
-      if (ve.level == 8) continue;
+      if (VocabManager.isMastered(ve.level)) continue;
       if (ve.status == 'new') continue;
       if (_isDue(ve, today)) due.add(ve);
     }
@@ -308,7 +310,9 @@ class VocabQueriesImpl implements VocabQueries {
     if (ud == null) return [];
     final vocab = ud.vocabByLang[langCode] ?? const <String, VocabEntry>{};
     final learned = vocab.values
-        .where((ve) => ve.level >= 8 && category.containsEntryKey(ve.key))
+        .where((ve) =>
+            VocabManager.isMastered(ve.level) &&
+            category.containsEntryKey(ve.key))
         .toList();
     learned.sort((a, b) => _compareEntries(category, a, b));
     return learned;
@@ -376,10 +380,12 @@ class VocabQueriesImpl implements VocabQueries {
         ? (ud.vocabByLang[langCode] ?? const <String, VocabEntry>{}).values
         : ud.vocabByLang.values.expand((m) => m.values);
     for (final ve in values) {
-      if (ve.level == 0 && ve.status == 'new') newCount++;
+      if (VocabManager.isNew(ve.level) && ve.status == 'new') newCount++;
       if (ve.status == 'seen') readCount++;
-      if (ve.level >= 8) learnedCount++;
-      if (ve.level != 8 && ve.status != 'new' && _isDue(ve, today)) {
+      if (VocabManager.isMastered(ve.level)) learnedCount++;
+      if (!VocabManager.isMastered(ve.level) &&
+          ve.status != 'new' &&
+          _isDue(ve, today)) {
         dueCount++;
       }
     }
@@ -473,20 +479,20 @@ class VocabQueriesImpl implements VocabQueries {
     final isCorrect = userClean == correctClean;
 
     if (isCorrect) {
-      final newLevel = (currentLevel + 1).clamp(0, 8);
+      final newLevel = (currentLevel + 1).clamp(0, VocabManager.maxLevel);
       final now = DateTime.now();
       final statusChanged = currentStatus == 'new';
-      final newReviewDue = newLevel < 8
-          ? fmt(now.add(
-              Duration(days: VocabManager.repeatIntervalDays[newLevel] ?? 1)))
-          : null;
+      final newReviewDue = VocabManager.isMastered(newLevel)
+          ? null
+          : fmt(now.add(Duration(
+              days: VocabManager.intervalDaysFor(newLevel) ?? 1)));
 
       final updated = ve.copyWith(
         level: newLevel,
         status: statusChanged ? 'seen' : null,
         lastReviewed: now.toIso8601String(),
         reviewDue: newReviewDue,
-        clearReviewDue: newLevel >= 8,
+        clearReviewDue: VocabManager.isMastered(newLevel),
       );
 
       final newVocab = Map<String, VocabEntry>.from(vocab);
@@ -514,8 +520,8 @@ class VocabQueriesImpl implements VocabQueries {
         correct: true,
         correctWord: correctTranslation,
         newLevel: newLevel,
-        message: newLevel == 8
-            ? 'Ausgezeichnet! Wort gelernt (Level 8).'
+        message: VocabManager.isMastered(newLevel)
+            ? 'Ausgezeichnet! Wort gelernt (Level ${VocabManager.maxLevel}).'
             : 'Richtig! Gut gemacht.',
         statusChanged: statusChanged,
       );

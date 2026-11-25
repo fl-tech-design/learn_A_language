@@ -8,9 +8,27 @@ import 'user_manager.dart';
 /// Vocabulary management — interface extracted from the former static
 /// VocabManager class (point2, Commit A).
 abstract class VocabManager {
-  static const Map<int, int?> repeatIntervalDays = {
-    1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: null,
-  };
+  /// Einzige Stelle der Level-Semantik (Ticket #51): [maxLevel] und darüber
+  /// gilt ein Wort als gelernt. Ein künftiges Stufen-Schema (z. B. 1–10)
+  /// erfordert nur eine Änderung an dieser Konstante – keine Magic-Numbers.
+  static const int maxLevel = 8;
+
+  /// Level 0 = neues, noch nie gelesenes Wort.
+  static bool isNew(int level) => level <= 0;
+
+  /// Level im Bereich 1..(maxLevel-1) = „in Arbeit" (wird wiederholt).
+  static bool isInProgress(int level) => level >= 1 && level < maxLevel;
+
+  /// [maxLevel] und darüber = Wort ist gelernt (kein Intervall mehr).
+  static bool isMastered(int level) => level >= maxLevel;
+
+  /// Tages-Intervall der Spaced Repetition für [level]; `null` bedeutet
+  /// „kein Intervall" (neu, gelernt oder definitiv ungültig) – Aufrufer
+  /// behandeln das mit Default/Guard, statt auf eine flache Map zu zugreifen.
+  static int? intervalDaysFor(int level) {
+    if (level < 1 || level >= maxLevel) return null;
+    return level; // linear 1..(maxLevel-1)
+  }
 
   Future<Map<String, dynamic>> loadLanguageDictFromDir(String langCode);
   List<LangDictWord> extractAllWordsFromLanguageDict(
@@ -283,7 +301,7 @@ class VocabManagerImpl implements VocabManager {
       var ve = vocabMap[key]!;
 
       // status based on level (only if still default 'new')
-      if (ve.level > 0 && ve.status == 'new') {
+      if (!VocabManager.isNew(ve.level) && ve.status == 'new') {
         ve = ve.copyWith(status: 'seen');
         changed = true;
       }
@@ -334,12 +352,12 @@ class VocabManagerImpl implements VocabManager {
     // Pass 2: recalculate review_due for seen words
     for (final key in vocabMap.keys.toList()) {
       final ve = vocabMap[key]!;
-      if (ve.status != 'seen' || ve.level < 1 || ve.level >= 8) continue;
+      if (ve.status != 'seen' || !VocabManager.isInProgress(ve.level)) continue;
       if (ve.lastReviewed == null || ve.lastReviewed!.isEmpty) continue;
       final lastReviewed = DateTime.tryParse(ve.lastReviewed!);
       if (lastReviewed == null) continue;
 
-      final days = VocabManager.repeatIntervalDays[ve.level];
+      final days = VocabManager.intervalDaysFor(ve.level);
       if (days == null) continue;
       final due = lastReviewed.add(Duration(days: days));
       final newDue =

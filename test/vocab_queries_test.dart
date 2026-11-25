@@ -256,6 +256,37 @@ void main() {
       expect(saved.vocabByLang['de']!['haus']!.level, 8);
       expect(saved.vocabByLang['de']!['haus']!.reviewDue, isNull);
     });
+
+    test('Level 8 bleibt 8 und defektes Level 9 wird als gelernt gekappt',
+        () async {
+      final fake = FakeUserManager();
+      fake.seed(
+        'alice',
+        _userData('alice', {
+          'learned': _vocab('learned',
+              level: 8, status: 'seen', translation: 'gelernt'),
+          'corrupt9': _vocab('corrupt9',
+              level: 9, status: 'seen', translation: 'kaputt'),
+        }),
+      );
+
+      final queries = VocabQueriesImpl(fake);
+
+      final r8 = await queries.checkWordAnswer('alice', 'learned', 'gelernt');
+      expect(r8.correct, true);
+      expect(r8.newLevel, 8);
+      expect(r8.message, contains('Ausgezeichnet'));
+      final saved8 = fake.lastSaved!.vocabByLang['de']!['learned']!;
+      expect(saved8.level, 8);
+      expect(saved8.reviewDue, isNull);
+
+      final r9 = await queries.checkWordAnswer('alice', 'corrupt9', 'kaputt');
+      expect(r9.correct, true);
+      expect(r9.newLevel, 8);
+      final saved9 = fake.lastSaved!.vocabByLang['de']!['corrupt9']!;
+      expect(saved9.level, 8);
+      expect(saved9.reviewDue, isNull);
+    });
   });
 
   group('checkWordAnswer – falsch / unbekannt', () {

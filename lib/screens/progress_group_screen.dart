@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/user_state.dart';
+import '../managers/vocab_manager.dart';
 import '../managers/vocab_queries.dart' show VocabQueries;
 import '../models/app_models.dart';
 import '../models/language_registry.dart';
@@ -118,9 +119,11 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
 
   Widget _buildList(
       AppLocalizations l10n, WordCategory category, List<VocabEntry> entries) {
-    final learned = entries.where((e) => e.level >= 8).length;
-    final inProgress = entries.where((e) => e.level >= 1 && e.level < 8).length;
-    final newCount = entries.where((e) => e.level == 0).length;
+    final learned =
+        entries.where((e) => VocabManager.isMastered(e.level)).length;
+    final inProgress =
+        entries.where((e) => VocabManager.isInProgress(e.level)).length;
+    final newCount = entries.where((e) => VocabManager.isNew(e.level)).length;
 
     final byVerb = <String, Map<String, List<VocabEntry>>>{};
     for (final e in entries) {
@@ -278,7 +281,7 @@ class _LevelCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mastered = level >= 8;
+    final mastered = VocabManager.isMastered(level);
     final color = _levelColor(level);
     return Tooltip(
       message: 'Level $level',
@@ -293,7 +296,7 @@ class _LevelCircle extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: level == 0 ? Colors.white : Colors.black,
+                  color: VocabManager.isNew(level) ? Colors.white : Colors.black,
                 )),
       ),
     );
