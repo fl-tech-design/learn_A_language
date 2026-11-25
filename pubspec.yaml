@@ -16,6 +16,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.3
+  http: ^1.6.0
+  archive: ^4.7.1
+  crypto: ^3.0.8
 dev_dependencies:
   flutter_test:
     sdk: flutter

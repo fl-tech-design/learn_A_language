@@ -14,6 +14,7 @@ import 'managers/vocab_queries.dart';
 import 'managers/user_manager.dart';
 import 'services/file_service.dart';
 import 'services/audio_service.dart';
+import 'services/pack_manager.dart';
 import 'theme/app_theme.dart';
 import 'widgets/app_widgets.dart';
 import 'routes.dart';
@@ -46,6 +47,7 @@ void main() {
   final userState =
       UserState(userManager: userManager, vocabManager: vocabManager);
   final audioService = AudioService(fileService: fileService);
+  final packManager = PackManagerImpl(fileService: fileService);
 
   // Persistiert die zuletzt geöffnete Seite, damit die App nach einem
   // Android-Prozess-Kill („Alle Apps schliessen“) dort weitermacht.
@@ -60,6 +62,7 @@ void main() {
       Provider<VocabQueries>.value(value: vocabQueries),
       Provider<GrammarManager>.value(value: grammarManager),
       Provider<AudioService>.value(value: audioService),
+      Provider<PackManager>.value(value: packManager),
       Provider<SessionManager>.value(value: sessionManager),
       ChangeNotifierProvider.value(value: dataState),
       ChangeNotifierProvider.value(value: navigationState),
