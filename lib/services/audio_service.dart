@@ -25,8 +25,9 @@ class AudioService {
   /// TTS-Ausgaben nicht „zu schnell“ wirken.
   static const double normalTempo = 0.98;
 
-  /// Langsames Abspieltempo für den Slow-Button (Anfänger-Modus, Ticket #32).
-  static const double slowTempo = 0.8;
+  /// Langsames Abspieltempo für den Slow-Button (Anfänger-Modus, Ticket #32,
+  /// angepasst auf 0.65 in Ticket #62: spürbar langsamer, aber nicht verzerrt).
+  static const double slowTempo = 0.65;
 
   final FileService _fileService;
   final Random _random = Random();

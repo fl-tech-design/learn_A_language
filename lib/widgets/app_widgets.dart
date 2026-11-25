@@ -231,7 +231,7 @@ class FlagBox extends StatelessWidget {
 /// Aussprache-Buttons (Replay + Slow) für Wort-Screens.
 ///
 /// Beide Buttons nutzen das gleiche Speaker-Icon; der Slow-Button trägt
-/// zusätzlich das Tempo-Label (z. B. „0.8×“) inline im Icon, damit
+/// zusätzlich das Tempo-Label (z. B. „0.65×“) inline im Icon, damit
 /// langsameres Anhören für Anfänger direkt erkennbar ist (Ticket #32).
 class PlaybackButtons extends StatelessWidget {
   final VoidCallback onPlay;
@@ -252,7 +252,7 @@ class PlaybackButtons extends StatelessWidget {
         const SizedBox(width: 18),
         _speakerButton(
           onPressed: onSlow,
-          label: '${AudioService.slowTempo.toStringAsFixed(1)}×',
+          label: '${AudioService.slowTempo.toStringAsFixed(2)}×',
         ),
       ],
     );
