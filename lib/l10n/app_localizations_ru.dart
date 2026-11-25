@@ -522,4 +522,32 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get motherTongueHint =>
       'Задаёт направление перевода (слово и перевод) для всех выбранных языков курса.';
+
+  @override
+  String get packInstall => 'Установить';
+
+  @override
+  String get packUninstall => 'Удалить';
+
+  @override
+  String get packInstallHint =>
+      'Сначала установите языковой пакет, чтобы начать обучение.';
+
+  @override
+  String packInstallFailed(String reason) {
+    return 'Не удалось установить языковой пакет: $reason';
+  }
+
+  @override
+  String packUninstallFailed(String reason) {
+    return 'Не удалось удалить языковой пакет: $reason';
+  }
+
+  @override
+  String get packUninstallTitle => 'Удалить языковой пакет';
+
+  @override
+  String packUninstallMsg(String language) {
+    return 'Удалить языковой пакет для $language? Ваш прогресс сохранится.';
+  }
 }

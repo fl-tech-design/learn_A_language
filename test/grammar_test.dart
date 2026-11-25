@@ -104,16 +104,18 @@ void main() {
 
   group('GrammarManagerImpl', () {
     test('lädt und cached das Dokument', () async {
-      final fs = FakeFileService(bundled: {
-        'schema_version': '9.9.9',
-        'content_version': '123',
-        'framework': 'CEFR',
-        'levels': ['A1'],
-        'direction': {'l1': 'de', 'l2': 'en'},
-        'ui_languages': ['de'],
-        'levels_info': const [],
-        'categories': const [],
-        'blocks': const [],
+      final fs = FakeFileService(store: {
+        'grammar/grammar_de/grammar_de_en.json': {
+          'schema_version': '9.9.9',
+          'content_version': '123',
+          'framework': 'CEFR',
+          'levels': ['A1'],
+          'direction': {'l1': 'de', 'l2': 'en'},
+          'ui_languages': ['de'],
+          'levels_info': const [],
+          'categories': const [],
+          'blocks': const [],
+        },
       });
       final mgr = GrammarManagerImpl(fs);
 
@@ -123,7 +125,6 @@ void main() {
       expect(first.schemaVersion, '9.9.9');
       expect(first.direction['l2'], 'en');
       expect(identical(first, second), isTrue);
-      expect(fs.bundledLoadCount, 1);
     });
   });
 }

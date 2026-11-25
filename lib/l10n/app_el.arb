@@ -191,5 +191,33 @@
   "french": "Γαλλικά",
   "russian": "Ρωσικά",
   "greek": "Ελληνικά",
-  "motherTongueHint": "Καθορίζει την κατεύθυνση μετάφρασης (λέξη και μετάφραση) για όλες τις επιλεγμένες γλώσσες μαθημάτων."
+  "motherTongueHint": "Καθορίζει την κατεύθυνση μετάφρασης (λέξη και μετάφραση) για όλες τις επιλεγμένες γλώσσες μαθημάτων.",
+  "packInstall": "Εγκατάσταση",
+  "packUninstall": "Απεγκατάσταση",
+  "packInstallHint": "Εγκαταστήστε πρώτα ένα γλωσσικό πακέτο για να ξεκινήσετε την εκμάθηση.",
+  "packInstallFailed": "Δεν ήταν δυνατή η εγκατάσταση του γλωσσικού πακέτου: {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Δεν ήταν δυνατή η απεγκατάσταση του γλωσσικού πακέτου: {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Απεγκατάσταση γλωσσικού πακέτου",
+  "packUninstallMsg": "Να γίνει απεγκατάσταση του γλωσσικού πακέτου για {language}; Η πρόοδός σας διατηρείται.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -521,4 +521,32 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get motherTongueHint =>
       'Καθορίζει την κατεύθυνση μετάφρασης (λέξη και μετάφραση) για όλες τις επιλεγμένες γλώσσες μαθημάτων.';
+
+  @override
+  String get packInstall => 'Εγκατάσταση';
+
+  @override
+  String get packUninstall => 'Απεγκατάσταση';
+
+  @override
+  String get packInstallHint =>
+      'Εγκαταστήστε πρώτα ένα γλωσσικό πακέτο για να ξεκινήσετε την εκμάθηση.';
+
+  @override
+  String packInstallFailed(String reason) {
+    return 'Δεν ήταν δυνατή η εγκατάσταση του γλωσσικού πακέτου: $reason';
+  }
+
+  @override
+  String packUninstallFailed(String reason) {
+    return 'Δεν ήταν δυνατή η απεγκατάσταση του γλωσσικού πακέτου: $reason';
+  }
+
+  @override
+  String get packUninstallTitle => 'Απεγκατάσταση γλωσσικού πακέτου';
+
+  @override
+  String packUninstallMsg(String language) {
+    return 'Να γίνει απεγκατάσταση του γλωσσικού πακέτου για $language; Η πρόοδός σας διατηρείται.';
+  }
 }

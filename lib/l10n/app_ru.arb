@@ -191,5 +191,33 @@
   "french": "Французский",
   "russian": "Русский",
   "greek": "Греческий",
-  "motherTongueHint": "Задаёт направление перевода (слово и перевод) для всех выбранных языков курса."
+  "motherTongueHint": "Задаёт направление перевода (слово и перевод) для всех выбранных языков курса.",
+  "packInstall": "Установить",
+  "packUninstall": "Удалить",
+  "packInstallHint": "Сначала установите языковой пакет, чтобы начать обучение.",
+  "packInstallFailed": "Не удалось установить языковой пакет: {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Не удалось удалить языковой пакет: {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Удалить языковой пакет",
+  "packUninstallMsg": "Удалить языковой пакет для {language}? Ваш прогресс сохранится.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }

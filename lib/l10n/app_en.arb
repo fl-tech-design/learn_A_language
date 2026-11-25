@@ -191,5 +191,33 @@
   "french": "French",
   "russian": "Russian",
   "greek": "Greek",
-  "motherTongueHint": "Sets the translation direction (word and translation) for all selected course languages."
+  "motherTongueHint": "Sets the translation direction (word and translation) for all selected course languages.",
+  "packInstall": "Install",
+  "packUninstall": "Uninstall",
+  "packInstallHint": "Please install a language pack first to start learning.",
+  "packInstallFailed": "Could not install language pack: {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Could not uninstall language pack: {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Uninstall language pack",
+  "packUninstallMsg": "Uninstall the language pack for {language}? Your learning progress is kept.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }

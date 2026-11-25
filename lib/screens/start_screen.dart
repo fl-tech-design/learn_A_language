@@ -9,6 +9,7 @@ import '../managers/data_state.dart';
 import '../managers/navigation_state.dart';
 import '../managers/vocab_queries.dart';
 import '../widgets/app_widgets.dart';
+import '../services/pack_manager.dart';
 import '../dialogs/login_dialog.dart';
 import '../dialogs/create_user_dialog.dart';
 import '../dialogs/info_dialog.dart';
@@ -28,6 +29,13 @@ class _StartScreenState extends State<StartScreen> {
   final Set<String> _expandedMyLanguages = {};
   final Set<String> _expandedNewLanguages = {};
 
+  /// Installierte Sprachpakete (Marker-basiert, über den PackManager).
+  Set<String> _installedPacks = {};
+  bool _packsLoaded = false;
+
+  /// Sprache, deren Paket gerade installiert/deinstalliert wird (Spinner).
+  String? _busyPackCode;
+
   /// Lokalisiertes Label für einen Registry-labelKey über `AppLocalizations`.
   static String _langLabel(AppLocalizations l10n, String labelKey) =>
       switch (labelKey) {
@@ -44,6 +52,17 @@ class _StartScreenState extends State<StartScreen> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     _checkUser();
+    if (!_packsLoaded) {
+      _packsLoaded = true;
+      _loadInstalledPacks();
+    }
+  }
+
+  /// Lädt die installierten Sprachpakete (Marker-basiert, ohne Netzwerk).
+  Future<void> _loadInstalledPacks() async {
+    final packs = await context.read<PackManager>().installedPacks();
+    if (!mounted) return;
+    setState(() => _installedPacks = packs);
   }
 
   void _checkUser() {
@@ -63,6 +82,85 @@ class _StartScreenState extends State<StartScreen> {
     } else {
       _checked = true;
     }
+  }
+
+  /// Installiert das Sprachpaket für [code]: Download → SHA-256-Prüfung →
+  /// Entpacken (PackManager). Danach werden Kurs-Katalog und Muttersprachen
+  /// neu erkannt.
+  Future<void> _installPack(String code) async {
+    if (_busyPackCode != null) return;
+    setState(() => _busyPackCode = code);
+    final l10n = AppLocalizations.of(context);
+    final packManager = context.read<PackManager>();
+    final dataState = context.read<DataState>();
+    final message = '${l10n.packInstall}: ${courseLanguageName(code)}';
+    try {
+      await packManager.install(code);
+      await _loadInstalledPacks();
+      await dataState.refreshLanguages();
+      if (mounted) _showSnack(message);
+    } on PackException catch (e) {
+      final errorText = l10n.packInstallFailed(e.toString());
+      if (mounted) _showSnack(errorText);
+    } finally {
+      if (mounted) setState(() => _busyPackCode = null);
+    }
+  }
+
+  /// Deinstalliert das Sprachpaket für [code] nach Bestätigung.
+  Future<void> _uninstallPack(String code) async {
+    if (_busyPackCode != null) return;
+    final l10n = AppLocalizations.of(context);
+    final packManager = context.read<PackManager>();
+    final dataState = context.read<DataState>();
+    final message = '${l10n.packUninstall}: ${courseLanguageName(code)}';
+    final confirmed = await showConfirmDialog(
+      context,
+      title: l10n.packUninstallTitle,
+      message: l10n.packUninstallMsg(courseLanguageName(code)),
+      confirmText: l10n.confirm,
+      cancelText: l10n.chancel,
+    );
+    if (confirmed != true || !mounted) return;
+    setState(() => _busyPackCode = code);
+    try {
+      await packManager.uninstall(code);
+      await _loadInstalledPacks();
+      await dataState.refreshLanguages();
+      if (mounted) _showSnack(message);
+    } on PackException catch (e) {
+      final errorText = l10n.packUninstallFailed(e.toString());
+      if (mounted) _showSnack(errorText);
+    } finally {
+      if (mounted) setState(() => _busyPackCode = null);
+    }
+  }
+
+  /// Hinweis-Banner für den Erststart: noch kein Sprachpaket installiert.
+  Widget _packHintBanner() {
+    final l10n = AppLocalizations.of(context);
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        border: Border.all(color: AppTheme.colorPrimary),
+        borderRadius: BorderRadius.circular(6),
+        color: AppTheme.colorPrimary.withValues(alpha: 0.15),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.download, color: AppTheme.colorPrimary, size: 20),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              l10n.packInstallHint,
+              style: const TextStyle(
+                  fontSize: AppTheme.smallFontSize, color: Colors.white),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _showLogin() async {
@@ -161,6 +259,9 @@ class _StartScreenState extends State<StartScreen> {
     final newCourses = userState.availableNewCourses;
     final selectedCourse =
         _selectedCourseId != null ? availableCourses[_selectedCourseId] : null;
+    // Alle potenziellen Kurssprachen (inkl. noch nicht installierter Packs).
+    final allLangCodes = List<String>.of(courseCandidateCodes)
+      ..sort((a, b) => courseLanguageName(a).compareTo(courseLanguageName(b)));
 
     return Scaffold(
       body: Column(
@@ -190,6 +291,11 @@ class _StartScreenState extends State<StartScreen> {
                             child: _UserInfoBox(),
                           ),
                         const SizedBox(height: 16),
+                        // ── Erststart-Hinweis: noch kein Sprachpaket ──
+                        if (_packsLoaded && _installedPacks.isEmpty) ...[
+                          _packHintBanner(),
+                          const SizedBox(height: AppTheme.contentSpacing),
+                        ],
                         // ── Course detail or Meine Kurse + Neue Kurse ──
                         if (selectedCourse != null)
                           _CourseDetailView(
@@ -221,6 +327,9 @@ class _StartScreenState extends State<StartScreen> {
                             // ── Neue Kurse ──
                             _NewLanguagesSection(
                               courses: newCourses,
+                              allLangCodes: allLangCodes,
+                              installedCodes: _installedPacks,
+                              busyCode: _busyPackCode,
                               expandedLanguages: _expandedNewLanguages,
                               onAdd: (id) async {
                                 await userState.addCourse(id);
@@ -231,6 +340,8 @@ class _StartScreenState extends State<StartScreen> {
                                   _expandedNewLanguages.remove(code);
                                 }
                               }),
+                              onInstall: _installPack,
+                              onUninstall: _uninstallPack,
                             ),
                           ] else ...[
                             // Landscape: UserInfoBox + Meine Kurse + Neue
@@ -270,6 +381,9 @@ class _StartScreenState extends State<StartScreen> {
                                   flex: 5,
                                   child: _NewLanguagesSection(
                                     courses: newCourses,
+                                    allLangCodes: allLangCodes,
+                                    installedCodes: _installedPacks,
+                                    busyCode: _busyPackCode,
                                     expandedLanguages: _expandedNewLanguages,
                                     onAdd: (id) async {
                                       await userState.addCourse(id);
@@ -280,6 +394,8 @@ class _StartScreenState extends State<StartScreen> {
                                         _expandedNewLanguages.remove(code);
                                       }
                                     }),
+                                    onInstall: _installPack,
+                                    onUninstall: _uninstallPack,
                                   ),
                                 ),
                               ],
@@ -717,32 +833,30 @@ class _CourseDetailView extends StatelessWidget {
 /// Section showing available new language courses, grouped by language with foldable levels.
 class _NewLanguagesSection extends StatelessWidget {
   final List<LanguageCourse> courses;
+  final List<String> allLangCodes;
+  final Set<String> installedCodes;
+  final String? busyCode;
   final Set<String> expandedLanguages;
   final ValueChanged<String> onAdd;
   final ValueChanged<String> onToggleLanguage;
+  final ValueChanged<String> onInstall;
+  final ValueChanged<String> onUninstall;
 
   const _NewLanguagesSection({
     required this.courses,
+    required this.allLangCodes,
+    required this.installedCodes,
+    this.busyCode,
     required this.expandedLanguages,
     required this.onAdd,
     required this.onToggleLanguage,
+    required this.onInstall,
+    required this.onUninstall,
   });
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    if (courses.isEmpty) {
-      return Container(
-        padding: const EdgeInsets.all(12),
-        decoration: BoxDecoration(
-          border: Border.all(color: AppTheme.grey3),
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: Text(l10n.noNewLang,
-            style: const TextStyle(
-                fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
-      );
-    }
     final grouped = _groupByLanguage(courses);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -751,80 +865,147 @@ class _NewLanguagesSection extends StatelessWidget {
             style: const TextStyle(
                 fontSize: AppTheme.lblFontSize, color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
-        ...grouped.entries.map((entry) {
-          final code = entry.key;
-          final langCourses = entry.value;
-          final expanded = expandedLanguages.contains(code);
-          final first = langCourses.first;
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Column(children: [
-              // ── Language header ──
-              GestureDetector(
-                onTap: () => onToggleLanguage(code),
+        // Pro Kurssprache: nicht installiert → Install-Zeile, installiert →
+        // aufklappbare Kurs-Gruppe.
+        for (final code in allLangCodes)
+          if (!installedCodes.contains(code))
+            _notInstalledRow(context, code)
+          else if (grouped.containsKey(code))
+            _languageGroup(context, code, grouped[code]!),
+      ],
+    );
+  }
+
+  /// Zeile für eine Sprache ohne installiertes Sprachpaket (Install-Button).
+  Widget _notInstalledRow(BuildContext context, String code) {
+    final l10n = AppLocalizations.of(context);
+    final busy = busyCode == code;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          border: Border.all(color: AppTheme.grey3),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        padding: const EdgeInsets.all(10),
+        child: Row(children: [
+          Image.asset(courseFlagAsset(code), width: 32, height: 20),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(courseLanguageName(code),
+                style: const TextStyle(
+                    fontSize: AppTheme.infFontSize, color: Colors.white)),
+          ),
+          if (busy)
+            const SizedBox(
+                width: 18,
+                height: 18,
+                child: CircularProgressIndicator(strokeWidth: 2))
+          else
+            OutlinedButton(
+              onPressed: () => onInstall(code),
+              style: OutlinedButton.styleFrom(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                minimumSize: const Size(0, 30),
+                side: const BorderSide(color: AppTheme.colorPrimary),
+                foregroundColor: AppTheme.colorPrimary,
+              ),
+              child: Text(l10n.packInstall,
+                  style: const TextStyle(fontSize: AppTheme.smallFontSize)),
+            ),
+        ]),
+      ),
+    );
+  }
+
+  /// Sprachgruppe einer installierten Sprache: Header mit Deinstall-Icon und
+  /// aufklappbare Kurs-Levels.
+  Widget _languageGroup(BuildContext context, String code,
+      List<LanguageCourse> langCourses) {
+    final l10n = AppLocalizations.of(context);
+    final expanded = expandedLanguages.contains(code);
+    final first = langCourses.first;
+    final busy = busyCode == code;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Column(children: [
+        // ── Language header ──
+        GestureDetector(
+          onTap: () => onToggleLanguage(code),
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              border: Border.all(color: AppTheme.grey3),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            padding: const EdgeInsets.all(10),
+            child: Row(children: [
+              Image.asset(first.flagAsset, width: 32, height: 20),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  first.languageName,
+                  style: const TextStyle(
+                      fontSize: AppTheme.infFontSize, color: Colors.white),
+                ),
+              ),
+              if (busy)
+                const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(strokeWidth: 2))
+              else
+                IconButton(
+                  onPressed: () => onUninstall(code),
+                  icon: const Icon(Icons.delete_outline,
+                      color: AppTheme.grey4, size: 20),
+                  padding: EdgeInsets.zero,
+                  constraints:
+                      const BoxConstraints(minWidth: 28, minHeight: 28),
+                  tooltip: l10n.packUninstall,
+                ),
+              if (expanded)
+                const Icon(Icons.expand_more, color: AppTheme.grey4, size: 20),
+              if (!expanded)
+                const Icon(Icons.chevron_right,
+                    color: AppTheme.grey4, size: 20),
+            ]),
+          ),
+        ),
+        // ── Sub-levels (only when expanded) ──
+        if (expanded) ...[
+          const SizedBox(height: 4),
+          ...langCourses.map((c) {
+            return Padding(
+              padding: const EdgeInsets.only(left: 16, bottom: 6),
+              child: GestureDetector(
+                onTap: () => onAdd(c.id),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
                     border: Border.all(color: AppTheme.grey3),
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(4),
                   ),
-                  padding: const EdgeInsets.all(10),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 6, horizontal: 8),
                   child: Row(children: [
-                    Image.asset(first.flagAsset, width: 32, height: 20),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        first.languageName,
-                        style: const TextStyle(
-                            fontSize: AppTheme.infFontSize,
-                            color: Colors.white),
-                      ),
+                    Text(
+                      c.level,
+                      style: const TextStyle(
+                          fontSize: AppTheme.infFontSize, color: Colors.white),
                     ),
-                    if (expanded)
-                      const Icon(Icons.expand_more,
-                          color: AppTheme.grey4, size: 20),
-                    if (!expanded)
-                      const Icon(Icons.chevron_right,
-                          color: AppTheme.grey4, size: 20),
+                    const Expanded(child: SizedBox.shrink()),
+                    const Icon(Icons.add_circle_outline,
+                        color: AppTheme.colorPrimary, size: 18),
                   ]),
                 ),
               ),
-              // ── Sub-levels (only when expanded) ──
-              if (expanded) ...[
-                const SizedBox(height: 4),
-                ...langCourses.map((c) {
-                  return Padding(
-                    padding: const EdgeInsets.only(left: 16, bottom: 6),
-                    child: GestureDetector(
-                      onTap: () => onAdd(c.id),
-                      child: Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          border: Border.all(color: AppTheme.grey3),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 6, horizontal: 8),
-                        child: Row(children: [
-                          Text(
-                            c.level,
-                            style: const TextStyle(
-                                fontSize: AppTheme.infFontSize,
-                                color: Colors.white),
-                          ),
-                          const Expanded(child: SizedBox.shrink()),
-                          const Icon(Icons.add_circle_outline,
-                              color: AppTheme.colorPrimary, size: 18),
-                        ]),
-                      ),
-                    ),
-                  );
-                }),
-              ],
-            ]),
-          );
-        }),
-      ],
+            );
+          }),
+        ],
+      ]),
     );
   }
 

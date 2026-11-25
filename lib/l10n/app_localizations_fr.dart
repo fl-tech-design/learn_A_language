@@ -522,4 +522,32 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get motherTongueHint =>
       'Définit la direction de traduction (mot et traduction) pour toutes les langues de cours sélectionnées.';
+
+  @override
+  String get packInstall => 'Installer';
+
+  @override
+  String get packUninstall => 'Désinstaller';
+
+  @override
+  String get packInstallHint =>
+      'Installez d\'abord un pack de langue pour commencer à apprendre.';
+
+  @override
+  String packInstallFailed(String reason) {
+    return 'Impossible d\'installer le pack de langue : $reason';
+  }
+
+  @override
+  String packUninstallFailed(String reason) {
+    return 'Impossible de désinstaller le pack de langue : $reason';
+  }
+
+  @override
+  String get packUninstallTitle => 'Désinstaller le pack de langue';
+
+  @override
+  String packUninstallMsg(String language) {
+    return 'Désinstaller le pack de langue pour $language ? Votre progression est conservée.';
+  }
 }

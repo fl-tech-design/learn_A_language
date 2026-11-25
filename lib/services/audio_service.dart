@@ -10,8 +10,10 @@ import 'file_service.dart';
 /// unter dem Schlüssel `audio`: ein Array aus ZWEI parallel gefüllten Listen
 /// (Index 0 = Stimme m, Index 1 = Stimme f), je 6 Einträge in
 /// Konjugationsreihenfolge – identisch zur `translations`-Liste. Die Pfade sind
-/// assets-relativ (z. B. `audio/de/verbs/de_audio_to_work/audio_ich_arbeite_m.mp3`) und
-/// werden direkt an [AssetSource] übergeben; audioplayers ergänzt `assets/`.
+/// relativ zum App-Datenverzeichnis (z. B. `audio/de/verbs/de_audio_to_work/audio_ich_arbeite_m.mp3`)
+/// und werden über [DeviceFileSource] direkt vom App-Speicher abgespielt.
+/// Die Wörterbücher werden ebenfalls aus dem App-Speicher geladen
+/// (installierte Sprachpakete, Ticket #68).
 ///
 /// Die Zielsprache wird NICHT mehr aus der Muttersprache abgeleitet: [langCode]
 /// kommt vom Kurs-Kontext und bestimmt, welche Wörterbuch-JSON (und damit
@@ -41,8 +43,14 @@ class AudioService {
     final cacheKey = '$lang/$verbKey';
     final cached = _verbCache[cacheKey];
     if (cached != null) return cached;
-    final data = await _fileService
-        .loadBundledJson('assets/language_dict/$lang/${lang}_$verbKey.json');
+    Map<String, dynamic> data;
+    try {
+      data = await _fileService
+          .loadJson('language_dict/$lang/${lang}_$verbKey.json');
+    } catch (e) {
+      // Nicht installiertes Paket/korrupte Datei -> Stille statt Fehler.
+      data = const {};
+    }
     _verbCache[cacheKey] = data;
     return data;
   }
@@ -57,7 +65,8 @@ class AudioService {
     return '';
   }
 
-  /// Liefert die assets-relativen Pfade beider Stimmen (m, f) zum Eintrag.
+  /// Liefert die app-verzeichnis-relativen Pfade beider Stimmen (m, f) zum
+  /// Eintrag.
   ///
   /// Rückgabe als Record `(m, f)`; leere Strings bedeuten „keine Datei“.
   Future<(String, String)> _bothPaths(String lang, String verbKey,
@@ -103,7 +112,10 @@ class AudioService {
       // Nicht unterstützte Plattform: mit Original-Tempo weiter.
     }
     await _player!.stop();
-    await _player!.play(AssetSource(path));
+    // Audio liegt nach der Sprachpaket-Auslagerung (Ticket #68) im
+    // App-Datenverzeichnis, nicht mehr im Bundle.
+    final appDir = await _fileService.appDir;
+    await _player!.play(DeviceFileSource('$appDir/$path'));
   }
 
   /// Stoppt die laufende Wiedergabe (vor Screen-Wechsel).

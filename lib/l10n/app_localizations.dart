@@ -1099,6 +1099,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sets the translation direction (word and translation) for all selected course languages.'**
   String get motherTongueHint;
+
+  /// No description provided for @packInstall.
+  ///
+  /// In en, this message translates to:
+  /// **'Install'**
+  String get packInstall;
+
+  /// No description provided for @packUninstall.
+  ///
+  /// In en, this message translates to:
+  /// **'Uninstall'**
+  String get packUninstall;
+
+  /// No description provided for @packInstallHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Please install a language pack first to start learning.'**
+  String get packInstallHint;
+
+  /// No description provided for @packInstallFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not install language pack: {reason}'**
+  String packInstallFailed(String reason);
+
+  /// No description provided for @packUninstallFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not uninstall language pack: {reason}'**
+  String packUninstallFailed(String reason);
+
+  /// No description provided for @packUninstallTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Uninstall language pack'**
+  String get packUninstallTitle;
+
+  /// No description provided for @packUninstallMsg.
+  ///
+  /// In en, this message translates to:
+  /// **'Uninstall the language pack for {language}? Your learning progress is kept.'**
+  String packUninstallMsg(String language);
 }
 
 class _AppLocalizationsDelegate

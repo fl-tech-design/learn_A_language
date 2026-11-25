@@ -191,5 +191,33 @@
   "french": "Français",
   "russian": "Russe",
   "greek": "Grec",
-  "motherTongueHint": "Définit la direction de traduction (mot et traduction) pour toutes les langues de cours sélectionnées."
+  "motherTongueHint": "Définit la direction de traduction (mot et traduction) pour toutes les langues de cours sélectionnées.",
+  "packInstall": "Installer",
+  "packUninstall": "Désinstaller",
+  "packInstallHint": "Installez d'abord un pack de langue pour commencer à apprendre.",
+  "packInstallFailed": "Impossible d'installer le pack de langue : {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Impossible de désinstaller le pack de langue : {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Désinstaller le pack de langue",
+  "packUninstallMsg": "Désinstaller le pack de langue pour {language} ? Votre progression est conservée.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }
