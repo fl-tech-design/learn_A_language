@@ -299,6 +299,7 @@ class _FillInScreenState extends State<FillInScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnFillIn),
+        const AppNavBar(),
         _statusBar(l10n),
         Expanded(
           child: _loading || round == null
@@ -317,8 +318,6 @@ class _FillInScreenState extends State<FillInScreen> {
                   : _buildGameArea(l10n, round),
         ),
         BoxBottom(
-          settingsText: l10n.settings,
-          exitText: l10n.exit,
           onSettings: () => Navigator.of(context).pushNamed(AppRoutes.settings),
           onExit: AppTheme.closeApp,
         ),

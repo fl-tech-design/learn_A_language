@@ -110,6 +110,12 @@ abstract class AppLocalizations {
     Locale('ru')
   ];
 
+  /// No description provided for @btnHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Start screen'**
+  String get btnHome;
+
   /// No description provided for @allDueDone.
   ///
   /// In en, this message translates to:

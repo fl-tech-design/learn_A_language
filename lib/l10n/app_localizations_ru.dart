@@ -9,6 +9,9 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
+  String get btnHome => 'Главный экран';
+
+  @override
   String get allDueDone => 'Все запланированные слова выполнены!';
 
   @override

@@ -44,21 +44,12 @@ class GrammarDetailScreen extends StatelessWidget {
         _Section(
             caption: l10n.grammarExamFocus,
             child: _BodyText(_text(block.examFocus, lang)!)),
-      const SizedBox(height: AppTheme.contentSpacing),
-      SizedBox(
-          height: 50,
-          width: double.infinity,
-          child: TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: Text(l10n.back,
-                  style: const TextStyle(
-                      fontSize: AppTheme.btnFontSize,
-                      color: AppTheme.colorPrimary)))),
     ];
 
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: title),
+        const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
@@ -66,8 +57,6 @@ class GrammarDetailScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: body))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

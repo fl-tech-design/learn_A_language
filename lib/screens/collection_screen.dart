@@ -96,6 +96,7 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
                 collection != null ? wordCollectionTitle(l10n, collection) : '',
             onInfo: () =>
                 showInfoDialog(context, l10n.infLearning, l10n.information)),
+        const AppNavBar(),
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
@@ -142,23 +143,11 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
                       ),
                     ),
                   ),
-                const SizedBox(height: AppTheme.contentSpacing),
-                SizedBox(
-                    height: 50,
-                    width: double.infinity,
-                    child: TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: Text(l10n.back,
-                            style: const TextStyle(
-                                fontSize: AppTheme.btnFontSize,
-                                color: AppTheme.colorPrimary)))),
               ]),
             ),
           ),
         ),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

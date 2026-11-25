@@ -1,5 +1,6 @@
 {
   "@@locale": "fr",
+  "btnHome": "Écran d'accueil",
   "allDueDone": "Tous les mots à réviser sont terminés !",
   "back": "Retour",
   "baseTitle": "Nouvelle App",

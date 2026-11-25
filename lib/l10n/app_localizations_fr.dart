@@ -9,6 +9,9 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
+  String get btnHome => 'Écran d\'accueil';
+
+  @override
   String get allDueDone => 'Tous les mots à réviser sont terminés !';
 
   @override

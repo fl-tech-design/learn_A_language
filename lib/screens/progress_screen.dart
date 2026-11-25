@@ -85,6 +85,7 @@ class ProgressScreen extends StatelessWidget {
             onInfo: () =>
                 showInfoDialog(context, l10n.infProgress, l10n.information),
           ),
+          const AppNavBar(),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -150,20 +151,6 @@ class ProgressScreen extends StatelessWidget {
                           ),
                         ),
                     ],
-                    const SizedBox(height: AppTheme.contentSpacing),
-                    SizedBox(
-                      height: 50,
-                      width: double.infinity,
-                      child: TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: Text(
-                          l10n.back,
-                          style: const TextStyle(
-                              fontSize: AppTheme.btnFontSize,
-                              color: AppTheme.colorPrimary),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),

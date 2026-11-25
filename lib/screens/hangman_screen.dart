@@ -156,6 +156,7 @@ class _HangmanScreenState extends State<HangmanScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnHangman),
+        const AppNavBar(),
         Expanded(
           child: _loading || round == null
               ? const Center(child: CircularProgressIndicator())
@@ -173,8 +174,6 @@ class _HangmanScreenState extends State<HangmanScreen> {
                   : _buildGameArea(l10n, round),
         ),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

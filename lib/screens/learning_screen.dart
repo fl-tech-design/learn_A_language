@@ -147,6 +147,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
             title: l10n.titPageLearning,
             onInfo: () =>
                 showInfoDialog(context, l10n.infLearning, l10n.information)),
+        const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -208,20 +209,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                       ],
                       const SizedBox(height: AppTheme.contentSpacing),
                       _learnedWordsButton(),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: TextButton(
-                              onPressed: () => Navigator.of(context).pop(),
-                              child: Text(l10n.back,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize,
-                                      color: AppTheme.colorPrimary)))),
                     ])))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

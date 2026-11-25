@@ -1,5 +1,6 @@
 {
   "@@locale": "de",
+  "btnHome": "Startseite",
   "allDueDone": "Alle fälligen Wörter bearbeitet!",
   "back": "Zurück",
   "baseTitle": "Neue App",

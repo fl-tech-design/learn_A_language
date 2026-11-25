@@ -1,5 +1,6 @@
 {
   "@@locale": "en",
+  "btnHome": "Start screen",
   "allDueDone": "All due words completed!",
   "back": "Back",
   "baseTitle": "New App",

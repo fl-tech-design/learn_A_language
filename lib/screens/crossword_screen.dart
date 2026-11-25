@@ -297,6 +297,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnCrossword),
+        const AppNavBar(),
         _statusBar(l10n),
         Expanded(
           child: _loading || puzzle == null
@@ -315,8 +316,6 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
                   : _buildGameArea(l10n, puzzle),
         ),
         BoxBottom(
-          settingsText: l10n.settings,
-          exitText: l10n.exit,
           onSettings: () => Navigator.of(context).pushNamed(AppRoutes.settings),
           onExit: AppTheme.closeApp,
         ),

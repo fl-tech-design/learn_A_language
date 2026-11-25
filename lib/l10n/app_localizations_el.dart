@@ -9,6 +9,9 @@ class AppLocalizationsEl extends AppLocalizations {
   AppLocalizationsEl([String locale = 'el']) : super(locale);
 
   @override
+  String get btnHome => 'Αρχική οθόνη';
+
+  @override
   String get allDueDone => 'Όλες οι εκκρεμείς λέξεις ολοκληρώθηκαν!';
 
   @override

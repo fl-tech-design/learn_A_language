@@ -64,10 +64,14 @@ class AppTheme {
 
   // ── Layout-Maße (constants.py lines 90-109) ────────────────────
   static const double boxTitleHeight = 0.05;
-  static const double boxBottomHeight = 0.1;
+
+  /// Halbe Höhe gegenüber dem Kivy-Original (Ticket #63): die BottomBox ist
+  /// bewusst schlank und für kompakte Icon-Standardfunktionen reserviert.
+  static const double boxBottomHeight = 0.05;
+
   /// Feste Mindesthöhen, damit Titel-/Bottom-Bar auch im Querformat lesbar bleiben.
   static const double titleBarMinHeight = 48.0;
-  static const double bottomBarMinHeight = 96.0;
+  static const double bottomBarMinHeight = 48.0;
   static const double buttonHeight = 56.0;
   static const double buttonFontSize = 18.0;
   static const double contentPadding = 10.0;

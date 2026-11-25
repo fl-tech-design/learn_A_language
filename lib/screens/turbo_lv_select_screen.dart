@@ -24,6 +24,7 @@ class TurboLevelSelectScreen extends StatelessWidget {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnGame),
+        const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -59,20 +60,8 @@ class TurboLevelSelectScreen extends StatelessWidget {
                               onPressed: () => _startGame(context, 'hard'),
                               child: Text(l10n.difficultyHard,
                                   style: const TextStyle(fontSize: 16)))),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: TextButton(
-                              onPressed: () => Navigator.of(context).pop(),
-                              child: Text(l10n.back,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize,
-                                      color: AppTheme.colorPrimary)))),
                     ])))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

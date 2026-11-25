@@ -241,6 +241,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnWordSearch),
+        const AppNavBar(),
         Expanded(
           child: _loading || puzzle == null
               ? const Center(child: CircularProgressIndicator())
@@ -258,8 +259,6 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
                   : _buildGameArea(l10n, puzzle),
         ),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
@@ -297,33 +296,15 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
             const SizedBox(height: 6),
             _buildHints(puzzle),
             const SizedBox(height: AppTheme.contentSpacing),
-            Row(children: [
-              Expanded(
-                child: SizedBox(
-                  height: 50,
-                  child: OutlinedButton(
-                    onPressed: _showSolution,
-                    child: Text(l10n.wsSolution,
-                        style: const TextStyle(fontSize: 16)),
-                  ),
-                ),
+            SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: _showSolution,
+                child:
+                    Text(l10n.wsSolution, style: const TextStyle(fontSize: 16)),
               ),
-              const SizedBox(width: AppTheme.contentSpacing),
-              Expanded(
-                child: SizedBox(
-                  height: 50,
-                  child: TextButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    child: Text(
-                      l10n.back,
-                      style: const TextStyle(
-                          fontSize: AppTheme.btnFontSize,
-                          color: AppTheme.colorPrimary),
-                    ),
-                  ),
-                ),
-              ),
-            ]),
+            ),
           ]),
         ),
       ),

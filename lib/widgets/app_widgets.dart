@@ -6,6 +6,7 @@ import '../l10n/app_localizations.dart';
 import '../services/audio_service.dart';
 import '../services/storage_error_bus.dart';
 import '../theme/app_theme.dart';
+import 'version_label.dart';
 
 /// Zeigt Speicher-/Persistenzwarnungen EINMALIG als SnackBar an (kein
 /// Dialog, kein Spam): Der globale [StorageErrorBus] hält je Ablauf nur eine
@@ -126,23 +127,69 @@ class BoxTitle extends StatelessWidget {
   }
 }
 
-/// Bottom bar widget – replaces BoxBottom.
+/// Fixe Navigationsleiste unter der Titelbox (Ticket #63, AppNavBar).
+///
+/// Ersetzt die bisher uneinheitlichen „Zurück“-Buttons: sichtbar auf allen
+/// Screens ausser dem Start-Screen, immer an derselben Stelle, unabhängig vom
+/// Scroll-Zustand. Zwei Buttons:
+///  - „Zurück“  → zum letzten Screen (Navigator.pop),
+///  - „Start“   → zurück zur Startseite (popUntil zur untersten Route).
+class AppNavBar extends StatelessWidget {
+  final VoidCallback? onBack;
+  final VoidCallback? onHome;
+
+  const AppNavBar({super.key, this.onBack, this.onHome});
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            IconButton(
+              tooltip: l10n.back,
+              icon: const Icon(Icons.arrow_back, color: AppTheme.colorPrimary),
+              onPressed: onBack ?? () => Navigator.of(context).pop(),
+            ),
+            const SizedBox(width: 4),
+            IconButton(
+              tooltip: l10n.btnHome,
+              icon:
+                  const Icon(Icons.home_outlined, color: AppTheme.colorPrimary),
+              onPressed: onHome ??
+                  () =>
+                      Navigator.of(context).popUntil((route) => route.isFirst),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Schlanke Bottom bar – kompakte Icon-Standardfunktionen (Ticket #63).
+/// Links ⚙️ (Settings), rechts ⏻ (App beenden); die freie Mitte zeigt per
+/// Default die App-Version ([VersionLabel]), kann aber über [center] ersetzt
+/// werden. Die Höhe ist bewusst halbiert (AppTheme.boxBottomHeight).
 class BoxBottom extends StatelessWidget {
   final VoidCallback? onSettings;
   final VoidCallback? onExit;
-  final String settingsText;
-  final String exitText;
+  final Widget? center;
 
   const BoxBottom({
     super.key,
     this.onSettings,
     this.onExit,
-    required this.settingsText,
-    required this.exitText,
+    this.center,
   });
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final bottomPadding = MediaQuery.of(context).padding.bottom;
     final height = math.max(
       AppTheme.bottomBarMinHeight,
@@ -151,30 +198,32 @@ class BoxBottom extends StatelessWidget {
     return Container(
       height: height + bottomPadding,
       color: const Color(0xFF1F1F1F),
-      padding: EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8 + bottomPadding),
+      padding:
+          EdgeInsets.only(left: 6, right: 6, top: 4, bottom: 4 + bottomPadding),
       child: Row(
         children: [
-          Expanded(
-            child: OutlinedButton(
+          if (onSettings != null)
+            IconButton(
+              tooltip: l10n.settings,
+              icon: const Icon(Icons.settings, color: AppTheme.colorPrimary),
               onPressed: onSettings,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: AppTheme.colorPrimary,
-                side: const BorderSide(color: AppTheme.colorPrimary),
-              ),
-              child: Text(settingsText, style: const TextStyle(color: AppTheme.colorPrimary)),
             ),
-          ),
-          const SizedBox(width: 10),
           Expanded(
-            child: OutlinedButton(
-              onPressed: onExit,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: AppTheme.colorPrimary,
-                side: const BorderSide(color: AppTheme.colorPrimary),
-              ),
-              child: Text(exitText, style: const TextStyle(color: AppTheme.colorPrimary)),
+            child: Center(
+              child: center ??
+                  const Padding(
+                    padding: EdgeInsets.only(top: 2),
+                    child: VersionLabel(),
+                  ),
             ),
           ),
+          if (onExit != null)
+            IconButton(
+              tooltip: l10n.exit,
+              icon: const Icon(Icons.power_settings_new,
+                  color: AppTheme.colorPrimary),
+              onPressed: onExit,
+            ),
         ],
       ),
     );

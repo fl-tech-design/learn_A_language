@@ -38,6 +38,7 @@ class _GrammarScreenState extends State<GrammarScreen> {
             title: l10n.titPageGrammar,
             onInfo: () =>
                 showInfoDialog(context, l10n.infGrammar, l10n.information)),
+        const AppNavBar(),
         Expanded(
             child: FutureBuilder<GrammarDocument>(
           future: context.read<GrammarManager>().load(level: level),
@@ -75,23 +76,11 @@ class _GrammarScreenState extends State<GrammarScreen> {
                           .pushNamed(AppRoutes.grammardetail, arguments: block),
                     ),
                 ],
-                const SizedBox(height: AppTheme.contentSpacing),
-                SizedBox(
-                    height: 50,
-                    width: double.infinity,
-                    child: TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: Text(l10n.back,
-                            style: const TextStyle(
-                                fontSize: AppTheme.btnFontSize,
-                                color: AppTheme.colorPrimary)))),
               ],
             );
           },
         )),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

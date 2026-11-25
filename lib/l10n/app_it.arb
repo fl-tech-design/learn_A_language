@@ -1,5 +1,6 @@
 {
   "@@locale": "it",
+  "btnHome": "Schermata iniziale",
   "allDueDone": "Tutte le parole in scadenza completate!",
   "back": "Indietro",
   "baseTitle": "Nuova App",

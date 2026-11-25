@@ -9,6 +9,9 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
+  String get btnHome => 'Ecrã inicial';
+
+  @override
   String get allDueDone => 'Todas as palavras pendentes concluídas!';
 
   @override

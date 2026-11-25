@@ -294,8 +294,6 @@ class _StartScreenState extends State<StartScreen> {
             ),
           ),
           BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp,

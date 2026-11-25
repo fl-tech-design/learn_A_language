@@ -265,6 +265,7 @@ class _WordScreenState extends State<WordScreen> {
             title: l10n.titPageLearning,
             onInfo: () =>
                 showInfoDialog(context, l10n.infWord, l10n.information)),
+        const AppNavBar(),
         if (isNew && _streak != null)
           SizedBox(
               height: 20,
@@ -284,8 +285,6 @@ class _WordScreenState extends State<WordScreen> {
                     : _buildWordContent(
                         word, examples, examplesNative, isNew, isReview))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
@@ -376,17 +375,6 @@ class _WordScreenState extends State<WordScreen> {
                                   fontSize: AppTheme.btnFontSize)))),
                 ])),
           const SizedBox(height: 8),
-          SizedBox(
-              height: 56,
-              width: double.infinity,
-              child: TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: Text(l10n.back,
-                      style: const TextStyle(
-                          fontSize: AppTheme.btnFontSize,
-                          color: AppTheme.colorPrimary)))),
         ],
       ),
     );

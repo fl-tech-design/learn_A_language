@@ -44,6 +44,7 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.titChooseGame),
+        const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -123,20 +124,8 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
                                                   AppTheme.btnFontSize)))),
                             ]);
                           }),
-                      const SizedBox(height: AppTheme.contentSpacing),
-                      SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: TextButton(
-                              onPressed: () => Navigator.of(context).pop(),
-                              child: Text(l10n.back,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize,
-                                      color: AppTheme.colorPrimary)))),
                     ])))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

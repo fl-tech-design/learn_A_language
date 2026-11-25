@@ -177,17 +177,17 @@ void main() {
         await _pumpCategory(tester, cat.id, [_categoryWord(cat)]);
         await tester.pumpAndSettle();
 
-        final backButton = find.widgetWithText(TextButton, 'Zurück');
+        final backButton = find.byIcon(Icons.arrow_back);
         expect(_progressButton(), findsOneWidget);
         expect(backButton, findsOneWidget);
         expect(_progressEnabled(tester), isTrue,
             reason: 'Zähler > 0 → Button aktiv');
 
-        // „Letztes Element“ geometrisch: Button liegt unter dem Zurück-Button
-        // (dieser ist das unmittelbar davor liegende Element).
-        final progBottom = tester.getBottomRight(_progressButton()).dy;
-        final backBottom = tester.getBottomRight(backButton).dy;
-        expect(progBottom, greaterThan(backBottom));
+        // AppNavBar („Zurück“/„Start“) liegt oben unter der Titelbox – der
+        // Lernfortschritt-Button ist ein Inhaltselement darunter.
+        final progTop = tester.getTopLeft(_progressButton()).dy;
+        final backTop = tester.getTopLeft(backButton).dy;
+        expect(progTop, greaterThan(backTop));
       });
     }
 

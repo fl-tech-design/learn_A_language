@@ -9,6 +9,9 @@ class AppLocalizationsIt extends AppLocalizations {
   AppLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
+  String get btnHome => 'Schermata iniziale';
+
+  @override
   String get allDueDone => 'Tutte le parole in scadenza completate!';
 
   @override

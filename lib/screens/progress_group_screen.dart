@@ -54,8 +54,10 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
         children: [
           BoxTitle(
             title: category != null ? wordCategoryTitle(l10n, category) : '',
-            onInfo: () => showInfoDialog(context, l10n.infProgress, l10n.information),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infProgress, l10n.information),
           ),
+          const AppNavBar(),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -66,23 +68,10 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
                   Image.asset(courseFlagAsset(lang), width: 24, height: 16),
                   const SizedBox(width: 6),
                   Text(courseLanguageName(lang),
-                      style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                      style: const TextStyle(
+                          fontSize: AppTheme.smallFontSize,
+                          color: AppTheme.grey4)),
                 ],
-              ),
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-              child: TextButton.icon(
-                onPressed: () => Navigator.of(context).pop(),
-                icon: const Icon(Icons.arrow_back_ios, size: 16),
-                label: Text(l10n.back),
-                style: TextButton.styleFrom(
-                  foregroundColor: AppTheme.colorPrimary,
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                ),
               ),
             ),
           ),
@@ -147,21 +136,26 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
             children: [
               Expanded(
                 child: Text(l10n.colWord,
-                    style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                    style: const TextStyle(
+                        fontSize: AppTheme.smallFontSize,
+                        color: AppTheme.grey4)),
               ),
               Text(l10n.colLevel,
-                  style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                  style: const TextStyle(
+                      fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
             ],
           ),
         ),
         const SizedBox(height: 4),
         for (final verb in category.verbKeys) ...[
           if (byVerb.containsKey(verb)) ...[
-            _verbHeader(verb, () => setState(() {
-              if (!_expanded.add(verb)) {
-                _expanded.remove(verb);
-              }
-            })),
+            _verbHeader(
+                verb,
+                () => setState(() {
+                      if (!_expanded.add(verb)) {
+                        _expanded.remove(verb);
+                      }
+                    })),
             if (_expanded.contains(verb))
               for (final tense in tenses)
                 if (byVerb[verb]!.containsKey(tense)) ...[
@@ -170,21 +164,12 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
                 ],
           ],
         ],
-        const SizedBox(height: AppTheme.contentSpacing),
-        SizedBox(
-          height: 50,
-          width: double.infinity,
-          child: TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(l10n.back,
-                style: const TextStyle(fontSize: AppTheme.btnFontSize, color: AppTheme.colorPrimary)),
-          ),
-        ),
       ],
     );
   }
 
-  Widget _summaryRow(AppLocalizations l10n, int learned, int inProgress, int newCount) {
+  Widget _summaryRow(
+      AppLocalizations l10n, int learned, int inProgress, int newCount) {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(border: Border.all(color: AppTheme.grey3)),
@@ -192,7 +177,8 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           _summaryItemApp(AppTheme.green2, '$learned', l10n.catLearnedWords),
-          _summaryItemApp(AppTheme.orange1, '$inProgress', l10n.catInProgressWords),
+          _summaryItemApp(
+              AppTheme.orange1, '$inProgress', l10n.catInProgressWords),
           _summaryItemApp(AppTheme.grey4, '$newCount', l10n.catNewWords),
         ],
       ),
@@ -203,9 +189,13 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
     return Column(
       children: [
         Text(count,
-            style: TextStyle(fontSize: AppTheme.lblFontSize, color: color, fontWeight: FontWeight.bold)),
+            style: TextStyle(
+                fontSize: AppTheme.lblFontSize,
+                color: color,
+                fontWeight: FontWeight.bold)),
         Text(label,
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
       ],
     );
   }
@@ -227,7 +217,10 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
           children: [
             Expanded(
               child: Text(name,
-                  style: const TextStyle(fontSize: AppTheme.infFontSize, color: AppTheme.colorPrimary, fontWeight: FontWeight.bold)),
+                  style: const TextStyle(
+                      fontSize: AppTheme.infFontSize,
+                      color: AppTheme.colorPrimary,
+                      fontWeight: FontWeight.bold)),
             ),
             Icon(expanded ? Icons.expand_less : Icons.expand_more,
                 size: 20, color: AppTheme.colorPrimary),
@@ -246,7 +239,8 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
     return Padding(
       padding: const EdgeInsets.only(left: 8, top: 4, bottom: 2),
       child: Text(label,
-          style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey5)),
+          style: const TextStyle(
+              fontSize: AppTheme.smallFontSize, color: AppTheme.grey5)),
     );
   }
 
@@ -257,7 +251,8 @@ class _ProgressGroupScreenState extends State<ProgressGroupScreen> {
         children: [
           Expanded(
             child: Text(e.word,
-                style: const TextStyle(fontSize: AppTheme.infFontSize, color: Colors.white)),
+                style: const TextStyle(
+                    fontSize: AppTheme.infFontSize, color: Colors.white)),
           ),
           _LevelCircle(level: e.level),
         ],
@@ -296,7 +291,8 @@ class _LevelCircle extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: VocabManager.isNew(level) ? Colors.white : Colors.black,
+                  color:
+                      VocabManager.isNew(level) ? Colors.white : Colors.black,
                 )),
       ),
     );

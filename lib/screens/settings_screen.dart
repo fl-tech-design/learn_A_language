@@ -14,7 +14,6 @@ import '../dialogs/create_user_dialog.dart';
 import '../dialogs/delete_user_dialog.dart';
 import '../l10n/app_localizations.dart';
 import '../services/file_service.dart';
-import '../widgets/version_label.dart';
 
 /// Settings screen – 1:1 from settingpage.py/kv.
 class SettingsScreen extends StatefulWidget {
@@ -91,8 +90,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final motherTongueLabels = [
       for (final code in motherTongueCodes)
         _langLabel(
-            l10n,
-            appLanguages.firstWhere((c) => c.code == code).labelKey),
+            l10n, appLanguages.firstWhere((c) => c.code == code).labelKey),
     ];
     final result = await showCreateUserDialog(
         context,
@@ -138,11 +136,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ..sort())
               _motherLangChip(
                   code,
-                  _langLabel(
-                      l10n,
-                      appLanguages
-                          .firstWhere((c) => c.code == code)
-                          .labelKey),
+                  _langLabel(l10n,
+                      appLanguages.firstWhere((c) => c.code == code).labelKey),
                   current,
                   userState),
           ],
@@ -168,8 +163,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       };
 
   /// Deutscher Sprachname für die `changeLanguage`-Auflösung über die Registry.
-  static String _langNameForChangeLanguage(String code) =>
-      switch (code) {
+  static String _langNameForChangeLanguage(String code) => switch (code) {
         'de' => 'deutsch',
         'en' => 'englisch',
         'es' => 'spanisch',
@@ -184,9 +178,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return ChoiceChip(
       label: Text(toBeginningOfSentenceCase(label)),
       selected: current == code,
-      onSelected: current == code
-          ? null
-          : (_) => userState.changeMotherTongue(code),
+      onSelected:
+          current == code ? null : (_) => userState.changeMotherTongue(code),
     );
   }
 
@@ -197,6 +190,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.titPageSett),
+        const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
@@ -273,15 +267,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   style: const TextStyle(
                                       fontSize: AppTheme.btnFontSize)))),
                     ]))),
-        const Padding(
-          padding: EdgeInsets.only(bottom: 8),
-          child: VersionLabel(),
-        ),
-        BoxBottom(
-            settingsText: l10n.back,
-            exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pop(),
-            onExit: AppTheme.closeApp),
+        // Version erscheint künftig zentral in der BoxBottom-Mitte (Ticket #63).
+        const BoxBottom(onExit: AppTheme.closeApp),
       ]),
     );
   }

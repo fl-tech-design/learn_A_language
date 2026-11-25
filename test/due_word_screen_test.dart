@@ -224,14 +224,14 @@ void main() {
     ]);
 
     // Ohne Tastatur: Bodenleiste sichtbar.
-    expect(find.text('Einstellungen'), findsOneWidget);
+    expect(find.byIcon(Icons.settings), findsOneWidget);
 
     // Mit simulierter Tastatur: Bodenleiste ausgeblendet, Eingabe sichtbar.
     tester.view.viewInsets = const FakeViewPadding(bottom: 300);
     addTearDown(tester.view.resetViewInsets);
     await tester.pumpAndSettle();
 
-    expect(find.text('Einstellungen'), findsNothing);
+    expect(find.byIcon(Icons.settings), findsNothing);
     expect(find.byType(TextField), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
@@ -304,8 +304,9 @@ testWidgets('Feedback bleibt nach Lösung stehen (kein Reload bei Tastatur-Ände
         reason: 'End-Screen darf kein Level mehr zeigen');
     expect(find.text('Richtig!'), findsNothing);
     expect(find.text('Falsch!'), findsNothing);
-    expect(find.text('Zurück'), findsOneWidget,
-        reason: 'End-Screen hält nur den Zurück-Button');
+    // Zurück ist über die AppNavBar (Icon, nicht mehr Text-Button) erreichbar.
+    expect(find.byIcon(Icons.arrow_back), findsOneWidget,
+        reason: 'End-Screen hält den Zurück-Icon in der AppNavBar');
   });
 
   testWidgets('geschütztes Leerzeichen (NBSP) zählt als Leerstelle',

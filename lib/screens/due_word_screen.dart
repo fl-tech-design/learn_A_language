@@ -332,6 +332,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
                 ),
               )),
         BoxTitle(title: l10n.titPageLearning),
+        // Im Querformat mit offener Tastatur ist wenig Höhe: wie die BoxBottom
+        // wird die NavBar dann ausgeblendet, damit kein RenderOverflow entsteht.
+        if (!keyboardOpen) const AppNavBar(),
         Expanded(
             child: SingleChildScrollView(
                 controller: _scrollCtrl,
@@ -400,24 +403,11 @@ class _DueWordScreenState extends State<DueWordScreen> {
                               TextStyle(fontSize: 20, color: _feedbackColor)),
                   ],
                   SizedBox(height: compact ? 4.0 : AppTheme.contentSpacing),
-                  SizedBox(
-                      height: 50,
-                      width: double.infinity,
-                      child: TextButton(
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                          child: Text(l10n.back,
-                              style: const TextStyle(
-                                  fontSize: AppTheme.btnFontSize,
-                                  color: AppTheme.colorPrimary)))),
                 ]))),
         // Bodenleiste im Querformat ausblenden, solange die Bildschirmtastatur
         // sichtbar ist – so bleibt Platz für die Eingabe.
         if (!keyboardOpen)
           BoxBottom(
-              settingsText: l10n.settings,
-              exitText: l10n.exit,
               onSettings: () =>
                   Navigator.of(context).pushNamed(AppRoutes.settings),
               onExit: AppTheme.closeApp),

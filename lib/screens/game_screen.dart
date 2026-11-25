@@ -262,6 +262,10 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       body: Column(children: [
         BoxTitle(title: l10n.btnGame),
+        AppNavBar(onBack: () {
+          _stopTimer();
+          Navigator.of(context).pop();
+        }),
         // Status bar
         Container(
             height: 48,
@@ -342,22 +346,8 @@ class _GameScreenState extends State<GameScreen> {
                           ])),
                         ])),
                     const Spacer(),
-                    SizedBox(
-                        height: 56,
-                        width: double.infinity,
-                        child: TextButton(
-                            onPressed: () {
-                              _stopTimer();
-                              Navigator.of(context).pop();
-                            },
-                            child: Text(l10n.back,
-                                style: const TextStyle(
-                                    fontSize: AppTheme.btnFontSize,
-                                    color: AppTheme.colorPrimary)))),
                   ]))),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),

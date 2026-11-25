@@ -1,5 +1,6 @@
 {
   "@@locale": "es",
+  "btnHome": "Pantalla de inicio",
   "allDueDone": "¡Todas las palabras pendientes completadas!",
   "back": "Atrás",
   "baseTitle": "Nueva App",

@@ -99,6 +99,7 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
             title: cat != null ? wordCategoryTitle(l10n, cat) : '',
             onInfo: () =>
                 showInfoDialog(context, l10n.infLearning, l10n.information)),
+        const AppNavBar(),
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
@@ -117,16 +118,6 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
                 SizedBox(
                     height: 50,
                     width: double.infinity,
-                    child: TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: Text(l10n.back,
-                            style: const TextStyle(
-                                fontSize: AppTheme.btnFontSize,
-                                color: AppTheme.colorPrimary)))),
-                const SizedBox(height: AppTheme.contentSpacing),
-                SizedBox(
-                    height: 50,
-                    width: double.infinity,
                     child: OutlinedButton(
                         onPressed: (cat == null || counts.total == 0)
                             ? null
@@ -141,8 +132,6 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
           ),
         ),
         BoxBottom(
-            settingsText: l10n.settings,
-            exitText: l10n.exit,
             onSettings: () =>
                 Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
