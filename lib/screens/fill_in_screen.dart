@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 import 'dart:developer' as developer;
 
@@ -61,7 +62,7 @@ class _FillInScreenState extends State<FillInScreen> {
     super.didChangeDependencies();
     if (_category == null) {
       // Kategorie wie bei den bestehenden Kategorie-Screens als
-      // Route-Argument moeglich (z. B. pushNamed('/fillin', arguments: id)).
+      // Route-Argument moeglich (z. B. pushNamed(AppRoutes.fillin, arguments: id)).
       final routeId = ModalRoute.of(context)?.settings.arguments as String?;
       _category = widget.category ?? routeId;
     }
@@ -93,7 +94,7 @@ class _FillInScreenState extends State<FillInScreen> {
     final um = context.read<UserManager>();
     final navState = context.read<NavigationState>();
     final userState = context.read<UserState>();
-    
+
     if (uname.isNotEmpty) {
       final ud = await um.loadUserdata(uname);
       _bestTime = ud?.fillInBestTimes[widget.difficulty] ?? 0;
@@ -240,8 +241,7 @@ class _FillInScreenState extends State<FillInScreen> {
             final times = Map<String, int>.from(ud.fillInBestTimes);
             times[widget.difficulty] = elapsedMs;
             try {
-              await um.saveUserdata(
-                  uname, ud.copyWith(fillInBestTimes: times));
+              await um.saveUserdata(uname, ud.copyWith(fillInBestTimes: times));
               _bestTime = elapsedMs;
             } on PersistenceException catch (e) {
               developer.log(
@@ -283,6 +283,7 @@ class _FillInScreenState extends State<FillInScreen> {
       Navigator.of(context).pop();
     }
   }
+
   /// Farbe des Eingabe-Feedbacks (gruen = richtig, rot = falsch).
   Color _feedbackColor() => switch (_feedback) {
         _Feedback.correct => AppTheme.green3,
@@ -318,7 +319,7 @@ class _FillInScreenState extends State<FillInScreen> {
         BoxBottom(
           settingsText: l10n.settings,
           exitText: l10n.exit,
-          onSettings: () => Navigator.of(context).pushNamed('/settings'),
+          onSettings: () => Navigator.of(context).pushNamed(AppRoutes.settings),
           onExit: AppTheme.closeApp,
         ),
       ]),
@@ -370,7 +371,6 @@ class _FillInScreenState extends State<FillInScreen> {
       ]),
     );
   }
-
 
   /// Spielbereich: Luecken-Satz (ggf. mit aufgedecktem Tipp-Buchstaben),
   /// Native-Satz, Eingabefeld mit OK/Skip.
@@ -450,8 +450,8 @@ class _FillInScreenState extends State<FillInScreen> {
               height: 56,
               child: OutlinedButton(
                 onPressed: _busy ? null : _onSkip,
-                child: Text(l10n.fillInSkip,
-                    style: const TextStyle(fontSize: 16)),
+                child:
+                    Text(l10n.fillInSkip, style: const TextStyle(fontSize: 16)),
               ),
             ),
           ),

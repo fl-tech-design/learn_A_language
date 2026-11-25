@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -28,11 +29,11 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
   Future<int> _loadMasteredCount() async {
     final dataState = context.read<DataState>();
     final uname = dataState.appData.loggedUName;
-    final lang = context.read<NavigationState>()
+    final lang = context
+        .read<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
-    final words = await context
-        .read<VocabQueries>()
-        .getReadWords(uname, langCode: lang);
+    final words =
+        await context.read<VocabQueries>().getReadWords(uname, langCode: lang);
     return words.length;
   }
 
@@ -60,63 +61,61 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
                                   child: OutlinedButton(
                                       onPressed: enabled
                                           ? () => Navigator.of(context)
-                                              .pushNamed('/gameselect')
+                                              .pushNamed(AppRoutes.gameselect)
                                           : null,
                                       child: Text(l10n.btnTurbo,
                                           style: const TextStyle(
                                               fontSize:
                                                   AppTheme.btnFontSize)))),
-                              const SizedBox(
-                                  height: AppTheme.contentSpacing),
+                              const SizedBox(height: AppTheme.contentSpacing),
                               SizedBox(
                                   height: 56,
                                   width: double.infinity,
                                   child: OutlinedButton(
                                       onPressed: enabled
                                           ? () => Navigator.of(context)
-                                              .pushNamed('/wordsearch')
+                                              .pushNamed(AppRoutes.wordsearch)
                                           : null,
                                       child: Text(l10n.btnWordSearch,
                                           style: const TextStyle(
                                               fontSize:
                                                   AppTheme.btnFontSize)))),
-                              const SizedBox(
-                                  height: AppTheme.contentSpacing),
+                              const SizedBox(height: AppTheme.contentSpacing),
                               SizedBox(
                                   height: 56,
                                   width: double.infinity,
                                   child: OutlinedButton(
                                       onPressed: enabled
                                           ? () => Navigator.of(context)
-                                              .pushNamed('/crosswordselect')
+                                              .pushNamed(
+                                                  AppRoutes.crosswordselect)
                                           : null,
                                       child: Text(l10n.btnCrossword,
                                           style: const TextStyle(
                                               fontSize:
                                                   AppTheme.btnFontSize)))),
-                              const SizedBox(
-                                  height: AppTheme.contentSpacing),
+                              const SizedBox(height: AppTheme.contentSpacing),
                               SizedBox(
                                   height: 56,
                                   width: double.infinity,
                                   child: OutlinedButton(
                                       onPressed: enabled
                                           ? () => Navigator.of(context)
-                                              .pushNamed('/hangmanselect')
+                                              .pushNamed(
+                                                  AppRoutes.hangmanselect)
                                           : null,
                                       child: Text(l10n.btnHangman,
                                           style: const TextStyle(
                                               fontSize:
                                                   AppTheme.btnFontSize)))),
-                              const SizedBox(
-                                  height: AppTheme.contentSpacing),
+                              const SizedBox(height: AppTheme.contentSpacing),
                               SizedBox(
                                   height: 56,
                                   width: double.infinity,
                                   child: OutlinedButton(
                                       onPressed: enabled
                                           ? () => Navigator.of(context)
-                                              .pushNamed('/fillinselect')
+                                              .pushNamed(AppRoutes.fillinselect)
                                           : null,
                                       child: Text(l10n.btnFillIn,
                                           style: const TextStyle(
@@ -138,7 +137,8 @@ class _GameChooseScreenState extends State<GameChooseScreen> {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );

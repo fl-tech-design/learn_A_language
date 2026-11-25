@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -73,7 +74,8 @@ class HangmanLvSelectScreen extends StatelessWidget {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );

@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -70,18 +71,19 @@ class ProgressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final lang = context.watch<NavigationState>()
+    final lang = context
+        .watch<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
-    final topCategories =
-        courseTopCategories.toList()..sort((a, b) => a.order.compareTo(b.order));
+    final topCategories = courseTopCategories.toList()
+      ..sort((a, b) => a.order.compareTo(b.order));
 
     return Scaffold(
       body: Column(
         children: [
           BoxTitle(
             title: l10n.titPageProgress,
-            onInfo: () => showInfoDialog(
-                context, l10n.infProgress, l10n.information),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infProgress, l10n.information),
           ),
           Align(
             alignment: Alignment.centerLeft,
@@ -93,7 +95,9 @@ class ProgressScreen extends StatelessWidget {
                   Image.asset(courseFlagAsset(lang), width: 24, height: 16),
                   const SizedBox(width: 6),
                   Text(courseLanguageName(lang),
-                      style: const TextStyle(fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
+                      style: const TextStyle(
+                          fontSize: AppTheme.smallFontSize,
+                          color: AppTheme.grey4)),
                 ],
               ),
             ),
@@ -104,51 +108,48 @@ class ProgressScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(AppTheme.contentPadding),
                 child: Column(
                   children: [
-                    
-                    for (final top in topCategories)
-                      ...[
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
-                      child: Text(
-                        wordTopCategoryTitle(l10n, top),
-                        style: const TextStyle(
-                            fontSize: AppTheme.lblFontSize,
-                            color: AppTheme.colorPrimary,
-                            fontWeight: FontWeight.bold),
+                    for (final top in topCategories) ...[
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text(
+                          wordTopCategoryTitle(l10n, top),
+                          style: const TextStyle(
+                              fontSize: AppTheme.lblFontSize,
+                              color: AppTheme.colorPrimary,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
-                        for (final collection in top.collections)
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                bottom: AppTheme.contentSpacing),
-                            child: SizedBox(
-                              height: 50,
-                              width: double.infinity,
-                              child: OutlinedButton(
-                                onPressed: () {
-                                  if (collection.categories.length == 1) {
-                                    Navigator.of(context).pushNamed(
-                                        '/progress_group',
-                                        arguments:
-                                            collection.categoryIds.first);
-                                  } else {
-                                    Navigator.of(context).pushNamed(
-                                        '/collection',
-                                        arguments: CollectionScreenArgs(
-                                            collectionId: collection.id,
-                                            mode: 'progress'));
-                                  }
-                                },
-                                child: Text(
-                                  wordCollectionTitle(l10n, collection),
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                      fontSize: AppTheme.btnFontSize),
-                                ),
+                      for (final collection in top.collections)
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              bottom: AppTheme.contentSpacing),
+                          child: SizedBox(
+                            height: 50,
+                            width: double.infinity,
+                            child: OutlinedButton(
+                              onPressed: () {
+                                if (collection.categories.length == 1) {
+                                  Navigator.of(context).pushNamed(
+                                      AppRoutes.progressGroup,
+                                      arguments: collection.categoryIds.first);
+                                } else {
+                                  Navigator.of(context).pushNamed(
+                                      AppRoutes.collection,
+                                      arguments: CollectionScreenArgs(
+                                          collectionId: collection.id,
+                                          mode: 'progress'));
+                                }
+                              },
+                              child: Text(
+                                wordCollectionTitle(l10n, collection),
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                    fontSize: AppTheme.btnFontSize),
                               ),
                             ),
                           ),
-                      ],
+                        ),
+                    ],
                     const SizedBox(height: AppTheme.contentSpacing),
                     SizedBox(
                       height: 50,

@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -158,19 +159,16 @@ class _StartScreenState extends State<StartScreen> {
     final l10n = AppLocalizations.of(context);
     final courses = userState.selectedCourses;
     final newCourses = userState.availableNewCourses;
-    final selectedCourse = _selectedCourseId != null
-        ? availableCourses[_selectedCourseId]
-        : null;
+    final selectedCourse =
+        _selectedCourseId != null ? availableCourses[_selectedCourseId] : null;
 
     return Scaffold(
       body: Column(
         children: [
           BoxTitle(
             title: l10n.titPageStart,
-            onInfo: () => showInfoDialog(
-                context,
-                l10n.infStart,
-                l10n.information),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infStart, l10n.information),
           ),
           Expanded(
             child: OrientationBuilder(
@@ -184,7 +182,8 @@ class _StartScreenState extends State<StartScreen> {
                       children: [
                         // ── UserInfoBox (top, full width) – nur Portrait.
                         // Im Landscape ist sie Teil der 3-Spalten-Gruppe.
-                        if (isPortrait && dataState.appData.loggedUName.isNotEmpty)
+                        if (isPortrait &&
+                            dataState.appData.loggedUName.isNotEmpty)
                           Padding(
                             padding: const EdgeInsets.only(
                                 bottom: AppTheme.contentSpacing),
@@ -197,7 +196,8 @@ class _StartScreenState extends State<StartScreen> {
                             course: selectedCourse,
                             onBack: () =>
                                 setState(() => _selectedCourseId = null),
-                            hasContent: userState.courseHasContent(selectedCourse),
+                            hasContent:
+                                userState.courseHasContent(selectedCourse),
                           )
                         else ...[
                           if (isPortrait) ...[
@@ -208,9 +208,7 @@ class _StartScreenState extends State<StartScreen> {
                               expandedLanguages: _expandedMyLanguages,
                               onTap: (id) => setState(() {
                                 _selectedCourseId =
-                                    _selectedCourseId == id
-                                        ? null
-                                        : id;
+                                    _selectedCourseId == id ? null : id;
                               }),
                               onRemove: _confirmRemoveCourse,
                               onToggleLanguage: (code) => setState(() {
@@ -240,7 +238,8 @@ class _StartScreenState extends State<StartScreen> {
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                if (dataState.appData.loggedUName.isNotEmpty) ...[
+                                if (dataState
+                                    .appData.loggedUName.isNotEmpty) ...[
                                   Expanded(
                                     flex: 3,
                                     child: _UserInfoBox(),
@@ -256,9 +255,7 @@ class _StartScreenState extends State<StartScreen> {
                                     expandedLanguages: _expandedMyLanguages,
                                     onTap: (id) => setState(() {
                                       _selectedCourseId =
-                                          _selectedCourseId == id
-                                              ? null
-                                              : id;
+                                          _selectedCourseId == id ? null : id;
                                     }),
                                     onRemove: _confirmRemoveCourse,
                                     onToggleLanguage: (code) => setState(() {
@@ -299,7 +296,8 @@ class _StartScreenState extends State<StartScreen> {
           BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp,
           ),
         ],
@@ -372,8 +370,8 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
     }
 
     return FutureBuilder<UserStats>(
-      future: _statsFuture,
-      builder: (ctx, snapshot) {
+        future: _statsFuture,
+        builder: (ctx, snapshot) {
           final stats = snapshot.data;
           if (stats == null) {
             return const SizedBox.shrink();
@@ -381,30 +379,38 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
           return Container(
               width: double.infinity,
               padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  border: Border.all(color: AppTheme.grey3)),
+              decoration:
+                  BoxDecoration(border: Border.all(color: AppTheme.grey3)),
               child: _buildBoxBody(l10n, stats, username));
         });
   }
 
-  Widget _buildBoxBody(AppLocalizations l10n, UserStats stats, String username) {
-    final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+  Widget _buildBoxBody(
+      AppLocalizations l10n, UserStats stats, String username) {
+    final isPortrait =
+        MediaQuery.of(context).orientation == Orientation.portrait;
     final statsCol = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(username,
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
         Text('${l10n.catNewWords}: ${stats.newCount}',
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         Text('${l10n.catDueWords}: ${stats.dueCount}',
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         Text('${l10n.catReadWords}: ${stats.readCount}',
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         Text('${l10n.catLearnedWords}: ${stats.learnedCount}',
-            style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Colors.white70)),
+            style: const TextStyle(
+                fontSize: AppTheme.smallFontSize, color: Colors.white70)),
         if (stats.streak.current > 0)
           Text(l10n.streakAndRecord(stats.streak.current, stats.streak.longest),
-              style: const TextStyle(fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
+              style: const TextStyle(
+                  fontSize: AppTheme.smallFontSize, color: Color(0xFFFFB31A))),
       ],
     );
     final buttonsCol = Column(
@@ -412,7 +418,7 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         _actionOutlined(l10n.btnProgress, () {
-          Navigator.of(context).pushNamed('/progress');
+          Navigator.of(context).pushNamed(AppRoutes.progress);
         }),
         const SizedBox(height: 8),
         _actionOutlined(l10n.btnChangeUser, () {
@@ -451,10 +457,10 @@ class _UserInfoBoxState extends State<_UserInfoBox> with RouteAware {
         minimumSize: const Size(0, 28),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
       ),
-      child: Text(label, style: const TextStyle(fontSize: AppTheme.smallFontSize)),
+      child:
+          Text(label, style: const TextStyle(fontSize: AppTheme.smallFontSize)),
     );
   }
-
 }
 
 /// Vertical list of the user's courses, grouped by language with foldable levels.
@@ -481,8 +487,7 @@ class _MyCoursesSection extends StatelessWidget {
     if (courses.isEmpty) {
       return Container(
         padding: const EdgeInsets.all(10),
-        decoration:
-            BoxDecoration(border: Border.all(color: AppTheme.grey3)),
+        decoration: BoxDecoration(border: Border.all(color: AppTheme.grey3)),
         child: Text(l10n.noCourses,
             style: const TextStyle(
                 fontSize: AppTheme.smallFontSize, color: AppTheme.grey4)),
@@ -494,8 +499,7 @@ class _MyCoursesSection extends StatelessWidget {
       children: [
         Text(l10n.myCourses,
             style: const TextStyle(
-                fontSize: AppTheme.lblFontSize,
-                color: AppTheme.colorPrimary)),
+                fontSize: AppTheme.lblFontSize, color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
         ...grouped.entries.map((entry) {
           final code = entry.key;
@@ -570,10 +574,8 @@ class _MyCoursesSection extends StatelessWidget {
                           const Expanded(child: SizedBox.shrink()),
                           IconButton(
                             onPressed: () => onRemove(c.id),
-                            icon: const Icon(
-                                Icons.remove_circle_outline,
-                                color: AppTheme.grey4,
-                                size: 18),
+                            icon: const Icon(Icons.remove_circle_outline,
+                                color: AppTheme.grey4, size: 18),
                             padding: EdgeInsets.zero,
                             constraints: const BoxConstraints(
                                 minWidth: 24, minHeight: 24),
@@ -632,8 +634,7 @@ class _CourseDetailView extends StatelessWidget {
             Image.asset(course.flagAsset, width: 32, height: 20),
             const SizedBox(width: 8),
             Expanded(
-              child: Text(
-                  '${course.languageName} ${course.level}',
+              child: Text('${course.languageName} ${course.level}',
                   style: const TextStyle(
                       fontSize: AppTheme.lblFontSize,
                       color: AppTheme.colorPrimary)),
@@ -657,8 +658,7 @@ class _CourseDetailView extends StatelessWidget {
               child: Text(
                 l10n.noContentYet,
                 style: const TextStyle(
-                    fontSize: AppTheme.smallFontSize,
-                    color: AppTheme.grey4),
+                    fontSize: AppTheme.smallFontSize, color: AppTheme.grey4),
               ),
             ),
           if (!hasContent) const SizedBox(height: AppTheme.contentSpacing),
@@ -670,7 +670,7 @@ class _CourseDetailView extends StatelessWidget {
                   ? () {
                       context.read<NavigationState>().setActiveCourse(course);
                       context.read<NavigationState>().setWordMode('new');
-                      Navigator.of(context).pushNamed('/learning');
+                      Navigator.of(context).pushNamed(AppRoutes.learning);
                     }
                   : null,
               child: Text(l10n.btnLearn,
@@ -685,7 +685,7 @@ class _CourseDetailView extends StatelessWidget {
               onPressed: hasContent
                   ? () {
                       context.read<NavigationState>().setActiveCourse(course);
-                      Navigator.of(context).pushNamed('/gamechoose');
+                      Navigator.of(context).pushNamed(AppRoutes.gamechoose);
                     }
                   : null,
               child: Text(l10n.btnGame,
@@ -701,15 +701,13 @@ class _CourseDetailView extends StatelessWidget {
                   ? () {
                       context.read<NavigationState>().setActiveCourse(course);
                       Navigator.of(context).pushNamed(
-                        '/grammar',
+                        AppRoutes.grammar,
                         arguments: course.level,
                       );
                     }
                   : null,
-              child: Text(
-                  l10n.btnGrammar,
-                  style: const TextStyle(
-                      fontSize: AppTheme.btnFontSize)),
+              child: Text(l10n.btnGrammar,
+                  style: const TextStyle(fontSize: AppTheme.btnFontSize)),
             ),
           ),
         ],
@@ -753,8 +751,7 @@ class _NewLanguagesSection extends StatelessWidget {
       children: [
         Text(l10n.catNewLang,
             style: const TextStyle(
-                fontSize: AppTheme.lblFontSize,
-                color: AppTheme.colorPrimary)),
+                fontSize: AppTheme.lblFontSize, color: AppTheme.colorPrimary)),
         const SizedBox(height: 8),
         ...grouped.entries.map((entry) {
           final code = entry.key;
@@ -843,4 +840,3 @@ class _NewLanguagesSection extends StatelessWidget {
     return map;
   }
 }
-

@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -35,16 +36,16 @@ class _GrammarScreenState extends State<GrammarScreen> {
       body: Column(children: [
         BoxTitle(
             title: l10n.titPageGrammar,
-            onInfo: () => showInfoDialog(
-                context, l10n.infGrammar, l10n.information)),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infGrammar, l10n.information)),
         Expanded(
             child: FutureBuilder<GrammarDocument>(
           future: context.read<GrammarManager>().load(level: level),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return const Center(
-                  child: CircularProgressIndicator(
-                      color: AppTheme.colorPrimary));
+                  child:
+                      CircularProgressIndicator(color: AppTheme.colorPrimary));
             }
             final doc = snapshot.data!;
             final categories = doc.sortedCategories;
@@ -70,9 +71,8 @@ class _GrammarScreenState extends State<GrammarScreen> {
                     _TopicTile(
                       block: block,
                       lang: lang,
-                      onTap: () => Navigator.of(context).pushNamed(
-                          '/grammardetail',
-                          arguments: block),
+                      onTap: () => Navigator.of(context)
+                          .pushNamed(AppRoutes.grammardetail, arguments: block),
                     ),
                 ],
                 const SizedBox(height: AppTheme.contentSpacing),
@@ -92,7 +92,8 @@ class _GrammarScreenState extends State<GrammarScreen> {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
@@ -150,7 +151,8 @@ class _TopicTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(6)),
         child: Row(children: [
           Expanded(
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                 Text(title,
                     style: const TextStyle(

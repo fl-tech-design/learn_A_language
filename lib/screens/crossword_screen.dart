@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 import 'dart:developer' as developer;
 import 'dart:math' as math;
@@ -57,7 +58,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     super.didChangeDependencies();
     if (_category == null) {
       // Kategorie wie bei den bestehenden Kategorie-Screens als
-      // Route-Argument moeglich (z. B. pushNamed('/crossword', arguments: id)).
+      // Route-Argument moeglich (z. B. pushNamed(AppRoutes.crossword, arguments: id)).
       final routeId = ModalRoute.of(context)?.settings.arguments as String?;
       _category = widget.category ?? routeId;
     }
@@ -85,7 +86,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     final um = context.read<UserManager>();
     final navState = context.read<NavigationState>();
     final userState = context.read<UserState>();
-    
+
     if (uname.isNotEmpty) {
       final ud = await um.loadUserdata(uname);
       _bestTime = ud?.crosswordBestTimes[widget.difficulty] ?? 0;
@@ -138,7 +139,8 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     }
     return null;
   }
-/// Klick auf eine Gitterzelle (Buchstaben- oder Leerfeld).
+
+  /// Klick auf eine Gitterzelle (Buchstaben- oder Leerfeld).
   ///
   /// Leerfelder dienen als Hinweis-Buttons: Sie aktivieren das naechste
   /// ungeloeste Wort. Auf Buchstaben-Zellen wird der Cursor gesetzt; ein
@@ -182,8 +184,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     var start = 0;
     final current = _active;
     if (current != null) {
-      final index =
-          words.indexWhere((w) => w.cells.contains(current.pos));
+      final index = words.indexWhere((w) => w.cells.contains(current.pos));
       start = index < 0 ? 0 : (index + 1) % words.length;
     }
     for (var i = 0; i < words.length; i++) {
@@ -280,7 +281,8 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
       Navigator.of(context).pop();
     }
   }
-/// Formatiert Millisekunden als mm:ss.
+
+  /// Formatiert Millisekunden als mm:ss.
   static String _fmtMs(int ms) {
     final totalSeconds = ms ~/ 1000;
     final m = totalSeconds ~/ 60;
@@ -315,7 +317,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
         BoxBottom(
           settingsText: l10n.settings,
           exitText: l10n.exit,
-          onSettings: () => Navigator.of(context).pushNamed('/settings'),
+          onSettings: () => Navigator.of(context).pushNamed(AppRoutes.settings),
           onExit: AppTheme.closeApp,
         ),
       ]),
@@ -437,12 +439,13 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
         final row = index ~/ puzzle.cols;
         final col = index % puzzle.cols;
         final cell = puzzle.grid[row][col];
-        return _buildCell(
-            puzzle, CrosswordPos(row, col), cell, cellSize, active, activeCells);
+        return _buildCell(puzzle, CrosswordPos(row, col), cell, cellSize,
+            active, activeCells);
       },
     );
   }
-/// Eine Gitterzelle mit deutlichem Feedback:
+
+  /// Eine Gitterzelle mit deutlichem Feedback:
   /// - Leerfeld: Hinweis-Button (Oeffnen des naechsten ungeloesten Wortes).
   /// - Aktive Zelle: App-Primaerfarbe; Zellen des aktiven Wortes dezent
   ///   hervorgehoben (Richtungs-Highlight von Zeile/Spalte).

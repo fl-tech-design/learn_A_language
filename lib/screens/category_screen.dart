@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -61,7 +62,8 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
     final uname = context.read<DataState>().appData.loggedUName;
     final cat = _category;
     if (uname.isEmpty || cat == null) return;
-    final lang = context.read<NavigationState>()
+    final lang = context
+        .read<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
     final counts = await context
         .read<VocabQueries>()
@@ -81,7 +83,7 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
     }
     // 'due' übernimmt den wordMode unverändert (eigener Screen).
     nav.setSelectedCategoryId(cat.id);
-    final route = mode == 'due' ? '/dueword' : '/word';
+    final route = mode == 'due' ? AppRoutes.dueword : AppRoutes.word;
     Navigator.of(context).pushNamed(route);
   }
 
@@ -95,25 +97,21 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
       body: Column(children: [
         BoxTitle(
             title: cat != null ? wordCategoryTitle(l10n, cat) : '',
-            onInfo: () => showInfoDialog(
-                context, l10n.infLearning, l10n.information)),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infLearning, l10n.information)),
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(AppTheme.contentPadding),
               child: Column(children: [
                 const SizedBox(height: AppTheme.contentSpacing),
-                _modeButton(l10n.catNewWords, counts.newCount,
-                    () => _start('new')),
-                const SizedBox(height: AppTheme.contentSpacing),
                 _modeButton(
-                    l10n.catDueWords,
-                    counts.dueCount,
+                    l10n.catNewWords, counts.newCount, () => _start('new')),
+                const SizedBox(height: AppTheme.contentSpacing),
+                _modeButton(l10n.catDueWords, counts.dueCount,
                     counts.dueCount == 0 ? null : () => _start('due')),
                 const SizedBox(height: AppTheme.contentSpacing),
-                _modeButton(
-                    l10n.catReadWords,
-                    counts.readCount,
+                _modeButton(l10n.catReadWords, counts.readCount,
                     counts.readCount == 0 ? null : () => _start('read')),
                 const SizedBox(height: AppTheme.contentSpacing),
                 SizedBox(
@@ -133,7 +131,8 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
                         onPressed: (cat == null || counts.total == 0)
                             ? null
                             : () => Navigator.of(context).pushNamed(
-                                '/progress_group', arguments: cat.id),
+                                AppRoutes.progressGroup,
+                                arguments: cat.id),
                         child: Text(l10n.btnProgress,
                             style: const TextStyle(
                                 fontSize: AppTheme.btnFontSize)))),
@@ -144,7 +143,8 @@ class _CategoryScreenState extends State<CategoryScreen> with RouteAware {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );

@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 import 'dart:developer' as developer;
 import 'dart:math';
@@ -81,7 +82,7 @@ class _GameScreenState extends State<GameScreen> {
     final um = context.read<UserManager>();
     final navState = context.read<NavigationState>();
     final userState = context.read<UserState>();
-    
+
     if (uname.isNotEmpty) {
       final ud = await um.loadUserdata(uname);
       _highscore = ud?.gameHighscore ?? 0;
@@ -227,7 +228,8 @@ class _GameScreenState extends State<GameScreen> {
         try {
           await um.saveUserdata(uname, ud.copyWith(gameHighscore: _highscore));
         } on PersistenceException catch (e) {
-          developer.log('game_screen: Highscore für $uname nicht gespeichert ($e)');
+          developer
+              .log('game_screen: Highscore für $uname nicht gespeichert ($e)');
           StorageErrorBus.instance.report(StorageErrorKind.progressNotSaved);
         }
       }
@@ -356,7 +358,8 @@ class _GameScreenState extends State<GameScreen> {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );

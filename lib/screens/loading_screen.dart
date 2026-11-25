@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 import 'dart:developer' show log;
 
@@ -73,8 +74,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
     // unkritisch: ohne gültige Session geht es normal auf das Start-Menü.
     SessionSnapshot? snapshot;
     try {
-      snapshot = await sessionManager.loadSnapshotForUser(
-          dataState.appData.loggedUName);
+      snapshot = await sessionManager
+          .loadSnapshotForUser(dataState.appData.loggedUName);
     } catch (e) {
       log('LoadingScreen: Session-Wiederherstellung fehlgeschlagen ($e)');
       snapshot = null;
@@ -90,15 +91,14 @@ class _LoadingScreenState extends State<LoadingScreen> {
     unawaited(Future<void>.delayed(const Duration(milliseconds: 300), () {
       if (!mounted) return;
       final nav = Navigator.of(context);
-      nav.pushReplacementNamed('/start');
+      nav.pushReplacementNamed(AppRoutes.start);
       if (snapshot != null && routes.isNotEmpty) {
         // Word-Modus + gewählte Kategorie für /word und /dueword übernehmen.
         navState.setWordMode(snapshot.wordMode);
         navState.setSelectedCategoryId(snapshot.selectedCategoryId);
         // Kurs-Kontext wiederherstellen (bestimmt die Kurssprache).
         final courseId = snapshot.activeCourseId;
-        final course =
-            courseId != null ? availableCourses[courseId] : null;
+        final course = courseId != null ? availableCourses[courseId] : null;
         if (course != null) {
           navState.setActiveCourse(course);
         } else {
@@ -129,8 +129,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
         children: [
           // Bild füllt nur die Breite des Screens (Höhe bleibt proportional),
           // damit es im Portrait-Format nicht mehr auf die Höhe gezoomt wird.
-          Image.asset('assets/images/spl_start.png',
-              fit: BoxFit.fitWidth),
+          Image.asset('assets/images/spl_start.png', fit: BoxFit.fitWidth),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.18,
             left: 0,

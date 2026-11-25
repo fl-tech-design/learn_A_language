@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -58,7 +59,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   Future<void> _refreshCounts() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
-    final lang = context.read<NavigationState>()
+    final lang = context
+        .read<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
     final counts = await context
         .read<VocabQueries>()
@@ -92,12 +94,12 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
   /// Verben" als Unterkategorien-Liste.
   void _openCollection(WordCollection collection) {
     if (collection.categories.length == 1) {
-      Navigator.of(context)
-          .pushNamed('/category', arguments: collection.categoryIds.first);
+      Navigator.of(context).pushNamed(AppRoutes.category,
+          arguments: collection.categoryIds.first);
     } else {
-      Navigator.of(context).pushNamed('/collection',
-          arguments: CollectionScreenArgs(
-              collectionId: collection.id, mode: 'learn'));
+      Navigator.of(context).pushNamed(AppRoutes.collection,
+          arguments:
+              CollectionScreenArgs(collectionId: collection.id, mode: 'learn'));
     }
   }
 
@@ -116,7 +118,7 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
     final nav = context.read<NavigationState>();
     nav.setWordMode('learned');
     nav.setSelectedCategoryId(null);
-    Navigator.of(context).pushNamed('/word');
+    Navigator.of(context).pushNamed(AppRoutes.word);
   }
 
   /// Ordner-Button für alle fertig gelernten Wörter (Level 8).
@@ -143,8 +145,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
       body: Column(children: [
         BoxTitle(
             title: l10n.titPageLearning,
-            onInfo: () => showInfoDialog(
-                context, l10n.infLearning, l10n.information)),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infLearning, l10n.information)),
         Expanded(
             child: SingleChildScrollView(
                 child: Padding(
@@ -153,59 +155,56 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
                       const SizedBox(height: 8),
                       Text(l10n.catSelect,
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: AppTheme.lblFontSize)),
+                          style:
+                              const TextStyle(fontSize: AppTheme.lblFontSize)),
                       const SizedBox(height: AppTheme.contentSpacing),
-                      for (final top in topCategories)
-                        ...[
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 6),
-                        child: Text(
-                          wordTopCategoryTitle(l10n, top),
-                          style: const TextStyle(
-                              fontSize: AppTheme.lblFontSize,
-                              color: AppTheme.colorPrimary,
-                              fontWeight: FontWeight.bold),
+                      for (final top in topCategories) ...[
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 6),
+                          child: Text(
+                            wordTopCategoryTitle(l10n, top),
+                            style: const TextStyle(
+                                fontSize: AppTheme.lblFontSize,
+                                color: AppTheme.colorPrimary,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
-                      ),
                         for (final collection in top.collections)
                           Padding(
-                            padding: const EdgeInsets.only(
-                                bottom: AppTheme.contentSpacing),
-                            child: SizedBox(
-                                height: 50,
-                                width: double.infinity,
-                                child: OutlinedButton(
-                                    onPressed: () =>
-                                        _openCollection(collection),
-                                    child: Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 12),
-                                        child: Row(
-                                          children: [
-                                            Expanded(
-                                              child: Text(
-                                                  wordCollectionTitle(
-                                                      l10n, collection),
-                                                  textAlign:
-                                                      TextAlign.center,
-                                                  style: const TextStyle(
-                                                      fontSize: AppTheme
-                                                          .btnFontSize)),
-                                            ),
-                                            Text(
-                                              _sumCounts(collection).hasWords
-                                                  ? categoryCountLabel(
-                                                      l10n,
-                                                      _sumCounts(collection))
-                                                  : '',
-                                              style: const TextStyle(
-                                                  fontSize:
-                                                      AppTheme.smallFontSize,
-                                                  color: AppTheme.grey4),
-                                            ),
-                                          ],
-                                        ))))),
+                              padding: const EdgeInsets.only(
+                                  bottom: AppTheme.contentSpacing),
+                              child: SizedBox(
+                                  height: 50,
+                                  width: double.infinity,
+                                  child: OutlinedButton(
+                                      onPressed: () =>
+                                          _openCollection(collection),
+                                      child: Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 12),
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                child: Text(
+                                                    wordCollectionTitle(
+                                                        l10n, collection),
+                                                    textAlign: TextAlign.center,
+                                                    style: const TextStyle(
+                                                        fontSize: AppTheme
+                                                            .btnFontSize)),
+                                              ),
+                                              Text(
+                                                _sumCounts(collection).hasWords
+                                                    ? categoryCountLabel(l10n,
+                                                        _sumCounts(collection))
+                                                    : '',
+                                                style: const TextStyle(
+                                                    fontSize:
+                                                        AppTheme.smallFontSize,
+                                                    color: AppTheme.grey4),
+                                              ),
+                                            ],
+                                          ))))),
                       ],
                       const SizedBox(height: AppTheme.contentSpacing),
                       _learnedWordsButton(),
@@ -223,7 +222,8 @@ class _LearningScreenState extends State<LearningScreen> with RouteAware {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );

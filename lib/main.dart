@@ -16,28 +16,7 @@ import 'services/file_service.dart';
 import 'services/audio_service.dart';
 import 'theme/app_theme.dart';
 import 'widgets/app_widgets.dart';
-import 'screens/loading_screen.dart';
-import 'screens/start_screen.dart';
-import 'screens/learning_screen.dart';
-import 'screens/category_screen.dart';
-import 'screens/collection_screen.dart';
-import 'screens/word_screen.dart';
-import 'screens/due_word_screen.dart';
-import 'screens/game_choose_screen.dart';
-import 'screens/turbo_lv_select_screen.dart';
-import 'screens/game_screen.dart';
-import 'screens/word_search_screen.dart';
-import 'screens/crossword_screen.dart';
-import 'screens/crossword_lv_select_screen.dart';
-import 'screens/hangman_screen.dart';
-import 'screens/hangman_lv_select_screen.dart';
-import 'screens/fill_in_screen.dart';
-import 'screens/fill_in_lv_select_screen.dart';
-import 'screens/grammar_detail_screen.dart';
-import 'screens/grammar_screen.dart';
-import 'screens/settings_screen.dart';
-import 'screens/progress_screen.dart';
-import 'screens/progress_group_screen.dart';
+import 'routes.dart';
 
 /// Startet die App OHNE schweren Block vor dem ersten Frame.
 ///
@@ -66,8 +45,7 @@ void main() {
   final navigationState = NavigationState();
   final userState =
       UserState(userManager: userManager, vocabManager: vocabManager);
-  final audioService =
-      AudioService(fileService: fileService);
+  final audioService = AudioService(fileService: fileService);
 
   // Persistiert die zuletzt geöffnete Seite, damit die App nach einem
   // Android-Prozess-Kill („Alle Apps schliessen“) dort weitermacht.
@@ -113,31 +91,8 @@ class LearnALanguageApp extends StatelessWidget {
       // Auto-Logins auslöst.
       builder: (context, child) =>
           StorageWarningListener(child: child ?? const SizedBox.shrink()),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const LoadingScreen(),
-        '/start': (context) => const StartScreen(),
-        '/learning': (context) => const LearningScreen(),
-        '/category': (context) => const CategoryScreen(),
-        '/collection': (context) => const CollectionScreen(),
-        '/word': (context) => const WordScreen(),
-        '/dueword': (context) => const DueWordScreen(),
-        '/gameselect': (context) => const TurboLevelSelectScreen(),
-        '/gamechoose': (context) => const GameChooseScreen(),
-        '/game': (context) => const GameScreen(),
-        '/wordsearch': (context) => const WordSearchScreen(),
-        '/crossword': (context) => const CrosswordScreen(),
-        '/crosswordselect': (context) => const CrosswordLvSelectScreen(),
-        '/hangman': (context) => const HangmanScreen(),
-        '/hangmanselect': (context) => const HangmanLvSelectScreen(),
-        '/fillin': (context) => const FillInScreen(),
-        '/fillinselect': (context) => const FillInLvSelectScreen(),
-        '/settings': (context) => const SettingsScreen(),
-        '/grammar': (context) => const GrammarScreen(),
-        '/grammardetail': (context) => const GrammarDetailScreen(),
-        '/progress': (context) => const ProgressScreen(),
-        '/progress_group': (context) => const ProgressGroupScreen(),
-      },
+      initialRoute: AppRoutes.home,
+      routes: appRoutes,
     );
   }
 }

@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -101,8 +102,9 @@ class _WordScreenState extends State<WordScreen> {
     final word = _words[_index];
     final uname = dataState.appData.loggedUName;
 
-    context.read<VocabQueries>().checkWordAnswer(
-            uname, word.key, word.translation, langCode: _lang)
+    context
+        .read<VocabQueries>()
+        .checkWordAnswer(uname, word.key, word.translation, langCode: _lang)
         .then((result) {
       if (!mounted) return;
       setState(() => _answerChecked = true);
@@ -125,8 +127,7 @@ class _WordScreenState extends State<WordScreen> {
       } else {
         setState(() {
           _feedback = result.message;
-          _feedbackColor =
-              result.correct ? AppTheme.green2 : AppTheme.red2;
+          _feedbackColor = result.correct ? AppTheme.green2 : AppTheme.red2;
         });
       }
     });
@@ -253,17 +254,17 @@ class _WordScreenState extends State<WordScreen> {
     final isNew = mode == 'new';
     final isReview = mode == 'read' || mode == 'learned';
     final word = _currentWord;
-    final examples = word?.examples ?? const [''];  // Vorgabe [''] wie altes _parseList
-    final examplesNative = word?.examplesNative ?? const [''];  // Vorgabe [''] wie altes _parseList
+    final examples =
+        word?.examples ?? const ['']; // Vorgabe [''] wie altes _parseList
+    final examplesNative =
+        word?.examplesNative ?? const ['']; // Vorgabe [''] wie altes _parseList
 
     return Scaffold(
       body: Column(children: [
         BoxTitle(
             title: l10n.titPageLearning,
-            onInfo: () => showInfoDialog(
-                context,
-                l10n.infWord,
-                l10n.information)),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infWord, l10n.information)),
         if (isNew && _streak != null)
           SizedBox(
               height: 20,
@@ -278,34 +279,32 @@ class _WordScreenState extends State<WordScreen> {
                 child: word == null
                     ? Center(
                         child: Text(l10n.noWords,
-                            style: const TextStyle(fontSize: AppTheme.lblFontSize)))
-                    : _buildWordContent(word, examples, examplesNative, isNew,
-                        isReview))),
+                            style: const TextStyle(
+                                fontSize: AppTheme.lblFontSize)))
+                    : _buildWordContent(
+                        word, examples, examplesNative, isNew, isReview))),
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
   }
 
-  Widget _buildWordContent(
-      VocabEntry word,
-      List<String> examples,
-      List<String> examplesNative,
-      bool isNew,
-      bool isReview) {
+  Widget _buildWordContent(VocabEntry word, List<String> examples,
+      List<String> examplesNative, bool isNew, bool isReview) {
     final l10n = AppLocalizations.of(context);
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: Text(word.word,
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 36))),
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Text(word.word,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 36))),
           Text(word.translation,
               textAlign: TextAlign.center,
               style: const TextStyle(
@@ -357,8 +356,8 @@ class _WordScreenState extends State<WordScreen> {
                 child: OutlinedButton(
                     onPressed: _answerChecked ? null : _onRead,
                     child: Text(l10n.btnRead,
-                        style: const TextStyle(
-                            fontSize: AppTheme.btnFontSize)))),
+                        style:
+                            const TextStyle(fontSize: AppTheme.btnFontSize)))),
           if (isReview)
             SizedBox(
                 height: 56,
@@ -392,5 +391,4 @@ class _WordScreenState extends State<WordScreen> {
       ),
     );
   }
-
 }

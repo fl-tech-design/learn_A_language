@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -56,8 +57,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
     if (uname.isEmpty) return;
     final vq = context.read<VocabQueries>();
     final navState = context.read<NavigationState>();
-    final lang =
-        navState.resolveActiveLang(context.read<UserState>().userData);
+    final lang = navState.resolveActiveLang(context.read<UserState>().userData);
     _lang = lang;
     final cat = wordCategoryById(navState.selectedCategoryId);
     final words = cat != null
@@ -182,8 +182,7 @@ class _DueWordScreenState extends State<DueWordScreen> {
       if (char == ' ') {
         setState(() => _userInput += ' ');
       } else if (nextPos + 1 < correctAnswer.length &&
-          char.toLowerCase() ==
-              correctAnswer[nextPos + 1].toLowerCase()) {
+          char.toLowerCase() == correctAnswer[nextPos + 1].toLowerCase()) {
         // Der User tippt flüssig weiter, ohne die Space-Taste zu drücken:
         // Leerstelle + folgenden Buchstaben automatisch ergänzen (analog zur
         // "/"-Auto-Einfügung), damit das Prüfwort nie „an einem Stück“
@@ -222,8 +221,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
         _correctDisplay = rawAnswer;
       });
       final uname = context.read<DataState>().appData.loggedUName;
-      await context.read<VocabQueries>().checkWordAnswer(
-          uname, word.key, word.translation, langCode: _lang);
+      await context
+          .read<VocabQueries>()
+          .checkWordAnswer(uname, word.key, word.translation, langCode: _lang);
     } else {
       setState(() => _userInput = newInput);
     }
@@ -242,8 +242,9 @@ class _DueWordScreenState extends State<DueWordScreen> {
       _userInput = correctAnswer; // Reveal full word
     });
     final uname = context.read<DataState>().appData.loggedUName;
-    await context.read<VocabQueries>().checkWordAnswer(
-        uname, word.key, '', langCode: _lang);
+    await context
+        .read<VocabQueries>()
+        .checkWordAnswer(uname, word.key, '', langCode: _lang);
   }
 
   void _nextWord() {
@@ -318,9 +319,11 @@ class _DueWordScreenState extends State<DueWordScreen> {
                   autofocus: true,
                   showCursor: false,
                   maxLength: 1,
-                  buildCounter:
-                      (_, {int? currentLength, int? maxLength, bool? isFocused}) =>
-                          const SizedBox.shrink(),
+                  buildCounter: (_,
+                          {int? currentLength,
+                          int? maxLength,
+                          bool? isFocused}) =>
+                      const SizedBox.shrink(),
                   autocorrect: false,
                   enableSuggestions: false,
                   keyboardType: TextInputType.text,
@@ -344,8 +347,8 @@ class _DueWordScreenState extends State<DueWordScreen> {
                                       : l10n.noDueWords
                                   : word!.translation,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: translationFontSize)))),
+                              style:
+                                  TextStyle(fontSize: translationFontSize)))),
                   // Abfrage-/Feedback-Block nur bei aktiven Wörtern rendern.
                   // Auf dem End-Screen (allDone) bleibt nur der Abschluss-Satz
                   // und der Zurück-Button – kein „Übersetzung:“-Label, keine
@@ -393,7 +396,8 @@ class _DueWordScreenState extends State<DueWordScreen> {
                     if (_feedback.isNotEmpty)
                       Text(_feedback,
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 20, color: _feedbackColor)),
+                          style:
+                              TextStyle(fontSize: 20, color: _feedbackColor)),
                   ],
                   SizedBox(height: compact ? 4.0 : AppTheme.contentSpacing),
                   SizedBox(
@@ -414,7 +418,8 @@ class _DueWordScreenState extends State<DueWordScreen> {
           BoxBottom(
               settingsText: l10n.settings,
               exitText: l10n.exit,
-              onSettings: () => Navigator.of(context).pushNamed('/settings'),
+              onSettings: () =>
+                  Navigator.of(context).pushNamed(AppRoutes.settings),
               onExit: AppTheme.closeApp),
       ]),
     );

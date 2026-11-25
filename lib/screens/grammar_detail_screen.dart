@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -30,8 +31,7 @@ class GrammarDetailScreen extends StatelessWidget {
             child: _BodyText(_text(block.contrast, lang)!)),
       if (block.examples.isNotEmpty)
         _Section(
-            caption: l10n.grammarExamples,
-            child: _buildExamples(block, lang)),
+            caption: l10n.grammarExamples, child: _buildExamples(block, lang)),
       if (block.pitfall != null)
         _Section(
             caption: l10n.grammarPitfall,
@@ -68,7 +68,8 @@ class GrammarDetailScreen extends StatelessWidget {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
@@ -127,8 +128,7 @@ class GrammarDetailScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 4),
             child: Text(quickCheck.accepted.join(' / '),
                 style: const TextStyle(
-                    fontSize: AppTheme.smallFontSize,
-                    color: AppTheme.grey4))),
+                    fontSize: AppTheme.smallFontSize, color: AppTheme.grey4))),
     ]);
   }
 }
@@ -200,7 +200,6 @@ class _BodyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,
-        style: const TextStyle(fontSize: AppTheme.infFontSize));
+    return Text(text, style: const TextStyle(fontSize: AppTheme.infFontSize));
   }
 }

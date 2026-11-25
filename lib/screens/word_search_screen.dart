@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -26,7 +27,8 @@ class WordSearchScreen extends StatefulWidget {
   /// diese Kategorie gefiltert; wenn null, kommen alle Kategorien (globaler Hub).
   final String? category;
 
-  const WordSearchScreen({super.key, this.difficulty = 'medium', this.category});
+  const WordSearchScreen(
+      {super.key, this.difficulty = 'medium', this.category});
 
   @override
   State<WordSearchScreen> createState() => _WordSearchScreenState();
@@ -45,7 +47,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     super.didChangeDependencies();
     if (_category == null) {
       // Kategorie wie bei den bestehenden Kategorie-Screens als
-      // Route-Argument möglich (z. B. pushNamed('/wordsearch', arguments: id)).
+      // Route-Argument möglich (z. B. pushNamed(AppRoutes.wordsearch, arguments: id)).
       final routeId = ModalRoute.of(context)?.settings.arguments as String?;
       _category = widget.category ?? routeId;
     }
@@ -118,8 +120,8 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
       final rounded = t.round();
       final snappedRow = start.row + rounded * dir.row;
       final snappedCol = start.col + rounded * dir.col;
-      final err = (current.row - snappedRow).abs() +
-          (current.col - snappedCol).abs();
+      final err =
+          (current.row - snappedRow).abs() + (current.col - snappedCol).abs();
       if (err < bestErr || (err == bestErr && rounded > bestT)) {
         bestErr = err;
         bestT = rounded;
@@ -127,8 +129,8 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
       }
     }
     if (bestDir == null) return start;
-    return Point(start.row + bestT * bestDir.row,
-        start.col + bestT * bestDir.col);
+    return Point(
+        start.row + bestT * bestDir.row, start.col + bestT * bestDir.col);
   }
 
   /// Alle Zellen der Geraden von [a] bis [b] (inklusive).
@@ -258,7 +260,8 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
@@ -376,8 +379,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
                 style: TextStyle(
                   fontSize: fontSize,
                   fontWeight: FontWeight.w700,
-                  color:
-                      inDrag || inFound ? Colors.white : Colors.white70,
+                  color: inDrag || inFound ? Colors.white : Colors.white70,
                 ),
               ),
             ),
@@ -405,8 +407,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
               style: TextStyle(
                 fontSize: 14,
                 color: w.found ? Colors.white38 : Colors.white,
-                decoration:
-                    w.found ? TextDecoration.lineThrough : null,
+                decoration: w.found ? TextDecoration.lineThrough : null,
                 decorationColor: Colors.white60,
               ),
             ),

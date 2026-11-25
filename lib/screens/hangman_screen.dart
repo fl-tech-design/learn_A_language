@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -43,7 +44,7 @@ class _HangmanScreenState extends State<HangmanScreen> {
     super.didChangeDependencies();
     if (_category == null) {
       // Kategorie wie bei den bestehenden Kategorie-Screens als
-      // Route-Argument moeglich (z. B. pushNamed('/hangman', arguments: id)).
+      // Route-Argument moeglich (z. B. pushNamed(AppRoutes.hangman, arguments: id)).
       final routeId = ModalRoute.of(context)?.settings.arguments as String?;
       _category = widget.category ?? routeId;
     }
@@ -174,7 +175,8 @@ class _HangmanScreenState extends State<HangmanScreen> {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
@@ -364,13 +366,13 @@ class _HangmanScreenState extends State<HangmanScreen> {
         child: Text(
           ch,
           style: TextStyle(
-              fontSize: 16, color: used ? Colors.white38 : AppTheme.colorPrimary),
+              fontSize: 16,
+              color: used ? Colors.white38 : AppTheme.colorPrimary),
         ),
       ),
     );
   }
-
-  }
+}
 
 /// Zeichnet das Hangman-Strichmaennchen samt Galgen (10 Stufen) per
 /// CustomPaint – keine Assets, keine svg-Pakete.

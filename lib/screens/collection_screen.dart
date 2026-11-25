@@ -1,3 +1,4 @@
+import '../routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme/app_theme.dart';
@@ -64,7 +65,8 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
   Future<void> _refreshCounts() async {
     final uname = context.read<DataState>().appData.loggedUName;
     if (uname.isEmpty) return;
-    final lang = context.read<NavigationState>()
+    final lang = context
+        .read<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
     final counts = await context
         .read<VocabQueries>()
@@ -74,9 +76,10 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
 
   void _open(WordCategory cat) {
     if (_mode == 'progress') {
-      Navigator.of(context).pushNamed('/progress_group', arguments: cat.id);
+      Navigator.of(context)
+          .pushNamed(AppRoutes.progressGroup, arguments: cat.id);
     } else {
-      Navigator.of(context).pushNamed('/category', arguments: cat.id);
+      Navigator.of(context).pushNamed(AppRoutes.category, arguments: cat.id);
     }
   }
 
@@ -91,8 +94,8 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
         BoxTitle(
             title:
                 collection != null ? wordCollectionTitle(l10n, collection) : '',
-            onInfo: () => showInfoDialog(
-                context, l10n.infLearning, l10n.information)),
+            onInfo: () =>
+                showInfoDialog(context, l10n.infLearning, l10n.information)),
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
@@ -105,8 +108,8 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
                 const SizedBox(height: AppTheme.contentSpacing),
                 for (final cat in categories)
                   Padding(
-                    padding: const EdgeInsets.only(
-                        bottom: AppTheme.contentSpacing),
+                    padding:
+                        const EdgeInsets.only(bottom: AppTheme.contentSpacing),
                     child: SizedBox(
                       height: 50,
                       width: double.infinity,
@@ -156,7 +159,8 @@ class _CollectionScreenState extends State<CollectionScreen> with RouteAware {
         BoxBottom(
             settingsText: l10n.settings,
             exitText: l10n.exit,
-            onSettings: () => Navigator.of(context).pushNamed('/settings'),
+            onSettings: () =>
+                Navigator.of(context).pushNamed(AppRoutes.settings),
             onExit: AppTheme.closeApp),
       ]),
     );
