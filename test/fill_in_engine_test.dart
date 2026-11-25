@@ -179,7 +179,13 @@ void main() {
           examples: const [],
           examplesNative: const [],
         ),
-        // Auch 'seen' + level 0 (Default) bleibt draussen.
+      ], 'medium');
+      expect(round.items.where((i) => i.solution == 'wohne'), isEmpty);
+      expect(round.items.length, 3);
+    });
+
+    test('gelesene Woerter mit level 0 sind spielbar (Ticket #61)', () {
+      final round = createRound([
         VocabEntry(
           key: 'to_end_present_0',
           word: 'ich ende',
@@ -189,9 +195,7 @@ void main() {
           status: 'seen',
         ),
       ], 'medium');
-      expect(round.items.where((i) => i.solution == 'wohne'), isEmpty);
-      expect(round.items.where((i) => i.solution == 'ende'), isEmpty);
-      expect(round.items.length, 3);
+      expect(round.items.where((i) => i.solution == 'ende'), isNotEmpty);
     });
 
     test('Deckelung: Pool kleiner als Satzahl -> weniger Saetze, ohne Wiederholung',

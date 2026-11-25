@@ -108,12 +108,14 @@ List<_DirStep> _placementDirections(bool diagonal) => [
         ..._allDirections.where((d) => d.isDiagonal),
     ];
 
-/// Erlaubt nur Einträge, die spielbar sind: status 'seen' UND level >= 1.
+/// Erlaubt nur Einträge, die spielbar sind: status 'seen' (Level egal).
 ///
 /// Wird nach dem Laden zusätzlich zu den Datenbank-Filtern angewendet, damit
-/// NIE Wörter der Kategorie 0 (status 'new', level 0) ins Puzzle gelangen.
+/// NIE Wörter der Kategorie 0 (status 'new') ins Puzzle gelangen. Seit
+/// Ticket #61 ist der Filter identisch zum Turbo-Spiel: jedes gelesene Wort
+/// ist spielbar.
 List<VocabEntry> _usableEntries(List<VocabEntry> entries) =>
-    entries.where((e) => e.status == 'seen' && e.level >= 1).toList();
+    entries.where((e) => e.status == 'seen').toList();
 
 List<String> _tokens(String word) =>
     word.trim().split(RegExp(r'\s+')).where((t) => t.isNotEmpty).toList();

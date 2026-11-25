@@ -330,6 +330,56 @@ void main() {
           'seen');
     });
 
+    test('hebt gelesene Woerter mit level 0 auf level 1 (Ticket #61)', () async {
+      final userMgr = FakeUserManager();
+      final dict = _dictMix();
+      final fs = FakeFileService(languageDicts: dict.$1);
+      final mgr = VocabManagerImpl(userMgr, fs);
+
+      await userMgr.saveUserdata('test', _userData('test', {
+        // Bestandswort aus der Kivy-Ära: gelesen (status seen ist der
+        // _entry-Default), aber level 0.
+        'to_go_present_0': _entry(level: 0),
+      }));
+      userMgr.saveCount = 0;
+
+      await mgr.migrateVocabForUser('test', 'en', 'de');
+
+      expect(userMgr.saveCount, 1);
+      final ve = userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!;
+      expect(ve.level, 1,
+          reason: 'gelesen (status seen) bedeutet per Semantik „in Arbeit" '
+              '→ mindestens Level 1');
+      expect(ve.status, 'seen');
+
+      // Idempotent: zweiter Lauf ändert nichts mehr.
+      userMgr.saveCount = 0;
+      await mgr.migrateVocabForUser('test', 'en', 'de');
+      expect(userMgr.saveCount, 0);
+    });
+
+    test('laesst ungesehene Woerter (status new, level 0) unangetastet '
+        '(Ticket #61)', () async {
+      final userMgr = FakeUserManager();
+      final dict = _dictMix();
+      final fs = FakeFileService(languageDicts: dict.$1);
+      final mgr = VocabManagerImpl(userMgr, fs);
+
+      await userMgr.saveUserdata('test', _userData('test', {
+        'to_go_present_0': _entry(level: 0, status: 'new'),
+      }));
+      userMgr.saveCount = 0;
+
+      await mgr.migrateVocabForUser('test', 'en', 'de');
+
+      expect(userMgr.saveCount, 0,
+          reason: 'kein Fortschritt nötig – status new bleibt new, '
+              'level 0 bleibt level 0');
+      expect(userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!.level, 0);
+      expect(userMgr.lastSaved!.vocabByLang['en']!['to_go_present_0']!.status,
+          'new');
+    });
+
     test('berechnet reviewDue aus lastReviewed neu (Pass 2)', () async {
       final userMgr = FakeUserManager();
       final dict = _dictMix();

@@ -100,9 +100,9 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     if (cat != null) {
       words = words.where((e) => cat.containsEntryKey(e.key)).toList();
     }
-    // Zweiter Filter nach dem Laden (Puzzle-Garantie): nur level >= 1 und
-    // status 'seen'. Kategorie-0-Woerter landen NIE im Raetsel.
-    words = words.where((e) => e.status == 'seen' && e.level >= 1).toList();
+    // Zweiter Filter nach dem Laden: nur status 'seen' (Level egal; siehe
+    // Ticket #61). Wie beim Turbo-Spiel ist jedes gelesene Wort spielbar.
+    words = words.where((e) => e.status == 'seen').toList();
 
     final puzzle = generatePuzzle(words, widget.difficulty);
     if (!mounted) return;

@@ -296,6 +296,19 @@ class VocabManagerImpl implements VocabManager {
       }
     }
 
+    // Pass 0b: Level-Reparatur (Ticket #61). Bestandswörter mit
+    // status 'seen' aber level 0 (meist aus der Kivy-Ära, bevor gelesene
+    // Wörter automatisch level >= 1 bekamen) blockieren die Nicht-Turbo-Spiele
+    // (Kreuzwort, Hangman, Lückentext, Wortsuche). Ein gelesenes Wort ist per
+    // Semantik „in Arbeit" → mindestens Level 1.
+    for (final key in vocabMap.keys.toList()) {
+      final ve = vocabMap[key]!;
+      if (ve.status == 'seen' && VocabManager.isNew(ve.level)) {
+        vocabMap[key] = ve.copyWith(level: 1);
+        changed = true;
+      }
+    }
+
     // Pass 1: sync word/translation/examples_native with dictionaries
     for (final key in vocabMap.keys.toList()) {
       var ve = vocabMap[key]!;

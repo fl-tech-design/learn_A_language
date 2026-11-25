@@ -238,7 +238,15 @@ void main() {
               examples: const [],
               examplesNative: const [],
             ),
-            // Auch 'seen' + level 0 (Default) bleibt draussen.
+          ],
+          'easy');
+
+      expect(puzzle.words.where((w) => w.word == 'LAUFEN'), isEmpty);
+    });
+
+    test('gelesene Woerter mit level 0 sind spielbar (Ticket #61)', () {
+      final puzzle = generatePuzzle(
+          [
             VocabEntry(
               key: 'to_buy_present_3',
               word: 'wir kaufen',
@@ -250,8 +258,7 @@ void main() {
           ],
           'easy');
 
-      expect(puzzle.words.where((w) => w.word == 'LAUFEN'), isEmpty);
-      expect(puzzle.words.where((w) => w.word == 'KAUFEN'), isEmpty);
+      expect(puzzle.words.where((w) => w.word == 'KAUFEN'), isNotEmpty);
     });
   });
 }

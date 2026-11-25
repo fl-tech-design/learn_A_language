@@ -145,7 +145,12 @@ void main() {
           examples: const [],
           examplesNative: const [],
         ),
-        // Auch 'seen' + level 0 (Default) bleibt draussen.
+      ], 'medium');
+      expect(round.entries.where((w) => w.target == 'LAUFEN'), isEmpty);
+    });
+
+    test('gelesene Woerter mit level 0 sind spielbar (Ticket #61)', () {
+      final round = createRound([
         VocabEntry(
           key: 'to_end_present_3',
           word: 'wir enden',
@@ -155,8 +160,7 @@ void main() {
           status: 'seen',
         ),
       ], 'medium');
-      expect(round.entries.where((w) => w.target == 'LAUFEN'), isEmpty);
-      expect(round.entries.where((w) => w.target == 'ENDEN'), isEmpty);
+      expect(round.entries.where((w) => w.target == 'ENDEN'), isNotEmpty);
     });
 
     test('gleicher Infinitiv nur einmal (Deduplizierung)', () {

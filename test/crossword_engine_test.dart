@@ -239,7 +239,12 @@ void main() {
           examples: const [],
           examplesNative: const [],
         ),
-        // Auch 'seen' + level 0 (Default) bleibt draussen.
+      ], 'medium');
+      expect(puzzle.words.where((w) => w.word == 'LAUFEN'), isEmpty);
+    });
+
+    test('gelesene Woerter mit level 0 sind spielbar (Ticket #61)', () {
+      final puzzle = generatePuzzle([
         VocabEntry(
           key: 'to_end_present_3',
           word: 'wir enden',
@@ -248,9 +253,8 @@ void main() {
           examplesNative: const [],
           status: 'seen',
         ),
-      ], 'medium');
-      expect(puzzle.words.where((w) => w.word == 'LAUFEN'), isEmpty);
-      expect(puzzle.words.where((w) => w.word == 'ENDEN'), isEmpty);
+      ], 'easy');
+      expect(puzzle.words.where((w) => w.word == 'ENDEN'), isNotEmpty);
     });
 
     test('gleicher Infinitiv nur einmal (Deduplizierung)', () {

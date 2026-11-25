@@ -68,12 +68,13 @@ int livesFor(String difficulty) => switch (difficulty) {
       _ => 6, // medium Default
     };
 
-/// Erlaubt nur Eintraege, die spielbar sind: status 'seen' UND level >= 1.
+/// Erlaubt nur Eintraege, die spielbar sind: status 'seen' (Level egal).
 ///
 /// Wird nach dem Laden zusaetzlich angewendet, damit NIE Woerter der
-/// Kategorie 0 (status 'new', level 0) in die Runde gelangen.
+/// Kategorie 0 (status 'new') in die Runde gelangen. Seit Ticket #61 ist
+/// der Filter identisch zum Turbo-Spiel: jedes gelesene Wort ist spielbar.
 List<VocabEntry> _usableEntries(List<VocabEntry> entries) =>
-    entries.where((e) => e.status == 'seen' && e.level >= 1).toList();
+    entries.where((e) => e.status == 'seen').toList();
 
 /// Letztes Wort-Token eines Eintrags (die konjugierte Infinitiv-Form,
 /// z. B. "gehen" aus "wir gehen", "gehe" aus "ich gehe").
