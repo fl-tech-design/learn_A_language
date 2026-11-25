@@ -1,15 +1,30 @@
+import 'dart:developer' show log;
+
 import 'app_models.dart' show LanguageCourse;
 
-/// Zentrale Registry für Sprachen, Verb-Keys und Kurs-Level.
+/// Zentraler, datengetriebener Sprachkatalog (Ticket #52).
 ///
-/// Trennt die (statische) Datenkatalog-Definition vom Code, damit
-/// verfügbare Kurse, Muttersprachen-Auswahl und die Dict-Kopierliste ein
-/// einheitliches, erweiterbares Bild der Sprachen liefern.
+/// Alle Sprachdaten kommen aus der Bundle-Konfigurationsdatei
+/// [languageConfigAsset] (assets/data_app/languages.json). Eine neue Sprache
+/// benötigt NUR einen Eintrag in dieser Datei – die Code-Dateien
+/// `language_registry.dart` und `file_service.dart` müssen dafür nicht mehr
+/// geändert werden.
 ///
-/// Wichtig: Es werden KEINE Sprachdaten erfunden. `es`/`ru` erscheinen nur
-/// als UI-Sprachwahl (FlagBox); Kurse und Dict-Pfade bleiben auf die Sprachen
-/// mit tatsächlich vorhandenen Wörterbüchern (`dictLanguageCodes`:
-/// de/en/fr) beschränkt.
+/// Lädt die Datei nicht (fehlt im Bundle, ungültig, Test-Umgebung ohne Assets),
+/// bleiben die **eingebetteten Defaults** aktiv – identisch zum Verhalten vor
+/// dem Umbau.
+///
+/// Rollen pro Config-Eintrag:
+/// - `ui`:     in [appLanguages] (UI-Sprachwahl/FlagBox; erfordert zusätzlich
+///             die jeweilige `app_localizations_<code>.dart`/`.arb`)
+/// - `seed`:   in [dictLanguageCodes] (stabiler Kurs-Fallback, First-Run & Tests)
+/// - `course`: in [courseCandidateCodes] (Asset-Copy-Liste + Discovery-Filter)
+const String languageConfigAsset = 'assets/data_app/languages.json';
+
+/// true, sobald [loadLanguageConfig] erfolgreich eine Config angewendet hat.
+bool languageConfigApplied = false;
+
+/// Sprachkonfiguration einer UI-Sprache.
 class AppLanguageConfig {
   /// Sprachcode, z. B. `'de'`.
   final String code;
@@ -27,79 +42,111 @@ class AppLanguageConfig {
   });
 }
 
-/// UI-Sprachregistry: alle wählbaren UI-Sprachen (de/en/es/fr/ru/el).
-///
-/// Diese Liste steuert AUSSCHLIESSLICH die FlagBox-Sprachwahl (UI-Locale).
-/// Für Kurse/Muttersprachen/Dicts gilt [dictLanguageCodes].
-const List<AppLanguageConfig> appLanguages = [
-  AppLanguageConfig(
-    code: 'de',
-    flagAsset: 'assets/images/flag_germany.png',
-    labelKey: 'german',
-  ),
-  AppLanguageConfig(
-    code: 'en',
-    flagAsset: 'assets/images/flag_uk.png',
-    labelKey: 'english',
-  ),
-  AppLanguageConfig(
-    code: 'es',
-    flagAsset: 'assets/images/flag_spa.png',
-    labelKey: 'spanish',
-  ),
-  AppLanguageConfig(
-    code: 'fr',
-    flagAsset: 'assets/images/flag_fra.png',
-    labelKey: 'french',
-  ),
-  AppLanguageConfig(
-    code: 'ru',
-    flagAsset: 'assets/images/flag_rus.png',
-    labelKey: 'russian',
-  ),
-  AppLanguageConfig(
-    code: 'el',
-    flagAsset: 'assets/images/flag_gre.png',
-    labelKey: 'greek',
-  ),
-];
+/// Geparster, VALIDIERTER Eintrag aus der Config-Datei.
+class _LanguageEntry {
+  final String code;
+  final String flagAsset;
+  final String labelKey;
+  final String nameDe;
+  final List<String> aliases;
+  final bool ui;
+  final bool seed;
+  final bool course;
 
-/// Seed-Sprachen: garantiert verfügbare Kurssprachen/Wörterbücher.
-///
-/// Dienen als stabiler Fallback (First-Run & Tests), bis die tatsächlich
-/// vorhandenen Sprachen per [FileService.discoverLanguageDicts] ermittelt
-/// werden. `availableCourses` startet mit dieser Menge.
-const Set<String> dictLanguageCodes = {'de', 'en', 'fr'};
+  const _LanguageEntry({
+    required this.code,
+    required this.flagAsset,
+    required this.labelKey,
+    required this.nameDe,
+    required this.aliases,
+    required this.ui,
+    required this.seed,
+    required this.course,
+  });
+}
 
-/// Alle Sprachcodes, die potenziell Kurs-Wörterbücher (und Audio) liefern
-/// könnten.
-///
-/// Der `initialize`-Copy-Loop probiert JEDE dieser Kandidaten × Verb-Keys und
-/// überspringt fehlende Dateien still. Dadurch erscheint eine neue Sprache
-/// automatisch, sobald ihre Dicts ins Bundle und (per Discovery) als vorhanden
-/// erkannt werden – OHNE die Kopierliste/den Katalog jedes Mal anzufassen.
-const List<String> courseCandidateCodes = [
-  'de',
-  'en',
-  'fr',
-  'es',
-  'ru',
-  'el',
-  'it',
-  'pt',
-];
+/// Eingebettete Defaults – Fallback, wenn die Config-Datei fehlt oder ungültig
+/// ist. Inhalte identisch zum Stand vor Ticket #52.
+class _Defaults {
+  static const List<AppLanguageConfig> appLanguages = [
+    AppLanguageConfig(
+      code: 'de',
+      flagAsset: 'assets/images/flag_germany.png',
+      labelKey: 'german',
+    ),
+    AppLanguageConfig(
+      code: 'en',
+      flagAsset: 'assets/images/flag_uk.png',
+      labelKey: 'english',
+    ),
+    AppLanguageConfig(
+      code: 'es',
+      flagAsset: 'assets/images/flag_spa.png',
+      labelKey: 'spanish',
+    ),
+    AppLanguageConfig(
+      code: 'fr',
+      flagAsset: 'assets/images/flag_fra.png',
+      labelKey: 'french',
+    ),
+    AppLanguageConfig(
+      code: 'ru',
+      flagAsset: 'assets/images/flag_rus.png',
+      labelKey: 'russian',
+    ),
+    AppLanguageConfig(
+      code: 'el',
+      flagAsset: 'assets/images/flag_gre.png',
+      labelKey: 'greek',
+    ),
+  ];
 
-/// Flagassets je Sprachcode (für verfügbare/sichtbare Kurs-Sprachen).
-const Map<String, String> _flagForCode = {
-  'de': 'assets/images/flag_germany.png',
-  'en': 'assets/images/flag_uk.png',
-  'es': 'assets/images/flag_spa.png',
-  'fr': 'assets/images/flag_fra.png',
-  'ru': 'assets/images/flag_rus.png',
-  'el': 'assets/images/flag_gre.png',
-  'it': 'assets/images/flag_ita.png',
-  'pt': 'assets/images/flag_por.png',
-};
+  static const Set<String> dictLanguageCodes = {'de', 'en', 'fr'};
+
+  static const List<String> courseCandidateCodes = [
+    'de', 'en', 'fr', 'es', 'ru', 'el', 'it', 'pt',
+  ];
+
+  static const Map<String, String> flagForCode = {
+    'de': 'assets/images/flag_germany.png',
+    'en': 'assets/images/flag_uk.png',
+    'es': 'assets/images/flag_spa.png',
+    'fr': 'assets/images/flag_fra.png',
+    'ru': 'assets/images/flag_rus.png',
+    'el': 'assets/images/flag_gre.png',
+    'it': 'assets/images/flag_ita.png',
+    'pt': 'assets/images/flag_por.png',
+  };
+
+  static const Map<String, String> courseLanguageNames = {
+    'de': 'Deutsch',
+    'en': 'Englisch',
+    'es': 'Spanisch',
+    'fr': 'Französisch',
+    'ru': 'Russisch',
+    'el': 'Griechisch',
+    'it': 'Italienisch',
+    'pt': 'Portugiesisch',
+  };
+
+  /// Akzeptierte Sprachnamen (deutsch + englisch) → Sprachcode.
+  static const Map<String, String> languageNameToCode = {
+    // Deutsch
+    'deutsch': 'de',
+    'englisch': 'en',
+    'spanisch': 'es',
+    'französisch': 'fr',
+    'russisch': 'ru',
+    'griechisch': 'el',
+    // Englisch
+    'german': 'de',
+    'english': 'en',
+    'spanish': 'es',
+    'french': 'fr',
+    'russian': 'ru',
+    'greek': 'el',
+  };
+}
 
 /// Alle 30 Verb-Keys (Dict-Datei-Stem ohne Sprach-Präfix).
 ///
@@ -141,47 +188,49 @@ const List<String> verbKeys = [
 /// Verfügbare CEFR-Level für Kurse.
 const List<String> courseLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
-/// Sprachcode für einen akzeptierten Sprachnamen (z. B. `'deutsch'`, `'german'`).
+// ── Aktive, datengetriebene Daten (initial = Defaults). ──────────────
+List<AppLanguageConfig> _appLanguages = _Defaults.appLanguages;
+Set<String> _dictLanguageCodes = _Defaults.dictLanguageCodes;
+List<String> _courseCandidateCodes = _Defaults.courseCandidateCodes;
+Map<String, String> _flagForCode = _Defaults.flagForCode;
+Map<String, String> _courseLanguageNames = _Defaults.courseLanguageNames;
+Map<String, String> _languageNameToCode = _Defaults.languageNameToCode;
+
+/// UI-Sprachregistry: alle wählbaren UI-Sprachen (de/en/es/fr/ru/el).
 ///
-/// Behält die bisher in `changeLanguage` akzeptierten deutschen und englischen
-/// Sprachnamen-Strings bei. Liefert `null` bei unbekanntem Namen.
-const Map<String, String> _languageNameToCode = {
-  // Deutsch
-  'deutsch': 'de',
-  'englisch': 'en',
-  'spanisch': 'es',
-  'französisch': 'fr',
-  'russisch': 'ru',
-  'griechisch': 'el',
-  // Englisch
-  'german': 'de',
-  'english': 'en',
-  'spanish': 'es',
-  'french': 'fr',
-  'russian': 'ru',
-  'greek': 'el',
-};
+/// Diese Liste steuert AUSSCHLIESSLICH die FlagBox-Sprachwahl (UI-Locale).
+/// Für Kurse/Muttersprachen/Dicts gelten [dictLanguageCodes] bzw.
+/// [courseCandidateCodes].
+List<AppLanguageConfig> get appLanguages => _appLanguages;
+
+/// Seed-Sprachen: garantiert verfügbare Kurssprachen/Wörterbücher.
+///
+/// Dienen als stabiler Fallback (First-Run & Tests), bis die tatsächlich
+/// vorhandenen Sprachen per [FileService.discoverLanguageDicts] ermittelt
+/// werden. `availableCourses` startet mit dieser Menge.
+Set<String> get dictLanguageCodes => _dictLanguageCodes;
+
+/// Alle Sprachcodes, die potenziell Kurs-Wörterbücher (und Audio) liefern
+/// könnten.
+///
+/// Der `initialize`-Copy-Loop probiert JEDE dieser Kandidaten × Verb-Keys und
+/// überspringt fehlende Dateien still. Dadurch erscheint eine neue Sprache
+/// automatisch, sobald ihre Dicts ins Bundle und (per Discovery) als vorhanden
+/// erkannt werden – OHNE die Kopierliste/den Katalog jedes Mal anzufassen.
+List<String> get courseCandidateCodes => _courseCandidateCodes;
+
+/// Anzeige-/Sortiername eines Kurses (deutscher Name). Unbekannter Code →
+/// roher Code als Fallback.
+String courseLanguageName(String code) => _courseLanguageNames[code] ?? code;
+
+/// Flagasset zum Sprachcode; unbekannter Code → Standard-Fallback der ersten
+/// UI-Sprache (identisch zum früheren `appLanguages.first.flagAsset`).
+String courseFlagAsset(String code) =>
+    _flagForCode[code] ?? (appLanguages.isNotEmpty ? appLanguages.first.flagAsset : '');
 
 /// Löst einen Sprachnamen (normalisiert) in einen Sprachcode auf oder `null`.
 String? languageCodeForName(String name) =>
     _languageNameToCode[name.trim().toLowerCase()];
-
-/// Anzeige-/Sortiername eines Kurses (deutscher Name, wie bisher).
-String courseLanguageName(String code) => switch (code) {
-      'de' => 'Deutsch',
-      'en' => 'Englisch',
-      'es' => 'Spanisch',
-      'fr' => 'Französisch',
-      'ru' => 'Russisch',
-      'el' => 'Griechisch',
-      'it' => 'Italienisch',
-      'pt' => 'Portugiesisch',
-      _ => code,
-    };
-
-/// Flagasset zum Sprachcode ({} → Standard-Fallback „en“).
-String courseFlagAsset(String code) =>
-    _flagForCode[code] ?? appLanguages.first.flagAsset;
 
 /// Die verfügbaren Kurse (Kurs-ID `'{code}_verben_{level}'`).
 ///
@@ -224,4 +273,144 @@ List<String> buildCourseDictFiles() {
     }
   }
   return result;
+}
+
+/// Lädt und wendet die Sprach-Config aus [languageConfigAsset] an.
+///
+/// [assetLoader] injiziert das (Asset-)Laden, damit Tests ohne echte
+/// Bundle-Dateien arbeiten können (Signatur wie `FileService.loadBundledJson`).
+///
+/// Fehlerverhalten: Datei fehlt, ist unlesbar oder enthält mindestens einen
+/// ungültigen Eintrag → komplette Config wird VERWORFEN, die eingebetteten
+/// Defaults bleiben aktiv (App startet unverändert). Erst wenn die ganze Datei
+/// valide ist, wird angewendet.
+Future<void> loadLanguageConfig({
+  required Future<Map<String, dynamic>> Function(String assetPath) assetLoader,
+}) async {
+  final Map<String, dynamic> raw;
+  try {
+    raw = await assetLoader(languageConfigAsset);
+  } catch (e) {
+    log('language_registry: Config $languageConfigAsset nicht ladbar '
+        '(Defaults bleiben aktiv): $e');
+    return;
+  }
+
+  // `{}`/leer = vertraglicher „nicht verfügbar“-Fallback (z. B. loadBundledJson
+  // ohne Bundle-Datei in Tests) → nichts anwenden.
+  final rawLanguages = raw['languages'];
+  if (rawLanguages is! List || rawLanguages.isEmpty) {
+    log('language_registry: Config $languageConfigAsset enthält keine '
+        'Sprachen – Defaults bleiben aktiv');
+    return;
+  }
+
+  final entries = <_LanguageEntry>[];
+  final seenCodes = <String>{};
+  for (final item in rawLanguages) {
+    final parsed = _parseEntry(item);
+    if (parsed == null) {
+      log('language_registry: Ungültiger Eintrag in $languageConfigAsset – '
+          'Defaults bleiben aktiv');
+      return;
+    }
+    if (!seenCodes.add(parsed.code)) {
+      log('language_registry: Doppelter Sprachcode "${parsed.code}" in '
+          '$languageConfigAsset – Defaults bleiben aktiv');
+      return;
+    }
+    entries.add(parsed);
+  }
+
+  // Sicherheitsnetz: mindestens ein Kurs- und ein Seed-Kandidat müssen übrig
+  // bleiben, sonst würden weder Kopierliste noch Kurse funktionieren.
+  if (entries.isEmpty ||
+      !entries.any((e) => e.course) ||
+      !entries.any((e) => e.seed)) {
+    log('language_registry: Config $languageConfigAsset unbrauchbar (keine '
+        'Kurs-/Seed-Sprachen) – Defaults bleiben aktiv');
+    return;
+  }
+
+  _applyEntries(entries);
+  languageConfigApplied = true;
+}
+
+/// Parst einen einzelnen Config-Eintrag; `null` bei ungültigem Schema.
+_LanguageEntry? _parseEntry(dynamic item) {
+  if (item is! Map<String, dynamic>) return null;
+  final code = item['code'];
+  if (code is! String || code.trim().isEmpty) return null;
+  final flagAsset = item['flagAsset'];
+  if (flagAsset is! String || flagAsset.isEmpty) return null;
+  final labelKey = item['labelKey'];
+  if (labelKey is! String || labelKey.isEmpty) return null;
+  final nameDe = item['nameDe'];
+  if (nameDe is! String || nameDe.isEmpty) return null;
+  final rawAliases = item['aliases'];
+  if (rawAliases != null && rawAliases is! List) return null;
+  if (rawAliases is List &&
+      rawAliases.any((a) => a is! String || a.trim().isEmpty)) {
+    return null;
+  }
+  final ui = item['ui'];
+  final seed = item['seed'];
+  final course = item['course'];
+  if (ui != null && ui is! bool) return null;
+  if (seed != null && seed is! bool) return null;
+  if (course != null && course is! bool) return null;
+
+  return _LanguageEntry(
+    code: code.trim(),
+    flagAsset: flagAsset,
+    labelKey: labelKey,
+    nameDe: nameDe,
+    aliases: [
+      for (final alias in (rawAliases as List? ?? const []))
+        (alias as String).trim().toLowerCase(),
+    ],
+    ui: ui ?? false,
+    seed: seed ?? false,
+    course: course ?? false,
+  );
+}
+
+/// Überträgt validierte Einträge auf die aktiven Registry-Daten.
+void _applyEntries(List<_LanguageEntry> entries) {
+  _appLanguages = [
+    for (final e in entries)
+      if (e.ui)
+        AppLanguageConfig(
+            code: e.code, flagAsset: e.flagAsset, labelKey: e.labelKey),
+  ];
+  _dictLanguageCodes = {
+    for (final e in entries)
+      if (e.seed) e.code,
+  };
+  _courseCandidateCodes = [
+    for (final e in entries)
+      if (e.course) e.code,
+  ];
+  _flagForCode = {
+    for (final e in entries) e.code: e.flagAsset,
+  };
+  _courseLanguageNames = {
+    for (final e in entries) e.code: e.nameDe,
+  };
+  _languageNameToCode = {
+    for (final e in entries)
+      for (final alias in e.aliases) alias: e.code,
+  };
+}
+
+/// Setzt die Registry zurück auf die eingebetteten Defaults (z. B. für
+/// neues Laden in Tests; eine zuvor angewendete Config wird verworfen).
+void resetLanguageRegistry() {
+  _appLanguages = _Defaults.appLanguages;
+  _dictLanguageCodes = _Defaults.dictLanguageCodes;
+  _courseCandidateCodes = _Defaults.courseCandidateCodes;
+  _flagForCode = _Defaults.flagForCode;
+  _courseLanguageNames = _Defaults.courseLanguageNames;
+  _languageNameToCode = _Defaults.languageNameToCode;
+  languageConfigApplied = false;
 }

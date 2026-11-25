@@ -1,0 +1,85 @@
+{
+  "_documentation": "Zentraler, datengetriebener Sprachkatalog (Ticket #52). Eine neue Sprache = genau ein Eintrag in 'languages'. language_registry.dart und file_service.dart muessen dafuer NICHT mehr geaendert werden. Felder: code (ISO 639-1, fuer Dateipfade verwendet), flagAsset (Kurs/UI-Flagge), labelKey (l10n-Key, nur relevant bei ui:true), nameDe (deutscher Kursname), aliases (akzeptierte Sprachnamen fuer languageCodeForName, inkl. deutsche+englische Namen), ui (UI-Sprachwahl/FlagBox -> erfordert zusaetzlich app_localizations_<code>.dart bzw. .arb), seed (Dict-Fallback-Seeds, stabil ohne Discovery), course (Kurs-Kandidat: Asset-Kopierliste + Laufzeit-Discovery-Filter).",
+  "languages": [
+    {
+      "code": "de",
+      "flagAsset": "assets/images/flag_germany.png",
+      "labelKey": "german",
+      "nameDe": "Deutsch",
+      "aliases": ["deutsch", "german"],
+      "ui": true,
+      "seed": true,
+      "course": true
+    },
+    {
+      "code": "en",
+      "flagAsset": "assets/images/flag_uk.png",
+      "labelKey": "english",
+      "nameDe": "Englisch",
+      "aliases": ["englisch", "english"],
+      "ui": true,
+      "seed": true,
+      "course": true
+    },
+    {
+      "code": "es",
+      "flagAsset": "assets/images/flag_spa.png",
+      "labelKey": "spanish",
+      "nameDe": "Spanisch",
+      "aliases": ["spanisch", "spanish"],
+      "ui": true,
+      "seed": false,
+      "course": true
+    },
+    {
+      "code": "fr",
+      "flagAsset": "assets/images/flag_fra.png",
+      "labelKey": "french",
+      "nameDe": "Französisch",
+      "aliases": ["französisch", "french"],
+      "ui": true,
+      "seed": true,
+      "course": true
+    },
+    {
+      "code": "ru",
+      "flagAsset": "assets/images/flag_rus.png",
+      "labelKey": "russian",
+      "nameDe": "Russisch",
+      "aliases": ["russisch", "russian"],
+      "ui": true,
+      "seed": false,
+      "course": true
+    },
+    {
+      "code": "el",
+      "flagAsset": "assets/images/flag_gre.png",
+      "labelKey": "greek",
+      "nameDe": "Griechisch",
+      "aliases": ["griechisch", "greek"],
+      "ui": true,
+      "seed": false,
+      "course": true
+    },
+    {
+      "code": "it",
+      "flagAsset": "assets/images/flag_ita.png",
+      "labelKey": "italian",
+      "nameDe": "Italienisch",
+      "aliases": [],
+      "ui": false,
+      "seed": false,
+      "course": true
+    },
+    {
+      "code": "pt",
+      "flagAsset": "assets/images/flag_por.png",
+      "labelKey": "portuguese",
+      "nameDe": "Portugiesisch",
+      "aliases": [],
+      "ui": false,
+      "seed": false,
+      "course": true
+    }
+  ]
+}

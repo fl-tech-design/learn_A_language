@@ -2,7 +2,8 @@ import 'dart:developer' show log;
 
 import 'package:flutter/material.dart';
 import '../models/app_models.dart';
-import '../models/language_registry.dart' show dictLanguageCodes, languageCodeForName;
+import '../models/language_registry.dart'
+    show dictLanguageCodes, languageCodeForName, loadLanguageConfig;
 import '../services/file_service.dart';
 import '../services/storage_error_bus.dart';
 import 'user_manager.dart' show recoverAppData;
@@ -52,9 +53,15 @@ class DataState extends ChangeNotifier {
   List<double> get color3 => _color3;
 
   // ── Initialization ─────────────────────────────────────────────
-  /// Initialisiert das Dateisystem (Asset-Kopien, Ticket #42) und liefert die
-  /// relative Pfade der fehlgeschlagenen Kopien zurück (leer = vollständig).
+  /// Initialisiert die Sprach-Config (Ticket #52), kopiert dann die Assets
+  /// (Ticket #42) und liefert die relative Pfade der fehlgeschlagenen Kopien
+  /// zurück (leer = vollständig).
+  ///
+  /// Die Sprach-Config wird VOR den Asset-Kopien geladen, sodass
+  /// Copy-Liste (`courseCandidateCodes`) und Kurs-Discovery bereits die
+  /// datengetriebenen Sprachen enthalten.
   Future<Set<String>> initialize() async {
+    await loadLanguageConfig(assetLoader: _fileService.loadBundledJson);
     final failedCopies = await _fileService.initialize();
     await _discoverDictLanguages();
     await loadAppData();
