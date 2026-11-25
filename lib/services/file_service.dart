@@ -155,29 +155,45 @@ class FileServiceImpl implements FileService {
     return '$dir/$safe';
   }
 
-  /// Stellt sicher, dass [absolutePath] (bzw. sein existenter Vorfahre) nach
-  /// Symlink-Auflösung im kanonischen App-Verzeichnis liegt.
+  /// Löst [absolutePath] in seinen kanonischen (symlink-aufgelösten) Zielpfad
+  /// auf und erzwingt, dass dieser innerhalb des App-Datenverzeichnisses liegt.
   ///
-  /// TOCTOU-Hinweis: dart:io bietet keinen atomaren „O_NOFOLLOW"-Zugriff;
-  /// diese Prüfung schützt gegen statische und vorkonfigurierte Symlink-Lagen.
-  /// Ein Tausch von Verzeichnissen DURCH einen Symlink nach der Prüfung ist
-  /// nicht zuverlässig abwehrbar. Auf Android ist das appDir privat und nicht
-  /// durch Angreifer beschreibbar; auf Linux-Desktop besitzt ein Angreifer
-  /// mit Schreibzugriff auf das appDir ohnehin direkten Datenzugriff.
-  Future<void> _ensureCanonicalWithinAppDir(String absolutePath) async {
+  /// Rückgabe ist der Pfad, der für den tatsächlichen Zugriff verwendet werden
+  /// soll: Existiert ein Ziel (Datei oder Parent), wird der AUFGELÖSTE kanonische
+  /// Pfad zurückgegeben. Dadurch erfolgen Prüfung und Zugriff auf DASSELBE Ziel –
+  /// ein späterer Tausch des Blatt-Symlinks zwischen Prüfung und Zugriff ist damit
+  /// nicht mehr ausnutzbar (TOCTOU-Entschärfung, Ticket #43).
+  ///
+  /// TOCTOU-Restrisiko: dart:io bietet keinen atomaren „O_NOFOLLOW"-Zugriff, daher
+  /// lässt sich ein Tausch eines PARENT-Verzeichnisses auf einen Symlink exakt
+  /// zwischen Auflösung und Zugriff nicht zuverlässig abwehren. Unter Android ist
+  /// das App-Verzeichnis privat und nicht angreifer-beschreibbar; auf Linux-Desktop
+  /// besitzt ein Angreifer mit Schreibzugriff auf das App-Verzeichnis ohnehin
+  /// direkten Datenzugriff. Existieren weder Datei noch Parent (es kann kein
+  /// Symlink vorliegen), wird der originale Pfad unverändert zurückgegeben.
+  Future<String> _resolveCanonicalAccessPath(String absolutePath) async {
     final canonicalRoot = await _canonicalAppDirPath();
+
     String? resolved;
     try {
       resolved = await File(absolutePath).resolveSymbolicLinks();
     } on FileSystemException {
       // Datei existiert (noch) nicht → Parent-Anfrage versuchen.
     }
-    if (resolved == null) {
-      try {
-        resolved = await File(absolutePath).parent.resolveSymbolicLinks();
-      } on FileSystemException {
-        return; // weder Datei noch Parent existieren → kein Symlink möglich
+    if (resolved != null) {
+      if (!_isWithin(canonicalRoot, resolved)) {
+        throw PathRejectedException(
+          absolutePath,
+          StateError('Aufgelöster Pfad liegt ausserhalb des App-Verzeichnisses'),
+        );
       }
+      return resolved;
+    }
+    try {
+      resolved = await File(absolutePath).parent.resolveSymbolicLinks();
+    } on FileSystemException {
+      // weder Datei noch Parent existieren → keine Symlink-Auflösung nötig.
+      return absolutePath;
     }
     if (!_isWithin(canonicalRoot, resolved)) {
       throw PathRejectedException(
@@ -185,6 +201,7 @@ class FileServiceImpl implements FileService {
         StateError('Aufgelöster Pfad liegt ausserhalb des App-Verzeichnisses'),
       );
     }
+    return absolutePath;
   }
 
   static bool _isWithin(String root, String candidate) {
@@ -292,8 +309,8 @@ class FileServiceImpl implements FileService {
 
   @override
   Future<Map<String, dynamic>> loadJson(String relativePath) async {
-    final file = File(await _resolveAppPath(relativePath));
-    await _ensureCanonicalWithinAppDir(file.path);
+    final file = File(
+        await _resolveCanonicalAccessPath(await _resolveAppPath(relativePath)));
 
     // ── Normalfall: Datei fehlt → {} (semantisch „nicht vorhanden"). ──
     if (!await file.exists()) return {};
@@ -366,28 +383,28 @@ class FileServiceImpl implements FileService {
       String absolutePath, Map<String, dynamic> data,
       {required bool rotateBackup}) async {
     const encoder = JsonEncoder.withIndent('  ');
-    final file = File(absolutePath);
+    // TOCTOU-Entschärfung (Ticket #43): Zugriff über den aufgelösten kanonischen
+    // Zielpfad statt über den Originalpfad. Ablehnungen (PathRejectedException)
+    // werden NIE als generischer Persistenzfehler verpackt, sondern durchgereicht.
+    final targetPath = await _resolveCanonicalAccessPath(absolutePath);
+    final file = File(targetPath);
     final parent = file.parent;
 
     try {
       if (!await parent.exists()) {
         await parent.create(recursive: true);
       }
-      // Backstop: Auch intern aufgelöste absolute Pfade müssen innerhalb des
-      // App-Verzeichnisses liegen (Symlink-Ketten). Ablehnungen werden NIE als
-      // generischer Persistenzfehler verpackt, sondern durchgereicht.
-      await _ensureCanonicalWithinAppDir(absolutePath);
       if (rotateBackup && await file.exists()) {
-        await File('$absolutePath.bak')
+        await File('$targetPath.bak')
             .writeAsString(await file.readAsString(), flush: true);
       }
-      final tmp = File('$absolutePath.tmp');
+      final tmp = File('$targetPath.tmp');
       await tmp.writeAsString(encoder.convert(data), flush: true);
-      await tmp.rename(absolutePath);
+      await tmp.rename(targetPath);
     } catch (e) {
       if (e is PathRejectedException) rethrow;
-      log('saveJson: Schreiben von $absolutePath fehlgeschlagen: $e');
-      throw PersistenceException(absolutePath, e);
+      log('saveJson: Schreiben von $targetPath fehlgeschlagen: $e');
+      throw PersistenceException(targetPath, e);
     }
   }
 
@@ -401,8 +418,8 @@ class FileServiceImpl implements FileService {
 
   @override
   Future<void> deleteFile(String relativePath) async {
-    final target = await _resolveAppPath(relativePath);
-    await _ensureCanonicalWithinAppDir(target);
+    final target =
+        await _resolveCanonicalAccessPath(await _resolveAppPath(relativePath));
     final file = File(target);
     if (!await file.exists()) return;
     try {

@@ -225,6 +225,31 @@ void main() {
       // Die Datei ausserhalb bleibt unangetastet.
       expect(await outsideFile.exists(), isTrue);
     });
+    test('Leaf-Symlink: Zugriff über aufgelösten Zielpfad (TOCTOU #43)',
+        () async {
+      if (Platform.isWindows) return; // Link-Erzeugung setzt unter Windows Rechte voraus
+      // Innerhalb liegendes Ziel – via Symlink im App-Verzeichnis referenziert.
+      final internalDir = Directory('${tmpDir.path}/internal');
+      await internalDir.create(recursive: true);
+      final target = File('${internalDir.path}/data.json');
+      await target.writeAsString('{"pinned": true}');
+
+      // Lesen über den Leaf-Link trifft den kanonischen Zielpfad (innerhalb).
+      await Link('${tmpDir.path}/link.json').create('${internalDir.path}/data.json');
+      expect(await fs.loadJson('link.json'), {'pinned': true});
+
+      // Schreiben über den Leaf-Link trifft das Ziel 'linkw.json' (der Link wird
+      // NICHT durch eine reguläre Datei ersetzt) – Zugriff läuft über den
+      // aufgelösten kanonischen Zielpfad, nicht über eine erneute Auflösung.
+      final src = File('${tmpDir.path}/linkw.json');
+      await src.writeAsString('{"old": 0}');
+      await Link('${tmpDir.path}/link.json').delete();
+      await Link('${tmpDir.path}/link.json').create(src.path);
+      await fs.saveJson('link.json', {'written': 2});
+      // Ziel (aufgelöster Pfad) wurde aktualisiert, der Link bleibt Symlink.
+      expect(await src.readAsString(), contains('"written"'));
+      expect(await Link('${tmpDir.path}/link.json').exists(), isTrue);
+    });
   });
 
   group('discoverLanguageDicts – Laufzeit-Discovery (dynamische Sprachen)', () {
