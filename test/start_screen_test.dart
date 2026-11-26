@@ -9,6 +9,7 @@ import 'package:learn_a_language/managers/user_state.dart';
 import 'package:learn_a_language/managers/vocab_queries.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/screens/start_screen.dart';
+import 'package:learn_a_language/services/pack_manager.dart';
 import 'package:learn_a_language/services/storage_error_bus.dart';
 
 import 'helpers/fakes.dart';
@@ -24,7 +25,12 @@ Widget _app({
   required FakeVocabManager vocabManager,
   required DataState dataState,
   required NavigationState navState,
+  PackManager? packManager,
 }) {
+  // Standard: Deutsch + Englisch bereits installiert (kein Erststart-Banner,
+  // „Neue Kurse“ zeigt diese Sprachen als installiert an). Pro Test kann ein
+  // eigener (z. B. leerer) Fake gesetzt werden.
+  final pack = packManager ?? FakePackManager(installed: const {'de', 'en'});
   return MultiProvider(
     providers: [
       ChangeNotifierProvider<DataState>.value(value: dataState),
@@ -36,6 +42,7 @@ Widget _app({
         ),
       ),
       Provider<VocabQueries>.value(value: VocabQueriesImpl(userManager)),
+      Provider<PackManager>.value(value: pack),
     ],
     child: MaterialApp(
       locale: const Locale('de'),

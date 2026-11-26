@@ -49,7 +49,16 @@ Widget _app({
   FakeVocabManager? vocabManager,
   Set<String> failedCopyPaths = const {},
 }) {
-  final fs = FakeFileService(store: store, failedCopyPaths: failedCopyPaths);
+  // Seit der Sprachpaket-Auslagerung (Ticket #68) zählt `discoverLanguageDicts`
+  // NUR tatsächlich vorhandene Wörterbücher – der Kurs-Katalog wird daraus neu
+  // aufgebaut und enthält keine Seed-Defaults mehr. Damit der Auto-Login den
+  // Kurs 'de_verben_a1' findet (und ein Init- + Migrationslauf läuft), meldet
+  // der Fake die installierten Sprachen 'de'/'en'.
+  final fs = FakeFileService(
+    store: store,
+    languageDicts: const {'de': {}, 'en': {}},
+    failedCopyPaths: failedCopyPaths,
+  );
   final dataState = DataState(fs);
   final userState = UserState(
     userManager: userManager ?? FakeUserManager(),

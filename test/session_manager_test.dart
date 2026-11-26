@@ -87,11 +87,10 @@ void main() {
 
 
     test('GrammarBlock-Argument wird per Id aufgelöst', () async {
-      final store = <String, Map<String, dynamic>>{};
-      final fs = FakeFileService(
-        store: store,
-        bundled: {
-          // FakeFileService liefert das gesamte Dokument direkt zurück.
+      final store = <String, Map<String, dynamic>>{
+        // Grammatik liegt seit der Sprachpaket-Auslagerung (Ticket #68) im
+        // App-Speicher (relativer Pfad zu GrammarManagerImpl.assetPath).
+        GrammarManagerImpl.assetPath: {
           'schema_version': '1.0.0',
           'content_version': '1',
           'framework': 'CEFR',
@@ -108,7 +107,8 @@ void main() {
             },
           ],
         },
-      );
+      };
+      final fs = FakeFileService(store: store);
       final manager = SessionManager(fs, GrammarManagerImpl(fs));
 
       await manager.save(

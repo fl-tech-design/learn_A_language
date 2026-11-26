@@ -2,6 +2,7 @@ import 'package:learn_a_language/managers/user_manager.dart';
 import 'package:learn_a_language/managers/vocab_manager.dart';
 import 'package:learn_a_language/models/app_models.dart';
 import 'package:learn_a_language/services/file_service.dart';
+import 'package:learn_a_language/services/pack_manager.dart';
 import 'package:learn_a_language/services/storage_error_bus.dart';
 
 /// In-Memory [FileService]-Fake.
@@ -280,5 +281,66 @@ class FakeVocabManager implements VocabManager {
   Future<void> migrateVocabForUser(
       String username, String langCode, String nativeLang) async {
     migrateCount++;
+  }
+}
+
+/// In-Memory [PackManager]-Fake für Widget-Tests (Ticket #68): bildet den
+/// Installationsstatus über ein konfigurierbares Sprachcode-Set ab. Install/
+/// Uninstall mutieren dieses Set, ohne auf Netzwerk oder Dateisystem
+/// zuzugreifen.
+class FakePackManager implements PackManager {
+  /// Sprachcodes, die aktuell als installiert gelten.
+  final Set<String> installed;
+
+  int installCount = 0;
+  int uninstallCount = 0;
+  int manifestLoadCount = 0;
+
+  /// Optionaler Fehler, den die nächste [install] wirft (für Fehlerpfad-Tests).
+  Object? nextInstallError;
+
+  FakePackManager({Set<String> installed = const {}})
+      : installed = Set<String>.of(installed);
+
+  @override
+  Future<PackManifest> loadManifest() async {
+    manifestLoadCount++;
+    return const PackManifest(
+      schemaVersion: 1,
+      version: '1.0.0',
+      packs: [],
+    );
+  }
+
+  @override
+  Future<PackInstallStatus> installStatus(String langCode) async =>
+      installed.contains(langCode)
+          ? PackInstallStatus.installed
+          : PackInstallStatus.notInstalled;
+
+  @override
+  Future<Set<String>> installedPacks() async => Set<String>.of(installed);
+
+  @override
+  Future<PackInstallation> install(String langCode) async {
+    if (nextInstallError != null) throw nextInstallError!;
+    installCount++;
+    installed.add(langCode);
+    return PackInstallation(
+      entry: PackEntry(
+        id: langCode,
+        version: '1.0.0',
+        url: '',
+        sizeBytes: 0,
+        sha256: '',
+      ),
+      extractedFiles: const [],
+    );
+  }
+
+  @override
+  Future<void> uninstall(String langCode) async {
+    uninstallCount++;
+    installed.remove(langCode);
   }
 }

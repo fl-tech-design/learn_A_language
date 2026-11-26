@@ -33,17 +33,6 @@ Map<String, dynamic> _verb({
       },
     };
 
-/// Bundle-Fake, das auf den Asset-Pfad antwortet (pro Sprache).
-class _PerPathBundle extends FakeFileService {
-  final Map<String, Map<String, dynamic>> byPath;
-  _PerPathBundle({required this.byPath})
-      : super(store: const {}, languageDicts: const {}, appDirValue: '');
-
-  @override
-  Future<Map<String, dynamic>> loadBundledJson(String assetPath) async =>
-      byPath[assetPath] ?? const {};
-}
-
 void main() {
   group('Kurs-basiertes Sprachenmodell (Bug: de-Kurs lud en-Daten)', () {
     Future<UserState> stateWith({
@@ -98,8 +87,11 @@ void main() {
     });
 
     test('Audio folgt der Kurssprache (de vs. en)', () async {
-      final fake = _PerPathBundle(byPath: {
-        'assets/language_dict/de/de_to_go.json':
+      // Audiopfade liegen seit der Sprachpaket-Auslagerung (Ticket #68) in der
+      // installierten Wörterbuch-JSON im App-Speicher (Pfad relativ zum
+      // App-Verzeichnis), nicht mehr im Bundle.
+      final fake = FakeFileService(store: {
+        'language_dict/de/de_to_go.json':
             _verb(infinitive: 'gehen', trans0: 'ich gehe', audioPath: 'audio/de/verbs/de_audio_to_go/audio_ich_gehe'),
       });
       final audio = AudioService(fileService: fake);
