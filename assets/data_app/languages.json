@@ -66,8 +66,8 @@
       "flagAsset": "assets/images/flag_ita.png",
       "labelKey": "italian",
       "nameDe": "Italienisch",
-      "aliases": [],
-      "ui": false,
+      "aliases": ["italienisch", "italian"],
+      "ui": true,
       "seed": false,
       "course": true
     },
@@ -76,8 +76,8 @@
       "flagAsset": "assets/images/flag_por.png",
       "labelKey": "portuguese",
       "nameDe": "Portugiesisch",
-      "aliases": [],
-      "ui": false,
+      "aliases": ["portugiesisch", "portuguese"],
+      "ui": true,
       "seed": false,
       "course": true
     }

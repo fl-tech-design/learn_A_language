@@ -521,6 +521,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get greek => 'Griechisch';
 
   @override
+  String get italian => 'Italienisch';
+
+  @override
+  String get portuguese => 'Portugiesisch';
+
+  @override
   String get motherTongueHint =>
       'Bestimmt die Übersetzungsrichtung (Wort und Übersetzung) für alle gewählten Kurs-Sprachen.';
 
@@ -535,6 +541,15 @@ class AppLocalizationsDe extends AppLocalizations {
       'Bitte installiere zuerst ein Sprachpaket, um mit dem Lernen zu beginnen.';
 
   @override
+  String get packStepDownloading => 'Daten werden heruntergeladen...';
+
+  @override
+  String get packStepVerifying => 'Datenpaket wird geprüft...';
+
+  @override
+  String get packStepExtracting => 'Wird installiert...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'Sprachpaket konnte nicht installiert werden: $reason';
   }
@@ -542,6 +557,11 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'Dieses Sprachpaket erfordert App-Version $version oder höher. Bitte aktualisiere die App.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'Das heruntergeladene Sprachpaket ist unvollständig: $expected Bytes erwartet, aber nur $actual Bytes erhalten. Bitte versuche es erneut.';
   }
 
   @override

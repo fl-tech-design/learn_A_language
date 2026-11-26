@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
@@ -115,6 +117,26 @@ void _useLandscapeSize(WidgetTester tester) {
   tester.view.devicePixelRatio = 1.0;
   addTearDown(tester.view.resetPhysicalSize);
   addTearDown(tester.view.resetDevicePixelRatio);
+}
+
+/// Test-Fake, der [FakePackManager.install] so lange blockiert, bis [gate]
+/// geöffnet wird – damit der Busy-Zustand der Install-Zeile (Spinner +
+/// Schritttext) kontrolliert untersucht werden kann.
+class _GatedPackManager extends FakePackManager {
+  _GatedPackManager({required this.gate, super.installed = const {}});
+
+  final Completer<void> gate;
+  final List<String> installCalls = [];
+
+  @override
+  Future<PackInstallation> install(String langCode,
+      {void Function(PackInstallStep)? onProgress}) async {
+    installCalls.add(langCode);
+    onProgress?.call(PackInstallStep.downloading);
+    await gate.future;
+    onProgress?.call(PackInstallStep.extracting);
+    return super.install(langCode);
+  }
 }
 
 void main() {
@@ -272,5 +294,46 @@ void main() {
     expect(find.text('Neue Sprachen entdecken'), findsOneWidget);
     expect(find.text('Englisch'), findsOneWidget);
     expect(find.text('Deutsch'), findsOneWidget);
+  });
+
+  testWidgets('zeigt den Installations-Schritttext links neben dem Spinner',
+      (tester) async {
+    _useLandscapeSize(tester);
+    final um = FakeUserManager();
+    _seedAlice(um);
+    final dataState = DataState(FakeFileService(store: _appDataStore()));
+    await dataState.loadAppData();
+    final navState = NavigationState();
+    final gate = Completer<void>();
+    final pack = _GatedPackManager(installed: const {'de', 'en'}, gate: gate);
+
+    await tester.pumpWidget(_app(
+      userManager: um,
+      vocabManager: FakeVocabManager(),
+      dataState: dataState,
+      navState: navState,
+      packManager: pack,
+    ));
+    await tester.pumpAndSettle();
+
+    // Ersten Install-Button in „Neue Kurse“ antippen (de/en sind bereits
+    // installiert, die übrigen Sprachen zeigen einen „Installieren“-Button).
+    await tester.tap(find.widgetWithText(OutlinedButton, 'Installieren').first);
+    await tester.pump();
+
+    // Download-Phase sichtbar: Text plus Spinner (aktuelle Phase links davon).
+    expect(find.text('Daten werden heruntergeladen...'), findsOneWidget);
+    expect(find.byType(CircularProgressIndicator), findsOneWidget);
+
+    // Installation abschließen → Schritttext und Spinner verschwinden.
+    gate.complete();
+    await tester.pumpAndSettle();
+    // SnackBar-Ablauf abwarten, damit am Testende kein Timer offen ist.
+    await tester.pump(const Duration(seconds: 4));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Daten werden heruntergeladen...'), findsNothing);
+    expect(find.byType(CircularProgressIndicator), findsNothing);
+    expect(pack.installCalls, hasLength(1));
   });
 }

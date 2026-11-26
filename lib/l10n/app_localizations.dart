@@ -1094,6 +1094,18 @@ abstract class AppLocalizations {
   /// **'Greek'**
   String get greek;
 
+  /// No description provided for @italian.
+  ///
+  /// In en, this message translates to:
+  /// **'Italian'**
+  String get italian;
+
+  /// No description provided for @portuguese.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get portuguese;
+
   /// No description provided for @motherTongueHint.
   ///
   /// In en, this message translates to:
@@ -1118,6 +1130,24 @@ abstract class AppLocalizations {
   /// **'Please install a language pack first to start learning.'**
   String get packInstallHint;
 
+  /// No description provided for @packStepDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading data...'**
+  String get packStepDownloading;
+
+  /// No description provided for @packStepVerifying.
+  ///
+  /// In en, this message translates to:
+  /// **'Verifying data package...'**
+  String get packStepVerifying;
+
+  /// No description provided for @packStepExtracting.
+  ///
+  /// In en, this message translates to:
+  /// **'Installing...'**
+  String get packStepExtracting;
+
   /// No description provided for @packInstallFailed.
   ///
   /// In en, this message translates to:
@@ -1129,6 +1159,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This language pack requires app version {version} or higher. Please update the app.'**
   String packInstallVersionTooLow(String version);
+
+  /// No description provided for @packInstallSizeMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'The downloaded language pack is incomplete: {expected} bytes expected, but only {actual} bytes received. Please try again.'**
+  String packInstallSizeMismatch(int expected, int actual);
 
   /// No description provided for @packUninstallFailed.
   ///

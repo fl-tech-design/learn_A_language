@@ -191,10 +191,15 @@
   "french": "Francês",
   "russian": "Russo",
   "greek": "Grego",
+  "italian": "Italiano",
+  "portuguese": "Português",
   "motherTongueHint": "Define a direção da tradução (palavra e tradução) para todos os idiomas de curso selecionados.",
   "packInstall": "Instalar",
   "packUninstall": "Desinstalar",
   "packInstallHint": "Instale primeiro um pacote de idiomas para começar a aprender.",
+  "packStepDownloading": "A descarregar dados...",
+  "packStepVerifying": "A verificar o pacote de dados...",
+  "packStepExtracting": "A instalar...",
   "packInstallFailed": "Não foi possível instalar o pacote de idiomas: {reason}",
   "@packInstallFailed": {
     "placeholders": {
@@ -208,6 +213,17 @@
     "placeholders": {
       "version": {
         "type": "String"
+      }
+    }
+  },
+  "packInstallSizeMismatch": "O pacote de idiomas transferido está incompleto: esperavam-se {expected} bytes, mas foram recebidos apenas {actual}. Tente novamente.",
+  "@packInstallSizeMismatch": {
+    "placeholders": {
+      "expected": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
       }
     }
   },

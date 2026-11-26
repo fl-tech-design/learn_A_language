@@ -88,9 +88,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final motherTongueCodes =
         context.read<DataState>().availableDictLanguages.toList()..sort();
     final motherTongueLabels = [
-      for (final code in motherTongueCodes)
-        _langLabel(
-            l10n, appLanguages.firstWhere((c) => c.code == code).labelKey),
+      for (final code in motherTongueCodes) _langLabelForCode(l10n, code),
     ];
     final result = await showCreateUserDialog(
         context,
@@ -135,11 +133,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 in context.read<DataState>().availableDictLanguages.toList()
                   ..sort())
               _motherLangChip(
-                  code,
-                  _langLabel(l10n,
-                      appLanguages.firstWhere((c) => c.code == code).labelKey),
-                  current,
-                  userState),
+                  code, _langLabelForCode(l10n, code), current, userState),
           ],
         ),
         const SizedBox(height: 4),
@@ -159,8 +153,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
         'french' => l10n.french,
         'russian' => l10n.russian,
         'greek' => l10n.greek,
+        'italian' => l10n.italian,
+        'portuguese' => l10n.portuguese,
         _ => labelKey,
       };
+
+  /// Lokalisiertes Label für einen Sprachcode (Kurs- oder UI-Sprache).
+  ///
+  /// UI-Sprachen (de/en/es/fr/ru/el) laufen über [appLanguages]/[_langLabel].
+  /// Nicht-UI-Kurssprachen (it/pt, seit der Sprachpaket-Auslagerung
+  /// Ticket #68 nachinstallierbar) fallen auf den deutschen Kursnamen zurück.
+  /// Das verhindert den `StateError` („No element“) eines
+  /// `appLanguages.firstWhere` und damit den weißen Settings-Screen (Ticket #71).
+  static String _langLabelForCode(AppLocalizations l10n, String code) {
+    for (final lang in appLanguages) {
+      if (lang.code == code) return _langLabel(l10n, lang.labelKey);
+    }
+    return courseLanguageName(code);
+  }
 
   /// Deutscher Sprachname für die `changeLanguage`-Auflösung über die Registry.
   static String _langNameForChangeLanguage(String code) => switch (code) {
@@ -170,6 +180,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
         'fr' => 'französisch',
         'ru' => 'russisch',
         'el' => 'griechisch',
+        'it' => 'italienisch',
+        'pt' => 'portugiesisch',
         _ => code,
       };
 

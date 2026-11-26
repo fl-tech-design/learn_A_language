@@ -520,6 +520,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get greek => 'Grec';
 
   @override
+  String get italian => 'Italien';
+
+  @override
+  String get portuguese => 'Portugais';
+
+  @override
   String get motherTongueHint =>
       'Définit la direction de traduction (mot et traduction) pour toutes les langues de cours sélectionnées.';
 
@@ -534,6 +540,15 @@ class AppLocalizationsFr extends AppLocalizations {
       'Installez d\'abord un pack de langue pour commencer à apprendre.';
 
   @override
+  String get packStepDownloading => 'Téléchargement des données...';
+
+  @override
+  String get packStepVerifying => 'Vérification du pack de données...';
+
+  @override
+  String get packStepExtracting => 'Installation...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'Impossible d\'installer le pack de langue : $reason';
   }
@@ -541,6 +556,11 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'Ce pack de langue nécessite la version $version de l\'application ou une version ultérieure. Veuillez mettre à jour l\'application.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'Le pack de langue téléchargé est incomplet : $expected octets attendus, mais seulement $actual reçus. Veuillez réessayer.';
   }
 
   @override

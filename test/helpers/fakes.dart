@@ -325,8 +325,14 @@ class FakePackManager implements PackManager {
   Future<String> appVersion() async => '1.13.0';
 
   @override
-  Future<PackInstallation> install(String langCode) async {
+  Future<PackInstallation> install(String langCode,
+      {void Function(PackInstallStep)? onProgress}) async {
     if (nextInstallError != null) throw nextInstallError!;
+    // Fortschritt analog zum echten PackManagerImpl melden, damit Widget-Tests
+    // auch den Busy-Zustand (Spinner + Schritttext) darstellen können.
+    onProgress?.call(PackInstallStep.downloading);
+    onProgress?.call(PackInstallStep.verifying);
+    onProgress?.call(PackInstallStep.extracting);
     installCount++;
     installed.add(langCode);
     return PackInstallation(

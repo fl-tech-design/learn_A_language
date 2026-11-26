@@ -36,6 +36,10 @@ class _StartScreenState extends State<StartScreen> {
   /// Sprache, deren Paket gerade installiert/deinstalliert wird (Spinner).
   String? _busyPackCode;
 
+  /// Aktuelle Installations-Phase pro Sprachcode (für die Fortschrittsanzeige).
+  /// Wird vom `onProgress`-Callback von [PackManager.install] befüllt.
+  final Map<String, PackInstallStep> _packInstallSteps = {};
+
   /// Zuletzt behandelte Muttersprache (Skip-Guard): jede Muttersprache wird pro
   /// Sitzung bzw. pro User-Wechsel GENAU EINMAL geprüft/installiert – verhindert
   /// Doppel-Downloads bei Rebuilds/Mehrfach-Triggers.
@@ -119,13 +123,24 @@ class _StartScreenState extends State<StartScreen> {
     final dataState = context.read<DataState>();
     final message = '${l10n.packInstall}: ${courseLanguageName(code)}';
     try {
-      await packManager.install(code);
+      await packManager.install(code, onProgress: (step) {
+        if (mounted) setState(() => _packInstallSteps[code] = step);
+      });
       await _loadInstalledPacks();
       await dataState.refreshLanguages();
       if (mounted) _showSnack(message);
     } on PackException catch (e) {
       final String errorText;
-      if (e.kind == PackErrorKind.appVersionTooLow) {
+      if (e.kind == PackErrorKind.sizeMismatch) {
+        // Unvollständiger Download: erwartete/erhaltene Größe aus dem
+        // `cause`-Record anzeigen (schneller Fehlerfall vor der SHA-Prüfung).
+        final size = e.cause;
+        if (size is ({int expected, int actual})) {
+          errorText = l10n.packInstallSizeMismatch(size.expected, size.actual);
+        } else {
+          errorText = l10n.packInstallFailed(e.toString());
+        }
+      } else if (e.kind == PackErrorKind.appVersionTooLow) {
         // App zu alt: erforderliche min_app_version aus dem Manifest anzeigen.
         errorText = l10n.packInstallVersionTooLow(e.cause?.toString() ?? '');
       } else {
@@ -133,7 +148,12 @@ class _StartScreenState extends State<StartScreen> {
       }
       if (mounted) _showSnack(errorText);
     } finally {
-      if (mounted) setState(() => _busyPackCode = null);
+      if (mounted) {
+        setState(() {
+          _busyPackCode = null;
+          _packInstallSteps.remove(code);
+        });
+      }
     }
   }
 
@@ -361,6 +381,7 @@ class _StartScreenState extends State<StartScreen> {
                               allLangCodes: allLangCodes,
                               installedCodes: _installedPacks,
                               busyCode: _busyPackCode,
+                              installSteps: _packInstallSteps,
                               expandedLanguages: _expandedNewLanguages,
                               onAdd: (id) async {
                                 await userState.addCourse(id);
@@ -415,6 +436,7 @@ class _StartScreenState extends State<StartScreen> {
                                     allLangCodes: allLangCodes,
                                     installedCodes: _installedPacks,
                                     busyCode: _busyPackCode,
+                                    installSteps: _packInstallSteps,
                                     expandedLanguages: _expandedNewLanguages,
                                     onAdd: (id) async {
                                       await userState.addCourse(id);
@@ -867,6 +889,10 @@ class _NewLanguagesSection extends StatelessWidget {
   final List<String> allLangCodes;
   final Set<String> installedCodes;
   final String? busyCode;
+
+  /// Aktuelle Installations-Phase pro Sprachcode (für die Schritt-Anzeige).
+  final Map<String, PackInstallStep> installSteps;
+
   final Set<String> expandedLanguages;
   final ValueChanged<String> onAdd;
   final ValueChanged<String> onToggleLanguage;
@@ -878,6 +904,7 @@ class _NewLanguagesSection extends StatelessWidget {
     required this.allLangCodes,
     required this.installedCodes,
     this.busyCode,
+    required this.installSteps,
     required this.expandedLanguages,
     required this.onAdd,
     required this.onToggleLanguage,
@@ -907,6 +934,21 @@ class _NewLanguagesSection extends StatelessWidget {
     );
   }
 
+  /// Lokalisierte Bezeichnung der aktuellen Installations-Phase. Fallback auf
+  /// den Download, solange der `onProgress`-Callback noch nicht gefeuert hat
+  /// (dieser läuft in `install()` synchron vor dem ersten `await`, der
+  /// Übergang von „busy“ zu „Schritt sichtbar“ ist also praktisch sofort).
+  String _stepLabel(AppLocalizations l10n, PackInstallStep? step) {
+    switch (step ?? PackInstallStep.downloading) {
+      case PackInstallStep.downloading:
+        return l10n.packStepDownloading;
+      case PackInstallStep.verifying:
+        return l10n.packStepVerifying;
+      case PackInstallStep.extracting:
+        return l10n.packStepExtracting;
+    }
+  }
+
   /// Zeile für eine Sprache ohne installiertes Sprachpaket (Install-Button).
   Widget _notInstalledRow(BuildContext context, String code) {
     final l10n = AppLocalizations.of(context);
@@ -928,12 +970,19 @@ class _NewLanguagesSection extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: AppTheme.infFontSize, color: Colors.white)),
           ),
-          if (busy)
+          if (busy) ...[
+            // Aktueller Installations-Schritt links neben dem Spinner.
+            Text(
+              _stepLabel(l10n, installSteps[code]),
+              style: const TextStyle(
+                  fontSize: AppTheme.smallFontSize, color: AppTheme.grey4),
+            ),
+            const SizedBox(width: 8),
             const SizedBox(
                 width: 18,
                 height: 18,
                 child: CircularProgressIndicator(strokeWidth: 2))
-          else
+          ] else
             OutlinedButton(
               onPressed: () => onInstall(code),
               style: OutlinedButton.styleFrom(
@@ -982,12 +1031,20 @@ class _NewLanguagesSection extends StatelessWidget {
                       fontSize: AppTheme.infFontSize, color: Colors.white),
                 ),
               ),
-              if (busy)
+              if (busy) ...[
+                // Aktueller Installations-Schritt links neben dem Spinner.
+                Text(
+                  _stepLabel(l10n, installSteps[code]),
+                  style: const TextStyle(
+                      fontSize: AppTheme.smallFontSize,
+                      color: AppTheme.grey4),
+                ),
+                const SizedBox(width: 8),
                 const SizedBox(
                     width: 18,
                     height: 18,
                     child: CircularProgressIndicator(strokeWidth: 2))
-              else
+              ] else
                 IconButton(
                   onPressed: () => onUninstall(code),
                   icon: const Icon(Icons.delete_outline,

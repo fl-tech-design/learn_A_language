@@ -520,6 +520,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get greek => 'Греческий';
 
   @override
+  String get italian => 'Итальянский';
+
+  @override
+  String get portuguese => 'Португальский';
+
+  @override
   String get motherTongueHint =>
       'Задаёт направление перевода (слово и перевод) для всех выбранных языков курса.';
 
@@ -534,6 +540,15 @@ class AppLocalizationsRu extends AppLocalizations {
       'Сначала установите языковой пакет, чтобы начать обучение.';
 
   @override
+  String get packStepDownloading => 'Загрузка данных...';
+
+  @override
+  String get packStepVerifying => 'Проверка пакета данных...';
+
+  @override
+  String get packStepExtracting => 'Установка...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'Не удалось установить языковой пакет: $reason';
   }
@@ -541,6 +556,11 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'Этот языковой пакет требует версию приложения $version или новее. Обновите приложение.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'Загруженный языковой пакет неполный: ожидалось $expected байт, но получено только $actual. Попробуйте ещё раз.';
   }
 
   @override

@@ -21,6 +21,14 @@ const String packManifestUrl =
 /// Installationsstatus eines Sprachpakets.
 enum PackInstallStatus { notInstalled, installed }
 
+/// Aktuelle Phase einer Paket-Installation (für die Fortschrittsanzeige).
+///
+/// Der Aufrufer von [PackManager.install] wird über den `onProgress`-Callback
+/// unmittelbar vor jeder Phase informiert:
+/// [PackInstallStep.downloading] vor dem Download, [PackInstallStep.verifying]
+/// vor der SHA-256-Prüfung und [PackInstallStep.extracting] vor dem Entpacken.
+enum PackInstallStep { downloading, verifying, extracting }
+
 /// Fehlerkategorien der Pack-Infrastruktur.
 enum PackErrorKind {
   manifestUnavailable,
@@ -28,6 +36,7 @@ enum PackErrorKind {
   appVersionTooLow,
   downloadFailed,
   checksumMismatch,
+  sizeMismatch,
   corruptZip,
   invalidPack,
   uninstallFailed,
@@ -142,7 +151,8 @@ class PackInstallation {
 }
 
 /// Pack-Verwaltung (Ticket #68): Manifest laden, Pakete installieren
-/// (Download → SHA-256-Prüfung → Entpacken) und deinstallieren.
+/// (Download → Größenprüfung → SHA-256-Prüfung → Entpacken) und
+/// deinstallieren.
 ///
 /// Installierte Pakete liegen unter `language_dict/<lang>/`, `audio/<lang>/`
 /// und `grammar/grammar_<lang>/` im App-Datenverzeichnis – identisch zu den
@@ -197,11 +207,16 @@ abstract class PackManager {
   Future<Set<String>> installedPacks();
 
   /// Installiert das Paket für [langCode]: Manifest laden, ZIP von der
-  /// unveränderlichen URL laden, SHA-256 gegen das Manifest prüfen, in das
-  /// App-Datenverzeichnis entpacken, Marker setzen.
+  /// unveränderlichen URL laden, Dateigröße und SHA-256 gegen das Manifest
+  /// prüfen, in das App-Datenverzeichnis entpacken, Marker setzen.
+  ///
+  /// [onProgress] wird – sofern gesetzt – unmittelbar vor jeder Phase
+  /// aufgerufen: `downloading` vor dem Download, `verifying` vor der
+  /// SHA-256-Prüfung, `extracting` vor dem Entpacken.
   ///
   /// Wirft [PackException] bei Netzwerk-, Prüfsummen- oder Paketfehlern.
-  Future<PackInstallation> install(String langCode);
+  Future<PackInstallation> install(
+      String langCode, {void Function(PackInstallStep)? onProgress});
 
   /// Deinstalliert das Paket für [langCode]: Marker und die drei
   /// Sprachordner werden gelöscht. Benutzerdaten bleiben unberührt.
@@ -290,7 +305,8 @@ class PackManagerImpl implements PackManager {
   }
 
   @override
-  Future<PackInstallation> install(String langCode) async {
+  Future<PackInstallation> install(String langCode,
+      {void Function(PackInstallStep)? onProgress}) async {
     final manifest = await loadManifest();
     final entry = manifest.entryFor(langCode);
     if (entry == null) {
@@ -314,6 +330,7 @@ class PackManagerImpl implements PackManager {
     // 1) ZIP von der unveränderlichen URL laden.
     final http.Response response;
     try {
+      onProgress?.call(PackInstallStep.downloading);
       await tmpFile.parent.create(recursive: true);
       response = await _httpClient
           .get(Uri.parse(entry.url))
@@ -334,11 +351,32 @@ class PackManagerImpl implements PackManager {
       throw PackException(PackErrorKind.ioError, langCode, e);
     }
 
+    // 1b) Größenprüfung gegen das Manifest – schneller Fehlerfall bei
+    //     unvollständigem Download, noch VOR der aufwendigen SHA-256-Prüfung.
+    //     Die konkreten Werte (expected/actual) stecken als Record im
+    //     `cause`, damit die UI sie lokalisiert anzeigen kann.
+    final int actualBytes;
+    try {
+      actualBytes = await tmpFile.length();
+    } catch (e) {
+      await _cleanupTmp(tmpFile);
+      throw PackException(PackErrorKind.ioError, langCode, e);
+    }
+    if (actualBytes != entry.sizeBytes) {
+      await _cleanupTmp(tmpFile);
+      throw PackException(
+        PackErrorKind.sizeMismatch,
+        langCode,
+        (expected: entry.sizeBytes, actual: actualBytes),
+      );
+    }
+
     // 2) SHA-256 gegen das Manifest prüfen – erst danach wird irgendetwas
     //    in den App-Bereich geschrieben.
     final List<int> zipBytes;
     final String digest;
     try {
+      onProgress?.call(PackInstallStep.verifying);
       zipBytes = await tmpFile.readAsBytes();
       digest = sha256.convert(zipBytes).toString();
     } catch (e) {
@@ -354,6 +392,7 @@ class PackManagerImpl implements PackManager {
     // 3) Entpacken mit Pfad-Sicherheit.
     final Archive archive;
     try {
+      onProgress?.call(PackInstallStep.extracting);
       archive = ZipDecoder().decodeBytes(zipBytes);
     } catch (e) {
       await _cleanupTmp(tmpFile);

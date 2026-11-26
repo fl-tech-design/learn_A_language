@@ -520,6 +520,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get greek => 'Griego';
 
   @override
+  String get italian => 'Italiano';
+
+  @override
+  String get portuguese => 'Portugués';
+
+  @override
   String get motherTongueHint =>
       'Establece la dirección de traducción (palabra y traducción) para todos los idiomas de curso seleccionados.';
 
@@ -534,6 +540,15 @@ class AppLocalizationsEs extends AppLocalizations {
       'Instala primero un paquete de idiomas para empezar a aprender.';
 
   @override
+  String get packStepDownloading => 'Descargando datos...';
+
+  @override
+  String get packStepVerifying => 'Verificando el paquete de datos...';
+
+  @override
+  String get packStepExtracting => 'Instalando...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'No se pudo instalar el paquete de idiomas: $reason';
   }
@@ -541,6 +556,11 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'Este paquete de idiomas requiere la versión $version de la aplicación o superior. Por favor, actualiza la aplicación.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'El paquete de idiomas descargado está incompleto: se esperaban $expected bytes, pero solo se recibieron $actual. Inténtalo de nuevo.';
   }
 
   @override

@@ -198,6 +198,24 @@ void main() {
       expect(await Directory('${tempDir.path}/.pack_tmp').exists(), isFalse);
     });
 
+    test('meldet die Installationsphasen über onProgress in der richtigen Reihenfolge',
+        () async {
+      final zip = validZip('de');
+      final manager = PackManagerImpl(
+        fileService: fileService,
+        httpClient: httpClientFor(zipBytes: zip),
+      );
+      final steps = <PackInstallStep>[];
+
+      await manager.install('de', onProgress: steps.add);
+
+      expect(steps, [
+        PackInstallStep.downloading,
+        PackInstallStep.verifying,
+        PackInstallStep.extracting,
+      ]);
+    });
+
     test('bricht mit appVersionTooLow ab, wenn die App zu alt ist', () async {
       // App-Version bewusst unter der min_app_version (1.13.0) setzen.
       PackageInfo.setMockInitialValues(
@@ -242,7 +260,7 @@ void main() {
         () async {
       final zip = validZip('de');
       final manifest = buildManifest('de',
-          sha256: List.filled(64, '0').join(), size: 1);
+          sha256: List.filled(64, '0').join(), size: zip.length);
       final manager = PackManagerImpl(
         fileService: fileService,
         httpClient: httpClientFor(zipBytes: zip, manifest: manifest),
@@ -252,6 +270,35 @@ void main() {
         () => manager.install('de'),
         throwsA(isA<PackException>().having(
             (e) => e.kind, 'kind', PackErrorKind.checksumMismatch)),
+      );
+
+      expect(
+          await File('${tempDir.path}/language_dict/de/de_to_be.json')
+              .exists(),
+          isFalse);
+      expect(await manager.installStatus('de'), PackInstallStatus.notInstalled);
+      expect(await Directory('${tempDir.path}/.pack_tmp').exists(), isFalse);
+    });
+
+    test('wirft sizeMismatch bei falscher Dateigröße und extrahiert NICHTS',
+        () async {
+      // SHA-256 des ZIP stimmt mit dem Manifest überein (sonst würde bereits
+      // die Prüfsummenprüfung zuschlagen), aber size_bytes weicht ab → die
+      // Größenprüfung schlägt VOR der SHA-256-Prüfung schnell fehl.
+      final zip = validZip('de');
+      final manifest = buildManifest('de',
+          sha256: sha256Hex(zip), size: 999);
+      final manager = PackManagerImpl(
+        fileService: fileService,
+        httpClient: httpClientFor(zipBytes: zip, manifest: manifest),
+      );
+
+      expect(
+        () => manager.install('de'),
+        throwsA(isA<PackException>()
+            .having((e) => e.kind, 'kind', PackErrorKind.sizeMismatch)
+            .having(
+                (e) => e.cause, 'cause', (expected: 999, actual: zip.length))),
       );
 
       expect(

@@ -519,6 +519,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get greek => 'Ελληνικά';
 
   @override
+  String get italian => 'Ιταλικά';
+
+  @override
+  String get portuguese => 'Πορτογαλικά';
+
+  @override
   String get motherTongueHint =>
       'Καθορίζει την κατεύθυνση μετάφρασης (λέξη και μετάφραση) για όλες τις επιλεγμένες γλώσσες μαθημάτων.';
 
@@ -533,6 +539,15 @@ class AppLocalizationsEl extends AppLocalizations {
       'Εγκαταστήστε πρώτα ένα γλωσσικό πακέτο για να ξεκινήσετε την εκμάθηση.';
 
   @override
+  String get packStepDownloading => 'Γίνεται λήψη δεδομένων...';
+
+  @override
+  String get packStepVerifying => 'Γίνεται έλεγχος του πακέτου δεδομένων...';
+
+  @override
+  String get packStepExtracting => 'Γίνεται εγκατάσταση...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'Δεν ήταν δυνατή η εγκατάσταση του γλωσσικού πακέτου: $reason';
   }
@@ -540,6 +555,11 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'Αυτό το γλωσσικό πακέτο απαιτεί έκδοση εφαρμογής $version ή νεότερη. Ενημερώστε την εφαρμογή.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'Το κατέβασμα του γλωσσικού πακέτου είναι ελλιπές: αναμένονταν $expected byte, αλλά λήφθηκαν μόνο $actual byte. Δοκιμάστε ξανά.';
   }
 
   @override

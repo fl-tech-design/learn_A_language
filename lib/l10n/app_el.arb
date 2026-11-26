@@ -191,10 +191,15 @@
   "french": "Γαλλικά",
   "russian": "Ρωσικά",
   "greek": "Ελληνικά",
+  "italian": "Ιταλικά",
+  "portuguese": "Πορτογαλικά",
   "motherTongueHint": "Καθορίζει την κατεύθυνση μετάφρασης (λέξη και μετάφραση) για όλες τις επιλεγμένες γλώσσες μαθημάτων.",
   "packInstall": "Εγκατάσταση",
   "packUninstall": "Απεγκατάσταση",
   "packInstallHint": "Εγκαταστήστε πρώτα ένα γλωσσικό πακέτο για να ξεκινήσετε την εκμάθηση.",
+  "packStepDownloading": "Γίνεται λήψη δεδομένων...",
+  "packStepVerifying": "Γίνεται έλεγχος του πακέτου δεδομένων...",
+  "packStepExtracting": "Γίνεται εγκατάσταση...",
   "packInstallFailed": "Δεν ήταν δυνατή η εγκατάσταση του γλωσσικού πακέτου: {reason}",
   "@packInstallFailed": {
     "placeholders": {
@@ -208,6 +213,17 @@
     "placeholders": {
       "version": {
         "type": "String"
+      }
+    }
+  },
+  "packInstallSizeMismatch": "Το κατέβασμα του γλωσσικού πακέτου είναι ελλιπές: αναμένονταν {expected} byte, αλλά λήφθηκαν μόνο {actual} byte. Δοκιμάστε ξανά.",
+  "@packInstallSizeMismatch": {
+    "placeholders": {
+      "expected": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
       }
     }
   },

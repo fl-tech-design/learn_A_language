@@ -191,10 +191,15 @@
   "french": "Francese",
   "russian": "Russo",
   "greek": "Greco",
+  "italian": "Italiano",
+  "portuguese": "Portoghese",
   "motherTongueHint": "Imposta la direzione della traduzione (parola e traduzione) per tutte le lingue del corso selezionate.",
   "packInstall": "Installa",
   "packUninstall": "Disinstalla",
   "packInstallHint": "Installa prima un pacchetto linguistico per iniziare a imparare.",
+  "packStepDownloading": "Download dei dati in corso...",
+  "packStepVerifying": "Verifica del pacchetto dati...",
+  "packStepExtracting": "Installazione...",
   "packInstallFailed": "Impossibile installare il pacchetto linguistico: {reason}",
   "@packInstallFailed": {
     "placeholders": {
@@ -208,6 +213,17 @@
     "placeholders": {
       "version": {
         "type": "String"
+      }
+    }
+  },
+  "packInstallSizeMismatch": "Il pacchetto linguistico scaricato è incompleto: previsti {expected} byte, ma ricevuti solo {actual}. Riprova.",
+  "@packInstallSizeMismatch": {
+    "placeholders": {
+      "expected": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
       }
     }
   },

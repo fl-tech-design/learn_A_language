@@ -191,10 +191,15 @@
   "french": "Französisch",
   "russian": "Russisch",
   "greek": "Griechisch",
+  "italian": "Italienisch",
+  "portuguese": "Portugiesisch",
   "motherTongueHint": "Bestimmt die Übersetzungsrichtung (Wort und Übersetzung) für alle gewählten Kurs-Sprachen.",
   "packInstall": "Installieren",
   "packUninstall": "Deinstallieren",
   "packInstallHint": "Bitte installiere zuerst ein Sprachpaket, um mit dem Lernen zu beginnen.",
+  "packStepDownloading": "Daten werden heruntergeladen...",
+  "packStepVerifying": "Datenpaket wird geprüft...",
+  "packStepExtracting": "Wird installiert...",
   "packInstallFailed": "Sprachpaket konnte nicht installiert werden: {reason}",
   "@packInstallFailed": {
     "placeholders": {
@@ -208,6 +213,17 @@
     "placeholders": {
       "version": {
         "type": "String"
+      }
+    }
+  },
+  "packInstallSizeMismatch": "Das heruntergeladene Sprachpaket ist unvollständig: {expected} Bytes erwartet, aber nur {actual} Bytes erhalten. Bitte versuche es erneut.",
+  "@packInstallSizeMismatch": {
+    "placeholders": {
+      "expected": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
       }
     }
   },

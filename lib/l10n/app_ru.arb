@@ -191,10 +191,15 @@
   "french": "Французский",
   "russian": "Русский",
   "greek": "Греческий",
+  "italian": "Итальянский",
+  "portuguese": "Португальский",
   "motherTongueHint": "Задаёт направление перевода (слово и перевод) для всех выбранных языков курса.",
   "packInstall": "Установить",
   "packUninstall": "Удалить",
   "packInstallHint": "Сначала установите языковой пакет, чтобы начать обучение.",
+  "packStepDownloading": "Загрузка данных...",
+  "packStepVerifying": "Проверка пакета данных...",
+  "packStepExtracting": "Установка...",
   "packInstallFailed": "Не удалось установить языковой пакет: {reason}",
   "@packInstallFailed": {
     "placeholders": {
@@ -208,6 +213,17 @@
     "placeholders": {
       "version": {
         "type": "String"
+      }
+    }
+  },
+  "packInstallSizeMismatch": "Загруженный языковой пакет неполный: ожидалось {expected} байт, но получено только {actual}. Попробуйте ещё раз.",
+  "@packInstallSizeMismatch": {
+    "placeholders": {
+      "expected": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
       }
     }
   },

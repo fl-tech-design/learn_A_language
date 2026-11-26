@@ -516,6 +516,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get greek => 'Greek';
 
   @override
+  String get italian => 'Italian';
+
+  @override
+  String get portuguese => 'Portuguese';
+
+  @override
   String get motherTongueHint =>
       'Sets the translation direction (word and translation) for all selected course languages.';
 
@@ -530,6 +536,15 @@ class AppLocalizationsEn extends AppLocalizations {
       'Please install a language pack first to start learning.';
 
   @override
+  String get packStepDownloading => 'Downloading data...';
+
+  @override
+  String get packStepVerifying => 'Verifying data package...';
+
+  @override
+  String get packStepExtracting => 'Installing...';
+
+  @override
   String packInstallFailed(String reason) {
     return 'Could not install language pack: $reason';
   }
@@ -537,6 +552,11 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String packInstallVersionTooLow(String version) {
     return 'This language pack requires app version $version or higher. Please update the app.';
+  }
+
+  @override
+  String packInstallSizeMismatch(int expected, int actual) {
+    return 'The downloaded language pack is incomplete: $expected bytes expected, but only $actual bytes received. Please try again.';
   }
 
   @override

@@ -42,6 +42,8 @@ class DataState extends ChangeNotifier {
         'fr' => const Locale('fr'),
         'ru' => const Locale('ru'),
         'el' => const Locale('el'),
+        'it' => const Locale('it'),
+        'pt' => const Locale('pt'),
         _    => const Locale('en'),
       };
   AppData get appData => _appData;
