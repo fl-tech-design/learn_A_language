@@ -124,7 +124,13 @@ class _StartScreenState extends State<StartScreen> {
       await dataState.refreshLanguages();
       if (mounted) _showSnack(message);
     } on PackException catch (e) {
-      final errorText = l10n.packInstallFailed(e.toString());
+      final String errorText;
+      if (e.kind == PackErrorKind.appVersionTooLow) {
+        // App zu alt: erforderliche min_app_version aus dem Manifest anzeigen.
+        errorText = l10n.packInstallVersionTooLow(e.cause?.toString() ?? '');
+      } else {
+        errorText = l10n.packInstallFailed(e.toString());
+      }
       if (mounted) _showSnack(errorText);
     } finally {
       if (mounted) setState(() => _busyPackCode = null);

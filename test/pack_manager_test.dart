@@ -6,6 +6,7 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import 'package:learn_a_language/services/pack_manager.dart';
 
@@ -90,6 +91,17 @@ void main() {
   setUp(() async {
     tempDir = await Directory.systemTemp.createTemp('pack_manager_test_');
     fileService = FakeFileService(appDirValue: tempDir.path);
+    // App-Version für die min_app_version-Prüfung bereitstellen. Standard ist
+    // hoch genug (1.13.0+27 >= min 1.13.0), damit bestehende Install-Tests
+    // weiterlaufen; Tests für den Fehlerpfad überschreiben das lokal.
+    TestWidgetsFlutterBinding.ensureInitialized();
+    PackageInfo.setMockInitialValues(
+      appName: 'learn_a_language',
+      packageName: 'learn_a_language',
+      version: '1.13.0+27',
+      buildNumber: '27',
+      buildSignature: '',
+    );
   });
 
   tearDown(() async {
@@ -128,6 +140,33 @@ void main() {
     });
   });
 
+  group('appVersion / isVersionAtLeast', () {
+    test('liefert die aktuelle App-Version aus package_info_plus', () async {
+      final manager = PackManagerImpl(
+        fileService: fileService,
+        httpClient: httpClientFor(zipBytes: validZip('de')),
+      );
+
+      expect(await manager.appVersion(), '1.13.0+27');
+    });
+
+    test('vergleicht Major/Minor/Patch korrekt', () {
+      expect(PackManager.isVersionAtLeast('2.0.0', '1.13.0'), isTrue);
+      expect(PackManager.isVersionAtLeast('1.13.0', '1.13.0'), isTrue);
+      expect(PackManager.isVersionAtLeast('1.14.0', '1.13.0'), isTrue);
+      expect(PackManager.isVersionAtLeast('1.13.1', '1.13.0'), isTrue);
+      expect(PackManager.isVersionAtLeast('1.12.0', '1.13.0'), isFalse);
+      expect(PackManager.isVersionAtLeast('1.13.0', '1.13.1'), isFalse);
+    });
+
+    test('ignoriert den Build-Teil nach +', () {
+      expect(PackManager.isVersionAtLeast('1.13.0+26', '1.13.0'), isTrue);
+      expect(PackManager.isVersionAtLeast('2.0.0+1', '1.13.0+26'), isTrue);
+      expect(PackManager.isVersionAtLeast('1.12.0+99', '1.13.0'), isFalse);
+      expect(PackManager.isVersionAtLeast('1.13.0+27', '1.13.0'), isTrue);
+    });
+  });
+
   group('install', () {
     test('installiert Paket: SHA-Prüfung, Entpacken, Marker', () async {
       final zip = validZip('de');
@@ -156,6 +195,32 @@ void main() {
       expect(await File('${tempDir.path}/pack.json').exists(), isFalse);
 
       expect(await manager.installStatus('de'), PackInstallStatus.installed);
+      expect(await Directory('${tempDir.path}/.pack_tmp').exists(), isFalse);
+    });
+
+    test('bricht mit appVersionTooLow ab, wenn die App zu alt ist', () async {
+      // App-Version bewusst unter der min_app_version (1.13.0) setzen.
+      PackageInfo.setMockInitialValues(
+        appName: 'learn_a_language',
+        packageName: 'learn_a_language',
+        version: '1.12.0',
+        buildNumber: '1',
+        buildSignature: '',
+      );
+      final zip = validZip('de');
+      final manager = PackManagerImpl(
+        fileService: fileService,
+        httpClient: httpClientFor(zipBytes: zip),
+      );
+
+      expect(
+        () => manager.install('de'),
+        throwsA(isA<PackException>()
+            .having((e) => e.kind, 'kind', PackErrorKind.appVersionTooLow)
+            .having((e) => e.cause, 'cause', '1.13.0')),
+      );
+      // Nichts installiert, keine Reste.
+      expect(await manager.installStatus('de'), PackInstallStatus.notInstalled);
       expect(await Directory('${tempDir.path}/.pack_tmp').exists(), isFalse);
     });
 

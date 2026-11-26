@@ -322,6 +322,9 @@ class FakePackManager implements PackManager {
   Future<Set<String>> installedPacks() async => Set<String>.of(installed);
 
   @override
+  Future<String> appVersion() async => '1.13.0';
+
+  @override
   Future<PackInstallation> install(String langCode) async {
     if (nextInstallError != null) throw nextInstallError!;
     installCount++;

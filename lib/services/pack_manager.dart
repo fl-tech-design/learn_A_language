@@ -6,6 +6,7 @@ import 'dart:io';
 import 'package:archive/archive.dart';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
+import 'package:package_info_plus/package_info_plus.dart';
 
 import 'file_service.dart';
 
@@ -24,6 +25,7 @@ enum PackInstallStatus { notInstalled, installed }
 enum PackErrorKind {
   manifestUnavailable,
   packNotFound,
+  appVersionTooLow,
   downloadFailed,
   checksumMismatch,
   corruptZip,
@@ -156,6 +158,41 @@ abstract class PackManager {
   /// Installationsstatus von [langCode] (ohne Netzwerkzugriff).
   Future<PackInstallStatus> installStatus(String langCode);
 
+  /// Aktuelle App-Version als SemVer-String (z. B. `1.13.0` oder `1.13.0+27`),
+  /// ermittelt über `package_info_plus`.
+  ///
+  /// Wirft [PackException] (`ioError`), falls die Version nicht ermittelt
+  /// werden kann (z. B. fehlender Plugin-Kanal).
+  Future<String> appVersion();
+
+  /// SemVer-Vergleich (nur Major.Minor.Patch, Build nach `+` wird ignoriert):
+  /// gibt `true` zurück, wenn [current] größer oder gleich [required] ist.
+  ///
+  /// Beispiele: `isVersionAtLeast('1.13.0+26', '1.13.0')` → `true`,
+  /// `isVersionAtLeast('1.12.0', '1.13.0')` → `false`.
+  static bool isVersionAtLeast(String current, String required) {
+    final a = _parseSemVer(current);
+    final b = _parseSemVer(required);
+    for (var i = 0; i < 3; i++) {
+      if (a[i] != b[i]) return a[i] > b[i];
+    }
+    return true;
+  }
+
+  /// Zerlegt einen SemVer-String in `[major, minor, patch]` als Integer.
+  /// Der Build-Teil nach `+` (z. B. `+26` in `1.13.0+26`) wird ignoriert.
+  static List<int> _parseSemVer(String version) {
+    final withoutBuild = version.contains('+')
+        ? version.substring(0, version.indexOf('+'))
+        : version;
+    final parts = withoutBuild.split('.');
+    final result = <int>[0, 0, 0];
+    for (var i = 0; i < parts.length && i < 3; i++) {
+      result[i] = int.tryParse(parts[i].trim()) ?? 0;
+    }
+    return result;
+  }
+
   /// Alle Sprachcodes mit gesetztem Installations-Marker.
   Future<Set<String>> installedPacks();
 
@@ -243,11 +280,32 @@ class PackManagerImpl implements PackManager {
   }
 
   @override
+  Future<String> appVersion() async {
+    try {
+      final info = await PackageInfo.fromPlatform();
+      return info.version;
+    } catch (e) {
+      throw PackException(PackErrorKind.ioError, '', e);
+    }
+  }
+
+  @override
   Future<PackInstallation> install(String langCode) async {
     final manifest = await loadManifest();
     final entry = manifest.entryFor(langCode);
     if (entry == null) {
       throw PackException(PackErrorKind.packNotFound, langCode);
+    }
+
+    // 0) App-Versionsprüfung gemäß min_app_version – VOR jedem Download.
+    //    Ist die App zu alt, wird der Download abgebrochen, bevor irgendwelche
+    //    Netzwerk- oder Dateisystemzugriffe erfolgen. Die erforderliche Version
+    //    steckt als [PackException.cause], damit die UI sie anzeigen kann.
+    if (entry.minAppVersion.isNotEmpty &&
+        !PackManager.isVersionAtLeast(
+            await appVersion(), entry.minAppVersion)) {
+      throw PackException(
+          PackErrorKind.appVersionTooLow, langCode, entry.minAppVersion);
     }
 
     final appDir = await _fileService.appDir;
