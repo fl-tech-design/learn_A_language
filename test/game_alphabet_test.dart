@@ -70,11 +70,36 @@ void main() {
       );
     });
 
+    test('Partikel am Wortende wird übersprungen ("πρέπει να" → ΠΡΕΠΕΙ)',
+        () {
+      expect(
+        ws.deriveSearchWord(
+            seen('to_must_present_0', 'πρέπει να', 'muss'), langCode: 'el'),
+        'ΠΡΕΠΕΙ',
+      );
+      expect(
+        ws.deriveSearchWord(
+            seen('to_should_present_0', 'εγώ πρέπει να', 'soll'),
+            langCode: 'el'),
+        'ΠΡΕΠΕΙ',
+      );
+    });
+
     test('generatePuzzle erzeugt spielbare Wörter', () {
       final puzzle = ws.generatePuzzle([
         seen('to_go_present_0', 'πηγαίνω', 'ich gehe'),
         seen('to_eat_present_0', 'τρώω', 'ich esse'),
         seen('to_live_present_0', 'ζω', 'ich lebe'),
+      ], 'easy', langCode: 'el');
+      expect(puzzle.words, isNotEmpty);
+    });
+
+    test('generatePuzzle mit Partikel-Verben ("Erste Verben"-artig)', () {
+      final puzzle = ws.generatePuzzle([
+        seen('to_can_present_0', 'εγώ μπορώ', 'kann'),
+        seen('to_want_present_0', 'εγώ θέλω', 'will'),
+        seen('to_should_present_0', 'εγώ πρέπει να', 'soll'),
+        seen('to_must_present_0', 'πρέπει να', 'muss'),
       ], 'easy', langCode: 'el');
       expect(puzzle.words, isNotEmpty);
     });

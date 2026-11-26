@@ -153,10 +153,17 @@ const Set<String> _futureHelpers = {
 String? deriveSearchWord(VocabEntry entry, {String langCode = 'de'}) {
   final tokens = _tokens(entry.word);
   if (tokens.isEmpty) return null;
-  final gridWord = normalizeForGrid(
-      tokens.length == 1 ? tokens.first : tokens.last, langCode);
-  if (gridWord.length < 3) return null;
-  return gridWord;
+  // Rückwärts das letzte Token mit >= 3 Zeichen nehmen; Pronomen werden
+  // übersprungen. Das überspringt Partikel am Wortende (z. B. griechisch
+  // "πρέπει να" -> "πρέπει") und verhindert, dass bei abgeschnittenen Formen
+  // (z. B. "wir m") das Pronomen als Lösungswort dient. Bei lateinischen
+  // Konjugationen ist das Verb ohnehin das letzte Token.
+  for (var i = tokens.length - 1; i >= 0; i--) {
+    if (_pronouns.contains(tokens[i].toLowerCase())) continue;
+    final gridWord = normalizeForGrid(tokens[i], langCode);
+    if (gridWord.length >= 3) return gridWord;
+  }
+  return null;
 }
 
 /// Punktwert, wie nah der abgeleitete Begriff am echten Infinitiv liegt.
