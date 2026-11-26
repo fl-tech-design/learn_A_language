@@ -104,9 +104,9 @@ void main() {
       expect(puzzle.words, isNotEmpty);
     });
 
-    test('lange Wörter: Grid wächst, Wörter werden nicht verworfen', () {
-      // Reale griechische to_be_allowed_to-Formen (10–11 Zeichen); bei festem
-      // 8×8-Grid würden sie verworfen und die Wortsuche bliebe leer.
+    test('lange Woerter passen ins feste 15x15-Feld (Ticket #76)', () {
+      // Reale griechische to_be_allowed_to-Formen (10–11 Zeichen) muessen in
+      // das einheitliche 15x15-Feld passen statt verworfen zu werden.
       final entries = [
         seen('to_be_allowed_to_past_0', 'επιτρεπόταν', 'war erlaubt'),
         seen('to_be_allowed_to_present_0', 'επιτρέπεται', 'ist erlaubt'),
@@ -115,7 +115,7 @@ void main() {
       for (final diff in ['easy', 'medium', 'hard']) {
         final puzzle = ws.generatePuzzle(entries, diff, langCode: 'el');
         expect(puzzle.words, isNotEmpty, reason: 'diff=$diff');
-        expect(puzzle.size >= 10, isTrue, reason: 'diff=$diff');
+        expect(puzzle.size, 15, reason: 'diff=$diff');
       }
     });
   });

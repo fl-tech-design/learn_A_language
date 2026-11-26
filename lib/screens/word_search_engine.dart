@@ -61,19 +61,18 @@ class WordSearchPuzzle {
   String letterAt(Point p) => grid[p.row][p.col];
 }
 
-/// Schwierigkeits-Konfiguration.
-class _DifficultyConfig {
-  final int size;
-  final int wordCount;
-  final bool diagonal;
+/// Einheitliche Feldgroesse der Wortsuche (Ticket #76).
+///
+/// Unabhaengig von der Schwierigkeit; die Schwierigkeit steuert nur noch die
+/// Anzahl der versteckten Woerter. Kandidaten, die nicht in das Feld passen,
+/// werden verworfen.
+const int wordSearchGridSize = 15;
 
-  const _DifficultyConfig(this.size, this.wordCount, {required this.diagonal});
-}
-
-_DifficultyConfig _configFor(String difficulty) => switch (difficulty) {
-      'easy' => const _DifficultyConfig(8, 4, diagonal: false),
-      'hard' => const _DifficultyConfig(12, 8, diagonal: true),
-      _ => const _DifficultyConfig(10, 6, diagonal: false), // medium Default
+/// Wortanzahl je Schwierigkeit: easy 3, medium 6, hard 9.
+int _wordCountFor(String difficulty) => switch (difficulty) {
+      'easy' => 3,
+      'hard' => 9,
+      _ => 6, // medium Default
     };
 
 /// Einheitliche Schrittrichtung für Linien (eine der 8 Himmelsrichtungen).
@@ -82,8 +81,6 @@ class _DirStep {
   final int dc;
 
   const _DirStep(this.dr, this.dc);
-
-  bool get isDiagonal => dr != 0 && dc != 0;
 }
 
 /// Alle 8 Richtungen.
@@ -98,16 +95,11 @@ const List<_DirStep> _allDirections = [
   _DirStep(-1, -1),
 ];
 
-/// Richtungen, in denen Wörter platziert werden: easy/medium nur horizontal
-/// und vertikal, hard zusätzlich diagonal (jeweils vor- und rückwärts).
-List<_DirStep> _placementDirections(bool diagonal) => [
-      const _DirStep(0, 1),
-      const _DirStep(0, -1),
-      const _DirStep(1, 0),
-      const _DirStep(-1, 0),
-      if (diagonal)
-        ..._allDirections.where((d) => d.isDiagonal),
-    ];
+/// Richtungen, in denen Wörter platziert werden: alle 8 Himmelsrichtungen
+/// (horizontal, vertikal, diagonal – jeweils vor- und rückwärts). Seit
+/// Ticket #76 fuer alle Schwierigkeiten gleich; die Schwierigkeit steuert nur
+/// noch die Wortanzahl.
+List<_DirStep> _placementDirections() => _allDirections;
 
 /// Erlaubt nur Einträge, die spielbar sind: status 'seen' (Level egal).
 ///
@@ -276,31 +268,32 @@ List<Point>? _tryPlaceWord(
 
 /// Erzeugt ein Wortsuch-Puzzle aus den Vokabel-Einträgen.
 ///
-/// - easy:   8x8,  4 Wörter, horizontal + vertikal
-/// - medium: 10x10, 6 Wörter, horizontal + vertikal
-/// - hard:   12x12, 8 Wörter, zusätzlich diagonal (vor- und rückwärts)
+/// - Feldgröße: immer 15x15 ([wordSearchGridSize]).
+/// - Wortanzahl je Schwierigkeit: easy 3, medium 6, hard 9.
+/// - Alle 8 Richtungen (horizontal, vertikal, diagonal) sind erlaubt.
+/// - Kandidaten mit mehr als 15 Buchstaben werden verworfen (Ticket #76).
 ///
-/// Es werden NUR Einträge mit status 'seen' und level >= 1 verwendet
+/// Es werden NUR Einträge mit status 'seen' verwendet
 /// (siehe [_usableEntries]).
 WordSearchPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty,
     {String langCode = 'de'}) {
-  final config = _configFor(difficulty);
+  final wordCount = _wordCountFor(difficulty);
   final rng = Random();
 
-  final candidates = _buildCandidates(entries, langCode);
-  // Grid-Größe an das längste Kandidatenwort anpassen (mind. config.size).
-  // So werden lange Wörter (z. B. Griechisch „επιτρεπόταν") nicht verworfen,
-  // sondern passen ins Gitter – sonst bliebe die Wortsuche leer.
-  final longest = candidates.fold<int>(0, (m, w) => max(m, w.word.length));
-  final size = max(config.size, longest);
-  final grid = List.generate(size, (_) => List<String?>.filled(size, null));
+  // Einheitliche Feldgröße: Wörter, die nicht hineinpassen, werden
+  // übersprungen. Reale Kandidaten (de/el/ru) bleiben deutlich unter 15.
+  final candidates = _buildCandidates(entries, langCode)
+      .where((w) => w.word.length <= wordSearchGridSize)
+      .toList();
+  final grid = List.generate(wordSearchGridSize,
+      (_) => List<String?>.filled(wordSearchGridSize, null));
 
   candidates.shuffle(rng);
-  final dirs = _placementDirections(config.diagonal);
+  final dirs = _placementDirections();
   final placed = <WordSearchWord>[];
 
   for (final candidate in candidates) {
-    if (placed.length >= config.wordCount) break;
+    if (placed.length >= wordCount) break;
     final cells = _tryPlaceWord(grid, candidate.word, dirs, rng);
     if (cells == null) continue; // nach ca. 50 Fehlversuchen: Wort weglassen
     placed.add(WordSearchWord(

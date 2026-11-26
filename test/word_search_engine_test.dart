@@ -39,23 +39,13 @@ bool _isStraight(List<Point> cells) {
   return true;
 }
 
-/// true, wenn die Zellen ausschliesslich horizontal oder vertikal sind.
-bool _isHV(List<Point> cells) {
-  for (var i = 1; i < cells.length; i++) {
-    final dr = cells[i].row - cells[i - 1].row;
-    final dc = cells[i].col - cells[i - 1].col;
-    if (dr != 0 && dc != 0) return false;
-  }
-  return true;
-}
-
 /// Buchstabenfolge des Gitters entlang der Zellen eines Wortes.
 String _readWord(WordSearchPuzzle puzzle, WordSearchWord w) =>
     w.cells.map((p) => puzzle.letterAt(p)).join();
 
 void main() {
   group('generatePuzzle', () {
-    test('easy: 8x8, 4 Woerter, nur horizontal/vertikal, lesbar', () {
+    test('easy: 15x15, 3 Woerter, lesbar', () {
       final puzzle = generatePuzzle(
           _verbs([
             ('to_go', 'gehen', 'we go'),
@@ -67,18 +57,17 @@ void main() {
           ]),
           'easy');
 
-      expect(puzzle.size, 8);
-      expect(puzzle.words.length, 4);
+      expect(puzzle.size, 15);
+      expect(puzzle.words.length, 3);
       for (final w in puzzle.words) {
         expect(w.cells.length, w.word.length);
         expect(_readWord(puzzle, w), w.word);
         expect(_isStraight(w.cells), isTrue);
-        expect(_isHV(w.cells), isTrue, reason: 'easy/medium: nur h+v');
         expect(w.word.length, greaterThanOrEqualTo(3));
       }
     });
 
-    test('medium: 10x10, 6 Woerter, lesbar', () {
+    test('medium: 15x15, 6 Woerter, lesbar', () {
       final puzzle = generatePuzzle(
           _verbs([
             ('to_go', 'gehen', 'we go'),
@@ -91,16 +80,15 @@ void main() {
           ]),
           'medium');
 
-      expect(puzzle.size, 10);
+      expect(puzzle.size, 15);
       expect(puzzle.words.length, 6);
       for (final w in puzzle.words) {
         expect(_readWord(puzzle, w), w.word);
         expect(_isStraight(w.cells), isTrue);
-        expect(_isHV(w.cells), isTrue);
       }
     });
 
-    test('hard: 12x12, 8 Woerter, Diagonalen erlaubt, lesbar', () {
+    test('hard: 15x15, 9 Woerter, Diagonalen erlaubt, lesbar', () {
       final puzzle = generatePuzzle(
           _verbs([
             ('to_go', 'gehen', 'we go'),
@@ -116,18 +104,32 @@ void main() {
           ]),
           'hard');
 
-      expect(puzzle.size, 12);
-      expect(puzzle.words.length, 8);
+      expect(puzzle.size, 15);
+      expect(puzzle.words.length, 9);
       for (final w in puzzle.words) {
         expect(_readWord(puzzle, w), w.word);
         expect(_isStraight(w.cells), isTrue);
-        expect(w.word.length, lessThanOrEqualTo(12));
+        expect(w.word.length, lessThanOrEqualTo(15));
       }
       final allLetters = puzzle.grid
           .expand((row) => row)
           .every((c) =>
               c.length == 1 && c.codeUnitAt(0) >= 65 && c.codeUnitAt(0) <= 90);
       expect(allLetters, isTrue);
+    });
+
+    test('Woerter laenger als 15 Zeichen werden verworfen (Ticket #76)', () {
+      final puzzle = generatePuzzle(
+          [
+            _seen('app_nomen_1', 'Haus', 'house'),
+            // 16 Buchstaben: passt nicht ins feste 15x15-Feld.
+            _seen('app_nomen_2', 'Donaudampfschiff', 'steamship'),
+          ],
+          'easy');
+
+      expect(puzzle.size, 15);
+      expect(puzzle.words.any((w) => w.word == 'HAUS'), isTrue);
+      expect(puzzle.words.any((w) => w.word.length > 15), isFalse);
     });
   });
 
