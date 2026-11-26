@@ -66,9 +66,6 @@ class _HangmanScreenState extends State<HangmanScreen> {
     if (cat != null) {
       words = words.where((e) => cat.containsEntryKey(e.key)).toList();
     }
-    // Zweiter Filter nach dem Laden: nur status 'seen' (Level egal; siehe
-    // Ticket #61). Wie beim Turbo-Spiel ist jedes gelesene Wort spielbar.
-    words = words.where((e) => e.status == 'seen').toList();
 
     final round = createRound(words, widget.difficulty);
     if (!mounted) return;

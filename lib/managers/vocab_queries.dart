@@ -12,6 +12,11 @@ import '../services/storage_error_bus.dart';
 import 'user_manager.dart';
 import 'vocab_manager.dart';
 
+/// Einheitliche Mindestanzahl gelesener Wörter, ab der die Spiele
+/// freigeschaltet werden (Ticket #73). Eine zentrale Quelle ersetzt die
+/// früher verstreuten Magic-Numbers in den Screens.
+const int minWordsForGames = 10;
+
 /// Word queries, streak, and answer checking — typed interface extracted
 /// from the former static VocabQueries class.
 abstract class VocabQueries {
