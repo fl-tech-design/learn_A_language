@@ -36,17 +36,10 @@ class _StartScreenState extends State<StartScreen> {
   /// Sprache, deren Paket gerade installiert/deinstalliert wird (Spinner).
   String? _busyPackCode;
 
-  /// Lokalisiertes Label für einen Registry-labelKey über `AppLocalizations`.
-  static String _langLabel(AppLocalizations l10n, String labelKey) =>
-      switch (labelKey) {
-        'german' => l10n.german,
-        'english' => l10n.english,
-        'spanish' => l10n.spanish,
-        'french' => l10n.french,
-        'russian' => l10n.russian,
-        'greek' => l10n.greek,
-        _ => labelKey,
-      };
+  /// Zuletzt behandelte Muttersprache (Skip-Guard): jede Muttersprache wird pro
+  /// Sitzung bzw. pro User-Wechsel GENAU EINMAL geprüft/installiert – verhindert
+  /// Doppel-Downloads bei Rebuilds/Mehrfach-Triggers.
+  String? _autoInstallHandledLang;
 
   @override
   void didChangeDependencies() {
@@ -56,6 +49,9 @@ class _StartScreenState extends State<StartScreen> {
       _packsLoaded = true;
       _loadInstalledPacks();
     }
+    // Muttersprache des eingeloggten Users (falls vorhanden) automatisch
+    // installieren – nur wenn deren Sprachpaket noch fehlt, im Hintergrund.
+    _autoInstallMotherTongue();
   }
 
   /// Lädt die installierten Sprachpakete (Marker-basiert, ohne Netzwerk).
@@ -63,6 +59,34 @@ class _StartScreenState extends State<StartScreen> {
     final packs = await context.read<PackManager>().installedPacks();
     if (!mounted) return;
     setState(() => _installedPacks = packs);
+  }
+
+  /// Installiert die Muttersprache des eingeloggten Users automatisch, wenn ihr
+  /// Sprachpaket noch NICHT installiert ist. Läuft im Hintergrund und blockiert
+  /// den Start-/Login-Flow nicht.
+  ///
+  /// Wichtige Regeln (Ticket #68, nächste Runde):
+  /// - Ohne eingeloggten User bzw. ohne bekannte Muttersprache passiert NICHTS
+  ///   (kein Download vor der Registrierung).
+  /// - bereits installierte Pakete bleiben unangetastet (auch nach App-Update:
+  ///   installierte Packs liegen im App-Speicher und werden beim Update nie
+  ///   erneut heruntergeladen).
+  /// - pro Muttersprache genau einmal prüfen (Skip-Guard [_autoInstallHandledLang]).
+  Future<void> _autoInstallMotherTongue() async {
+    if (_busyPackCode != null) return;
+    final userState = context.read<UserState>();
+    final mLang = userState.userData?.mLang;
+    if (mLang == null || mLang.isEmpty) return;
+    if (_autoInstallHandledLang == mLang) return; // schon behandelt
+    _autoInstallHandledLang = mLang;
+
+    final installed = await context.read<PackManager>().installedPacks();
+    if (!mounted) return;
+    setState(() => _installedPacks = installed);
+    if (installed.contains(mLang)) return; // schon installiert → nichts tun
+
+    // Muttersprache fehlt → einmalig im Hintergrund installieren.
+    await _installPack(mLang);
   }
 
   void _checkUser() {
@@ -194,13 +218,14 @@ class _StartScreenState extends State<StartScreen> {
     final dataState = context.read<DataState>();
     final l10n = AppLocalizations.of(context);
     final userState = context.read<UserState>();
-    // Muttersprachen sind auf Sprachen mit vorhandenen Dicts beschränkt.
-    final motherTongueCodes =
-        context.read<DataState>().availableDictLanguages.toList()..sort();
+    // Muttersprachen-Auswahl: ALLE nachinstallierbaren Sprach-Kandidaten (nicht
+    // nur bereits installierte Dicts) – damit sich der allererste User VOR dem
+    // ersten Pack-Download registrieren kann; danach installiert die App dessen
+    // Muttersprache automatisch (siehe _autoInstallMotherTongue).
+    final motherTongueCodes = List<String>.of(courseCandidateCodes)
+      ..sort((a, b) => courseLanguageName(a).compareTo(courseLanguageName(b)));
     final motherTongueLabels = [
-      for (final code in motherTongueCodes)
-        _langLabel(
-            l10n, appLanguages.firstWhere((c) => c.code == code).labelKey),
+      for (final code in motherTongueCodes) courseLanguageName(code),
     ];
     final result = await showCreateUserDialog(
       context,

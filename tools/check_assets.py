@@ -8,15 +8,15 @@ vorhandenen Asset-Ordnern/-Dateien (AK aus Tickets #48 und #58).
 Prueft beides:
   1. Rueckrichtung: Jede in pubspec.yaml deklarierte Asset-Zeile unter
      `flutter: assets:` muss existieren (Ordner mit trailing `/`, sonst Datei).
-  2. Vorwaertsrichtung: Alle Wörterbuch-Dateien `language_dict/{code}/{code}_*.json`
-     und alle Audio-Ordner `audio/{code}/verbs/{code}_audio_*` muessen in
-     pubspec.yaml deklariert sein.
+  2. Vorwaertsrichtung: (entfällt seit Ticket #68) – die Sprachdaten
+     (language_dict/audio/grammar) sind NICHT mehr Teil des Bundles, sondern
+     kommen ausschließlich über nachinstallierbare Sprachpakete. Es werden nur
+     noch die nicht-Sprach-Assets (images/fonts/game_assets/data_base/data_app)
+     geprüft; deren Vorwaertsrichtung ist nicht erforderlich.
 
-So verhindert der Check, dass z. B. eine neue Sprache oder ein neues Verb
-(fachlich auf Platte vorhanden) das App-Bundle nicht erreicht, weil die
-pubspec.yaml-Deklaration vergessen wurde – und dass tote Deklarationen
-(Ausserungen auf nicht vorhandene Assets) ins Bundle-Leeren laufen (Assets,
-die beim Build nicht gefunden werden, faellen bei Flutter mit einem Buildfehler).
+So verhindert der Check, dass eine tote Deklaration (Ausserung auf ein nicht
+vorhandenes Asset) ins Bundle-Leeren laufen: Assets, die beim Build nicht
+gefunden werden, faellen bei Flutter mit einem Buildfehler.
 
 Aufruf:
     python3 tools/check_assets.py            # normal, meldet Probleme mit Exit-Code
@@ -60,38 +60,6 @@ def parse_assets(pubspec_path: str) -> list[str]:
     return assets
 
 
-def walk_dict_json() -> list[str]:
-    """Alle language_dict-Dateien auf Platte (flaches Schema)."""
-    root = os.path.join(REPO_ROOT, "assets", "language_dict")
-    result = []
-    if not os.path.isdir(root):
-        return result
-    for code in sorted(os.listdir(root)):
-        code_dir = os.path.join(root, code)
-        if not os.path.isdir(code_dir):
-            continue
-        for name in sorted(os.listdir(code_dir)):
-            if name.endswith(".json") and name.startswith(f"{code}_"):
-                result.append(os.path.join("assets", "language_dict", code))
-    return result
-
-
-def walk_audio_dirs() -> list[str]:
-    """Alle Audio-Ordner unter audio/{code}/verbs/* (eine Deklaration je Ordner)."""
-    root = os.path.join(REPO_ROOT, "assets", "audio")
-    result = []
-    if not os.path.isdir(root):
-        return result
-    for code in sorted(os.listdir(root)):
-        verbs = os.path.join(root, code, "verbs")
-        if not os.path.isdir(verbs):
-            continue
-        for name in sorted(os.listdir(verbs)):
-            if name.startswith(f"{code}_audio_"):
-                result.append(os.path.join("assets", "audio", code, "verbs", name))
-    return result
-
-
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--silent", action="store_true",
@@ -111,24 +79,6 @@ def main() -> int:
         else:
             if not os.path.isfile(path):
                 problems.append(f"DEKLARIERT, aber Datei fehlt: {rel}")
-
-    declared_dirs = {a for a in declared if a.endswith("/")}
-    declared_plain = {a for a in declared if not a.endswith("/")}
-
-    # 2) Vorwaerts: Wörterbuch-Ordner deklariert?
-    for rel_dir in walk_dict_json():
-        decl = f"{rel_dir}/"
-        if decl not in declared_dirs:
-            problems.append(f"DICT-ORDNER nicht in pubspec.yaml: {decl}")
-
-    # 3) Vorwaerts: Audio-ordner deklariert?
-    for rel_dir in walk_audio_dirs():
-        decl = f"{rel_dir}/"
-        if decl not in declared_dirs:
-            problems.append(f"AUDIO-ORDNER nicht in pubspec.yaml: {decl}")
-
-    # Sicherheitsnetz: tote Datei-Deklarationen (ohne trailing slash) sind nicht
-    # Teil der Consultation, nur Ordner/Dateien. Keine weiteren Pruefungen.
 
     if not args.silent:
         if problems:

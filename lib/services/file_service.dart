@@ -7,7 +7,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
 
 import '../models/language_registry.dart'
-    show buildCourseDictFiles, courseCandidateCodes;
+    show courseCandidateCodes;
 
 import 'storage_error_bus.dart';
 
@@ -216,15 +216,15 @@ class FileServiceImpl implements FileService {
     final flagFile = File('$dir/.initialized');
     final firstRun = !await flagFile.exists();
 
-    // Basis-Dateien plus die Dict-Kopierliste als Produkt aus
-    // courseCandidateCodes × verbKeys. Fehlende Assets (z. B. noch nicht
-    // vorhandene es/ru/el/it/pt-Dicts) sind bewusst kein Fehler und werden
-    // still übersprungen, sodass neue Sprachen automatisch kopiert werden,
-    // sobald vorhanden.
+    // Basis-/App-Daten – seit der Sprachpaket-Auslagerung (Ticket #68) werden
+    // NUR diese nicht-Sprach-Grunddaten aus dem Bundle kopiert. Die Wörterbücher
+    // (language_dict/audio/grammar) kommen ausschließlich über nachinstallierbare
+    // Sprachpakete (PackManager) und sind deshalb NICHT Teil des Bundles bzw.
+    // dieser Copy-Liste – die Installationspfade unter `language_dict/<lang>/`
+    // werden von install() direkt in den App-Speicher geschrieben.
     final files = <String>[
       'data_base/base_data.json',
       'data_app/app_data.json',
-      ...buildCourseDictFiles(),
     ];
 
     // Echte Kopierfehler (Asset vorhanden, aber Kopie schlägt fehl) werden
@@ -232,11 +232,10 @@ class FileServiceImpl implements FileService {
     final failedCopies = <String>{};
 
     for (final rel in files) {
-      // Bei bestehenden Installationen werden nur die Wörterbücher aus dem
-      // Bundle synchronisiert (Inhalts-Assets, z. B. neues Listen-Schema).
-      // App-Daten und User-Dateien bleiben unberührt, damit kein Fortschritt
-      // verloren geht.
-      if (!firstRun && !rel.startsWith('language_dict/')) continue;
+      // Bei Bestandsinstallationen nichts überschreiben: Nur der Erststart
+      // kopiert die nicht-Sprach-Grunddaten; User-/Inhaltsdaten (inkl. bereits
+      // installierter Sprachpakete) bleiben bei Updates/Neustarts unberührt.
+      if (!firstRun) continue;
       final assetPath = 'assets/$rel';
       final targetFile = File('$dir/$rel');
 

@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:learn_a_language/managers/grammar_manager.dart';
@@ -8,19 +5,85 @@ import 'package:learn_a_language/models/grammar_models.dart';
 
 import 'helpers/fakes.dart';
 
-GrammarDocument _realDoc() {
-  const path = 'assets/grammar/grammar_de/grammar_de_en.json';
-  final file = File(path);
-  expect(file.existsSync(), isTrue,
-      reason: 'cwd=${Directory.current.path}, expected $path');
-  return GrammarDocument.fromJson(
-      jsonDecode(file.readAsStringSync()) as Map<String, dynamic>);
+// Seit der Sprachpaket-Auslagerung (Ticket #68) sind die echten Grammar-JSONs
+// NICHT mehr Teil des App-Bundles, sondern kommen als nachinstallierbare
+// Sprachpakete (PackManager). Diese Gruppe prüft deshalb die Model-/Schema-Logik
+// anhand einer repräsentativen Inline-Fixture statt eines entfernten Bundle-Assets.
+GrammarDocument _fixtureDoc() {
+  Map<String, Object?> lr(String de, String en) => {'de': de, 'en': en};
+
+  Map<String, Object?> block(String id, String category, int order,
+          {bool pitfall = false, bool quickCheck = false}) =>
+      {
+        'id': id,
+        'level': 'A1',
+        'category': category,
+        'order': order,
+        'title': lr('Titel $id', 'Title $id'),
+        'summary': lr('Zusammenfassung $id', 'Summary $id'),
+        'explanation': lr('Erklärung $id', 'Explanation $id'),
+        if (pitfall)
+          'pitfall': {
+            'wrong': 'falsch',
+            'correct': 'richtig',
+            'why': lr('Weil…', 'Because…'),
+          },
+        if (quickCheck)
+          'quick_check': {
+            'task': lr('Aufgabe?', 'Task?'),
+            'solution': 'lösung',
+            'accepted': ['alternative'],
+          },
+      };
+
+  return GrammarDocument.fromJson({
+    'schema_version': '1.0.0',
+    'content_version': '1',
+    'framework': 'CEFR',
+    'levels': ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+    'direction': {'l1': 'de', 'l2': 'en'},
+    'ui_languages': ['de', 'en'],
+    'levels_info': [
+      for (final l in ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
+        {
+          'level': l,
+          'title': lr('$l Titel', '$l title'),
+          'can_do': lr('$l kann …', '$l can …'),
+        },
+    ],
+    'categories': [
+      {
+        'id': 'sentence_structure',
+        'order': 1,
+        'title': lr('Satzbau', 'Sentence structure'),
+        'levels': ['A1'],
+      },
+      {
+        'id': 'verbs_tenses',
+        'order': 2,
+        'title': lr('Verben & Zeiten', 'Verbs & tenses'),
+        'levels': ['A1'],
+      },
+      {
+        'id': 'questions_negation',
+        'order': 3,
+        'title': lr('Fragen & Verneinung', 'Questions & negation'),
+        'levels': ['A1'],
+      },
+    ],
+    'blocks': [
+      block('ss_1', 'sentence_structure', 1, pitfall: true),
+      block('ss_2', 'sentence_structure', 2, quickCheck: true),
+      block('vt_1', 'verbs_tenses', 1),
+      block('qn_1', 'questions_negation', 1),
+    ],
+  });
 }
 
 void main() {
-  group('GrammarDocument – echtes Asset', () {
+  group('GrammarDocument – repräsentative Fixture', () {
     test('lädt Schema-Informationen und Dokument-Struktur korrekt', () {
-      final doc = _realDoc();
+      final doc = _fixtureDoc();
       expect(doc.schemaVersion, '1.0.0');
       expect(doc.framework, 'CEFR');
       expect(doc.levels, ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
@@ -34,7 +97,7 @@ void main() {
     });
 
     test('jede Kategorie hat mindestens einen Block', () {
-      final doc = _realDoc();
+      final doc = _fixtureDoc();
       for (final category in doc.sortedCategories) {
         expect(doc.blocksOfCategory(category.id), isNotEmpty,
             reason: 'Kategorie ${category.id} ohne Blöcke');
@@ -42,14 +105,14 @@ void main() {
     });
 
     test('sortedCategories sortiert nach order-Feld', () {
-      final doc = _realDoc();
+      final doc = _fixtureDoc();
       final sorted = doc.sortedCategories;
       expect(sorted.map((c) => c.id).take(3).toList(),
           ['sentence_structure', 'verbs_tenses', 'questions_negation']);
     });
 
     test('blocksOfCategory filtert und sortiert nach order', () {
-      final doc = _realDoc();
+      final doc = _fixtureDoc();
       final blocks = doc.blocksOfCategory('sentence_structure');
       expect(blocks, isNotEmpty);
       expect(blocks.every((b) => b.category == 'sentence_structure'), isTrue);
@@ -59,7 +122,7 @@ void main() {
     });
 
     test('Blöcke erfüllen das Schema (Pflichtfelder gefüllt)', () {
-      final doc = _realDoc();
+      final doc = _fixtureDoc();
       for (final b in doc.blocks) {
         expect(b.id, isNotEmpty);
         expect(b.level, isNotEmpty);
