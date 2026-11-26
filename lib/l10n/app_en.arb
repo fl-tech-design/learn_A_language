@@ -203,6 +203,14 @@
       }
     }
   },
+  "packInstallVersionTooLow": "This language pack requires app version {version} or higher. Please update the app.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "packUninstallFailed": "Could not uninstall language pack: {reason}",
   "@packUninstallFailed": {
     "placeholders": {

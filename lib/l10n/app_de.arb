@@ -203,6 +203,14 @@
       }
     }
   },
+  "packInstallVersionTooLow": "Dieses Sprachpaket erfordert App-Version {version} oder höher. Bitte aktualisiere die App.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "packUninstallFailed": "Sprachpaket konnte nicht deinstalliert werden: {reason}",
   "@packUninstallFailed": {
     "placeholders": {

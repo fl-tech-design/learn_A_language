@@ -203,6 +203,14 @@
       }
     }
   },
+  "packInstallVersionTooLow": "Этот языковой пакет требует версию приложения {version} или новее. Обновите приложение.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "packUninstallFailed": "Не удалось удалить языковой пакет: {reason}",
   "@packUninstallFailed": {
     "placeholders": {

@@ -524,30 +524,35 @@ class AppLocalizationsPt extends AppLocalizations {
       'Define a direção da tradução (palavra e tradução) para todos os idiomas de curso selecionados.';
 
   @override
-  String get packInstall => 'Install';
+  String get packInstall => 'Instalar';
 
   @override
-  String get packUninstall => 'Uninstall';
+  String get packUninstall => 'Desinstalar';
 
   @override
   String get packInstallHint =>
-      'Please install a language pack first to start learning.';
+      'Instale primeiro um pacote de idiomas para começar a aprender.';
 
   @override
   String packInstallFailed(String reason) {
-    return 'Could not install language pack: $reason';
+    return 'Não foi possível instalar o pacote de idiomas: $reason';
+  }
+
+  @override
+  String packInstallVersionTooLow(String version) {
+    return 'Este pacote de idiomas requer a versão $version da app ou superior. Atualize a app.';
   }
 
   @override
   String packUninstallFailed(String reason) {
-    return 'Could not uninstall language pack: $reason';
+    return 'Não foi possível desinstalar o pacote de idiomas: $reason';
   }
 
   @override
-  String get packUninstallTitle => 'Uninstall language pack';
+  String get packUninstallTitle => 'Desinstalar pacote de idiomas';
 
   @override
   String packUninstallMsg(String language) {
-    return 'Uninstall the language pack for $language? Your learning progress is kept.';
+    return 'Desinstalar o pacote de idiomas de $language? O seu progresso de aprendizagem será mantido.';
   }
 }

@@ -1124,6 +1124,12 @@ abstract class AppLocalizations {
   /// **'Could not install language pack: {reason}'**
   String packInstallFailed(String reason);
 
+  /// No description provided for @packInstallVersionTooLow.
+  ///
+  /// In en, this message translates to:
+  /// **'This language pack requires app version {version} or higher. Please update the app.'**
+  String packInstallVersionTooLow(String version);
+
   /// No description provided for @packUninstallFailed.
   ///
   /// In en, this message translates to:

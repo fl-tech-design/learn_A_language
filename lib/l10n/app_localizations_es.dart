@@ -539,6 +539,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String packInstallVersionTooLow(String version) {
+    return 'Este paquete de idiomas requiere la versión $version de la aplicación o superior. Por favor, actualiza la aplicación.';
+  }
+
+  @override
   String packUninstallFailed(String reason) {
     return 'No se pudo desinstalar el paquete de idiomas: $reason';
   }

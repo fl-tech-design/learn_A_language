@@ -538,6 +538,11 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String packInstallVersionTooLow(String version) {
+    return 'Αυτό το γλωσσικό πακέτο απαιτεί έκδοση εφαρμογής $version ή νεότερη. Ενημερώστε την εφαρμογή.';
+  }
+
+  @override
   String packUninstallFailed(String reason) {
     return 'Δεν ήταν δυνατή η απεγκατάσταση του γλωσσικού πακέτου: $reason';
   }

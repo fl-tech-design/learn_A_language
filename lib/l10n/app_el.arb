@@ -203,6 +203,14 @@
       }
     }
   },
+  "packInstallVersionTooLow": "Αυτό το γλωσσικό πακέτο απαιτεί έκδοση εφαρμογής {version} ή νεότερη. Ενημερώστε την εφαρμογή.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "packUninstallFailed": "Δεν ήταν δυνατή η απεγκατάσταση του γλωσσικού πακέτου: {reason}",
   "@packUninstallFailed": {
     "placeholders": {

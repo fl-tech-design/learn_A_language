@@ -191,5 +191,41 @@
   "french": "Francese",
   "russian": "Russo",
   "greek": "Greco",
-  "motherTongueHint": "Imposta la direzione della traduzione (parola e traduzione) per tutte le lingue del corso selezionate."
+  "motherTongueHint": "Imposta la direzione della traduzione (parola e traduzione) per tutte le lingue del corso selezionate.",
+  "packInstall": "Installa",
+  "packUninstall": "Disinstalla",
+  "packInstallHint": "Installa prima un pacchetto linguistico per iniziare a imparare.",
+  "packInstallFailed": "Impossibile installare il pacchetto linguistico: {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packInstallVersionTooLow": "Questo pacchetto linguistico richiede la versione {version} dell'app o successiva. Aggiorna l'app.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Impossibile disinstallare il pacchetto linguistico: {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Disinstalla pacchetto linguistico",
+  "packUninstallMsg": "Disinstallare il pacchetto linguistico per {language}? I tuoi progressi di apprendimento verranno mantenuti.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -191,5 +191,41 @@
   "french": "Francês",
   "russian": "Russo",
   "greek": "Grego",
-  "motherTongueHint": "Define a direção da tradução (palavra e tradução) para todos os idiomas de curso selecionados."
+  "motherTongueHint": "Define a direção da tradução (palavra e tradução) para todos os idiomas de curso selecionados.",
+  "packInstall": "Instalar",
+  "packUninstall": "Desinstalar",
+  "packInstallHint": "Instale primeiro um pacote de idiomas para começar a aprender.",
+  "packInstallFailed": "Não foi possível instalar o pacote de idiomas: {reason}",
+  "@packInstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packInstallVersionTooLow": "Este pacote de idiomas requer a versão {version} da app ou superior. Atualize a app.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallFailed": "Não foi possível desinstalar o pacote de idiomas: {reason}",
+  "@packUninstallFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "packUninstallTitle": "Desinstalar pacote de idiomas",
+  "packUninstallMsg": "Desinstalar o pacote de idiomas de {language}? O seu progresso de aprendizagem será mantido.",
+  "@packUninstallMsg": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  }
 }

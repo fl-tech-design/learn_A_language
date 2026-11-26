@@ -539,6 +539,11 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String packInstallVersionTooLow(String version) {
+    return 'Этот языковой пакет требует версию приложения $version или новее. Обновите приложение.';
+  }
+
+  @override
   String packUninstallFailed(String reason) {
     return 'Не удалось удалить языковой пакет: $reason';
   }

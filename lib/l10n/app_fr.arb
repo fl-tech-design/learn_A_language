@@ -203,6 +203,14 @@
       }
     }
   },
+  "packInstallVersionTooLow": "Ce pack de langue nécessite la version {version} de l'application ou une version ultérieure. Veuillez mettre à jour l'application.",
+  "@packInstallVersionTooLow": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
   "packUninstallFailed": "Impossible de désinstaller le pack de langue : {reason}",
   "@packUninstallFailed": {
     "placeholders": {
