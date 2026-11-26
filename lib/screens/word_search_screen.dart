@@ -69,7 +69,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
       words = words.where((e) => cat.containsEntryKey(e.key)).toList();
     }
 
-    final puzzle = generatePuzzle(words, widget.difficulty);
+    final puzzle = generatePuzzle(words, widget.difficulty, langCode: lang);
     if (!mounted) return;
     setState(() {
       _puzzle = puzzle;

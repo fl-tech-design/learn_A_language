@@ -15,6 +15,7 @@ import '../managers/user_state.dart';
 import '../managers/user_manager.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
+import '../models/alphabet.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/game_over_dialog.dart';
 import '../l10n/app_localizations.dart';
@@ -46,6 +47,9 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
   bool _gameActive = false;
   String? _category;
   ActiveCell? _active;
+
+  /// Kurssprache des Spiels (bestimmt Alphabet/Tastatur), z. B. `'el'`.
+  String _lang = 'de';
 
   // Stoppuhr + Anzeige-Ticker (mm:ss).
   final Stopwatch _stopwatch = Stopwatch();
@@ -93,6 +97,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     }
 
     final lang = navState.resolveActiveLang(userState.userData);
+    _lang = lang;
     var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter ueber die bestehende Kategorien-Info.
@@ -101,7 +106,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
       words = words.where((e) => cat.containsEntryKey(e.key)).toList();
     }
 
-    final puzzle = generatePuzzle(words, widget.difficulty);
+    final puzzle = generatePuzzle(words, widget.difficulty, langCode: _lang);
     if (!mounted) return;
     setState(() {
       _puzzle = puzzle;
@@ -509,9 +514,9 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
     );
   }
 
-  /// On-Screen-Buchstabentastatur (A-Z, nur Grossbuchstaben).
+  /// On-Screen-Buchstabentastatur (Alphabet der Kurssprache).
   Widget _buildKeyboard() {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    final letters = alphabetFor(_lang);
     return Padding(
       padding: const EdgeInsets.only(left: 6, right: 6, top: 4, bottom: 2),
       child: Wrap(
@@ -519,7 +524,7 @@ class _CrosswordScreenState extends State<CrosswordScreen> {
         spacing: 2,
         runSpacing: 2,
         children: [
-          for (final ch in letters.split(''))
+          for (final ch in letters)
             SizedBox(
               width: 32,
               height: 38,

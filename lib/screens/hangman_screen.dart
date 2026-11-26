@@ -8,6 +8,7 @@ import '../managers/navigation_state.dart';
 import '../managers/user_state.dart';
 import '../managers/vocab_queries.dart';
 import '../models/app_models.dart';
+import '../models/alphabet.dart';
 import '../widgets/app_widgets.dart';
 import '../dialogs/game_over_dialog.dart';
 import '../l10n/app_localizations.dart';
@@ -39,6 +40,9 @@ class _HangmanScreenState extends State<HangmanScreen> {
   String? _category;
   int _currentIndex = 0;
 
+  /// Kurssprache des Spiels (bestimmt Alphabet/Tastatur), z. B. `'el'`.
+  String _lang = 'de';
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -59,6 +63,7 @@ class _HangmanScreenState extends State<HangmanScreen> {
     final lang = context
         .read<NavigationState>()
         .resolveActiveLang(context.read<UserState>().userData);
+    _lang = lang;
     var words = await vq.getReadWords(uname, langCode: lang);
 
     // Optionaler Kategorie-Filter ueber die bestehende Kategorien-Info.
@@ -67,7 +72,7 @@ class _HangmanScreenState extends State<HangmanScreen> {
       words = words.where((e) => cat.containsEntryKey(e.key)).toList();
     }
 
-    final round = createRound(words, widget.difficulty);
+    final round = createRound(words, widget.difficulty, langCode: _lang);
     if (!mounted) return;
     setState(() {
       _round = round;
@@ -319,10 +324,10 @@ class _HangmanScreenState extends State<HangmanScreen> {
     );
   }
 
-  /// On-Screen-Buchstabentastatur (A-Z). Bereits getippte Buchstaben
-  /// (richtig ODER falsch) sind markiert und nicht mehr waehlbar.
+  /// On-Screen-Buchstabentastatur (Alphabet der Kurssprache). Bereits getippte
+  /// Buchstaben (richtig ODER falsch) sind markiert und nicht mehr waehlbar.
   Widget _buildKeyboard(HangmanRound round) {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    final letters = alphabetFor(_lang);
     final current = round.entries[_currentIndex];
     return Padding(
       padding: const EdgeInsets.only(left: 6, right: 6, top: 4, bottom: 2),
@@ -331,7 +336,7 @@ class _HangmanScreenState extends State<HangmanScreen> {
         spacing: 2,
         runSpacing: 2,
         children: [
-          for (final ch in letters.split('')) _buildKey(ch, current),
+          for (final ch in letters) _buildKey(ch, current),
         ],
       ),
     );

@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../models/alphabet.dart';
 import '../models/app_models.dart';
 import '../models/vocab_key.dart';
 
@@ -122,25 +123,9 @@ List<String> _tokens(String word) =>
 
 /// Normalisiert einen Roh-Grid-Begriff auf Großbuchstaben A-Z:
 /// ä/ö/ü/ß werden zu AE/OE/UE/SS, alles andere außer a-z wird entfernt.
-String normalizeGridWord(String raw) {
-  final out = StringBuffer();
-  final lowered = raw.toLowerCase();
-  for (var i = 0; i < lowered.length; i++) {
-    final ch = lowered[i];
-    if (ch == 'ä') {
-      out.write('AE');
-    } else if (ch == 'ö') {
-      out.write('OE');
-    } else if (ch == 'ü') {
-      out.write('UE');
-    } else if (ch == 'ß') {
-      out.write('SS');
-    } else if (ch.codeUnitAt(0) >= 97 && ch.codeUnitAt(0) <= 122) {
-      out.write(ch.toUpperCase());
-    }
-  }
-  return out.toString();
-}
+///
+/// Lateinische Kompatibilitätsfunktion; sprachbewusst ist [normalizeForGrid].
+String normalizeGridWord(String raw) => normalizeForGrid(raw, 'de');
 
 /// Bekannte Pronomen von 2-Token-Konjugationen.
 const Set<String> _pronouns = {
@@ -160,15 +145,16 @@ const Set<String> _futureHelpers = {
 /// - Ein-Wort-Einträge (spätere Nomen/Adjektive) werden direkt verwendet.
 /// - Konjugationen mit Pronomen liefern das letzte Token ("wir gehen" ->
 ///   "gehen", "ich werde gehen" -> "gehen").
-/// - Umlaut-/ß-Normalisierung nach [normalizeGridWord].
+/// - Normalisierung auf das Alphabet der Kurssprache [langCode]
+///   (siehe [normalizeForGrid]); Latein bleibt wie bisher (Umlaut-/ß-Regeln).
 ///
 /// Liefert null, wenn aus dem Eintrag kein spielbares Wort (>= 3 Buchstaben)
 /// ableitbar ist.
-String? deriveSearchWord(VocabEntry entry) {
+String? deriveSearchWord(VocabEntry entry, {String langCode = 'de'}) {
   final tokens = _tokens(entry.word);
   if (tokens.isEmpty) return null;
-  final gridWord =
-      normalizeGridWord(tokens.length == 1 ? tokens.first : tokens.last);
+  final gridWord = normalizeForGrid(
+      tokens.length == 1 ? tokens.first : tokens.last, langCode);
   if (gridWord.length < 3) return null;
   return gridWord;
 }
@@ -210,7 +196,8 @@ int _candidateScore(VocabEntry entry, String gridWord) {
 /// Infinitiv-Kandidaten. Gleiche Infinitive (z. B. "wir gehen" und
 /// "sie gehen") erscheinen nur einmal – mit der ersten gefundenen
 /// Übersetzung.
-List<WordSearchWord> _buildCandidates(List<VocabEntry> entries) {
+List<WordSearchWord> _buildCandidates(
+    List<VocabEntry> entries, String langCode) {
   final byVerb = <String, List<VocabEntry>>{};
   for (final e in _usableEntries(entries)) {
     byVerb.putIfAbsent(vocabVerbKey(e.key), () => []).add(e);
@@ -221,13 +208,14 @@ List<WordSearchWord> _buildCandidates(List<VocabEntry> entries) {
     WordSearchWord? best;
     var bestScore = -1;
     for (final entry in group) {
-      final gridWord = deriveSearchWord(entry);
+      final gridWord = deriveSearchWord(entry, langCode: langCode);
       if (gridWord == null) continue;
       var score = _candidateScore(entry, gridWord);
       // Häufigkeits-Bonus: Formen, die denselben Kandidaten mehrfach liefern,
       // gewinnen bei Gleichstand.
-      final frequency =
-          group.where((o) => deriveSearchWord(o) == gridWord).length;
+      final frequency = group
+          .where((o) => deriveSearchWord(o, langCode: langCode) == gridWord)
+          .length;
       if (frequency >= 2) score += 1;
       if (best != null && score <= bestScore) continue;
       best = WordSearchWord(
@@ -287,13 +275,14 @@ List<Point>? _tryPlaceWord(
 ///
 /// Es werden NUR Einträge mit status 'seen' und level >= 1 verwendet
 /// (siehe [_usableEntries]).
-WordSearchPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty) {
+WordSearchPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty,
+    {String langCode = 'de'}) {
   final config = _configFor(difficulty);
   final rng = Random();
   final grid =
       List.generate(config.size, (_) => List<String?>.filled(config.size, null));
 
-  final candidates = _buildCandidates(entries)
+  final candidates = _buildCandidates(entries, langCode)
     ..removeWhere((w) => w.word.length > config.size)
     ..shuffle(rng);
   final dirs = _placementDirections(config.diagonal);
@@ -310,8 +299,8 @@ WordSearchPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty) {
     ));
   }
 
-  // Rest-Füllung mit zufälligen Buchstaben A-Z.
-  const String letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  // Rest-Füllung mit zufälligen Buchstaben des Sprach-Alphabets.
+  final letters = alphabetFor(langCode);
   final filled = grid
       .map((row) => row
           .map((c) => c ?? letters[rng.nextInt(letters.length)])

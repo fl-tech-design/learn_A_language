@@ -130,8 +130,9 @@ String _translationHint(VocabEntry entry) =>
 ///
 /// Falls kein Beispielsatz vorhanden ist (oder der Zielwort-Ausdruck im Satz
 /// fehlt), wird automatisch auf den easy-Hinweis (Uebersetzung) ausgewichen.
-String buildHint(VocabEntry entry, String difficulty) {
-  final target = deriveSearchWord(entry);
+String buildHint(VocabEntry entry, String difficulty,
+    {String langCode = 'de'}) {
+  final target = deriveSearchWord(entry, langCode: langCode);
 
   if (difficulty == 'medium' || difficulty == 'hard') {
     // medium: Muttersprachen-Beispielsatz (examplesNative) → der verbale
@@ -157,13 +158,16 @@ String buildHint(VocabEntry entry, String difficulty) {
 ///
 /// Der Infinitiv ist die haeufigste Form (wir/sie-Formen liefern denselben
 /// Kandidaten wie "gehen"); bei Gleichstand gewinnt die laengere Form.
-({String word, VocabEntry entry})? _pickInfinitive(List<VocabEntry> group) {
+({String word, VocabEntry entry})? _pickInfinitive(
+    List<VocabEntry> group, String langCode) {
   ({String word, VocabEntry entry})? best;
   var bestCount = 0;
   for (final entry in group) {
-    final word = deriveSearchWord(entry);
+    final word = deriveSearchWord(entry, langCode: langCode);
     if (word == null) continue;
-    final count = group.where((o) => deriveSearchWord(o) == word).length;
+    final count =
+        group.where((o) => deriveSearchWord(o, langCode: langCode) == word)
+            .length;
     if (best == null ||
         count > bestCount ||
         (count == bestCount && word.length > best.word.length)) {
@@ -179,7 +183,8 @@ String buildHint(VocabEntry entry, String difficulty) {
 /// Es werden NUR Eintraege mit status 'seen' und level >= 1 verwendet
 /// (Puzzle-Garantie in [_usableEntries]); Infinitive sind dedupliziert.
 /// Die Runde startet mit 0 falschen Buchstaben und [livesFor] Leben.
-HangmanRound createRound(List<VocabEntry> entries, String difficulty) {
+HangmanRound createRound(List<VocabEntry> entries, String difficulty,
+    {String langCode = 'de'}) {
   final byVerb = <String, List<VocabEntry>>{};
   for (final e in _usableEntries(entries)) {
     byVerb.putIfAbsent(vocabVerbKey(e.key), () => []).add(e);
@@ -188,12 +193,12 @@ HangmanRound createRound(List<VocabEntry> entries, String difficulty) {
   final words = <HangmanWord>[];
   final seen = <String>{};
   for (final group in byVerb.values) {
-    final best = _pickInfinitive(group);
+    final best = _pickInfinitive(group, langCode);
     if (best == null) continue;
     if (!seen.add(best.word)) continue; // gleicher Infinitiv nur einmal
     words.add(HangmanWord(
       target: best.word,
-      hint: buildHint(best.entry, difficulty),
+      hint: buildHint(best.entry, difficulty, langCode: langCode),
     ));
   }
 

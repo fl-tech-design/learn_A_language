@@ -162,7 +162,8 @@ List<VocabEntry> _usableEntries(List<VocabEntry> entries) =>
 /// Infinitiv-Kandidaten (Ableitung ueber die BESTEHENDE Wortsuche-Logik
 /// [deriveSearchWord] – nicht neu erfunden). Gleiche Infinitive (z. B.
 /// "wir gehen" und "sie gehen") erscheinen nur einmal.
-List<_Candidate> _buildCandidates(List<VocabEntry> entries) {
+List<_Candidate> _buildCandidates(
+    List<VocabEntry> entries, String langCode) {
   final byVerb = <String, List<VocabEntry>>{};
   for (final e in _usableEntries(entries)) {
     byVerb.putIfAbsent(vocabVerbKey(e.key), () => []).add(e);
@@ -170,7 +171,7 @@ List<_Candidate> _buildCandidates(List<VocabEntry> entries) {
 
   final result = <_Candidate>[];
   for (final group in byVerb.values) {
-    final best = _pickInfinitive(group);
+    final best = _pickInfinitive(group, langCode);
     if (best != null) result.add(best);
   }
 
@@ -188,13 +189,15 @@ List<_Candidate> _buildCandidates(List<VocabEntry> entries) {
 /// ("wir gehen", "sie gehen") denselben Kandidaten "GEHEN" und gewinnen so
 /// gegen Einzelformen ("ich gehe" -> "GEHE"). Bei Gleichstand gewinnt die
 /// laengere Form.
-_Candidate? _pickInfinitive(List<VocabEntry> group) {
+_Candidate? _pickInfinitive(List<VocabEntry> group, String langCode) {
   _Candidate? best;
   var bestCount = 0;
   for (final entry in group) {
-    final word = deriveSearchWord(entry);
+    final word = deriveSearchWord(entry, langCode: langCode);
     if (word == null) continue;
-    final count = group.where((o) => deriveSearchWord(o) == word).length;
+    final count =
+        group.where((o) => deriveSearchWord(o, langCode: langCode) == word)
+            .length;
     final translation =
         entry.translation.isEmpty ? entry.word : entry.translation;
     if (best == null ||
@@ -316,11 +319,12 @@ List<(List<CrosswordPos>, String)> _crossOptions(
 ///   Platzierung, keine feste Gittergroesse.
 /// - Immer bleibt mindestens EIN leeres Feld erhalten, das in der UI als
 ///   Hinweis-Button dient.
-CrosswordPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty) {
+CrosswordPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty,
+    {String langCode = 'de'}) {
   final target = _wordCountFor(difficulty);
   final rng = Random();
 
-  final candidates = _buildCandidates(entries)..shuffle(rng);
+  final candidates = _buildCandidates(entries, langCode)..shuffle(rng);
 
   final placed = <CrosswordWord>[];
   final occupied = <CrosswordPos, String>{};
