@@ -103,6 +103,21 @@ void main() {
       ], 'easy', langCode: 'el');
       expect(puzzle.words, isNotEmpty);
     });
+
+    test('lange Wörter: Grid wächst, Wörter werden nicht verworfen', () {
+      // Reale griechische to_be_allowed_to-Formen (10–11 Zeichen); bei festem
+      // 8×8-Grid würden sie verworfen und die Wortsuche bliebe leer.
+      final entries = [
+        seen('to_be_allowed_to_past_0', 'επιτρεπόταν', 'war erlaubt'),
+        seen('to_be_allowed_to_present_0', 'επιτρέπεται', 'ist erlaubt'),
+        seen('to_be_allowed_to_future_0', 'θα επιτρέπεται', 'wird erlaubt'),
+      ];
+      for (final diff in ['easy', 'medium', 'hard']) {
+        final puzzle = ws.generatePuzzle(entries, diff, langCode: 'el');
+        expect(puzzle.words, isNotEmpty, reason: 'diff=$diff');
+        expect(puzzle.size >= 10, isTrue, reason: 'diff=$diff');
+      }
+    });
   });
 
   group('Kreuzworträtsel – Griechisch', () {

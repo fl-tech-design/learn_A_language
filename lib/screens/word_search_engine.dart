@@ -286,12 +286,16 @@ WordSearchPuzzle generatePuzzle(List<VocabEntry> entries, String difficulty,
     {String langCode = 'de'}) {
   final config = _configFor(difficulty);
   final rng = Random();
-  final grid =
-      List.generate(config.size, (_) => List<String?>.filled(config.size, null));
 
-  final candidates = _buildCandidates(entries, langCode)
-    ..removeWhere((w) => w.word.length > config.size)
-    ..shuffle(rng);
+  final candidates = _buildCandidates(entries, langCode);
+  // Grid-Größe an das längste Kandidatenwort anpassen (mind. config.size).
+  // So werden lange Wörter (z. B. Griechisch „επιτρεπόταν") nicht verworfen,
+  // sondern passen ins Gitter – sonst bliebe die Wortsuche leer.
+  final longest = candidates.fold<int>(0, (m, w) => max(m, w.word.length));
+  final size = max(config.size, longest);
+  final grid = List.generate(size, (_) => List<String?>.filled(size, null));
+
+  candidates.shuffle(rng);
   final dirs = _placementDirections(config.diagonal);
   final placed = <WordSearchWord>[];
 
