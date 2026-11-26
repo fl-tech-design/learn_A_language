@@ -9,9 +9,9 @@ This project is a complete migration of a previously Python/Kivy-based app to **
 
 | Component | Value |
 |---|---|
-| Commit-Hash | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Commit-Hash | `95308f9ccc5121eb2e4a8e6172053e98b599018e` (`95308f9`) |
 | Branch | `main` |
-| Date | 25.11.2026 |
+| Date | 26.11.2026 |
 
 > This section is updated with every relevant change (e.g., before analysis reports) so that the documented code state remains reproducible (Ticket #57).
 

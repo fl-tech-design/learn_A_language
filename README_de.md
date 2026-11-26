@@ -9,9 +9,9 @@ Dieses Projekt ist eine vollständige Migration einer zuvor in Python/Kivy entwi
 
 | Komponente | Wert |
 |---|---|
-| Commit-Hash | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Commit-Hash | `95308f9ccc5121eb2e4a8e6172053e98b599018e` (`95308f9`) |
 | Branch | `main` |
-| Datum | 25.11.2026 |
+| Datum | 26.11.2026 |
 
 > Dieser Abschnitt wird bei jeder relevanten Änderung (z. B. vor Analyse-Berichten) aktualisiert, damit der dokumentierte Code-Stand reproduzierbar bleibt (Ticket #57).
 

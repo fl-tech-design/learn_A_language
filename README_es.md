@@ -9,9 +9,9 @@ Este proyecto es una migración completa de una aplicación previamente desarrol
 
 | Componente | Valor |
 |---|---|
-| Hash de commit | `30280c611340e752d1cbfa22adcc350d441f33d9` (`30280c6`) |
+| Hash de commit | `95308f9ccc5121eb2e4a8e6172053e98b599018e` (`95308f9`) |
 | Rama | `main` |
-| Fecha | 25.11.2026 |
+| Fecha | 26.11.2026 |
 
 > Esta sección se actualiza con cada cambio relevante (p. ej., antes de los informes de análisis) para que el estado documentado del código siga siendo reproducible (Ticket #57).
 
