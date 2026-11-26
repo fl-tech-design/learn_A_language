@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Required for language pack downloads (manifest + ZIPs from raw.githubusercontent.com,
+         see Ticket #68/#72). Debug/profile manifests already declare it for Flutter tooling. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="learn A language"
         android:name="${applicationName}"
