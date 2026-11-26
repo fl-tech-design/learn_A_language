@@ -65,11 +65,24 @@ class NavigationState extends ChangeNotifier {
   }
 
   /// Entscheidet die effektive Kurssprache: erst der aktive Kurs-Kontext,
-  /// dann (für wiederhergestellte Sessions ohne Kontext) die erste im
-  /// Wortschatz vorhandene Sprache, zuletzt `'de'` als Default.
+  /// dann (deterministisch statt Einfügereihenfolge) die erste vom Nutzer
+  /// gewählte Kurssprache, dann der erste vorhandene Sprach-Bucket, zuletzt
+  /// `'de'` als Default.
+  ///
+  /// Deterministische Kurswahl (Ticket #74): Ohne gesetzten aktiven Kurs
+  /// (App-Neustart ohne Session-Restore, Navigation ohne erneuten Kurs-Klick)
+  /// bestimmte früher die Einfügereihenfolge von `vocabByLang` (z. B. immer
+  /// `'de'` zuerst) die Sprache – für Griechisch/Russisch-Nutzer luden die
+  /// Spiele dadurch in der falschen Sprache („Keine gelesenen Wörter").
   String resolveActiveLang(UserData? userData) {
     final l = _activeLangCode;
     if (l != null && l.isNotEmpty) return l;
+    if (userData != null && userData.selectedCourses.isNotEmpty) {
+      for (final id in userData.selectedCourses) {
+        final c = availableCourses[id];
+        if (c != null) return c.languageCode;
+      }
+    }
     if (userData != null && userData.vocabByLang.isNotEmpty) {
       return userData.vocabByLang.keys.first;
     }

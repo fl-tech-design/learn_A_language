@@ -121,6 +121,7 @@ class _StartScreenState extends State<StartScreen> {
     final l10n = AppLocalizations.of(context);
     final packManager = context.read<PackManager>();
     final dataState = context.read<DataState>();
+    final userState = context.read<UserState>();
     final message = '${l10n.packInstall}: ${courseLanguageName(code)}';
     try {
       await packManager.install(code, onProgress: (step) {
@@ -128,6 +129,14 @@ class _StartScreenState extends State<StartScreen> {
       });
       await _loadInstalledPacks();
       await dataState.refreshLanguages();
+      // Ticket #74: Wortschatz der installierten Sprache für einen
+      // eingeloggten Nutzer sofort sicherstellen (init + Migration). Ohne
+      // diesen Aufruf blieben bestehende el/ru-Kurse leer, bis zum nächsten
+      // Login – die Spiele zeigten „Keine gelesenen Wörter".
+      final uname = userState.userData?.uName;
+      if (uname != null && uname.isNotEmpty) {
+        await userState.ensureVocabForLang(code);
+      }
       if (mounted) _showSnack(message);
     } on PackException catch (e) {
       final String errorText;

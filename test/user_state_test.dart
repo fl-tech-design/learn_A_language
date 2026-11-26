@@ -355,4 +355,56 @@ void main() {
       expect(StorageErrorBus.instance.takeLast(), isNull);
     });
   });
+
+  group('UserState.ensureVocabForLang (Ticket #74)', () {
+    test('führt init+migrate für eine gewählte Kurs-Sprache aus', () async {
+      refreshAvailableCourses({'de', 'el'});
+      final um = FakeUserManager();
+      final vm = FakeVocabManager();
+      um.seed('alice', _userData(selectedCourses: ['el_verben_a1']));
+      final state = UserState(userManager: um, vocabManager: vm);
+      await state.login('alice');
+
+      final initBefore = vm.initCount;
+      final migrateBefore = vm.migrateCount;
+      await state.ensureVocabForLang('el');
+
+      expect(vm.initCount, initBefore + 1);
+      expect(vm.migrateCount, migrateBefore + 1);
+    });
+
+    test('ohne Kurs und ohne Bucket passiert nichts', () async {
+      refreshAvailableCourses({'de', 'el'});
+      final um = FakeUserManager();
+      final vm = FakeVocabManager();
+      um.seed('alice', _userData());
+      final state = UserState(userManager: um, vocabManager: vm);
+      await state.login('alice');
+
+      final initBefore = vm.initCount;
+      final migrateBefore = vm.migrateCount;
+      await state.ensureVocabForLang('el');
+
+      expect(vm.initCount, initBefore);
+      expect(vm.migrateCount, migrateBefore);
+    });
+
+    test('mit bestehendem Sprach-Bucket (ohne Kurs) wird init+migrate ausgeführt',
+        () async {
+      refreshAvailableCourses({'de', 'el'});
+      final um = FakeUserManager();
+      final vm = FakeVocabManager();
+      um.seed('alice',
+          _userData(vocabByLang: {'el': {'el_a': _v('el_a')}}));
+      final state = UserState(userManager: um, vocabManager: vm);
+      await state.login('alice');
+
+      final initBefore = vm.initCount;
+      final migrateBefore = vm.migrateCount;
+      await state.ensureVocabForLang('el');
+
+      expect(vm.initCount, initBefore + 1);
+      expect(vm.migrateCount, migrateBefore + 1);
+    });
+  });
 }

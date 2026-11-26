@@ -31,8 +31,6 @@ void main() {
         translation: key,
         examples: const [],
         examplesNative: const [],
-        level: 0,
-        status: 'new',
       );
 
   /// UserData mit getrennten Sprach-Buckets (wie die App für Kurse

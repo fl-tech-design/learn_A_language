@@ -314,4 +314,28 @@ class UserState extends ChangeNotifier {
     await _loadUserData(uname);
     notifyListeners();
   }
+
+  /// Sicherstellen des Wortschatzes für eine Sprache – z. B. unmittelbar
+  /// nach einer Sprachpaket-Installation (Ticket #74).
+  ///
+  /// Nur wenn der Nutzer bereits einen Kurs in [langCode] gewählt hat ODER der
+  /// Sprach-Bucket bereits existiert, werden `initVocabForUser` + Migration
+  /// ausgeführt. Ohne Kurs/ohne Bucket passiert nichts (kein ungewolltes
+  /// Anlegen eines Buckets). Danach werden die User-Daten neu geladen und die
+  /// UI benachrichtigt – bestehende Kurse sind sofort spielbar, ohne dass ein
+  /// erneuter Login nötig wäre.
+  Future<void> ensureVocabForLang(String langCode) async {
+    final uname = _userData?.uName;
+    if (uname == null || uname.isEmpty || langCode.isEmpty) return;
+    final ud = await _loadSafe(uname);
+    if (ud == null) return;
+    final hasCourse = ud.selectedCourses
+        .any((id) => availableCourses[id]?.languageCode == langCode);
+    final hasBucket = ud.vocabByLang.containsKey(langCode);
+    if (!hasCourse && !hasBucket) return;
+    await _vocabManager.initVocabForUser(uname, langCode, ud.mLang);
+    await _vocabManager.migrateVocabForUser(uname, langCode, ud.mLang);
+    await _loadUserData(uname);
+    notifyListeners();
+  }
 }
